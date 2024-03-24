@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<Pc_ArchitectContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Pc_ArchitectContext")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Pc_ArchitectContextConnection")));
 
 var app = builder.Build();
 

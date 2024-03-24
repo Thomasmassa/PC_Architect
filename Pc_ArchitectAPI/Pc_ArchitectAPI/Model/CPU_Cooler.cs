@@ -9,9 +9,9 @@ namespace PC_ArchitectInstaller.Models
         public double Price { get; set; }
         public int Size { get; set; }
         public string Color { get; set; } = "";
-        public int[] Rpm { get; set; }
-        public int[] Airflow { get; set; }
-        public int[] Noise_level { get; set; }
+        public string Rpm { get; set; } = "";
+        public string Airflow { get; set; } = "";
+        public string Noise_level { get; set; } = "";
         public bool Pwm { get; set; }
     }
 }

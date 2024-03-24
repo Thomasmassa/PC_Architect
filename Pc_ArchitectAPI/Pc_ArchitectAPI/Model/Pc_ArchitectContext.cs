@@ -22,9 +22,9 @@ namespace PC_ArchitectInstaller.Models
                     Price = 44.99,
                     Size = 120,
                     Color = "RGB",
-                    Rpm = new int[] { 650, 2000 },
-                    Airflow = new int[] { 57, 65 },
-                    Noise_level = new int[] { 8, 30 },
+                    Rpm = "650, 2000",
+                    Airflow = "57, 65",
+                    Noise_level = "8, 30",
                     Pwm = true
                 }
             );

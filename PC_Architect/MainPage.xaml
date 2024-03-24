@@ -37,6 +37,7 @@
                HorizontalOptions="Center"
                FontSize="Large"
                Margin="0,0,0,10"
+               FontAttributes="Bold"
                Grid.Row="1">
                 <Label.FormattedText>
                     <FormattedString>
@@ -82,6 +83,23 @@
                     CornerRadius="20"
                     BackgroundColor="DarkOrange"
                     Grid.Row="5"/>
+
+            <!-- Footer -->
+            <Label VerticalOptions="End"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   Margin="0,0,0,10"
+                   Grid.Row="6">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Powered by " FontSize="15"/>
+                        <Span Text="R" FontSize="15" TextColor="Red"/>
+                        <Span Text="G" FontSize="15" TextColor="Green"/>
+                        <Span Text="B" FontSize="15" TextColor="Blue"/>
+                    </FormattedString>
+                </Label.FormattedText>
+
+            </Label>
         </Grid>
     </Grid>
 
