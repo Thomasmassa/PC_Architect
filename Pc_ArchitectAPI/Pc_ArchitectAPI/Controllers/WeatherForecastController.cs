@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace PC_ArchitectInstaller.Controllers
+namespace Pc_ArchitectAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

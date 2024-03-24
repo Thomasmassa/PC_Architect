@@ -1,7 +1,10 @@
-﻿namespace PC_ArchitectInstaller.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PC_ArchitectInstaller.Models
 {
     public class CPU_Cooler
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
         public int Size { get; set; }

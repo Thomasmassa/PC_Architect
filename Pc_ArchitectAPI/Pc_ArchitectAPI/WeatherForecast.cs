@@ -1,4 +1,4 @@
-namespace PC_ArchitectInstaller
+namespace Pc_ArchitectAPI
 {
     public class WeatherForecast
     {
