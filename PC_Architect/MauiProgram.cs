@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using PC_Architect.Services;
+using PC_Architect.ViewModel;
 
 namespace PC_Architect
 {
@@ -14,6 +16,12 @@ namespace PC_Architect
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddSingleton<IPartsService, FirebasePartsService>();
+
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<startBuilding>();
+            builder.Services.AddSingleton<StartBuildViewModel>();
 
 #if DEBUG
     		builder.Logging.AddDebug();

@@ -14,10 +14,12 @@
                 <!-- midden titel -->
                 <RowDefinition Height="1*" />
                 <!-- midden slogan -->
-                <RowDefinition Height="3*" />
+                <RowDefinition Height="2*" />
                 <!-- knop -->
-                <RowDefinition Height="4*" />
-                <!-- leege ruimte -->
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <!-- Lege ruimte -->
                 <RowDefinition Height="2*" />
             </Grid.RowDefinitions>
 
@@ -46,16 +48,40 @@
             </Label>
 
             <!-- Knop  -->
-            <Button Text="Get Started"
+            <Button Text="Start Building"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                HeightRequest="60"
-                WidthRequest="125"
+                HeightRequest="70"
+                WidthRequest="150"
                 FontSize="Large"
                 FontAttributes="Bold"
                 CornerRadius="20"
                 BackgroundColor="DarkOrange"
                 Grid.Row="3"/>
+
+            <!-- Knop  -->
+            <Button Text="Your Builds"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    HeightRequest="70"
+                    WidthRequest="150"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    BackgroundColor="DarkOrange"
+                    Grid.Row="4"/>
+
+            <!-- Knop  -->
+            <Button Text="Seach Parts"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    HeightRequest="70"
+                    WidthRequest="150"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    BackgroundColor="DarkOrange"
+                    Grid.Row="5"/>
         </Grid>
     </Grid>
 

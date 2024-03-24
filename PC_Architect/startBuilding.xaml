@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:PC_Architect.Model"
+             xmlns:viewModel="clr-namespace:PC_Architect.ViewModel"
+             x:Class="PC_Architect.startBuilding"
+             x:DataType="viewModel:StartBuildViewModel"
+             Shell.PresentationMode="Animated"
+             Title="{Binding Title}">
+
+    <Grid
+        ColumnDefinitions="*,*"
+        ColumnSpacing="5"
+        RowDefinitions="*,Auto"
+        RowSpacing="0">
+
+        <RefreshView Grid.ColumnSpan="2"
+                     IsRefreshing="{Binding IsRefreshing}">
+
+            <ContentView>
+                <CollectionView ItemsSource="{Binding CPUs}"
+                                SelectionMode="None">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="3"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.EmptyView>
+                        <StackLayout VerticalOptions="Center" 
+                                     HorizontalOptions="Center" 
+                                     WidthRequest="200" 
+                                     HeightRequest="200">
+                            <Image Source="brokenphone.png"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand"
+                                   Aspect="AspectFill"/>
+                        </StackLayout>
+                    </CollectionView.EmptyView>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:CPU">
+                            <Grid Padding="10">
+                                <Frame HeightRequest="125" Style="{StaticResource CardView}">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:StartBuildViewModel}}, Path=GoToDetailsCommand}"/>
+                                    </Frame.GestureRecognizers>
+                                    <Grid Padding="0" ColumnDefinitions="125,*">
+                                      
+                                        <VerticalStackLayout Grid.Column="1"
+                                                             VerticalOptions="Center"
+                                                             Padding="10">
+                                            <Label Style="{StaticResource LargeLabel}" Text="{Binding Graphics}" />
+                                            <Label Style="{StaticResource MediumLabel}" Text="{Binding Name}" />
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ContentView>
+        </RefreshView>
+
+        <Button Text="Save" 
+                IsEnabled="{Binding IsNotBusy}"
+                Grid.Row="1"
+                Grid.Column="0"
+                Style="{StaticResource ButtonOutline}"
+                Margin="8"/>
+
+        <Button Text="Exit" 
+                IsEnabled="{Binding IsNotBusy}"
+                Grid.Row="1"
+                Grid.Column="1"
+                Style="{StaticResource ButtonOutline}"
+                Margin="8"/>
+
+        <!-- Add this -->
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Center"
+		                   Color="{StaticResource Primary}"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2"/>
+    </Grid>
+
+</ContentPage>
