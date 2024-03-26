@@ -6,84 +6,245 @@
              x:Class="PC_Architect.startBuilding"
              x:DataType="viewModel:StartBuildViewModel"
              Shell.PresentationMode="Animated"
+             Shell.NavBarIsVisible="False"
              Title="{Binding Title}">
+    <ScrollView>
+        <Grid ColumnDefinitions="*" BackgroundColor="#222222">
 
-    <Grid
-        ColumnDefinitions="*,*"
-        ColumnSpacing="5"
-        RowDefinitions="*,Auto"
-        RowSpacing="0">
+            <Grid.RowDefinitions>
+                <!-- bovenaan -->
+                <RowDefinition Height="1*" />
+                <!-- knop -->
+                <RowDefinition Height="Auto" />
+                <!--save exit-->
+                <RowDefinition Height="2*" />
+                <!-- Lege ruimte -->
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
 
-        <RefreshView Grid.ColumnSpan="2"
-                     IsRefreshing="{Binding IsRefreshing}">
+            <!--title-->
+            <Label Grid.Row="0" Text="Start Building" TextColor="DarkOrange"
+                   FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
+                   Margin="0,20,0,20"/>
 
-            <ContentView>
-                <CollectionView ItemsSource="{Binding CPUs}"
-                                SelectionMode="None">
 
-                    <CollectionView.ItemsLayout>
-                        <GridItemsLayout Orientation="Vertical" Span="3"/>
-                    </CollectionView.ItemsLayout>
+            <Grid Grid.Row="1">
+                <!--Grid-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="9*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <!--Grid-->
+                <!--CPU-->
+                <Frame Grid.Column="1" Grid.Row="0" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
 
-                    <CollectionView.EmptyView>
-                        <StackLayout VerticalOptions="Center" 
-                                     HorizontalOptions="Center" 
-                                     WidthRequest="200" 
-                                     HeightRequest="200">
-                            <Image Source="brokenphone.png"
-                                   HorizontalOptions="CenterAndExpand"
-                                   VerticalOptions="CenterAndExpand"
-                                   Aspect="AspectFill"/>
-                        </StackLayout>
-                    </CollectionView.EmptyView>
+                        <Image Source="cpu.png" Grid.Column="0"/>
+                        <Label Text="CPU" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--CPU-->
+                <!--CPU Cooler-->
+                <Frame Grid.Column="1" Grid.Row="1" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
 
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate x:DataType="model:CPU">
-                            <Grid Padding="10">
-                                <Frame HeightRequest="125" Style="{StaticResource CardView}">
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer CommandParameter="{Binding .}"
-                                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:StartBuildViewModel}}, Path=GoToDetailsCommand}"/>
-                                    </Frame.GestureRecognizers>
-                                    <Grid Padding="0" ColumnDefinitions="125,*">
-                                      
-                                        <VerticalStackLayout Grid.Column="1"
-                                                             VerticalOptions="Center"
-                                                             Padding="10">
-                                            <Label Style="{StaticResource LargeLabel}" Text="{Binding Graphics}" />
-                                            <Label Style="{StaticResource MediumLabel}" Text="{Binding Name}" />
-                                        </VerticalStackLayout>
-                                    </Grid>
-                                </Frame>
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </ContentView>
-        </RefreshView>
+                        <Image Source="fan.png" Grid.Column="0"/>
+                        <Label Text="CPU COOLER" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--CPU Cooler-->
+                <!--Motherboard-->
+                <Frame Grid.Column="1" Grid.Row="2" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
 
-        <Button Text="Save" 
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Grid.Column="0"
-                Style="{StaticResource ButtonOutline}"
-                Margin="8"/>
+                        <Image Source="motherboard.png" Grid.Column="0"/>
+                        <Label Text="MOTHERBOARD" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--Motherboard-->
+                <!--Memory-->
+                <Frame Grid.Column="1" Grid.Row="3" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
 
-        <Button Text="Exit" 
-                IsEnabled="{Binding IsNotBusy}"
-                Grid.Row="1"
-                Grid.Column="1"
-                Style="{StaticResource ButtonOutline}"
-                Margin="8"/>
+                        <Image Source="memory.png" Grid.Column="0"/>
+                        <Label Text="MEMORY" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--Memory-->
+                <!--GPU-->
+                <Frame Grid.Column="1" Grid.Row="4" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
 
-        <!-- Add this -->
-        <ActivityIndicator IsVisible="{Binding IsBusy}"
-                           IsRunning="{Binding IsBusy}"
-                           HorizontalOptions="Fill"
-                           VerticalOptions="Center"
-		                   Color="{StaticResource Primary}"
-                           Grid.RowSpan="2"
-                           Grid.ColumnSpan="2"/>
-    </Grid>
+                        <Image Source="graphic_card.png" Grid.Column="0"/>
+                        <Label Text="GPU" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--GPU-->
+                <!--Storage-->
+                <Frame Grid.Column="1" Grid.Row="5" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
 
+                        <Image Source="ssd.png" Grid.Column="0"/>
+                        <Label Text="STORAGE" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--Storage-->
+                <!--PSU-->
+                <Frame Grid.Column="1" Grid.Row="6" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="psu.png" Grid.Column="0"/>
+                        <Label Text="PSU" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--PSU-->
+                <!--Case-->
+                <Frame Grid.Column="1" Grid.Row="7" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="pc_tower.png" Grid.Column="0"/>
+                        <Label Text="CASE" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--Case-->
+                <!--fan-->
+                <Frame Grid.Column="1" Grid.Row="8" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                    <Grid BackgroundColor="#D4D4D4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="4*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="fan.png" Grid.Column="0"/>
+                        <Label Text="FAN" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                        <Button Grid.ColumnSpan="3"
+                          VerticalOptions="FillAndExpand"
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"/>
+                    </Grid>
+                </Frame>
+                <!--fan-->
+
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- SAVE AND EXIT -->
+                <Button Text="Save" 
+                    IsEnabled="{Binding IsNotBusy}"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Style="{StaticResource ButtonOutline}"
+                    Margin="8"/>
+
+                <Button Text="Exit" 
+                    IsEnabled="{Binding IsNotBusy}"
+                    Grid.Row="7"
+                    Grid.Column="2"
+                    Style="{StaticResource ButtonOutline}"
+                    Margin="8"/>
+            </Grid>
+
+            <!-- Add this -->
+            <ActivityIndicator IsVisible="{Binding IsBusy}"
+                            IsRunning="{Binding IsBusy}"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Center"
+		                    Color="{StaticResource Primary}"
+                            Grid.RowSpan="2"
+                            Grid.ColumnSpan="2"/>
+        </Grid>
+    </ScrollView>
 </ContentPage>

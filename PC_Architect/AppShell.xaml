@@ -28,5 +28,13 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+    <ShellContent
+        Title="Start Building"
+        ContentTemplate="{DataTemplate local:startBuilding}"
+        Route="startBuilding" />
+    <!--<ShellContent
+        Title="Parts List"
+        ContentTemplate="{DataTemplate local:PartsListPage}"
+        Route="AboutPage" />-->
 
 </Shell>

@@ -71,6 +71,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="startBuilding.xaml.cs">
+	    <DependentUpon>startBuilding.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="startBuilding.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

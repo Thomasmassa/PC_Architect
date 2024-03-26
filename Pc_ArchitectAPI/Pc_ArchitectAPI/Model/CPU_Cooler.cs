@@ -11,7 +11,7 @@ namespace PC_ArchitectInstaller.Models
         public string Color { get; set; } = "";
         public string Rpm { get; set; } = "";
         public string Airflow { get; set; } = "";
-        public string Noise_level { get; set; } = "";
+        public string NoiseLevel { get; set; } = "";
         public bool Pwm { get; set; }
     }
 }
