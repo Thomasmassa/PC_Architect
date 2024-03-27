@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace PC_Architect.Model
 {
-    public class CPU
+    public class Cpu
     {
-        public double Boost_clock { get; set; }
-        public double Core_clock { get; set; }  
-        public int Core_count { get; set; }
-        public string Graphics { get; set; } = "";
-        public string Name { get; set; } = "";
-        public double Price { get; set; }
-        public bool Smt { get; set; }
-        public int Temp { get; set; }   
+        public string name { get; set; }
+        public double? price { get; set; }
+        public int core_count { get; set; }
+        public double core_clock { get; set; }
+        public double boost_clock { get; set; }
+        public int tdp { get; set; }
+        public string graphics { get; set; }
+        public bool smt { get; set; }
+        public string socket { get; set; }
     }
 }

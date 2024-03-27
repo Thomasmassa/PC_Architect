@@ -34,11 +34,11 @@
 
                                 <Image Source="{Binding ImageSource}" Grid.Column="0"/>
                                 <Label Text="{Binding LabelText}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
-                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                                    HorizontalOptions="CenterAndExpand" FontSize="Large"/>
                                 <Button Grid.ColumnSpan="3"
-                          VerticalOptions="FillAndExpand"
-                          HorizontalOptions="FillAndExpand"
-                          BackgroundColor="Transparent"/>
+                                    VerticalOptions="FillAndExpand"
+                                    HorizontalOptions="FillAndExpand"
+                                    BackgroundColor="Transparent"/>
                             </Grid>
                         </Frame>
 
@@ -55,19 +55,19 @@
 
                             <!-- SAVE AND EXIT -->
                             <Button Text="Save" 
-                        IsEnabled="{Binding IsNotBusy}"
-                        Grid.Row="7"
-                        Grid.Column="0"
-                        Style="{StaticResource ButtonOutline}"
-                        Margin="8"/>
+                                IsEnabled="{Binding IsNotBusy}"
+                                Grid.Row="7"
+                                Grid.Column="0"
+                                Style="{StaticResource ButtonOutline}"
+                                Margin="8"/>
 
                             <Button Text="Exit" 
-                        IsEnabled="{Binding IsNotBusy}"
-                        Grid.Row="7"
-                        Grid.Column="2"
-                        Style="{StaticResource ButtonOutline}"
-                        Margin="8"
-                        Clicked="OnExitClicked"/>
+                                IsEnabled="{Binding IsNotBusy}"
+                                Grid.Row="7"
+                                Grid.Column="2"
+                                Style="{StaticResource ButtonOutline}"
+                                Margin="8"
+                                Clicked="OnExitClicked"/>
                         </Grid>
                     </Grid>
                 </DataTemplate>
