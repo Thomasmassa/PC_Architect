@@ -10,7 +10,7 @@ Ik ben bezig geweest met Figma design voor de applicatie (samen met Thomas). Hee
 De applicatie .net maui aangemaakt en de mainPage gemaakt (startpagina).
 Informatie opgezocht over .net maui en implementatie van de basics (Model, Service, ViewModel, ..)
 
-Week 7 (25/03): ..... uren:
+Week 7 (25/03): 4 uren:
 
 
 
