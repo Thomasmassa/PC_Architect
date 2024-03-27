@@ -5,36 +5,39 @@ using PC_Architect.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace PC_Architect.ViewModel
 {
-    public partial class StartBuildViewModel : BaseViewModel
+    public partial class StartBuildViewModel : INotifyPropertyChanged
     {
-        public ObservableCollection<CPU> CPUs { get; set; } = new();
+        private ObservableCollection<IBindable> _bindables;
 
-        IPartsService partsService;
-
-        public StartBuildViewModel(IPartsService partsService)
+        public ObservableCollection<IBindable> Bindables
         {
-            Title = "Start Building";
-            this.partsService = partsService;
+            get => _bindables;
+            set 
+            {
+                _bindables = value;
+                OnpropertyChanged();
+            }
+        }
+        public StartBuildViewModel()
+        {
+            Bindables = new ObservableCollection<IBindable>
+            {
+                new Cpu(){ Name = "CPU", ImageSource = "cpu.png" },
+                new Motherboard(){ Name = "Motherboard", ImageSource = "motherboard.png" }
+            };
         }
 
-        [ObservableProperty]
-        bool isRefreshing;
-
-        //[RelayCommand]
-        //async Task GoToDetailsAsync(CPU cpu)
-        //{
-        //    if (cpu is null) return;
-
-        //    await Shell.Current.GoToAsync($"{nameof(CPUPage)}", true, new Dictionary<string, object>
-        //    {
-        //        { "CPU", cpu }
-        //    });
-        //}   
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnpropertyChanged([CallerMemberName] string propertyName = null) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

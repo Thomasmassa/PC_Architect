@@ -9,6 +9,7 @@ namespace PC_Architect.Model
 {
     class CaseFan : IBindable
     {
+        public string ImageSource { get; set; }
         public string Name { get; set; }
         public double? Price { get; set; }
         public int Size { get; set; }

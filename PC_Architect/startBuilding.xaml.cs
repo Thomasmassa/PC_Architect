@@ -4,11 +4,10 @@ namespace PC_Architect;
 
 public partial class startBuilding : ContentPage
 {
-	public startBuilding(StartBuildViewModel viewModel)
+	public startBuilding()
 	{
 		InitializeComponent();
-
-		BindingContext = viewModel;
+		BindingContext = new StartBuildViewModel();
 	}
 
 

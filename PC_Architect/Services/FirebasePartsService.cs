@@ -21,11 +21,11 @@ namespace PC_Architect.Services
             query = new FirebaseClient(BaseUrl).Child(path);
         }
 
-        public async Task<List<CPU>?> GetCPUs()
+        public async Task<List<Cpu>?> GetCPUs()
         {
             try
             {
-                var firebaseObjects = await query.OnceAsync<CPU>();
+                var firebaseObjects = await query.OnceAsync<Cpu>();
                 return firebaseObjects.Select(firebaseObject => firebaseObject.Object).ToList();
             }
             catch(Exception e)

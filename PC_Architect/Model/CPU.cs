@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PC_Architect.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace PC_Architect.Model
 {
-    public class Cpu
+    public class Cpu : IBindable
     {
+        public string ImageSource { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
         public int CoreCount { get; set; }
@@ -17,6 +19,5 @@ namespace PC_Architect.Model
         public string Graphics { get; set; }
         public bool Smt { get; set; }
         public string Docket { get; set; }
-        public string Img { get; set; }
     }
 }
