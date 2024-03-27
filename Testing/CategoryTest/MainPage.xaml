@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:CategoryTest.Model"
+             xmlns:viewmodel="clr-namespace:CategoryViewModel.ViewModel"
+             x:Class="CategoryTest.MainPage"
+             Title="{Binding Title}">
+
+    <Grid
+    ColumnDefinitions="*,*"
+    ColumnSpacing="5"
+    RowDefinitions="*,Auto"
+    RowSpacing="0">
+
+        <ContentView>
+
+                <CollectionView ItemsSource="{Binding Catogeries}"
+                            SelectionMode="None">
+
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="3"/>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.EmptyView>
+                        <StackLayout VerticalOptions="Center" 
+                                 HorizontalOptions="Center" 
+                                 WidthRequest="200" 
+                                 HeightRequest="200">
+                            <Image Source="nodata.png"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Aspect="AspectFill"/>
+                        </StackLayout>
+                    </CollectionView.EmptyView>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Category">
+                            <Grid Padding="10">
+                                <Frame HeightRequest="125" Style="{StaticResource CardView}">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:CategoryViewModel}}, Path=GoToDetailsCommand}"/>
+                                    </Frame.GestureRecognizers>
+                                    <Grid Padding="0" ColumnDefinitions="125,*">
+                                        <Image Aspect="AspectFill" Source="{Binding Image}"
+                                           WidthRequest="125"
+                                           HeightRequest="125"/>
+                                        <VerticalStackLayout Grid.Column="1"
+                                                         VerticalOptions="Center"
+                                                         Padding="10">
+                                            <Label Style="{StaticResource LargeLabel}" Text="{Binding Name}" />
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </ContentView>
+
+        <Button Text="Get Monkeys" 
+            IsEnabled="{Binding IsNotBusy}"
+            Grid.Row="1"
+            Grid.Column="0"
+            Style="{StaticResource ButtonOutline}"
+            Margin="8"/>
+
+        <Button Text="Find Closest" 
+            IsEnabled="{Binding IsNotBusy}"
+            Grid.Row="1"
+            Grid.Column="1"
+            Style="{StaticResource ButtonOutline}"
+            Margin="8"/>
+
+        <!-- Add this -->
+        <ActivityIndicator IsVisible="{Binding IsBusy}"
+                       IsRunning="{Binding IsBusy}"
+                       HorizontalOptions="Fill"
+                       VerticalOptions="Center"
+		               Color="{StaticResource Primary}"
+                       Grid.RowSpan="2"
+                       Grid.ColumnSpan="2"/>
+    </Grid>
+
+</ContentPage>
