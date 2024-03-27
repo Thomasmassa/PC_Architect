@@ -19,24 +19,14 @@ namespace PC_Architect.ViewModel
         public string Image { get; set; }
         public string Name { get; set; }
 
-        private ObservableCollection<IBindable>? _bindables;
-        private IBindable? _selectedBindable;
+        private ObservableCollection<IBindable>? _bindables;//Dit is een lijst van IBindable objecten
 
         public ObservableCollection<IBindable>? Bindables
         {
             get => _bindables;
-            set 
+            set //Deze setter wordt aangeroepen wanneer de Bindables property wordt aangepast
             {
                 _bindables = value;
-                OnPropertyChanged();
-            }
-        }
-        public IBindable? SelectedBindable
-        {
-            get => _selectedBindable;
-            set
-            {
-                _selectedBindable = value;
                 OnPropertyChanged();
             }
         }
@@ -60,7 +50,7 @@ namespace PC_Architect.ViewModel
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
-        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)//het event doet een check of de property is aangepast
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
