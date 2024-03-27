@@ -4,8 +4,9 @@ Student(e):
 
 Overzicht activiteiten
 
-Week 6 (18/03): ..... uren:
-
+Week 6 (18/03): 8 uren:
+Het aanmaken en testen van een azure database(lang aan gezeten doordat ik geen sql server kon aanmaken op german central west server)
+ en het maken van een layout
 
 
 Week 7 (25/03): ..... uren:
