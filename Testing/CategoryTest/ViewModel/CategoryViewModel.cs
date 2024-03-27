@@ -1,4 +1,5 @@
 ﻿using CategoryTest.Model;
+using CategoryTest.Service;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.Networking;
 using System;
@@ -13,14 +14,24 @@ namespace CategoryTest.ViewModel
 {
     public partial class CategoryViewModel : BaseViewModel
     {
-        public ObservableCollection<Category> Categories { get; set; } = new ObservableCollection<Category>();
+        public ObservableCollection<Category> Categories { get; } = new();
 
         ICategorieService categorieService;
 
-        public CategoryViewModel(ICategorieService categoryService)
+        //public CategoryViewModel(ICategorieService categoryService)
+        //{
+        //    Title = "Categories";
+        //    this.categorieService = categoryService;
+
+        //    _ = GetAllAsync();
+        //}
+
+        public CategoryViewModel(ICategorieService categorieService)
         {
             Title = "Categories";
-            this.categorieService = categoryService;
+            this.categorieService = categorieService;
+
+            _ = GetAllAsync();
         }
 
         [RelayCommand]
@@ -32,7 +43,7 @@ namespace CategoryTest.ViewModel
             try
             {
                 IsBusy = true;
-                var categories = await categorieService.GetAll(); 
+                var categories = await categorieService.GetAll();
 
                 if (categories == null)
                     return;

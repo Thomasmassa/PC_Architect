@@ -7,17 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CategoryTest
+namespace CategoryTest.Service
 {
     public class FirebaseCategoryService : ICategorieService
     {
-        private const string BaseUrl = "https://monkeyfinder-3e0ef-default-rtdb.europe-west1.firebasedatabase.app/";
+        private const string BaseUrl = "https://pcarchitectparts-default-rtdb.europe-west1.firebasedatabase.app/";
 
         private readonly ChildQuery _query;
 
         public FirebaseCategoryService()
         {
-            string path = "categories";
+            string path = "cpu";
             _query = new FirebaseClient(BaseUrl).Child(path);
         }
 

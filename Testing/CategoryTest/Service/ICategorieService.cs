@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CategoryTest.Model;
 
-namespace CategoryTest
+namespace CategoryTest.Service
 {
     public interface ICategorieService
     {
