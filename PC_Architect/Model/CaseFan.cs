@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PC_Architect.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace PC_Architect.Model
 {
-    class CaseFan
+    class CaseFan : IBindable
     {
-        public string name { get; set; }
-        public double? price { get; set; }
-        public int size { get; set; }
-        public string color { get; set; }
-        public object rpm { get; set; }
-        public object airflow { get; set; }
-        public object noise_level { get; set; }
-        public bool pwm { get; set; } = false;
+        public string Name { get; set; }
+        public double? Price { get; set; }
+        public int Size { get; set; }
+        public string Color { get; set; }
+        public object Rpm { get; set; }
+        public object Airflow { get; set; }
+        public object NoiseLevel { get; set; }
+        public bool Pwm { get; set; } = false;
     }
 }

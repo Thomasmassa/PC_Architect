@@ -8,12 +8,12 @@ namespace PC_Architect.Model
 {
     class Motherboard
     {
-        public string name { get; set; }
-        public double price { get; set; }
-        public string socket { get; set; }
-        public string form_factor { get; set; }
-        public int max_memory { get; set; }
-        public int memory_slots { get; set; }
-        public string color { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public string Socket { get; set; }
+        public string FormFactor { get; set; }
+        public int MaxMemory { get; set; }
+        public int MemorySlots { get; set; }
+        public string Color { get; set; }
     }
 }

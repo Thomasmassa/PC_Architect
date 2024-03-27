@@ -8,12 +8,12 @@ namespace PC_Architect.Model
 {
     class ExternalStorage
     {
-        public string name { get; set; }
-        public double? price { get; set; }
-        public string type { get; set; }
-        public string @interface { get; set; }
-        public int capacity { get; set; }
-        public double? price_per_gb { get; set; }
-        public string color { get; set; } = "";
+        public string Name { get; set; }
+        public double? Price { get; set; }
+        public string Type { get; set; }
+        public string Interface { get; set; }
+        public int Capacity { get; set; }
+        public double? PricePerGb { get; set; }
+        public string Color { get; set; } = "";
     }
 }

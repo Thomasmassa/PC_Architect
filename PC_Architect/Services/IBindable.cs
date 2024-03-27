@@ -1,5 +1,4 @@
-﻿using PC_Architect.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace PC_Architect.Services
 {
-    public interface IPartsService
+    internal interface IBindable
     {
-        Task<List<Cpu>?> GetCPUs();
+        string Name { get; }
+        string ImageSource { get; }
     }
 }

@@ -8,13 +8,13 @@ namespace PC_Architect.Model
 {
     class Gpu
     {
-        public string name { get; set; }
-        public double? price { get; set; }
-        public string chipset { get; set; }
-        public int memory { get; set; }
-        public int core_clock { get; set; }
-        public int? boost_clock { get; set; }
-        public string color { get; set; }
-        public int length { get; set; }
+        public string Name { get; set; }
+        public double? Price { get; set; }
+        public string Chipset { get; set; }
+        public int Memory { get; set; }
+        public int CoreClock { get; set; }
+        public int? BoostClock { get; set; }
+        public string Color { get; set; }
+        public int Length { get; set; }
     }
 }

@@ -8,11 +8,11 @@ namespace PC_Architect.Model
 {
     class CpuCooler
     {
-        public string name { get; set; }
-        public double? price { get; set; }
-        public object rpm { get; set; }
-        public object noise_level { get; set; }
-        public string color { get; set; }
-        public int? size { get; set; }
+        public string Name { get; set; }
+        public double? Price { get; set; }
+        public object Rpm { get; set; }
+        public object NoiseLevel { get; set; }
+        public string Color { get; set; }
+        public int? Size { get; set; }
     }
 }

@@ -8,9 +8,9 @@ namespace PC_Architect.Model
 {
     class OS
     {
-        public string name { get; set; }
-        public double? price { get; set; }
-        public object mode { get; set; }
-        public int max_memory { get; set; }
+        public string Name { get; set; }
+        public double? Price { get; set; }
+        public object Mode { get; set; }
+        public int MaxMemory { get; set; }
     }
 }

@@ -8,13 +8,13 @@ namespace PC_Architect.Model
 {
     class Memory
     {
-        public string name { get; set; }
-        public double price { get; set; }
-        public List<int> speed { get; set; }
-        public List<int> modules { get; set; }
-        public double price_per_gb { get; set; }
-        public string color { get; set; }
-        public double first_word_latency { get; set; }
-        public int cas_latency { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public List<int> Speed { get; set; }
+        public List<int> Modules { get; set; }
+        public double PricePerGb { get; set; }
+        public string Color { get; set; }
+        public double FirstWordLatency { get; set; }
+        public int CasLatency { get; set; }
     }
 }

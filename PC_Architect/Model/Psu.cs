@@ -8,12 +8,12 @@ namespace PC_Architect.Model
 {
     class Psu
     {
-        public string name { get; set; }
-        public double? price { get; set; }
-        public string type { get; set; }
-        public string efficiency { get; set; }
-        public int wattage { get; set; }
-        public object modular { get; set; }
-        public string color { get; set; }
+        public string Name { get; set; }
+        public double? Price { get; set; }
+        public string Type { get; set; }
+        public string Efficiency { get; set; }
+        public int Wattage { get; set; }
+        public object Modular { get; set; }
+        public string Color { get; set; }
     }
 }
