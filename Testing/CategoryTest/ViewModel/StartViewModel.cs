@@ -10,18 +10,18 @@ namespace CategoryTest.ViewModel
 {
     public class StartViewModel : BaseViewModel
     {
-        private readonly INavigationService _navigationService;
+        private INavigationService _navigationService;
 
         public ICommand NavigateCommand { get; }
 
         public StartViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            Title = "Start";
+            Title = "Dit is de eerste pagina van de app";
             NavigateCommand = new Command(async () => await GetMainPageAsync());
         }
 
-        async Task GetMainPageAsync()
+        private async Task GetMainPageAsync()
         {
             await _navigationService.NavigateAsync("MainPage");
         }

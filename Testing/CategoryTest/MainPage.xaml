@@ -5,7 +5,6 @@
              xmlns:viewModel="clr-namespace:CategoryTest.ViewModel"
              x:Class="CategoryTest.MainPage"
              Shell.PresentationMode="Animated"
-             Shell.NavBarIsVisible="False"
              Title="{Binding Title}">
 
     <Grid
