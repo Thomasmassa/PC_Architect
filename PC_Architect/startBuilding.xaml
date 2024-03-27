@@ -13,13 +13,13 @@
 
             <Grid.RowDefinitions>
                 <!-- bovenaan -->
-                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
                 <!-- knop -->
                 <RowDefinition Height="Auto" />
                 <!--save exit-->
-                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
                 <!-- Lege ruimte -->
-                <RowDefinition Height="2*" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <!--title-->
@@ -27,7 +27,7 @@
                    FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
                    Margin="0,20,0,20"/>
 
-
+            <!--CARDS-->
             <Grid Grid.Row="1">
                 <!--Grid-->
                 <Grid.RowDefinitions>
@@ -72,7 +72,7 @@
                             <ColumnDefinition Width="4*" />
                         </Grid.ColumnDefinitions>
 
-                        <Image Source="fan.png" Grid.Column="0"/>
+                        <Image Source="cpu_cooler.png" Grid.Column="0"/>
                         <Label Text="CPU COOLER" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
                         HorizontalOptions="CenterAndExpand" FontSize="Large"/>
                         <Button Grid.ColumnSpan="3"
@@ -210,10 +210,11 @@
                 <!--fan-->
 
             </Grid>
+            <!--CARDS-->
 
             <Grid Grid.Row="2">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -234,7 +235,8 @@
                     Grid.Row="7"
                     Grid.Column="2"
                     Style="{StaticResource ButtonOutline}"
-                    Margin="8"/>
+                    Margin="8"
+                    Clicked="OnExitClicked"/>
             </Grid>
 
             <!-- Add this -->
