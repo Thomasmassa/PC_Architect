@@ -9,7 +9,7 @@ namespace PC_Architect.Model
     public class Cpu
     {
         public string name { get; set; }
-        public double? price { get; set; }
+        public double price { get; set; }
         public int core_count { get; set; }
         public double core_clock { get; set; }
         public double boost_clock { get; set; }
@@ -17,5 +17,6 @@ namespace PC_Architect.Model
         public string graphics { get; set; }
         public bool smt { get; set; }
         public string socket { get; set; }
+        public string img { get; set; }
     }
 }
