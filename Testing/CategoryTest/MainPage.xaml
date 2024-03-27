@@ -14,10 +14,10 @@
         RowDefinitions="*,Auto"
         RowSpacing="0">
 
-        <ContentView>
+        <ContentView Grid.ColumnSpan="2">
             <CollectionView ItemsSource="{Binding Categories}"
-                            Grid.Row="0"
                             SelectionMode="None">
+                
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical"/>
                 </CollectionView.ItemsLayout>
@@ -36,26 +36,28 @@
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Category">
-                        <Grid Padding="10" Grid.ColumnSpan="2">
+                        <Grid Padding="10">
                             <Frame HeightRequest="125" Style="{StaticResource CardView}">
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer CommandParameter="{Binding .}"
                                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewModel:CategoryViewModel}}, Path=GoToDetailsCommand}"/>
                                 </Frame.GestureRecognizers>
-                                <Grid Padding="0" ColumnDefinitions="125,*">
+                                <Grid Padding="10" ColumnDefinitions="125,*">
                                     <Image Aspect="AspectFill" Source="{Binding Image}"
-                                           WidthRequest="125"
-                                           HeightRequest="125"/>
+                                           WidthRequest="100"
+                                           HeightRequest="100"/>
                                     <VerticalStackLayout Grid.Column="1"
                                                          VerticalOptions="Center"
                                                          Padding="10">
-                                        <Label Style="{StaticResource LargeLabel}" Text="{Binding Name}" />
+                                        <Label Style="{StaticResource LargeLabel}" Text="{Binding Name}" 
+                                               HorizontalOptions="CenterAndExpand"/>
                                     </VerticalStackLayout>
                                 </Grid>
                             </Frame>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
+                
             </CollectionView>
         </ContentView>
 
