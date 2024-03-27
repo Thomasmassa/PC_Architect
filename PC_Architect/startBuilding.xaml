@@ -7,12 +7,12 @@
              x:DataType="viewModel:StartBuildViewModel"
              Shell.PresentationMode="Animated"
              Shell.NavBarIsVisible="False">
-    <ScrollView>
-        <CollectionView ItemsSource="{Binding Bindables}">
+    <StackLayout>
+        <CollectionView ItemsSource="{Binding Bindables}" VerticalOptions="FillAndExpand">
             <CollectionView.Header>
                 <Label Text="Start Building" TextColor="DarkOrange"
-               FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
-               Margin="0,20,0,20"/>
+                       FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
+                       Margin="0,20,0,20"/>
             </CollectionView.Header>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -33,43 +33,41 @@
 
                                 <Image Source="{Binding SelectedBindable.ImageSource}" Grid.Column="0"/>
                                 <Label Text="{Binding SelectedBindable.Name}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
-                                    HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
                                 <Button Grid.ColumnSpan="3"
-                                    VerticalOptions="FillAndExpand"
-                                    HorizontalOptions="FillAndExpand"
-                                    BackgroundColor="Transparent"/>
+                                        VerticalOptions="FillAndExpand"
+                                        HorizontalOptions="FillAndExpand"
+                                        BackgroundColor="Transparent"/>
                             </Grid>
                         </Frame>
-
                         <!-- Your existing Grid with Buttons -->
-                        <Grid Grid.Row="1">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-
-                            <!-- SAVE AND EXIT -->
-                            <Button Text="Save" 
-                                IsEnabled="True"
-                                Grid.Row="7"
-                                Grid.Column="0"
-                                Style="{StaticResource ButtonOutline}"
-                                Margin="8"/>
-
-                            <Button Text="Exit" 
-                                IsEnabled="True"
-                                Grid.Row="7"
-                                Grid.Column="2"
-                                Style="{StaticResource ButtonOutline}"
-                                Margin="8"/>
-                        </Grid>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- SAVE AND EXIT -->
+            <Button Text="Save" 
+                IsEnabled="True"
+                Grid.Row="7"
+                Grid.Column="0"
+                Style="{StaticResource ButtonOutline}"
+                Margin="8"/>
+            <Button Text="Exit" 
+                IsEnabled="True"
+                Grid.Row="7"
+                Grid.Column="2"
+                Style="{StaticResource ButtonOutline}"
+                Margin="8"/>
+        </Grid>
+    </StackLayout>
 </ContentPage>

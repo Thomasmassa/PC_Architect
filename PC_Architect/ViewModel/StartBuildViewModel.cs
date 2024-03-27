@@ -40,11 +40,20 @@ namespace PC_Architect.ViewModel
 
         public StartBuildViewModel()
         {
-            Bindables = new ObservableCollection<IBindable>
-            {
+            Bindables =
+            [
                 new Cpu(){ Name = "CPU", ImageSource = "cpu.png" },
-                new Motherboard(){ Name = "Motherboard", ImageSource = "motherboard.png" }
-            };
+                new CpuCooler(){ Name = "CPU Cooler", ImageSource = "cpu_cooler.png" },
+                new Motherboard(){ Name = "Motherboard", ImageSource = "motherboard.png" },
+                new Memory(){ Name = "Memory", ImageSource = "memory.png" },
+                new Gpu(){ Name = "GPU", ImageSource = "gpu.png" },
+                new InternalStorage(){ Name = "Storage", ImageSource = "ssd.png" },
+                new ExternalStorage(){ Name = "External Storage", ImageSource = "hdd.png" },
+                new Psu(){ Name = "PSU", ImageSource = "psu.png" },
+                new Case(){ Name = "Case", ImageSource = "case_tower.png" },
+                new CaseFan(){ Name = "Case Fan", ImageSource = "case_fan.png" },
+                new OS(){ Name = "OS", ImageSource = "os.png" }
+            ];
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
