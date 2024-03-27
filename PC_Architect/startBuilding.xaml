@@ -6,10 +6,9 @@
              x:Class="PC_Architect.startBuilding"
              x:DataType="viewModel:StartBuildViewModel"
              Shell.PresentationMode="Animated"
-             Shell.NavBarIsVisible="False"
-             Title="{Binding Title}">
+             Shell.NavBarIsVisible="False">
     <ScrollView>
-        <CollectionView ItemsSource="{Binding YourItemsSource}">
+        <CollectionView ItemsSource="{Binding Bindables}">
             <CollectionView.Header>
                 <Label Text="Start Building" TextColor="DarkOrange"
                FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
@@ -32,8 +31,8 @@
                                     <ColumnDefinition Width="4*" />
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="{Binding ImageSource}" Grid.Column="0"/>
-                                <Label Text="{Binding LabelText}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                                <Image Source="{Binding SelectedBindable.ImageSource}" Grid.Column="0"/>
+                                <Label Text="{Binding SelectedBindable.Name}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
                                     HorizontalOptions="CenterAndExpand" FontSize="Large"/>
                                 <Button Grid.ColumnSpan="3"
                                     VerticalOptions="FillAndExpand"
@@ -55,19 +54,18 @@
 
                             <!-- SAVE AND EXIT -->
                             <Button Text="Save" 
-                                IsEnabled="{Binding IsNotBusy}"
+                                IsEnabled="True"
                                 Grid.Row="7"
                                 Grid.Column="0"
                                 Style="{StaticResource ButtonOutline}"
                                 Margin="8"/>
 
                             <Button Text="Exit" 
-                                IsEnabled="{Binding IsNotBusy}"
+                                IsEnabled="True"
                                 Grid.Row="7"
                                 Grid.Column="2"
                                 Style="{StaticResource ButtonOutline}"
-                                Margin="8"
-                                Clicked="OnExitClicked"/>
+                                Margin="8"/>
                         </Grid>
                     </Grid>
                 </DataTemplate>

@@ -17,6 +17,7 @@ namespace PC_Architect.ViewModel
     public partial class StartBuildViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<IBindable> _bindables;
+        private IBindable _selectedBindable;
 
         public ObservableCollection<IBindable> Bindables
         {
@@ -27,6 +28,16 @@ namespace PC_Architect.ViewModel
                 OnpropertyChanged();
             }
         }
+        public IBindable SelectedBindable
+        {
+            get => _selectedBindable;
+            set
+            {
+                _selectedBindable = value;
+                OnpropertyChanged();
+            }
+        }
+
         public StartBuildViewModel()
         {
             Bindables = new ObservableCollection<IBindable>
