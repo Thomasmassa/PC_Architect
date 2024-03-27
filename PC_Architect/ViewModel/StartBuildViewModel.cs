@@ -16,48 +16,53 @@ namespace PC_Architect.ViewModel
 {
     public partial class StartBuildViewModel : INotifyPropertyChanged
     {
-        private ObservableCollection<IBindable> _bindables;
-        private IBindable _selectedBindable;
+        public string Image { get; set; }
+        public string Name { get; set; }
 
-        public ObservableCollection<IBindable> Bindables
+        private ObservableCollection<IBindable>? _bindables;
+        private IBindable? _selectedBindable;
+
+        public ObservableCollection<IBindable>? Bindables
         {
             get => _bindables;
             set 
             {
                 _bindables = value;
-                OnpropertyChanged();
+                OnPropertyChanged();
             }
         }
-        public IBindable SelectedBindable
+        public IBindable? SelectedBindable
         {
             get => _selectedBindable;
             set
             {
                 _selectedBindable = value;
-                OnpropertyChanged();
+                OnPropertyChanged();
             }
         }
 
         public StartBuildViewModel()
         {
-            Bindables =
-            [
-                new Cpu(){ Name = "CPU", ImageSource = "cpu.png" },
-                new CpuCooler(){ Name = "CPU Cooler", ImageSource = "cpu_cooler.png" },
-                new Motherboard(){ Name = "Motherboard", ImageSource = "motherboard.png" },
-                new Memory(){ Name = "Memory", ImageSource = "memory.png" },
-                new Gpu(){ Name = "GPU", ImageSource = "gpu.png" },
-                new InternalStorage(){ Name = "Storage", ImageSource = "ssd.png" },
-                new ExternalStorage(){ Name = "External Storage", ImageSource = "hdd.png" },
-                new Psu(){ Name = "PSU", ImageSource = "psu.png" },
-                new Case(){ Name = "Case", ImageSource = "case_tower.png" },
-                new CaseFan(){ Name = "Case Fan", ImageSource = "case_fan.png" },
-                new OS(){ Name = "OS", ImageSource = "os.png" }
-            ];
+            Bindables = new ObservableCollection<IBindable>
+            {
+                new Cpu() { Name = "CPU", Image = "cpu.png" },
+                new CpuCooler() { Name = "CPU Cooler", Image = "cpu_cooler.png" },
+                new Motherboard() { Name = "Motherboard", Image = "motherboard.png" },
+                new Memory() { Name = "Memory", Image = "memory.png" },
+                new Gpu() { Name = "GPU", Image = "gpu.png" },
+                new InternalStorage() { Name = "Storage", Image = "ssd.png" },
+                new ExternalStorage() { Name = "External Storage", Image = "hdd.png" },
+                new Psu() { Name = "PSU", Image = "psu.png" },
+                new Case() { Name = "Case", Image = "case_tower.png" },
+                new CaseFan() { Name = "Case Fan", Image = "case_fan.png" },
+                new OS() { Name = "OS", Image = "os.png" }
+            };
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnpropertyChanged([CallerMemberName] string propertyName = null) =>
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+        {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }

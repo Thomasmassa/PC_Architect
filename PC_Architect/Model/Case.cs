@@ -9,13 +9,13 @@ namespace PC_Architect.Model
 {
     class Case : IBindable
     {
-        public string ImageSource { get; set; }
-        public string Name { get; set; }
+        public string Image { get; set; } = "";
+        public string Name { get; set; } = "";
         public double? Price { get; set; }
-        public string Type { get; set; }
-        public string Color { get; set; }
-        public object Psu { get; set; }
-        public string SidePanel { get; set; }
+        public string Type { get; set; } = "";
+        public string Color { get; set; } = "";
+        public object Psu { get; set; } = "";
+        public string SidePanel { get; set; } = "";
         public double? ExternalVolume { get; set; }
         public int Internal35Bays { get; set; }
     }

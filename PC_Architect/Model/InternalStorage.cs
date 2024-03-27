@@ -9,14 +9,14 @@ namespace PC_Architect.Model
 {
     class InternalStorage : IBindable
     {
-        public string ImageSource { get; set; }
-        public string Name { get; set; }
+        public string Image { get; set; } = "";   
+        public string Name { get; set; } = "";  
         public double? Price { get; set; }
         public int Capacity { get; set; }
         public double? PricePerGb { get; set; }
-        public object Type { get; set; }
+        public object Type { get; set; } = "";
         public int? Cache { get; set; }
-        public object FormFactor { get; set; }
-        public string Interface { get; set; }
+        public object FormFactor { get; set; } = "";
+        public string Interface { get; set; } = "";
     }
 }

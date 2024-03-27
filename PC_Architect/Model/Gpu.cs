@@ -9,14 +9,14 @@ namespace PC_Architect.Model
 {
     class Gpu : IBindable
     {
-        public string ImageSource { get; set; }
-        public string Name { get; set; }
+        public string Image { get; set; } = "";
+        public string Name { get; set; } = "";
         public double? Price { get; set; }
-        public string Chipset { get; set; }
+        public string Chipset { get; set; } = "";
         public int Memory { get; set; }
         public int CoreClock { get; set; }
         public int? BoostClock { get; set; }
-        public string Color { get; set; }
+        public string Color { get; set; } = "";
         public int Length { get; set; }
     }
 }

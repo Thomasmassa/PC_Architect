@@ -9,6 +9,6 @@ namespace PC_Architect.Services
     public interface IBindable
     {
         string Name { get; }
-        string ImageSource { get; }
+        string Image { get; }
     }
 }

@@ -9,11 +9,11 @@ namespace PC_Architect.Model
 {
     class ExternalStorage : IBindable
     {
-        public string ImageSource { get; set; }
-        public string Name { get; set; }
+        public string Image { get; set; } = "";
+        public string Name { get; set; } = "";
         public double? Price { get; set; }
-        public string Type { get; set; }
-        public string Interface { get; set; }
+        public string Type { get; set; } = "";
+        public string Interface { get; set; } = "";
         public int Capacity { get; set; }
         public double? PricePerGb { get; set; }
         public string Color { get; set; } = "";

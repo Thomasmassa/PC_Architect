@@ -9,13 +9,13 @@ namespace PC_Architect.Model
 {
     class Memory : IBindable
     {
-        public string ImageSource { get; set; }
-        public string Name { get; set; }
+        public string Image { get; set; } = "";
+        public string Name { get; set; } = "";
         public double Price { get; set; }
-        public List<int> Speed { get; set; }
-        public List<int> Modules { get; set; }
+        public List<int> Speed { get; set; } = new List<int>();
+        public List<int> Modules { get; set; } = new List<int>();
         public double PricePerGb { get; set; }
-        public string Color { get; set; }
+        public string Color { get; set; } = "";
         public double FirstWordLatency { get; set; }
         public int CasLatency { get; set; }
     }

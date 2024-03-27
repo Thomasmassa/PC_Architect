@@ -9,10 +9,10 @@ namespace PC_Architect.Model
 {
     class OS : IBindable
     {
-        public string ImageSource { get; set; }
-        public string Name { get; set; }
+        public string Image { get; set; } = "";
+        public string Name { get; set; } = "";
         public double? Price { get; set; }
-        public object Mode { get; set; }
+        public object Mode { get; set; } = "";
         public int MaxMemory { get; set; }
     }
 }

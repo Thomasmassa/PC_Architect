@@ -7,6 +7,7 @@
              x:DataType="viewModel:StartBuildViewModel"
              Shell.PresentationMode="Animated"
              Shell.NavBarIsVisible="False">
+    
     <StackLayout>
         <CollectionView ItemsSource="{Binding Bindables}" VerticalOptions="FillAndExpand">
             <CollectionView.Header>
@@ -24,15 +25,15 @@
                         </Grid.RowDefinitions>
 
                         <!-- Your existing Frame and Grid -->
-                        <Frame Grid.Row="0" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,20,0,0">
+                        <Frame Grid.Row="0" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10">
                             <Grid BackgroundColor="#D4D4D4">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="4*" />
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="{Binding SelectedBindable.ImageSource}" Grid.Column="0"/>
-                                <Label Text="{Binding SelectedBindable.Name}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                                <Image Source="{Binding Image}" Grid.Column="0"/>
+                                <Label Text="{Binding Name}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
                                         HorizontalOptions="CenterAndExpand" FontSize="Large"/>
                                 <Button Grid.ColumnSpan="3"
                                         VerticalOptions="FillAndExpand"
@@ -57,13 +58,13 @@
 
             <!-- SAVE AND EXIT -->
             <Button Text="Save" 
-                IsEnabled="True"
+                IsEnabled="False"
                 Grid.Row="7"
                 Grid.Column="0"
                 Style="{StaticResource ButtonOutline}"
                 Margin="8"/>
             <Button Text="Exit" 
-                IsEnabled="True"
+                IsEnabled="False"
                 Grid.Row="7"
                 Grid.Column="2"
                 Style="{StaticResource ButtonOutline}"

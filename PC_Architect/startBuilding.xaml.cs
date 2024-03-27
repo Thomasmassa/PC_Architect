@@ -7,7 +7,7 @@ public partial class startBuilding : ContentPage
 	public startBuilding()
 	{
 		InitializeComponent();
-		BindingContext = new StartBuildViewModel();
+		this.BindingContext = new StartBuildViewModel();
 	}
 
 
