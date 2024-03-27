@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CategoryTest.ViewModel;
+using Microsoft.Extensions.Logging;
 
 namespace CategoryTest
 {

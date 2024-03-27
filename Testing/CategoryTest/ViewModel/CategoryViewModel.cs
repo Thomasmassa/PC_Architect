@@ -24,7 +24,7 @@ namespace CategoryTest.ViewModel
         }
 
         [RelayCommand]
-        async Task GetAllAsync()
+        async Task GetAllAsync() // GetAllCommand
         {
             if (IsBusy)
                 return;
@@ -45,7 +45,7 @@ namespace CategoryTest.ViewModel
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"Unable to get monkeys: {ex.Message}");
+                Debug.WriteLine($"Unable to get categories: {ex.Message}");
                 await Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
             }
             finally
