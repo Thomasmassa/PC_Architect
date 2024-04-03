@@ -54,5 +54,17 @@ namespace PC_Architect.ViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        [RelayCommand]
+        private void PageAppearing()
+        {
+
+        }
+
+        [RelayCommand]
+        private void PageNavigated(NavigatedToEventArgs args)
+        {
+
+        }
     }
 }
