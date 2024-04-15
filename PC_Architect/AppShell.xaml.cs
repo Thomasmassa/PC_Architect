@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            //Routing.RegisterRoute(nameof(CPUPage), typeof(CPUPage));
+            Routing.RegisterRoute(nameof(PartsList), typeof(PartsList));
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PC_Architect.Model
 {
-    class CaseFan : IBindable
+    class CaseFan : IComponent
     {
         public string Image { get; set; } = "";
         public string Name { get; set; } = "";

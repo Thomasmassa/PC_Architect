@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PC_Architect.Model
 {
-    class Psu : IBindable
+    class Psu : IComponent
     {
         public string Image { get; set; } = "";
         public string Name { get; set; } = "";

@@ -1,70 +1,41 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.Input;
 using PC_Architect.Model;
 using PC_Architect.Services;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
+using System.Windows.Input;
 
 namespace PC_Architect.ViewModel
 {
-    public partial class StartBuildViewModel : INotifyPropertyChanged
+    public partial class StartBuildViewModel : BaseViewModel
     {
-        public string Image { get; set; }
-        public string Name { get; set; }
-
-        private ObservableCollection<IBindable>? _bindables;//Dit is een lijst van IBindable objecten
-
-        public ObservableCollection<IBindable>? Bindables
-        {
-            get => _bindables;
-            set //Deze setter wordt aangeroepen wanneer de Bindables property wordt aangepast
-            {
-                _bindables = value;
-                OnPropertyChanged();
-            }
-        }
+        public string? Name { get; set; }
+        public string? Image { get; set; }
+        public ObservableCollection<IComponent> Components { get; set; }
 
         public StartBuildViewModel()
         {
-            Bindables = new ObservableCollection<IBindable>
-            {
-                new Cpu() { Name = "CPU", Image = "cpu.png" },
-                new CpuCooler() { Name = "CPU Cooler", Image = "cpu_cooler.png" },
-                new Motherboard() { Name = "Motherboard", Image = "motherboard.png" },
-                new Memory() { Name = "Memory", Image = "memory.png" },
-                new Gpu() { Name = "GPU", Image = "gpu.png" },
-                new InternalStorage() { Name = "Storage", Image = "ssd.png" },
-                new ExternalStorage() { Name = "External Storage", Image = "hdd.png" },
-                new Psu() { Name = "PSU", Image = "psu.png" },
-                new Case() { Name = "Case", Image = "case_tower.png" },
-                new CaseFan() { Name = "Case Fan", Image = "case_fan.png" },
-                new OS() { Name = "OS", Image = "os.png" }
-            };
+            Components = new ObservableCollection<IComponent>();
+            AddPresets();
         }
 
-        public event PropertyChangedEventHandler? PropertyChanged;
-        protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)//het event doet een check of de property is aangepast
+        public void AddPresets()
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            Components.Add(new Cpu { Name = "CPU", Image = "cpu.png" });
+            Components.Add(new CpuCooler { Name = "CPU COOLER", Image = "cpu_cooler.png" });
+            Components.Add(new Motherboard { Name = "MOTHERBOARD", Image = "motherboard.png" });
+            Components.Add(new Memory { Name = "MEMORY", Image = "memory.png" });
+            Components.Add(new Gpu { Name = "GPU", Image = "gpu.png" });
+            Components.Add(new Memory { Name = "SSD", Image = "ssd.png" });
+            Components.Add(new Memory { Name = "HDD", Image = "hdd.png" });
         }
 
         [RelayCommand]
-        private void PageAppearing()
+        async Task GoToPartsList(IComponent component)
         {
+            if (component == null)
+                return;
 
-        }
-
-        [RelayCommand]
-        private void PageNavigated(NavigatedToEventArgs args)
-        {
-
+            await Shell.Current.GoToAsync(nameof(PartsList));
         }
     }
 }

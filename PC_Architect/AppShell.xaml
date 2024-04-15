@@ -32,9 +32,9 @@
         Title="Start Building"
         ContentTemplate="{DataTemplate local:startBuilding}"
         Route="startBuilding" />
-    <!--<ShellContent
+    <ShellContent
         Title="Parts List"
-        ContentTemplate="{DataTemplate local:PartsListPage}"
-        Route="AboutPage" />-->
+        ContentTemplate="{DataTemplate local:PartsList}"
+        Route="PartsList" />
 
 </Shell>

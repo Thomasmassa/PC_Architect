@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PC_Architect.Services
 {
-    public interface IBindable
+    public interface IComponent
     {
         string Name { get; }
         string Image { get; }
