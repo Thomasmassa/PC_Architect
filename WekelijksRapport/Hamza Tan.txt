@@ -12,7 +12,9 @@ Informatie opgezocht over .net maui en implementatie van de basics (Model, Servi
 
 Week 7 (25/03): 4 uren:
 
-
+Al even geleden dat ik hier nog aan heb gewerkt, maar vermoed dat ik die week de tweede pagina met de categoriën heb aangemaakt.
+Ook een manier gevonden om tussen de twee pagina's te navigeren. 
+Verder heb ik die week niet al teveel gedaan vrees ik.
 
 Week 8 (15/04): ..... uren:
 
