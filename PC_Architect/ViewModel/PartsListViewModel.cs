@@ -37,7 +37,6 @@ namespace PC_Architect.ViewModel
             string details = string.Empty;
             Title = "CPU LIST";
 
-
             foreach (var part in parts)
             {
                 if (part == null)
