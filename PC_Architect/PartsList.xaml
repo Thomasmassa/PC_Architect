@@ -4,23 +4,25 @@
              x:Class="PC_Architect.PartsList"
              xmlns:viewmodel="clr-namespace:PC_Architect.ViewModel"
              xmlns:services="clr-namespace:PC_Architect.Services"
+             xmlns:model="clr-namespace:PC_Architect.Model"
              x:DataType="viewmodel:PartsListViewModel"
              Shell.PresentationMode="Animated"
              Shell.NavBarIsVisible="False"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
     </ContentPage.Behaviors>
 
     <StackLayout>
-        <CollectionView ItemsSource="{Binding PartViewModels}" VerticalOptions="FillAndExpand">
+        <CollectionView ItemsSource="{Binding Part}" VerticalOptions="FillAndExpand">
             <CollectionView.Header>
                 <Label Text="{Binding Title}" TextColor="DarkOrange"
                    FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
                    Margin="0,20,0,20"/>
             </CollectionView.Header>
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="viewmodel:PartViewModel">
+                <DataTemplate x:DataType="model:Part">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>

@@ -9,9 +9,6 @@ namespace PC_Architect.ViewModel
 {
     public partial class StartBuildViewModel : BaseViewModel
     {
-        public string? Name { get; set; }
-        public string? Image { get; set; }
-
         private readonly IComponentService _componentService;
         public ObservableCollection<IComponent> Components { get; set; }
 

@@ -1,0 +1,132 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Thermalright Peerless Assassin 120 SE",
+    "price": 33.9,
+    "rpm": 1550,
+    "noise_level": 25.6,
+    "color": "Black",
+    "size": null,
+    "image": ""
+  },
+  "2": {
+    "id": 2,
+    "name": "Cooler Master MASTERLIQUID ML240L RGB V2",
+    "price": 89.99,
+    "rpm": [650, 1800],
+    "noise_level": [6, 27],
+    "color": "Black",
+    "size": 240,
+    "image": ""
+  },
+  "3": {
+    "id": 3,
+    "name": "Cooler Master Hyper 212 Black Edition",
+    "price": null,
+    "rpm": [800, 2000],
+    "noise_level": [6.5, 26],
+    "color": null,
+    "size": null,
+    "image": ""
+  },
+  "4": {
+    "id": 4,
+    "name": "Corsair iCUE H150i ELITE CAPELLIX XT",
+    "price": 189.99,
+    "rpm": [550, 2100],
+    "noise_level": [5, 34.1],
+    "color": "Black",
+    "size": 360,
+    "image": ""
+  },
+  "5": {
+    "id": 5,
+    "name": "NZXT Kraken Elite 360 RGB",
+    "price": 282.63,
+    "rpm": [500, 1800],
+    "noise_level": [17.9, 30.6],
+    "color": "White",
+    "size": 360,
+    "image": ""
+  },
+  "6": {
+    "id": 6,
+    "name": "be quiet! Dark Rock Pro 4",
+    "price": 91.99,
+    "rpm": 1500,
+    "noise_level": [12.8, 24.3],
+    "color": "Black",
+    "size": null,
+    "image": ""
+  },
+  "7": {
+    "id": 7,
+    "name": "Deepcool GAMMAXX AG400 ARGB",
+    "price": 29.99,
+    "rpm": [500, 2000],
+    "noise_level": 31.6,
+    "color": "Black",
+    "size": null,
+    "image": ""
+  },
+  "8": {
+    "id": 8,
+    "name": "NZXT Kraken 240",
+    "price": 127.99,
+    "rpm": [500, 1800],
+    "noise_level": [17.9, 30.6],
+    "color": "Black",
+    "size": 240,
+    "image": ""
+  },
+  "9": {
+    "id": 9,
+    "name": "Noctua NH-D15 chromax.black",
+    "price": 119.95,
+    "rpm": [300, 1500],
+    "noise_level": [19.2, 24.6],
+    "color": "Black",
+    "size": null,
+    "image": ""
+  },
+  "10": {
+    "id": 10,
+    "name": "NZXT Kraken Elite 360 RGB",
+    "price": 276.5,
+    "rpm": [500, 1800],
+    "noise_level": [17.9, 30.6],
+    "color": "Black",
+    "size": 360,
+    "image": ""
+  },
+  "11": {
+    "id": 11,
+    "name": "Thermalright Phantom Spirit 120 SE",
+    "price": 35.9,
+    "rpm": 1500,
+    "noise_level": 25.6,
+    "color": "Black / Silver",
+    "size": null,
+    "image": ""
+  },
+  "12": {
+    "id": 12,
+    "name": "ARCTIC Liquid Freezer II 360",
+    "price": 180.58,
+    "rpm": [800, 2000],
+    "noise_level": null,
+    "color": "Black",
+    "size": 360,
+    "image": ""
+  },
+  "13": {
+    "id": 13,
+    "name": "NZXT Kraken 240 RGB",
+    "price": 172.99,
+    "rpm": [500, 1800],
+    "noise_level": [17.9, 30.6],
+    "color": "White",
+    "size": 240,
+    "image": ""
+  }
+}

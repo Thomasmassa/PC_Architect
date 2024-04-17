@@ -19,9 +19,13 @@ namespace PC_Architect.Services
                 case "cpu":
                     parts = (await GetComponentsAsync<Cpu>("cpu")).Cast<IComponent>().ToList();
                     break;
+                case "cpu cooler":
+                    parts = (await GetComponentsAsync<CpuCooler>("cpucooler")).Cast<IComponent>().ToList();
+                    break;
                 case "motherboard":
                     parts = (await GetComponentsAsync<Motherboard>("motherboard")).Cast<IComponent>().ToList();
                     break;
+
             }
 
             return parts;

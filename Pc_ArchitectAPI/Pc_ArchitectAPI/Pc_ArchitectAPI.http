@@ -1,6 +1,0 @@
-@Pc_ArchitectAPI_HostAddress = http://localhost:5188
-
-GET {{Pc_ArchitectAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

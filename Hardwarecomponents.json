@@ -1,1 +1,429 @@
-{"cpu":{"1":{"name":"AMD Ryzen 7 7800X3D","price":369,"core_count":8,"core_clock":4.2,"boost_clock":5,"tdp":120,"graphics":"Radeon","smt":true,"socket":"AM5","image":"https://www.alternate.be/p/o/0/7/AMD_Ryzen_7_7800X%E2%80%A6Turbo_Boost__socket_AM5_processor@@1898270_30.jpg"},"2":{"name":"AMD Ryzen 5 7600X","price":224,"core_count":6,"core_clock":4.7,"boost_clock":5.3,"tdp":105,"graphics":"Radeon","smt":true,"socket":"AM5","image":"https://business.alternate.be/p/160x160/6/0/AMD_Ryzen_5_7600X__4_7_GHz__5_3_GHz_Turbo_Boost__socket_AM5_processor@@1861506.jpg"},"3":{"name":"AMD Ryzen 5 5600X","price":154.15,"core_count":6,"core_clock":3.7,"boost_clock":4.6,"tdp":65,"graphics":null,"smt":true,"socket":"AM4","image":"https://business.alternate.be/p/160x160/8/8/AMD_Ryzen_5_5600X__3_7_GHz__4_6_GHz_Turbo_Boost__socket_AM4_processor@@1685588.jpg"},"4":{"name":"Intel Core i9-14900K","price":544.99,"core_count":24,"core_clock":3.2,"boost_clock":6,"tdp":125,"graphics":"Intel UHD Graphics 770","smt":true,"socket":"LGA1700","image":"https://business.alternate.be/p/o/9/5/Intel__Core_i9_14900K__3_2_GHz__6_0_GHz_Turbo_Boost__socket_1700_processor@@100009759.jpg"}},"motherboard":{"1":{"name":"Asus ROG STRIX B650-A GAMING WIFI","price":229.99,"socket":"AM5","form_factor":"ATX","max_memory":192,"memory_slots":4,"color":"Black / Silver","image":"https://business.alternate.be/p/160x160/8/7/ASUS_ROG_Strix_B650_A_Gaming_WiFi_socket_AM5_moederbord@@1870278.jpg"}}}
+{
+  "cpu": {
+    "1": {
+      "name": "AMD Ryzen 7 7800X3D",
+      "price": 369,
+      "core_count": 8,
+      "core_clock": 4.2,
+      "boost_clock": 5,
+      "tdp": 120,
+      "graphics": "Radeon",
+      "smt": true,
+      "socket": "AM5",
+      "image": "https://www.alternate.be/p/o/0/7/AMD_Ryzen_7_7800X%E2%80%A6Turbo_Boost__socket_AM5_processor@@1898270_30.jpg"
+    },
+    "2": {
+      "name": "AMD Ryzen 5 7600X",
+      "price": 224,
+      "core_count": 6,
+      "core_clock": 4.7,
+      "boost_clock": 5.3,
+      "tdp": 105,
+      "graphics": "Radeon",
+      "smt": true,
+      "socket": "AM5",
+      "image": "https://business.alternate.be/p/160x160/6/0/AMD_Ryzen_5_7600X__4_7_GHz__5_3_GHz_Turbo_Boost__socket_AM5_processor@@1861506.jpg"
+    },
+    "3": {
+      "name": "AMD Ryzen 5 5600X",
+      "price": 154.15,
+      "core_count": 6,
+      "core_clock": 3.7,
+      "boost_clock": 4.6,
+      "tdp": 65,
+      "graphics": null,
+      "smt": true,
+      "socket": "AM4",
+      "image": "https://business.alternate.be/p/160x160/8/8/AMD_Ryzen_5_5600X__3_7_GHz__4_6_GHz_Turbo_Boost__socket_AM4_processor@@1685588.jpg"
+    },
+    "4": {
+      "name": "Intel Core i9-14900K",
+      "price": 544.99,
+      "core_count": 24,
+      "core_clock": 3.2,
+      "boost_clock": 6,
+      "tdp": 125,
+      "graphics": "Intel UHD Graphics 770",
+      "smt": true,
+      "socket": "LGA1700",
+      "image": "https://business.alternate.be/p/o/9/5/Intel__Core_i9_14900K__3_2_GHz__6_0_GHz_Turbo_Boost__socket_1700_processor@@100009759.jpg"
+    }
+  },
+  "motherboard": {
+    "0": {
+      "name": "Asus ROG STRIX B650-A GAMING WIFI",
+      "price": 229.99,
+      "socket": "AM5",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black / Silver",
+      "image": "https://business.alternate.be/p/160x160/8/7/ASUS_ROG_Strix_B650_A_Gaming_WiFi_socket_AM5_moederbord@@1870278.jpg"
+    },
+    "1": {
+      "id": 1,
+      "name": "MSI B650 GAMING PLUS WIFI",
+      "price": 179.99,
+      "socket": "AM5",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    },
+    "2": {
+      "id": 2,
+      "name": "MSI B760 GAMING PLUS WIFI",
+      "price": 159.99,
+      "socket": "LGA1700",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black / Silver",
+      "image": ""
+    },
+    "3": {
+      "id": 3,
+      "name": "MSI B550 GAMING GEN3",
+      "price": 109.99,
+      "socket": "AM4",
+      "form_factor": "ATX",
+      "max_memory": 128,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    },
+    "4": {
+      "id": 4,
+      "name": "MSI PRO Z790-A MAX WIFI",
+      "price": 256.99,
+      "socket": "LGA1700",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Silver / Black",
+      "image": ""
+    },
+    "5": {
+      "id": 5,
+      "name": "Gigabyte B650 GAMING X AX",
+      "price": 189.99,
+      "socket": "AM5",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black / Gray",
+      "image": ""
+    },
+    "6": {
+      "id": 6,
+      "name": "Gigabyte B550M K",
+      "price": 84.99,
+      "socket": "AM4",
+      "form_factor": "Micro ATX",
+      "max_memory": 128,
+      "memory_slots": 4,
+      "color": "Brown / Silver",
+      "image": ""
+    },
+    "7": {
+      "id": 7,
+      "name": "Asus ROG STRIX B550-F GAMING WIFI II",
+      "price": 189.99,
+      "socket": "AM4",
+      "form_factor": "ATX",
+      "max_memory": 128,
+      "memory_slots": 4,
+      "color": "Black / Red",
+      "image": ""
+    },
+    "8": {
+      "id": 8,
+      "name": "Gigabyte B650 AORUS ELITE AX",
+      "price": 199.99,
+      "socket": "AM5",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black / Silver",
+      "image": ""
+    },
+    "9": {
+      "id": 9,
+      "name": "ASRock B660M Pro RS",
+      "price": 94.99,
+      "socket": "LGA1700",
+      "form_factor": "Micro ATX",
+      "max_memory": 128,
+      "memory_slots": 4,
+      "color": "Gray / Black",
+      "image": ""
+    },
+    "10": {
+      "id": 10,
+      "name": "MSI MAG B650 TOMAHAWK WIFI",
+      "price": 212.71,
+      "socket": "AM5",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    },
+    "11": {
+      "id": 11,
+      "name": "Asus PRIME B550M-A WIFI II",
+      "price": 129.99,
+      "socket": "AM4",
+      "form_factor": "Micro ATX",
+      "max_memory": 128,
+      "memory_slots": 4,
+      "color": "Blue / Silver",
+      "image": ""
+    },
+    "12": {
+      "id": 12,
+      "name": "MSI PRO B650M-A WIFI",
+      "price": 149.99,
+      "socket": "AM5",
+      "form_factor": "Micro ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    },
+    "13": {
+      "id": 13,
+      "name": "ASRock B650M Pro RS",
+      "price": 129.99,
+      "socket": "AM5",
+      "form_factor": "Micro ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black / Silver",
+      "image": ""
+    },
+    "14": {
+      "id": 14,
+      "name": "ASRock B650M Pro RS WiFi",
+      "price": 149.99,
+      "socket": "AM5",
+      "form_factor": "Micro ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black / Silver",
+      "image": ""
+    },
+    "15": {
+      "id": 15,
+      "name": "MSI B450M-A PRO MAX II",
+      "price": 69.98,
+      "socket": "AM4",
+      "form_factor": "Micro ATX",
+      "max_memory": 64,
+      "memory_slots": 2,
+      "color": "Black",
+      "image": ""
+    },
+    "16": {
+      "id": 16,
+      "name": "Gigabyte Z790 AORUS ELITE AX",
+      "price": 229.99,
+      "socket": "LGA1700",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    },
+    "17": {
+      "id": 17,
+      "name": "MSI MAG B550 TOMAHAWK MAX WIFI",
+      "price": 159.99,
+      "socket": "AM4",
+      "form_factor": "ATX",
+      "max_memory": 128,
+      "memory_slots": 4,
+      "color": "Silver / Black",
+      "image": ""
+    },
+    "18": {
+      "id": 18,
+      "name": "MSI PRO B550M-VC WIFI",
+      "price": 117.56,
+      "socket": "AM4",
+      "form_factor": "Micro ATX",
+      "max_memory": 128,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    },
+    "19": {
+      "id": 19,
+      "name": "MSI MAG Z790 TOMAHAWK WIFI",
+      "price": 239.99,
+      "socket": "LGA1700",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    },
+    "20": {
+      "id": 20,
+      "name": "Asus ROG MAXIMUS Z790 DARK HERO",
+      "price": 649.99,
+      "socket": "LGA1700",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    },
+    "21": {
+      "id": 21,
+      "name": "Asus ROG STRIX B650E-F GAMING WIFI",
+      "price": 251.7,
+      "socket": "AM5",
+      "form_factor": "ATX",
+      "max_memory": 192,
+      "memory_slots": 4,
+      "color": "Black",
+      "image": ""
+    }
+  },
+  "cpucooler": {
+    "1": {
+      "id": 1,
+      "name": "Thermalright Peerless Assassin 120 SE",
+      "price": 33.9,
+      "rpm": 1550,
+      "noise_level": 25.6,
+      "color": "Black",
+      "size": null,
+      "image": ""
+    },
+    "2": {
+      "id": 2,
+      "name": "Cooler Master MASTERLIQUID ML240L RGB V2",
+      "price": 89.99,
+      "rpm": [650, 1800],
+      "noise_level": [6, 27],
+      "color": "Black",
+      "size": 240,
+      "image": ""
+    },
+    "3": {
+      "id": 3,
+      "name": "Cooler Master Hyper 212 Black Edition",
+      "price": null,
+      "rpm": [800, 2000],
+      "noise_level": [6.5, 26],
+      "color": null,
+      "size": null,
+      "image": ""
+    },
+    "4": {
+      "id": 4,
+      "name": "Corsair iCUE H150i ELITE CAPELLIX XT",
+      "price": 189.99,
+      "rpm": [550, 2100],
+      "noise_level": [5, 34.1],
+      "color": "Black",
+      "size": 360,
+      "image": ""
+    },
+    "5": {
+      "id": 5,
+      "name": "NZXT Kraken Elite 360 RGB",
+      "price": 282.63,
+      "rpm": [500, 1800],
+      "noise_level": [17.9, 30.6],
+      "color": "White",
+      "size": 360,
+      "image": ""
+    },
+    "6": {
+      "id": 6,
+      "name": "be quiet! Dark Rock Pro 4",
+      "price": 91.99,
+      "rpm": 1500,
+      "noise_level": [12.8, 24.3],
+      "color": "Black",
+      "size": null,
+      "image": ""
+    },
+    "7": {
+      "id": 7,
+      "name": "Deepcool GAMMAXX AG400 ARGB",
+      "price": 29.99,
+      "rpm": [500, 2000],
+      "noise_level": 31.6,
+      "color": "Black",
+      "size": null,
+      "image": ""
+    },
+    "8": {
+      "id": 8,
+      "name": "NZXT Kraken 240",
+      "price": 127.99,
+      "rpm": [500, 1800],
+      "noise_level": [17.9, 30.6],
+      "color": "Black",
+      "size": 240,
+      "image": ""
+    },
+    "9": {
+      "id": 9,
+      "name": "Noctua NH-D15 chromax.black",
+      "price": 119.95,
+      "rpm": [300, 1500],
+      "noise_level": [19.2, 24.6],
+      "color": "Black",
+      "size": null,
+      "image": ""
+    },
+    "10": {
+      "id": 10,
+      "name": "NZXT Kraken Elite 360 RGB",
+      "price": 276.5,
+      "rpm": [500, 1800],
+      "noise_level": [17.9, 30.6],
+      "color": "Black",
+      "size": 360,
+      "image": ""
+    },
+    "11": {
+      "id": 11,
+      "name": "Thermalright Phantom Spirit 120 SE",
+      "price": 35.9,
+      "rpm": 1500,
+      "noise_level": 25.6,
+      "color": "Black / Silver",
+      "size": null,
+      "image": ""
+    },
+    "12": {
+      "id": 12,
+      "name": "ARCTIC Liquid Freezer II 360",
+      "price": 180.58,
+      "rpm": [800, 2000],
+      "noise_level": null,
+      "color": "Black",
+      "size": 360,
+      "image": ""
+    },
+    "13": {
+      "id": 13,
+      "name": "NZXT Kraken 240 RGB",
+      "price": 172.99,
+      "rpm": [500, 1800],
+      "noise_level": [17.9, 30.6],
+      "color": "White",
+      "size": 240,
+      "image": ""
+    }
+  }
+}
+
+

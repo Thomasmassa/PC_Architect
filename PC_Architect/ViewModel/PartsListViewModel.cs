@@ -13,38 +13,37 @@ namespace PC_Architect.ViewModel
         
         public string Component { get; set; }
 
-        public ObservableCollection<IComponent> Parts { get; set; }
         private readonly IComponentService _componentService;
-        public ObservableCollection<PartViewModel> PartViewModels { get; set; } = new();
+        public ObservableCollection<Part> Part { get; set; }
 
         public PartsListViewModel(IComponentService componentService)
         {
-            PartViewModels = new ObservableCollection<PartViewModel>();
-            Parts = new ObservableCollection<IComponent>();
+            Part = new ObservableCollection<Part>();
             _componentService = componentService;
-            
         }
 
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
-            var parts = await _componentService.GetComponentsAsync(Component);
-            AddParts(parts);
+            if (Part.Any())
+                Part.Clear();
+
+            Title = $"{Component} LIST";
+            var collectedParts = await _componentService.GetComponentsAsync(Component);
+            AddParts(collectedParts);
         }
 
-        private void AddParts(List<IComponent> parts)
-        {
+        private void AddParts(List<IComponent> collectedParts)
+        {            
             string details = string.Empty;
-            Title = "CPU LIST";
 
-            foreach (var part in parts)
+            foreach (var collectedpart in collectedParts)
             {
-                if (part == null)
-                {
+                if (collectedpart == null)
                     continue;
-                }
+                
 
-                switch (part)
+                switch (collectedpart)
                 {
                     case Cpu cpu:
                         details = $"Socket: {cpu.Socket}\nCores: {cpu.Core_Count}\nCore Clock: {cpu.Core_clock}\nBoost Clock: {cpu.BoostClock}";
@@ -53,7 +52,7 @@ namespace PC_Architect.ViewModel
                         details = $"Memory: {gpu.Memory}\nChipset: {gpu.Chipset}\nCore Clock Type: {gpu.CoreClock}\nBoost Clock: {gpu.BoostClock}";
                         break;
                     case CpuCooler cpuCooler:
-                        details = $"Rpm: {cpuCooler.Rpm}\nNoise Level: {cpuCooler.NoiseLevel}";
+                        details = $"Rpm: {cpuCooler.Rpm}\nNoise Level: {cpuCooler.NoiseLevel}dB";
                         break;
                     case Memory memory:
                         details = $"Price Per GB: {memory.PricePerGb}\nFirst Word Latency: {memory.FirstWordLatency}\nCast Latency: {memory.CasLatency}";
@@ -69,15 +68,15 @@ namespace PC_Architect.ViewModel
                         break;
                 }
 
-                var partViewModel = new PartViewModel
+                var addedpart = new Part
                 {
-                    Name = part.Name,
-                    Image = part.Image,
-                    Price = part.Price,
+                    Name = collectedpart.Name,
+                    Image = collectedpart.Image,
+                    Price = collectedpart.Price,
                     Discription = details
                 };
 
-                PartViewModels.Add(partViewModel);
+                Part.Add(addedpart);
             }
         }
 
