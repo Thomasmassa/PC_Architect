@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace PC_Architect.Services
 {
-    public interface IPartsService
+    public interface IComponentService
     {
-        Task<List<Cpu>?> GetCPUs();
+        Task<List<IComponent>> GetComponentsAsync(IComponent component);
     }
 }

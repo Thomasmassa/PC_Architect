@@ -10,5 +10,6 @@ namespace PC_Architect.Services
     {
         string Name { get; }
         string Image { get; }
+        double? Price { get; }
     }
 }

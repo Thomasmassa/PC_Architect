@@ -17,11 +17,13 @@ namespace PC_Architect
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-            builder.Services.AddSingleton<IPartsService, FirebasePartsService>();
-
+            builder.Services.AddSingleton<IComponentService, ComponentService>();
+            builder.Services.AddSingleton<IComponent, Component>();
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<startBuilding>();
             builder.Services.AddSingleton<StartBuildViewModel>();
+            builder.Services.AddSingleton<PartsList>();
+            builder.Services.AddSingleton<PartsListViewModel>();
 
 #if DEBUG
     		builder.Logging.AddDebug();

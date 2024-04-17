@@ -11,7 +11,7 @@ namespace PC_Architect.Model
     {
         public string Image { get; set; } = "";
         public string Name { get; set; } = "";  
-        public double Price { get; set; }
+        public double? Price { get; set; }
         public string Socket { get; set; } = "";
         public string FormFactor { get; set; } = "";
         public int MaxMemory { get; set; }

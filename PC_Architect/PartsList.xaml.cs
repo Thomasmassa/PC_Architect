@@ -1,9 +1,11 @@
-namespace PC_Architect;
+using PC_Architect.ViewModel;
 
+namespace PC_Architect;
 public partial class PartsList : ContentPage
 {
-	public PartsList()
-	{
-		InitializeComponent();
+    public PartsList(PartsListViewModel viewModel)
+    {
+        InitializeComponent();
+        BindingContext = viewModel;
 	}
 }

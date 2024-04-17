@@ -11,7 +11,7 @@ namespace PC_Architect.Model
     {
         public string Image { get; set; } = "";
         public string Name { get; set; } = "";
-        public double Price { get; set; }
+        public double? Price { get; set; }
         public List<int> Speed { get; set; } = new List<int>();
         public List<int> Modules { get; set; } = new List<int>();
         public double PricePerGb { get; set; }

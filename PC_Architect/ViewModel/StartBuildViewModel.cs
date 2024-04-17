@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using PC_Architect.Model;
 using PC_Architect.Services;
 using System.Windows.Input;
+using Newtonsoft.Json;
 
 namespace PC_Architect.ViewModel
 {
@@ -10,10 +11,13 @@ namespace PC_Architect.ViewModel
     {
         public string? Name { get; set; }
         public string? Image { get; set; }
+
+        private readonly IComponentService _componentService;
         public ObservableCollection<IComponent> Components { get; set; }
 
-        public StartBuildViewModel()
+        public StartBuildViewModel(IComponentService componentService)
         {
+            _componentService = componentService;
             Components = new ObservableCollection<IComponent>();
             AddPresets();
         }
@@ -27,15 +31,26 @@ namespace PC_Architect.ViewModel
             Components.Add(new Gpu { Name = "GPU", Image = "gpu.png" });
             Components.Add(new Memory { Name = "SSD", Image = "ssd.png" });
             Components.Add(new Memory { Name = "HDD", Image = "hdd.png" });
+            Components.Add(new Psu { Name = "PSU", Image = "psu.png" });
+            Components.Add(new CaseFan { Name = "CASE FANS", Image = "case_fan.png" });
+            Components.Add(new Case { Name = "CASE", Image = "case_tower.png" });
+            Components.Add(new OS { Name = "OS", Image = "os.png" });
         }
 
         [RelayCommand]
-        async Task GoToPartsList(IComponent component)
+        public async Task GoToPartsList(IComponent component)
         {
             if (component == null)
                 return;
 
-            await Shell.Current.GoToAsync(nameof(PartsList));
+
+            var parts = await _componentService.GetComponentsAsync(component);
+            DataStore.Parts = parts;
+            //var partsListViewModel = new PartsListViewModel();
+            //partsListViewModel.SetParts(parts);
+
+            // Navigeer naar de PartsList pagina
+            await Shell.Current.GoToAsync($"{nameof(PartsList)}");
         }
     }
 }
