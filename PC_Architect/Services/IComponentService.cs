@@ -9,6 +9,6 @@ namespace PC_Architect.Services
 {
     public interface IComponentService
     {
-        Task<List<IComponent>> GetComponentsAsync(IComponent component);
+        Task<List<IComponent>> GetComponentsAsync(string component);
     }
 }

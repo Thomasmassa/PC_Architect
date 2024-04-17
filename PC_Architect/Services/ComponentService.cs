@@ -10,11 +10,11 @@ namespace PC_Architect.Services
 
         private readonly HttpClient _client = new HttpClient();
 
-        public async Task<List<IComponent>> GetComponentsAsync(IComponent component)
+        public async Task<List<IComponent>> GetComponentsAsync(string component)
         {
             List<IComponent> parts = new List<IComponent>();
 
-            switch (component.Name.ToLower())
+            switch (component.ToLower())
             {
                 case "cpu":
                     parts = (await GetComponentsAsync<Cpu>("cpu")).Cast<IComponent>().ToList();
@@ -43,15 +43,24 @@ namespace PC_Architect.Services
                 var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto };
                 var components = System.Text.Json.JsonSerializer.Deserialize<List<T>>(json);
 
-                foreach (var component in components)
+                if (components != null)
                 {
-                    Console.WriteLine(component);
+                    foreach (var component in components)
+                    {
+                        Console.WriteLine(component);
+                    }
+                }else
+                {
+                    components = new List<T>();
+                    Console.WriteLine("No components found");
                 }
 
                 return components;
             }
             catch (Exception e)
             {
+                await Shell.Current.DisplayAlert("Error", $"Error while getting components, Check your netwerk connection", "OK");
+
                 Console.WriteLine($"Error while getting components from Firebase: {e.Message}");
                 return new List<T>();
             }

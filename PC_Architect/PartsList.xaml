@@ -6,8 +6,12 @@
              xmlns:services="clr-namespace:PC_Architect.Services"
              x:DataType="viewmodel:PartsListViewModel"
              Shell.PresentationMode="Animated"
-             Shell.NavBarIsVisible="False">
-    
+             Shell.NavBarIsVisible="False"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
+    </ContentPage.Behaviors>
+
     <StackLayout>
         <CollectionView ItemsSource="{Binding PartViewModels}" VerticalOptions="FillAndExpand">
             <CollectionView.Header>
@@ -16,7 +20,7 @@
                    Margin="0,20,0,20"/>
             </CollectionView.Header>
             <CollectionView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="viewmodel:PartViewModel">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>

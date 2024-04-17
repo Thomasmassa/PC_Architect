@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 using PC_Architect.Services;
 using PC_Architect.ViewModel;
 
@@ -11,6 +12,7 @@ namespace PC_Architect
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -18,7 +20,7 @@ namespace PC_Architect
                 });
 
             builder.Services.AddSingleton<IComponentService, ComponentService>();
-            builder.Services.AddSingleton<IComponent, Component>();
+            //builder.Services.AddSingleton<IComponent, Component>();
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<startBuilding>();
             builder.Services.AddSingleton<StartBuildViewModel>();
