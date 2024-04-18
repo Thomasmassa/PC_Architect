@@ -25,6 +25,12 @@ namespace PC_Architect.Services
                 case "motherboard":
                     parts = (await GetComponentsAsync<Motherboard>("motherboard")).Cast<IComponent>().ToList();
                     break;
+                case "memory":
+                    parts = (await GetComponentsAsync<Memory>("memory")).Cast<IComponent>().ToList();
+                    break;
+                case "gpu": 
+                    parts = (await GetComponentsAsync<Gpu>("gpu")).Cast<IComponent>().ToList();
+                    break;
 
             }
 
@@ -40,6 +46,7 @@ namespace PC_Architect.Services
                 if (!response.IsSuccessStatusCode)
                 {
                     Console.WriteLine($"Error while getting components from Firebase: {response.StatusCode}");
+                    await Shell.Current.DisplayAlert("Error", $"Database is currently not responding", "OK");
                     return new List<T>();
                 }
 
