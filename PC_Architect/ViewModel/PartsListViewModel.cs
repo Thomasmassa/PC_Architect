@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using Android.Graphics;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PC_Architect.Model;
 using PC_Architect.Services;
@@ -18,48 +19,42 @@ namespace PC_Architect.ViewModel
         public ICommand PerformSearchCommand { get; } // Commando gebruikt voor het zoeken van onderdelen
 
         public ObservableCollection<Part> Part { get; set; }
-        public ObservableCollection<Part> SearchResults { get; set; } // Lijst met zoekresultaten
         public ObservableCollection<Part> DisplayedItems { get; set; } // Lijst met onderdelen die worden weergegeven
 
         public PartsListViewModel(IComponentService componentService)
         {
             _componentService = componentService;
-
             Part = new ObservableCollection<Part>();
-            var parts = DataStore.Parts;
-            AddParts(parts);
-
-            SearchResults = new ObservableCollection<Part>(); // Maak een nieuwe lijst met zoekresultaten
             DisplayedItems = new ObservableCollection<Part>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
-            PerformSearchCommand = new RelayCommand<string>(OnSearch); // Commando voor het zoeken van onderdelen geïnitialiseerd met OnSearch methode met een searchText parameter
-            OnSearch(string.Empty);
         }
 
-        private void OnSearch(string searchText) // Methode voor het zoeken van onderdelen
+        [RelayCommand]
+        async Task Search(string searchText)
         {
-            var results = Part.Where(p => p.Name.Contains(searchText)).ToList(); // Zoekresultaten worden toegevoegd aan de lijst met zoekresultaten
+            await OnSearch(searchText); // Zoekmethode wordt aangeroepen
+        }
+
+        public async Task OnSearch(string searchText)
+        {
+            //var results = Part.Where(p => p.Name.Contains(searchText)).ToList(); // Zoekresultaten worden toegevoegd aan de lijst met zoekresultaten
+            var results = Part.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
 
             if (results.Any()) // Als er zoekresultaten zijn, worden deze weergegeven
             {
-                SearchResults.Clear();
+                DisplayedItems.Clear();
                 foreach (var result in results)
                 {
-                    SearchResults.Add(result);
+                    DisplayedItems.Add(result);
                 }
-                DisplayedItems = SearchResults;
             }
             else // Als er geen zoekresultaten zijn, wordt er een melding weergegeven
             {
                 DisplayedItems.Clear();
-                DisplayedItems.Add(new Part
+                foreach (var part in Part)
                 {
-                    Name = "No results found",
-                    Image = "https://via.placeholder.com/150",
-                    Price = 0,
-                    Discription = "No results found"
-                });
+                    DisplayedItems.Add(part);
+                }
             }
-            OnPropertyChanged(nameof(DisplayedItems)); // Wanneer de lijst met onderdelen wordt aangepast, wordt de OnPropertyChanged methode aangeroepen
         }
 
         [RelayCommand]
@@ -71,6 +66,7 @@ namespace PC_Architect.ViewModel
             Title = $"{Component} LIST";
             var collectedParts = await _componentService.GetComponentsAsync(Component);
             AddParts(collectedParts);
+            await Search("");
         }
 
         private void AddParts(List<IComponent> collectedParts)
@@ -119,6 +115,5 @@ namespace PC_Architect.ViewModel
                 Part.Add(addedpart);
             }
         }
-
     }
 }
