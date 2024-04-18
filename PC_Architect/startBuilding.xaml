@@ -10,12 +10,12 @@
              Shell.PresentationMode="Animated"
              Shell.NavBarIsVisible="False">
 
-    <StackLayout>
+    <StackLayout BackgroundColor="{StaticResource BackgroundBackgroundColor}">
         <CollectionView ItemsSource="{Binding Components}" VerticalOptions="FillAndExpand">
             <CollectionView.Header>
-                <Label Text="Start Building" TextColor="DarkOrange"
-                       FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
-                       Margin="0,20,0,20"/>
+                <Label Text="Start Building" TextColor="{StaticResource Signature}"
+                       FontSize="Header" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
+                       Margin="0,20,0,20" FontFamily="Koulen"/>
             </CollectionView.Header>
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:IComponent">

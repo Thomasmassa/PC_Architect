@@ -17,6 +17,7 @@ namespace PC_Architect
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Koulen.ttf", "Koulen");
                 });
 
             builder.Services.AddSingleton<IComponentService, ComponentService>();
