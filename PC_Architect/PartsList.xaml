@@ -15,7 +15,11 @@
     </ContentPage.Behaviors>
 
     <StackLayout>
-        <CollectionView ItemsSource="{Binding Part}" VerticalOptions="FillAndExpand">
+        <SearchBar x:Name="searchBar"
+            SearchCommand="{Binding PerformSearchCommand}"
+            SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"/>
+        
+        <CollectionView ItemsSource="{Binding DisplayedItems}" VerticalOptions="FillAndExpand"> 
             <CollectionView.Header>
                 <Label Text="{Binding Title}" TextColor="DarkOrange"
                    FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"

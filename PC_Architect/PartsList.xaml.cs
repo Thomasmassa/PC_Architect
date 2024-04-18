@@ -7,5 +7,5 @@ public partial class PartsList : ContentPage
     {
         InitializeComponent();
         BindingContext = viewModel;
-	}
+    }
 }

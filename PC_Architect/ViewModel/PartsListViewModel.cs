@@ -1,8 +1,9 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PC_Architect.Model;
 using PC_Architect.Services;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace PC_Architect.ViewModel
 {
@@ -10,16 +11,57 @@ namespace PC_Architect.ViewModel
     [QueryProperty(nameof(Component), "Component")]
     public partial class PartsListViewModel : BaseViewModel
     {
-        
         public string Component { get; set; }
 
         private readonly IComponentService _componentService;
+
+        public ICommand PerformSearchCommand { get; } // Commando gebruikt voor het zoeken van onderdelen
+
         public ObservableCollection<Part> Part { get; set; }
+        public ObservableCollection<Part> SearchResults { get; set; } // Lijst met zoekresultaten
+        public ObservableCollection<Part> DisplayedItems { get; set; } // Lijst met onderdelen die worden weergegeven
 
         public PartsListViewModel(IComponentService componentService)
         {
-            Part = new ObservableCollection<Part>();
             _componentService = componentService;
+
+            Part = new ObservableCollection<Part>();
+            var parts = DataStore.Parts;
+            AddParts(parts);
+
+            SearchResults = new ObservableCollection<PartViewModel>(); // Maak een nieuwe lijst met zoekresultaten
+            DisplayedItems = new ObservableCollection<PartViewModel>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
+            PerformSearchCommand = new RelayCommand<string>(OnSearch); // Commando voor het zoeken van onderdelen geïnitialiseerd met OnSearch methode met een searchText parameter
+            OnSearch(string.Empty);
+        }
+
+        private void OnSearch(string searchText) // Methode voor het zoeken van onderdelen
+        {
+            var results = Part.Where(p => p.Name.Contains(searchText)).ToList(); // Zoekresultaten worden toegevoegd aan de lijst met zoekresultaten
+
+            if (results.Any()) // Als er zoekresultaten zijn, worden deze weergegeven
+            {
+                SearchResults.Clear();
+                foreach (var result in results)
+                {
+                    SearchResults.Add(result);
+                }
+                DisplayedItems = SearchResults;
+            }
+            else // Als er geen zoekresultaten zijn, wordt er een melding weergegeven
+            {
+                DisplayedItems = new ObservableCollection<PartViewModel>
+                {
+                    new PartViewModel
+                    {
+                        Name = "No results found",
+                        Image = "https://via.placeholder.com/150",
+                        Price = 0,
+                        Discription = "No results found"
+                    }
+                };
+            }
+            OnPropertyChanged(nameof(DisplayedItems)); // Wanneer de lijst met onderdelen wordt aangepast, wordt de OnPropertyChanged methode aangeroepen
         }
 
         [RelayCommand]
