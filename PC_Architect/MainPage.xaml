@@ -4,9 +4,7 @@
              x:Class="PC_Architect.MainPage"
              Shell.NavBarIsVisible="False">
 
-    <Grid>
-        <!-- achtergrond -->
-        <Image Source="background.jpg" Aspect="AspectFill"/>
+    <Grid BackgroundColor="black">
 
         <Grid>
             <Grid.RowDefinitions>
@@ -43,7 +41,7 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Build " FontAttributes="Bold" TextColor="DarkOrange"/>
-                        <Span Text="The PC Of Your Dreams"/>
+                        <Span Text="The PC Of Your Dreams" TextColor="white"/>
                     </FormattedString>
                 </Label.FormattedText>
 
@@ -95,7 +93,7 @@
                    Grid.Row="6">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="Powered by " FontSize="15"/>
+                        <Span Text="Powered by " FontSize="15" TextColor="white"/>
                         <Span Text="R" FontSize="15" TextColor="Red"/>
                         <Span Text="G" FontSize="15" TextColor="Green"/>
                         <Span Text="B" FontSize="15" TextColor="Blue"/>
