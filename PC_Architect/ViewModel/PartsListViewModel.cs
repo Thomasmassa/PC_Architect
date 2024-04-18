@@ -1,4 +1,4 @@
-﻿﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PC_Architect.Model;
 using PC_Architect.Services;
@@ -29,8 +29,8 @@ namespace PC_Architect.ViewModel
             var parts = DataStore.Parts;
             AddParts(parts);
 
-            SearchResults = new ObservableCollection<PartViewModel>(); // Maak een nieuwe lijst met zoekresultaten
-            DisplayedItems = new ObservableCollection<PartViewModel>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
+            SearchResults = new ObservableCollection<Part>(); // Maak een nieuwe lijst met zoekresultaten
+            DisplayedItems = new ObservableCollection<Part>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
             PerformSearchCommand = new RelayCommand<string>(OnSearch); // Commando voor het zoeken van onderdelen geïnitialiseerd met OnSearch methode met een searchText parameter
             OnSearch(string.Empty);
         }
@@ -50,16 +50,14 @@ namespace PC_Architect.ViewModel
             }
             else // Als er geen zoekresultaten zijn, wordt er een melding weergegeven
             {
-                DisplayedItems = new ObservableCollection<PartViewModel>
+                DisplayedItems.Clear();
+                DisplayedItems.Add(new Part
                 {
-                    new PartViewModel
-                    {
-                        Name = "No results found",
-                        Image = "https://via.placeholder.com/150",
-                        Price = 0,
-                        Discription = "No results found"
-                    }
-                };
+                    Name = "No results found",
+                    Image = "https://via.placeholder.com/150",
+                    Price = 0,
+                    Discription = "No results found"
+                });
             }
             OnPropertyChanged(nameof(DisplayedItems)); // Wanneer de lijst met onderdelen wordt aangepast, wordt de OnPropertyChanged methode aangeroepen
         }
@@ -76,14 +74,14 @@ namespace PC_Architect.ViewModel
         }
 
         private void AddParts(List<IComponent> collectedParts)
-        {            
+        {
             string details = string.Empty;
 
             foreach (var collectedpart in collectedParts)
             {
                 if (collectedpart == null)
                     continue;
-                
+
 
                 switch (collectedpart)
                 {
