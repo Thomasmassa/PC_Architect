@@ -14,7 +14,7 @@
         <CollectionView ItemsSource="{Binding Components}" VerticalOptions="FillAndExpand">
             <CollectionView.Header>
                 <Label Text="Start Building" TextColor="{StaticResource Signature}"
-                       FontSize="Header" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
+                       FontSize="40" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
                        Margin="0,20,0,20" FontFamily="Koulen"/>
             </CollectionView.Header>
             <CollectionView.ItemTemplate>
@@ -45,7 +45,7 @@
 
                                 <Image Source="{Binding Image}" Grid.Column="0"/>
                                 <Label Text="{Binding Name}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
-                                        HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+                                        HorizontalOptions="CenterAndExpand" FontSize="30" FontFamily="Koulen"/>
                             </Grid>
                         </Frame>
                     </Grid>
@@ -69,13 +69,15 @@
                 Grid.Row="7"
                 Grid.Column="0"
                 Style="{StaticResource ButtonOutline}"
-                Margin="8"/>
+                Margin="8"
+                FontFamily="Koulen"/>
             <Button Text="Exit" 
                 IsEnabled="False"
                 Grid.Row="7"
                 Grid.Column="2"
                 Style="{StaticResource ButtonOutline}"
-                Margin="8"/>
+                Margin="8"
+                FontFamily="Koulen"/>
         </Grid>
     </StackLayout>
 </ContentPage>

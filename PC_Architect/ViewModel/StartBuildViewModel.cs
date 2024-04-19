@@ -40,11 +40,6 @@ namespace PC_Architect.ViewModel
             if (component == null)
                 return;
 
-            //var parts = await _componentService.GetComponentsAsync(component);
-            //DataStore.Parts = parts;
-            //var partsListViewModel = new PartsListViewModel();
-            //partsListViewModel.SetParts(parts);
-
             // Navigeer naar de PartsList pagina
             await Shell.Current.GoToAsync(nameof(PartsList), true, new Dictionary<string, object>
             {

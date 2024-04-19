@@ -1,5 +1,5 @@
 {
-  "1": {
+  "0": {
     "name": "AMD Ryzen 7 7800X3D",
     "price": 369,
     "core_count": 8,
@@ -11,7 +11,7 @@
     "socket": "AM5",
     "image": "https://www.alternate.be/p/o/0/7/AMD_Ryzen_7_7800X%E2%80%A6Turbo_Boost__socket_AM5_processor@@1898270_30.jpg"
   },
-  "2": {
+  "1": {
     "name": "AMD Ryzen 5 7600X",
     "price": 224,
     "core_count": 6,
@@ -23,7 +23,7 @@
     "socket": "AM5",
     "image": "https://business.alternate.be/p/160x160/6/0/AMD_Ryzen_5_7600X__4_7_GHz__5_3_GHz_Turbo_Boost__socket_AM5_processor@@1861506.jpg"
   },
-  "3": {
+  "2": {
     "name": "AMD Ryzen 5 5600X",
     "price": 154.15,
     "core_count": 6,
@@ -35,7 +35,7 @@
     "socket": "AM4",
     "image": "https://business.alternate.be/p/160x160/8/8/AMD_Ryzen_5_5600X__3_7_GHz__4_6_GHz_Turbo_Boost__socket_AM4_processor@@1685588.jpg"
   },
-  "4": {
+  "3": {
     "name": "Intel Core i9-14900K",
     "price": 544.99,
     "core_count": 24,

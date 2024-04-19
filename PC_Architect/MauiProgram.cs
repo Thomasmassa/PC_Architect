@@ -21,7 +21,6 @@ namespace PC_Architect
                 });
 
             builder.Services.AddSingleton<IComponentService, ComponentService>();
-            //builder.Services.AddSingleton<IComponent, Component>();
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<startBuilding>();
             builder.Services.AddSingleton<StartBuildViewModel>();

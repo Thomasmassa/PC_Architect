@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PC_Architect.PartsList"
              xmlns:viewmodel="clr-namespace:PC_Architect.ViewModel"
+             xmlns:converters="clr-namespace:PC_Architect.Converters"
              xmlns:services="clr-namespace:PC_Architect.Services"
              xmlns:model="clr-namespace:PC_Architect.Model"
              x:DataType="viewmodel:PartsListViewModel"
@@ -39,10 +40,21 @@
                     Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartsListViewModel}}, Path=BackButtonCommand}"
                     CommandParameter="{Binding .}"/>
 
-                <SearchBar x:Name="searchBar" Placeholder="Search" Opacity="0.8" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4"
-                    SearchCommand="{Binding SearchCommand}" FontFamily="Koulen"
-                    SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" 
-                    Background="{StaticResource BackgroundBackgroundColor}" TextColor="{StaticResource PrimaryText}"/>
+                <SearchBar x:Name="searchBar" Placeholder="Search" Opacity="0.8" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" FontFamily="Koulen"
+                    Background="{StaticResource BackgroundBackgroundColor}" TextColor="{StaticResource PrimaryText}" 
+                    SearchCommandParameter="{Binding Source={x:Reference self}, Path=Text}">
+                    <SearchBar.Behaviors>
+                        <toolkit:EventToCommandBehavior
+                        Command = "{Binding TextChangedCommand}"
+                        EventArgsConverter="{converters:TextChangedEventArgsConverter}"
+                        EventName="TextChanged" />
+                    </SearchBar.Behaviors>
+                </SearchBar>
+
+                <!--<SearchBar x:Name="searchBar" Placeholder="Search" Opacity="0.8" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" FontFamily="Koulen"
+                    SearchCommand="{Binding SearchCommand}" 
+                    SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"
+                    Background="{StaticResource BackgroundBackgroundColor}" TextColor="{StaticResource PrimaryText}"/>-->
             </Grid>
         </Frame>
         <CollectionView ItemsSource="{Binding DisplayedItems}" VerticalOptions="FillAndExpand"> 
@@ -61,11 +73,6 @@
                         </Grid.ColumnDefinitions>
 
                         <Frame Grid.Row="0" Grid.Column="1" BorderColor="Transparent" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10" Padding="0">
-                            <!--<Frame.GestureRecognizers>
-                                <TapGestureRecognizer
-                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildViewModel}}, Path=GoToPartsListCommand}"
-                                CommandParameter="{Binding .}"/>
-                            </Frame.GestureRecognizers>-->
                             <Grid BackgroundColor="#D4D4D4">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="*" />
@@ -98,6 +105,11 @@
                                        VerticalOptions="CenterAndExpand" HorizontalTextAlignment="End" FontSize="Medium" Margin="0,10,10,0"/>
 
                                 <Frame BackgroundColor="#009822" CornerRadius="0" BorderColor="#009822" Grid.RowSpan="4" Grid.Column="7" HeightRequest="150" WidthRequest="50" Padding="0" VerticalOptions="FillAndExpand">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartsListViewModel}}, Path=SelectedPartCommand}"
+                                        CommandParameter="{Binding .}"/>
+                                    </Frame.GestureRecognizers>
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="*" />
@@ -107,7 +119,7 @@
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
-                                        <Label Text="+" Grid.Column="0" Grid.Row="1" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                        <Label Text="+" Grid.Column="0" TextColor="Black" Grid.Row="1" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
                                     </Grid>
                                 </Frame>
                             </Grid>

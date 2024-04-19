@@ -9,7 +9,7 @@
 
         async void OnStartBuildingClicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("//startBuilding");
+            await Shell.Current.GoToAsync(nameof(startBuilding));
         }
     }
 

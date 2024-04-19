@@ -6,7 +6,9 @@
         {
             InitializeComponent();
 
+            Routing.RegisterRoute(nameof(startBuilding), typeof(startBuilding));
             Routing.RegisterRoute(nameof(PartsList), typeof(PartsList));
+
         }
     }
 }

@@ -68,7 +68,7 @@ namespace PC_Architect.Services
                 await Shell.Current.DisplayAlert("Error", $"Error while getting components, Check your netwerk connection", "OK");
 
                 Console.WriteLine($"Error while getting components from Firebase: {e.Message}");
-                return new List<T>();
+                return null;
             }
         }
     }
