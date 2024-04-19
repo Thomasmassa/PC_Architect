@@ -18,7 +18,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/5/0/MSI_B650_GAMING_PLUS_WIFI_socket_AM5_moederbord@@1919705_30.jpg"
   },
   "2": {
     "id": 2,
@@ -29,7 +29,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black / Silver",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/9/0/MSI_B760_GAMING_PLUS_WIFI_socket_1700_moederbord@@1919709_30.jpg"
   },
   "3": {
     "id": 3,
@@ -40,7 +40,7 @@
     "max_memory": 128,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/0/9/MSI_B550_GAMING_GEN3_socket_AM4_moederbord@@1868790_30.jpg"
   },
   "4": {
     "id": 4,
@@ -51,7 +51,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Silver / Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/8/5/MSI_PRO_Z790_A_MAX_WIFI_socket_1700_moederbord@@100018058_30.jpg"
   },
   "5": {
     "id": 5,
@@ -62,7 +62,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black / Gray",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/9/8/GIGABYTE_B650M_Gaming_X_AX_socket_AM5_moederbord@@1873189_30.jpg"
   },
   "6": {
     "id": 6,
@@ -73,7 +73,7 @@
     "max_memory": 128,
     "memory_slots": 4,
     "color": "Brown / Silver",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/3/9/GIGABYTE_B550M_DS3H_socket_AM4_moederbord@@1647993_30.jpg"
   },
   "7": {
     "id": 7,
@@ -84,7 +84,7 @@
     "max_memory": 128,
     "memory_slots": 4,
     "color": "Black / Red",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/4/5/ASUS_ROG_STRIX_B550_F_GAMING_WI_FI_II_socket_AM4_moederbord@@1797154.jpg"
   },
   "8": {
     "id": 8,
@@ -95,7 +95,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black / Silver",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/3/4/GIGABYTE_B650_AORUS_ELITE_AX_ICE_socket_AM5_moederbord@@100025043.jpg"
   },
   "9": {
     "id": 9,
@@ -106,7 +106,7 @@
     "max_memory": 128,
     "memory_slots": 4,
     "color": "Gray / Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/4/2/ASRock_B760M_Pro_RS_D4_socket_1700_moederbord@@1888724.jpg"
   },
   "10": {
     "id": 10,
@@ -117,7 +117,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/1/5/MSI_MAG_B650_TOMAHAWK_WIFI_socket_AM5_moederbord@@1871451_30.jpg"
   },
   "11": {
     "id": 11,
@@ -128,7 +128,7 @@
     "max_memory": 128,
     "memory_slots": 4,
     "color": "Blue / Silver",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/9/5/ASUS_PRIME_B550M_A_WIFI_II_socket_AM4_moederbord@@1797159.jpg"
   },
   "12": {
     "id": 12,
@@ -139,7 +139,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/8/5/MSI_PRO_B650M_A_WIFI_socket_AM5_moederbord@@1871458.jpg"
   },
   "13": {
     "id": 13,
@@ -150,7 +150,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black / Silver",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/3/2/ASRock_B650_PRO_RS_socket_AM5_moederbord@@1874523.jpg"
   },
   "14": {
     "id": 14,
@@ -161,7 +161,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black / Silver",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/6/2/ASRock_B760M_Pro_RS_D4_WiFi_socket_1700_moederbord@@1888726.jpg"
   },
   "15": {
     "id": 15,
@@ -172,7 +172,7 @@
     "max_memory": 64,
     "memory_slots": 2,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/g/MSI_B450M_PRO_VDH_MAX_socket_AM4_moederbord@@grimry.jpg"
   },
   "16": {
     "id": 16,
@@ -183,7 +183,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/8/7/GIGABYTE_Z790_AORUS_ELITE_AX_socket_1700_moederbord@@1871178.jpg"
   },
   "17": {
     "id": 17,
@@ -194,7 +194,7 @@
     "max_memory": 128,
     "memory_slots": 4,
     "color": "Silver / Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/g/MSI_MAG_B550_TOMAHAWK_socket_AM4_moederbord@@gremr602.jpg"
   },
   "18": {
     "id": 18,
@@ -205,7 +205,7 @@
     "max_memory": 128,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/g/MSI_B550M_PRO_VDH_WIFI_socket_AM4_moederbord@@grimr603.jpg"
   },
   "19": {
     "id": 19,
@@ -216,7 +216,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/2/3/MSI_MAG_Z790_TOMAHAWK_WIFI_socket_1700_moederbord@@1871432_30.jpg"
   },
   "20": {
     "id": 20,
@@ -227,7 +227,7 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/9/0/ASUS_ROG_MAXIMUS_Z790_DARK_HERO_socket_1700_moederbord@@100019009.jpg"
   },
   "21": {
     "id": 21,
@@ -238,6 +238,6 @@
     "max_memory": 192,
     "memory_slots": 4,
     "color": "Black",
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/7/7/ASUS_ROG_Strix_B650E_F_Gaming_WiFi_socket_AM5_moederbord@@1870277_1.jpg"
   }
 }

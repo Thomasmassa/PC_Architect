@@ -15,15 +15,34 @@
     </ContentPage.Behaviors>
 
     <StackLayout Background="{StaticResource BackgroundBackgroundColor}">
-        <Label Text="{Binding Title}" TextColor="DarkOrange"
-            FontSize="Title"  FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
-            Margin="0,30,0,0"/>
-        <Frame BackgroundColor="{StaticResource BackgroundBackgroundColor}" CornerRadius="15" BorderColor="Transparent">
-            <SearchBar x:Name="searchBar"
-            SearchCommand="{Binding SearchCommand}"
-            SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" Background="{StaticResource BackgroundBackgroundColor}"
-            TextColor="{StaticResource PrimaryText}"/>
-        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding Title}" TextColor="DarkOrange" FontFamily="{}" Grid.ColumnSpan="5" Grid.Row="0"
+                FontSize="Title"  FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
+                Margin="0,30,0,0"/>
+
+            <Label Text="←" FontSize="70" TextColor="{StaticResource PrimaryText}" Grid.Column="0" Grid.Row="1" 
+                   Margin="20,-25,0,0"/>
+
+            <Frame BackgroundColor="{StaticResource BackgroundBackgroundColor}" CornerRadius="15" 
+                   BorderColor="Transparent" Padding="0" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4">
+                <SearchBar x:Name="searchBar" Placeholder="Search" Opacity="0.8"
+                SearchCommand="{Binding SearchCommand}"
+                SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}" Background="{StaticResource BackgroundBackgroundColor}"
+                TextColor="{StaticResource PrimaryText}"/>
+            </Frame>
+        </Grid>
         <CollectionView ItemsSource="{Binding DisplayedItems}" VerticalOptions="FillAndExpand"> 
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:Part">

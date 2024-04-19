@@ -16,10 +16,8 @@ namespace PC_Architect.ViewModel
 
         private readonly IComponentService _componentService;
 
-        public ICommand PerformSearchCommand { get; } // Commando gebruikt voor het zoeken van onderdelen
-
-        public ObservableCollection<Part> Part { get; set; }
-        public ObservableCollection<Part> DisplayedItems { get; set; } // Lijst met onderdelen die worden weergegeven
+        public ObservableCollection<Part> Part { get; set; } = new(); // Lijst met onderdelen
+        public ObservableCollection<Part> DisplayedItems { get; set; } = new();// Lijst met onderdelen die worden weergegeven
 
         public PartsListViewModel(IComponentService componentService)
         {
@@ -29,44 +27,49 @@ namespace PC_Architect.ViewModel
         }
 
         [RelayCommand]
-        async Task Search(string searchText)
+        public void Search(string searchText)
         {
-            await OnSearch(searchText); // Zoekmethode wordt aangeroepen
+            OnSearch(searchText); // Zoekmethode wordt aangeroepen
         }
 
-        public async Task OnSearch(string searchText)
+        public Task OnSearch(string searchText)
         {
-            //var results = Part.Where(p => p.Name.Contains(searchText)).ToList(); // Zoekresultaten worden toegevoegd aan de lijst met zoekresultaten
-            var results = Part.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+            return Task.Run(() => 
+            { 
+                DisplayedItems.Clear(); // De lijst met zoekresultaten wordt leeggemaakt
+                //var results = Part.Where(p => p.Name.Contains(searchText)).ToList(); // Zoekresultaten worden toegevoegd aan de lijst met zoekresultaten
+                var results = Part.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
 
-            if (results.Any()) // Als er zoekresultaten zijn, worden deze weergegeven
-            {
-                DisplayedItems.Clear();
-                foreach (var result in results)
+                if (results.Any()) // Als er zoekresultaten zijn, worden deze weergegeven
                 {
-                    DisplayedItems.Add(result);
+                    DisplayedItems.Clear();
+                    foreach (var result in results)
+                    {
+                        DisplayedItems.Add(result);
+                    }
                 }
-            }
-            else // Als er geen zoekresultaten zijn, wordt er een melding weergegeven
-            {
-                DisplayedItems.Clear();
-                foreach (var part in Part)
+                else // Als er geen zoekresultaten zijn, wordt er een melding weergegeven
                 {
-                    DisplayedItems.Add(part);
+                    DisplayedItems.Clear();
+                    foreach (var part in Part)
+                    {
+                        DisplayedItems.Add(part);
+                    }
                 }
-            }
+            });
         }
 
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
-            if (Part.Any())
-                Part.Clear();
-
+            Part.Clear(); // Leeg de lijst voordat deze opnieuw wordt gevuld
             Title = $"{Component} LIST";
             var collectedParts = await _componentService.GetComponentsAsync(Component);
             AddParts(collectedParts);
-            await Search("");
+            if (Part.Any())
+            {
+                Search(""); // Voer de zoekopdracht uit nadat de lijst opnieuw is gevuld
+            }
         }
 
         private void AddParts(List<IComponent> collectedParts)
@@ -115,5 +118,7 @@ namespace PC_Architect.ViewModel
                 Part.Add(addedpart);
             }
         }
+        public event EventHandler ResetRequested;// Event voor het resetten van de zoekopdracht
+
     }
 }

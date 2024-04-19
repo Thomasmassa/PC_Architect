@@ -54,14 +54,9 @@ namespace PC_Architect.Services
                 var settings = new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.Auto };
                 var components = System.Text.Json.JsonSerializer.Deserialize<List<T>>(json);
 
-                if (components != null)
+                if (components == null)
                 {
-                    foreach (var component in components)
-                    {
-                        Console.WriteLine(component);
-                    }
-                }else
-                {
+                    await Shell.Current.DisplayAlert("Error", $"Error while getting components", "OK");
                     components = new List<T>();
                     Console.WriteLine("No components found");
                 }

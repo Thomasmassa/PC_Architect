@@ -7,7 +7,7 @@
     "noise_level": 25.6,
     "color": "Black",
     "size": null,
-    "image": ""
+    "image": "https://tweakers.net/i/JowaLDfoyNZOjI6DHT4_ebh_lHw=/fit-in/188x141/filters:strip_icc():fill(white):strip_exif()/i/2006198040.jpeg?f=thumblarge"
   },
   "2": {
     "id": 2,
@@ -17,7 +17,7 @@
     "noise_level": [6, 27],
     "color": "Black",
     "size": 240,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/6/9/Cooler_Master_MasterLiquid_ML240_ILLUSION_waterkoeling@@1748496.jpg"
   },
   "3": {
     "id": 3,
@@ -27,7 +27,7 @@
     "noise_level": [6.5, 26],
     "color": null,
     "size": null,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/8/3/Cooler_Master_Hyper_212_RGB_Black_Edition_with_LGA1700_cpu_koeler@@1809038_30.jpg"
   },
   "4": {
     "id": 4,
@@ -37,7 +37,7 @@
     "noise_level": [5, 34.1],
     "color": "Black",
     "size": 360,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/2/9/Corsair_iCUE_H150i_ELITE_CAPELLIX_XT_360_mm_waterkoeling@@1889792.jpg"
   },
   "5": {
     "id": 5,
@@ -47,7 +47,7 @@
     "noise_level": [17.9, 30.6],
     "color": "White",
     "size": 360,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/3/9/NZXT_Kraken_Elite_360_RGB_waterkoeling@@1881793.jpg"
   },
   "6": {
     "id": 6,
@@ -57,7 +57,7 @@
     "noise_level": [12.8, 24.3],
     "color": "Black",
     "size": null,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/5/8/be_quiet__Dark_Rock_Pro_5_cpu_koeler@@100019685.jpg"
   },
   "7": {
     "id": 7,
@@ -67,7 +67,7 @@
     "noise_level": 31.6,
     "color": "Black",
     "size": null,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/6/0/DeepCool_AG400_A_RGB_cpu_koeler@@1861306.jpg"
   },
   "8": {
     "id": 8,
@@ -77,7 +77,7 @@
     "noise_level": [17.9, 30.6],
     "color": "Black",
     "size": 240,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/0/7/NZXT_Kraken_240_240mm_waterkoeling@@1881770.jpg"
   },
   "9": {
     "id": 9,
@@ -87,7 +87,7 @@
     "noise_level": [19.2, 24.6],
     "color": "Black",
     "size": null,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/h/Noctua_NH_D15_chromax_black_cpu_koeler@@hxlu42.jpg"
   },
   "10": {
     "id": 10,
@@ -97,7 +97,7 @@
     "noise_level": [17.9, 30.6],
     "color": "Black",
     "size": 360,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/3/9/NZXT_Kraken_Elite_360_RGB_waterkoeling@@1881793.jpg"
   },
   "11": {
     "id": 11,
@@ -107,7 +107,7 @@
     "noise_level": 25.6,
     "color": "Black / Silver",
     "size": null,
-    "image": ""
+    "image": "https://tweakers.net/i/MpJOgvwUzK71Qpa46HDbxkFKJTc=/fit-in/188x141/filters:strip_icc():fill(white):strip_exif()/i/2005738558.jpeg?f=thumblarge"
   },
   "12": {
     "id": 12,
@@ -117,7 +117,7 @@
     "noise_level": null,
     "color": "Black",
     "size": 360,
-    "image": ""
+    "image": "https://tweakers.net/i/lIJU0GchK50dNXgbk5o8yoiPjqM=/fit-in/84x63/filters:strip_icc():fill(white):strip_exif()/i/2003230836.jpeg?f=thumbsmall"
   },
   "13": {
     "id": 13,
@@ -127,6 +127,6 @@
     "noise_level": [17.9, 30.6],
     "color": "White",
     "size": 240,
-    "image": ""
+    "image": "https://www.alternate.be/p/200x200/2/8/NZXT_Kraken_240_RGB_240mm_waterkoeling@@1881782.jpg"
   }
 }
