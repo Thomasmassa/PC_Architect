@@ -1,9 +1,9 @@
-﻿using Android.Graphics;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PC_Architect.Model;
 using PC_Architect.Services;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows.Input;
 
 namespace PC_Architect.ViewModel
@@ -65,14 +65,15 @@ namespace PC_Architect.ViewModel
             Part.Clear(); // Leeg de lijst voordat deze opnieuw wordt gevuld
             Title = $"{Component} LIST";
             var collectedParts = await _componentService.GetComponentsAsync(Component);
-            AddParts(collectedParts);
+            if (collectedParts.Any())
+                AddParts(collectedParts);
             if (Part.Any())
             {
                 Search(""); // Voer de zoekopdracht uit nadat de lijst opnieuw is gevuld
             }
         }
 
-        private void AddParts(List<IComponent> collectedParts)
+        private void AddParts(List<Model.IComponent> collectedParts)
         {
             string details = string.Empty;
 
@@ -118,7 +119,11 @@ namespace PC_Architect.ViewModel
                 Part.Add(addedpart);
             }
         }
-        public event EventHandler ResetRequested;// Event voor het resetten van de zoekopdracht
 
+        [RelayCommand]
+        public async Task BackButton()
+        {
+            await Shell.Current.GoToAsync(nameof(startBuilding));
+        }
     }
 }
