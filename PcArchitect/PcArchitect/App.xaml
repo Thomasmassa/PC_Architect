@@ -11,11 +11,10 @@
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
+            <Color x:Key="AddButton">#009822</Color>
             <Color x:Key="Signature">#E06D06</Color>
-
             <Color x:Key="Primary">#FFC107</Color>
             <Color x:Key="PrimaryDark">#FFA000</Color>
-            <Color x:Key="Accent">#00BCD4</Color>
             <Color x:Key="PrimaryText">#FFA000</Color>
             <Color x:Key="BackgroundBackgroundColor">#222222</Color>
             <Color x:Key="TextPriceColor">#990000</Color>
@@ -72,6 +71,7 @@
                 <Setter Property="HeightRequest" Value="40"/>
                 <Setter Property="CornerRadius" Value="5"/>
             </Style>
+            
             <Style x:Key="CardView" TargetType="Frame">
                 <Setter Property="BorderColor" Value="#DDDDDD"/>
                 <Setter Property="HasShadow" Value="{OnPlatform iOS=false, MacCatalyst=false, Default=true}"/>

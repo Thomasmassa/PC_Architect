@@ -4,7 +4,7 @@ namespace PcArchitect.Services
 {
     public class DeclareComponentService
     {
-        public static Task DeclareComponentTypeAsync(string component, object collectedPart)
+        public Task DeclareComponentTypeAsync(string component, object collectedPart)
         {
             return Task.Run(() =>
             {
