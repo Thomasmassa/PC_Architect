@@ -8,8 +8,7 @@
              xmlns:converters="clr-namespace:PcArchitect.Converters"
              x:DataType="viewmodel:PartListViewModel"
              Shell.PresentationMode="Animated"
-             Shell.NavBarIsVisible="False"
-             >
+             Shell.NavBarIsVisible="False">
 
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
@@ -41,8 +40,7 @@
                 CommandParameter="{Binding .}"/>
 
                 <SearchBar x:Name="searchBar" Placeholder="Search" Opacity="0.8" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4" FontFamily="Koulen"
-                Background="{StaticResource BackgroundBackgroundColor}" TextColor="{StaticResource PrimaryText}" 
-                SearchCommandParameter="{Binding Source={x:Reference self}, Path=Text}">
+                Background="{StaticResource BackgroundBackgroundColor}" TextColor="{StaticResource PrimaryText}">
                     <SearchBar.Behaviors>
                         <toolkit:EventToCommandBehavior
                     Command = "{Binding TextChangedCommand}"

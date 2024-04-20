@@ -5,6 +5,8 @@ using PcArchitect.Interfaces;
 using System.ComponentModel;
 using PcArchitect.Model;
 using IComponent = PcArchitect.Interfaces.IComponent;
+using PcArchitect.Views;
+using PcArchitect.Services;
 
 namespace PcArchitect.ViewModel
 {
@@ -96,7 +98,7 @@ namespace PcArchitect.ViewModel
 
         //SEARCHMETHOD
         [RelayCommand]
-        private async Task TextChanged(string newText)
+        async Task TextChanged(string newText)
         {
             if (string.IsNullOrEmpty(newText))
             {
@@ -105,7 +107,8 @@ namespace PcArchitect.ViewModel
             await OnSearch(newText);
             return;
         }
-        public Task OnSearch(string searchText)
+
+        private Task OnSearch(string searchText)
         {
             return Task.Run(() =>
             {
@@ -129,7 +132,33 @@ namespace PcArchitect.ViewModel
             });
         }
         //SEARCHMETHOD
+        
+        ////////////////////////////////////////////////////////////////////////////
+        
+        [RelayCommand]
+        async Task BackButton()
+        {
+            DisplayedItems.Clear();
+            Part.Clear(); 
+            await Shell.Current.GoToAsync(nameof(StartBuildingPage));
+        }
 
         ////////////////////////////////////////////////////////////////////////////
+
+        [RelayCommand]
+        public async Task SelectedPart(Part part)
+        {
+            bool choice = await Shell.Current.DisplayAlert("Selected Part", part.Name, "OK", "Cancel");
+
+            if (choice)
+            {
+                DeclareComponentService serviceDeclareType = new DeclareComponentService();
+                var collectedPart = collectedParts.FirstOrDefault(p => p.Name == part.Name);
+
+                if (collectedPart != null)
+                    await serviceDeclareType.DeclareComponentTypeAsync(Component, collectedPart);
+            }
+            return;
+        }
     }
 }

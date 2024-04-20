@@ -1,10 +1,12 @@
-namespace PcArchitect.Views;
+using PcArchitect.ViewModel;
 
+namespace PcArchitect.Views;
 public partial class StartBuildingPage : ContentPage
 {
-	public StartBuildingPage(StartBuildingPage startBuilding)
+	public StartBuildingPage(StartBuildingViewModel viewModel)
 	{
 		InitializeComponent();
-		BindingContext = startBuilding;
+
+		BindingContext = viewModel;
 	}
 }
