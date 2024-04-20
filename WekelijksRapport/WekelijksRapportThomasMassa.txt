@@ -13,10 +13,12 @@ Week 7 (25/03): 9 uren:
 StartBuildingpage aanpassingen aangebracht verschillende manieren geprobeerd om de preset te tonen.
 
 
-Week 8 (15/04): 30 uren:
+Week 8 (15/04): 31 uren:
 partlistview -> view aanpassingen gedaan, filter in het viewmodel aangepast en verbeterd. thuis zoeken naar een manier voor de
 database images aantevullen met urls(webscraper). Bug oplossing gedaan met het dubbel laden van data in de lijst.
 
+Alle bestanden naar nieuwe solution overgezet(bepaalde bestanden waren corrupt en usings werkte niet meer). code cleanup
+Repository voor het storen van gekoze componenten, het weergeven van gekoze component in startbuildingViewModel.
 
 Week 9 (22/04): ..... uren:
 
