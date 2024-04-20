@@ -14,7 +14,9 @@ namespace PcArchitect.ViewModel
     public partial class PartListViewModel : BaseViewModel
     {
         public string Component { get; set; }
+
         private List<IComponent> collectedParts;
+
         public readonly IComponentService _componentService;
         public ObservableCollection<Part> Part { get; set; } = [];
         public ObservableCollection<Part> DisplayedItems { get; set; } = [];
@@ -137,6 +139,7 @@ namespace PcArchitect.ViewModel
         
         ////////////////////////////////////////////////////////////////////////////
         
+        //BACKBUTTON
         [RelayCommand]
         async Task BackButton()
         {
@@ -144,11 +147,13 @@ namespace PcArchitect.ViewModel
             Part.Clear(); 
             await Shell.Current.GoToAsync(nameof(StartBuildingPage));
         }
+        //BACKBUTTON
 
         ////////////////////////////////////////////////////////////////////////////
 
+        //SELECTEDPART
         [RelayCommand]
-        public async Task SelectedPart(Part part)
+        async Task SelectedPart(Part part)
         {
             bool choice = await Shell.Current.DisplayAlert("Selected Part", part.Name, "OK", "Cancel");
 
@@ -161,6 +166,22 @@ namespace PcArchitect.ViewModel
                     await _componentRepository.AddComponentAsync(collectedPart);
             }
             return;
+        }
+        //SELECTEDPART
+
+        ////////////////////////////////////////////////////////////////////////////
+
+        //PARTTODETAIL
+        [RelayCommand]
+        async Task PartToDetail(Part part)
+        {
+            if (part == null)
+                return;
+
+            await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", true, new Dictionary<string, object>
+            {
+                { "Part", part }
+            });
         }
     }
 }

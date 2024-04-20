@@ -19,7 +19,7 @@
             <CollectionView.Header>
                 <Label Text="Start Building" TextColor="{StaticResource Signature}"
                    FontSize="40" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
-                   Margin="0,20,0,20" FontFamily="Koulen"/>
+                   Margin="0,20,0,10" FontFamily="Koulen"/>
             </CollectionView.Header>
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="Interfaces:IComponent">
@@ -63,25 +63,31 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="9*" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="9*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
             <!-- SAVE AND EXIT -->
             <Button Text="Save" 
+            Padding="0"
             IsEnabled="False"
             Grid.Row="7"
-            Grid.Column="0"
+            Grid.Column="1"
             Style="{StaticResource ButtonOutline}"
             Margin="8"
-            FontFamily="Koulen"/>
-            <Button Text="Exit" 
+            FontFamily="Koulen"
+            FontSize="20"/>
+            <Button Text="Back" 
+            Padding="0"
             IsEnabled="False"
             Grid.Row="7"
-            Grid.Column="2"
+            Grid.Column="3"
             Style="{StaticResource ButtonOutline}"
             Margin="8"
-            FontFamily="Koulen"/>
+            FontFamily="Koulen"
+            FontSize="20"/>
         </Grid>
     </StackLayout>
 </ContentPage>

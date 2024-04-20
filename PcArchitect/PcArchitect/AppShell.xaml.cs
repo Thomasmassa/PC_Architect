@@ -9,6 +9,7 @@ namespace PcArchitect
             InitializeComponent();
             Routing.RegisterRoute(nameof(StartBuildingPage), typeof(StartBuildingPage));
             Routing.RegisterRoute(nameof(PartListPage), typeof(PartListPage));
+            Routing.RegisterRoute(nameof(PartDetailPage), typeof(PartDetailPage));
         }
     }
 }
