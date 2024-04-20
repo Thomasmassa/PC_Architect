@@ -1,10 +1,11 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using PC_Architect.Model;
 using PcArchitect.Interfaces;
+using PcArchitect.Model;
 using PcArchitect.Services;
 using PcArchitect.ViewModel;
 using PcArchitect.Views;
-using System.ComponentModel;
 
 namespace PcArchitect
 {
@@ -23,6 +24,9 @@ namespace PcArchitect
                     fonts.AddFont("Koulen.ttf", "Koulen");
                 });
 
+            
+            builder.Services.AddSingleton<Root>();
+            builder.Services.AddSingleton<ComponentRepository>();
             builder.Services.AddSingleton<IComponentService, ComponentService>();
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<StartBuildingViewModel>();
@@ -31,7 +35,7 @@ namespace PcArchitect
             builder.Services.AddSingleton<PartListPage>();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

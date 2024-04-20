@@ -7,8 +7,13 @@
              xmlns:Interfaces="clr-namespace:PcArchitect.Interfaces"
              x:DataType="viewmodel:StartBuildingViewModel"
              Shell.PresentationMode="Animated"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             >
 
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
+    </ContentPage.Behaviors>
     <StackLayout BackgroundColor="{StaticResource BackgroundBackgroundColor}">
         <CollectionView ItemsSource="{Binding Components}" VerticalOptions="FillAndExpand">
             <CollectionView.Header>

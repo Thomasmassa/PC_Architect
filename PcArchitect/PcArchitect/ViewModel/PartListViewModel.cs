@@ -2,11 +2,10 @@
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Mvvm.Input;
 using PcArchitect.Interfaces;
-using System.ComponentModel;
 using PcArchitect.Model;
 using IComponent = PcArchitect.Interfaces.IComponent;
 using PcArchitect.Views;
-using PcArchitect.Services;
+using PC_Architect.Model;
 
 namespace PcArchitect.ViewModel
 {
@@ -19,11 +18,13 @@ namespace PcArchitect.ViewModel
         public readonly IComponentService _componentService;
         public ObservableCollection<Part> Part { get; set; } = [];
         public ObservableCollection<Part> DisplayedItems { get; set; } = [];
+        private readonly ComponentRepository _componentRepository;
 
         ////////////////////////////////////////////////////////////////////////////
         
-        public PartListViewModel(IComponentService componentService)
+        public PartListViewModel(IComponentService componentService, ComponentRepository componentRepository)
         {
+            _componentRepository = componentRepository;
             _componentService = componentService;
             Part = new ObservableCollection<Part>();
             DisplayedItems = new ObservableCollection<Part>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
@@ -122,13 +123,14 @@ namespace PcArchitect.ViewModel
                         DisplayedItems.Add(result);
                     }
                 }
-                else
-                {
-                    foreach (var part in Part)
-                    {
-                        DisplayedItems.Add(part);
-                    }
-                }
+                //else
+                //{//deze else state kan weg maar bij gebruik zal de
+                //filter alle items weergeven als zoekresultaat niet gevonden heeft
+                //    foreach (var part in Part)
+                //    {
+                //        DisplayedItems.Add(part);
+                //    }
+                //}
             });
         }
         //SEARCHMETHOD
@@ -152,11 +154,11 @@ namespace PcArchitect.ViewModel
 
             if (choice)
             {
-                DeclareComponentService serviceDeclareType = new DeclareComponentService();
-                var collectedPart = collectedParts.FirstOrDefault(p => p.Name == part.Name);
+                //var collectedPart = collectedParts.FirstOrDefault(p => p.Name == part.Name);
+                var collectedPart = collectedParts.FirstOrDefault(p => p != null && p.Name == part.Name);
 
                 if (collectedPart != null)
-                    await serviceDeclareType.DeclareComponentTypeAsync(Component, collectedPart);
+                    await _componentRepository.AddComponentAsync(collectedPart);
             }
             return;
         }
