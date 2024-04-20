@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PcArchitect.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid BackgroundColor="black">
+        <Grid>
+            <Grid.RowDefinitions>
+                <!-- bovenaan -->
+                <RowDefinition Height="6*" />
+                <!-- midden titel -->
+                <RowDefinition Height="1*" />
+                <!-- midden slogan -->
+                <RowDefinition Height="2*" />
+                <!-- knop -->
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <!-- Lege ruimte -->
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+
+            <!-- Logo  -->
+            <Image Source="applogo.png" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center"
+           HeightRequest="150" 
+           WidthRequest="150"
+           Aspect="AspectFill"
+           Grid.Row="0" />
+
+            <!-- Titel -->
+            <Label VerticalOptions="Start"
+           HorizontalOptions="Center"
+           FontSize="Large"
+           Margin="0,0,0,10"
+           FontAttributes="Bold"
+           Grid.Row="1">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Build " FontAttributes="Bold" TextColor="DarkOrange"/>
+                        <Span Text="The PC Of Your Dreams" TextColor="white"/>
+                    </FormattedString>
+                </Label.FormattedText>
+
+            </Label>
+
+            <!-- Knop  -->
+
+            <Button Text="Start Building"
+            Clicked="OnStartBuildingClicked"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            HeightRequest="70"
+            WidthRequest="150"
+            FontSize="Large"
+            FontAttributes="Bold"
+            CornerRadius="20"
+            BackgroundColor="DarkOrange"
+            Grid.Row="3"/>
+
+            <!-- Knop  -->
+            <Button Text="Your Builds"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="70"
+                WidthRequest="150"
+                FontSize="Large"
+                FontAttributes="Bold"
+                CornerRadius="20"
+                BackgroundColor="DarkOrange"
+                Grid.Row="4"/>
+
+            <!-- Knop  -->
+            <Button Text="Seach Parts"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="70"
+                WidthRequest="150"
+                FontSize="Large"
+                FontAttributes="Bold"
+                CornerRadius="20"
+                BackgroundColor="DarkOrange"
+                Grid.Row="5"/>
+
+            <!-- Footer -->
+            <Label VerticalOptions="End"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               Margin="0,0,0,10"
+               Grid.Row="6">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Powered by " FontSize="15" TextColor="white"/>
+                        <Span Text="R" FontSize="15" TextColor="Red"/>
+                        <Span Text="G" FontSize="15" TextColor="Green"/>
+                        <Span Text="B" FontSize="15" TextColor="Blue"/>
+                    </FormattedString>
+                </Label.FormattedText>
+
+            </Label>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PcArchitect.Views.StartBuildingPage"
+             xmlns:viewmodel="clr-namespace:PcArchitect.ViewModel"
+             xmlns:model="clr-namespace:PcArchitect.Model"
+             xmlns:Interfaces="clr-namespace:PcArchitect.Interfaces"
+             x:DataType="viewmodel:StartBuildingViewModel"
+             Shell.PresentationMode="Animated"
+             Shell.NavBarIsVisible="False">
+
+    <StackLayout BackgroundColor="{StaticResource BackgroundBackgroundColor}">
+        <CollectionView ItemsSource="{Binding Components}" VerticalOptions="FillAndExpand">
+            <CollectionView.Header>
+                <Label Text="Start Building" TextColor="{StaticResource Signature}"
+                   FontSize="40" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
+                   Margin="0,20,0,20" FontFamily="Koulen"/>
+            </CollectionView.Header>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="Interfaces:IComponent">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="15*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Frame Grid.Row="0" Grid.Column="1" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=GoToPartsListCommand}"
+                                CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                            <Grid BackgroundColor="#D4D4D4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="4*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding Image}" Grid.Column="0"/>
+                                <Label Text="{Binding Name}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="CenterAndExpand" FontSize="30" FontFamily="Koulen"/>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- SAVE AND EXIT -->
+            <Button Text="Save" 
+            IsEnabled="False"
+            Grid.Row="7"
+            Grid.Column="0"
+            Style="{StaticResource ButtonOutline}"
+            Margin="8"
+            FontFamily="Koulen"/>
+            <Button Text="Exit" 
+            IsEnabled="False"
+            Grid.Row="7"
+            Grid.Column="2"
+            Style="{StaticResource ButtonOutline}"
+            Margin="8"
+            FontFamily="Koulen"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
