@@ -5,8 +5,8 @@
              Shell.PresentationMode="NotAnimated"
              Shell.NavBarIsVisible="False">
 
-    <Grid BackgroundColor="black">
-        <Grid>
+    <Grid BackgroundColor="{StaticResource BackgroundBackgroundColor}">
+        <Grid Padding="0">
             <Grid.RowDefinitions>
                 <!-- bovenaan -->
                 <RowDefinition Height="6*" />
@@ -26,9 +26,8 @@
             <Image Source="applogo.png" 
            VerticalOptions="Center" 
            HorizontalOptions="Center"
-           HeightRequest="150" 
-           WidthRequest="150"
-           Aspect="AspectFill"
+           WidthRequest="300"
+           Aspect="AspectFit"
            Grid.Row="0" />
 
             <!-- Titel -->
@@ -40,7 +39,7 @@
            Grid.Row="1">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="Build " FontAttributes="Bold" TextColor="DarkOrange"/>
+                        <Span Text="Build " FontAttributes="Bold" TextColor="{StaticResource Signature}"/>
                         <Span Text="The PC Of Your Dreams" TextColor="white"/>
                     </FormattedString>
                 </Label.FormattedText>
@@ -58,7 +57,7 @@
             FontSize="Large"
             FontAttributes="Bold"
             CornerRadius="20"
-            BackgroundColor="DarkOrange"
+            BackgroundColor="{StaticResource Signature}"
             Grid.Row="3"/>
 
             <!-- Knop  -->
@@ -70,7 +69,7 @@
                 FontSize="Large"
                 FontAttributes="Bold"
                 CornerRadius="20"
-                BackgroundColor="DarkOrange"
+                BackgroundColor="{StaticResource Signature}"
                 Grid.Row="4"/>
 
             <!-- Knop  -->
@@ -82,7 +81,7 @@
                 FontSize="Large"
                 FontAttributes="Bold"
                 CornerRadius="20"
-                BackgroundColor="DarkOrange"
+                BackgroundColor="{StaticResource Signature}"
                 Grid.Row="5"/>
 
             <!-- Footer -->
