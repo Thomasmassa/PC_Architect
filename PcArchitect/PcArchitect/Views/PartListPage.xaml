@@ -7,7 +7,7 @@
              xmlns:model="clr-namespace:PcArchitect.Model"
              xmlns:converters="clr-namespace:PcArchitect.Converters"
              x:DataType="viewmodel:PartListViewModel"
-             Shell.PresentationMode="Animated"
+             Shell.PresentationMode="NotAnimated"
              Shell.NavBarIsVisible="False">
 
     <ContentPage.Behaviors>

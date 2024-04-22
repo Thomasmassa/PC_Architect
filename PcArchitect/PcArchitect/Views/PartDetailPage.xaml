@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:PcArchitect.ViewModel"
              x:DataType="viewmodel:PartDetailViewModel"
              Shell.NavBarIsVisible="False"
-             Shell.PresentationMode="Animated"
+             Shell.PresentationMode="NotAnimated"
              Title="PartDetailPage">
     
     <ScrollView>
