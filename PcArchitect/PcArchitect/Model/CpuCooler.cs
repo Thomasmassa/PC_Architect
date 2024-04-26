@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class CpuCooler : IComponent
+    public class CpuCooler
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";

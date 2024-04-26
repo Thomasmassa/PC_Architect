@@ -20,7 +20,9 @@ database images aantevullen met urls(webscraper). Bug oplossing gedaan met het d
 Alle bestanden naar nieuwe solution overgezet(bepaalde bestanden waren corrupt en usings werkte niet meer). code cleanup
 Repository voor het storen van gekoze componenten, het weergeven van gekoze component in startbuildingViewModel.
 
-Week 9 (22/04): ..... uren:
+swipeview voor verwijderen component.
+
+Week 9 (22/04): 0 uren:
 
 
 

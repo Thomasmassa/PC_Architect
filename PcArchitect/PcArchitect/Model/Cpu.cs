@@ -34,5 +34,11 @@ namespace PcArchitect.Model
 
         [JsonPropertyName("socket")]
         public string Socket { get; set; } = "";
+
+        public string Discription
+        {
+            get { return $"Socket: {Socket}\nCores: {Core_Count}\nCore Clock: {Core_clock}\nBoost Clock: {BoostClock}";  }
+        }
+
     }
 }

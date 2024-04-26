@@ -2,7 +2,6 @@
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Mvvm.Input;
 using PcArchitect.Interfaces;
-using PcArchitect.Model;
 using IComponent = PcArchitect.Interfaces.IComponent;
 using PcArchitect.Views;
 using PC_Architect.Model;
@@ -10,16 +9,16 @@ using PC_Architect.Model;
 namespace PcArchitect.ViewModel
 {
 
-    [QueryProperty(nameof(Component), "Component")]
+    [QueryProperty(nameof(ComponentName), "ComponentName")]
     public partial class PartListViewModel : BaseViewModel
     {
-        public string Component { get; set; }
+        public string? ComponentName { get; set; }
 
         private List<IComponent> collectedParts;
 
         public readonly IComponentService _componentService;
-        public ObservableCollection<Part> Part { get; set; } = [];
-        public ObservableCollection<Part> DisplayedItems { get; set; } = [];
+        public ObservableCollection<IComponent> Components { get; set; } = [];
+        public ObservableCollection<IComponent> DisplayedItems { get; set; } = [];
         private readonly ComponentRepository _componentRepository;
 
         ////////////////////////////////////////////////////////////////////////////
@@ -28,8 +27,9 @@ namespace PcArchitect.ViewModel
         {
             _componentRepository = componentRepository;
             _componentService = componentService;
-            Part = new ObservableCollection<Part>();
-            DisplayedItems = new ObservableCollection<Part>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
+
+            Components = new ObservableCollection<IComponent>();
+            DisplayedItems = new ObservableCollection<IComponent>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
         }
 
 
@@ -37,13 +37,13 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
-            Part.Clear();
-            Title = $"{Component} LIST";
-            collectedParts = await _componentService.GetComponentsAsync(Component);
+            Components.Clear();
+            Title = $"{ComponentName} LIST";
+            collectedParts = await _componentService.GetComponentsAsync(ComponentName);
             if (collectedParts.Count != 0)
                 AddParts(collectedParts);
 
-            if (Part.Any())
+            if (Components.Any())
             {
                 await OnSearch("");      
             }
@@ -54,46 +54,12 @@ namespace PcArchitect.ViewModel
         //ADD PARTS TO collectedParts
         private void AddParts(List<IComponent> collectedParts)
         {
-            string details = string.Empty;// Details van het onderdeel
-
             foreach (var collectedpart in collectedParts)
             {
                 if (collectedpart == null)
                     continue;
 
-                switch (collectedpart)
-                {
-                    case Cpu cpu:
-                        details = $"Socket: {cpu.Socket}\nCores: {cpu.Core_Count}\nCore Clock: {cpu.Core_clock}\nBoost Clock: {cpu.BoostClock}";
-                        break;
-                    case Gpu gpu:
-                        details = $"Memory: {gpu.Memory}\nChipset: {gpu.Chipset}\nCore Clock Type: {gpu.CoreClock}\nBoost Clock: {gpu.BoostClock}";
-                        break;
-                    case CpuCooler cpuCooler:
-                        details = $"Rpm: {cpuCooler.Rpm}\nNoise Level: {cpuCooler.NoiseLevel}dB";
-                        break;
-                    case Memory memory:
-                        details = $"Price Per GB: {memory.PricePerGb}\nFirst Word Latency: {memory.FirstWordLatency}\nCast Latency: {memory.CasLatency}";
-                        break;
-                    case Motherboard motherboard:
-                        details = $"Socket: {motherboard.Socket}\nMemory Slots: {motherboard.MemorySlots}\nMAx Memory: {motherboard.MaxMemory}\nColor: {motherboard.Color}";
-                        break;
-                    case Ssd ssd:
-                        details = $"Capacity: {ssd.Capacity}\nType: {ssd.Type}\nForm Factor: {ssd.FormFactor}\nPrice Per GB {ssd.PricePerGb}";
-                        break;
-                    case Psu psu:
-                        details = $"Wattage: {psu.Wattage}\nEfficiency: {psu.Efficiency}\nModular: {psu.Modular}";
-                        break;
-                }
-
-                var addedpart = new Part
-                {
-                    Name = collectedpart.Name,
-                    Image = collectedpart.Image,
-                    Price = collectedpart.Price,
-                    Discription = details
-                };
-                Part.Add(addedpart);
+                Components.Add(collectedpart);
             }
         }
 
@@ -116,7 +82,7 @@ namespace PcArchitect.ViewModel
             return Task.Run(() =>
             {
                 DisplayedItems.Clear();
-                var results = Part.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+                var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
 
                 if (results.Count != 0)
                 {
@@ -125,14 +91,6 @@ namespace PcArchitect.ViewModel
                         DisplayedItems.Add(result);
                     }
                 }
-                //else
-                //{//deze else state kan weg maar bij gebruik zal de
-                //filter alle items weergeven als zoekresultaat niet gevonden heeft
-                //    foreach (var part in Part)
-                //    {
-                //        DisplayedItems.Add(part);
-                //    }
-                //}
             });
         }
         //SEARCHMETHOD
@@ -144,7 +102,7 @@ namespace PcArchitect.ViewModel
         async Task BackButton()
         {
             DisplayedItems.Clear();
-            Part.Clear(); 
+            Components.Clear(); 
             await Shell.Current.GoToAsync(nameof(StartBuildingPage));
         }
         //BACKBUTTON
@@ -153,14 +111,14 @@ namespace PcArchitect.ViewModel
 
         //SELECTEDPART
         [RelayCommand]
-        async Task SelectedPart(Part part)
+        async Task SelectedPart(IComponent selectedComponent)
         {
-            bool choice = await Shell.Current.DisplayAlert("Selected Part", part.Name, "OK", "Cancel");
+            bool choice = await Shell.Current.DisplayAlert("Selected Part", selectedComponent.Name, "OK", "Cancel");
 
             if (choice)
             {
                 //var collectedPart = collectedParts.FirstOrDefault(p => p.Name == part.Name);
-                var collectedPart = collectedParts.FirstOrDefault(p => p != null && p.Name == part.Name);
+                var collectedPart = collectedParts.FirstOrDefault(p => p != null && p.Name == selectedComponent.Name);
 
                 if (collectedPart != null)
                     await _componentRepository.AddComponentAsync(collectedPart);
@@ -173,14 +131,14 @@ namespace PcArchitect.ViewModel
 
         //PARTTODETAIL
         [RelayCommand]
-        async Task PartToDetail(Part part)
+        async Task PartToDetail(IComponent selectedComponent)
         {
-            if (part == null)
+            if (selectedComponent == null)
                 return;
 
             await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", true, new Dictionary<string, object>
             {
-                { "Part", part }
+                { "selectedComponent", selectedComponent }
             });
         }
     }

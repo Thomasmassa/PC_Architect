@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Ssd : IComponent
+    public class Ssd
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";

@@ -4,7 +4,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PcArchitect.Views.PartListPage"
              xmlns:viewmodel="clr-namespace:PcArchitect.ViewModel"
-             xmlns:model="clr-namespace:PcArchitect.Model"
+             xmlns:interfaces="clr-namespace:PcArchitect.Interfaces"
              xmlns:converters="clr-namespace:PcArchitect.Converters"
              x:DataType="viewmodel:PartListViewModel"
              Shell.PresentationMode="NotAnimated"
@@ -52,7 +52,7 @@
         </Frame>
         <CollectionView ItemsSource="{Binding DisplayedItems}" VerticalOptions="FillAndExpand">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:Part">
+                <DataTemplate x:DataType="interfaces:IComponent">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>

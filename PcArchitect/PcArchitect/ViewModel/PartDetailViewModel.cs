@@ -2,14 +2,28 @@
 using CommunityToolkit.Mvvm.Input;
 using PcArchitect.Views;
 using PcArchitect.Model;
+using System.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace PcArchitect.ViewModel
 {
-    [QueryProperty(nameof(Part), "Part")]
+    [QueryProperty(nameof(SelectedComponent), "selectedComponent")]
     public partial class PartDetailViewModel : BaseViewModel
     {
         [ObservableProperty]
-        Part part;
+        IComponent selectedComponent;
+
+        public ObservableCollection<IComponent> component { get; set; }
+        public PartDetailViewModel()
+        {
+            component = new ObservableCollection<IComponent>();
+            AddComponent();
+        }
+
+        public void AddComponent()
+        {
+            component.Add(selectedComponent);
+        }
 
         [RelayCommand]
         async Task GoBack()

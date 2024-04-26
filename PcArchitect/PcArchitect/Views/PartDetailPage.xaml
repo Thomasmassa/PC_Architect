@@ -3,22 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PcArchitect.Views.PartDetailPage"
              xmlns:viewmodel="clr-namespace:PcArchitect.ViewModel"
+             xmlns:interfaces="clr-namespace:PcArchitect.Interfaces"
              x:DataType="viewmodel:PartDetailViewModel"
              Shell.NavBarIsVisible="False"
              Shell.PresentationMode="NotAnimated"
              Title="PartDetailPage">
     
     <ScrollView>
-        <CollectionView ItemsSource="{Binding Part}">
+        <CollectionView ItemsSource="{Binding component}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
-                        <Label Text="{Binding Part.Name}" HorizontalOptions="CenterAndExpand"/>
-                        <Image Source="{Binding Part.Image}" Aspect="AspectFill" HorizontalOptions="CenterAndExpand"/>
-                        <Label Text="{Binding Part.Price}" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="" HorizontalOptions="CenterAndExpand"/>
+                        <Image Source="cpu.png" Aspect="AspectFill" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="" HorizontalOptions="CenterAndExpand"/>
                         <Button Text="Details" BackgroundColor="{StaticResource Signature}" HorizontalOptions="FillAndExpand"/>
                         <StackLayout IsVisible="True">
-                            <Label Text="{Binding Part.Discription}"/>
+                            <Label Text=""/>
                         </StackLayout>
                     </StackLayout>
                 </DataTemplate>

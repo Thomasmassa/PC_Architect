@@ -5,5 +5,6 @@
         string Name { get; }
         string Image { get; }
         double? Price { get; }
+        string? Discription { get; }
     }
 }

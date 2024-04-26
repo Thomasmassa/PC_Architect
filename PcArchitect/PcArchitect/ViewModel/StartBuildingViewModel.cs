@@ -5,6 +5,7 @@ using PcArchitect.Interfaces;
 using PcArchitect.Model;
 using PcArchitect.Views;
 using PC_Architect.Model;
+using System.Collections;
 
 namespace PcArchitect.ViewModel
 {
@@ -27,38 +28,21 @@ namespace PcArchitect.ViewModel
         {
             return Task.Run(() =>
             {
-                var lastCpu = _root.Cpu.Where(cpu => cpu != null).LastOrDefault();
-                Components.Add(new Cpu { Name = lastCpu.Name, Image = lastCpu.Image });
+                var properties = typeof(Root).GetProperties();
 
-                var lastCpuCooler = _root.CpuCooler.Where(cpuCooler => cpuCooler != null).LastOrDefault();
-                Components.Add(new CpuCooler { Name = lastCpuCooler.Name, Image = lastCpuCooler.Image });
+                foreach (var property in properties)
+                {
+                    if (property.PropertyType.IsGenericType && property.PropertyType.GetGenericTypeDefinition() == typeof(List<>))
+                    {
+                        var list = (IList?)property.GetValue(_root);
+                        var lastItem = list?.Cast<IComponent>().LastOrDefault();
 
-                var lastMotherboard = _root.Motherboard.Where(motherboard => motherboard != null).LastOrDefault();
-                Components.Add(new Motherboard { Name = lastMotherboard.Name, Image = lastMotherboard.Image });
-
-                var lastMemory = _root.Memory.Where(memory => memory != null).LastOrDefault();
-                Components.Add(new Memory { Name = lastMemory.Name, Image = lastMemory.Image });
-
-                var lastGpu = _root.Gpu.Where(gpu => gpu != null).LastOrDefault();
-                Components.Add(new Gpu { Name = lastGpu.Name, Image = lastGpu.Image });
-
-                var lastSsd = _root.Ssd.Where(ssd => ssd != null).LastOrDefault();
-                Components.Add(new Ssd { Name = lastSsd.Name, Image = lastSsd.Image });
-
-                var lastHdd = _root.Hdd.Where(hdd => hdd != null).LastOrDefault();
-                Components.Add(new Hdd { Name = lastHdd.Name, Image = lastHdd.Image });
-
-                var lastPsu = _root.Psu.Where(psu => psu != null).LastOrDefault();
-                Components.Add(new Psu { Name = lastPsu.Name, Image = lastPsu.Image });
-
-                var lastCaseFan = _root.Case_Fan.Where(caseFan => caseFan != null).LastOrDefault();
-                Components.Add(new CaseFan { Name = lastCaseFan.Name, Image = lastCaseFan.Image });
-
-                var lastCase = _root.Case.Where(case_ => case_ != null).LastOrDefault();
-                Components.Add(new Case { Name = lastCase.Name, Image = lastCase.Image });
-
-                var lastOs = _root.Os.Where(os => os != null).LastOrDefault();
-                Components.Add(new Os { Name = lastOs.Name, Image = lastOs.Image });
+                        if (lastItem != null)
+                        {
+                            Components.Add(lastItem);
+                        }
+                    }
+                }
             });
         }
 
@@ -96,7 +80,7 @@ namespace PcArchitect.ViewModel
             // Navigeer naar de PartsList pagina
             await Shell.Current.GoToAsync(nameof(PartListPage), true, new Dictionary<string, object>
             {
-                {"Component", component.Name }
+                {"ComponentName", component.Name }
             });
         }
     }
