@@ -111,7 +111,7 @@ namespace PcArchitect.ViewModel
 
         //SELECTEDPART
         [RelayCommand]
-        async Task SelectedPart(IComponent selectedComponent)
+        async Task SelectedPart(IComponent selectedComponent) // aanpassen methode naam naar AddSelectedPartToRepository
         {
             bool choice = await Shell.Current.DisplayAlert("Selected Part", selectedComponent.Name, "OK", "Cancel");
 
@@ -122,6 +122,8 @@ namespace PcArchitect.ViewModel
 
                 if (collectedPart != null)
                     await _componentRepository.AddComponentAsync(collectedPart);
+
+                await Shell.Current.GoToAsync(nameof(StartBuildingPage));
             }
             return;
         }

@@ -21,7 +21,10 @@ namespace PcArchitect.ViewModel
             _root = root;
             _componentRepository = componentRepository;
             _componentService = componentService;
-            Components = new ObservableCollection<IComponent>();   
+            Components = new ObservableCollection<IComponent>();
+
+            IsPresetFrameEnabled = true;
+            IsSelectedComponentFrameEnabled = false;
         }
 
         public Task AddComponents()
@@ -39,6 +42,17 @@ namespace PcArchitect.ViewModel
 
                         if (lastItem != null)
                         {
+                            if (lastItem.Price is null)
+                            {
+                                IsPresetFrameEnabled = true;
+                                IsSelectedComponentFrameEnabled = false;
+                            }
+                            else
+                            {
+                                IsSelectedComponentFrameEnabled = true;
+                                IsPresetFrameEnabled = false;
+                            }
+
                             Components.Add(lastItem);
                         }
                     }
@@ -52,23 +66,19 @@ namespace PcArchitect.ViewModel
             await AddComponents();
         }
 
-        //[RelayCommand]
-        //public async Task DeleteComponent (IComponent component)
-        //{
-        //    if (component == null)
-        //        return;
+        [RelayCommand]
+        public async Task DeleteComponent(IComponent component)
+        {
+            if (component == null)
+                return;
 
-        //    // Zoek de component in _root
-        //    var componentType = component.GetType();
-        //    var componentList = typeof(Root).GetProperty(componentType.Name).GetValue(_root);
+            await _componentRepository.RemoveComponentAsync(component);
+            Components.Clear();
+            await AddComponents();
 
-        //    // Verwijder de component
-        //    var componentToRemove = componentList.Cast<IComponent>().FirstOrDefault(c => c.Name == component.Name);
-        //    if (componentToRemove != null)
-        //    {
-        //        componentList.Remove(componentToRemove);
-        //    }
-        //}
+            IsPresetFrameEnabled = true; 
+            IsSelectedComponentFrameEnabled = true;
+        }
 
         [RelayCommand]
         public async Task GoToPartsList(IComponent component)
