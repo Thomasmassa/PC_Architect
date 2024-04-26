@@ -1,9 +1,11 @@
 ﻿using PcArchitect.Interfaces;
+using System.Net.Sockets;
+using System.Runtime.Intrinsics.Arm;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Case
+    public class Case : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -23,5 +25,13 @@ namespace PcArchitect.Model
         public double? ExternalVolume { get; set; }
         [JsonPropertyName("internal_35_bays")]
         public int Internal35Bays { get; set; }
+
+        public string Discription
+        {
+            get { return $"Psu: {Psu}\nType: {Type}\nExternal Volume: {ExternalVolume}\nInternal 35 Bays {Internal35Bays}"; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

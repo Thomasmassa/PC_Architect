@@ -52,7 +52,9 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
 
-                                <Frame x:Name="presetFrame" IsEnabled="{Binding Source={x:Reference ThisPage}, Path=BindingContext.IsPresetFrameEnabled}" Grid.Row="0" Grid.Column="1" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10">
+                                <!--Frame voor de preset-->
+                                <Frame x:Name="presetFrame" IsVisible="{Binding IsPresetFrameEnabled}" 
+                                    Grid.Row="0" Grid.Column="1" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10">
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer x:Name="openListButton"
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=GoToPartsListCommand}"
@@ -69,10 +71,13 @@
                                             HorizontalOptions="CenterAndExpand" FontSize="30" FontFamily="Koulen"/>
                                     </Grid>
                                 </Frame>
+                                <!--Frame voor de preset-->
 
-                                <Frame x:Name="selectedComponentFrame" IsEnabled="{Binding Source={x:Reference ThisPage}, Path=BindingContext.IsSelectedComponentFrameEnabled}"  Grid.Row="0" Grid.Column="1" 
-                                       BorderColor="Transparent" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" 
-                                       Margin="0,10,0,10" Padding="0">
+
+                                <!--Frame voor de geselecteerde component-->
+                                <Frame IsVisible="{Binding IsSelectedComponentFrameEnabled}" 
+                                    Grid.Row="0" Grid.Column="1" x:Name="selectedComponentFrame" BorderColor="Transparent" CornerRadius="15" 
+                                    HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10" Padding="0">
 
                                     <Grid BackgroundColor="#D4D4D4">
                                         <Grid.RowDefinitions>
@@ -111,10 +116,11 @@
                                                Grid.RowSpan="4" Grid.ColumnSpan="2" Grid.Column="5" 
                                             VerticalOptions="CenterAndExpand" HorizontalTextAlignment="End" FontSize="Medium" Margin="0,10,10,0"/>
 
-                                        <Frame BackgroundColor="{StaticResource deleteButton}" CornerRadius="0" BorderColor="{StaticResource deleteButton}" Grid.RowSpan="4" Grid.Column="7" HeightRequest="150" WidthRequest="50" Padding="0" VerticalOptions="FillAndExpand">
+                                        <Frame BackgroundColor="{StaticResource deleteButton}" CornerRadius="0" BorderColor="{StaticResource deleteButton}"
+                                               Grid.RowSpan="4" Grid.Column="7" HeightRequest="150" WidthRequest="50" Padding="0" VerticalOptions="FillAndExpand">
                                             <Frame.GestureRecognizers>
                                                 <TapGestureRecognizer
-                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=DeleteComponentCommand}"
+                                                    Command="{Binding Source={x:Reference ThisPage}, Path=BindingContext.DeleteComponentCommand}"
                                                     CommandParameter="{Binding .}"/>
                                             </Frame.GestureRecognizers>
                                             <Grid>
@@ -126,11 +132,12 @@
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="*" />
                                                 </Grid.ColumnDefinitions>
-                                                <Label Text="+" Grid.Column="0" TextColor="Black" Grid.Row="1" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                                <Label Text="X" Grid.Column="0" FontAttributes="Bold" TextColor="Black" Grid.Row="1" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
                                             </Grid>
                                         </Frame>
                                     </Grid>
                                 </Frame>
+                                 <!--Frame voor de geselecteerde component-->
 
                             </Grid>
                         <!--</SwipeView.Content>

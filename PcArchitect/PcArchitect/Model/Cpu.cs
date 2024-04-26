@@ -40,5 +40,7 @@ namespace PcArchitect.Model
             get { return $"Socket: {Socket}\nCores: {Core_Count}\nCore Clock: {Core_clock}\nBoost Clock: {BoostClock}";  }
         }
 
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

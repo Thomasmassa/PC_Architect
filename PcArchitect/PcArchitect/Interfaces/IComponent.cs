@@ -6,5 +6,9 @@
         string Image { get; }
         double? Price { get; }
         string? Discription { get; }
+
+
+        bool? IsSelectedComponentFrameEnabled { get; set; }
+        bool? IsPresetFrameEnabled { get; set; }
     }
 }

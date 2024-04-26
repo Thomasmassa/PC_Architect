@@ -122,7 +122,9 @@ namespace PcArchitect.ViewModel
 
                 if (collectedPart != null)
                     await _componentRepository.AddComponentAsync(collectedPart);
-
+                
+                DisplayedItems.Clear();
+                Components.Clear();
                 await Shell.Current.GoToAsync(nameof(StartBuildingPage));
             }
             return;

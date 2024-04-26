@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Motherboard
+    public class Motherboard : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -21,5 +21,13 @@ namespace PcArchitect.Model
         public int MemorySlots { get; set; }
         [JsonPropertyName("color")]
         public string Color { get; set; } = "";
+
+        public string Discription
+        {
+            get { return $"Socket: {Socket}\nMemory Slots: {MemorySlots}\nMax Memory: {MaxMemory}\nColor: {Color}"; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

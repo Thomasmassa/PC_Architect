@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class CpuCooler
+    public class CpuCooler : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -19,5 +19,13 @@ namespace PcArchitect.Model
         public string Color { get; set; } = "";
         [JsonPropertyName("size")]
         public int? Size { get; set; }
+
+        public string Discription
+        {
+            get { return $"Rpm: {Rpm}\nNoise Level: {NoiseLevel}dB"; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

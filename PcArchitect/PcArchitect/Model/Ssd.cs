@@ -1,9 +1,10 @@
 ﻿using PcArchitect.Interfaces;
+using System.Runtime.Intrinsics.X86;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Ssd
+    public class Ssd : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -23,5 +24,13 @@ namespace PcArchitect.Model
         public object FormFactor { get; set; } = "";
         [JsonPropertyName("interface")]
         public string Interface { get; set; } = "";
+
+        public string Discription
+        {
+            get { return $"Capacity: {Capacity}\nType: {Type}\nForm Factor: {FormFactor}\nPrice Per GB {PricePerGb}"; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

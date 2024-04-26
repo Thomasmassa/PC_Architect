@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Gpu
+    public class Gpu : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -23,5 +23,13 @@ namespace PcArchitect.Model
         public string Color { get; set; } = "";
         [JsonPropertyName("length")]
         public int? Length { get; set; }
+
+        public string Discription
+        {
+            get { return $"Memory: {Memory}\nChipset: {Chipset}\nCore Clock Type: {CoreClock}\nBoost Clock: {BoostClock}"; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

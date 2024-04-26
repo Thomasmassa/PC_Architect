@@ -1,9 +1,10 @@
 ﻿using PcArchitect.Interfaces;
+using System;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Memory
+    public class Memory : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -23,5 +24,13 @@ namespace PcArchitect.Model
         public double FirstWordLatency { get; set; }
         [JsonPropertyName("cas_latency")]
         public int CasLatency { get; set; }
+
+        public string Discription
+        {
+            get { return $"Price Per GB: {PricePerGb}\nFirst Word Latency: {FirstWordLatency}\nCast Latency: {CasLatency}"; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

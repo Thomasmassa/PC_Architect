@@ -6,6 +6,7 @@ using PcArchitect.Model;
 using PcArchitect.Views;
 using PC_Architect.Model;
 using System.Collections;
+using System.Runtime.CompilerServices;
 
 namespace PcArchitect.ViewModel
 {
@@ -22,9 +23,6 @@ namespace PcArchitect.ViewModel
             _componentRepository = componentRepository;
             _componentService = componentService;
             Components = new ObservableCollection<IComponent>();
-
-            IsPresetFrameEnabled = true;
-            IsSelectedComponentFrameEnabled = false;
         }
 
         public Task AddComponents()
@@ -42,15 +40,10 @@ namespace PcArchitect.ViewModel
 
                         if (lastItem != null)
                         {
-                            if (lastItem.Price is null)
+                            if (lastItem.Price != null)
                             {
-                                IsPresetFrameEnabled = true;
-                                IsSelectedComponentFrameEnabled = false;
-                            }
-                            else
-                            {
-                                IsSelectedComponentFrameEnabled = true;
-                                IsPresetFrameEnabled = false;
+                                lastItem.IsSelectedComponentFrameEnabled = true;
+                                lastItem.IsPresetFrameEnabled = false;
                             }
 
                             Components.Add(lastItem);
@@ -72,12 +65,13 @@ namespace PcArchitect.ViewModel
             if (component == null)
                 return;
 
-            await _componentRepository.RemoveComponentAsync(component);
-            Components.Clear();
-            await AddComponents();
-
-            IsPresetFrameEnabled = true; 
-            IsSelectedComponentFrameEnabled = true;
+            bool choice = await Shell.Current.DisplayAlert("Your sure mate", component.Name, "Delete", "Cancel");
+            if (choice)
+            {
+                await _componentRepository.RemoveComponentAsync(component);
+                Components.Clear();
+                await AddComponents();
+            }
         }
 
         [RelayCommand]

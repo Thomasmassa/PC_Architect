@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Psu
+    public class Psu : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -21,5 +21,13 @@ namespace PcArchitect.Model
         public object Modular { get; set; } = "";
         [JsonPropertyName("color")]
         public string Color { get; set; } = "";
+
+        public string Discription
+        {
+            get { return $"Wattage: {Wattage}\nEfficiency: {Efficiency}\nModular: {Modular}"; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

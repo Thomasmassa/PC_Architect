@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Hdd
+    public class Hdd : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -21,5 +21,13 @@ namespace PcArchitect.Model
         public double? PricePerGb { get; set; }
         [JsonPropertyName("color")]
         public string Color { get; set; } = "";
+
+        public string Discription
+        {
+            get { return $"Capacity: {Capacity}\nType: {Type}\nInterface: {Interface}\nPrice Per GB {PricePerGb}"; ; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }

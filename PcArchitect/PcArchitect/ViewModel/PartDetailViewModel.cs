@@ -22,7 +22,7 @@ namespace PcArchitect.ViewModel
 
         public void AddComponent()
         {
-            component.Add(selectedComponent);
+            component.Add(SelectedComponent);
         }
 
         [RelayCommand]

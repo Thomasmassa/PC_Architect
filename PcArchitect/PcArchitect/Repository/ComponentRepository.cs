@@ -58,14 +58,17 @@ namespace PC_Architect.Model
             });return Task.CompletedTask;
         }
 
-        public Task RemoveComponentAsync<T>(T component)
+        public async Task RemoveComponentAsync<T>(T component)
         {
-            Task.Run(() =>
+            await Task.Run(() =>
             {
                 switch (component)
                 {
                     case Cpu cpu:
                         _root.Cpu.Remove(cpu);
+                        break;
+                    case CpuCooler cpuCooler:
+                        _root.CpuCooler.Remove(cpuCooler);
                         break;
                     case Gpu gpu:
                         _root.Gpu.Remove(gpu);
@@ -95,7 +98,7 @@ namespace PC_Architect.Model
                         _root.Os.Remove(os);
                         break;
                 }
-            });return Task.CompletedTask;
+            }); 
         }
         public void ClearComponents()
         {

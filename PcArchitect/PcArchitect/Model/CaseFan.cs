@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class CaseFan
+    public class CaseFan : IComponent
     {
         [JsonPropertyName("image")]
         public string Image { get; set; } = "";
@@ -23,5 +23,13 @@ namespace PcArchitect.Model
         public object NoiseLevel { get; set; } = "";
         [JsonPropertyName("pwm")]
         public bool Pwm { get; set; } = false;
+
+        public string Discription
+        {
+            get { return $"Size: {Size}\nRpm: {Rpm}\nAirflow: {Airflow}\nNoise Level {NoiseLevel}"; }
+        }
+
+        public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
+        public bool? IsPresetFrameEnabled { get; set; } = false;
     }
 }
