@@ -16,9 +16,12 @@ Al even geleden dat ik hier nog aan heb gewerkt, maar vermoed dat ik die week de
 Ook een manier gevonden om tussen de twee pagina's te navigeren. 
 Verder heb ik die week niet al teveel gedaan vrees ik.
 
-Week 8 (15/04): ..... uren:
+Week 8 (15/04): ~10 uren:
 
-
+Layout aanpassingen aangebracht aan de eerste twee pagina's en ook de app zelf. 
+Navigatie toegevoegd aan de detailspage voor de parts.
+"extreme programming" met Thomas voor het overzetten van het vorige project naar een nieuw project (vanwege problemen).
+Kan zijn dat ik dingen vergeten ben, maar heb dit slecht bijgehouden voor week 8, eerlijk gezegt.
 
 Week 9 (22/04): ..... uren:
 
