@@ -6,7 +6,7 @@ using PcArchitect.Model;
 using PcArchitect.Views;
 using PC_Architect.Model;
 using System.Collections;
-using System.Runtime.CompilerServices;
+using System.Diagnostics;
 
 namespace PcArchitect.ViewModel
 {
@@ -87,5 +87,19 @@ namespace PcArchitect.ViewModel
                 {"ComponentName", component.Name }
             });
         }
+
+        [RelayCommand]
+        public async Task BackButton()
+        {
+            try
+            {
+                await Shell.Current.GoToAsync(nameof(MainPage));
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+        }
     }
 }
+

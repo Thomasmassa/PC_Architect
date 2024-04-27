@@ -1,17 +1,13 @@
-﻿using PcArchitect.Views;
+﻿namespace PcArchitect;
+using PcArchitect.ViewModel;
 
-namespace PcArchitect
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    public MainPage(MainViewModel viewModel)
     {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
 
-        async void OnStartBuildingClicked(object sender, EventArgs e)
-        {
-            await Shell.Current.GoToAsync(nameof(StartBuildingPage));
-        }
+        BindingContext = viewModel;
     }
 }
+

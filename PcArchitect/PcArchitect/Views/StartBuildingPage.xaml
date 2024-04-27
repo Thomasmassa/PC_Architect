@@ -160,17 +160,18 @@
 
             <!-- SAVE AND EXIT -->
             <Button Text="Save" 
+            TextColor="{StaticResource darkText}"
             Padding="0"
-            IsEnabled="False"
             Grid.Row="7"
             Grid.Column="1"
             Style="{StaticResource ButtonOutline}"
             Margin="8"
             FontFamily="Koulen"
             FontSize="20"/>
-            <Button Text="Back" 
+            <Button Text="Back"
+            TextColor="{StaticResource darkText}"
+            Command="{Binding BackButtonCommand}"
             Padding="0"
-            IsEnabled="False"
             Grid.Row="7"
             Grid.Column="3"
             Style="{StaticResource ButtonOutline}"

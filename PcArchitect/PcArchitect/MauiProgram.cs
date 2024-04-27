@@ -28,7 +28,9 @@ namespace PcArchitect
             builder.Services.AddSingleton<Root>();
             builder.Services.AddSingleton<ComponentRepository>();
             builder.Services.AddSingleton<IComponentService, ComponentService>();
+
             builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainViewModel>();
             builder.Services.AddSingleton<StartBuildingViewModel>();
             builder.Services.AddSingleton<StartBuildingPage>();
             builder.Services.AddSingleton<PartListViewModel>();
