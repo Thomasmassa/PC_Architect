@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PcArchitect.Views.PartDetailPage"
              xmlns:viewmodel="clr-namespace:PcArchitect.ViewModel"
              xmlns:interfaces="clr-namespace:PcArchitect.Interfaces"
@@ -8,23 +9,21 @@
              Shell.NavBarIsVisible="False"
              Shell.PresentationMode="NotAnimated"
              Title="PartDetailPage">
-    
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
+    </ContentPage.Behaviors>
+
     <ScrollView>
-        <CollectionView ItemsSource="{Binding component}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout>
-                        <Label Text="" HorizontalOptions="CenterAndExpand"/>
-                        <Image Source="cpu.png" Aspect="AspectFill" HorizontalOptions="CenterAndExpand"/>
-                        <Label Text="" HorizontalOptions="CenterAndExpand"/>
-                        <Button Text="Details" BackgroundColor="{StaticResource Signature}" HorizontalOptions="FillAndExpand"/>
-                        <StackLayout IsVisible="True">
-                            <Label Text=""/>
-                        </StackLayout>
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+        <StackLayout>
+            <Label Text="{Binding DisplayedItem.Name}" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="{Binding DisplayedItem.Image}" Aspect="AspectFill" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="{Binding DisplayedItem.Price}" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="Details" BackgroundColor="{StaticResource Signature}" HorizontalOptions="FillAndExpand"/>
+            <StackLayout IsVisible="True">
+                <Label Text="{Binding DisplayedItem.Discription}"/>
+            </StackLayout>
+        </StackLayout>
     </ScrollView>
     
 </ContentPage>

@@ -19,10 +19,11 @@ namespace PcArchitect.ViewModel
         public readonly IComponentService _componentService;
         public ObservableCollection<IComponent> Components { get; set; } = [];
         public ObservableCollection<IComponent> DisplayedItems { get; set; } = [];
+
         private readonly ComponentRepository _componentRepository;
 
         ////////////////////////////////////////////////////////////////////////////
-        
+
         public PartListViewModel(IComponentService componentService, ComponentRepository componentRepository)
         {
             _componentRepository = componentRepository;
@@ -45,7 +46,7 @@ namespace PcArchitect.ViewModel
 
             if (Components.Any())
             {
-                await OnSearch("");      
+                await OnSearch("");
             }
         }
 
@@ -94,15 +95,15 @@ namespace PcArchitect.ViewModel
             });
         }
         //SEARCHMETHOD
-        
+
         ////////////////////////////////////////////////////////////////////////////
-        
+
         //BACKBUTTON
         [RelayCommand]
         async Task BackButton()
         {
             DisplayedItems.Clear();
-            Components.Clear(); 
+            Components.Clear();
             await Shell.Current.GoToAsync(nameof(StartBuildingPage));
         }
         //BACKBUTTON
@@ -122,7 +123,7 @@ namespace PcArchitect.ViewModel
 
                 if (collectedPart != null)
                     await _componentRepository.AddComponentAsync(collectedPart);
-                
+
                 DisplayedItems.Clear();
                 Components.Clear();
                 await Shell.Current.GoToAsync(nameof(StartBuildingPage));
@@ -135,14 +136,16 @@ namespace PcArchitect.ViewModel
 
         //PARTTODETAIL
         [RelayCommand]
-        async Task PartToDetail(IComponent selectedComponent)
+        async Task PartToDetail(IComponent selectedItem)
         {
-            if (selectedComponent == null)
+            if (selectedItem == null)
                 return;
+
+            var item = selectedItem;
 
             await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", true, new Dictionary<string, object>
             {
-                { "selectedComponent", selectedComponent }
+                { "Item", item}
             });
         }
     }

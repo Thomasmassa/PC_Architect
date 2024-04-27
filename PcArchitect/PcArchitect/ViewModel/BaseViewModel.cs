@@ -11,11 +11,8 @@ namespace PcArchitect.ViewModel
         [ObservableProperty]
         string title = "";
 
-        //[ObservableProperty]
-        //bool isPresetFrameEnabled = true;
-
-        //[ObservableProperty]    
-        //bool isSelectedComponentFrameEnabled = true;
+        [ObservableProperty]
+        string item = "";   
 
         public bool IsNotBusy => !IsBusy;
     }

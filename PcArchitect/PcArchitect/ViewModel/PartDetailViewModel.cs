@@ -1,28 +1,61 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PcArchitect.Views;
-using PcArchitect.Model;
+using PcArchitect.Interfaces;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
+using IComponent = PcArchitect.Interfaces.IComponent;
 
 namespace PcArchitect.ViewModel
 {
-    [QueryProperty(nameof(SelectedComponent), "selectedComponent")]
+    [QueryProperty(nameof(Item), "Item")]
     public partial class PartDetailViewModel : BaseViewModel
     {
-        [ObservableProperty]
-        IComponent selectedComponent;
+        private List<IComponent> itemList; // moet list zijn omdat dat ook zo wordt teruggegeven
 
-        public ObservableCollection<IComponent> component { get; set; }
-        public PartDetailViewModel()
+        [ObservableProperty]
+        IComponent item;
+
+        public IComponent DisplayedItem { get; set; }
+
+        public readonly IComponentService _componentService;
+
+        public PartDetailViewModel(IComponentService componentService)
         {
-            component = new ObservableCollection<IComponent>();
-            AddComponent();
+            _componentService = componentService;
+
+            itemList = new List<IComponent>();
         }
 
-        public void AddComponent()
+        [RelayCommand]
+        async Task PageNavigated(NavigatedToEventArgs args)
         {
-            component.Add(SelectedComponent);
+            Title = $"{Item.Name}";
+
+            //if (SelectedItemName == null)
+            //{
+            //    return;
+            //}
+            //else
+            //{
+            //    Title = $"{Component}";
+            //    Item = $"{SelectedItemName}";
+
+            //    itemList = await _componentService.GetComponentsAsync(Component);
+
+            //    if (itemList.Count != 0)
+            //    {
+            //        foreach (var item in itemList)
+            //        {
+            //            if (item.Name == null) continue;
+
+            //            if (item.Name == SelectedItemName)
+            //            {
+            //                DisplayedItem = item;
+            //            }
+            //        }
+            //    }
+            //}
         }
 
         [RelayCommand]

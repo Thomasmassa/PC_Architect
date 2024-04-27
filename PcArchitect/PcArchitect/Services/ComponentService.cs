@@ -37,6 +37,10 @@ namespace PcArchitect.Services
             return parts;
         }
 
+        /// 
+        /// /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// 
+
         private async Task<List<T>> GetComponentsAsync<T>(string path)
         {
             try
