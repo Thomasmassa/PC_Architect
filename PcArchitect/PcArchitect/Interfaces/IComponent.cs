@@ -10,5 +10,6 @@
 
         bool? IsSelectedComponentFrameEnabled { get; set; }
         bool? IsPresetFrameEnabled { get; set; }
+        bool IsDescriptionVisible { get; set; }
     }
 }

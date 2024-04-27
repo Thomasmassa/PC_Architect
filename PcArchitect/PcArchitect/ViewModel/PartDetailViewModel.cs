@@ -16,7 +16,7 @@ namespace PcArchitect.ViewModel
         public IComponent DisplayedItem { get; set; }
 
         private readonly BufferService _bufferService;
-        public ObservableCollection<IComponent> Component { get; set; } = [];
+        public ObservableCollection<IComponent> Component { get; set; }
 
         public PartDetailViewModel(BufferService bufferService)
         {
@@ -25,16 +25,16 @@ namespace PcArchitect.ViewModel
         }
 
         [RelayCommand]
+        async Task BackButton()
+        {
+            await Shell.Current.GoToAsync(nameof(PartListPage));
+        }
+
+        [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
             var component = (IComponent)_bufferService.GetBufferedComponent(SelectedItem);
             Component.Add(component);
-        }
-
-        [RelayCommand]
-        async Task GoBack()
-        {
-            await Shell.Current.GoToAsync(nameof(PartListPage));
         }
     }
 }

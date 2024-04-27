@@ -11,9 +11,21 @@ namespace PcArchitect.ViewModel
     public partial class MainViewModel : BaseViewModel
     {
         [RelayCommand]
-        public async Task GoToStartBuilding()
+        async Task GoToStartBuilding()
         {
             await Shell.Current.GoToAsync(nameof(StartBuildingPage));
+        }
+
+        [RelayCommand]
+        async Task GoToMyBuild()
+        {
+            await Shell.Current.GoToAsync(nameof(MyBuildPage));
+        }
+
+        [RelayCommand]
+        async Task GoToSearch()
+        {
+            await Shell.Current.GoToAsync(nameof(SearchPage));
         }
     }
 }

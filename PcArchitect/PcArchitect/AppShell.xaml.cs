@@ -11,6 +11,8 @@ namespace PcArchitect
             Routing.RegisterRoute(nameof(StartBuildingPage), typeof(StartBuildingPage));
             Routing.RegisterRoute(nameof(PartListPage), typeof(PartListPage));
             Routing.RegisterRoute(nameof(PartDetailPage), typeof(PartDetailPage));
+            Routing.RegisterRoute(nameof(MyBuildPage), typeof(MyBuildPage));
+            Routing.RegisterRoute(nameof(SearchPage), typeof(SearchPage));
         }
     }
 }

@@ -40,7 +40,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.png" Color="#222222" BaseSize="6,6"/>
+		<MauiIcon Include="Resources\AppIcon\appicon.png" Color="#222222" BaseSize="6,6" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#222222" BaseSize="128,128" />
@@ -74,8 +74,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\MainPage.xaml">
-	   	<Generator>MSBuild:Compile</Generator>
+	  <MauiXaml Update="Views\MyBuildPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\PartDetailPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
@@ -83,8 +83,14 @@
 	  <MauiXaml Update="Views\PartListPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\SearchPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\StartBuildingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+   	  <MauiXaml Update="Views\MainPage.xaml">
+	 	<Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
 

@@ -22,6 +22,7 @@ namespace PcArchitect.ViewModel
             _root = root;
             _componentRepository = componentRepository;
             _componentService = componentService;
+
             Components = new ObservableCollection<IComponent>();
         }
 

@@ -32,5 +32,6 @@ namespace PcArchitect.Model
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
         public bool? IsPresetFrameEnabled { get; set; } = false;
+        public bool IsDescriptionVisible { get; set; } = false;
     }
 }
