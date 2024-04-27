@@ -35,6 +35,7 @@ namespace PcArchitect
             builder.Services.AddSingleton<StartBuildingPage>();
             builder.Services.AddSingleton<PartListViewModel>();
             builder.Services.AddSingleton<PartListPage>();
+            builder.Services.AddSingleton<BufferService>();
 
             builder.Services.AddTransient<PartDetailViewModel>();
             builder.Services.AddTransient<PartDetailPage>();

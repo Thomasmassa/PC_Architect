@@ -5,57 +5,30 @@ using PcArchitect.Interfaces;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 using IComponent = PcArchitect.Interfaces.IComponent;
+using PcArchitect.Services;
 
 namespace PcArchitect.ViewModel
 {
-    [QueryProperty(nameof(Item), "Item")]
+    [QueryProperty(nameof(SelectedItem), "SelectedItem")]
     public partial class PartDetailViewModel : BaseViewModel
     {
-        private List<IComponent> itemList; // moet list zijn omdat dat ook zo wordt teruggegeven
-
-        [ObservableProperty]
-        IComponent item;
-
+        public string SelectedItem { get; set; }
         public IComponent DisplayedItem { get; set; }
 
-        public readonly IComponentService _componentService;
+        private readonly BufferService _bufferService;
+        public ObservableCollection<IComponent> Component { get; set; } = [];
 
-        public PartDetailViewModel(IComponentService componentService)
+        public PartDetailViewModel(BufferService bufferService)
         {
-            _componentService = componentService;
-
-            itemList = new List<IComponent>();
+            _bufferService = bufferService;
+            Component = new ObservableCollection<IComponent>();
         }
 
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
-            Title = $"{Item.Name}";
-
-            //if (SelectedItemName == null)
-            //{
-            //    return;
-            //}
-            //else
-            //{
-            //    Title = $"{Component}";
-            //    Item = $"{SelectedItemName}";
-
-            //    itemList = await _componentService.GetComponentsAsync(Component);
-
-            //    if (itemList.Count != 0)
-            //    {
-            //        foreach (var item in itemList)
-            //        {
-            //            if (item.Name == null) continue;
-
-            //            if (item.Name == SelectedItemName)
-            //            {
-            //                DisplayedItem = item;
-            //            }
-            //        }
-            //    }
-            //}
+            var component = (IComponent)_bufferService.GetBufferedComponent(SelectedItem);
+            Component.Add(component);
         }
 
         [RelayCommand]

@@ -5,6 +5,7 @@ using PcArchitect.Interfaces;
 using IComponent = PcArchitect.Interfaces.IComponent;
 using PcArchitect.Views;
 using PC_Architect.Model;
+using PcArchitect.Services;
 
 namespace PcArchitect.ViewModel
 {
@@ -16,18 +17,21 @@ namespace PcArchitect.ViewModel
 
         private List<IComponent> collectedParts;
 
-        public readonly IComponentService _componentService;
         public ObservableCollection<IComponent> Components { get; set; } = [];
         public ObservableCollection<IComponent> DisplayedItems { get; set; } = [];
 
+        public readonly IComponentService _componentService;
         private readonly ComponentRepository _componentRepository;
+
+        private readonly BufferService _bufferService;
 
         ////////////////////////////////////////////////////////////////////////////
 
-        public PartListViewModel(IComponentService componentService, ComponentRepository componentRepository)
+        public PartListViewModel(IComponentService componentService, ComponentRepository componentRepository, BufferService bufferService)
         {
             _componentRepository = componentRepository;
             _componentService = componentService;
+            _bufferService = bufferService;
 
             Components = new ObservableCollection<IComponent>();
             DisplayedItems = new ObservableCollection<IComponent>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
@@ -141,11 +145,11 @@ namespace PcArchitect.ViewModel
             if (selectedItem == null)
                 return;
 
-            var item = selectedItem;
+            _bufferService.BuffComponentForDetailPage(selectedItem.Name, selectedItem);
 
             await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", true, new Dictionary<string, object>
             {
-                { "Item", item}
+                { "SelectedItem", selectedItem.Name}
             });
         }
     }
