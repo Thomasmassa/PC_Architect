@@ -57,6 +57,7 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         private async Task PageNavigated(NavigatedToEventArgs args)
         {
+            Components.Clear();
             await AddComponents();
         }
 

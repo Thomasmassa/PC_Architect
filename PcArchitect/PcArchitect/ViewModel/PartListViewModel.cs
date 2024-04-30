@@ -42,11 +42,14 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
-            Components.Clear();
-            Title = $"{ComponentName} LIST";
-            collectedParts = await _componentService.GetComponentsAsync(ComponentName);
-            if (collectedParts.Count != 0)
-                AddParts(collectedParts);
+            if (ComponentName != "d")
+            {
+                Components.Clear();
+                Title = $"{ComponentName} LIST";
+                collectedParts = await _componentService.GetComponentsAsync(ComponentName);
+                if (collectedParts.Count != 0)
+                    AddParts(collectedParts);
+            }
 
             if (Components.Any())
             {

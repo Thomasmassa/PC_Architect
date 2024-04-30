@@ -24,124 +24,106 @@
             </CollectionView.Header>
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="Interfaces:IComponent">
-                    <!--<SwipeView>
-                        <SwipeView.RightItems>
-                            <SwipeItems>
-                                <SwipeItemView>
-                                    <Frame BackgroundColor="Transparent" BorderColor="Transparent">
-                                        <Frame.GestureRecognizers>
-                                            <TapGestureRecognizer
-                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=DeleteComponentCommand}"
-                                                CommandParameter="{Binding .}"/>
-                                        </Frame.GestureRecognizers>
-                                        <Image Source="trash.ico" HeightRequest="50" WidthRequest="50"/>
-                                    </Frame>
-                                </SwipeItemView>
-                            </SwipeItems>
-                        </SwipeView.RightItems>
-                        <SwipeView.Content>-->
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="15*" />
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="15*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
 
-                                <!--Frame voor de preset-->
-                                <Frame x:Name="presetFrame" IsVisible="{Binding IsPresetFrameEnabled}" 
+                        <!--Frame voor de preset-->
+                        <Frame x:Name="presetFrame" IsVisible="{Binding IsPresetFrameEnabled}" 
                                     Grid.Row="0" Grid.Column="1" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10">
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer x:Name="openListButton"
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="openListButton"
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=GoToPartsListCommand}"
                                         CommandParameter="{Binding .}"/>
-                                    </Frame.GestureRecognizers>
-                                    <Grid BackgroundColor="Transparent">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="4*" />
-                                        </Grid.ColumnDefinitions>
+                            </Frame.GestureRecognizers>
+                            <Grid BackgroundColor="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="4*" />
+                                </Grid.ColumnDefinitions>
 
-                                        <Image Source="{Binding Image}" Grid.Column="0"/>
-                                        <Label Text="{Binding Name}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                                <Image Source="{Binding Image}" Grid.Column="0"/>
+                                <Label Text="{Binding Name}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
                                             HorizontalOptions="CenterAndExpand" FontSize="30" FontFamily="Koulen"/>
-                                    </Grid>
-                                </Frame>
-                                <!--Frame voor de preset-->
+                            </Grid>
+                        </Frame>
+                        <!--Frame voor de preset-->
 
 
-                                <!--Frame voor de geselecteerde component-->
-                                <Frame IsVisible="{Binding IsSelectedComponentFrameEnabled}" 
+                        <!--Frame voor de geselecteerde component-->
+                        <Frame IsVisible="{Binding IsSelectedComponentFrameEnabled}" 
                                     Grid.Row="0" Grid.Column="1" x:Name="selectedComponentFrame" BorderColor="Transparent" CornerRadius="15" 
                                     HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10" Padding="0">
 
-                                    <Grid BackgroundColor="#D4D4D4">
+                            <Grid BackgroundColor="#D4D4D4">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <!--0-->
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <!--7-->
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding Image}" Grid.RowSpan="4" Grid.ColumnSpan="2" Grid.Column="0" Margin="10,0,0,0"/>
+
+                                <!--TITLE-->
+                                <Label Text="{Binding Name}" FontFamily="Koulen" TextColor="Black" Grid.Row="0" 
+                                               Grid.RowSpan="1" Grid.ColumnSpan="5" Grid.Column="2" VerticalOptions="CenterAndExpand"
+                                            HorizontalOptions="CenterAndExpand" FontSize="Subtitle" HorizontalTextAlignment="Center" Margin="0,3,0,0"/>
+
+                                <!--DISCRIPTION-->
+                                <Label Text="{Binding Discription}" FontFamily="Koulen" LineHeight="0.6" TextColor="Black" 
+                                               Grid.RowSpan="3" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="2" Margin="10,0,0,0" 
+                                            VerticalOptions="CenterAndExpand" FontSize="Caption"  HorizontalTextAlignment="Start" />
+
+                                <Label Text="{Binding Price, StringFormat='€{0}'}" FontFamily="Koulen" 
+                                               TextColor="{StaticResource TextPriceColor}" FontAttributes="Bold" Grid.Row="2" 
+                                               Grid.RowSpan="4" Grid.ColumnSpan="2" Grid.Column="5" 
+                                            VerticalOptions="CenterAndExpand" HorizontalTextAlignment="End" FontSize="Medium" Margin="0,10,10,0"/>
+
+                                <Frame BackgroundColor="{StaticResource deleteButton}" CornerRadius="0" BorderColor="{StaticResource deleteButton}"
+                                               Grid.RowSpan="4" Grid.Column="7" HeightRequest="150" WidthRequest="50" Padding="0" VerticalOptions="FillAndExpand">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                                    Command="{Binding Source={x:Reference ThisPage}, Path=BindingContext.DeleteComponentCommand}"
+                                                    CommandParameter="{Binding .}"/>
+                                    </Frame.GestureRecognizers>
+                                    <Grid>
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="*" />
                                             <RowDefinition Height="*" />
                                             <RowDefinition Height="*" />
                                             <RowDefinition Height="*" />
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*" />
-                                            <!--0-->
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <!--7-->
                                         </Grid.ColumnDefinitions>
-
-                                        <Image Source="{Binding Image}" Grid.RowSpan="4" Grid.ColumnSpan="2" Grid.Column="0" Margin="10,0,0,0"/>
-
-                                        <!--TITLE-->
-                                        <Label Text="{Binding Name}" FontFamily="Koulen" TextColor="Black" Grid.Row="0" 
-                                               Grid.RowSpan="1" Grid.ColumnSpan="5" Grid.Column="2" VerticalOptions="CenterAndExpand"
-                                            HorizontalOptions="CenterAndExpand" FontSize="Subtitle" HorizontalTextAlignment="Center" Margin="0,3,0,0"/>
-
-                                        <!--DISCRIPTION-->
-                                        <Label Text="{Binding Discription}" FontFamily="Koulen" LineHeight="0.6" TextColor="Black" 
-                                               Grid.RowSpan="3" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="2" Margin="10,0,0,0" 
-                                            VerticalOptions="CenterAndExpand" FontSize="Caption"  HorizontalTextAlignment="Start" />
-
-                                        <Label Text="{Binding Price, StringFormat='€{0}'}" FontFamily="Koulen" 
-                                               TextColor="{StaticResource TextPriceColor}" FontAttributes="Bold" Grid.Row="2" 
-                                               Grid.RowSpan="4" Grid.ColumnSpan="2" Grid.Column="5" 
-                                            VerticalOptions="CenterAndExpand" HorizontalTextAlignment="End" FontSize="Medium" Margin="0,10,10,0"/>
-
-                                        <Frame BackgroundColor="{StaticResource deleteButton}" CornerRadius="0" BorderColor="{StaticResource deleteButton}"
-                                               Grid.RowSpan="4" Grid.Column="7" HeightRequest="150" WidthRequest="50" Padding="0" VerticalOptions="FillAndExpand">
-                                            <Frame.GestureRecognizers>
-                                                <TapGestureRecognizer
-                                                    Command="{Binding Source={x:Reference ThisPage}, Path=BindingContext.DeleteComponentCommand}"
-                                                    CommandParameter="{Binding .}"/>
-                                            </Frame.GestureRecognizers>
-                                            <Grid>
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="*" />
-                                                    <RowDefinition Height="*" />
-                                                    <RowDefinition Height="*" />
-                                                </Grid.RowDefinitions>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="*" />
-                                                </Grid.ColumnDefinitions>
-                                                <Label Text="X" Grid.Column="0" FontAttributes="Bold" TextColor="Black" Grid.Row="1" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
-                                            </Grid>
-                                        </Frame>
+                                        <Label Text="X" Grid.Column="0" FontAttributes="Bold" TextColor="Black" Grid.Row="1" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center"/>
                                     </Grid>
                                 </Frame>
-                                 <!--Frame voor de geselecteerde component-->
-
                             </Grid>
-                        <!--</SwipeView.Content>
-                    </SwipeView>-->
+                        </Frame>
+                        <!--Frame voor de geselecteerde component-->
+
+                    </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
