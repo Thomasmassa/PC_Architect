@@ -3,5 +3,7 @@
     public interface IComponentService
     {
         Task<List<IComponent>> GetComponentsAsync(string component);
+
+        Task<List<IComponent>> GetAllComponentsAsync();
     }
 }

@@ -41,6 +41,23 @@ namespace PcArchitect.Services
         /// /////////////////////////////////////////////////////////////////////////////////////////////////////////
         /// 
 
+        public async Task<List<IComponent>> GetAllComponentsAsync()
+        {
+            var allComponents = new List<IComponent>();
+
+            allComponents.AddRange((await GetComponentsAsync<Cpu>("cpu")).Cast<IComponent>().ToList());
+            allComponents.AddRange((await GetComponentsAsync<CpuCooler>("cpucooler")).Cast<IComponent>().ToList());
+            allComponents.AddRange((await GetComponentsAsync<Motherboard>("motherboard")).Cast<IComponent>().ToList());
+            allComponents.AddRange((await GetComponentsAsync<Memory>("memory")).Cast<IComponent>().ToList());
+            allComponents.AddRange((await GetComponentsAsync<Gpu>("gpu")).Cast<IComponent>().ToList());
+
+            return allComponents;
+        }
+
+        /// 
+        /// /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// 
+
         private async Task<List<T>> GetComponentsAsync<T>(string path)
         {
             try

@@ -34,7 +34,7 @@ namespace PcArchitect.ViewModel
             _bufferService = bufferService;
 
             Components = new ObservableCollection<IComponent>();
-            DisplayedItems = new ObservableCollection<IComponent>(); // Maak een nieuwe lijst met onderdelen die worden weergegeven
+            DisplayedItems = new ObservableCollection<IComponent>(); 
         }
 
 

@@ -20,6 +20,7 @@
             <Color x:Key="TextPriceColor">#990000</Color>
             <Color x:Key="deleteButton">#AA0000</Color>
             <Color x:Key="darkText">black</Color>
+            <Color x:Key="infoButton">#0E86D4</Color>
 
             <Color x:Key="LightBackground">#FAF9F8</Color>
             <Color x:Key="DarkBackground">Black</Color>
