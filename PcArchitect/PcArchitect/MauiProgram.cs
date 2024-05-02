@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using PC_Architect.Model;
 using PcArchitect.Interfaces;
 using PcArchitect.Model;
+using PcArchitect.Repository;
 using PcArchitect.Services;
 using PcArchitect.ViewModel;
 using PcArchitect.Views;
@@ -25,13 +26,15 @@ namespace PcArchitect
                 });
 
             
-            builder.Services.AddSingleton<Root>();
-            builder.Services.AddSingleton<ComponentRepository>();
-            builder.Services.AddSingleton<IComponentService, ComponentService>();
-            builder.Services.AddSingleton<BufferService>();
-
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
+
+            builder.Services.AddSingleton<Root>();
+            builder.Services.AddSingleton<IComponentService, ComponentService>();
+            builder.Services.AddSingleton<AllComponentRepository>();
+            builder.Services.AddSingleton<AddedComponentRepository>();
+            builder.Services.AddSingleton<BufferService>();
+
             builder.Services.AddSingleton<StartBuildingViewModel>();
             builder.Services.AddSingleton<StartBuildingPage>();
             builder.Services.AddSingleton<PartListViewModel>();
@@ -47,7 +50,6 @@ namespace PcArchitect
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
-
             return builder.Build();
         }
     }

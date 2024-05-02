@@ -1,15 +1,17 @@
 ﻿using CommunityToolkit.Mvvm.Input;
+using PcArchitect.Repository;
 using PcArchitect.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PcArchitect.ViewModel
 {
     public partial class MainViewModel : BaseViewModel
     {
+        //AllComponentRepository _allComponentRepository;
+        public MainViewModel()
+        {
+            //_allComponentRepository = allComponentRepository;
+        }
+
         [RelayCommand]
         async Task GoToStartBuilding()
         {

@@ -6,6 +6,9 @@ using IComponent = PcArchitect.Interfaces.IComponent;
 using PcArchitect.Views;
 using PC_Architect.Model;
 using PcArchitect.Services;
+using PcArchitect.Model;
+using System.Collections;
+using PcArchitect.Repository;
 
 namespace PcArchitect.ViewModel
 {
@@ -16,21 +19,21 @@ namespace PcArchitect.ViewModel
         public string? ComponentName { get; set; }
 
         private List<IComponent> collectedParts;
-
         public ObservableCollection<IComponent> Components { get; set; } = [];
         public ObservableCollection<IComponent> DisplayedItems { get; set; } = [];
 
-        public readonly IComponentService _componentService;
-        private readonly ComponentRepository _componentRepository;
-
+        private readonly Root _rootAllComponents;
         private readonly BufferService _bufferService;
+        private readonly AllComponentRepository _allComponentRepository;
+        private readonly AddedComponentRepository _addedcomponentRepository;
 
         ////////////////////////////////////////////////////////////////////////////
 
-        public PartListViewModel(IComponentService componentService, ComponentRepository componentRepository, BufferService bufferService)
+        public PartListViewModel(AddedComponentRepository addedcomponentRepository, BufferService bufferService, AllComponentRepository allComponentRepository, Root rootAllComponents)
         {
-            _componentRepository = componentRepository;
-            _componentService = componentService;
+            _addedcomponentRepository = addedcomponentRepository;
+            _allComponentRepository = allComponentRepository;
+            _rootAllComponents = rootAllComponents;
             _bufferService = bufferService;
 
             Components = new ObservableCollection<IComponent>();
@@ -46,9 +49,7 @@ namespace PcArchitect.ViewModel
             {
                 Components.Clear();
                 Title = $"{ComponentName} LIST";
-                collectedParts = await _componentService.GetComponentsAsync(ComponentName);
-                if (collectedParts.Count != 0)
-                    AddParts(collectedParts);
+                AddParts(ComponentName);
             }
 
             if (Components.Any())
@@ -60,14 +61,27 @@ namespace PcArchitect.ViewModel
         ////////////////////////////////////////////////////////////////////////////
 
         //ADD PARTS TO collectedParts
-        private void AddParts(List<IComponent> collectedParts)
+        private void AddParts(string ComponentName)
         {
-            foreach (var collectedpart in collectedParts)
+            var properties = typeof(Root).GetProperties();
+            
+            foreach (var property in properties)
             {
-                if (collectedpart == null)
-                    continue;
-
-                Components.Add(collectedpart);
+                var itemType = property.PropertyType.GetGenericArguments()[0];
+                string propertytype = itemType.Name.ToLower();
+                if (propertytype == ComponentName.ToLower())
+                {
+                    var list = (IList?)property.GetValue(_rootAllComponents);
+                    var Ilist = list?.Cast<IComponent>().ToList();
+                    foreach (var item in Ilist)
+                    {
+                        if (item.Price != null && item != null)
+                        {
+                            Components.Add(item);
+                        }
+                        continue;
+                    }   
+                }
             }
         }
 
@@ -129,7 +143,7 @@ namespace PcArchitect.ViewModel
                 var collectedPart = collectedParts.FirstOrDefault(p => p != null && p.Name == selectedComponent.Name);
 
                 if (collectedPart != null)
-                    await _componentRepository.AddComponentAsync(collectedPart);
+                    await _addedcomponentRepository.AddComponentAsync(collectedPart);
 
                 DisplayedItems.Clear();
                 Components.Clear();

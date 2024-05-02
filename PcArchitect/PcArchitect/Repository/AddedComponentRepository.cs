@@ -4,11 +4,11 @@ using System.Xml.Linq;
 
 namespace PC_Architect.Model
 {
-    public class ComponentRepository
+    public class AddedComponentRepository
     {
         private readonly Root _root;
 
-        public ComponentRepository(Root root)
+        public AddedComponentRepository(Root root)
         {   
             _root = root;
         }

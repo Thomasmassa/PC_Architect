@@ -1,9 +1,9 @@
-﻿namespace PcArchitect.Interfaces
+﻿using PcArchitect.Model;
+
+namespace PcArchitect.Interfaces
 {
     public interface IComponentService
     {
-        Task<List<IComponent>> GetComponentsAsync(string component);
-
-        Task<List<IComponent>> GetAllComponentsAsync();
+        Task<List<T>> GetComponentsAsync<T>(string path);
     }
 }

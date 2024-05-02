@@ -9,56 +9,7 @@ namespace PcArchitect.Services
         private const string BaseUrl = "https://pcarchitectparts-default-rtdb.europe-west1.firebasedatabase.app/";
 
         private readonly HttpClient _client = new();
-
-        public async Task<List<IComponent>> GetComponentsAsync(string component)
-        {
-            List<IComponent> parts = [];
-
-            switch (component.ToLower())
-            {
-                case "cpu":
-                    parts = (await GetComponentsAsync<Cpu>("cpu")).Cast<IComponent>().ToList();
-                    break;
-                case "cpu cooler":
-                    parts = (await GetComponentsAsync<CpuCooler>("cpucooler")).Cast<IComponent>().ToList();
-                    break;
-                case "motherboard":
-                    parts = (await GetComponentsAsync<Motherboard>("motherboard")).Cast<IComponent>().ToList();
-                    break;
-                case "memory":
-                    parts = (await GetComponentsAsync<Memory>("memory")).Cast<IComponent>().ToList();
-                    break;
-                case "gpu":
-                    parts = (await GetComponentsAsync<Gpu>("gpu")).Cast<IComponent>().ToList();
-                    break;
-
-            }
-
-            return parts;
-        }
-
-        /// 
-        /// /////////////////////////////////////////////////////////////////////////////////////////////////////////
-        /// 
-
-        public async Task<List<IComponent>> GetAllComponentsAsync()
-        {
-            var allComponents = new List<IComponent>();
-
-            allComponents.AddRange((await GetComponentsAsync<Cpu>("cpu")).Cast<IComponent>().ToList());
-            allComponents.AddRange((await GetComponentsAsync<CpuCooler>("cpucooler")).Cast<IComponent>().ToList());
-            allComponents.AddRange((await GetComponentsAsync<Motherboard>("motherboard")).Cast<IComponent>().ToList());
-            allComponents.AddRange((await GetComponentsAsync<Memory>("memory")).Cast<IComponent>().ToList());
-            allComponents.AddRange((await GetComponentsAsync<Gpu>("gpu")).Cast<IComponent>().ToList());
-
-            return allComponents;
-        }
-
-        /// 
-        /// /////////////////////////////////////////////////////////////////////////////////////////////////////////
-        /// 
-
-        private async Task<List<T>> GetComponentsAsync<T>(string path)
+        public async Task<List<T>> GetComponentsAsync<T>(string path)
         {
             try
             {

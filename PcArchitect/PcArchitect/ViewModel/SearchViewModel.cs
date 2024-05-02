@@ -13,13 +13,13 @@ namespace PcArchitect.ViewModel
     {
         private List<IComponent> collectedParts;
 
-        public readonly IComponentService _componentService;
+        public readonly ComponentService _componentService;
         public ObservableCollection<IComponent> Components { get; set; }
         public ObservableCollection<IComponent> DisplayedItems { get; set; }
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        public SearchViewModel(IComponentService componentService)
+        public SearchViewModel(ComponentService componentService)
         {
             Title = "Search";
 
@@ -33,7 +33,6 @@ namespace PcArchitect.ViewModel
         async Task PageNavigated(NavigatedToEventArgs args)
         {
             Components.Clear();
-            collectedParts = await _componentService.GetAllComponentsAsync();
 
             if (collectedParts.Count != 0)
             {

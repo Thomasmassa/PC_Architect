@@ -12,7 +12,7 @@ namespace PcArchitect.ViewModel
         string title = "";
 
         [ObservableProperty]
-        string item = "";   
+        string item = "";
 
         public bool IsNotBusy => !IsBusy;
     }

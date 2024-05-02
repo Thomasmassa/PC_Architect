@@ -7,19 +7,23 @@ using PcArchitect.Views;
 using PC_Architect.Model;
 using System.Collections;
 using System.Diagnostics;
+using PcArchitect.Repository;
 
 namespace PcArchitect.ViewModel
 {
     public partial class StartBuildingViewModel : BaseViewModel
     {
+        private readonly AddedComponentRepository _componentRepository;
+        private readonly AllComponentRepository _allComponentRepository;
         private readonly IComponentService _componentService;
-        private readonly ComponentRepository _componentRepository;
         private readonly Root _root;
+
         public ObservableCollection<IComponent> Components { get; set; }
 
-        public StartBuildingViewModel(IComponentService componentService, ComponentRepository componentRepository, Root root)
+        public StartBuildingViewModel(IComponentService componentService, AllComponentRepository allComponentRepository,AddedComponentRepository componentRepository, Root root)
         {
             _root = root;
+            _allComponentRepository = allComponentRepository;
             _componentRepository = componentRepository;
             _componentService = componentService;
 

@@ -43,8 +43,9 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.png" Color="#222222" BaseSize="12,12" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#222222" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Images\case_tower.png" Color="#222222" BaseSize="128,128" />
 
+		
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\delete.png">

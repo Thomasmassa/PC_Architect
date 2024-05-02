@@ -1,4 +1,5 @@
-﻿using PcArchitect.Views;
+﻿using PcArchitect.Repository;
+using PcArchitect.Views;
 
 namespace PcArchitect
 {
