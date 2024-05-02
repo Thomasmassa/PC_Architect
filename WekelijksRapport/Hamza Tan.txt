@@ -23,9 +23,12 @@ Navigatie toegevoegd aan de detailspage voor de parts.
 "extreme programming" met Thomas voor het overzetten van het vorige project naar een nieuw project (vanwege problemen).
 Kan zijn dat ik dingen vergeten ben, maar heb dit slecht bijgehouden voor week 8, eerlijk gezegt.
 
-Week 9 (22/04): ..... uren:
+Week 9 (22/04): 9 uren:
 
-
+Gezocht naar oplossing delete button te verwerken op de item die werd geselecteerd in de StartBuildingPage.
+Het herschrijven van de PartDetailsPage voor de items om de items op een betere manier door te geven met behulp van dictionary, was "work in progress" toen ik ermee bezig was.
+BackButton voor StartBuildPage, Navigatie voor MyBuildPage, SearchPage navigatie gemaakt.
+PartDetailPage aantrekkelijker gemaakt en geprobeert om de detailsbutton functionaliteit te geven om een bepaalde label visible te maken. 
 
 Week 10 (29/04): ..... uren:
 
