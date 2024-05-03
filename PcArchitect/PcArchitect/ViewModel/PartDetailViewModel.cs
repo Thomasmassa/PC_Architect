@@ -28,7 +28,7 @@ namespace PcArchitect.ViewModel
         async Task BackButton()
         {
             var detailstring = "d";
-            await Shell.Current.GoToAsync(nameof(PartListPage), true, new Dictionary<string, object>
+            await Shell.Current.GoToAsync(nameof(PartListPage), false, new Dictionary<string, object>
             {
                 {"ComponentName", detailstring}
             });
