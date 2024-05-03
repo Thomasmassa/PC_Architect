@@ -1,35 +1,42 @@
 ﻿using IComponent = PcArchitect.Interfaces.IComponent;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.Input;
-using PcArchitect.Interfaces;
 using PcArchitect.Model;
 using PcArchitect.Views;
 using PC_Architect.Model;
 using System.Collections;
 using System.Diagnostics;
-using PcArchitect.Repository;
 
 namespace PcArchitect.ViewModel
 {
     public partial class StartBuildingViewModel : BaseViewModel
     {
-        private readonly AddedComponentRepository _componentRepository;
-        private readonly AllComponentRepository _allComponentRepository;
-        private readonly IComponentService _componentService;
-        private readonly Root _root;
-
         public ObservableCollection<IComponent> Components { get; set; }
 
-        public StartBuildingViewModel(IComponentService componentService, AllComponentRepository allComponentRepository,AddedComponentRepository componentRepository, Root root)
-        {
-            _root = root;
-            _allComponentRepository = allComponentRepository;
-            _componentRepository = componentRepository;
-            _componentService = componentService;
+        private readonly RootFactory _rootF;
+        private readonly AddedComponentRepository _addedomponentRepository;
 
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
+        public StartBuildingViewModel(AddedComponentRepository addedcomponentRepository, RootFactory rootF)
+        {
             Components = new ObservableCollection<IComponent>();
+
+            _addedomponentRepository = addedcomponentRepository;
+            _rootF = rootF;
         }
 
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
+        //ADD COMPONENTS
         public Task AddComponents()
         {
             return Task.Run(() =>
@@ -40,7 +47,7 @@ namespace PcArchitect.ViewModel
                 {
                     if (property.PropertyType.IsGenericType && property.PropertyType.GetGenericTypeDefinition() == typeof(List<>))
                     {
-                        var list = (IList?)property.GetValue(_root);
+                        var list = (IList?)property.GetValue(_rootF.GetRoot2());
                         var lastItem = list?.Cast<IComponent>().LastOrDefault();
 
                         if (lastItem != null)
@@ -57,14 +64,30 @@ namespace PcArchitect.ViewModel
                 }
             });
         }
+        //ADD COMPONENTS
 
+
+        //////////////////////////////////////////////
+        
+        //////////////////////////////////////////////
+
+
+        //PAGENAVIGATED
         [RelayCommand]
         private async Task PageNavigated(NavigatedToEventArgs args)
         {
             Components.Clear();
             await AddComponents();
         }
+        //PAGENAVIGATED
 
+
+        //////////////////////////////////////////////
+        
+        //////////////////////////////////////////////
+
+
+        //DELETECOMPONENT
         [RelayCommand]
         public async Task DeleteComponent(IComponent component)
         {
@@ -74,12 +97,20 @@ namespace PcArchitect.ViewModel
             bool choice = await Shell.Current.DisplayAlert("Your sure mate", component.Name, "Delete", "Cancel");
             if (choice)
             {
-                await _componentRepository.RemoveComponentAsync(component);
+                await _addedomponentRepository.RemoveComponentAsync(component);
                 Components.Clear();
                 await AddComponents();
             }
         }
+        //DELETECOMPONENT
 
+
+        //////////////////////////////////////////////
+        
+        //////////////////////////////////////////////
+        
+
+        //GOTOPARTSLIST
         [RelayCommand]
         public async Task GoToPartsList(IComponent component)
         {
@@ -93,7 +124,15 @@ namespace PcArchitect.ViewModel
                 {"ComponentName", component.Name }
             });
         }
+        //GOTOPARTSLIST
 
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
+        //BACKBUTTON
         [RelayCommand]
         public async Task BackButton()
         {
@@ -106,6 +145,12 @@ namespace PcArchitect.ViewModel
                 Debug.WriteLine(ex.ToString());
             }
         }
+        //BACKBUTTON
+
+
+        //////////////////////////////////////////////
+        
+        //////////////////////////////////////////////
     }
 }
 

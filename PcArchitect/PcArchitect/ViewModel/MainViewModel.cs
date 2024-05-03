@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.Input;
+using PC_Architect.Model;
 using PcArchitect.Repository;
 using PcArchitect.Views;
 
@@ -6,10 +7,13 @@ namespace PcArchitect.ViewModel
 {
     public partial class MainViewModel : BaseViewModel
     {
-        //AllComponentRepository _allComponentRepository;
-        public MainViewModel()
+        private readonly AllComponentRepository _allComponentRepository;
+        private readonly AddedComponentRepository _addedomponentRepository;
+
+        public MainViewModel(AllComponentRepository allComponentRepository, AddedComponentRepository addedomponentRepository)
         {
-            //_allComponentRepository = allComponentRepository;
+            _allComponentRepository = allComponentRepository;
+            _addedomponentRepository = addedomponentRepository;
         }
 
         [RelayCommand]

@@ -5,8 +5,15 @@ namespace PcArchitect.Model
 {
     public class CaseFan : IComponent
     {
+        private string _image = "imagenotfound.png";
+
         [JsonPropertyName("image")]
-        public string Image { get; set; } = "";
+        public string Image
+        {
+            get { return string.IsNullOrEmpty(_image) ? "imagenotfound.png" : _image; }
+            set { _image = value; }
+        }
+
         [JsonPropertyName("name")]
         public string Name { get; set; } = "";
         [JsonPropertyName("price")]

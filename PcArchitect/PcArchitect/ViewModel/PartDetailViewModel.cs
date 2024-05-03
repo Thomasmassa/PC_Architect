@@ -12,8 +12,8 @@ namespace PcArchitect.ViewModel
     [QueryProperty(nameof(SelectedItem), "SelectedItem")]
     public partial class PartDetailViewModel : BaseViewModel
     {
-        public string SelectedItem { get; set; }
-        public IComponent DisplayedItem { get; set; }
+        public string? SelectedItem { get; set; }
+        public IComponent? DisplayedItem { get; set; }
 
         private readonly BufferService _bufferService;
         public ObservableCollection<IComponent> Component { get; set; }

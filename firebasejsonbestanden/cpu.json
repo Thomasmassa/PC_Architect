@@ -3,41 +3,7 @@
     "name": "AMD Ryzen 7 7800X3D",
     "price": 369,
     "core_count": 8,
-    "core_clock": [
-        {
-            "core": 0,
-            "clock": 3.5
-        },
-        {
-            "core": 1,
-            "clock": 3.5
-        },
-        {
-            "core": 2,
-            "clock": 3.5
-        },
-        {
-            "core": 3,
-            "clock": 3.5
-        },
-        {
-            "core": 4,
-            "clock": 3.5
-        },
-        {
-            "core": 5,
-            "clock": 3.5
-        },
-        {
-            "core": 6,
-            "clock": 3.5
-        },
-        {
-            "core": 7,
-            "clock": 3.5
-        }
-    ],
-
+    "core_clock": 4.5,
     "boost_clock": 5,
     "tdp": 120,
     "graphics": "Radeon",
