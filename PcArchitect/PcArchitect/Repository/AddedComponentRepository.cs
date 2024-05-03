@@ -1,16 +1,13 @@
 ﻿using PcArchitect.Model;
-using System.ComponentModel;
-using System.Xml.Linq;
 
 namespace PC_Architect.Model
 {
     public class AddedComponentRepository
     {
-        private readonly Root _root;
-
-        public AddedComponentRepository(Root root)
+        private readonly RootFactory _rootF;
+        public AddedComponentRepository(RootFactory rootF)
         {   
-            _root = root;
+            _rootF = rootF;
         }
 
         public Task AddComponentAsync<T>(T component)
@@ -20,37 +17,37 @@ namespace PC_Architect.Model
                 switch (component)
                 {
                     case Cpu cpu:
-                        _root.Cpu.Add(cpu);
+                        _rootF.GetRoot2().Cpu.Add(cpu);
                         break;
                     case CpuCooler cpuCooler:
-                        _root.CpuCooler.Add(cpuCooler);
+                        _rootF.GetRoot2().CpuCooler.Add(cpuCooler);
                         break;
                     case Gpu gpu:
-                        _root.Gpu.Add(gpu);
+                        _rootF.GetRoot2().Gpu.Add(gpu);
                         break;
                     case Motherboard motherboard:
-                        _root.Motherboard.Add(motherboard);
+                        _rootF.GetRoot2().Motherboard.Add(motherboard);
                         break;
                     case Memory memory:
-                        _root.Memory.Add(memory);
+                        _rootF.GetRoot2().Memory.Add(memory);
                         break;
                     case Ssd ssd:
-                        _root.Ssd.Add(ssd);
+                        _rootF.GetRoot2().Ssd.Add(ssd);
                         break;
                     case Hdd hdd:
-                        _root.Hdd.Add(hdd);
+                        _rootF.GetRoot2().Hdd.Add(hdd);
                         break;
                     case Psu psu:
-                        _root.Psu.Add(psu);
+                        _rootF.GetRoot2().Psu.Add(psu);
                         break;
                     case Case case_:
-                        _root.Case.Add(case_);
+                        _rootF.GetRoot2().Case.Add(case_);
                         break;
                     case CaseFan caseFan:
-                        _root.Case_Fan.Add(caseFan);
+                        _rootF.GetRoot2().Case_Fan.Add(caseFan);
                         break;
                     case Os os:
-                        _root.Os.Add(os);
+                        _rootF.GetRoot2().Os.Add(os);
                         break;
 
 
@@ -65,46 +62,46 @@ namespace PC_Architect.Model
                 switch (component)
                 {
                     case Cpu cpu:
-                        _root.Cpu.Remove(cpu);
+                        _rootF.GetRoot2().Cpu.Remove(cpu);
                         break;
                     case CpuCooler cpuCooler:
-                        _root.CpuCooler.Remove(cpuCooler);
+                        _rootF.GetRoot2().CpuCooler.Remove(cpuCooler);
                         break;
                     case Gpu gpu:
-                        _root.Gpu.Remove(gpu);
+                        _rootF.GetRoot2().Gpu.Remove(gpu);
                         break;
                     case Motherboard motherboard:
-                        _root.Motherboard.Remove(motherboard);
+                        _rootF.GetRoot2().Motherboard.Remove(motherboard);
                         break;
                     case Memory memory:
-                        _root.Memory.Remove(memory);
+                        _rootF.GetRoot2().Memory.Remove(memory);
                         break;
                     case Ssd ssd:
-                        _root.Ssd.Remove(ssd);
+                        _rootF.GetRoot2().Ssd.Remove(ssd);
                         break;
                     case Hdd hdd:
-                        _root.Hdd.Remove(hdd);
+                        _rootF.GetRoot2().Hdd.Remove(hdd);
                         break;
                     case Psu psu:
-                        _root.Psu.Remove(psu);
+                        _rootF.GetRoot2().Psu.Remove(psu);
                         break;
                     case Case case_:
-                        _root.Case.Remove(case_);
+                        _rootF.GetRoot2().Case.Remove(case_);
                         break;
                     case CaseFan caseFan:
-                        _root.Case_Fan.Remove(caseFan);
+                        _rootF.GetRoot2().Case_Fan.Remove(caseFan);
                         break;
                     case Os os:
-                        _root.Os.Remove(os);
+                        _rootF.GetRoot2().Os.Remove(os);
                         break;
                 }
             }); 
         }
         public void ClearComponents()
         {
-            foreach (var property in _root.GetType().GetProperties())
+            foreach (var property in _rootF.GetRoot2().GetType().GetProperties())
             {
-                property.SetValue(_root, Activator.CreateInstance(property.PropertyType));
+                property.SetValue(_rootF.GetRoot2(), Activator.CreateInstance(property.PropertyType));
             }
         }
     }

@@ -5,15 +5,14 @@ namespace PcArchitect.Repository
 {
     public class AllComponentRepository
     {
-        private readonly Root _rootAllComponents = new Root();
-        private readonly IComponentService _componentService;
+        private readonly IComponentService _comServ;
+        private readonly RootFactory _rootF;
 
-        public AllComponentRepository(Root rootAllComponents, IComponentService componentService)
+        public AllComponentRepository(IComponentService comServ, RootFactory rootF)
         {
-            _rootAllComponents = rootAllComponents;
-            _componentService = componentService;
-
-
+            _comServ = comServ;
+            _rootF = rootF;
+            
             GetAllComponentsAsync();
         }
 
@@ -21,17 +20,17 @@ namespace PcArchitect.Repository
         {
             Task.Run(async () =>
             {
-                _rootAllComponents.Cpu.AddRange(await _componentService.GetComponentsAsync<Cpu>("cpu"));
-                _rootAllComponents.CpuCooler.AddRange(await _componentService.GetComponentsAsync<CpuCooler>("cpucooler"));
-                _rootAllComponents.Motherboard.AddRange(await _componentService.GetComponentsAsync<Motherboard>("motherboard"));
-                _rootAllComponents.Gpu.AddRange(await _componentService.GetComponentsAsync<Gpu>("gpu"));
-                _rootAllComponents.Memory.AddRange(await _componentService.GetComponentsAsync<Memory>("memory"));
-                _rootAllComponents.Ssd.AddRange(await _componentService.GetComponentsAsync<Ssd>("ssd"));
-                _rootAllComponents.Hdd.AddRange(await _componentService.GetComponentsAsync<Hdd>("hdd"));
-                _rootAllComponents.Psu.AddRange(await _componentService.GetComponentsAsync<Psu>("psu"));
-                _rootAllComponents.Case.AddRange(await _componentService.GetComponentsAsync<Case>("case"));
-                _rootAllComponents.Case_Fan.AddRange(await _componentService.GetComponentsAsync<CaseFan>("casefan"));
-                _rootAllComponents.Os.AddRange(await _componentService.GetComponentsAsync<Os>("os"));
+                _rootF.GetRoot1().Cpu.AddRange(await _comServ.GetComponentsAsync<Cpu>("cpu"));
+                _rootF.GetRoot1().CpuCooler.AddRange(await _comServ.GetComponentsAsync<CpuCooler>("cpucooler"));
+                _rootF.GetRoot1().Motherboard.AddRange(await _comServ.GetComponentsAsync<Motherboard>("motherboard"));
+                _rootF.GetRoot1().Gpu.AddRange(await _comServ.GetComponentsAsync<Gpu>("gpu"));
+                _rootF.GetRoot1().Memory.AddRange(await _comServ.GetComponentsAsync<Memory>("memory"));
+                _rootF.GetRoot1().Ssd.AddRange(await _comServ.GetComponentsAsync<Ssd>("ssd"));
+                _rootF.GetRoot1().Hdd.AddRange(await _comServ.GetComponentsAsync<Hdd>("hdd"));
+                _rootF.GetRoot1().Psu.AddRange(await _comServ.GetComponentsAsync<Psu>("psu"));
+                _rootF.GetRoot1().Case.AddRange(await _comServ.GetComponentsAsync<Case>("case"));
+                _rootF.GetRoot1().Case_Fan.AddRange(await _comServ.GetComponentsAsync<CaseFan>("casefan"));
+                _rootF.GetRoot1().Os.AddRange(await _comServ.GetComponentsAsync<Os>("os"));
             });
             return Task.CompletedTask;
         }

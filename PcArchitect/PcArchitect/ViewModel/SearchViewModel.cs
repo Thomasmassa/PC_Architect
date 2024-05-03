@@ -3,53 +3,76 @@ using CommunityToolkit.Maui.Core.Views;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui;
 using PcArchitect.Interfaces;
+using PcArchitect.Model;
 using PcArchitect.Services;
 using PcArchitect.Views;
+using System.Collections;
 using System.Collections.ObjectModel;
 
 namespace PcArchitect.ViewModel
 {
     public partial class SearchViewModel : BaseViewModel
     {
-        private List<IComponent> collectedParts;
-
-        public readonly ComponentService _componentService;
         public ObservableCollection<IComponent> Components { get; set; }
         public ObservableCollection<IComponent> DisplayedItems { get; set; }
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        private readonly RootFactory _rootF;
 
-        public SearchViewModel(ComponentService componentService)
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
+        public SearchViewModel(RootFactory rootF)
         {
-            Title = "Search";
-
-            _componentService = componentService;
-            Components = new ObservableCollection<IComponent>();
+            Title = "Search List";
+            _rootF = rootF;
+            Components = [];
         }
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
 
         [RelayCommand]
-        async Task PageNavigated(NavigatedToEventArgs args)
+        public async Task PageNavigated(NavigatedToEventArgs args)
         {
             Components.Clear();
-
-            if (collectedParts.Count != 0)
-            {
-                foreach (var part in collectedParts)
-                {
-                    if (part == null) continue;
-                    Components.Add(part);
-                }
-            }
-
-            if (Components.Any())
-            {
-                await OnSearch("");
-            }
+            await AddParts();
+            await OnSearch("");
         }
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        private Task AddParts()
+        {
+            Task.Run(() =>
+            {
+                var properties = typeof(Root).GetProperties();
+
+                foreach (var property in properties)
+                {
+                    var list = (IList?)property.GetValue(_rootF.GetRoot1());
+                    var Ilist = list.Cast<IComponent>().ToList();
+
+                    foreach (var item in Ilist)
+                    {
+                        if (item.Price != null && item != null)
+                        {
+                            Components.Add(item);
+                        }
+                        continue;
+                    }
+                }
+            });
+            return Task.CompletedTask;
+        }
+
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
 
         [RelayCommand]
         async Task BackButton()
@@ -60,8 +83,13 @@ namespace PcArchitect.ViewModel
             await Shell.Current.GoToAsync(nameof(MainPage));
         }
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
+        //SEARCHMETHOD
         [RelayCommand]
         async Task TextChanged(string newText)
         {
@@ -73,9 +101,10 @@ namespace PcArchitect.ViewModel
             await OnSearch(newText);
             return;
         }
-
         private Task OnSearch(string searchText)
         {
+            Title = $"Search {searchText} List";
+
             return Task.Run(() =>
             {
                 DisplayedItems.Clear();
@@ -90,8 +119,13 @@ namespace PcArchitect.ViewModel
                 }
             });
         }
+        //SEARCHMETHOD
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
 
         [RelayCommand]
         async Task PartToDetail(IComponent selectedPart)

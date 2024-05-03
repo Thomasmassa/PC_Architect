@@ -29,7 +29,7 @@ namespace PcArchitect
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
 
-            builder.Services.AddSingleton<Root>();
+            builder.Services.AddSingleton<RootFactory>();
             builder.Services.AddSingleton<IComponentService, ComponentService>();
             builder.Services.AddSingleton<AllComponentRepository>();
             builder.Services.AddSingleton<AddedComponentRepository>();

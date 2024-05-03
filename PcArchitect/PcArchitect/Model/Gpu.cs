@@ -5,8 +5,15 @@ namespace PcArchitect.Model
 {
     public class Gpu : IComponent
     {
+        private string _image = "imagenotfound.png";
+
         [JsonPropertyName("image")]
-        public string Image { get; set; } = "";
+        public string Image
+        {
+            get { return string.IsNullOrEmpty(_image) ? "imagenotfound.png" : _image; }
+            set { _image = value; }
+        }
+
         [JsonPropertyName("name")]
         public string Name { get; set; } = "";
         [JsonPropertyName("price")]
@@ -26,7 +33,7 @@ namespace PcArchitect.Model
 
         public string Discription
         {
-            get { return $"Memory: {Memory}\nChipset: {Chipset}\nCore Clock Type: {CoreClock}\nBoost Clock: {BoostClock}"; }
+            get { return $"{Chipset}\nMemory: {Memory}\nCore Clock Type: {CoreClock}\nBoost Clock: {BoostClock}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
