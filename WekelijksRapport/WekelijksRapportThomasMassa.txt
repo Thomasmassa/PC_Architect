@@ -12,6 +12,7 @@ Het aanmaken en testen van een azure database(lang aan gezeten doordat ik geen s
 Week 7 (25/03): 9 uren:
 StartBuildingpage aanpassingen aangebracht verschillende manieren geprobeerd om de preset te tonen.
 
+research gedaan naar het maken van een scraper.
 
 Week 8 (15/04): 31 uren:
 partlistview -> view aanpassingen gedaan, filter in het viewmodel aangepast en verbeterd. thuis zoeken naar een manier voor de
@@ -22,13 +23,29 @@ Repository voor het storen van gekoze componenten, het weergeven van gekoze comp
 
 swipeview voor verwijderen component.
 
-Week 9 (22/04): 0 uren:
+research gedaan naar het maken van een scraper.
 
+Week 9 (22/04): 5 uren:
 
+bool? IsSelectedComponentFrameEnabled { get; set; } bool? IsPresetFrameEnabled { get; set; }
+deze 2 propertys toegevoegd om debij de startbuild te kunnen wisselen van frame. als er een component wordt toegevoegd aan de startbuild zal de frame 
+wisselen. 
 
-Week 10 (29/04): ..... uren:
+foreach lus aangemaakt voor de componenten toe te voegen aan de frames
 
+Week 10 (29/04): 13 uren:
 
+aanpassing gemaakt bij ophalen van de data uit de database, bij opstart zal alle data opgehaald worden. RootFactory class aangemaakt, kunnen nu meerdere root instanties 
+aanmaken 1 voor alle data op te slaan van de database en 1 voor de geselecteerde componenten. foreach lus aangepast in partslistviewmodel voor de nieuwe root list te 
+kunnen tonen. alleen de geselecteerde lijst wordt weergeven. ook dit toegepast in de searchviewmodel zodat alle lijsten in de Root instantie worden getoond.
+
+Propfull aangemaakt voor de image in iedere klasse als er geen image wordt meegegeven zal er een alternatief komen.
+
+code cleanup (veriabele namen aangepast).
+
+xaml code aangepast.
+
+research doen voor het maken van een scraper met python voor alle andere componenten in de database vorige aanpak hiervan was te moeilijk.
 
 Week 11 (06/05): ..... uren:
 
