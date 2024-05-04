@@ -30,6 +30,7 @@ namespace PcArchitect.ViewModel
             Title = "Search List";
             _rootF = rootF;
             Components = [];
+            DisplayedItems = [];
         }
 
 
@@ -41,33 +42,30 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         public async Task PageNavigated(NavigatedToEventArgs args)
         {
+            DisplayedItems.Clear();
             Components.Clear();
-            await AddParts();
-            await OnSearch("");
+            AddParts();
+            OnSearch("");
         }
 
-        private Task AddParts()
+        private void AddParts()
         {
-            Task.Run(() =>
+            var properties = typeof(Root).GetProperties();
+
+            foreach (var property in properties)
             {
-                var properties = typeof(Root).GetProperties();
+                var list = (IList?)property.GetValue(_rootF.GetRoot1());
+                var Ilist = list.Cast<IComponent>().ToList();
 
-                foreach (var property in properties)
+                foreach (var item in Ilist)
                 {
-                    var list = (IList?)property.GetValue(_rootF.GetRoot1());
-                    var Ilist = list.Cast<IComponent>().ToList();
-
-                    foreach (var item in Ilist)
+                    if (item.Price != null && item != null)
                     {
-                        if (item.Price != null && item != null)
-                        {
-                            Components.Add(item);
-                        }
-                        continue;
+                        Components.Add(item);
                     }
+                    continue;
                 }
-            });
-            return Task.CompletedTask;
+            }
         }
 
 
@@ -79,9 +77,6 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task BackButton()
         {
-            DisplayedItems.Clear();
-            Components.Clear();
-
             await Shell.Current.GoToAsync(nameof(MainPage));
         }
 
@@ -100,26 +95,30 @@ namespace PcArchitect.ViewModel
                 await Toast.Make("Searchbar is empty!").Show();
             }
 
-            await OnSearch(newText);
+            DisplayedItems.Clear();
+
+            OnSearch(newText);
             return;
         }
-        private Task OnSearch(string searchText)
+        private void OnSearch(string searchText)
         {
             Title = $"Search {searchText} List";
 
-            return Task.Run(() =>
-            {
-                DisplayedItems.Clear();
-                var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+            var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
 
-                if (results.Count != 0)
+            if (searchText == "")
+            {
+                results = Components.ToList();
+            }
+
+            if (results.Count != 0)
+            {
+                foreach (var result in results)
                 {
-                    foreach (var result in results)
-                    {
-                        DisplayedItems.Add(result);
-                    }
+                    DisplayedItems.Add(result);
                 }
-            });
+            }
+
         }
         //SEARCHMETHOD
 
