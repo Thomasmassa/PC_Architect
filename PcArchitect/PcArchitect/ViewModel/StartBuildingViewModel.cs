@@ -7,6 +7,8 @@ using PC_Architect.Model;
 using System.Collections;
 using System.Diagnostics;
 
+// DIT IS DE VIEWMODEL VOOR DE PAGINA WAAR DE CATAGORIEEN WORDEN WEERGEGEVEN
+
 namespace PcArchitect.ViewModel
 {
     public partial class StartBuildingViewModel : BaseViewModel
@@ -68,7 +70,7 @@ namespace PcArchitect.ViewModel
 
 
         //////////////////////////////////////////////
-        
+
         //////////////////////////////////////////////
 
 
@@ -83,7 +85,7 @@ namespace PcArchitect.ViewModel
 
 
         //////////////////////////////////////////////
-        
+
         //////////////////////////////////////////////
 
 
@@ -106,9 +108,9 @@ namespace PcArchitect.ViewModel
 
 
         //////////////////////////////////////////////
-        
+
         //////////////////////////////////////////////
-        
+
 
         //GOTOPARTSLIST
         [RelayCommand]
@@ -149,7 +151,7 @@ namespace PcArchitect.ViewModel
 
 
         //////////////////////////////////////////////
-        
+
         //////////////////////////////////////////////
     }
 }

@@ -9,9 +9,10 @@ using PcArchitect.Model;
 using System.Collections;
 using PcArchitect.Repository;
 
+// DIT IS DE VIEWMODEL VOOR DE LIJST VAN COMPONENTEN DIE WORDEN OPGEHAALD AFHANKELIJK VAN DE GESELECTEERDE CATEGORIE
+
 namespace PcArchitect.ViewModel
 {
-
     [QueryProperty(nameof(ComponentName), "ComponentName")]
     public partial class PartListViewModel : BaseViewModel
     {
@@ -26,7 +27,7 @@ namespace PcArchitect.ViewModel
 
 
         //////////////////////////////////////////////
-        
+
         //////////////////////////////////////////////
 
 
@@ -36,7 +37,7 @@ namespace PcArchitect.ViewModel
             _bufferService = bufferService;
             _rootF = rootF;
 
-            DisplayedItems = []; 
+            DisplayedItems = [];
             Components = [];
         }
 
@@ -57,7 +58,7 @@ namespace PcArchitect.ViewModel
                 await AddParts(ComponentName.Replace(" ", "").ToLower());
             }
 
-            await OnSearch("");            
+            await OnSearch("");
         }
         //PAGE NAVIGATED METHOD
 
@@ -73,7 +74,7 @@ namespace PcArchitect.ViewModel
             Task.Run(() =>
             {
                 var properties = typeof(Root).GetProperties();
-                
+
                 foreach (var property in properties)
                 {
                     var itemType = property.PropertyType.GetGenericArguments()[0];
@@ -89,10 +90,10 @@ namespace PcArchitect.ViewModel
                                 Components.Add(item);
                             }
                             continue;
-                        }   
+                        }
                     }
                 }
-            }); 
+            });
             return Task.CompletedTask;
         }
         //ADD PARTS TO collectedParts

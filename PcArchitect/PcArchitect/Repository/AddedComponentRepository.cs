@@ -1,19 +1,22 @@
 ﻿using PcArchitect.Model;
 
+// AFHANKELIJK VAN WELKE METHODE WORDT AANGEROEPEN, WORDT EEN COMPONENT TOEGEVOEGD OF VERWIJDERD 
+// UIT DE SPECIFIEKE TYPE LIJST IN DE ROOT KLASSE
+
 namespace PC_Architect.Model
 {
     public class AddedComponentRepository
     {
         private readonly RootFactory _rootF;
         public AddedComponentRepository(RootFactory rootF)
-        {   
+        {
             _rootF = rootF;
         }
 
         public Task AddComponentAsync<T>(T component)
         {
             Task.Run(() =>
-            { 
+            {
                 switch (component)
                 {
                     case Cpu cpu:
@@ -52,7 +55,7 @@ namespace PC_Architect.Model
 
 
                 }
-            });return Task.CompletedTask;
+            }); return Task.CompletedTask;
         }
 
         public async Task RemoveComponentAsync<T>(T component)
@@ -95,8 +98,11 @@ namespace PC_Architect.Model
                         _rootF.GetRoot2().Os.Remove(os);
                         break;
                 }
-            }); 
+            });
         }
+
+        // VERWIJDER ALLE COMPONENTEN UIT DE ROOT2 KLASSE EN STANDAARDWAARDES WORDEN INGESTELD VOOR ALLE COMPONENTEN
+
         public void ClearComponents()
         {
             foreach (var property in _rootF.GetRoot2().GetType().GetProperties())

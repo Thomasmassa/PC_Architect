@@ -1,4 +1,6 @@
-﻿namespace PcArchitect
+﻿// HOOFD CODE BEHIND 
+
+namespace PcArchitect
 {
     public partial class App : Application
     {

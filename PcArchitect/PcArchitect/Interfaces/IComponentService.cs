@@ -1,4 +1,4 @@
-﻿using PcArchitect.Model;
+﻿// INTERFACE VOOR HET ASYNCHROON OPHALEN VAN COMPONENTEN
 
 namespace PcArchitect.Interfaces
 {

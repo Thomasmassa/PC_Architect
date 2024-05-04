@@ -1,6 +1,10 @@
 ﻿using PcArchitect.Interfaces;
 using PcArchitect.Model;
 
+// WANNEER EEN INSTANTIE VAN DE KLASSE WORDT AANGEMAAKT, WORDEN ALLE COMPONENTEN UIT DE DATABASE ASYNCHROON OPGEHAALD
+// EN TOEGEVOEGD AAN DE SPECIFIEKE LIJSTEN IN DE ROOT KLASSE
+// DEZE KLASSE WORDT GEBRUIKT OM ALLE COMPONENTEN UIT DE DATABASE OP TE HALEN
+
 namespace PcArchitect.Repository
 {
     public class AllComponentRepository
@@ -12,7 +16,7 @@ namespace PcArchitect.Repository
         {
             _comServ = comServ;
             _rootF = rootF;
-            
+
             GetAllComponentsAsync();
         }
 

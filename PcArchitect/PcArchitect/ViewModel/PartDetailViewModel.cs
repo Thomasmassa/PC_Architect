@@ -7,6 +7,8 @@ using System.Collections.ObjectModel;
 using IComponent = PcArchitect.Interfaces.IComponent;
 using PcArchitect.Services;
 
+// DIT IS DE VIEWMODEL VOOR DE DETAILPAGINA VAN EEN COMPONENT UIT DE PARTSLIST
+
 namespace PcArchitect.ViewModel
 {
     [QueryProperty(nameof(SelectedItem), "SelectedItem")]
@@ -33,6 +35,8 @@ namespace PcArchitect.ViewModel
                 {"ComponentName", detailstring}
             });
         }
+
+        // WAAROM HIER EN NIET IN DE PARTSLISTVIEWMODEL ?
 
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)

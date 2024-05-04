@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// DEZE VIEWMODEL BEVAT DE LIJST VAN COMPONENTEN DIE DE GEBRUIKER HEEFT TOEGEVOEGD AAN ZIJN/HAAR BUILD
+
 namespace PcArchitect.ViewModel
 {
     public class MyBuildViewModel : BaseViewModel

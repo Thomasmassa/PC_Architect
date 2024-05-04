@@ -9,6 +9,8 @@ using PcArchitect.Views;
 using System.Collections;
 using System.Collections.ObjectModel;
 
+// DIT IS DE VIEWMODEL VOOR DE ZOEKLIJST VAN ALLE COMPONENTEN
+
 namespace PcArchitect.ViewModel
 {
     public partial class SearchViewModel : BaseViewModel

@@ -8,6 +8,9 @@ using PcArchitect.Services;
 using PcArchitect.ViewModel;
 using PcArchitect.Views;
 
+// STARTPUNT VAN DE APPLICATIE
+// CREATIE MAUI APP 
+
 namespace PcArchitect
 {
     public static class MauiProgram

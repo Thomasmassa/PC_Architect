@@ -3,6 +3,9 @@ using PC_Architect.Model;
 using PcArchitect.Repository;
 using PcArchitect.Views;
 
+// IS DE VIEWMODEL VAN DE HOOFDPAGINA VAN DE APPLICATIE
+// DEZE VIEWMODEL BEVAT DE COMMANDS OM NAAR 3 VERSCHILLENDE PAGINA'S TE GAAN
+
 namespace PcArchitect.ViewModel
 {
     public partial class MainViewModel : BaseViewModel

@@ -1,6 +1,8 @@
 ﻿using PcArchitect.Repository;
 using PcArchitect.Views;
 
+// ROUTES WORDEN GEREGISTREERD VOOR DE NAVIGATIE VAN DE PAGINA'S IN DE CONSTRUCTOR VAN DE SHELL
+
 namespace PcArchitect
 {
     public partial class AppShell : Shell

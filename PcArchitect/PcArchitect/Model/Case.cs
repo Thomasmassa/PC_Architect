@@ -1,13 +1,15 @@
 ﻿using PcArchitect.Interfaces;
-using System.Net.Sockets;
-using System.Runtime.Intrinsics.Arm;
 using System.Text.Json.Serialization;
+
+// MODEL KLASSE CASE DIE OVERERFT VAN ICOMPONENT
 
 namespace PcArchitect.Model
 {
     public class Case : IComponent
     {
         private string _image = "imagenotfound.png";
+
+        // ALS DE AFBEELDING LEEG IS WORDT ER EEN STANDAARD AFBEELDING "imagenotfound.png" GEBRUIKT
 
         [JsonPropertyName("image")]
         public string Image
@@ -33,10 +35,14 @@ namespace PcArchitect.Model
         [JsonPropertyName("internal_35_bays")]
         public int Internal35Bays { get; set; }
 
+        // DE DESCRIPTION EIGENSCHAP WORDT GEBRUIKT OM DE UNIEKE INFORMATIE VAN DE CASE TE TONEN, BUITEN DE OVERGEËRFDE EIGENSCHAPPEN VAN ICOMPONENT
+
         public string Discription
         {
             get { return $"Psu: {Psu}\nType: {Type}\nExternal Volume: {ExternalVolume}\nInternal 35 Bays {Internal35Bays}"; }
         }
+
+        // DE VOLGENDE EIGENSCHAPPEN WORDEN GEBRUIKT OM DELEN IN DE XAML TE TONEN OF TE VERBERGEN
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
         public bool? IsPresetFrameEnabled { get; set; } = false;
