@@ -25,7 +25,6 @@ namespace PcArchitect.Services
                 if (!response.IsSuccessStatusCode)
                 {
                     Console.WriteLine($"Error while getting components from Firebase: {response.StatusCode}");
-                    await Shell.Current.DisplayAlert("Error", $"Database is currently not responding", "OK");
                     return [];
                 }
 
@@ -35,7 +34,6 @@ namespace PcArchitect.Services
 
                 if (components == null)
                 {
-                    await Shell.Current.DisplayAlert("Error", $"Error while getting components", "OK");
                     components = [];
                     Console.WriteLine("No components found");
                 }
@@ -44,8 +42,6 @@ namespace PcArchitect.Services
             }
             catch (Exception e)
             {
-                await Shell.Current.DisplayAlert("Error", $"Error while getting components, Check your netwerk connection", "OK");
-
                 Console.WriteLine($"Error while getting components from Firebase: {e.Message}");
                 return null;
             }
