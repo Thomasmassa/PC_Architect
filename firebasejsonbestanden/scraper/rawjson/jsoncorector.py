@@ -16,8 +16,8 @@ def format_json_with_ids(file_path):
     return formatted_data
 
 # Bestandspad naar het JSON-bestand
-input_file_path = "rawjson\oldcase-fan.json"
-output_file_path = "casefan.json"
+input_file_path = "rawjson\oldhdd.json"
+output_file_path = "hdd.json"
 
 # Formateer de JSON-gegevens
 formatted_data = format_json_with_ids(input_file_path)

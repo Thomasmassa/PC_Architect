@@ -68,10 +68,14 @@ for part in data.values():
             print(img_url)
             logging.info(img_url)
             part['image'] = img_url
+            print("succeeded")
+        else:
+            print("failed")
+            logging.info("failed")
         time.sleep(2)
-        print("succeeded")
 
 # Sla de bijgewerkte JSON-gegevens op
 with open(filepath, 'w') as f:
     json.dump(data, f, indent=4)
 print("done")
+exit()

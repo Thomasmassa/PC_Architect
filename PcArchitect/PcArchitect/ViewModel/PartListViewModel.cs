@@ -23,7 +23,6 @@ namespace PcArchitect.ViewModel
         private readonly RootFactory _rootF;
         private readonly BufferService _bufferService;
         private readonly AddedComponentRepository _addedcomponentRepository;
-        IConnectivity _connectivity;
 
 
         //////////////////////////////////////////////
@@ -31,12 +30,11 @@ namespace PcArchitect.ViewModel
         //////////////////////////////////////////////
 
 
-        public PartListViewModel(AddedComponentRepository addedcomponentRepository, BufferService bufferService, RootFactory rootF, IConnectivity connectivity)
+        public PartListViewModel(AddedComponentRepository addedcomponentRepository, BufferService bufferService, RootFactory rootF)
         {
             _addedcomponentRepository = addedcomponentRepository;
             _bufferService = bufferService;
             _rootF = rootF;
-            _connectivity = connectivity;
 
             DisplayedItems = [];
             Components = [];
@@ -47,62 +45,16 @@ namespace PcArchitect.ViewModel
 
         //////////////////////////////////////////////
 
-        [RelayCommand]
-        async Task Refresh()
-        {
-            if (IsBusy)
-                return;
-
-            try
-            {
-                if (_connectivity.NetworkAccess != NetworkAccess.Internet)
-                {
-                    await Shell.Current.DisplayAlert("Internet issue", $"Check you internet and try again!", "OK");
-                    return;
-                }
-
-                IsBusy = true;
-                IsRefreshing = true;
-
-                if (ComponentName != "d")
-                {
-                    if (Components.Count != 0)
-                        Components.Clear();
-
-                    Title = $"{ComponentName} LIST";
-                    await AddParts(ComponentName.Replace(" ", "").ToLower());
-                }
-
-                await OnSearch("");
-            }
-            catch (Exception ex)
-            {
-                await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
-            }
-            finally
-            {
-                IsBusy = false;
-                IsRefreshing = false;
-            }
-        }
-
-        //////////////////////////////////////////////
-
-        //////////////////////////////////////////////
 
         //PAGE NAVIGATED METHOD
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
-            Title = $"# LIST";
+            //Title = $"# LIST";
+            //bij het navigeren naar de pagina vanuit de partdetailpage
+            //is de componentnaam nog gecasht
 
-            if (_connectivity.NetworkAccess != NetworkAccess.Internet)
-            {
-                await Shell.Current.DisplayAlert("Internet issue", $"Check you internet and try again!", "OK");
-                return;
-            }
-
-            if (ComponentName != "d")
+            if (ComponentName != "")
             {
                 Components.Clear();
                 Title = $"{ComponentName} LIST";

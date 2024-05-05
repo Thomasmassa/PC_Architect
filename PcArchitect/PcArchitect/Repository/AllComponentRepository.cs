@@ -16,8 +16,6 @@ namespace PcArchitect.Repository
         {
             _comServ = comServ;
             _rootF = rootF;
-
-            GetAllComponentsAsync();
         }
 
         public Task GetAllComponentsAsync()

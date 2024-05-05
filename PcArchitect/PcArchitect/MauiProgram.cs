@@ -38,6 +38,7 @@ namespace PcArchitect
             builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
             builder.Services.AddSingleton<IComponentService, ComponentService>();
             builder.Services.AddSingleton<AllComponentRepository>();
+            builder.Services.AddSingleton<InternetService>();
             builder.Services.AddSingleton<AddedComponentRepository>();
             builder.Services.AddSingleton<BufferService>();
 

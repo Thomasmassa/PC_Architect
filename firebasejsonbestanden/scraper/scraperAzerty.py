@@ -81,3 +81,4 @@ for part in data.values():
 with open(filepath, 'w') as f:
     json.dump(data, f, indent=4)
 print("done")
+exit()

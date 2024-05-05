@@ -42,46 +42,6 @@ namespace PcArchitect.ViewModel
 
 
         [RelayCommand]
-        public async Task Refresh()
-        {
-            if (IsBusy)
-                return;
-
-            try
-            {
-                if (_connectivity.NetworkAccess != NetworkAccess.Internet)
-                {
-                    await Shell.Current.DisplayAlert("Internet issue", $"Check you internet and try again!", "OK");
-                    return;
-                }
-
-                IsBusy = true;
-                IsRefreshing = true;
-
-                if (Components.Count != 0)
-                    Components.Clear();
-
-                AddParts();
-                OnSearch("");
-            }
-            catch (Exception ex)
-            {
-                await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
-            }
-            finally
-            {
-                IsBusy = false;
-                IsRefreshing = false;
-            }
-        }
-
-
-        //////////////////////////////////////////////
-
-        //////////////////////////////////////////////
-
-
-        [RelayCommand]
         public async Task PageNavigated(NavigatedToEventArgs args)
         {
             DisplayedItems.Clear();

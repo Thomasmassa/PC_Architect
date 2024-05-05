@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using PC_Architect.Model;
 using PcArchitect.Repository;
+using PcArchitect.Services;
 using PcArchitect.Views;
 
 // IS DE VIEWMODEL VAN DE HOOFDPAGINA VAN DE APPLICATIE
@@ -12,11 +13,19 @@ namespace PcArchitect.ViewModel
     {
         private readonly AllComponentRepository _allComponentRepository;
         private readonly AddedComponentRepository _addedomponentRepository;
+        private readonly InternetService _internetService;
 
-        public MainViewModel(AllComponentRepository allComponentRepository, AddedComponentRepository addedomponentRepository)
+        public MainViewModel(AllComponentRepository allComponentRepository, AddedComponentRepository addedomponentRepository, InternetService internetService)
         {
             _allComponentRepository = allComponentRepository;
             _addedomponentRepository = addedomponentRepository;
+            _internetService = internetService;
+        }
+
+        [RelayCommand]
+        async Task PageNavigated()
+        {
+            await _internetService.CheckInternetConnection();
         }
 
         [RelayCommand]

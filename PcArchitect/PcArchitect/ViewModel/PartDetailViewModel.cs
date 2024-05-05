@@ -29,7 +29,7 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task BackButton()
         {
-            var detailstring = "d";
+            var detailstring = "";
             await Shell.Current.GoToAsync(nameof(PartListPage), false, new Dictionary<string, object>
             {
                 {"ComponentName", detailstring}
