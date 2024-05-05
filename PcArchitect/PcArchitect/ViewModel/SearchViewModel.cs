@@ -38,6 +38,37 @@ namespace PcArchitect.ViewModel
 
         //////////////////////////////////////////////
 
+        [RelayCommand]
+        public async Task Refresh()
+        {
+            if (IsBusy)
+                return;
+
+            try
+            {
+                IsBusy = true;
+                IsRefreshing = true;
+
+                if (Components.Count != 0)
+                    Components.Clear();
+
+                await AddParts();
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
+            }
+            finally
+            {
+                IsBusy = false;
+                IsRefreshing = false;
+            }
+        }
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
 
         [RelayCommand]
         public async Task PageNavigated(NavigatedToEventArgs args)
@@ -108,17 +139,18 @@ namespace PcArchitect.ViewModel
 
             if (searchText == "")
             {
+                var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
                 results = Components.ToList();
             }
 
-            if (results.Count != 0)
-            {
-                foreach (var result in results)
+                if (results.Count != 0)
                 {
-                    DisplayedItems.Add(result);
+                    foreach (var result in results)
+                    {
+                        DisplayedItems.Add(result);
+                    }
                 }
-            }
-
+            });
         }
         //SEARCHMETHOD
 
