@@ -7,6 +7,7 @@ using PcArchitect.Repository;
 using PcArchitect.Services;
 using PcArchitect.ViewModel;
 using PcArchitect.Views;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 // STARTPUNT VAN DE APPLICATIE
 // CREATIE MAUI APP 
@@ -20,6 +21,7 @@ namespace PcArchitect
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseSkiaSharp()
                 .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
@@ -33,6 +35,7 @@ namespace PcArchitect
             builder.Services.AddSingleton<MainViewModel>();
 
             builder.Services.AddSingleton<RootFactory>();
+            builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
             builder.Services.AddSingleton<IComponentService, ComponentService>();
             builder.Services.AddSingleton<AllComponentRepository>();
             builder.Services.AddSingleton<AddedComponentRepository>();

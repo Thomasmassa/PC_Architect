@@ -6,7 +6,7 @@
              xmlns:viewmodel="clr-namespace:PcArchitect.ViewModel"
              xmlns:interfaces="clr-namespace:PcArchitect.Interfaces"
              xmlns:converters="clr-namespace:PcArchitect.Converters"
-             x:DataType="viewmodel:PartListViewModel"
+             x:DataType="viewmodel:SearchViewModel"
              Shell.NavBarIsVisible="False"
              Shell.PresentationMode="NotAnimated"
              >
@@ -15,7 +15,7 @@
         <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
     </ContentPage.Behaviors>
 
-    <refreshView x:Name="refreshView" IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
+    <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
         <StackLayout Background="{StaticResource BackgroundBackgroundColor}">
             <Frame BackgroundColor="{StaticResource BackgroundBackgroundColor}" CornerRadius="15" BorderColor="Transparent"
             Padding="0" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4">
@@ -36,10 +36,10 @@
                     Grid.Row="0" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"
                     Margin="0,30,0,0"/>
 
-                <Button Text="back" FontFamily="Koulen" FontSize="Title" TextColor="{StaticResource PrimaryText}" Grid.Column="4" Grid.Row="1" 
-                    Margin="0,0,20,0"  Padding="0" Background="Transparent" 
-                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:SearchViewModel}}, Path=BackButtonCommand}"
-                    CommandParameter="{Binding .}"/>
+                    <Button Text="back" FontFamily="Koulen" FontSize="Title" TextColor="{StaticResource PrimaryText}" Grid.Column="4" Grid.Row="1" 
+                        Margin="0,0,20,0"  Padding="0" Background="Transparent" 
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:SearchViewModel}}, Path=BackButtonCommand}"
+                        CommandParameter="{Binding .}"/>
 
                     <SearchBar x:Name="searchBar" Placeholder="Search" Opacity="0.8" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" FontFamily="Koulen"
                         Background="{StaticResource BackgroundBackgroundColor}" TextColor="{StaticResource PrimaryText}">
@@ -131,5 +131,5 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </StackLayout>
-    </refreshView>
+    </RefreshView>
 </ContentPage>

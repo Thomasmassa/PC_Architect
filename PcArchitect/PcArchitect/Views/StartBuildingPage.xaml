@@ -142,7 +142,7 @@
 
             <!-- SAVE AND EXIT -->
             <Button Text="Save" 
-            TextColor="{StaticResource darkText}"
+            TextColor="{StaticResource Primary}"
             Padding="0"
             Grid.Row="7"
             Grid.Column="1"
@@ -151,7 +151,7 @@
             FontFamily="Koulen"
             FontSize="20"/>
             <Button Text="Back"
-            TextColor="{StaticResource darkText}"
+            TextColor="{StaticResource Primary}"
             Command="{Binding BackButtonCommand}"
             Padding="0"
             Grid.Row="7"

@@ -1,10 +1,7 @@
 ﻿using CommunityToolkit.Maui.Alerts;
-using CommunityToolkit.Maui.Core.Views;
 using CommunityToolkit.Mvvm.Input;
-using Microsoft.Maui;
 using PcArchitect.Interfaces;
 using PcArchitect.Model;
-using PcArchitect.Services;
 using PcArchitect.Views;
 using System.Collections;
 using System.Collections.ObjectModel;
@@ -19,16 +16,21 @@ namespace PcArchitect.ViewModel
         public ObservableCollection<IComponent> DisplayedItems { get; set; }
 
         private readonly RootFactory _rootF;
+        IConnectivity _connectivity;
+
 
         //////////////////////////////////////////////
 
         //////////////////////////////////////////////
 
 
-        public SearchViewModel(RootFactory rootF)
+        public SearchViewModel(RootFactory rootF, IConnectivity connectivity)
         {
             Title = "Search List";
+
             _rootF = rootF;
+            _connectivity = connectivity;
+
             Components = [];
             DisplayedItems = [];
         }
@@ -38,6 +40,7 @@ namespace PcArchitect.ViewModel
 
         //////////////////////////////////////////////
 
+
         [RelayCommand]
         public async Task Refresh()
         {
@@ -46,13 +49,20 @@ namespace PcArchitect.ViewModel
 
             try
             {
+                if (_connectivity.NetworkAccess != NetworkAccess.Internet)
+                {
+                    await Shell.Current.DisplayAlert("Internet issue", $"Check you internet and try again!", "OK");
+                    return;
+                }
+
                 IsBusy = true;
                 IsRefreshing = true;
 
                 if (Components.Count != 0)
                     Components.Clear();
 
-                await AddParts();
+                AddParts();
+                OnSearch("");
             }
             catch (Exception ex)
             {
@@ -65,6 +75,7 @@ namespace PcArchitect.ViewModel
             }
         }
 
+
         //////////////////////////////////////////////
 
         //////////////////////////////////////////////
@@ -75,6 +86,13 @@ namespace PcArchitect.ViewModel
         {
             DisplayedItems.Clear();
             Components.Clear();
+
+            if (_connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                await Shell.Current.DisplayAlert("Internet issue", $"Check you internet and try again!", "OK");
+                return;
+            }
+
             AddParts();
             OnSearch("");
         }
@@ -117,7 +135,6 @@ namespace PcArchitect.ViewModel
         //////////////////////////////////////////////
 
 
-        //SEARCHMETHOD
         [RelayCommand]
         async Task TextChanged(string newText)
         {
@@ -135,24 +152,36 @@ namespace PcArchitect.ViewModel
         {
             Title = $"Search {searchText} List";
 
-            var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
-
-            if (searchText == "")
+            Task.Run(() =>
             {
                 var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
-                results = Components.ToList();
-            }
+
+                if (searchText == "")
+                {
+                    results = Components.ToList();
+
+                    if (results.Count == 0)
+                    {
+                        Shell.Current.DisplayAlert("No results found", "No results found for this search", "OK");
+                        return;
+                    }
+                }
 
                 if (results.Count != 0)
                 {
+                    DisplayedItems.Clear();
+
                     foreach (var result in results)
                     {
                         DisplayedItems.Add(result);
                     }
                 }
+                else
+                {
+                    Shell.Current.DisplayAlert("No results found", "No results found for this search", "OK");
+                }
             });
         }
-        //SEARCHMETHOD
 
 
         //////////////////////////////////////////////
