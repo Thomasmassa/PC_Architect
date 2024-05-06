@@ -154,7 +154,7 @@ namespace PcArchitect.ViewModel
         {
             if (selectedPart == null) return;
 
-            await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", true, new Dictionary<string, object>
+            await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", false, new Dictionary<string, object>
             {
                 { "SelectedItem", selectedPart.Name }
             });

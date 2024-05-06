@@ -50,10 +50,6 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
-            //Title = $"# LIST";
-            //bij het navigeren naar de pagina vanuit de partdetailpage
-            //is de componentnaam nog gecasht
-
             if (ComponentName != "")
             {
                 Components.Clear();
@@ -194,7 +190,7 @@ namespace PcArchitect.ViewModel
 
             _bufferService.BuffComponentForDetailPage(selectedItem.Name, selectedItem);
 
-            await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", true, new Dictionary<string, object>
+            await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", false, new Dictionary<string, object>
             {
                 { "SelectedItem", selectedItem.Name}
             });

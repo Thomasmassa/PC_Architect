@@ -20,6 +20,9 @@ namespace PcArchitect.ViewModel
         [ObservableProperty]
         bool isRefreshing;
 
+        [ObservableProperty]
+        bool isDiscriptionVisible;
+
         public bool IsNotBusy => !IsBusy;
     }
 }

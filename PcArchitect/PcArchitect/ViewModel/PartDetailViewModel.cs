@@ -24,25 +24,33 @@ namespace PcArchitect.ViewModel
         {
             _bufferService = bufferService;
             Component = new ObservableCollection<IComponent>();
+
+            IsDiscriptionVisible = false;
         }
 
         [RelayCommand]
         async Task BackButton()
         {
-            var detailstring = "";
-            await Shell.Current.GoToAsync(nameof(PartListPage), false, new Dictionary<string, object>
-            {
-                {"ComponentName", detailstring}
-            });
-        }
+            await Shell.Current.GoToAsync("..");
 
-        // WAAROM HIER EN NIET IN DE PARTSLISTVIEWMODEL ?
+            //var detailstring = "";
+            //await Shell.Current.GoToAsync(nameof(PartListPage), false, new Dictionary<string, object>
+            //{
+            //    {"ComponentName", detailstring}
+            //});
+        }
 
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
             var component = (IComponent)_bufferService.GetBufferedComponent(SelectedItem);
             Component.Add(component);
+        }
+
+        [RelayCommand]
+        void ToggleDiscription()
+        {
+            IsDiscriptionVisible = !IsDiscriptionVisible;
         }
     }
 }

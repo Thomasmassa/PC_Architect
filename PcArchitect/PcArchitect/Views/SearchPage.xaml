@@ -37,8 +37,7 @@
 
                 <Button Text="back" FontFamily="Koulen" FontSize="Title" TextColor="{StaticResource PrimaryText}" Grid.Column="4" Grid.Row="1" 
                         Margin="0,0,20,0"  Padding="0" Background="Transparent" 
-                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:SearchViewModel}}, Path=BackButtonCommand}"
-                        CommandParameter="{Binding .}"/>
+                        Command="{Binding BackButtonCommand}"/>
 
                 <SearchBar x:Name="searchBar" Placeholder="Search" Opacity="0.8" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" FontFamily="Koulen"
                         Background="{StaticResource BackgroundBackgroundColor}" TextColor="{StaticResource PrimaryText}">
@@ -70,7 +69,7 @@
 
                             <Frame.GestureRecognizers>
                                 <TapGestureRecognizer
-                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartListViewModel}}, Path=PartToDetailCommand}"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:SearchViewModel}}, Path=PartToDetailCommand}"
                                     CommandParameter="{Binding .}"/>
                             </Frame.GestureRecognizers>
 
