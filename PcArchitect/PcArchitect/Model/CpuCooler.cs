@@ -38,7 +38,7 @@ namespace PcArchitect.Model
 
         public string Discription
         {
-            get { return $"Rpm: {Rpm}\nNoise Level: {NoiseLevel}dB"; }
+            get { return $"Rpm: {Rpm}\nNoise Level: {NoiseLevel}dB\nColor: {Color}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

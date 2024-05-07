@@ -37,6 +37,9 @@ namespace PcArchitect.Model
         public int MemorySlots { get; set; }
         [JsonPropertyName("color")]
         public string Color { get; set; } = "";
+        [JsonPropertyName("memorytype")]
+        public string MemoryType { get; set; } = "";
+
 
         public string Discription
         {

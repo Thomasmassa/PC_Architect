@@ -37,7 +37,7 @@ namespace PcArchitect.Model
         [JsonPropertyName("cas_latency")]
         public int Cas_latency { get; set; }
         [JsonPropertyName("speed_type")]
-        public int Speed_type { get; set; }//DDR4, DDR5
+        public string Speed_type { get; set; }//DDR4, DDR5
         [JsonPropertyName("speed_value")]
         public int Speed_value { get; set; }//3200, 3600
         [JsonPropertyName("module_count")]

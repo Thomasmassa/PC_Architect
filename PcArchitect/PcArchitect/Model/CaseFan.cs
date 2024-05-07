@@ -42,7 +42,7 @@ namespace PcArchitect.Model
 
         public string Discription
         {
-            get { return $"Size: {Size}\nRpm: {Rpm}\nAirflow: {Airflow}\nNoise Level {NoiseLevel}"; }
+            get { return $"Size: {Size}\nRpm: {Rpm}\nAirflow: {Airflow}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

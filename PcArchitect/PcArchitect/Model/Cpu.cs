@@ -52,7 +52,7 @@ namespace PcArchitect.Model
 
         public string Discription
         {
-            get { return $"Socket: {Socket}\nCores: {Core_Count}\nCore Clock: {Core_clock}\nBoost Clock: {BoostClock}";  }
+            get { return $"Socket: {Socket}\nCores: {Core_Count}\nCore Clock: {Core_clock}";  }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
