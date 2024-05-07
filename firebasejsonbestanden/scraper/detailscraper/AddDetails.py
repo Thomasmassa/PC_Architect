@@ -15,7 +15,7 @@ while True:
     # Loop door elk object en voeg het veld "details" toe
     for key in data:
         data[key]['details'] = ''
-
+ 
     # Schrijf de nieuwe data terug naar het bestand
     with open(filepath, 'w') as f:
         json.dump(data, f, indent=4)

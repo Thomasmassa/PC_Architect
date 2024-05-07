@@ -1,0 +1,713 @@
+{
+    "0": {
+        "name": "Thermalright Peerless Assassin 120 SE",
+        "price": 33.9,
+        "rpm": 1550,
+        "noise_level": 25.6,
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/2/0/DeepCool_AK400_Zero_Dark_Plus_cpu_koeler@@1861302.jpg",
+        "details": "De DeepCool AK400 Zero Dark Plus is een volledig zwarte variant van de zeer compatibele AK400 CPU koeler met een klassieke 4 heatpipe tower layout met uniek matrix lamellenontwerp en dubbele high performance FDB fans, die zorgen voor superieure warmteafvoer en ultra-lage geluidsniveaus. De AK400 Zero Dark Plus is van boven tot onder in het zwart gehuld en bedekt elk oppervlak met een premium, zwarte glans die zorgt voor een opvallende look in ieder systeem. Met een warmteafvoercapaciteit tot 220W, zijn de uitzonderlijke koelprestaties de perfecte keuze voor mainstream systemen met moderne CPU's die een uitstekende prijs-kwaliteitverhouding vereisen. Vier koperen heatpipes voeren de warmte snel en effectief weg van de processor en voeren deze af via het uniek matrix lamellenontwerp. Dankzij de krachtige FDB-fans die de luchtstroom en statische druk maximaliseert wanneer dat nodig is, en deze op intelligente wijze uitschakelt voor stille efficiëntie, krijg je een krachtige koeling met minimaal geluidsoverlast."
+    },
+    "1": {
+        "name": "Cooler Master MASTERLIQUID ML240L RGB V2",
+        "price": 89.99,
+        "rpm": [
+            650,
+            1800
+        ],
+        "noise_level": [
+            6,
+            27
+        ],
+        "color": "Black",
+        "size": 240,
+        "image": "https://www.alternate.be/p/200x200/6/9/Cooler_Master_MasterLiquid_ML240_ILLUSION_waterkoeling@@1748496.jpg",
+        "details": "De Cooler Master MasterLiquid ML240 ILLUSION uit de MasterLiquid ILLUSION serie herdefinieert visuele verlichting met compleet andere ontwerpkenmerken dan de MasterLiquid serie. De 12 adresseerbare Gen 2 RGB leds die in de volledig transparante pomp zijn ge\u00efntegreerd, bieden spectaculaire kleurmogelijkheden. Aangevuld met de MasterFan MF120 Halo fans, zijn de verlichtingsfuncties meer dan genoeg, zelfs voor visuele enthousiastelingen. De ILLUSION is niet alleen elegant, maar ook bijzonder krachtig en is voorzien van een geoptimaliseerde 3-kamerpomp voor uitstekende koelprestaties."
+    },
+    "2": {
+        "name": "Cooler Master Hyper 212 Black Edition",
+        "price": null,
+        "rpm": [
+            800,
+            2000
+        ],
+        "noise_level": [
+            6.5,
+            26
+        ],
+        "color": null,
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/8/3/Cooler_Master_Hyper_212_RGB_Black_Edition_with_LGA1700_cpu_koeler@@1809038_30.jpg",
+        "details": "De legendarische Hyper luchtkoeler van Cooler Master is terug en beter dan voorheen. De Hyper 212 RGB Black Edition with LGA1700 biedt een betere installatie en geweldige prestaties, gemakkelijk een van de beste CPU-koeler oplossingen. De aluminium bovenkant en vernikkelde gitzwarte vinnen geven de Hyper 212 RGB Black Edition een eersteklas esthetische uitstraling. Het gestroomlijnde gitzwart zorgt er niet alleen voor dat het er geweldig uitziet, maar verhoogt ook de koelprestaties. Verhoog ook het stralende uiterlijk met de compacte RGB LED controller waarmee je jouw RGB hardware kunt aanpassen zonder dat je een moederbord of software nodig hebt die RGB ondersteunt. Zo krijg je de kleurrijke pc behuizing die je altijd al wilde hebben met slechts \u00e9\u00e9n druk op de knop.\r\nInclusief LGA1700 ondersteuning"
+    },
+    "3": {
+        "name": "Corsair iCUE H150i ELITE CAPELLIX XT",
+        "price": 189.99,
+        "rpm": [
+            550,
+            2100
+        ],
+        "noise_level": [
+            5,
+            34.1
+        ],
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/2/9/Corsair_iCUE_H150i_ELITE_CAPELLIX_XT_360_mm_waterkoeling@@1889792.jpg",
+        "details": "De iCUE H150i ELITE CAPELLIX XT 360 mm waterkoeling kit levert krachtige high-performance koeling voor Intel of AMD processoren. CORSAIR AF RGB ELITE PWM fans produceren ultrastille luchtstroom bij snelheden tot 2.100 rpm, met geconcentreerde koeling dankzij AirGuide technologie voor effici\u00ebnte warmteafvoer langs een 360 mm radiator. Ultraheldere CAPELLIX leds hullen het systeem in heldere kleuren, die worden afgestemd op maximaal zes ventilatoren via de bijbehorende CORSAIR iCUE COMMANDER CORE-controller. De krachtige CORSAIR iCUE software zorgt voor het regelen van de RGB-verlichting, het aanpassen van de ventilatorsnelheid en het bewaken van de systeemtemperatuur."
+    },
+    "4": {
+        "name": "NZXT Kraken Elite 360 RGB",
+        "price": 282.63,
+        "rpm": [
+            500,
+            1800
+        ],
+        "noise_level": [
+            17.9,
+            30.6
+        ],
+        "color": "White",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/3/9/NZXT_Kraken_Elite_360_RGB_waterkoeling@@1881793.jpg",
+        "details": "De NZXT Kraken Elite 360 RGB is een waterkoeler met LCD display en F-Series RGB Core fans. De Kraken Elite levert koele prestaties met een display dat echt pronkt met aangepaste inhoud. Een krachtigere microcontroller zorgt voor meer meeslepende aanpassingen zoals audio visuals en de mogelijkheid om CAM informatie over te brengen met deeltjes dichtheid animaties. Een helder 5,99 cm (2,36 inch) groothoek LCD-scherm ondersteunt aangepaste afbeeldingen en geanimeerde GIF's en biedt een kristalheldere displayresolutie van 640 x 640, tweemaal die van de vorige generatie. De heldere, stille F-Series RGB core fans voegen een levendig gevoel toe aan je gaming setup dankzij 8 individueel adresseerbare RGB-leds op elke fan. De 7e generatie Asetek pomp zorgt ervoor dat de Kraken Elite optimaal koelt bij 2800 rpm. De installatie is vereenvoudigd met een enkele breakout-kabel die weinig ruimte laat voor fouten tijdens de installatie. De vloeistofslangen zijn beschermd met versterkt nylon vlechtwerk voor extra duurzaamheid en probleemloos gebruik."
+    },
+    "5": {
+        "name": "be quiet! Dark Rock Pro 4",
+        "price": 91.99,
+        "rpm": 1500,
+        "noise_level": [
+            12.8,
+            24.3
+        ],
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/5/8/be_quiet__Dark_Rock_Pro_5_cpu_koeler@@100019685.jpg",
+        "details": "De be quiet! Dark Rock Pro 5 biedt ongekende prestaties en een hoog koelvermogen met behulp van geavanceerde technologie in een iconisch ontwerp. Kies zelf voor rust met de \"Stille modus\" of voor buitengewone koelprestaties met de \"Prestatiemodus\". Ook biedt de Dark Rock Pro 5 een hoge RAM-compatibiliteit met een innovatief montagesysteem."
+    },
+    "6": {
+        "name": "Deepcool GAMMAXX AG400 ARGB",
+        "price": 29.99,
+        "rpm": [
+            500,
+            2000
+        ],
+        "noise_level": 31.6,
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/6/0/DeepCool_AG400_A_RGB_cpu_koeler@@1861306.jpg",
+        "details": "De DeepCool AG400 ARGB is een 120mm CPU-koeler in een single-tower formaat dat voortbouwt op de bewezen hoge kwaliteit en koelprestaties, maar verkleind voor een slank en effici\u00ebnt ontwerp. Je geniet van betere systeemprestaties. De vier direct aanvoelende heat pipes voeren restwarmte snel af van de CPU en houden systemen koel met tot 220W warmteafvoer. Bij de installatie van de AG400BKARGB hoeft de fan niet te worden gedemonteerd, wat het proces vereenvoudigt en tijd bespaart. Door de interne capillaire structuur te optimaliseren en een precieze hoeveelheid vloeistof te injecteren, bereikt de heatpipe de beste warmteafvoer, ongeacht of de koeler zich in een verticale of horizontale behuizing bevindt. Deze perfecte verhouding maakt een zeer effici\u00ebnte fasewisseling in de gehele heatpipe mogelijk en zorgt voor een lagere warmteweerstand over een breed TDP-bereik. Met de hoogrendementsventilator kan je de optimale balans vinden. De automatische PWM ventilatorregeling zorgt voor volledige prestaties onder belasting en stille effici\u00ebntie bij stationair gebruik."
+    },
+    "7": {
+        "name": "NZXT Kraken 240",
+        "price": 127.99,
+        "rpm": [
+            500,
+            1800
+        ],
+        "noise_level": [
+            17.9,
+            30.6
+        ],
+        "color": "Black",
+        "size": 240,
+        "image": "https://www.alternate.be/p/200x200/0/7/NZXT_Kraken_240_240mm_waterkoeling@@1881770.jpg",
+        "details": "De NZXT Kraken 240 is een waterkoeler met LCD display. Hij biedt koele prestaties, eenvoudige installatie en een display voor systeemgegevens of aangepaste afbeeldingen. Het 3,91 cm (1,54\") diameter LCD display zorgt voor een helder beeld. De krachtige, stille Static Pressure F-Series fan zorgt voor een uitstekende warmteafvoer. De 7e generatie Asetek pomp houdt de Kraken koel en soepel draaiend bij 2800 rpm. De installatie is vereenvoudigd met een enkele breakout-kabel die weinig ruimte laat voor fouten tijdens de installatie. De vloeistofslangen zijn beschermd met versterkt nylon vlechtwerk voor extra duurzaamheid en zorgeloos gebruik."
+    },
+    "8": {
+        "name": "Noctua NH-D15 chromax.black",
+        "price": 119.95,
+        "rpm": [
+            300,
+            1500
+        ],
+        "noise_level": [
+            19.2,
+            24.6
+        ],
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/h/Noctua_NH_D15_chromax_black_cpu_koeler@@hxlu42.jpg",
+        "details": "De Noctua NH-D15 chromax.black is een prestatie gerichte CPU-koeler met twee 140 mm fans. De koeler is compatibel met de volgende Sockets: 1150, 1151, 1155, 1156, 2011, 2011-3, 2066, AM2, AM2+, AM3, AM3+, AM4, FM1, FM2 en FM2+. De 6 heatpipes zorgen voor een prima geleiding van de warmte naar de vinnen. De koeler is vervaardigd uit een combinatie van koper en aluminium."
+    },
+    "9": {
+        "name": "NZXT Kraken Elite 360 RGB",
+        "price": 276.5,
+        "rpm": [
+            500,
+            1800
+        ],
+        "noise_level": [
+            17.9,
+            30.6
+        ],
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/3/9/NZXT_Kraken_Elite_360_RGB_waterkoeling@@1881793.jpg",
+        "details": "De NZXT Kraken Elite 360 RGB is een waterkoeler met LCD display en F-Series RGB Core fans. De Kraken Elite levert koele prestaties met een display dat echt pronkt met aangepaste inhoud. Een krachtigere microcontroller zorgt voor meer meeslepende aanpassingen zoals audio visuals en de mogelijkheid om CAM informatie over te brengen met deeltjes dichtheid animaties. Een helder 5,99 cm (2,36 inch) groothoek LCD-scherm ondersteunt aangepaste afbeeldingen en geanimeerde GIF's en biedt een kristalheldere displayresolutie van 640 x 640, tweemaal die van de vorige generatie. De heldere, stille F-Series RGB core fans voegen een levendig gevoel toe aan je gaming setup dankzij 8 individueel adresseerbare RGB-leds op elke fan. De 7e generatie Asetek pomp zorgt ervoor dat de Kraken Elite optimaal koelt bij 2800 rpm. De installatie is vereenvoudigd met een enkele breakout-kabel die weinig ruimte laat voor fouten tijdens de installatie. De vloeistofslangen zijn beschermd met versterkt nylon vlechtwerk voor extra duurzaamheid en probleemloos gebruik."
+    },
+    "10": {
+        "name": "Thermalright Phantom Spirit 120 SE",
+        "price": 35.9,
+        "rpm": 1500,
+        "noise_level": 25.6,
+        "color": "Black / Silver",
+        "size": null,
+        "image": "",
+        "details": ""
+    },
+    "11": {
+        "name": "ARCTIC Liquid Freezer II 360",
+        "price": 180.58,
+        "rpm": [
+            800,
+            2000
+        ],
+        "noise_level": null,
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/9/3/Arctic_Liquid_Freezer_III_420_A_RGB_waterkoeling@@100046139_30.jpg",
+        "details": "De Arctic Liquid Freezer III 420 A-RGB is direct klaar voor gebruik dankzij de voorge\u00efnstalleerde drie 140mm P14 PWM PST A-RGB fans in push-configuratie. Alle afzonderlijke kabels zijn weggewerkt in de behuizing, zodat er maar \u00e9\u00e9n kabel hoeft te worden aangesloten op het moederbord. De spanningsomzetters van moederborden werken vaak op hun maximale temperatuur in combinatie met CPU's die veel vermogen vragen.\r\n\r\nOm het gebrek aan luchtstroom van een tower-koeler te compenseren, werkt de Liquid Freezer III 420 A-RGB met een herziene VRM ventilator. Bij onvoldoende VRM-koeling, in gevallen met slechte luchtcirculatie of vooral in overklokscenario's zorgt de PWM-gestuurde 60 mm ventilator voor een bijna geruisloze koeling van het socket-gebied. Dit zorgt voor een continu hogere belasting en een langere levensduur van de spanningsomzetters. De Liquid Freezer III is uitgerust met een speciaal ontwikkelde PWM-gestuurde waterpomp, die verder is geoptimaliseerd wat betreft prestaties en geluidsniveau. Dankzij de verbeterde koelplaat met vergroot vinoppervlak en geoptimaliseerde waterkanalen, verhoogt de Liquid Freezer III de prestaties met behoud van een stille werking."
+    },
+    "12": {
+        "name": "NZXT Kraken 240 RGB",
+        "price": 172.99,
+        "rpm": [
+            500,
+            1800
+        ],
+        "noise_level": [
+            17.9,
+            30.6
+        ],
+        "color": "White",
+        "size": 240,
+        "image": "https://www.alternate.be/p/200x200/3/7/NZXT_Kraken_240_RGB_240mm_waterkoeling@@1881773.jpg",
+        "details": "De NZXT Kraken 240 RGB is een waterkoeler met LCD display en RGB fans. Hij biedt koele prestaties, eenvoudige installatie en een display voor systeemgegevens of aangepaste afbeeldingen. Het 3,91 cm (1,54\") diameter LCD display zorgt voor een helder beeld. De heldere, stille F-Series RGB Core fans voegen een levendig gevoel toe aan de gaming setup dankzij de 8 individueel adresseerbare RGB LEDs op elke fan. De 7e generatie Asetek pomp houdt de Kraken koel en soepel draaiend bij 2800rpm. De installatie is vereenvoudigd met een enkele breakout-kabel die weinig ruimte laat voor fouten tijdens de installatie. De vloeistofslangen zijn beschermd met versterkt nylon vlechtwerk voor extra duurzaamheid en zorgeloos gebruik."
+    },
+    "13": {
+        "name": "NZXT Kraken 360",
+        "price": 179.99,
+        "rpm": [
+            500,
+            1800
+        ],
+        "noise_level": [
+            17.9,
+            30.6
+        ],
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/8/6/NZXT_Kraken_360_360mm_waterkoeling@@1881768.jpg",
+        "details": "De NZXT Kraken 360 is een waterkoeler met LCD display. Hij biedt koele prestaties, eenvoudige installatie en een display voor systeemgegevens of aangepaste afbeeldingen. Het 3,91 cm (1,54\") diameter LCD display zorgt voor een helder beeld. De krachtige, stille Static Pressure F-Series ventilator zorgt voor een uitstekende warmteafvoer. De 7e generatie Asetek pomp houdt de Kraken koel en soepel draaiend bij 2800 rpm. De installatie is vereenvoudigd met een enkele breakout-kabel die weinig ruimte laat voor fouten tijdens de installatie. De vloeistofslangen zijn beschermd met versterkt nylon vlechtwerk voor extra duurzaamheid en zorgeloos gebruik."
+    },
+    "14": {
+        "name": "Corsair iCUE H100i RGB ELITE",
+        "price": 119.99,
+        "rpm": [
+            400,
+            1850
+        ],
+        "noise_level": [
+            5,
+            28.9
+        ],
+        "color": "Black",
+        "size": 240,
+        "image": "https://www.alternate.be/p/200x200/3/1/Corsair_iCUE_H100i_RGB_ELITE_waterkoeling@@1841413_30.jpg",
+        "details": "De CORSAIR iCUE H100i RGB ELITE Series CPU-koelers bieden een hoogwaardige CPU-koeling, ge\u00efntegreerde RGB-verlichting en een verfijnde uitstraling, met CORSAIR AF ELITE Series PWM-fans die een krachtige luchtstroom leveren en gespecialiseerde koelmodi voor een stille werking. Met 16 afzonderlijk aanstuurbare RGB leds op een moderne pompkop biedt de H100i RGB ELITE Series een goede koeling met de bijbehorende uitstraling. Met de krachtige CORSAIR iCUE-software kan je levendige verlichtingseffecten cre\u00ebren, de CPU- en koeltemperaturen bewaken en de fansnelheden aanpassen. De Zero RPM-fanmodus en variabele modi voor de pompsnelheid zorgen voor een nauwkeurige aanpassing van het geluidsniveau voor een stille werking. Met een thermisch geoptimaliseerde koperen koelplaat en een eenvoudige installatie op de nieuwste CPU-beugels biedt de H100i RGB ELITE een eersteklas CPU-koeling."
+    },
+    "15": {
+        "name": "Deepcool LS720 SE WH",
+        "price": 97.99,
+        "rpm": [
+            500,
+            2250
+        ],
+        "noise_level": [
+            28.2,
+            32.9
+        ],
+        "color": "White",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/1/4/DeepCool_LS720_SE_360_mm_waterkoeling@@1899641.jpg",
+        "details": "De witte DeepCool LS720 SE is een all-in-one CPU-waterkoeler die betrouwbare high-performance koeling biedt op basis van een waterpomp ontwerp voor optimale resultaten. Kleur-geco\u00f6rdineerd met de rest van het systeem met een grote en heldere ARGB Infinity Mirror cover op het CPU-waterblok en meegeleverde ARGB fans. Een gespiegelde bovenkant met een smalle rand vangt een oneindige reflectie van 16 RGB leds op voor een levendig visueel effect. De slanke aluminium behuizing voegt een high-end polish en een glanzend uiterlijk toe. Blijf koel met 120 mm ARGB PWM fans die warmte bestrijden met maximale statische druk en sterke luchtstroom. Een meegeleverde low-speed adapter vermindert het maximale geluid met maximaal 10 dB."
+    },
+    "16": {
+        "name": "Deepcool LS520 SE",
+        "price": 86.41,
+        "rpm": [
+            500,
+            2250
+        ],
+        "noise_level": [
+            28.2,
+            32.9
+        ],
+        "color": "Black",
+        "size": 240,
+        "image": "https://www.alternate.be/p/200x200/2/1/DeepCool_LS520_SE_240mm_waterkoeling@@1880212.jpg",
+        "details": "De DeepCool LS520 SE is een alles-in-\u00e9\u00e9n CPU waterkoeler die betrouwbare high-performance koeling biedt op basis van een waterpomp ontwerp voor optimale resultaten. Kleur-geco\u00f6rdineerd met de rest van het systeem met een grote en heldere ARGB Infinity Mirror cover op het CPU waterblok en meegeleverde ARGB fans. Een spiegelende bovenkap met een smalle rand vangt een oneindige reflectie van 16 RGB-LED's op voor een levendig visueel effect. De slanke aluminium behuizing voegt een high-end polish en een glanzend uiterlijk toe. Blijf koel met 120mm ARGB PWM fans die hitte bestrijden met maximale statische druk en sterke luchtstroom. Een meegeleverde adapter voor lage snelheid vermindert het maximale geluid met maximaal 10 dB."
+    },
+    "17": {
+        "name": "Noctua NH-D15",
+        "price": 109.95,
+        "rpm": [
+            300,
+            1500
+        ],
+        "noise_level": [
+            19.2,
+            24.6
+        ],
+        "color": null,
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/h/Noctua_NH_D15_chromax_black_cpu_koeler@@hxlu42.jpg",
+        "details": "De Noctua NH-D15 chromax.black is een prestatie gerichte CPU-koeler met twee 140 mm fans. De koeler is compatibel met de volgende Sockets: 1150, 1151, 1155, 1156, 2011, 2011-3, 2066, AM2, AM2+, AM3, AM3+, AM4, FM1, FM2 en FM2+. De 6 heatpipes zorgen voor een prima geleiding van de warmte naar de vinnen. De koeler is vervaardigd uit een combinatie van koper en aluminium."
+    },
+    "18": {
+        "name": "Deepcool AK620 ZERO DARK",
+        "price": 63.98,
+        "rpm": [
+            500,
+            1850
+        ],
+        "noise_level": 28,
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/0/2/DeepCool_AK620_Zero_Dark_cpu_koeler@@1861320.jpg",
+        "details": "De DeepCool AK620 ZERO DARK is een volledig zwarte versie van de populaire AK620 high-performance CPU-koeler. Dezelfde hoogwaardige materialen met zes state-of-the-art koperen heatpipes, een dichte dual-tower heatsink en twee stille FDB fans cre\u00ebren een krachtige succesformule voor high-performance koeling in een ZERO DARK design. De AK620 ZERO DARK Edition is van boven tot onder in het zwart gehuld en bedekt elk oppervlak met een volledig zwarte glans die zorgt voor een opvallende look in elke systeemopstelling. Bereik top CPU prestaties dankzij de uitstekende koelcapaciteit voor hoge frequentie overklokken. De AK620 ZERO DARK heeft een maximale warmteafvoercapaciteit van 260W en een verbeterde luchtstroom om de temperaturen tijdens veeleisende systeemtoepassingen te verlagen. Twee krachtige PWM fans met superieure fluid dynamic lagers zorgen voor een stille werking zonder afbreuk te doen aan de koelprestaties - een perfecte balans. De AK620 ZERO DARK is voorzien van een nauwkeurig ontworpen convexe koperen bodemplaat en zes koperen heat pipes voor verbeterde warmteoverdracht. De dichte matrix vinopstelling in een dual-tower heatsink layout zorgt voor een betere effici\u00ebntie voor high-performance systemen."
+    },
+    "19": {
+        "name": "Deepcool AK400",
+        "price": 33.98,
+        "rpm": [
+            500,
+            1850
+        ],
+        "noise_level": 29,
+        "color": "Black / Silver",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/2/0/DeepCool_AK400_Zero_Dark_Plus_cpu_koeler@@1861302.jpg",
+        "details": "De DeepCool AK400 Zero Dark Plus is een volledig zwarte variant van de zeer compatibele AK400 CPU koeler met een klassieke 4 heatpipe tower layout met uniek matrix lamellenontwerp en dubbele high performance FDB fans, die zorgen voor superieure warmteafvoer en ultra-lage geluidsniveaus. De AK400 Zero Dark Plus is van boven tot onder in het zwart gehuld en bedekt elk oppervlak met een premium, zwarte glans die zorgt voor een opvallende look in ieder systeem. Met een warmteafvoercapaciteit tot 220W, zijn de uitzonderlijke koelprestaties de perfecte keuze voor mainstream systemen met moderne CPU's die een uitstekende prijs-kwaliteitverhouding vereisen. Vier koperen heatpipes voeren de warmte snel en effectief weg van de processor en voeren deze af via het uniek matrix lamellenontwerp. Dankzij de krachtige FDB-fans die de luchtstroom en statische druk maximaliseert wanneer dat nodig is, en deze op intelligente wijze uitschakelt voor stille effici\u00ebntie, krijg je een krachtige koeling met minimaal geluidsoverlast."
+    },
+    "20": {
+        "name": "Thermalright Peerless Assassin 120 SE WHITE ARGB",
+        "price": 36.99,
+        "rpm": 1550,
+        "noise_level": 25.6,
+        "color": "White",
+        "size": null,
+        "image": "",
+        "details": ""
+    },
+    "21": {
+        "name": "Corsair iCUE H150i ELITE LCD XT",
+        "price": 249.99,
+        "rpm": [
+            550,
+            2100
+        ],
+        "noise_level": [
+            5,
+            34.1
+        ],
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/6/9/Corsair_iCUE_H150i_ELITE_LCD_XT_waterkoeling@@1889796.jpg",
+        "details": "De Corsair iCUE H150i ELITE LCD XT CPU-waterkoeler met display biedt krachtige, aangepaste koeling voor je CPU, met een gepersonaliseerd lcd-scherm dat gifs, afbeeldingen en systeeminformatie toont. Corsair AF RGB ELITE PWM-ventilatoren produceren een fluisterstille luchtstroom met snelheden tot 2.100 RPM. Ze gebruiken AirGuide-technologie voor geconcentreerde koeling om warmte via een 360 mm radiator af te voeren. Maak verbinding met de meegeleverde Corsair iCUE COMMANDER CORE en krachtige Corsair iCUE-software om RGB-verlichting te synchroniseren en ventilatorsnelheden af te stellen voor maximaal zes ventilatoren. Met vooraf aangebrachte hoogwaardige Corsair XTM70-koelpasta op een thermisch geoptimaliseerde koperen koelplaat en makkelijke installatie op de nieuwste CPU-beugels (waaronder Intel LGA 1700 en AMD AM5) maakt de H150i ELITE LCD XT je CPU-koeler goed zichtbaar."
+    },
+    "22": {
+        "name": "Thermalright Assassin X 120 Refined SE",
+        "price": 17.89,
+        "rpm": 1550,
+        "noise_level": 25.6,
+        "color": "Black / Silver",
+        "size": null,
+        "image": "",
+        "details": ""
+    },
+    "23": {
+        "name": "Cooler Master Hyper 212 RGB Black Edition",
+        "price": 49.99,
+        "rpm": [
+            650,
+            2000
+        ],
+        "noise_level": [
+            8,
+            30
+        ],
+        "color": null,
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/8/3/Cooler_Master_Hyper_212_RGB_Black_Edition_with_LGA1700_cpu_koeler@@1809038_30.jpg",
+        "details": "De legendarische Hyper luchtkoeler van Cooler Master is terug en beter dan voorheen. De Hyper 212 RGB Black Edition with LGA1700 biedt een betere installatie en geweldige prestaties, gemakkelijk een van de beste CPU-koeler oplossingen. De aluminium bovenkant en vernikkelde gitzwarte vinnen geven de Hyper 212 RGB Black Edition een eersteklas esthetische uitstraling. Het gestroomlijnde gitzwart zorgt er niet alleen voor dat het er geweldig uitziet, maar verhoogt ook de koelprestaties. Verhoog ook het stralende uiterlijk met de compacte RGB LED controller waarmee je jouw RGB hardware kunt aanpassen zonder dat je een moederbord of software nodig hebt die RGB ondersteunt. Zo krijg je de kleurrijke pc behuizing die je altijd al wilde hebben met slechts \u00e9\u00e9n druk op de knop.\r\nInclusief LGA1700 ondersteuning"
+    },
+    "24": {
+        "name": "Deepcool LT720",
+        "price": 99.99,
+        "rpm": [
+            500,
+            2250
+        ],
+        "noise_level": 32.9,
+        "color": "Black / Gray",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/5/6/DeepCool_LT720_360mm_waterkoeling@@1872365.jpg",
+        "details": "De DeepCool LT720 high-performance CPU vloeistofkoeler biedt krachtige warmteafvoer prestaties met een 360mm radiator, drie nauwkeurig afgestelde FK120 fans en een multi-dimensionale Infinity Mirror cover. Maximaliseer het koelpotentieel met DeepCool FK120 fans, perfect afgestemd op prestaties en bedrijfseffici\u00ebntie. Het robuuste frame en de vloeistofdynamische lagers zorgen voor een stabiele en langdurige betrouwbaarheid. Men co\u00f6rdineert de verlichting via RGB-software en moederbordsynchronisatie voor toegang tot de controle van verschillende verlichtingseffecten. Het installatieproces is intu\u00eftief en gebruiksvriendelijk en maakt een goede pasvorm en drukaanpassing op elk platform mogelijk. De beugels zijn zwart gemaakt en onopvallend verborgen wanneer ze in het systeem zijn ge\u00efnstalleerd."
+    },
+    "25": {
+        "name": "ARCTIC Liquid Freezer II 240",
+        "price": 75.45,
+        "rpm": [
+            200,
+            1800
+        ],
+        "noise_level": null,
+        "color": "Black",
+        "size": 240,
+        "image": "https://www.alternate.be/p/200x200/h/Arctic_Liquid_Freezer_II_240_waterkoeling@@hxlc4a.jpg",
+        "details": "Voor de Liquid Freezer II 240 heeft Arctic zijn ervaring in CPU-waterkoeling gebruikt om een compleet nieuwe pomp voor compacte waterkoeling te ontwikkelen. Deze pomp is krachtig en PWM-gestuurd en biedt een ideale verhouding tussen hoge CPU-koelprestaties en een laag geluidsniveau. De CPU AiO waterkoeler heeft een ge\u00efntegreerd kabelmanagement in de volledig omhulde slangen voor een schone uitstraling in de case. De krachtige P-fans van Arctic zorgen voor een snelle warmteafvoer dankzij hun hoge statische druk en uitstekende prestaties."
+    },
+    "26": {
+        "name": "Deepcool LS720 SE",
+        "price": 106.76,
+        "rpm": [
+            500,
+            2250
+        ],
+        "noise_level": [
+            28.2,
+            32.9
+        ],
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/9/1/DeepCool_LS720_SE_360mm_waterkoeling@@1880219.jpg",
+        "details": "De DeepCool LS720 SE is een alles-in-\u00e9\u00e9n CPU vloeistofkoeler die betrouwbare high-performance koeling biedt op basis van een waterpomp ontwerp voor optimale resultaten. Kleur-geco\u00f6rdineerd met de rest van het systeem met een grote en heldere ARGB Infinity Mirror cover op het CPU waterblok en meegeleverde ARGB fans. Een gespiegelde bovenkant met een smalle rand vangt een oneindige reflectie van 16 RGB LED's op voor een levendig visueel effect. De slanke aluminium behuizing voegt een high-end polish en een glanzend uiterlijk toe. Blijf koel met 120mm ARGB PWM fans die warmte bestrijden met maximale statische druk en sterke luchtstroom. Een meegeleverde low-speed adapter vermindert het maximale geluid met maximaal 10 dB."
+    },
+    "27": {
+        "name": "Noctua NH-U12S chromax.black",
+        "price": 89.95,
+        "rpm": [
+            300,
+            1500
+        ],
+        "noise_level": [
+            18.6,
+            22.4
+        ],
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/h/Noctua_NH_U12S_chromax_black_cpu_koeler@@hxlu43.jpg",
+        "details": "De Noctua NH-U12S chromax.black is een prestatie gerichte CPU koeler met een 120 mm fan. De koeler is compatibel met de volgende sockets: 1150, 1151, 1155, 1156, 2011, 2011-3, 2066, AM2, AM2+, AM3, AM3+, FM1, FM2, FM2+ en AM4. De 4 heatpipes zorgen voor een prima geleiding van de warmte naar de vinnen. De koeler is vervaardigd uit een combinatie van koper en aluminium."
+    },
+    "28": {
+        "name": "ID-COOLING SE-214-XT",
+        "price": 17.98,
+        "rpm": [
+            500,
+            1500
+        ],
+        "noise_level": [
+            13.8,
+            30.5
+        ],
+        "color": "Black",
+        "size": null,
+        "image": "",
+        "details": ""
+    },
+    "29": {
+        "name": "be quiet! Pure Rock 2 Black",
+        "price": 34.9,
+        "rpm": 1500,
+        "noise_level": [
+            19.1,
+            26.8
+        ],
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/h/be_quiet__Pure_Rock_2_Black_cpu_koeler@@hxlvbr.jpg",
+        "details": "De be quiet! Pure Rock 2 Black is een prestatie gerichte CPU koeler met een 120 mm fan. De koeler is compatibel met de volgende Sockets: 1150, 1151, 1155, 2011, 2011-3, AM3, AM3+, AM4 en 2066. De 4 heatpipes zorgen voor een prima geleiding van de warmte naar de vinnen. De koeler is vervaardigd uit een combinatie van koper en aluminium."
+    },
+    "30": {
+        "name": "AMD Wraith Prism",
+        "price": null,
+        "rpm": 2800,
+        "noise_level": 42,
+        "color": null,
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/6/7/AMD_Ryzen_9_7900__3_7_GHz__5_4_GHz_Turbo_Boost__socket_AM5_processor@@1883676.jpg",
+        "details": "De AMD Ryzen 9 7900 processor, codenaam \"Raphael\", beschikt over twaalf cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 5400 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Prism koeler."
+    },
+    "31": {
+        "name": "Thermalright Phantom Spirit 120 SE ARGB",
+        "price": 35.9,
+        "rpm": 1500,
+        "noise_level": 25.6,
+        "color": "Black / Silver",
+        "size": null,
+        "image": "",
+        "details": ""
+    },
+    "32": {
+        "name": "Cooler Master MA621P TR4",
+        "price": 623.24,
+        "rpm": [
+            600,
+            1800
+        ],
+        "noise_level": 31,
+        "color": "Black / Silver",
+        "size": null,
+        "image": "",
+        "details": ""
+    },
+    "33": {
+        "name": "Corsair iCUE H150i ELITE CAPELLIX XT",
+        "price": 199.99,
+        "rpm": [
+            550,
+            2100
+        ],
+        "noise_level": null,
+        "color": "White",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/2/9/Corsair_iCUE_H150i_ELITE_CAPELLIX_XT_360_mm_waterkoeling@@1889792.jpg",
+        "details": "De iCUE H150i ELITE CAPELLIX XT 360 mm waterkoeling kit levert krachtige high-performance koeling voor Intel of AMD processoren. CORSAIR AF RGB ELITE PWM fans produceren ultrastille luchtstroom bij snelheden tot 2.100 rpm, met geconcentreerde koeling dankzij AirGuide technologie voor effici\u00ebnte warmteafvoer langs een 360 mm radiator. Ultraheldere CAPELLIX leds hullen het systeem in heldere kleuren, die worden afgestemd op maximaal zes ventilatoren via de bijbehorende CORSAIR iCUE COMMANDER CORE-controller. De krachtige CORSAIR iCUE software zorgt voor het regelen van de RGB-verlichting, het aanpassen van de ventilatorsnelheid en het bewaken van de systeemtemperatuur."
+    },
+    "34": {
+        "name": "Lian Li Galahad II Trinity SL-INF",
+        "price": 219.06,
+        "rpm": 2100,
+        "noise_level": 29,
+        "color": "White",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/2/5/Lian_Li_Galahad_II_Trinity_360_SL_Inf_waterkoeling@@1922052_30.jpg",
+        "details": "De Lian Li Galahad II Trinity 360 SL-Inf is een uitstekende All-in-One CPU-koeler hoofdzakelijk bedoeld om de prestaties van je systeem te verbeteren. De Galahad II Trinity 360 SL-Inf is voorzien van drie 120 mm fans. De fans hebben een variabele snelheid van maximaal 2100 RPM. De pompdop van de Galahad II Trinity-serie heeft drie verwisselbare ontwerpen, elk met een uniek uiterlijk en twee kleurenringen die afzonderlijk kunnen worden geregeld met verschillende lichteffecten zoals duo-oneindigheid, verblinden en sinkbat. De All-in-One CPU-koeler is geschikt voor Intel sockets: LGA 115X, LGA 1200, LGA1700 en AMD socket: AM4 en AM5. Met de UNI FAN SL-INF pas je de AIO-ventilatoren eenvoudig aan jouw case-fans aan met deze visueel verbluffende optie"
+    },
+    "35": {
+        "name": "Deepcool AK620",
+        "price": 54.99,
+        "rpm": [
+            500,
+            1850
+        ],
+        "noise_level": 28,
+        "color": "Black / Silver",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/0/2/DeepCool_AK620_Zero_Dark_cpu_koeler@@1861320.jpg",
+        "details": "De DeepCool AK620 ZERO DARK is een volledig zwarte versie van de populaire AK620 high-performance CPU-koeler. Dezelfde hoogwaardige materialen met zes state-of-the-art koperen heatpipes, een dichte dual-tower heatsink en twee stille FDB fans cre\u00ebren een krachtige succesformule voor high-performance koeling in een ZERO DARK design. De AK620 ZERO DARK Edition is van boven tot onder in het zwart gehuld en bedekt elk oppervlak met een volledig zwarte glans die zorgt voor een opvallende look in elke systeemopstelling. Bereik top CPU prestaties dankzij de uitstekende koelcapaciteit voor hoge frequentie overklokken. De AK620 ZERO DARK heeft een maximale warmteafvoercapaciteit van 260W en een verbeterde luchtstroom om de temperaturen tijdens veeleisende systeemtoepassingen te verlagen. Twee krachtige PWM fans met superieure fluid dynamic lagers zorgen voor een stille werking zonder afbreuk te doen aan de koelprestaties - een perfecte balans. De AK620 ZERO DARK is voorzien van een nauwkeurig ontworpen convexe koperen bodemplaat en zes koperen heat pipes voor verbeterde warmteoverdracht. De dichte matrix vinopstelling in een dual-tower heatsink layout zorgt voor een betere effici\u00ebntie voor high-performance systemen."
+    },
+    "36": {
+        "name": "Corsair iCUE H100i ELITE CAPELLIX XT",
+        "price": 154.99,
+        "rpm": [
+            550,
+            2100
+        ],
+        "noise_level": [
+            5,
+            34.1
+        ],
+        "color": "Black",
+        "size": 240,
+        "image": "https://www.alternate.be/p/200x200/1/6/Corsair_iCUE_H100i_ELITE_CAPELLIX_XT_240_mm_waterkoeling@@1889761.jpg",
+        "details": "De Corsair iCUE H100i ELITE CAPELLIX XT 240 mm waterkoeling kit levert krachtige high-performance koeling voor Intel of AMD processoren. Corsair AF RGB ELITE PWM fans produceren ultrastille luchtstroom bij snelheden tot 2.100 rpm, met geconcentreerde koeling dankzij AirGuide technologie voor effici\u00ebnte warmteafvoer langs een 240 mm radiator. Ultraheldere CAPELLIX leds hullen het systeem in heldere kleuren, die worden afgestemd op maximaal zes ventilatoren via de bijbehorende Corsair iCUE COMMANDER CORE-controller. De krachtige Corsair iCUE software zorgt voor het regelen van de RGB-verlichting, het aanpassen van de ventilatorsnelheid en het bewaken van de systeemtemperatuur."
+    },
+    "37": {
+        "name": "Noctua NH-U12A chromax.black",
+        "price": 129.94,
+        "rpm": [
+            450,
+            2000
+        ],
+        "noise_level": [
+            18.8,
+            22.6
+        ],
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/0/4/Noctua_NH_U12A_chromax_black_cpu_koeler@@1790140.jpg",
+        "details": "De NH-U12A chromax.black is een volledig zwarte versie van Noctua's fluisterstille, meervoudig bekroonde NH-U12A premium koeler. Het recept voor succes blijft ongewijzigd dankzij hetzelfde asymmetrische single-tower koellichaam en de configuratie met twee exemplaren van het vlaggenschip NF-A12x25 PWM fan: een unieke synthese van de beste koelprestaties in zijn klasse, uitstekende stilte en uitstekende geheugen, behuizing en PCIe compatibiliteit.\r\nDeze chromax.black-versie met zwarte fan en zwart gecoat koellichaam combineert deze voordelen eveneens met een chique stealth design. Het all-round hoogwaardige pakket wordt compleet gemaakt door het befaamde SecuFirm2 multi-socket montagesysteem, Noctua's populaire NT-H1 thermische compound - een echte premium oplossing voor veeleisende gebruikers."
+    },
+    "38": {
+        "name": "NZXT Kraken 360 RGB",
+        "price": 219.99,
+        "rpm": [
+            500,
+            1800
+        ],
+        "noise_level": [
+            17.9,
+            30.6
+        ],
+        "color": "White",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/3/9/NZXT_Kraken_Elite_360_RGB_waterkoeling@@1881793.jpg",
+        "details": "De NZXT Kraken Elite 360 RGB is een waterkoeler met LCD display en F-Series RGB Core fans. De Kraken Elite levert koele prestaties met een display dat echt pronkt met aangepaste inhoud. Een krachtigere microcontroller zorgt voor meer meeslepende aanpassingen zoals audio visuals en de mogelijkheid om CAM informatie over te brengen met deeltjes dichtheid animaties. Een helder 5,99 cm (2,36 inch) groothoek LCD-scherm ondersteunt aangepaste afbeeldingen en geanimeerde GIF's en biedt een kristalheldere displayresolutie van 640 x 640, tweemaal die van de vorige generatie. De heldere, stille F-Series RGB core fans voegen een levendig gevoel toe aan je gaming setup dankzij 8 individueel adresseerbare RGB-leds op elke fan. De 7e generatie Asetek pomp zorgt ervoor dat de Kraken Elite optimaal koelt bij 2800 rpm. De installatie is vereenvoudigd met een enkele breakout-kabel die weinig ruimte laat voor fouten tijdens de installatie. De vloeistofslangen zijn beschermd met versterkt nylon vlechtwerk voor extra duurzaamheid en probleemloos gebruik."
+    },
+    "39": {
+        "name": "Deepcool AK620",
+        "price": 64.98,
+        "rpm": [
+            500,
+            1850
+        ],
+        "noise_level": 28,
+        "color": "White",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/0/2/DeepCool_AK620_Zero_Dark_cpu_koeler@@1861320.jpg",
+        "details": "De DeepCool AK620 ZERO DARK is een volledig zwarte versie van de populaire AK620 high-performance CPU-koeler. Dezelfde hoogwaardige materialen met zes state-of-the-art koperen heatpipes, een dichte dual-tower heatsink en twee stille FDB fans cre\u00ebren een krachtige succesformule voor high-performance koeling in een ZERO DARK design. De AK620 ZERO DARK Edition is van boven tot onder in het zwart gehuld en bedekt elk oppervlak met een volledig zwarte glans die zorgt voor een opvallende look in elke systeemopstelling. Bereik top CPU prestaties dankzij de uitstekende koelcapaciteit voor hoge frequentie overklokken. De AK620 ZERO DARK heeft een maximale warmteafvoercapaciteit van 260W en een verbeterde luchtstroom om de temperaturen tijdens veeleisende systeemtoepassingen te verlagen. Twee krachtige PWM fans met superieure fluid dynamic lagers zorgen voor een stille werking zonder afbreuk te doen aan de koelprestaties - een perfecte balans. De AK620 ZERO DARK is voorzien van een nauwkeurig ontworpen convexe koperen bodemplaat en zes koperen heat pipes voor verbeterde warmteoverdracht. De dichte matrix vinopstelling in een dual-tower heatsink layout zorgt voor een betere effici\u00ebntie voor high-performance systemen."
+    },
+    "40": {
+        "name": "NZXT Kraken Elite 360",
+        "price": 269.99,
+        "rpm": [
+            500,
+            1800
+        ],
+        "noise_level": [
+            17.9,
+            30.6
+        ],
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/0/9/NZXT_Kraken_Elite_360_360mm_waterkoeling@@1881790.jpg",
+        "details": "De NZXT Kraken 360 is een waterkoeler met LCD display. De Kraken Elite levert koele prestaties met een display dat echt showt met aangepaste inhoud. Een krachtigere microcontroller zorgt voor meer meeslepende aanpassingen zoals audio visuals en de mogelijkheid om CAM informatie over te brengen met deeltjes dichtheid animaties. Een helder 5,99 cm (2,36 inch) groothoek LCD-scherm ondersteunt aangepaste afbeeldingen en geanimeerde GIF's en biedt een kristalheldere displayresolutie van 640x640, tweemaal die van de vorige generatie. Krachtige, stille Static Pressure F-Series fans zorgen voor een uitstekende warmteafvoer. De 7e generatie Asetek pomp zorgt ervoor dat de Kraken Elite optimaal koelt bij 2800 rpm. De installatie is vereenvoudigd met een enkele breakout-kabel die weinig ruimte laat voor fouten tijdens de installatie. De vloeistofslangen zijn beschermd met versterkt nylon vlechtwerk voor extra duurzaamheid en probleemloos gebruik."
+    },
+    "41": {
+        "name": "NZXT Kraken 240 RGB",
+        "price": 160.99,
+        "rpm": [
+            500,
+            1800
+        ],
+        "noise_level": [
+            17.9,
+            30.6
+        ],
+        "color": "Black",
+        "size": 240,
+        "image": "https://www.alternate.be/p/200x200/3/7/NZXT_Kraken_240_RGB_240mm_waterkoeling@@1881773.jpg",
+        "details": "De NZXT Kraken 240 RGB is een waterkoeler met LCD display en RGB fans. Hij biedt koele prestaties, eenvoudige installatie en een display voor systeemgegevens of aangepaste afbeeldingen. Het 3,91 cm (1,54\") diameter LCD display zorgt voor een helder beeld. De heldere, stille F-Series RGB Core fans voegen een levendig gevoel toe aan de gaming setup dankzij de 8 individueel adresseerbare RGB LEDs op elke fan. De 7e generatie Asetek pomp houdt de Kraken koel en soepel draaiend bij 2800rpm. De installatie is vereenvoudigd met een enkele breakout-kabel die weinig ruimte laat voor fouten tijdens de installatie. De vloeistofslangen zijn beschermd met versterkt nylon vlechtwerk voor extra duurzaamheid en zorgeloos gebruik."
+    },
+    "42": {
+        "name": "Intel E97379-001",
+        "price": 9.13,
+        "rpm": [
+            1200,
+            2800
+        ],
+        "noise_level": 22,
+        "color": "Silver / Black",
+        "size": null,
+        "image": "",
+        "details": ""
+    },
+    "43": {
+        "name": "Asus ROG Ryujin III ARGB",
+        "price": 339.99,
+        "rpm": [
+            600,
+            2200
+        ],
+        "noise_level": 36.45,
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/2/0/ASUS_ROG_RYUJIN_III_360_ARGB_waterkoeling@@1921802_30.jpg",
+        "details": "Ga voor koeler dan cool met de ROG RYUJIN III 360 ARGB van ASUS. Het ruime 3,5-inch LCD-scherm toont live systeemstatistieken of je eigen artwork en geanimeerde GIF's. Aan de onderkant verbetert een ingebouwde ventilator, ge\u00fcpgraded met Axial-tech, de VRM-thermiek van het moederbord met maximaal 35 graden Celsius. Samen met een 8e generatie Asetek pomp en coldplate zorgen ze voor nog lagere CPU-temperaturen. Vloeistof wordt aangevoerd via lange gevlochten buizen en gekoeld door een radiator met hoge koelcapaciteiten, met drie opvallende 120 mm ROG ARGB-fans waarvan de verlichting naar wens kan worden ingesteld."
+    },
+    "44": {
+        "name": "ARCTIC Liquid Freezer II 280",
+        "price": 136.44,
+        "rpm": [
+            200,
+            1700
+        ],
+        "noise_level": null,
+        "color": "Black",
+        "size": 280,
+        "image": "https://www.alternate.be/p/200x200/2/2/Arctic_Liquid_Freezer_II_280_A_RGB_280mm_waterkoeling@@1802522.jpg",
+        "details": "De Arctic Liquid Freezer II 280 A-RGB is een multi-compatibele alles-in-\u00e9\u00e9n waterkoeler met A-RGB-verlichting. De Liquid Freezer II A-RGB combineert de effici\u00ebnte PWM-pomp van de Liquid Freezer II met RGB-fans die zijn geoptimaliseerd voor statische druk. Dit levert een totaal andere esthetiek op met een extreem laag geluidsniveau en even lage temperaturen. Het gezoem van de waterpomp is verminderd en het rendement ervan verhoogd. Net als de andere componenten is ook deze PWM-gestuurd. Dit resulteert in aanzienlijk lagere geluidsniveaus bij lage en normale belasting, maar ook in een veel lager stroomverbruik van 0,8 W in ruststand, 2,3 W bij normale belasting en maximaal 6,78 W bij volledige belasting voor de gehele AiO, zonder verlichting.\r\nIn tegenstelling tot de meeste andere all-in-one vloeistofkoelingsfabrikanten, gebruikt Arctic 38 mm dikke radiatoren met een hoge vin-dichtheid. Hierdoor kan een grotere hoeveelheid water in het circuit worden gebruikt en wordt het koeloppervlak aanzienlijk vergroot. De met vezels versterkte, lange EPDM-buis van de Liquid Freezer II maakt installatie zelfs in grote behuizingen mogelijk en voorkomt effectief verdamping van de koelvloeistof, zodat je je geen zorgen hoeft te maken over het bijvullen van het compacte waterkoelsysteem."
+    },
+    "45": {
+        "name": "Cooler Master Hyper 212 Black Edition",
+        "price": 29.99,
+        "rpm": [
+            650,
+            2000
+        ],
+        "noise_level": [
+            6.5,
+            26
+        ],
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/8/3/Cooler_Master_Hyper_212_RGB_Black_Edition_with_LGA1700_cpu_koeler@@1809038_30.jpg",
+        "details": "De legendarische Hyper luchtkoeler van Cooler Master is terug en beter dan voorheen. De Hyper 212 RGB Black Edition with LGA1700 biedt een betere installatie en geweldige prestaties, gemakkelijk een van de beste CPU-koeler oplossingen. De aluminium bovenkant en vernikkelde gitzwarte vinnen geven de Hyper 212 RGB Black Edition een eersteklas esthetische uitstraling. Het gestroomlijnde gitzwart zorgt er niet alleen voor dat het er geweldig uitziet, maar verhoogt ook de koelprestaties. Verhoog ook het stralende uiterlijk met de compacte RGB LED controller waarmee je jouw RGB hardware kunt aanpassen zonder dat je een moederbord of software nodig hebt die RGB ondersteunt. Zo krijg je de kleurrijke pc behuizing die je altijd al wilde hebben met slechts \u00e9\u00e9n druk op de knop.\r\nInclusief LGA1700 ondersteuning"
+    },
+    "46": {
+        "name": "ARCTIC Liquid Freezer II 360 A-RGB",
+        "price": 185.01,
+        "rpm": [
+            200,
+            1800
+        ],
+        "noise_level": 22.5,
+        "color": "Black / Gray",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/9/3/Arctic_Liquid_Freezer_III_420_A_RGB_waterkoeling@@100046139_30.jpg",
+        "details": "De Arctic Liquid Freezer III 420 A-RGB is direct klaar voor gebruik dankzij de voorge\u00efnstalleerde drie 140mm P14 PWM PST A-RGB fans in push-configuratie. Alle afzonderlijke kabels zijn weggewerkt in de behuizing, zodat er maar \u00e9\u00e9n kabel hoeft te worden aangesloten op het moederbord. De spanningsomzetters van moederborden werken vaak op hun maximale temperatuur in combinatie met CPU's die veel vermogen vragen.\r\n\r\nOm het gebrek aan luchtstroom van een tower-koeler te compenseren, werkt de Liquid Freezer III 420 A-RGB met een herziene VRM ventilator. Bij onvoldoende VRM-koeling, in gevallen met slechte luchtcirculatie of vooral in overklokscenario's zorgt de PWM-gestuurde 60 mm ventilator voor een bijna geruisloze koeling van het socket-gebied. Dit zorgt voor een continu hogere belasting en een langere levensduur van de spanningsomzetters. De Liquid Freezer III is uitgerust met een speciaal ontwikkelde PWM-gestuurde waterpomp, die verder is geoptimaliseerd wat betreft prestaties en geluidsniveau. Dankzij de verbeterde koelplaat met vergroot vinoppervlak en geoptimaliseerde waterkanalen, verhoogt de Liquid Freezer III de prestaties met behoud van een stille werking."
+    },
+    "47": {
+        "name": "Lian Li Galahad II Trinity SL-INF",
+        "price": 199.99,
+        "rpm": 2100,
+        "noise_level": 29,
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/2/5/Lian_Li_Galahad_II_Trinity_360_SL_Inf_waterkoeling@@1922052_30.jpg",
+        "details": "De Lian Li Galahad II Trinity 360 SL-Inf is een uitstekende All-in-One CPU-koeler hoofdzakelijk bedoeld om de prestaties van je systeem te verbeteren. De Galahad II Trinity 360 SL-Inf is voorzien van drie 120 mm fans. De fans hebben een variabele snelheid van maximaal 2100 RPM. De pompdop van de Galahad II Trinity-serie heeft drie verwisselbare ontwerpen, elk met een uniek uiterlijk en twee kleurenringen die afzonderlijk kunnen worden geregeld met verschillende lichteffecten zoals duo-oneindigheid, verblinden en sinkbat. De All-in-One CPU-koeler is geschikt voor Intel sockets: LGA 115X, LGA 1200, LGA1700 en AMD socket: AM4 en AM5. Met de UNI FAN SL-INF pas je de AIO-ventilatoren eenvoudig aan jouw case-fans aan met deze visueel verbluffende optie"
+    },
+    "48": {
+        "name": "Deepcool AK620 DIGITAL",
+        "price": 79.98,
+        "rpm": [
+            500,
+            1850
+        ],
+        "noise_level": 28,
+        "color": "Black",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/6/6/DeepCool_AK620_DIGITAL_cpu_koeler@@1913866.jpg",
+        "details": "Een volledig zwarte versie van de dominante AK620 high performance CPU koeler. Dezelfde hoogwaardige materialen met zes geavanceerde koperen heatpipes, een zuiver koperen bodemplaat, een dichte dual-tower koelplaat en twee stille FDB-ventilatoren vormen een krachtige formule voor krachtige koelsuccessen in een ZERO DARK rave design. Het kristalheldere digitale display toont de temperatuur en het gebruik van de CPU van het systeem in realtime en waarschuwt voor te hoge temperaturen. Het display wordt bediend via een eenvoudige applicatie waarvoor alleen een vrije USB 2.0 poort nodig is. De AK620 DIGITAL biedt maximale warmteafvoer en verbeterde luchtstroom om de temperaturen in veeleisende systeemtoepassingen te verlagen. Twee krachtige PWM-ventilatoren met superieure vloeistofdynamische lagers bieden een stille werking zonder afbreuk te doen aan de koelprestaties en zorgen voor een perfecte balans. De meegeleverde volledig metalen beugel is eenvoudig te installeren en zorgt voor een goed contact en gelijke druk op zowel Intel- als AMD-platforms."
+    },
+    "49": {
+        "name": "Asus ROG RYUJIN II",
+        "price": 499,
+        "rpm": [
+            450,
+            2000
+        ],
+        "noise_level": 29.7,
+        "color": "Black",
+        "size": 360,
+        "image": "https://www.alternate.be/p/200x200/3/8/ASUS_ROG_RYUJIN_II_240_waterkoeling@@1785883.jpg",
+        "details": "De ASUS ROG RYUJIN II 240 all-in-one koeler biedt ultieme thermische prestaties voor gamers die op zoek zijn naar het absolute beste. Met een 7e generatie Asetek pomp, Noctua Industrial PPC radiator fans en een ge\u00efntegreerde CPU socket fan, gebruikt hij zowel water als lucht om ongelooflijke koelprestaties te leveren. En met een LCD-paneel dat systeemstatistieken en aanpasbare graphics weergeeft, wordt de ROG RYUJIN II het hart van het systeem."
+    },
+    "50": {
+        "name": "Deepcool AK400",
+        "price": 35.98,
+        "rpm": [
+            500,
+            1850
+        ],
+        "noise_level": 29,
+        "color": "White",
+        "size": null,
+        "image": "https://www.alternate.be/p/200x200/2/0/DeepCool_AK400_Zero_Dark_Plus_cpu_koeler@@1861302.jpg",
+        "details": "De DeepCool AK400 Zero Dark Plus is een volledig zwarte variant van de zeer compatibele AK400 CPU koeler met een klassieke 4 heatpipe tower layout met uniek matrix lamellenontwerp en dubbele high performance FDB fans, die zorgen voor superieure warmteafvoer en ultra-lage geluidsniveaus. De AK400 Zero Dark Plus is van boven tot onder in het zwart gehuld en bedekt elk oppervlak met een premium, zwarte glans die zorgt voor een opvallende look in ieder systeem. Met een warmteafvoercapaciteit tot 220W, zijn de uitzonderlijke koelprestaties de perfecte keuze voor mainstream systemen met moderne CPU's die een uitstekende prijs-kwaliteitverhouding vereisen. Vier koperen heatpipes voeren de warmte snel en effectief weg van de processor en voeren deze af via het uniek matrix lamellenontwerp. Dankzij de krachtige FDB-fans die de luchtstroom en statische druk maximaliseert wanneer dat nodig is, en deze op intelligente wijze uitschakelt voor stille effici\u00ebntie, krijg je een krachtige koeling met minimaal geluidsoverlast."
+    }
+}

@@ -1,0 +1,806 @@
+{
+    "0": {
+        "name": "Corsair iCUE SP120 RGB ELITE 3-Pack",
+        "price": 63.99,
+        "size": 120,
+        "color": "Black / White",
+        "rpm": [
+            400,
+            1500
+        ],
+        "airflow": null,
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/7/9/Corsair_iCUE_SP120_RGB_ELITE_Performance___Lighting_Node_CORE_case_fan@@1729397.jpg",
+        "details": "De Corsair iCUE SP120 RGB ELITE Performance, Triple Pack combineert een uitstekende luchtstroom, met een laag geluidsniveau en 8 stralende, onafhankelijke RGB-leds die de fan en de hub omringen. Koppel de drie fans met de meegeleverde Corsair Lighting Node CORE om de verlichting aan te passen in een breed scala aan levendige effecten en patronen. Met behulp van geoptimaliseerde 120 mm ventilatorbladen en PWM-regeling, stel je de snelheid van de fan in van 550 rpm tot 1500 rpm voor precieze geluids- en luchtstroom aanpassingen. Gemaakt voor iedereen die op zoek is naar een uitstekende luchtstroom, stille werking en krachtige verlichting, de Corsair iCUE SP120 RGB ELITE fan laat jouw pc uitblinken!"
+    },
+    "1": {
+        "name": "Lian Li Uni Fan SL-Infinity 3-Pack",
+        "price": 89.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": null,
+        "airflow": [
+            0,
+            61.3
+        ],
+        "noise_level": [
+            0,
+            29
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/1/Lian_Li_Uni_fan_SL_Infinity_120_triple_pack_case_fan@@1834014_30.jpg",
+        "details": "De zwarte Uni fan SL-Infinity 120 triple pack van Lian Li combineert de originele UNI FAN SL en AL met een vleugje infinity mirror, de SL-Infinity fans gloeien helder met multi-layer effecten vanuit elke zichtbare hoek. De SL-Infinity fans zijn verder geoptimaliseerd, wat resulteert in een betere luchtstroom (61,3 CFM), hogere statische druk (2,66 mm/H2O), en een groter bereik van de ventilatorsnelheid (0, 200 ~ 2100 RPM) bij lagere geluidsniveaus (29 dB(A)).\r\n\r\nNaast prestaties leveren de SL-Infinity fans extra flexibiliteit, zo kunnen tot 4 ventilatoren in een cluster worden verbonden voor een eenvoudiger kabelbeheer en verbeterde compatibiliteit  met daisy chain ondersteuning en de ventilator is nu aanpasbaar om de compatibiliteit met radiatoren te verbeteren.\r\nNet als bij de AL-ventilatoren kan L-Connect 3 software de verlichtingseffecten van de SL-Infinity fans afzonderlijk instellen voor zowel de ventilatorbladen als de binnenranden van het ventilatorframe, of kiezen voor vooraf ingestelde gecombineerde verlichtingseffecten."
+    },
+    "2": {
+        "name": "Noctua NF-A12x25 PWM chromax.black.swap",
+        "price": 34.95,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            450,
+            2000
+        ],
+        "airflow": 60.09,
+        "noise_level": 22.6,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/5/5/Noctua_NF_A12x25_PWM_chromax_black_swap_120x120x25_case_fan@@1790155.jpg",
+        "details": "Met meer dan 100 aanbevelingen en prijzen van internationale hardwarewebsites en -tijdschriften is Noctua's vlaggenschipmodel NF-A12x25 PWM een gevestigde referentie geworden voor stille 120mm premium ventilatoren. Innovatieve a\u00ebrodynamische ontwerpmaatregelen, evenals een ongekend smalle waaierspleet van slechts 0,5 mm, mogelijk gemaakt door het gebruik van Sterrox vloeibaar kristal polymeer, zorgen voor uitstekende resultaten in alle toepassingsgebieden - of het nu gaat om toepassingen met lage dynamische druk, zoals ventilatie van behuizingen, of drukgeori\u00ebnteerde scenario's met hoge luchtweerstand, zoals gebruik op radiatoren en waterkoeling radiatoren. De chromax.black.swap editie combineert de unieke stille koelprestaties van de NF-A12x25 met een aantrekkelijk geheel zwart ontwerp en verwisselbare antivibratiepads in rood, wit, blauw, groen, geel en zwart - waardoor de ventilator in kleur kan worden aangepast en afgestemd op specifieke kleurenschema's. Voor een nog uitgebreidere aanpassing kunnen andere, afzonderlijk verkrijgbare accessoires worden gebruikt, zoals gekleurde kabels, extra antivibratiepads of antivibratiebevestigingen. Met Noctua's bewezen SSO2 premium lager, meer dan 150.000 uur MTTF, is de NF-A12x25 PWM chromax.black.swap de perfecte keuze voor gebruikers die net zoveel waarde hechten aan een aangepaste, gerichte esthetiek als aan premium kwaliteit en prestaties."
+    },
+    "3": {
+        "name": "Lian Li Uni Fan SL-Infinity 3-Pack",
+        "price": 99.99,
+        "size": 120,
+        "color": "White",
+        "rpm": null,
+        "airflow": [
+            0,
+            61.3
+        ],
+        "noise_level": [
+            0,
+            29
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/1/Lian_Li_Uni_fan_SL_Infinity_120_triple_pack_case_fan@@1834014_30.jpg",
+        "details": "De zwarte Uni fan SL-Infinity 120 triple pack van Lian Li combineert de originele UNI FAN SL en AL met een vleugje infinity mirror, de SL-Infinity fans gloeien helder met multi-layer effecten vanuit elke zichtbare hoek. De SL-Infinity fans zijn verder geoptimaliseerd, wat resulteert in een betere luchtstroom (61,3 CFM), hogere statische druk (2,66 mm/H2O), en een groter bereik van de ventilatorsnelheid (0, 200 ~ 2100 RPM) bij lagere geluidsniveaus (29 dB(A)).\r\n\r\nNaast prestaties leveren de SL-Infinity fans extra flexibiliteit, zo kunnen tot 4 ventilatoren in een cluster worden verbonden voor een eenvoudiger kabelbeheer en verbeterde compatibiliteit  met daisy chain ondersteuning en de ventilator is nu aanpasbaar om de compatibiliteit met radiatoren te verbeteren.\r\nNet als bij de AL-ventilatoren kan L-Connect 3 software de verlichtingseffecten van de SL-Infinity fans afzonderlijk instellen voor zowel de ventilatorbladen als de binnenranden van het ventilatorframe, of kiezen voor vooraf ingestelde gecombineerde verlichtingseffecten."
+    },
+    "4": {
+        "name": "Lian Li UNI FAN SL V2 3-Pack",
+        "price": 82.99,
+        "size": 120,
+        "color": "White / Silver",
+        "rpm": [
+            250,
+            2000
+        ],
+        "airflow": 64.5,
+        "noise_level": 29.2,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/2/4/Lian_Li_UNI_FAN_SL120V2_Triple_Pack_case_fan@@1873142_30.jpg",
+        "details": "Breng de verkoeling van je systeem naar het volgende niveau en laat het extra opvallen met de UNI FAN SL120V2 Triple Pack case fans van Lian LI. Dit pakket bestaat uit drie zwarte 120mm case fans met RGB verlichting en \u00e9\u00e9n controller voor een optimale koeling van je pc en je eigen unieke uitstraling. Case fans uit de UNI FAN SL serie kunnen via Daisy-chain aan elkaar worden gekoppeld. \r\nDe verlichtingseffecten zijn te synchroniseren via de controller."
+    },
+    "5": {
+        "name": "ARCTIC P12 PST 5-Pack",
+        "price": 34.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            200,
+            1800
+        ],
+        "airflow": 56.3,
+        "noise_level": 22.5,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/7/2/Arctic_P12_PWM_PST_case_fan@@1728727.jpg",
+        "details": "Tijdens de ontwikkeling van de transparante Arctic P12 PWM PST is speciaal de nadruk gelegd op een gerichte luchtstroom en dus een hoge statische druk. De ventilator biedt een uiterst effici\u00ebnte koeling, zelfs bij een verhoogde luchtweerstand. Daarom is de P12 PWM PST bijzonder geschikt voor gebruik op koellichamen en radiatoren. De P12 PWM PST is een 120mm case fan met een rpm van 200 tot 1800 en een 4-pins PWM fan-connector."
+    },
+    "6": {
+        "name": "Corsair iCUE LINK QX120 RGB Starter Kit 3-Pack",
+        "price": 139.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            480,
+            2400
+        ],
+        "airflow": [
+            16.44,
+            63.1
+        ],
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/9/9/Corsair_iCUE_LINK_QX120_RGB_120mm_PWM_Fans_Starter_Kit___Wit_case_fan@@1918599.jpg",
+        "details": "Verlicht je systeem vanuit elke hoek met de CORSAIR iCUE LINK QX120 RGB 120mm PWM Fan Starter Kit. Deze bevat drie ventilatoren \r\nmet elk vier verschillende verlichtingslussen. Met de PWM-regeling stel je de benodigde ventilatorsnelheden tot 2.400 RPM met ondersteuning voor Zero RPM-signalen nauwkeurig in, terwijl een Magnetic Dome-lager zorgt voor minder wrijving, langere levensduur en minimaal geluid. Al je ventilatoren maken deel uit van het iCUE LINK-ecosysteem. Je sluit ze met \u00e9\u00e9n enkele kabel aan op de meegeleverde iCUE LINK-hub, wat resulteert in een strakke set-up met veel minder kabels. iCUE LINK opent nieuwe mogelijkheden voor verlichting en regeling, waaronder de exclusieve Time Warp-verlichtingsmodus en intelligente ventilatorcurves met ingebouwde temperatuursensor."
+    },
+    "7": {
+        "name": "Thermalright TL-C12C-S X3 3-Pack",
+        "price": 13.59,
+        "size": 120,
+        "color": "Black",
+        "rpm": 1550,
+        "airflow": 66.17,
+        "noise_level": 25.6,
+        "pwm": true,
+        "image": "",
+        "details": ""
+    },
+    "8": {
+        "name": "Lian Li UNI FAN SL V2 3-Pack",
+        "price": 82.99,
+        "size": 120,
+        "color": "Black / Silver",
+        "rpm": [
+            250,
+            2000
+        ],
+        "airflow": 64.5,
+        "noise_level": 29.2,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/2/4/Lian_Li_UNI_FAN_SL120V2_Triple_Pack_case_fan@@1873142_30.jpg",
+        "details": "Breng de verkoeling van je systeem naar het volgende niveau en laat het extra opvallen met de UNI FAN SL120V2 Triple Pack case fans van Lian LI. Dit pakket bestaat uit drie zwarte 120mm case fans met RGB verlichting en \u00e9\u00e9n controller voor een optimale koeling van je pc en je eigen unieke uitstraling. Case fans uit de UNI FAN SL serie kunnen via Daisy-chain aan elkaar worden gekoppeld. \r\nDe verlichtingseffecten zijn te synchroniseren via de controller."
+    },
+    "9": {
+        "name": "Lian Li Uni Fan SL-Infinity",
+        "price": 34.5,
+        "size": 120,
+        "color": "White",
+        "rpm": null,
+        "airflow": [
+            0,
+            61.3
+        ],
+        "noise_level": [
+            0,
+            29
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/3/1/Lian_Li_Uni_fan_SL_Infinity_120_case_fan@@1834013_30.jpg",
+        "details": "De zwarte Uni fan SL-Infinity 120 van Lian Li combineert de originele UNI FAN SL en AL met een vleugje infinity mirror, de SL-Infinity fans gloeien helder met multi-layer effecten vanuit elke zichtbare hoek. De SL-Infinity fans zijn verder geoptimaliseerd, wat resulteert in een betere luchtstroom (61,3 CFM), hogere statische druk (2,66 mmH2O), en een groter bereik van de ventilatorsnelheid (0, 200 ~ 2100RPM) bij lagere geluidsniveaus (29 dB(A)).\r\n\r\nNaast prestaties leveren de SL-Infinity fans extra flexibiliteit, zo kunnen tot 4 ventilatoren in een cluster worden verbonden voor een eenvoudiger kabelbeheer en verbeterde compatibiliteit  met daisy chain ondersteuning en de ventilator is nu aanpasbaar om de compatibiliteit met radiatoren te verbeteren.\r\n\r\nNet als bij de AL-ventilatoren kan L-Connect 3 software de verlichtingseffecten van de SL-Infinity fans afzonderlijk instellen voor zowel de ventilatorbladen als de binnenranden van het ventilatorframe, of kiezen voor vooraf ingestelde gecombineerde verlichtingseffecten."
+    },
+    "10": {
+        "name": "Lian Li Uni Fan SL-Infinity",
+        "price": 41.89,
+        "size": 120,
+        "color": "Black",
+        "rpm": null,
+        "airflow": [
+            0,
+            61.3
+        ],
+        "noise_level": [
+            0,
+            29
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/3/1/Lian_Li_Uni_fan_SL_Infinity_120_case_fan@@1834013_30.jpg",
+        "details": "De zwarte Uni fan SL-Infinity 120 van Lian Li combineert de originele UNI FAN SL en AL met een vleugje infinity mirror, de SL-Infinity fans gloeien helder met multi-layer effecten vanuit elke zichtbare hoek. De SL-Infinity fans zijn verder geoptimaliseerd, wat resulteert in een betere luchtstroom (61,3 CFM), hogere statische druk (2,66 mmH2O), en een groter bereik van de ventilatorsnelheid (0, 200 ~ 2100RPM) bij lagere geluidsniveaus (29 dB(A)).\r\n\r\nNaast prestaties leveren de SL-Infinity fans extra flexibiliteit, zo kunnen tot 4 ventilatoren in een cluster worden verbonden voor een eenvoudiger kabelbeheer en verbeterde compatibiliteit  met daisy chain ondersteuning en de ventilator is nu aanpasbaar om de compatibiliteit met radiatoren te verbeteren.\r\n\r\nNet als bij de AL-ventilatoren kan L-Connect 3 software de verlichtingseffecten van de SL-Infinity fans afzonderlijk instellen voor zowel de ventilatorbladen als de binnenranden van het ventilatorframe, of kiezen voor vooraf ingestelde gecombineerde verlichtingseffecten."
+    },
+    "11": {
+        "name": "NZXT F120 RGB 3-Pack",
+        "price": 77.89,
+        "size": 120,
+        "color": "White",
+        "rpm": [
+            500,
+            1800
+        ],
+        "airflow": [
+            13.94,
+            50.18
+        ],
+        "noise_level": [
+            17.2,
+            27.5
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/6/NZXT_F120_RGB_Core_Triple_pack_case_fan@@1916564_30.jpg",
+        "details": "De zwarte F120 RGB Core Triple pack ventilators bieden een briljante verlichting met elks acht individueel adresseerbare RGB leds en een eersteklas koeling met hoge statische druk. De adresseerbare leds op de naaf van de ventilator verlichten perfect door de semi-transparante bladen voor een onge\u00ebvenaard verlichtingseffect. Een geavanceerd naaf- en bladontwerp zorgt voor een verbeterde statische druk door de lucht door de koeler te stuwen en tegelijkertijd een sterke luchtstroom te leveren. In combinatie met een vloeistofkoeler of koellichaam als in- of uitlaat zorgt dit voor een betere warmteafvoer. Geniet van gepersonaliseerde verlichtingscombinaties via de NZXT CAM-software. De case fans synchroniseren naadloos met compatibele NZXT verlichtingsaccessoires. De PWM-gestuurde ventilators maken snelheidsaanpassingen mogelijk voor de best mogelijke koeling zonder afbreuk te doen aan het geluidsniveau. Hydrodynamische glijlagers bieden een hoge rotatiestabiliteit, verminderen het geluid en verlengen de levensduur van de ventilators. Trillingsdempende rubberen hoeken verminderen geluiden bij elke snelheid."
+    },
+    "12": {
+        "name": "ARCTIC P12",
+        "price": 8.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            200,
+            1800
+        ],
+        "airflow": 56.3,
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/2/5/Arctic_P12_Slim_PWM_PST_case_fan@@1856952.jpg",
+        "details": "De Arctic P12 Slim PWM PST 120x120x15 heeft een inbouwdiepte van slechts 15 mm, in tegenstelling tot normale 120 mm case fans met een dikte van 25 mm. Dit maakt het een voorbestemde fan voor Small Form Factor (SFF) constructies. Geschikte schroeven voor montage op een radiator zijn reeds bij de levering inbegrepen. Het ventilatorontwerp van de P12 Slim PWM PST is geoptimaliseerd voor een gerichte luchtstroom en genereert dus een hoge statische druk. De fan maakt - zelfs met verhoogde luchtweerstand - uiterst effici\u00ebnte koeling en goede luchtstroom mogelijk. De P12 Slim PWM PST is daarom bijzonder geschikt voor gebruik op verborgen case inlaten, stoffilters, radiatoren en in het algemeen in kleine cases die weinig ruimte bieden voor vrije luchtstroom vanwege compact geplaatste hardware."
+    },
+    "13": {
+        "name": "NZXT F120 RGB 3-Pack",
+        "price": 79.72,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            500,
+            1800
+        ],
+        "airflow": [
+            13.94,
+            50.18
+        ],
+        "noise_level": [
+            17.2,
+            27.5
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/6/NZXT_F120_RGB_Core_Triple_pack_case_fan@@1916564_30.jpg",
+        "details": "De zwarte F120 RGB Core Triple pack ventilators bieden een briljante verlichting met elks acht individueel adresseerbare RGB leds en een eersteklas koeling met hoge statische druk. De adresseerbare leds op de naaf van de ventilator verlichten perfect door de semi-transparante bladen voor een onge\u00ebvenaard verlichtingseffect. Een geavanceerd naaf- en bladontwerp zorgt voor een verbeterde statische druk door de lucht door de koeler te stuwen en tegelijkertijd een sterke luchtstroom te leveren. In combinatie met een vloeistofkoeler of koellichaam als in- of uitlaat zorgt dit voor een betere warmteafvoer. Geniet van gepersonaliseerde verlichtingscombinaties via de NZXT CAM-software. De case fans synchroniseren naadloos met compatibele NZXT verlichtingsaccessoires. De PWM-gestuurde ventilators maken snelheidsaanpassingen mogelijk voor de best mogelijke koeling zonder afbreuk te doen aan het geluidsniveau. Hydrodynamische glijlagers bieden een hoge rotatiestabiliteit, verminderen het geluid en verlengen de levensduur van de ventilators. Trillingsdempende rubberen hoeken verminderen geluiden bij elke snelheid."
+    },
+    "14": {
+        "name": "Thermalright TL-C12C X3 3-Pack",
+        "price": 11.9,
+        "size": 120,
+        "color": "Black",
+        "rpm": 1550,
+        "airflow": 66.17,
+        "noise_level": 25.6,
+        "pwm": true,
+        "image": "",
+        "details": ""
+    },
+    "15": {
+        "name": "Noctua A12x25 PWM",
+        "price": 32.95,
+        "size": 120,
+        "color": "Brown",
+        "rpm": [
+            450,
+            2000
+        ],
+        "airflow": [
+            49.73,
+            60.1
+        ],
+        "noise_level": [
+            18.8,
+            22.6
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/Noctua_NF_A12x25_PWM_case_fan@@tl9u55.jpg",
+        "details": "De NF-A12x25 12 V PWM is een PWM-compatibele 12 V variant van de prijswinnende, premium-kwaliteit NF-A12x25 120 mm-fan van Noctua. Met standaard AAO-frame (Advanced Acoustic Optimization) en geavanceerde a\u00ebrodynamische ontwerpmaatregelen, evenals Flow Acceleration Channels, staat de NF-A12x25 bekend om zijn superieure prestaties en uitstekende stille bediening. Smooth Commutation Drive-technologie en de referentieklasse SSO2 van Noctua staan garant voor een uitstekende loopsnelheid en uitstekende langetermijnstabiliteit. 12 V PWM is een premium keuze voor veeleisende 12 V PWM-besturing."
+    },
+    "16": {
+        "name": "Corsair iCUE LINK QX120 RGB Starter Kit 3-Pack",
+        "price": 139.99,
+        "size": 120,
+        "color": "White",
+        "rpm": [
+            480,
+            2400
+        ],
+        "airflow": [
+            16.44,
+            63.1
+        ],
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/9/9/Corsair_iCUE_LINK_QX120_RGB_120mm_PWM_Fans_Starter_Kit___Wit_case_fan@@1918599.jpg",
+        "details": "Verlicht je systeem vanuit elke hoek met de CORSAIR iCUE LINK QX120 RGB 120mm PWM Fan Starter Kit. Deze bevat drie ventilatoren \r\nmet elk vier verschillende verlichtingslussen. Met de PWM-regeling stel je de benodigde ventilatorsnelheden tot 2.400 RPM met ondersteuning voor Zero RPM-signalen nauwkeurig in, terwijl een Magnetic Dome-lager zorgt voor minder wrijving, langere levensduur en minimaal geluid. Al je ventilatoren maken deel uit van het iCUE LINK-ecosysteem. Je sluit ze met \u00e9\u00e9n enkele kabel aan op de meegeleverde iCUE LINK-hub, wat resulteert in een strakke set-up met veel minder kabels. iCUE LINK opent nieuwe mogelijkheden voor verlichting en regeling, waaronder de exclusieve Time Warp-verlichtingsmodus en intelligente ventilatorcurves met ingebouwde temperatuursensor."
+    },
+    "17": {
+        "name": "Lian Li UNI FAN TL LCD 120 3-Pack",
+        "price": 160.22,
+        "size": 120,
+        "color": "White",
+        "rpm": null,
+        "airflow": 90.1,
+        "noise_level": 33,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/0/Lian_Li_UNI_FAN_TL_LCD120_Reverse_Black_Triple_Pack_case_fan@@1924604_30.jpg",
+        "details": "Breng de verkoeling van je systeem naar het volgende niveau en laat het extra opvallen met de UNI FAN TL LCD 120 Reverse case fan van Lian LI. Door het Reverse Blade ontwerp kan het ook dienst doen als aanzuigende case fan.\r\nDit pakket bestaat uit drie zwarte 120 mm case fans met RGB verlichting en 1,6\" LCD-scherm, gekoppeld aan een controller voor een optimale koeling van je pc en je eigen unieke uitstraling. Case fans uit de UNI FAN TL serie kunnen via Daisy-chain aan elkaar worden gekoppeld. De verlichtingseffecten zijn te synchroniseren met het moederbord via de 5V adresseerbare header.\r\nHet 1.6\" LCD scherm (400 x 400) met IPS display kan gepersonaliseerd worden met GIF-, MP4-, JPG- en PNG-bestanden.\r\nDe meegeleverde controller kan worden aangesloten middels een Power PCIe kabel als voeding en een 9-pin USB header op het moederbord. Het ondersteunt 16 TL en tot 6 TL LCD fans gelijktijdig en werkt het beste met de gratis te verkrijgen software \"L-Connect 3\" van Lian Li."
+    },
+    "18": {
+        "name": "Thermalright TL-C12CW-S X3 3-Pack",
+        "price": 17.39,
+        "size": 120,
+        "color": "White",
+        "rpm": 1550,
+        "airflow": 66.17,
+        "noise_level": 25.6,
+        "pwm": true,
+        "image": "",
+        "details": ""
+    },
+    "19": {
+        "name": "be quiet! Silent Wings Pro 4",
+        "price": 27.9,
+        "size": 120,
+        "color": "Black",
+        "rpm": 3000,
+        "airflow": 83.9,
+        "noise_level": 36.9,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/8/7/be_quiet__Silent_Wings_Pro_4_PWM_120x120x25_case_fan@@1855078.jpg",
+        "details": "De be quiet! Silent Wings Pro 4 PWM is geschikt voor vele toepassingsgebieden, zoals radiatoren, koellichamen, pc-behuizingen, high-end pc-systemen en de meest veeleisende grafische toepassingen. De geoptimaliseerde fanbladen garanderen de beste prestaties op radiatoren en koellichamen. Met de snelheidsschakelaar kan de maximale PWM-snelheid worden gewijzigd tussen gemiddelde snelheid, hoge snelheid en ultrahoge snelheid (tot 3000 rpm). De kleine afstand tussen frame en fanbladen en de trechtervormige luchtuitlaten zorgen voor een maximale luchtdruk. Op normale snelheid is de fan bijna onhoorbaar. De 6-polige motor en het Fluid Dynamic lager zorgen voor een trillingsarme en stille werking. Individuele montagemogelijkheden bieden de mogelijkheid van gebruik op radiatoren en koellichamen of als casefan."
+    },
+    "20": {
+        "name": "Noctua A14 PWM chromax.black.swap",
+        "price": 26.95,
+        "size": 140,
+        "color": "Multicolor",
+        "rpm": [
+            300,
+            1500
+        ],
+        "airflow": 82.52,
+        "noise_level": 24.6,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/Noctua_NF_A14_PWM_Chromax_Black_Swap_case_fan@@tl9u53.jpg",
+        "details": "De NF-A14 PWM van Noctua is een 140 mm koelr voor de PC-behuizing. De fan zorgt voor een goede koeling en heeft een maximale geluidsontwikkeling van 24.6 dB(A) bij een toerental van 1500 rpm."
+    },
+    "21": {
+        "name": "Lian Li UNI FAN SL-INF Reverse Blade",
+        "price": 29.99,
+        "size": 120,
+        "color": "White / Black",
+        "rpm": [
+            200,
+            2100
+        ],
+        "airflow": 63.6,
+        "noise_level": 32,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/5/4/Lian_Li_UNI_FAN_SL_INF_Reverse_Blade_case_fan@@1922045_30.jpg",
+        "details": "De UNI FAN SL-INF Reverse Blade van LIAN LI is een innovatieve 120mm witte case fan met een oneindige spiegel effect en RGB verlichting. Deze fan kan via Daisy-chain aan andere fans worden gekoppeld en met een controller en software worden aangestuurd. De fan heeft een hoge luchtstroom, een lage geluidsproductie en een lange levensduur. \r\nDe fan is geschikt voor zowel lucht- als waterkoeling en kan je pc een unieke uitstraling geven. Naast prestaties leveren de SL-Infinity fans extra flexibiliteit, zo kunnen tot 4 ventilatoren in een cluster worden verbonden voor een eenvoudiger kabelbeheer en verbeterde compatibiliteit  met daisy chain ondersteuning en de ventilator is nu aanpasbaar om de compatibiliteit met radiatoren te verbeteren. \r\nNet als bij de AL-ventilatoren kan L-Connect 3 software de verlichtingseffecten van de SL-Infinity fans afzonderlijk instellen voor zowel de ventilatorbladen als de binnenranden van het ventilatorframe, of kiezen voor vooraf ingestelde gecombineerde verlichtingseffecten."
+    },
+    "22": {
+        "name": "NZXT F120 RGB Core",
+        "price": null,
+        "size": 120,
+        "color": "White",
+        "rpm": [
+            500,
+            1800
+        ],
+        "airflow": 78.86,
+        "noise_level": 33.88,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/6/NZXT_F120_RGB_Core_Triple_pack_case_fan@@1916564_30.jpg",
+        "details": "De zwarte F120 RGB Core Triple pack ventilators bieden een briljante verlichting met elks acht individueel adresseerbare RGB leds en een eersteklas koeling met hoge statische druk. De adresseerbare leds op de naaf van de ventilator verlichten perfect door de semi-transparante bladen voor een onge\u00ebvenaard verlichtingseffect. Een geavanceerd naaf- en bladontwerp zorgt voor een verbeterde statische druk door de lucht door de koeler te stuwen en tegelijkertijd een sterke luchtstroom te leveren. In combinatie met een vloeistofkoeler of koellichaam als in- of uitlaat zorgt dit voor een betere warmteafvoer. Geniet van gepersonaliseerde verlichtingscombinaties via de NZXT CAM-software. De case fans synchroniseren naadloos met compatibele NZXT verlichtingsaccessoires. De PWM-gestuurde ventilators maken snelheidsaanpassingen mogelijk voor de best mogelijke koeling zonder afbreuk te doen aan het geluidsniveau. Hydrodynamische glijlagers bieden een hoge rotatiestabiliteit, verminderen het geluid en verlengen de levensduur van de ventilators. Trillingsdempende rubberen hoeken verminderen geluiden bij elke snelheid."
+    },
+    "23": {
+        "name": "ARCTIC P12 Max",
+        "price": 9.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            200,
+            3300
+        ],
+        "airflow": 81.04,
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/9/9/Arctic_P12_PWM_PST_A_RGB__3_stuks_case_fan@@1742899.jpg",
+        "details": "Deze set van drie Artic P12 PWM PST A-RGB case fans zijn voorzien van 12 digitale A-RGB LED's. Deze kunnen onafhankelijk van elkaar worden aangestuurd en zijn compatibel met de gangbare A-RGB-standaarden van toonaangevende moederbordfabrikanten. De ventilatoren kunnen dus tot in detail worden verlicht, rechtstreeks via de A-RGB header of via een externe controller. De A-RGB LED's kunnen ook worden gesynchroniseerd met de verlichting van andere hardware. Het toerental van de case fans kan via PWM tot nul worden teruggebracht. Dit maakt een stille \u201cidle\u201d werking mogelijk en garandeert tegelijkertijd maximale prestaties wanneer dat nodig is. \r\nHet geluidsniveau van de nieuw ontwikkelde ARCTIC-motor is, ongeacht de snelheid, nauwelijks waarneembaar. Bovendien hebben deze case fans rubberen contactvlakken en beperken zo waarneembare trillingen tot een minimum. De ventilatoren werken met een gerichte luchtstroom en een hoge statische druk. Dit garandeert een uiterst effici\u00ebnte koeling, zelfs bij een verhoogde luchtweerstand en zijn daarmee geschikt voor heatsinks, radiatoren en filters. Met een breed toerentalbereik en de innovatieve PWM Sharing Technology (PST) kunnen de ventilatorsnelheden synchroon met alle andere ventilatoren worden ingesteld, voor optimale koeling en lage geluidsniveaus."
+    },
+    "24": {
+        "name": "Deepcool FC120-3 IN 1 3-Pack",
+        "price": 40.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            500,
+            1800
+        ],
+        "airflow": 61.91,
+        "noise_level": 28,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/DeepCool_Fan_Hub_FH_10_fancontroller@@tqzo04.jpg",
+        "details": "De DeepCool FH-10 is een ge\u00efntegreerde fan hub en kan tot tien fans (3-pins of 4-pins) met PWM-modulatie aandrijven, terwijl hij slechts \u00e9\u00e9n 4-pins moederbordkop per fan hub in beslag neemt. De FH-10 fan hub stelt gebruikers in staat om de behuizing volledig te ventileren met behoud van een schoon en duidelijk kabelmanagement. Tegelijkertijd maakt de blauwe ledverlichtingsindicator het een aantrekkelijke keuze, niet alleen voor liefhebbers van koelvermogen, maar ook voor gebruikers die de voorkeur geven aan een eenvoudige installatie. De mogelijkheid om tot tien fans te gebruiken biedt gebruikers uitstekende koelopties binnen de behuizing om te genieten van verbeterde systeemprestaties. De FH-10 wordt gevoed door een robuuste SATA-aansluiting op de PSU van het systeem en biedt een veilige en betrouwbare stroomvoorziening voor maximaal 10 fans. Elke poort heeft zijn eigen PWM-functie en de ventilatorsnelheid kan individueel worden aangepast, maar alleen de snelheid van fan 1 kan door het systeem worden gedetecteerd. De fan hub kan eenvoudig worden vastgezet met de bijgeleverde schroef en vergrendeling om de kabels vrij te houden en de fan hub stevig op zijn plaats te houden."
+    },
+    "25": {
+        "name": "NZXT F120 RGB Core",
+        "price": 19.98,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            500,
+            1800
+        ],
+        "airflow": 78.86,
+        "noise_level": 33.88,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/6/NZXT_F120_RGB_Core_Triple_pack_case_fan@@1916564_30.jpg",
+        "details": "De zwarte F120 RGB Core Triple pack ventilators bieden een briljante verlichting met elks acht individueel adresseerbare RGB leds en een eersteklas koeling met hoge statische druk. De adresseerbare leds op de naaf van de ventilator verlichten perfect door de semi-transparante bladen voor een onge\u00ebvenaard verlichtingseffect. Een geavanceerd naaf- en bladontwerp zorgt voor een verbeterde statische druk door de lucht door de koeler te stuwen en tegelijkertijd een sterke luchtstroom te leveren. In combinatie met een vloeistofkoeler of koellichaam als in- of uitlaat zorgt dit voor een betere warmteafvoer. Geniet van gepersonaliseerde verlichtingscombinaties via de NZXT CAM-software. De case fans synchroniseren naadloos met compatibele NZXT verlichtingsaccessoires. De PWM-gestuurde ventilators maken snelheidsaanpassingen mogelijk voor de best mogelijke koeling zonder afbreuk te doen aan het geluidsniveau. Hydrodynamische glijlagers bieden een hoge rotatiestabiliteit, verminderen het geluid en verlengen de levensduur van de ventilators. Trillingsdempende rubberen hoeken verminderen geluiden bij elke snelheid."
+    },
+    "26": {
+        "name": "Corsair iCUE AF120 RGB ELITE 3-Pack",
+        "price": 82.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            550,
+            2100
+        ],
+        "airflow": [
+            13.8,
+            65.57
+        ],
+        "noise_level": [
+            5,
+            34.1
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/2/7/Corsair_iCUE_AF120_RGB_ELITE_case_fan@@1889972_30.jpg",
+        "details": "Breid je koeling uit met CORSAIR iCUE AF120 RGB ELITE High-Performance 120 mm PWM-fans die PWM-bedienbare ventilatorsnelheden van 550 RPM tot 2.100 RPM leveren voor krachtige koeling en geluidloos gebruik. Een vloeistof-dynamisch lager biedt uitzonderlijke duurzaamheid met minimaal geluid, terwijl acht afzonderlijke RGB leds je pc verlichten voor schitterende RGB-verlichting (iCUE RGB Fan Lighting Controller vereist, apart verkrijgbaar). Elke AF120 RGB ELITE fan zorgt op volle snelheid voor 65,57 CFM luchtverplaatsing bij een statische druk van 2,68 mm-H2O voor een krachtige luchtstroom. Perfect voor gebruik op koellichamen en radiatoren of als behuizingsfan, waarbij de CORSAIR AirGuidetechnologie met antivortexbladen de koeling richt."
+    },
+    "27": {
+        "name": "Lian Li UNI FAN SL V2",
+        "price": 26.99,
+        "size": 120,
+        "color": "Black / Silver",
+        "rpm": [
+            250,
+            2000
+        ],
+        "airflow": 64.5,
+        "noise_level": 29.2,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/6/4/Lian_Li_UNI_FAN_SL120_V2_Reverse_Blade_Single_Pack_case_fan@@1922046_30.jpg",
+        "details": "Breng de verkoeling van je systeem naar het volgende niveau en laat het extra opvallen met de UNI FAN SL120 V2 Reverse Blade case fans van Lian LI. Door het Reverse Blade ontwerp kan het ook dienst doen als aanzuigende case fan. \r\nDit pakket bestaat uit \u00e9\u00e9n zwarte 120mm case fan met RGB verlichting voor een optimale koeling van je pc en je eigen unieke uitstraling. Case fans uit de UNI FAN SL serie kunnen via Daisy-chain aan elkaar worden gekoppeld. De verlichtingseffecten zijn te synchroniseren met het moederbord via de 5V adresseerbare header."
+    },
+    "28": {
+        "name": "Noctua P12 redux-1700 PWM",
+        "price": 15.95,
+        "size": 120,
+        "color": "Gray",
+        "rpm": [
+            450,
+            1700
+        ],
+        "airflow": 70.75,
+        "noise_level": 25.1,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/Noctua_NF_P12_redux_1700_PWM_case_fan@@tl9u58.jpg",
+        "details": "De klassieke NF-P12 is speciaal ontworpen voor drukverhogende toepassingen, zoals CPU- of radiatorkoeling, en is al lange tijd favoriet bij enthousiaste gebruikers over de hele wereld en heeft geholpen bij het vinden van Noctua's reputatie als een topfabrikant van eersteklas stille koelcomponenten. De redux editie geeft dit bekroonde model opnieuw uit in een gestroomlijnd, toegankelijk geprijsd pakket dat is gereduceerd tot de essenti\u00eble kern: de NF-P12 premium fan. De SSO lager, de MTTF-waarde van meer dan 150.000 uur en de volledige 6 jaar fabrieksgarantie maken de NF-P12 redux-1700 PWM tot een beproefde premium keuze die betrouwbare Noctua kwaliteit biedt tegen een aantrekkelijke prijs. De prestatiegerichte topsnelheid van de 1700 rpm PWM-versie is ideaal voor hoogrendementskoeling van case, radiatoren en CPU's, maar ook voor andere toepassingen die zowel een grotere doorvaarthoogte als PWM voor automatische snelheidsregeling vereisen."
+    },
+    "29": {
+        "name": "Corsair iCUE SP120 RGB ELITE",
+        "price": 24.93,
+        "size": 120,
+        "color": "Black / White",
+        "rpm": [
+            400,
+            1500
+        ],
+        "airflow": null,
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/7/9/Corsair_iCUE_SP120_RGB_ELITE_Performance___Lighting_Node_CORE_case_fan@@1729397.jpg",
+        "details": "De Corsair iCUE SP120 RGB ELITE Performance, Triple Pack combineert een uitstekende luchtstroom, met een laag geluidsniveau en 8 stralende, onafhankelijke RGB-leds die de fan en de hub omringen. Koppel de drie fans met de meegeleverde Corsair Lighting Node CORE om de verlichting aan te passen in een breed scala aan levendige effecten en patronen. Met behulp van geoptimaliseerde 120 mm ventilatorbladen en PWM-regeling, stel je de snelheid van de fan in van 550 rpm tot 1500 rpm voor precieze geluids- en luchtstroom aanpassingen. Gemaakt voor iedereen die op zoek is naar een uitstekende luchtstroom, stille werking en krachtige verlichting, de Corsair iCUE SP120 RGB ELITE fan laat jouw pc uitblinken!"
+    },
+    "30": {
+        "name": "Lian Li UNI FAN SL V2",
+        "price": 33.99,
+        "size": 120,
+        "color": "White / Silver",
+        "rpm": [
+            250,
+            2000
+        ],
+        "airflow": 64.5,
+        "noise_level": 29.2,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/6/4/Lian_Li_UNI_FAN_SL120_V2_Reverse_Blade_Single_Pack_case_fan@@1922046_30.jpg",
+        "details": "Breng de verkoeling van je systeem naar het volgende niveau en laat het extra opvallen met de UNI FAN SL120 V2 Reverse Blade case fans van Lian LI. Door het Reverse Blade ontwerp kan het ook dienst doen als aanzuigende case fan. \r\nDit pakket bestaat uit \u00e9\u00e9n zwarte 120mm case fan met RGB verlichting voor een optimale koeling van je pc en je eigen unieke uitstraling. Case fans uit de UNI FAN SL serie kunnen via Daisy-chain aan elkaar worden gekoppeld. De verlichtingseffecten zijn te synchroniseren met het moederbord via de 5V adresseerbare header."
+    },
+    "31": {
+        "name": "ARCTIC P12 PST A-RGB 0dB 3-Pack",
+        "price": 42.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": null,
+        "airflow": 48.8,
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/9/9/Arctic_P12_PWM_PST_A_RGB__3_stuks_case_fan@@1742899.jpg",
+        "details": "Deze set van drie Artic P12 PWM PST A-RGB case fans zijn voorzien van 12 digitale A-RGB LED's. Deze kunnen onafhankelijk van elkaar worden aangestuurd en zijn compatibel met de gangbare A-RGB-standaarden van toonaangevende moederbordfabrikanten. De ventilatoren kunnen dus tot in detail worden verlicht, rechtstreeks via de A-RGB header of via een externe controller. De A-RGB LED's kunnen ook worden gesynchroniseerd met de verlichting van andere hardware. Het toerental van de case fans kan via PWM tot nul worden teruggebracht. Dit maakt een stille \u201cidle\u201d werking mogelijk en garandeert tegelijkertijd maximale prestaties wanneer dat nodig is. \r\nHet geluidsniveau van de nieuw ontwikkelde ARCTIC-motor is, ongeacht de snelheid, nauwelijks waarneembaar. Bovendien hebben deze case fans rubberen contactvlakken en beperken zo waarneembare trillingen tot een minimum. De ventilatoren werken met een gerichte luchtstroom en een hoge statische druk. Dit garandeert een uiterst effici\u00ebnte koeling, zelfs bij een verhoogde luchtweerstand en zijn daarmee geschikt voor heatsinks, radiatoren en filters. Met een breed toerentalbereik en de innovatieve PWM Sharing Technology (PST) kunnen de ventilatorsnelheden synchroon met alle andere ventilatoren worden ingesteld, voor optimale koeling en lage geluidsniveaus."
+    },
+    "32": {
+        "name": "be quiet! Pure Wings 2",
+        "price": 9.9,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            500,
+            1500
+        ],
+        "airflow": [
+            51.4,
+            87
+        ],
+        "noise_level": 20.2,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/be_quiet__Pure_Wings_2_PWM_140_mm_high_speed_case_fan@@tl9v3003.jpg",
+        "details": "De Pure Wings 2 140 mm PWM High Speed fan tilt be quiet! koelingen voor het computergebruik tot een hoger niveau. De extreem hoge luchtdruk maakt het een perfecte keuze voor krachtige water- en luchtgekoelde systemen."
+    },
+    "33": {
+        "name": "ARCTIC P14 PST",
+        "price": 14.3,
+        "size": 140,
+        "color": "Black",
+        "rpm": [
+            200,
+            1700
+        ],
+        "airflow": 72.8,
+        "noise_level": 22.5,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/0/4/Arctic_P14_PWM_PST_case_fan@@1728740.jpg",
+        "details": "Tijdens de ontwikkeling van de transparante Arctic P14 PWM PST is speciaal de nadruk gelegd op een gerichte luchtstroom en dus een hoge statische druk. De ventilator biedt een uiterst effici\u00ebnte koeling, zelfs bij een verhoogde luchtweerstand. Daarom is de P12 PWM PST bijzonder geschikt voor gebruik op koellichamen en radiatoren. De P14 PWM PST is een 140mm case fan met een rpm van 200 tot 1700 en een 4-pins PWM fan-connector."
+    },
+    "34": {
+        "name": "Corsair LL120 3-Pack",
+        "price": 69.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            600,
+            1500
+        ],
+        "airflow": 43.25,
+        "noise_level": 24.8,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/Corsair_LL120_RGB_LED_PWM_fan___Single_Pack_case_fan@@tl9v6001.jpg",
+        "details": "De Corsair LL120 RGB PWM-fan combineert een uitstekende luchtstroom met een laag geluidsniveau en 16 stralende, onafhankelijke RGB-leds, verdeeld tussen twee afzonderlijke verlichting circuits die de fan en de hub omringen. Koppel deze fan met een bestaande LL120 RGB-kit of Corsair Lighting Node PRO om de verlichting aan te passen in een breed scala aan levendige effecten en patronen. Met behulp van geoptimaliseerde 120 mm ventilatorbladen en PWM-regeling stel je de snelheid van de fan in van 600 RPM tot 1500 RPM voor precieze geluids- en luchtstroom aanpassingen. Gemaakt voor iedereen die op zoek is naar een uitstekende luchtstroom, stille werking en krachtige verlichting, de Corsair LL120 RGB fan laat jouw pc uitblinken! \n\nDe Corsair LL120 RGB-kit en Corsair Lighting Node PRO zijn niet inbegrepen."
+    },
+    "35": {
+        "name": "Noctua A14 PWM",
+        "price": 23.95,
+        "size": 140,
+        "color": "Brown",
+        "rpm": [
+            300,
+            1500
+        ],
+        "airflow": [
+            68,
+            82.5
+        ],
+        "noise_level": [
+            19.2,
+            24.6
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/Noctua_NF_A14_PWM_Chromax_Black_Swap_case_fan@@tl9u53.jpg",
+        "details": "De NF-A14 PWM van Noctua is een 140 mm koelr voor de PC-behuizing. De fan zorgt voor een goede koeling en heeft een maximale geluidsontwikkeling van 24.6 dB(A) bij een toerental van 1500 rpm."
+    },
+    "36": {
+        "name": "Lian Li Uni Fan SL-Infinity",
+        "price": 31.93,
+        "size": 140,
+        "color": "Black",
+        "rpm": [
+            200,
+            1600
+        ],
+        "airflow": 72.7,
+        "noise_level": 28,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/3/1/Lian_Li_Uni_fan_SL_Infinity_120_case_fan@@1834013_30.jpg",
+        "details": "De zwarte Uni fan SL-Infinity 120 van Lian Li combineert de originele UNI FAN SL en AL met een vleugje infinity mirror, de SL-Infinity fans gloeien helder met multi-layer effecten vanuit elke zichtbare hoek. De SL-Infinity fans zijn verder geoptimaliseerd, wat resulteert in een betere luchtstroom (61,3 CFM), hogere statische druk (2,66 mmH2O), en een groter bereik van de ventilatorsnelheid (0, 200 ~ 2100RPM) bij lagere geluidsniveaus (29 dB(A)).\r\n\r\nNaast prestaties leveren de SL-Infinity fans extra flexibiliteit, zo kunnen tot 4 ventilatoren in een cluster worden verbonden voor een eenvoudiger kabelbeheer en verbeterde compatibiliteit  met daisy chain ondersteuning en de ventilator is nu aanpasbaar om de compatibiliteit met radiatoren te verbeteren.\r\n\r\nNet als bij de AL-ventilatoren kan L-Connect 3 software de verlichtingseffecten van de SL-Infinity fans afzonderlijk instellen voor zowel de ventilatorbladen als de binnenranden van het ventilatorframe, of kiezen voor vooraf ingestelde gecombineerde verlichtingseffecten."
+    },
+    "37": {
+        "name": "Lian Li Uni Fan SL-Infinity",
+        "price": 46.41,
+        "size": 140,
+        "color": "White",
+        "rpm": [
+            200,
+            1600
+        ],
+        "airflow": 72.7,
+        "noise_level": 28,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/3/1/Lian_Li_Uni_fan_SL_Infinity_120_case_fan@@1834013_30.jpg",
+        "details": "De zwarte Uni fan SL-Infinity 120 van Lian Li combineert de originele UNI FAN SL en AL met een vleugje infinity mirror, de SL-Infinity fans gloeien helder met multi-layer effecten vanuit elke zichtbare hoek. De SL-Infinity fans zijn verder geoptimaliseerd, wat resulteert in een betere luchtstroom (61,3 CFM), hogere statische druk (2,66 mmH2O), en een groter bereik van de ventilatorsnelheid (0, 200 ~ 2100RPM) bij lagere geluidsniveaus (29 dB(A)).\r\n\r\nNaast prestaties leveren de SL-Infinity fans extra flexibiliteit, zo kunnen tot 4 ventilatoren in een cluster worden verbonden voor een eenvoudiger kabelbeheer en verbeterde compatibiliteit  met daisy chain ondersteuning en de ventilator is nu aanpasbaar om de compatibiliteit met radiatoren te verbeteren.\r\n\r\nNet als bij de AL-ventilatoren kan L-Connect 3 software de verlichtingseffecten van de SL-Infinity fans afzonderlijk instellen voor zowel de ventilatorbladen als de binnenranden van het ventilatorframe, of kiezen voor vooraf ingestelde gecombineerde verlichtingseffecten."
+    },
+    "38": {
+        "name": "Lian Li UNI FAN SL-INF Reverse Blade",
+        "price": 29.99,
+        "size": 120,
+        "color": "White",
+        "rpm": [
+            200,
+            2100
+        ],
+        "airflow": 63.6,
+        "noise_level": 32,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/5/4/Lian_Li_UNI_FAN_SL_INF_Reverse_Blade_case_fan@@1922045_30.jpg",
+        "details": "De UNI FAN SL-INF Reverse Blade van LIAN LI is een innovatieve 120mm witte case fan met een oneindige spiegel effect en RGB verlichting. Deze fan kan via Daisy-chain aan andere fans worden gekoppeld en met een controller en software worden aangestuurd. De fan heeft een hoge luchtstroom, een lage geluidsproductie en een lange levensduur. \r\nDe fan is geschikt voor zowel lucht- als waterkoeling en kan je pc een unieke uitstraling geven. Naast prestaties leveren de SL-Infinity fans extra flexibiliteit, zo kunnen tot 4 ventilatoren in een cluster worden verbonden voor een eenvoudiger kabelbeheer en verbeterde compatibiliteit  met daisy chain ondersteuning en de ventilator is nu aanpasbaar om de compatibiliteit met radiatoren te verbeteren. \r\nNet als bij de AL-ventilatoren kan L-Connect 3 software de verlichtingseffecten van de SL-Infinity fans afzonderlijk instellen voor zowel de ventilatorbladen als de binnenranden van het ventilatorframe, of kiezen voor vooraf ingestelde gecombineerde verlichtingseffecten."
+    },
+    "39": {
+        "name": "NZXT F120 RGB",
+        "price": 34.98,
+        "size": 120,
+        "color": "White",
+        "rpm": [
+            500,
+            1800
+        ],
+        "airflow": [
+            13.94,
+            50.18
+        ],
+        "noise_level": [
+            17.2,
+            27.5
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/1/8/NZXT_F120_RGB_Single_120x120x26_case_fan@@1842181.jpg",
+        "details": "De NZXT F120 RGB fans zorgen voor een speciale flair en zorgen tegelijkertijd voor comfortabele temperaturen. Deze fan is een high-airflow fan die zorgt voor een ideale luchtstroom bij het koelen. De F120 RGB is ontworpen om te schitteren met levendige RGB-verlichtingseffecten. Aanpassing van de RGB-verlichting gebeurt via NZXT CAM (controller apart verkrijgbaar). Het intelligente frameontwerp met trillingsdempende rubberen hoeken vermindert het geluidsniveau. Het gepatenteerde hydrodynamische glijlager biedt een lange levensduur."
+    },
+    "40": {
+        "name": "be quiet! Silent Wings Pro 4",
+        "price": 27.9,
+        "size": 140,
+        "color": "Black",
+        "rpm": 2400,
+        "airflow": 97.41,
+        "noise_level": 36.8,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/8/7/be_quiet__Silent_Wings_Pro_4_PWM_120x120x25_case_fan@@1855078.jpg",
+        "details": "De be quiet! Silent Wings Pro 4 PWM is geschikt voor vele toepassingsgebieden, zoals radiatoren, koellichamen, pc-behuizingen, high-end pc-systemen en de meest veeleisende grafische toepassingen. De geoptimaliseerde fanbladen garanderen de beste prestaties op radiatoren en koellichamen. Met de snelheidsschakelaar kan de maximale PWM-snelheid worden gewijzigd tussen gemiddelde snelheid, hoge snelheid en ultrahoge snelheid (tot 3000 rpm). De kleine afstand tussen frame en fanbladen en de trechtervormige luchtuitlaten zorgen voor een maximale luchtdruk. Op normale snelheid is de fan bijna onhoorbaar. De 6-polige motor en het Fluid Dynamic lager zorgen voor een trillingsarme en stille werking. Individuele montagemogelijkheden bieden de mogelijkheid van gebruik op radiatoren en koellichamen of als casefan."
+    },
+    "41": {
+        "name": "Corsair iCUE SP RGB ELITE 3-Pack",
+        "price": 63.99,
+        "size": 120,
+        "color": "White",
+        "rpm": [
+            400,
+            1500
+        ],
+        "airflow": 47.73,
+        "noise_level": 28,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/7/9/Corsair_iCUE_SP120_RGB_ELITE_Performance___Lighting_Node_CORE_case_fan@@1729397.jpg",
+        "details": "De Corsair iCUE SP120 RGB ELITE Performance, Triple Pack combineert een uitstekende luchtstroom, met een laag geluidsniveau en 8 stralende, onafhankelijke RGB-leds die de fan en de hub omringen. Koppel de drie fans met de meegeleverde Corsair Lighting Node CORE om de verlichting aan te passen in een breed scala aan levendige effecten en patronen. Met behulp van geoptimaliseerde 120 mm ventilatorbladen en PWM-regeling, stel je de snelheid van de fan in van 550 rpm tot 1500 rpm voor precieze geluids- en luchtstroom aanpassingen. Gemaakt voor iedereen die op zoek is naar een uitstekende luchtstroom, stille werking en krachtige verlichting, de Corsair iCUE SP120 RGB ELITE fan laat jouw pc uitblinken!"
+    },
+    "42": {
+        "name": "Lian Li UNI FAN SL V2",
+        "price": 29.99,
+        "size": 140,
+        "color": "Black / Silver",
+        "rpm": [
+            250,
+            1600
+        ],
+        "airflow": 77.6,
+        "noise_level": 29,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/6/4/Lian_Li_UNI_FAN_SL120_V2_Reverse_Blade_Single_Pack_case_fan@@1922046_30.jpg",
+        "details": "Breng de verkoeling van je systeem naar het volgende niveau en laat het extra opvallen met de UNI FAN SL120 V2 Reverse Blade case fans van Lian LI. Door het Reverse Blade ontwerp kan het ook dienst doen als aanzuigende case fan. \r\nDit pakket bestaat uit \u00e9\u00e9n zwarte 120mm case fan met RGB verlichting voor een optimale koeling van je pc en je eigen unieke uitstraling. Case fans uit de UNI FAN SL serie kunnen via Daisy-chain aan elkaar worden gekoppeld. De verlichtingseffecten zijn te synchroniseren met het moederbord via de 5V adresseerbare header."
+    },
+    "43": {
+        "name": "Noctua F12 industrialPPC-3000 PWM",
+        "price": 27.95,
+        "size": 120,
+        "color": "Brown / Black",
+        "rpm": [
+            750,
+            3000
+        ],
+        "airflow": 109.89,
+        "noise_level": 43.5,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/Noctua_NF_F12_industrialPPC_3000_PWM_case_fan@@tl9u36.jpg",
+        "details": "De NF-F12 industrialPPC-3000 PWM van Noctua is een 120mm koeler voor uw PC behuizing. Hij zorgt voor een goede koeling en heeft een maximale geluidsontwikkeling van 43,5 dB(A). bij een toerental van 3000 rpm. De motor en printplaat van de IP52 versie zijn voorzien van een speciale hars, dankzij deze hars voldoet deze fan aan de beschermingsgraad IP52, hierdoor is deze fan niet alleen stofbestendig maar ook bestand tegen waterdruppels gelijk aan 3mm neerslag per minuut."
+    },
+    "44": {
+        "name": "Deepcool FC120 WHITE-3 IN 1 3-Pack",
+        "price": 49.99,
+        "size": 120,
+        "color": "White",
+        "rpm": [
+            500,
+            1800
+        ],
+        "airflow": 61.91,
+        "noise_level": 28,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/2/5/DeepCool_LS520_240mm_waterkoeling@@1852252.jpg",
+        "details": "De DeepCool LS520 premium CPU vloeistofkoeler maximaliseert koelprestaties met weinig geluid dankzij een 240mm radiator, dual FC120 A-RGB PWM fans en een Infinity Mirror Cap design. De vloeistofkoeler is gebaseerd op Deepcool's 4e generatie krachtige waterpomp die de koelprestaties maximaliseert dankzij een verbeterd microkanaalontwerp voor een optimale doorstroming van de koelvloeistof, de krachtige driefasen aandrijfmotor met maximaal 3100 rpm en een dikke massief koperen basis met naadloze overgang. De meegeleverde FC120 fans zorgen voor uitstekende koeling en superieure stilte. Ze hebben een verhoogde statische druk, een geconcentreerde luchtstroom en een dynamische vloeistoflager. Het ontwerp van de infinity spiegelpomp aan de voorkant projecteert twee lichtlussen voor een betoverend visueel effect, terwijl een onafhankelijk roterende logoplaat installatie in elke richting mogelijk maakt. Voor volledig maatwerk wordt een extra blanco plaat meegeleverd voor jouw eigen ontwerp."
+    },
+    "45": {
+        "name": "Lian Li UNI FAN TL LCD 120 3-Pack",
+        "price": null,
+        "size": 120,
+        "color": "Black",
+        "rpm": null,
+        "airflow": 90.1,
+        "noise_level": 33,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/0/Lian_Li_UNI_FAN_TL_LCD120_Reverse_Black_Triple_Pack_case_fan@@1924604_30.jpg",
+        "details": "Breng de verkoeling van je systeem naar het volgende niveau en laat het extra opvallen met de UNI FAN TL LCD 120 Reverse case fan van Lian LI. Door het Reverse Blade ontwerp kan het ook dienst doen als aanzuigende case fan.\r\nDit pakket bestaat uit drie zwarte 120 mm case fans met RGB verlichting en 1,6\" LCD-scherm, gekoppeld aan een controller voor een optimale koeling van je pc en je eigen unieke uitstraling. Case fans uit de UNI FAN TL serie kunnen via Daisy-chain aan elkaar worden gekoppeld. De verlichtingseffecten zijn te synchroniseren met het moederbord via de 5V adresseerbare header.\r\nHet 1.6\" LCD scherm (400 x 400) met IPS display kan gepersonaliseerd worden met GIF-, MP4-, JPG- en PNG-bestanden.\r\nDe meegeleverde controller kan worden aangesloten middels een Power PCIe kabel als voeding en een 9-pin USB header op het moederbord. Het ondersteunt 16 TL en tot 6 TL LCD fans gelijktijdig en werkt het beste met de gratis te verkrijgen software \"L-Connect 3\" van Lian Li."
+    },
+    "46": {
+        "name": "ARCTIC P12 PST",
+        "price": 10.49,
+        "size": 120,
+        "color": "White",
+        "rpm": [
+            200,
+            1800
+        ],
+        "airflow": 56.3,
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/2/5/Arctic_P12_Slim_PWM_PST_case_fan@@1856952.jpg",
+        "details": "De Arctic P12 Slim PWM PST 120x120x15 heeft een inbouwdiepte van slechts 15 mm, in tegenstelling tot normale 120 mm case fans met een dikte van 25 mm. Dit maakt het een voorbestemde fan voor Small Form Factor (SFF) constructies. Geschikte schroeven voor montage op een radiator zijn reeds bij de levering inbegrepen. Het ventilatorontwerp van de P12 Slim PWM PST is geoptimaliseerd voor een gerichte luchtstroom en genereert dus een hoge statische druk. De fan maakt - zelfs met verhoogde luchtweerstand - uiterst effici\u00ebnte koeling en goede luchtstroom mogelijk. De P12 Slim PWM PST is daarom bijzonder geschikt voor gebruik op verborgen case inlaten, stoffilters, radiatoren en in het algemeen in kleine cases die weinig ruimte bieden voor vrije luchtstroom vanwege compact geplaatste hardware."
+    },
+    "47": {
+        "name": "Phanteks D30-120 Reversed 3-Pack",
+        "price": 89.99,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            250,
+            2000
+        ],
+        "airflow": 61.5,
+        "noise_level": 31.8,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/4/9/Phanteks_D30_120_PWM_Regular_case_fan@@100042494.jpg",
+        "details": "De zwarte Phanteks D30-120 Regular 3-pack is uitgerust met ge\u00efntegreerde D-RGB verlichting in het frame en de bladen aan alle zijden. Meerdere D30-120 ventilatorframes kunnen aan elkaar worden gekoppeld als \u00e9\u00e9n met brugconnectoren en schroefafdekplaten om kabels te verminderen, wat resulteert in extreem mooie builds.\r\nDe D30-120 combineert eersteklas D-RGB verlichting met 30 mm dikke en aerodynamische ventilatorbladen ge\u00efnspireerd op de ultieme T30 ventilator, waardoor het een echte premium D-RGB ventilator is voor moderne systemen.\r\nDe D30-120 wordt geleverd in twee modellen met luchtstroomrichting, Regular en Reverse. Deze unieke optie maakt de ultieme ventilatorconfiguratie voor elk systeem mogelijk. Deze verpakking bevat 3 zwarte Regular fans."
+    },
+    "48": {
+        "name": "Corsair LL120 3-Pack",
+        "price": 69.98,
+        "size": 120,
+        "color": "White",
+        "rpm": 2200,
+        "airflow": 63,
+        "noise_level": 36,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/t/Corsair_LL120_RGB_LED_PWM_fan___Single_Pack_case_fan@@tl9v6001.jpg",
+        "details": "De Corsair LL120 RGB PWM-fan combineert een uitstekende luchtstroom met een laag geluidsniveau en 16 stralende, onafhankelijke RGB-leds, verdeeld tussen twee afzonderlijke verlichting circuits die de fan en de hub omringen. Koppel deze fan met een bestaande LL120 RGB-kit of Corsair Lighting Node PRO om de verlichting aan te passen in een breed scala aan levendige effecten en patronen. Met behulp van geoptimaliseerde 120 mm ventilatorbladen en PWM-regeling stel je de snelheid van de fan in van 600 RPM tot 1500 RPM voor precieze geluids- en luchtstroom aanpassingen. Gemaakt voor iedereen die op zoek is naar een uitstekende luchtstroom, stille werking en krachtige verlichting, de Corsair LL120 RGB fan laat jouw pc uitblinken! \n\nDe Corsair LL120 RGB-kit en Corsair Lighting Node PRO zijn niet inbegrepen."
+    },
+    "49": {
+        "name": "Corsair iCUE LINK QX140 RGB Starter Kit 2-Pack",
+        "price": 119.99,
+        "size": 140,
+        "color": "Black",
+        "rpm": [
+            400,
+            2000
+        ],
+        "airflow": [
+            12.1,
+            82.5
+        ],
+        "noise_level": null,
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/0/0/Corsair_iCUE_LINK_QX140_RGB_140mm_PWM_Fans_Starter_Kit___Wit_case_fan@@1918600.jpg",
+        "details": "Verlicht je systeem vanuit elke hoek met de CORSAIR iCUE LINK QX140 RGB 140mm PWM Fan Starter Kit. Deze heeft twee ventilatoren \r\nmet elk vier verschillende verlichtingslussen. Met de PWM-regeling stel je de benodigde ventilatorsnelheden tot 1.500 RPM met \r\nondersteuning voor Zero RPM-signalen nauwkeurig in, terwijl een Magnetic Dome-lager zorgt voor minder wrijving, langere levensduur \r\nen minimaal geluid. Al je ventilatoren maken deel uit van het iCUE LINK-ecosysteem. Je sluit ze met \u00e9\u00e9n enkele kabel aan op de \r\nmeegeleverde iCUE LINK-hub, wat resulteert in een strakke set-up met veel minder kabels. iCUE LINK opent nieuwe mogelijkheden voor \r\nverlichting en regeling, waaronder de exclusieve Time Warp-verlichtingsmodus en intelligente ventilatorcurves met ingebouwde \r\ntemperatuursensor."
+    },
+    "50": {
+        "name": "NZXT F120Q",
+        "price": 19.98,
+        "size": 120,
+        "color": "Black",
+        "rpm": [
+            500,
+            1200
+        ],
+        "airflow": [
+            27.77,
+            64
+        ],
+        "noise_level": [
+            16.7,
+            22.5
+        ],
+        "pwm": true,
+        "image": "https://www.alternate.be/p/200x200/0/0/NZXT_F120Q_case_fan@@1842100.jpg",
+        "details": "De zwarte NZXT F120Q Quiet Airflow casefan biedt optimale en stille koelprestaties. Deze ventilator is ontworpen om grote luchtvolumes te koelen en is NZXT CAM-compatibel. De trillingsdempende rubberen hoeken zorgen voor een lager geluidsniveau. Gepatenteerde hydrodynamische glijlagers bieden een levensduur tot 60.000 uur."
+    }
+}

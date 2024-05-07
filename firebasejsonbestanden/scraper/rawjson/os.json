@@ -1,0 +1,392 @@
+{
+  "0": {
+    "name": "Microsoft Windows 11 Home (64-bit)",
+    "price": 124.99,
+    "mode": 64,
+    "max_memory": 128,
+    "image": ""
+  },
+  "1": {
+    "name": "Microsoft Windows 11 Pro (64-bit)",
+    "price": 148.99,
+    "mode": 64,
+    "max_memory": 2048,
+    "image": ""
+  },
+  "2": {
+    "name": "Microsoft Windows 10 Home (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 128,
+    "image": ""
+  },
+  "3": {
+    "name": "Microsoft Windows 11 Home (64-bit)",
+    "price": 119.99,
+    "mode": 64,
+    "max_memory": 128,
+    "image": ""
+  },
+  "4": {
+    "name": "Microsoft Windows 11 Pro (64-bit)",
+    "price": 199,
+    "mode": 64,
+    "max_memory": 2048,
+    "image": ""
+  },
+  "5": {
+    "name": "Microsoft Windows 10 Pro (64-bit)",
+    "price": 207.7,
+    "mode": 64,
+    "max_memory": 2048,
+    "image": ""
+  },
+  "6": {
+    "name": "Microsoft Windows 11 Home (64-bit)",
+    "price": 138.99,
+    "mode": 64,
+    "max_memory": 128,
+    "image": ""
+  },
+  "7": {
+    "name": "Microsoft Windows 11 Pro (64-bit)",
+    "price": 198.99,
+    "mode": 64,
+    "max_memory": 2048,
+    "image": ""
+  },
+  "8": {
+    "name": "Microsoft Windows 10 Pro (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 2048,
+    "image": ""
+  },
+  "9": {
+    "name": "Microsoft Windows 10 Home (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 128,
+    "image": ""
+  },
+  "10": {
+    "name": "Microsoft Windows 10 Pro (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 2048,
+    "image": ""
+  },
+  "11": {
+    "name": "Microsoft Windows 10 Home (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 128,
+    "image": ""
+  },
+  "12": {
+    "name": "Microsoft Windows 7 Home Premium (32/64-bit)",
+    "price": 253.15,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 16,
+    "image": ""
+  },
+  "13": {
+    "name": "Microsoft Windows 10 Pro (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 2048,
+    "image": ""
+  },
+  "14": {
+    "name": "Microsoft Windows 10 Home (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 128,
+    "image": ""
+  },
+  "15": {
+    "name": "Microsoft Windows 7 Professional (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 192,
+    "image": ""
+  },
+  "16": {
+    "name": "Microsoft Windows 10 Pro (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 2048,
+    "image": ""
+  },
+  "17": {
+    "name": "Microsoft Windows 10 Home (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 128,
+    "image": ""
+  },
+  "18": {
+    "name": "Microsoft Windows 10 Home (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 128,
+    "image": ""
+  },
+  "19": {
+    "name": "Microsoft Windows 10 Pro (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 2048,
+    "image": ""
+  },
+  "20": {
+    "name": "Microsoft Windows 10 Home (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 128,
+    "image": ""
+  },
+  "21": {
+    "name": "Microsoft Windows 10 Pro (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "22": {
+    "name": "Microsoft Windows 10 Home (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "23": {
+    "name": "Microsoft Windows 8.1 Pro (64-bit)",
+    "price": 173.01,
+    "mode": 64,
+    "max_memory": 512,
+    "image": ""
+  },
+  "24": {
+    "name": "Microsoft Windows 8 Pro (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "25": {
+    "name": "Microsoft Windows 7 Ultimate SP1 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 192,
+    "image": ""
+  },
+  "26": {
+    "name": "Microsoft Windows 8.1 Pro DE (64-bit)",
+    "price": 188.07,
+    "mode": 64,
+    "max_memory": 512,
+    "image": ""
+  },
+  "27": {
+    "name": "Microsoft Windows 8 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "28": {
+    "name": "Microsoft Windows 7 Home Premium SP1 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "29": {
+    "name": "Microsoft Windows 7 Professional SP1 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 192,
+    "image": ""
+  },
+  "30": {
+    "name": "Microsoft Windows 7 Ultimate SP1 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "31": {
+    "name": "Microsoft Windows 7 Home Premium SP1 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 16,
+    "image": ""
+  },
+  "32": {
+    "name": "Microsoft Windows 7 Home Premium SP1 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "33": {
+    "name": "Microsoft Windows 7 Pro SP1 DE (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 192,
+    "image": ""
+  },
+  "34": {
+    "name": "Microsoft Windows 7 Ultimate (32/64-bit)",
+    "price": null,
+    "mode": [
+      32,
+      64
+    ],
+    "max_memory": 192,
+    "image": ""
+  },
+  "35": {
+    "name": "Microsoft Windows 7 Professional SP1 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "36": {
+    "name": "Microsoft Windows 8 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 128,
+    "image": ""
+  },
+  "37": {
+    "name": "Microsoft Windows 8.1 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 128,
+    "image": ""
+  },
+  "38": {
+    "name": "Microsoft Windows 7 Home Premium SP1 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 16,
+    "image": ""
+  },
+  "39": {
+    "name": "Microsoft Windows 7 Professional SP1 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 192,
+    "image": ""
+  },
+  "40": {
+    "name": "Microsoft Windows 7 Ultimate (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 192,
+    "image": ""
+  },
+  "41": {
+    "name": "Microsoft Windows 7 Ultimate SP1 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "42": {
+    "name": "Microsoft Windows 7 Professional SP1 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "43": {
+    "name": "Microsoft Windows 7 Professional SP1 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "44": {
+    "name": "Microsoft Windows 7 Pro SP1 DE (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 192,
+    "image": ""
+  },
+  "45": {
+    "name": "Microsoft Windows 7 Ultimate SP1 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 192,
+    "image": ""
+  },
+  "46": {
+    "name": "Microsoft Windows 8 (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  },
+  "47": {
+    "name": "Microsoft Windows 7 Home Premium SP1 (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 16,
+    "image": ""
+  },
+  "48": {
+    "name": "Microsoft Windows 8.1 Pro (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 512,
+    "image": ""
+  },
+  "49": {
+    "name": "Microsoft Windows 8 Pro (64-bit)",
+    "price": null,
+    "mode": 64,
+    "max_memory": 512,
+    "image": ""
+  },
+  "50": {
+    "name": "Microsoft Windows 8 Pro (32-bit)",
+    "price": null,
+    "mode": 32,
+    "max_memory": 4,
+    "image": ""
+  }
+}

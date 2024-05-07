@@ -16,8 +16,8 @@ def format_json_with_ids(file_path):
     return formatted_data
 
 # Bestandspad naar het JSON-bestand
-input_file_path = "oldcpu-cooler.json"
-output_file_path = "cpucooler.json"
+input_file_path = "oldos.json"
+output_file_path = "os.json"
 
 # Formateer de JSON-gegevens
 formatted_data = format_json_with_ids(input_file_path)

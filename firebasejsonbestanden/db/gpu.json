@@ -8,7 +8,8 @@
         "boost_clock": 1777,
         "color": "Black",
         "length": 235,
-        "image": "https://www.alternate.be/p/200x200/2/2/MSI_GeForce_RTX_3060_VENTUS_2X_12G_OC_grafische_kaart@@1719422_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/2/2/MSI_GeForce_RTX_3060_VENTUS_2X_12G_OC_grafische_kaart@@1719422_30.jpg",
+        "details": "De MSI GeForce RTX 3060 VENTUS 2X 12G OC is gebaseerd op de NVIDIA GeForce RTX 3060 Chip en beschikt over 12 GB GDDR6 geheugen dat via een 192 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 1807 MHz, het geheugen heeft een snelheid van 15000 MHz."
     },
     "1": {
         "name": "Gigabyte WINDFORCE OC",
@@ -19,7 +20,8 @@
         "boost_clock": 2490,
         "color": "Black",
         "length": 261,
-        "image": "https://www.alternate.be/p/200x200/2/9/GIGABYTE_GeForce_RTX_4070_WINDFORCE_OC_12G_grafische_kaart@@1909392_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/2/9/GIGABYTE_GeForce_RTX_4070_WINDFORCE_OC_12G_grafische_kaart@@1909392_30.jpg",
+        "details": "De GIGABYTE GeForce RTX 4070 WINDFORCE OC 12G is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4070 chip en beschikt over 12 GB GDDR6X geheugen dat via een 192 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 1920 MHz, een boostsnelheid van 2505 MHz en het geheugen heeft een snelheid van 21000 MHz."
     },
     "2": {
         "name": "Asus DUAL OC",
@@ -30,7 +32,8 @@
         "boost_clock": 2535,
         "color": "Black",
         "length": 227,
-        "image": "https://www.alternate.be/p/200x200/3/2/ASUS_Dual_GeForce_RTX_4060_EVO_OC_Edition_8GB_GDDR6_grafische_kaart@@100042123.jpg"
+        "image": "https://www.alternate.be/p/200x200/3/2/ASUS_Dual_GeForce_RTX_4060_EVO_OC_Edition_8GB_GDDR6_grafische_kaart@@100042123.jpg",
+        "details": "De ASUS DUAL GeForce RTX 4060 EVO OC Edition 8GB GDDR6 is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4060 chip en beschikt over 8 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 1830 MHz, een boostsnelheid van 2505 MHz, een boostsnelheid (OC) van 2535 MHz en het geheugen heeft een snelheid van 17000 MHz."
     },
     "3": {
         "name": "Asus ROG STRIX GAMING OC",
@@ -41,7 +44,8 @@
         "boost_clock": 2640,
         "color": "Black",
         "length": 358,
-        "image": "https://www.alternate.be/p/200x200/9/3/ASUS_ROG_Strix_GeForce_RTX_4080_SUPER_16GB_OC_grafische_kaart@@100031739_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/9/3/ASUS_ROG_Strix_GeForce_RTX_4080_SUPER_16GB_OC_grafische_kaart@@100031739_30.jpg",
+        "details": "Gerichte vuurkracht stroomlijnt en verheft de core Windows 11 gaming-ervaring in de ROG Strix G17 G713PI-LL066W. Met een krachtige AMD Ryzen 9 7845HX processor en NVIDIA GeForce RTX 4070 laptop-GPU is alles van gaming tot multitasking snel en vloeiend. Dompel je onder in rijke details op een QHD-paneel met 240 Hz refresh rate. Adaptive-Sync maakt gameplay ultrasoepel, terwijl geavanceerde thermische upgrades je helpen koel te blijven onder druk. Wat je game ook is, je kan je perfecte spel bereiken. Ultrasnelle wifi 6-connectiviteit, 32 GB RAM geheugen en een opslag van 1 TB, versnellen het werken en spelen.\r\n\r\n\nProductspecificaties:\nAMD Ryzen 9 7845HX\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4070\n17\"\n2560 x 1440 \u00a0\u00b7\u00a0 240 Hz\nWindows 11 Home"
     },
     "4": {
         "name": "Gigabyte GAMING OC",
@@ -52,7 +56,8 @@
         "boost_clock": 2565,
         "color": "Black",
         "length": 302,
-        "image": "https://www.alternate.be/p/200x200/6/8/GIGABYTE_Radeon_RX_7800_XT_GAMING_OC_16G_grafische_kaart@@100012986_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/8/GIGABYTE_Radeon_RX_7800_XT_GAMING_OC_16G_grafische_kaart@@100012986_30.jpg",
+        "details": "De GIGABYTE Radeon RX 7800 XT GAMING OC 16G grafische kaart is gebaseerd op de AMD Radeon RX 7800 XT chip en beschikt over 16 GB GDDR6 geheugen dat via een 256 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2565 MHz, een boostsnelheid (gaming) van 2254 MHz en het geheugen heeft een snelheid van 19500 MHz."
     },
     "5": {
         "name": "PNY VCNRTX6000ADA-PB",
@@ -63,7 +68,8 @@
         "boost_clock": 2505,
         "color": "Black / Gold",
         "length": 267,
-        "image": "https://www.alternate.be/p/200x200/1/9/PNY_Quadro_RTX_6000_ADA_48GB_grafische_kaart@@1909191_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/1/9/PNY_Quadro_RTX_6000_ADA_48GB_grafische_kaart@@1909191_30.jpg",
+        "details": "De PNY Quadro RTX 6000 ADA 48GB is gebouwd op de NVIDIA Ada Lovelace-architectuur en combineert 142 RT-cores van de derde generatie, 568 Tensor-cores van de vierde generatie en 18.176 CUDA-cores met 48 GB aan grafisch geheugen met foutcorrectiecode (ECC). Dit alles helpt bij het leveren van de volgende generatie AI-graphics en petaflop-inferentieprestaties voor een ongekende snelheid bij rendering, Al, graphics en compute workloads. De PNY Quadro RTX 6000 ADA 48GB beschikt over 142 RT-cores voor ray tracing-versnelling, 568 Tensor-cores voor AI-versnelling en 48 GB GDDR6 ECC-geheugen met voor grote datasets."
     },
     "6": {
         "name": "ASRock Challenger D",
@@ -74,7 +80,8 @@
         "boost_clock": null,
         "color": "Black",
         "length": 269,
-        "image": "https://www.alternate.be/p/200x200/9/0/ASRock_Radeon_RX_7900_GRE_Challenger_16GB_OC_grafische_kaart@@100038609_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/9/0/ASRock_Radeon_RX_7900_GRE_Challenger_16GB_OC_grafische_kaart@@100038609_30.jpg",
+        "details": "De ASRock Radeon RX 7600 XT Challenger 16GB OC grafische kaart is gebaseerd op de RDNA 3 architectuur en is ontwikkeld voor 1080p prestaties, energiezuinigheid en veeleisend gamen. \r\nMet 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache leveren AMD Radeon RX 7600 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies zoals Radeon image sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de Radeon RX 7600 XT-chip voor hoge IPC-waarden. Ook verbeterde grafische effecten zoals volumetrische verlichting, vervaging en scherptediepte en kortere latenties laten het hart van gamers sneller kloppen."
     },
     "7": {
         "name": "Gigabyte EAGLE",
@@ -85,7 +92,8 @@
         "boost_clock": null,
         "color": "Black",
         "length": 272,
-        "image": "https://www.alternate.be/p/200x200/9/4/GIGABYTE_GeForce_RTX_4060_EAGLE_OC_8G_grafische_kaart@@100001349_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/9/4/GIGABYTE_GeForce_RTX_4060_EAGLE_OC_8G_grafische_kaart@@100001349_30.jpg",
+        "details": "De GIGABYTE GeForce RTX 4060 Ti EAGLE OC 8G is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4060 Ti chip en beschikt over 8 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 2550 MHz en het geheugen heeft een snelheid van 18000 MHz."
     },
     "8": {
         "name": "Gigabyte WINDFORCE OC",
@@ -96,7 +104,8 @@
         "boost_clock": 2625,
         "color": "Black",
         "length": 261,
-        "image": "https://www.alternate.be/p/200x200/5/7/GIGABYTE_GeForce_RTX_4070_Ti_SUPER_WINDFORCE_OC_16G_grafische_kaart@@100034375.jpg"
+        "image": "https://www.alternate.be/p/200x200/5/7/GIGABYTE_GeForce_RTX_4070_Ti_SUPER_WINDFORCE_OC_16G_grafische_kaart@@100034375.jpg",
+        "details": "De GIGABYTE GeForce RTX 4070 Ti SUPER WINDFORCE OC 16G is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4070 Ti SUPER chip en beschikt over 16 GB GDDR6X geheugen dat via een 256 bit brede interface aangesproken wordt. Het geheugen heeft een snelheid van 21000 MHz."
     },
     "9": {
         "name": "MSI VENTUS 2X BLACK OC",
@@ -107,7 +116,8 @@
         "boost_clock": 2505,
         "color": "Black",
         "length": 199,
-        "image": "https://www.alternate.be/p/200x200/6/2/MSI_GeForce_RTX_4060_VENTUS_2X_BLACK_8G_OC_grafische_kaart@@100001326.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/2/MSI_GeForce_RTX_4060_VENTUS_2X_BLACK_8G_OC_grafische_kaart@@100001326.jpg",
+        "details": "De MSI GeForce RTX 4060 VENTUS 2X BLACK 8G OC is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4060 chip en beschikt over 8 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 1830 MHz, een boostsnelheid van 2490 MHz, een boostsnelheid (gaming) van 2505 MHz en het geheugen heeft een snelheid van 17000 MHz."
     },
     "10": {
         "name": "Gigabyte WINDFORCE OC",
@@ -118,7 +128,8 @@
         "boost_clock": 2505,
         "color": "Black",
         "length": 261,
-        "image": "https://www.alternate.be/p/200x200/3/4/GIGABYTE_GeForce_RTX_4070_SUPER_WINDFORCE_OC_12G_grafische_kaart@@100034243.jpg"
+        "image": "https://www.alternate.be/p/200x200/3/4/GIGABYTE_GeForce_RTX_4070_SUPER_WINDFORCE_OC_12G_grafische_kaart@@100034243.jpg",
+        "details": "De GIGABYTE GeForce RTX 4070 SUPER WINDFORCE OC 12G is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4070 SUPER chip en beschikt over 12 GB GDDR6X geheugen dat via een 192 bit brede interface aangesproken wordt. Het geheugen heeft een snelheid van 21000 MHz."
     },
     "11": {
         "name": "Asus DUAL",
@@ -129,7 +140,8 @@
         "boost_clock": 2505,
         "color": "Black",
         "length": 267,
-        "image": "https://www.alternate.be/p/200x200/5/0/ASUS_DUAL_GeForce_RTX_4070_SUPER_EVO_OC_grafische_kaart@@100040505.jpg"
+        "image": "https://www.alternate.be/p/200x200/5/0/ASUS_DUAL_GeForce_RTX_4070_SUPER_EVO_OC_grafische_kaart@@100040505.jpg",
+        "details": "De ASUS DUAL GeForce RTX 4070 SUPER EVO OC Edition 12GB GDDR6X is een high-end grafische kaart met de GeForce RTX 4070 SUPER GPU van NVIDIA.\r\nDe krachtige GeForce RTX 40-serie grafische kaarten is gebaseerd op de NVIDIA Ada-architectuur en biedt nieuwe niveaus van gamingrealisme, snelheid en prestatie-effici\u00ebntie, RTX IO en realistische VR-ervaringen. Andere functies zijn Real-Time Ray Tracing, NVIDIA Ansel, met uitgebreide tools voor het maken van screenshots in games, evenals NVIDIA G-SYNC, G-SYNC HDR, DirectX 12 Ultimate, NVIDIA DLSS 3.. 5, PCI Express Gen 4, NVIDIA FreeStyle, NVIDIA ShadowPlay, NVIDIA Highlights, NVENC Gen 8, AV1 Encoder, Vulkan RT API en OpenGL 4.6.\r\nDe GeForce RTX 4070 SUPER GPU van NVIDIA heeft 7168 CUDA-kernen. Het GDDR6X-geheugen van 12 Gbyte heeft een 192-bits geheugencontroller. Het is voorzien van 3x DisplayPort en 1x HDMI 2.1 aansluiting."
     },
     "12": {
         "name": "NVIDIA Founders Edition",
@@ -140,7 +152,8 @@
         "boost_clock": 2520,
         "color": "Black / Silver",
         "length": 304,
-        "image": "https://www.alternate.be/p/200x200/0/4/ASUS_ROG_Strix_GeForce_RTX_4090_OC_Edition_24GB_grafische_kaart@@1870140.jpg"
+        "image": "https://www.alternate.be/p/200x200/0/4/ASUS_ROG_Strix_GeForce_RTX_4090_OC_Edition_24GB_grafische_kaart@@1870140.jpg",
+        "details": "De ASUS ROG Strix GeForce RTX 4090 OC Edition 24GB brengt een prestatiegericht ontwerp dat de essentie behoudt om elke taak uit te voeren. De Axial-tech fans in een stevig ontwerp zorgen ervoor dat deze scherp uitziende grafische kaart in elke constructie past.\r\n\r\nDe GeForce RTX 4090 levert de topprestaties waar gamers naar verlangen, aangedreven door NVIDIA's Ada Lovelace RTX-architectuur. Het is gebouwd met verbeterde 3e generatie RT Cores en 4e generatie Tensor Cores, nieuwe streaming multiprocessors en supersnel GDDR6X-geheugen voor een geweldige game-ervaring."
     },
     "13": {
         "name": "XFX GTR XXX",
@@ -151,7 +164,8 @@
         "boost_clock": 1386,
         "color": "Black / Red",
         "length": 270,
-        "image": ""
+        "image": "https://www.alternate.be/p/200x200/6/5/XFX_Radeon_RX_7800_XT_SPEEDSTER_MERC319_BLACK_Gaming_grafische_kaart@@100013456.jpg",
+        "details": "De XFX Radeon RX 7800 XT SPEEDSTER MERC319 BLACK Gaming grafische kaart is gebaseerd op de RDNA 3-architectuur en ontworpen voor 1440p prestaties, energiezuinigheid en veeleisend gamen. Met 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7800 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de AMD Radeon RX 7800 XT chip van de SAPPHIRE voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, evenals kortere latenties doen het hart van gamers sneller kloppen."
     },
     "14": {
         "name": "Gigabyte AERO OC",
@@ -162,7 +176,8 @@
         "boost_clock": null,
         "color": "White",
         "length": 281,
-        "image": "https://www.alternate.be/p/200x200/2/5/GIGABYTE_GeForce_RTX_4060_AERO_OC_8G_grafische_kaart@@100001352_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/2/5/GIGABYTE_GeForce_RTX_4060_AERO_OC_8G_grafische_kaart@@100001352_30.jpg",
+        "details": "De GIGABYTE GeForce RTX 4060 AERO OC 8G is gebaseerd op de NVIDIA GeForce RTX 4060 Chip en beschikt over 8 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. Het geheugen heeft een snelheid van 17000 MHz."
     },
     "15": {
         "name": "Sapphire PULSE",
@@ -173,7 +188,8 @@
         "boost_clock": null,
         "color": "Black / Red",
         "length": 280,
-        "image": "https://www.alternate.be/p/200x200/6/3/SAPPHIRE_Radeon_RX_7800_XT_PULSE_GAMING_16G_grafische_kaart@@100012336.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/3/SAPPHIRE_Radeon_RX_7800_XT_PULSE_GAMING_16G_grafische_kaart@@100012336.jpg",
+        "details": "De SAPPHIRE Radeon RX 7800 XT PULSE GAMING 16G grafische kaart is gebaseerd op de RDNA 3-architectuur en ontworpen voor 1440p prestaties, energiezuinigheid en veeleisend gamen. Met 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7800 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de AMD Radeon RX 7800 XT chip van de SAPPHIRE voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, evenals kortere latenties doen het hart van gamers sneller kloppen."
     },
     "16": {
         "name": "XFX Speedster SWFT 309",
@@ -184,7 +200,8 @@
         "boost_clock": 2581,
         "color": "Black",
         "length": 304,
-        "image": "https://www.alternate.be/p/200x200/4/9/XFX_Radeon_RX_6750_XT_SPEEDSTER_QICK319_Core_grafische_kaart@@100010194.jpg"
+        "image": "https://www.alternate.be/p/200x200/4/9/XFX_Radeon_RX_6750_XT_SPEEDSTER_QICK319_Core_grafische_kaart@@100010194.jpg",
+        "details": "De XFX Radeon RX 6750 XT SPEEDSTER QICK319 Core grafische kaart is gebaseerd op de RDNA 2-architectuur en ontworpen voor 4K- en 1440p-prestaties, energiezuinigheid en veeleisende gamers. Met 12GB GDDR6 videogeheugen, ondersteuning voor PCIe 4.0 standaard en functies zoals Infinity Cache, AMD RX 6750 XT GPU's leveren een soepele game-ervaring met geweldige beelden met behulp van RDNA2 technologie. Met wel 40 nieuw ontwikkelde 7nm verwerkingseenheden en functies zoals Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de Radeon RX 6750 XT chip voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische belichting, onscherpte en scherptediepte en kortere latenties doen het hart van gamers sneller kloppen."
     },
     "17": {
         "name": "Asus DUAL OC",
@@ -195,7 +212,8 @@
         "boost_clock": 2550,
         "color": "White",
         "length": 267,
-        "image": "https://www.alternate.be/p/200x200/7/0/ASUS_DUAL_GeForce_RTX_4070_SUPER_EVO_grafische_kaart@@100040507.jpg"
+        "image": "https://www.alternate.be/p/200x200/7/0/ASUS_DUAL_GeForce_RTX_4070_SUPER_EVO_grafische_kaart@@100040507.jpg",
+        "details": "De ASUS DUAL GeForce RTX 4070 SUPER EVO is een high-end grafische kaart met de GeForce RTX 4070 SUPER GPU van NVIDIA.\r\nDe krachtige GeForce RTX 40-serie grafische kaarten is gebaseerd op de NVIDIA Ada-architectuur en biedt nieuwe niveaus van gamingrealisme, snelheid en prestatie-effici\u00ebntie, RTX IO en realistische VR-ervaringen. Andere functies zijn Real-Time Ray Tracing, NVIDIA Ansel, met uitgebreide tools voor het maken van screenshots in games, evenals NVIDIA G-SYNC, G-SYNC HDR, DirectX 12 Ultimate, NVIDIA DLSS 3.. 5, PCI Express Gen 4, NVIDIA FreeStyle, NVIDIA ShadowPlay, NVIDIA Highlights, NVENC Gen 8, AV1 Encoder, Vulkan RT API en OpenGL 4.6.\r\nDe GPU van de GeForce RTX 4070 SUPER DUAL EVO heeft 7168 CUDA-kernen. Het GDDR6X-geheugen van 12 Gbyte heeft een 192-bits geheugencontroller. De grafische kaart is voorzien van 3x DisplayPort en 1x HDMI 2.1 aansluiting."
     },
     "18": {
         "name": "XFX Speedster MERC 310 Black Edition",
@@ -206,7 +224,8 @@
         "boost_clock": 2615,
         "color": "Black / Silver",
         "length": 344,
-        "image": "https://www.alternate.be/p/200x200/6/1/XFX_Radeon_RX_7900_XTX_SPEEDSTER_MERC_310_Black_Edition_grafische_kaart@@1906116.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/1/XFX_Radeon_RX_7900_XTX_SPEEDSTER_MERC_310_Black_Edition_grafische_kaart@@1906116.jpg",
+        "details": "De XFX Radeon RX 7900 XTX SPEEDSTER MERC 310 Black Edition Grafische kaart is gebaseerd op RDNA 3 architectuur en ontworpen voor 4K en 1440p prestaties, energie-effici\u00ebntie en veeleisende gaming. Met 24GB GDDR6-videogeheugen, ondersteuning voor PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7900 XTX GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de chip van de XFX Radeon RX 7900 XTX SPEEDSTER MERC 310 Black Edition voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, en kortere latenties laten het hart van gamers sneller kloppen."
     },
     "19": {
         "name": "MSI RTX 3060 Ventus 3X 12G OC",
@@ -217,7 +236,8 @@
         "boost_clock": 1807,
         "color": "Black",
         "length": 316,
-        "image": "https://www.alternate.be/p/200x200/2/2/MSI_GeForce_RTX_3060_VENTUS_2X_12G_OC_grafische_kaart@@1719422_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/2/2/MSI_GeForce_RTX_3060_VENTUS_2X_12G_OC_grafische_kaart@@1719422_30.jpg",
+        "details": "De MSI GeForce RTX 3060 VENTUS 2X 12G OC is gebaseerd op de NVIDIA GeForce RTX 3060 Chip en beschikt over 12 GB GDDR6 geheugen dat via een 192 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 1807 MHz, het geheugen heeft een snelheid van 15000 MHz."
     },
     "20": {
         "name": "Asus TUF GAMING",
@@ -228,7 +248,8 @@
         "boost_clock": 2640,
         "color": "Black",
         "length": 305,
-        "image": "https://www.alternate.be/p/200x200/4/5/ASUS_TUF_Gaming_GeForce_RTX_4070_Ti_SUPER_OC_grafische_kaart@@100031754_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/4/5/ASUS_TUF_Gaming_GeForce_RTX_4070_Ti_SUPER_OC_grafische_kaart@@100031754_30.jpg",
+        "details": "De ASUS TUF Gaming GeForce RTX 4070 Ti SUPER OC is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4070 Ti SUPER chip en beschikt over 16 GB GDDR6X geheugen dat via een 256 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2640 MHz, een boostsnelheid (OC) van 2670 MHz en het geheugen heeft een snelheid van 21000 MHz."
     },
     "21": {
         "name": "Asus ROG STRIX GAMING OC",
@@ -239,7 +260,8 @@
         "boost_clock": 2640,
         "color": "White",
         "length": 358,
-        "image": "https://www.alternate.be/p/200x200/4/1/ASUS_ROG_Strix_G17__G713PI_LL066W__17_3__gaming_laptop@@1907014_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/4/1/ASUS_ROG_Strix_G17__G713PI_LL066W__17_3__gaming_laptop@@1907014_30.jpg",
+        "details": "Gerichte vuurkracht stroomlijnt en verheft de core Windows 11 gaming-ervaring in de ROG Strix G17 G713PI-LL066W. Met een krachtige AMD Ryzen 9 7845HX processor en NVIDIA GeForce RTX 4070 laptop-GPU is alles van gaming tot multitasking snel en vloeiend. Dompel je onder in rijke details op een QHD-paneel met 240 Hz refresh rate. Adaptive-Sync maakt gameplay ultrasoepel, terwijl geavanceerde thermische upgrades je helpen koel te blijven onder druk. Wat je game ook is, je kan je perfecte spel bereiken. Ultrasnelle wifi 6-connectiviteit, 32 GB RAM geheugen en een opslag van 1 TB, versnellen het werken en spelen.\r\n\r\n\nProductspecificaties:\nAMD Ryzen 9 7845HX\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4070\n17\"\n2560 x 1440 \u00a0\u00b7\u00a0 240 Hz\nWindows 11 Home"
     },
     "22": {
         "name": "Asus TUF GAMING OC",
@@ -250,7 +272,8 @@
         "boost_clock": 2760,
         "color": "Black",
         "length": 305,
-        "image": "https://www.alternate.be/p/200x200/4/5/ASUS_TUF_Gaming_GeForce_RTX_4070_Ti_SUPER_OC_grafische_kaart@@100031754_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/4/5/ASUS_TUF_Gaming_GeForce_RTX_4070_Ti_SUPER_OC_grafische_kaart@@100031754_30.jpg",
+        "details": "De ASUS TUF Gaming GeForce RTX 4070 Ti SUPER OC is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4070 Ti SUPER chip en beschikt over 16 GB GDDR6X geheugen dat via een 256 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2640 MHz, een boostsnelheid (OC) van 2670 MHz en het geheugen heeft een snelheid van 21000 MHz."
     },
     "23": {
         "name": "PowerColor Fighter",
@@ -261,7 +284,8 @@
         "boost_clock": 2491,
         "color": "Black",
         "length": 200,
-        "image": "https://www.alternate.be/p/200x200/6/2/PowerColor_Fighter_Radeon_RX_7700_XT_12G_grafische_kaart@@1921826_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/2/PowerColor_Fighter_Radeon_RX_7700_XT_12G_grafische_kaart@@1921826_30.jpg",
+        "details": "De PowerColor Fighter Radeon RX 7700 XT 12G grafische kaart is gebaseerd op de AMD Radeon RX 7700 XT chip en beschikt over 12 GB GDDR6 geheugen dat via een 192 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 2226 MHz en een boostsnelheid van 2584 MHz en het geheugen heeft een snelheid van 18000 MHz."
     },
     "24": {
         "name": "Asus ROG Matrix Platinum",
@@ -272,7 +296,8 @@
         "boost_clock": 2700,
         "color": "Black / Silver",
         "length": 286,
-        "image": "https://www.alternate.be/p/200x200/0/4/ASUS_ROG_Strix_GeForce_RTX_4090_OC_Edition_24GB_grafische_kaart@@1870140.jpg"
+        "image": "https://www.alternate.be/p/200x200/0/4/ASUS_ROG_Strix_GeForce_RTX_4090_OC_Edition_24GB_grafische_kaart@@1870140.jpg",
+        "details": "De ASUS ROG Strix GeForce RTX 4090 OC Edition 24GB brengt een prestatiegericht ontwerp dat de essentie behoudt om elke taak uit te voeren. De Axial-tech fans in een stevig ontwerp zorgen ervoor dat deze scherp uitziende grafische kaart in elke constructie past.\r\n\r\nDe GeForce RTX 4090 levert de topprestaties waar gamers naar verlangen, aangedreven door NVIDIA's Ada Lovelace RTX-architectuur. Het is gebouwd met verbeterde 3e generatie RT Cores en 4e generatie Tensor Cores, nieuwe streaming multiprocessors en supersnel GDDR6X-geheugen voor een geweldige game-ervaring."
     },
     "25": {
         "name": "Gigabyte WINDFORCE OC",
@@ -283,7 +308,8 @@
         "boost_clock": null,
         "color": "Black",
         "length": 192,
-        "image": "https://www.alternate.be/p/200x200/5/8/GIGABYTE_GeForce_RTX_4060_Ti_WINDFORCE_OC_8G_grafische_kaart@@100010185.jpg"
+        "image": "https://www.alternate.be/p/200x200/5/8/GIGABYTE_GeForce_RTX_4060_Ti_WINDFORCE_OC_8G_grafische_kaart@@100010185.jpg",
+        "details": "De GIGABYTE GeForce RTX 4060 Ti WINDFORCE OC 8G is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4060 Ti chip en beschikt over 8 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 2550 MHz en het geheugen heeft een snelheid van 18000 MHz. De grafische kaart ondersteunt DLSS 3 en is voorzien van twee HDMI en twee DisplayPort aansluitingen."
     },
     "26": {
         "name": "Gigabyte GAMING OC",
@@ -294,7 +320,8 @@
         "boost_clock": null,
         "color": "Black",
         "length": 340,
-        "image": "https://www.alternate.be/p/200x200/4/5/GIGABYTE_GeForce_RTX_4090_GAMING_OC_24G_grafische_kaart@@1869454.jpg"
+        "image": "https://www.alternate.be/p/200x200/4/5/GIGABYTE_GeForce_RTX_4090_GAMING_OC_24G_grafische_kaart@@1869454.jpg",
+        "details": "De GIGABYTE GeForce RTX 4090 GAMING OC 24G brengt een prestatiegericht ontwerp dat de essentie behoudt om elke taak uit te voeren. De drievoudige WINDFORCE ventilatoren in een stevig ontwerp zorgen ervoor dat deze scherp uitziende grafische kaart in elke constructie past.\r\n\r\nDe GeForce RTX 4090 levert de topprestaties waar gamers naar verlangen, aangedreven door NVIDIA's Ada Lovelace RTX-architectuur. Het is gebouwd met verbeterde 3e generatie RT Cores en 4e generatie Tensor Cores, nieuwe streaming multiprocessors en supersnel GDDR6X-geheugen voor een geweldige game-ervaring."
     },
     "27": {
         "name": "Asus TUF GAMING",
@@ -305,7 +332,8 @@
         "boost_clock": 2580,
         "color": "Black",
         "length": 348,
-        "image": "https://www.alternate.be/p/200x200/3/4/ASUS_TUF_Gaming_GeForce_RTX_4080_SUPER_16GB_OC_grafische_kaart@@100031743.jpg"
+        "image": "https://www.alternate.be/p/200x200/3/4/ASUS_TUF_Gaming_GeForce_RTX_4080_SUPER_16GB_OC_grafische_kaart@@100031743.jpg",
+        "details": "De ASUS TUF Gaming GeForce RTX 4080 SUPER 16GB OC is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4080 SUPER chip en beschikt over 16 GB GDDR6X geheugen dat via een 256 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2610 MHz, een boostsnelheid (gaming) van 2640 MHz en het geheugen heeft een snelheid van 23000 MHz."
     },
     "28": {
         "name": "Asus DUAL OC",
@@ -316,7 +344,8 @@
         "boost_clock": 2550,
         "color": "Black",
         "length": 267,
-        "image": "https://www.alternate.be/p/200x200/7/0/ASUS_DUAL_GeForce_RTX_4070_SUPER_EVO_grafische_kaart@@100040507.jpg"
+        "image": "https://www.alternate.be/p/200x200/7/0/ASUS_DUAL_GeForce_RTX_4070_SUPER_EVO_grafische_kaart@@100040507.jpg",
+        "details": "De ASUS DUAL GeForce RTX 4070 SUPER EVO is een high-end grafische kaart met de GeForce RTX 4070 SUPER GPU van NVIDIA.\r\nDe krachtige GeForce RTX 40-serie grafische kaarten is gebaseerd op de NVIDIA Ada-architectuur en biedt nieuwe niveaus van gamingrealisme, snelheid en prestatie-effici\u00ebntie, RTX IO en realistische VR-ervaringen. Andere functies zijn Real-Time Ray Tracing, NVIDIA Ansel, met uitgebreide tools voor het maken van screenshots in games, evenals NVIDIA G-SYNC, G-SYNC HDR, DirectX 12 Ultimate, NVIDIA DLSS 3.. 5, PCI Express Gen 4, NVIDIA FreeStyle, NVIDIA ShadowPlay, NVIDIA Highlights, NVENC Gen 8, AV1 Encoder, Vulkan RT API en OpenGL 4.6.\r\nDe GPU van de GeForce RTX 4070 SUPER DUAL EVO heeft 7168 CUDA-kernen. Het GDDR6X-geheugen van 12 Gbyte heeft een 192-bits geheugencontroller. De grafische kaart is voorzien van 3x DisplayPort en 1x HDMI 2.1 aansluiting."
     },
     "29": {
         "name": "ASRock Radeon RX6700XT CLD 12G",
@@ -327,7 +356,8 @@
         "boost_clock": 2581,
         "color": "Black",
         "length": 269,
-        "image": ""
+        "image": "",
+        "details": ""
     },
     "30": {
         "name": "XFX Speedster MERC 310 Black Edition",
@@ -338,7 +368,8 @@
         "boost_clock": 2560,
         "color": "Black / Silver",
         "length": 344,
-        "image": "https://www.alternate.be/p/200x200/6/1/XFX_Radeon_RX_7900_XTX_SPEEDSTER_MERC_310_Black_Edition_grafische_kaart@@1906116.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/1/XFX_Radeon_RX_7900_XTX_SPEEDSTER_MERC_310_Black_Edition_grafische_kaart@@1906116.jpg",
+        "details": "De XFX Radeon RX 7900 XTX SPEEDSTER MERC 310 Black Edition Grafische kaart is gebaseerd op RDNA 3 architectuur en ontworpen voor 4K en 1440p prestaties, energie-effici\u00ebntie en veeleisende gaming. Met 24GB GDDR6-videogeheugen, ondersteuning voor PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7900 XTX GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de chip van de XFX Radeon RX 7900 XTX SPEEDSTER MERC 310 Black Edition voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, en kortere latenties laten het hart van gamers sneller kloppen."
     },
     "31": {
         "name": "Asus DUAL OC",
@@ -349,7 +380,8 @@
         "boost_clock": 2550,
         "color": "Black",
         "length": 267,
-        "image": "https://www.alternate.be/p/200x200/7/0/ASUS_DUAL_GeForce_RTX_4070_SUPER_EVO_grafische_kaart@@100040507.jpg"
+        "image": "https://www.alternate.be/p/200x200/7/0/ASUS_DUAL_GeForce_RTX_4070_SUPER_EVO_grafische_kaart@@100040507.jpg",
+        "details": "De ASUS DUAL GeForce RTX 4070 SUPER EVO is een high-end grafische kaart met de GeForce RTX 4070 SUPER GPU van NVIDIA.\r\nDe krachtige GeForce RTX 40-serie grafische kaarten is gebaseerd op de NVIDIA Ada-architectuur en biedt nieuwe niveaus van gamingrealisme, snelheid en prestatie-effici\u00ebntie, RTX IO en realistische VR-ervaringen. Andere functies zijn Real-Time Ray Tracing, NVIDIA Ansel, met uitgebreide tools voor het maken van screenshots in games, evenals NVIDIA G-SYNC, G-SYNC HDR, DirectX 12 Ultimate, NVIDIA DLSS 3.. 5, PCI Express Gen 4, NVIDIA FreeStyle, NVIDIA ShadowPlay, NVIDIA Highlights, NVENC Gen 8, AV1 Encoder, Vulkan RT API en OpenGL 4.6.\r\nDe GPU van de GeForce RTX 4070 SUPER DUAL EVO heeft 7168 CUDA-kernen. Het GDDR6X-geheugen van 12 Gbyte heeft een 192-bits geheugencontroller. De grafische kaart is voorzien van 3x DisplayPort en 1x HDMI 2.1 aansluiting."
     },
     "32": {
         "name": "Sapphire PURE",
@@ -360,7 +392,8 @@
         "boost_clock": 2475,
         "color": "White",
         "length": 320,
-        "image": "https://www.alternate.be/p/200x200/6/3/SAPPHIRE_Radeon_RX_7800_XT_PULSE_GAMING_16G_grafische_kaart@@100012336.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/3/SAPPHIRE_Radeon_RX_7800_XT_PULSE_GAMING_16G_grafische_kaart@@100012336.jpg",
+        "details": "De SAPPHIRE Radeon RX 7800 XT PULSE GAMING 16G grafische kaart is gebaseerd op de RDNA 3-architectuur en ontworpen voor 1440p prestaties, energiezuinigheid en veeleisend gamen. Met 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7800 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de AMD Radeon RX 7800 XT chip van de SAPPHIRE voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, evenals kortere latenties doen het hart van gamers sneller kloppen."
     },
     "33": {
         "name": "Sapphire PULSE",
@@ -371,7 +404,8 @@
         "boost_clock": 2450,
         "color": "Black / Red",
         "length": 313,
-        "image": "https://www.alternate.be/p/200x200/0/3/SAPPHIRE_PULSE_AMD_Radeon_RX_7900_XT_grafische_kaart@@1888730.jpg"
+        "image": "https://www.alternate.be/p/200x200/0/3/SAPPHIRE_PULSE_AMD_Radeon_RX_7900_XT_grafische_kaart@@1888730.jpg",
+        "details": "De SAPPHIRE PULSE AMD Radeon RX 7900 XT is gebaseerd op RDNA 3 architectuur en ontworpen voor 4K en 1440p prestaties, energie-effici\u00ebntie en veeleisende gaming. Met 20GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7900 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de Radeon RX 7900 XT PULSE 20GB chip van de SAPPHIRE voor hoge IPC-scores. Verbeterde grafische effecten van de SAPPHIRE Radeon RX 7900 XT PULSE 20GB, zoals volumetrische verlichting, vervaging en scherptediepte, alsmede kortere latenties doen het hart van gamers sneller kloppen."
     },
     "34": {
         "name": "Gigabyte EAGLE",
@@ -382,7 +416,8 @@
         "boost_clock": 2491,
         "color": "Black / Silver",
         "length": 282,
-        "image": "https://www.alternate.be/p/200x200/9/2/GIGABYTE_Radeon_RX_6600_EAGLE_8G_grafische_kaart@@1790029_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/9/2/GIGABYTE_Radeon_RX_6600_EAGLE_8G_grafische_kaart@@1790029_30.jpg",
+        "details": "De Radeon RX 6600 EAGLE 8G van GIGABYTE is gebaseerd op de AMD Radeon RX 6600 Chip en beschikt over 8 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid (gaming) van 2044 MHz, een boostsnelheid van 2491 MHz en geheugen met een snelheid van 14000 MHz."
     },
     "35": {
         "name": "XFX Speedster SWFT 319",
@@ -393,7 +428,8 @@
         "boost_clock": 2105,
         "color": "Black",
         "length": 340,
-        "image": "https://www.alternate.be/p/200x200/6/5/XFX_Radeon_RX_7800_XT_SPEEDSTER_MERC319_BLACK_Gaming_grafische_kaart@@100013456.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/5/XFX_Radeon_RX_7800_XT_SPEEDSTER_MERC319_BLACK_Gaming_grafische_kaart@@100013456.jpg",
+        "details": "De XFX Radeon RX 7800 XT SPEEDSTER MERC319 BLACK Gaming grafische kaart is gebaseerd op de RDNA 3-architectuur en ontworpen voor 1440p prestaties, energiezuinigheid en veeleisend gamen. Met 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7800 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de AMD Radeon RX 7800 XT chip van de SAPPHIRE voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, evenals kortere latenties doen het hart van gamers sneller kloppen."
     },
     "36": {
         "name": "NVIDIA Founders Edition",
@@ -404,7 +440,8 @@
         "boost_clock": 2480,
         "color": "Black / Silver",
         "length": 244,
-        "image": "https://www.alternate.be/p/200x200/6/0/ASUS_DUAL_GeForce_RTX_4070_OC_White_Edition_12GB_grafische_kaart@@1911606.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/0/ASUS_DUAL_GeForce_RTX_4070_OC_White_Edition_12GB_grafische_kaart@@1911606.jpg",
+        "details": "De ASUS DUAL GeForce RTX 4070 SUPER EVO OC Edition 12GB GDDR6X is een high-end grafische kaart met de GeForce RTX 4070 SUPER GPU van NVIDIA.\r\nDe krachtige GeForce RTX 40-serie grafische kaarten is gebaseerd op de NVIDIA Ada-architectuur en biedt nieuwe niveaus van gamingrealisme, snelheid en prestatie-effici\u00ebntie, RTX IO en realistische VR-ervaringen. Andere functies zijn Real-Time Ray Tracing, NVIDIA Ansel, met uitgebreide tools voor het maken van screenshots in games, evenals NVIDIA G-SYNC, G-SYNC HDR, DirectX 12 Ultimate, NVIDIA DLSS 3.. 5, PCI Express Gen 4, NVIDIA FreeStyle, NVIDIA ShadowPlay, NVIDIA Highlights, NVENC Gen 8, AV1 Encoder, Vulkan RT API en OpenGL 4.6.\r\nDe GeForce RTX 4070 SUPER GPU van NVIDIA heeft 7168 CUDA-kernen. Het GDDR6X-geheugen van 12 Gbyte heeft een 192-bits geheugencontroller. Het is voorzien van 3x DisplayPort en 1x HDMI 2.1 aansluiting."
     },
     "37": {
         "name": "MSI VENTUS 2X BLACK OC",
@@ -415,7 +452,8 @@
         "boost_clock": 2625,
         "color": "Black",
         "length": 199,
-        "image": "https://www.alternate.be/p/200x200/4/7/MSI_GeForce_RTX_4060_Ti_VENTUS_2X_BLACK_8G_OC_grafische_kaart@@1916074.jpg"
+        "image": "https://www.alternate.be/p/200x200/4/7/MSI_GeForce_RTX_4060_Ti_VENTUS_2X_BLACK_8G_OC_grafische_kaart@@1916074.jpg",
+        "details": "De MSI GeForce RTX 4060 Ti VENTUS 2X BLACK 8G OC is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4060 Ti chip en beschikt over 8 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2565 MHz, een boostsnelheid (OC) van 2580 MHz en het geheugen heeft een snelheid van 18000 MHz."
     },
     "38": {
         "name": "Asus Dual GeForce RTX 3060 V2 OC Edition",
@@ -426,7 +464,8 @@
         "boost_clock": 1867,
         "color": "Black",
         "length": 200,
-        "image": "https://www.alternate.be/p/200x200/6/9/ASUS_DUAL_GeForce_RTX_3060_OC_V2_grafische_kaart@@1756796_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/9/ASUS_DUAL_GeForce_RTX_3060_OC_V2_grafische_kaart@@1756796_30.jpg",
+        "details": "De ASUS DUAL GeForce RTX 3060 OC V2 is een grafische kaart gebaseerd op de NVIDIA GeForce RTX 3060 Chip en beschikt over 12 GB GDDR6 geheugen dat via een 192 bit brede interface aangesproken wordt. De grafische kaart heeft een boostsnelheid (gaming) van 1837 MHz, een boostsnelheid (OC) van 1867 MHz en het geheugen heeft een snelheid van 15000 MHz."
     },
     "39": {
         "name": "MSI VENTUS 3X OC",
@@ -437,7 +476,8 @@
         "boost_clock": null,
         "color": "Black",
         "length": 322,
-        "image": "https://www.alternate.be/p/200x200/1/4/MSI_GeForce_RTX_4080_SUPER_16G_VENTUS_3X_OC_grafische_kaart@@100031941.jpg"
+        "image": "https://www.alternate.be/p/200x200/1/4/MSI_GeForce_RTX_4080_SUPER_16G_VENTUS_3X_OC_grafische_kaart@@100031941.jpg",
+        "details": "De MSI GeForce RTX 4080 SUPER 16G VENTUS 3X OC is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4080 SUPER chip en beschikt over 16 GB GDDR6X geheugen dat via een 256 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2580 MHz, een boostsnelheid (gaming) van 2595 MHz en het geheugen heeft een snelheid van 23000 MHz."
     },
     "40": {
         "name": "Asus DUAL OC",
@@ -448,7 +488,8 @@
         "boost_clock": 1867,
         "color": "White",
         "length": 200,
-        "image": "https://www.alternate.be/p/200x200/6/9/ASUS_DUAL_GeForce_RTX_3060_OC_V2_grafische_kaart@@1756796_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/9/ASUS_DUAL_GeForce_RTX_3060_OC_V2_grafische_kaart@@1756796_30.jpg",
+        "details": "De ASUS DUAL GeForce RTX 3060 OC V2 is een grafische kaart gebaseerd op de NVIDIA GeForce RTX 3060 Chip en beschikt over 12 GB GDDR6 geheugen dat via een 192 bit brede interface aangesproken wordt. De grafische kaart heeft een boostsnelheid (gaming) van 1837 MHz, een boostsnelheid (OC) van 1867 MHz en het geheugen heeft een snelheid van 15000 MHz."
     },
     "41": {
         "name": "Sapphire NITRO+",
@@ -459,7 +500,8 @@
         "boost_clock": 2680,
         "color": "Silver / Black",
         "length": 320,
-        "image": "https://www.alternate.be/p/200x200/2/3/SAPPHIRE_NITRO__AMD_Radeon_RX_7900_XT_Vapor_X_20GB_grafische_kaart@@1888732.jpg"
+        "image": "https://www.alternate.be/p/200x200/2/3/SAPPHIRE_NITRO__AMD_Radeon_RX_7900_XT_Vapor_X_20GB_grafische_kaart@@1888732.jpg",
+        "details": "De SAPPHIRE NITRO+ AMD Radeon RX 7900 XT Vapor-X 20GB is gebaseerd op RDNA 3 architectuur en ontworpen voor 4K en 1440p prestaties, energie-effici\u00ebntie en veeleisende gaming. Met 20 GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7900 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de Radeon RX 7900 XT NITRO+ Vapor-X 20GB chip van SAPPHIRE voor hoge IPC-scores. Verbeterde grafische effecten van de SAPPHIRE Radeon RX 7900 XT NITRO+ Vapor-X 20GB, zoals volumetrische verlichting, vervaging en scherptediepte, alsmede kortere latenties doen het hart van gamers sneller kloppen."
     },
     "42": {
         "name": "Gigabyte WINDFORCE OC",
@@ -470,7 +512,8 @@
         "boost_clock": 2625,
         "color": "Black / Silver",
         "length": 261,
-        "image": "https://www.alternate.be/p/200x200/5/7/GIGABYTE_GeForce_RTX_4070_Ti_SUPER_WINDFORCE_OC_16G_grafische_kaart@@100034375.jpg"
+        "image": "https://www.alternate.be/p/200x200/5/7/GIGABYTE_GeForce_RTX_4070_Ti_SUPER_WINDFORCE_OC_16G_grafische_kaart@@100034375.jpg",
+        "details": "De GIGABYTE GeForce RTX 4070 Ti SUPER WINDFORCE OC 16G is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4070 Ti SUPER chip en beschikt over 16 GB GDDR6X geheugen dat via een 256 bit brede interface aangesproken wordt. Het geheugen heeft een snelheid van 21000 MHz."
     },
     "43": {
         "name": "Gigabyte GAMING OC",
@@ -481,7 +524,8 @@
         "boost_clock": 2599,
         "color": "Black",
         "length": 302,
-        "image": "https://www.alternate.be/p/200x200/2/9/GIGABYTE_Radeon_RX_7700_XT_GAMING_OC_12G_grafische_kaart@@100012992_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/2/9/GIGABYTE_Radeon_RX_7700_XT_GAMING_OC_12G_grafische_kaart@@100012992_30.jpg",
+        "details": "De GIGABYTE Radeon RX 7700 XT GAMING OC 12G grafische kaart is gebaseerd op de AMD Radeon RX 7700 XT chip en beschikt over 12 GB GDDR6 geheugen dat via een 192 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2599 MHz, boostsnelheid (gaming) van 2276 MHz en het geheugen heeft een snelheid van 18000 MHz."
     },
     "44": {
         "name": "Asus TUF GAMING OC",
@@ -492,7 +536,8 @@
         "boost_clock": 2595,
         "color": "Black",
         "length": 348,
-        "image": "https://www.alternate.be/p/200x200/0/3/ASUS_TUF_Gaming_GeForce_RTX_4090_24GB_OG_OC_grafische_kaart@@1918830.jpg"
+        "image": "https://www.alternate.be/p/200x200/0/3/ASUS_TUF_Gaming_GeForce_RTX_4090_24GB_OG_OC_grafische_kaart@@1918830.jpg",
+        "details": "De ASUS GeForce RTX 4090 TUF GAMING OG OC Edition is een high-end videokaart aangedreven door NVIDIA's GeForce RTX 4090 GPU. De krachtige GeForce RTX 40-serie videokaarten is gebaseerd op de NVIDIA Ada-architectuur en levert nieuwe niveaus van gamingrealisme, snelheid en energiezuinigheid, RTX IO en realistische VR-ervaringen. Andere functies zijn Real-Time Ray Tracing, NVIDIA Ansel, met uitgebreide tools voor het maken van schermafbeeldingen in games, evenals NVIDIA G-SYNC, G-SYNC HDR, DirectX 12 Ultimate, NVIDIA DLSS 3. 0, PCI Express Gen 4, NVIDIA FreeStyle, NVIDIA ShadowPlay, NVIDIA Highlights, NVENC Gen 8, AV1 Encoder, Vulkan RT API en OpenGL 4.6. De GPU op de ASUS GeForce RTX 4090 TUF GAMING OC OG Edition heeft 16384 CUDA-cores. Het 24 Gbyte GDDR6X geheugen heeft een 384-bit geheugencontroller en is verbonden met een bandbreedte van 1008 GB/sec."
     },
     "45": {
         "name": "MSI VENTUS 2X XS OC",
@@ -503,7 +548,8 @@
         "boost_clock": 1807,
         "color": "Black / Gray",
         "length": 205,
-        "image": "https://www.alternate.be/p/200x200/2/8/MSI_GeForce_RTX_3050_VENTUS_2X_XS_8G_OC_grafische_kaart@@100006382.jpg"
+        "image": "https://www.alternate.be/p/200x200/2/8/MSI_GeForce_RTX_3050_VENTUS_2X_XS_8G_OC_grafische_kaart@@100006382.jpg",
+        "details": "De ASUS GeForce RTX 3050 VENTUS 2X XS 8G OC is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 3050 Chip en beschikt over 8 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 1807 MHz en het geheugen heeft een snelheid van 14000 MHz.\r\n\r\nDe krachtige GeForce RTX 30 grafische kaartenserie is gebaseerd op de ultra-effici\u00ebnte NVIDIA architectuur en levert nieuwe niveaus van gaming-realisme, snelheid en energie-effici\u00ebntie en realistische VR-ervaringen. Andere functies zijn Microsoft DirectX 12 Ultimate, NVIDIA DLSS, PCI Express Gen 4, NVIDIA GeForce Experience, NVIDIA Ansel, NVIDIA FreeStyle, NVIDIA ShadowPlay, NVIDIA Highlights, NVIDIA G-SYNC, Game Ready-driver, NVIDIA Studio-driver, NVIDIA GPU Boost, Vulkan RT API en OpenGL 4.6"
     },
     "46": {
         "name": "NVIDIA Founders Edition",
@@ -514,7 +560,8 @@
         "boost_clock": 1670,
         "color": "Black / Silver",
         "length": 242,
-        "image": "https://www.alternate.be/p/200x200/6/9/Corsair_Hydro_X_Series_XG7_RGB_30_SERIES_FOUNDERS_EDITION_GPU_waterblok__3090_Ti__waterkoeling@@1846996_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/9/Corsair_Hydro_X_Series_XG7_RGB_30_SERIES_FOUNDERS_EDITION_GPU_waterblok__3090_Ti__waterkoeling@@1846996_30.jpg",
+        "details": "The CORSAIR Hydro X Series XG7 RGB 30-SERIES FOUNDERS EDITION GPU-waterblok is een koperen waterblok voor volledige conversie voor je NVIDIA GeForce RTX 3090 Ti grafische kaart. De vernikkelde koperen constructie is nauwkeurig CNC gefreesd en is voorzien van meer dan 50 koelvinnen op de GPU die de warmteafvoer van het oppervlak maximaliseren, met een aluminium behuizing en achterplaat. Door een volledig transparante vloeistofstroom en subtiele RGB-verlichting is de grafische kaart goed zichtbaar. Bestuur de verlichting met behulp van de CORSAIR iCUE-controller (apart verkrijgbaar) en krachtige CORSAIR iCUE-software om je verlichting te personaliseren, of gebruik de meegeleverde ARGB-adapterkabel voor besturing via het moederbord. Dankzij de vooraf aangebrachte koelpasta, standaard G1/4\"-schroefdraden en duidelijke stapsgewijze instructies is het eenvoudiger dan ooit om alles uit je NVIDIA GeForce RTX 30-Series GPU te halen."
     },
     "47": {
         "name": "Sapphire PULSE",
@@ -525,7 +572,8 @@
         "boost_clock": 2755,
         "color": "Black / Red",
         "length": 240,
-        "image": "https://www.alternate.be/p/200x200/3/1/SAPPHIRE_Radeon_RX_7600_XT_PULSE_GAMING_OC_grafische_kaart@@100037213.jpg"
+        "image": "https://www.alternate.be/p/200x200/3/1/SAPPHIRE_Radeon_RX_7600_XT_PULSE_GAMING_OC_grafische_kaart@@100037213.jpg",
+        "details": "De SAPPHIRE Radeon RX 7600 XT PULSE GAMING OC grafische kaart is gebaseerd op de RDNA 3 architectuur en is ontwikkeld voor 1080p prestaties, energiezuinigheid en veeleisend gamen.\r\nMet 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache leveren AMD Radeon RX 7600 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies zoals Radeon image sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de Radeon RX 7600 XT-chip van de PowerColor Radeon RX 7600 XT Hellhound 16GB OC voor hoge IPC-waarden. Verbeterde grafische effecten van de Radeon RX 7600 XT PULSE GAMING OC zoals volumetrische verlichting, vervaging en scherptediepte en kortere latenties doen het hart van gamers sneller kloppen."
     },
     "48": {
         "name": "Gigabyte GAMING OC Rev 2.0",
@@ -536,7 +584,8 @@
         "boost_clock": 1815,
         "color": "Black",
         "length": 286,
-        "image": "https://www.alternate.be/p/200x200/7/4/GIGABYTE_GeForce_RTX_3060_Gaming_OC_12G_V2_grafische_kaart@@1757447_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/7/4/GIGABYTE_GeForce_RTX_3060_Gaming_OC_12G_V2_grafische_kaart@@1757447_30.jpg",
+        "details": "De GIGABYTE GeForce RTX 3060 GAMING OC 12G V2 is gebaseerd op de NVIDIA GeForce RTX 3060 Chip en beschikt over 12 GB GDDR6 geheugen dat via een 192 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 1837 MHz en het geheugen heeft een snelheid van 15000 MHz."
     },
     "49": {
         "name": "XFX Speedster SWFT 210 Core",
@@ -547,7 +596,8 @@
         "boost_clock": 2635,
         "color": "Black / Silver",
         "length": 241,
-        "image": ""
+        "image": "https://www.alternate.be/p/200x200/4/9/XFX_Radeon_RX_6750_XT_SPEEDSTER_QICK319_Core_grafische_kaart@@100010194.jpg",
+        "details": "De XFX Radeon RX 6750 XT SPEEDSTER QICK319 Core grafische kaart is gebaseerd op de RDNA 2-architectuur en ontworpen voor 4K- en 1440p-prestaties, energiezuinigheid en veeleisende gamers. Met 12GB GDDR6 videogeheugen, ondersteuning voor PCIe 4.0 standaard en functies zoals Infinity Cache, AMD RX 6750 XT GPU's leveren een soepele game-ervaring met geweldige beelden met behulp van RDNA2 technologie. Met wel 40 nieuw ontwikkelde 7nm verwerkingseenheden en functies zoals Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de Radeon RX 6750 XT chip voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische belichting, onscherpte en scherptediepte en kortere latenties doen het hart van gamers sneller kloppen."
     },
     "50": {
         "name": "Gigabyte WINDFORCE V2",
@@ -558,7 +608,8 @@
         "boost_clock": 2550,
         "color": "Black",
         "length": 330,
-        "image": "https://www.alternate.be/p/200x200/8/1/GIGABYTE_GeForce_RTX_4080_SUPER_WINDFORCE_V2_16G_grafische_kaart@@100034418.jpg"
+        "image": "https://www.alternate.be/p/200x200/8/1/GIGABYTE_GeForce_RTX_4080_SUPER_WINDFORCE_V2_16G_grafische_kaart@@100034418.jpg",
+        "details": "De GIGABYTE GeForce RTX 4070 SUPER WINDFORCE OC 12G is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4070 SUPER chip en beschikt over 12 GB GDDR6X geheugen dat via een 192 bit brede interface aangesproken wordt. Het geheugen heeft een snelheid van 21000 MHz."
     },
     "51": {
         "name": "Gigabyte AERO OC",
@@ -569,7 +620,8 @@
         "boost_clock": null,
         "color": "White / Silver",
         "length": 281,
-        "image": "https://www.alternate.be/p/200x200/2/2/GIGABYTE_GeForce_RTX_4060_Ti_AERO_OC_16G_grafische_kaart@@100006322_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/2/2/GIGABYTE_GeForce_RTX_4060_Ti_AERO_OC_16G_grafische_kaart@@100006322_30.jpg",
+        "details": "De GIGABYTE GeForce RTX 4060 Ti AERO OC 16G is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4060 Ti chip en beschikt over 16 GB GDDR6 geheugen dat via een 128 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 2310 MHz, een boostsnelheid van 2540 MHz en het geheugen heeft een snelheid van 18000 MHz. Verder beschikt de grafische kaart over twee HDMI en twee DisplayPort aansluitingen."
     },
     "52": {
         "name": "NVIDIA Founders Edition",
@@ -580,7 +632,8 @@
         "boost_clock": 2510,
         "color": "Black / Silver",
         "length": 304,
-        "image": "https://www.alternate.be/p/200x200/1/8/Corsair_Hydro_X_Series_XG7_RGB_40_SERIES_GPU_Water_Block__4080_FE__waterkoeling@@1888881.jpg"
+        "image": "https://www.alternate.be/p/200x200/1/8/Corsair_Hydro_X_Series_XG7_RGB_40_SERIES_GPU_Water_Block__4080_FE__waterkoeling@@1888881.jpg",
+        "details": "De ASUS GeForce RTX 4080 SUPER NOCTUA OC Edition is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4080 SUPER chip en beschikt over 16 GB GDDR6X geheugen dat via een 256 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2610 MHz, een boostsnelheid (OC) van 2640 MHz en het geheugen heeft een snelheid van 23000 MHz."
     },
     "53": {
         "name": "PowerColor Fighter",
@@ -591,7 +644,8 @@
         "boost_clock": 2635,
         "color": "Black",
         "length": 200,
-        "image": "https://www.alternate.be/p/200x200/6/2/PowerColor_Fighter_Radeon_RX_7700_XT_12G_grafische_kaart@@1921826_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/6/2/PowerColor_Fighter_Radeon_RX_7700_XT_12G_grafische_kaart@@1921826_30.jpg",
+        "details": "De PowerColor Fighter Radeon RX 7700 XT 12G grafische kaart is gebaseerd op de AMD Radeon RX 7700 XT chip en beschikt over 12 GB GDDR6 geheugen dat via een 192 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 2226 MHz en een boostsnelheid van 2584 MHz en het geheugen heeft een snelheid van 18000 MHz."
     },
     "54": {
         "name": "NVIDIA Founders Edition",
@@ -602,7 +656,8 @@
         "boost_clock": 2550,
         "color": "Black",
         "length": 304,
-        "image": "https://www.alternate.be/p/200x200/8/5/MSI_GeForce_RTX_4080_Super_16G_Expert_grafische_kaart@@100041958.jpg"
+        "image": "https://www.alternate.be/p/200x200/8/5/MSI_GeForce_RTX_4080_Super_16G_Expert_grafische_kaart@@100041958.jpg",
+        "details": "De MSI GeForce RTX 4080 Super 16G Expert is een high-end grafische kaart met de GeForce RTX 4080 SUPER GPU van NVIDIA. De krachtige GeForce RTX 40-serie grafische kaarten is gebaseerd op de NVIDIA Ada-architectuur en biedt nieuwe niveaus van gamingrealisme, snelheid en prestatie-effici\u00ebntie, RTX IO en realistische VR-ervaringen. Andere functies zijn Real-Time Ray Tracing, NVIDIA Ansel, met uitgebreide tools voor het maken van screenshots in games, evenals NVIDIA G-SYNC, G-SYNC HDR, DirectX 12 Ultimate, NVIDIA DLSS 3. 0, PCI Express Gen 4, NVIDIA FreeStyle, NVIDIA ShadowPlay, NVIDIA Highlights, NVENC Gen 8, AV1 Encoder, Vulkan RT API en OpenGL 4.6. De GPU van de MSI GeForce RTX SUPER 16G EXPERT heeft 10240 CUDA-kernen. Het 16 Gbyte GDDR6X geheugen heeft een 256-bit geheugencontroller."
     },
     "55": {
         "name": "XFX Speedster SWFT 210",
@@ -613,7 +668,8 @@
         "boost_clock": 2491,
         "color": "Black",
         "length": 241,
-        "image": ""
+        "image": "https://www.alternate.be/p/200x200/6/1/XFX_Radeon_RX_7900_XTX_SPEEDSTER_MERC_310_Black_Edition_grafische_kaart@@1906116.jpg",
+        "details": "De XFX Radeon RX 7900 XTX SPEEDSTER MERC 310 Black Edition Grafische kaart is gebaseerd op RDNA 3 architectuur en ontworpen voor 4K en 1440p prestaties, energie-effici\u00ebntie en veeleisende gaming. Met 24GB GDDR6-videogeheugen, ondersteuning voor PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7900 XTX GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de chip van de XFX Radeon RX 7900 XTX SPEEDSTER MERC 310 Black Edition voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, en kortere latenties laten het hart van gamers sneller kloppen."
     },
     "56": {
         "name": "Sapphire PULSE",
@@ -624,7 +680,8 @@
         "boost_clock": 2525,
         "color": "Black / Red",
         "length": 313,
-        "image": "https://www.alternate.be/p/200x200/0/3/SAPPHIRE_PULSE_AMD_Radeon_RX_7900_XT_grafische_kaart@@1888730.jpg"
+        "image": "https://www.alternate.be/p/200x200/0/3/SAPPHIRE_PULSE_AMD_Radeon_RX_7900_XT_grafische_kaart@@1888730.jpg",
+        "details": "De SAPPHIRE PULSE AMD Radeon RX 7900 XT is gebaseerd op RDNA 3 architectuur en ontworpen voor 4K en 1440p prestaties, energie-effici\u00ebntie en veeleisende gaming. Met 20GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7900 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de Radeon RX 7900 XT PULSE 20GB chip van de SAPPHIRE voor hoge IPC-scores. Verbeterde grafische effecten van de SAPPHIRE Radeon RX 7900 XT PULSE 20GB, zoals volumetrische verlichting, vervaging en scherptediepte, alsmede kortere latenties doen het hart van gamers sneller kloppen."
     },
     "57": {
         "name": "ASRock Challenger OC",
@@ -635,7 +692,8 @@
         "boost_clock": 2475,
         "color": "Black",
         "length": 267,
-        "image": "https://www.alternate.be/p/200x200/8/7/ASRock_Radeon_RX_7800_XT_Challenger_16GB_OC_grafische_kaart@@100016578.jpg"
+        "image": "https://www.alternate.be/p/200x200/8/7/ASRock_Radeon_RX_7800_XT_Challenger_16GB_OC_grafische_kaart@@100016578.jpg",
+        "details": "De ASRock Radeon RX 7800 XT Challenger 16GB OC grafische kaart is gebaseerd op de RDNA 3-architectuur en ontworpen voor 1440p prestaties, energiezuinigheid en veeleisend gamen. Met 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7800 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie.\r\n\r\nMet functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de AMD Radeon RX 7800 XT chip van de ASRock voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, evenals kortere latenties doen het hart van gamers sneller kloppen."
     },
     "58": {
         "name": "Sapphire NITRO+",
@@ -646,7 +704,8 @@
         "boost_clock": null,
         "color": "Black",
         "length": 320,
-        "image": "https://www.alternate.be/p/200x200/4/4/SAPPHIRE_Radeon_RX_7800_XT_NITRO__GAMING_OC_16G_grafische_kaart@@100012344.jpg"
+        "image": "https://www.alternate.be/p/200x200/4/4/SAPPHIRE_Radeon_RX_7800_XT_NITRO__GAMING_OC_16G_grafische_kaart@@100012344.jpg",
+        "details": "De SAPPHIRE Radeon RX 7800 XT NITRO+ GAMING OC 16G grafische kaart is gebaseerd op de RDNA 3-architectuur en ontworpen voor 1440p prestaties, energiezuinigheid en veeleisend gamen. Met 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache, leveren AMD Radeon RX 7800 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies als Radeon Image Sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de AMD Radeon RX 7800 XT chip van de SAPPHIRE voor hoge IPC-scores. Verbeterde grafische effecten zoals volumetrische verlichting, onscherpte en scherptediepte, evenals kortere latenties doen het hart van gamers sneller kloppen."
     },
     "59": {
         "name": "PowerColor Hellhound OC",
@@ -657,7 +716,8 @@
         "boost_clock": 2520,
         "color": "Black",
         "length": 322,
-        "image": "https://www.alternate.be/p/200x200/7/8/ASRock_Radeon_RX_7600_XT_Steel_Legend_16GB_OC_grafische_kaart@@100038587_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/7/8/ASRock_Radeon_RX_7600_XT_Steel_Legend_16GB_OC_grafische_kaart@@100038587_30.jpg",
+        "details": "De ASRock Radeon RX 7600 XT Steel Legend 16GB OC grafische kaart is gebaseerd op de RDNA 3 architectuur en is ontwikkeld voor 1080p prestaties, energiezuinigheid en veeleisend gamen. \r\nMet 16GB GDDR6-videogeheugen, ondersteuning voor de PCIe 4.0-standaard en functies zoals Infinity Cache leveren AMD Radeon RX 7600 XT GPU's een soepele game-ervaring met geweldige beelden met behulp van RDNA3-technologie. Met functies zoals Radeon image sharpening, FidelityFX, TressFX, TrueAudio Next en VR-technologie\u00ebn zorgt de Radeon RX 7600 XT-chip van de PowerColor Radeon RX 7600 XT Hellhound 16GB OC voor hoge IPC-waarden. Verbeterde grafische effecten van de ASRock Radeon RX 7600 XT Steel Legend 16GB OC zoals volumetrische verlichting, vervaging en scherptediepte en kortere latenties doen het hart van gamers sneller kloppen."
     },
     "60": {
         "name": "MSI GAMING X SLIM",
@@ -668,6 +728,7 @@
         "boost_clock": 2655,
         "color": "Black",
         "length": 307,
-        "image": "https://www.alternate.be/p/200x200/5/5/MSI_GeForce_RTX_4070_SUPER_12G_GAMING_X_SLIM_grafische_kaart@@100031955_30.jpg"
+        "image": "https://www.alternate.be/p/200x200/5/5/MSI_GeForce_RTX_4070_SUPER_12G_GAMING_X_SLIM_grafische_kaart@@100031955_30.jpg",
+        "details": "De MSI GeForce RTX 4070 SUPER 12G GAMING X SLIM is een high-end grafische kaart, gebaseerd op de NVIDIA GeForce RTX 4070 SUPER chip en beschikt over 12 GB GDDR6X geheugen dat via een 192 bit brede interface aangesproken wordt. De GPU heeft een boostsnelheid van 2640 MHz en een boostsnelheid (OC) van 2655 MHz. Het geheugen heeft een snelheid van 21000 MHz."
     }
 }

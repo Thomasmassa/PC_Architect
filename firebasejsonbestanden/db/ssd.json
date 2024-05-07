@@ -8,7 +8,8 @@
         "cache": 2048,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/c/S/cSVTPX.d7cdc1c57ff830000bbb4aa66381f2a7-54404fb4_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/c/S/cSVTPX.d7cdc1c57ff830000bbb4aa66381f2a7-54404fb4_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De 980 PRO SSD van Samsung heeft een opslagcapaciteit van 2 TB. Deze M.2 SSD heeft een leessnelheid van 7000 MB/sec en een schrijfsnelheid van 5100 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 4.0 x4, NVMe 1.3 interface.\r\nDe V-NAND SSD 980 PRO serie M.2 SSD van Samsung combineert Samsung V-NAND 3-bit MLC met de Samsung Elpis controller voor verbluffende lees/schrijfsnelheden om zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "1": {
         "name": "Samsung 970 Evo Plus",
@@ -19,7 +20,8 @@
         "cache": 1024,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/M/Q/MQSMlZ.576bd3f8d1bc5b66f0497416e8810026-b93fefc5_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/M/Q/MQSMlZ.576bd3f8d1bc5b66f0497416e8810026-b93fefc5_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De 970 EVO Plus van Samsung heeft een opslagcapaciteit van 2 TB. Deze M.2 SSD heeft een leessnelheid van 3500 MB/sec en een schrijfsnelheid van 3300 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 3.0 x4, NVMe 1.3 interface. \r\nDe 970 EVO Plus serie M.2 SSD van Samsung combineert Samsung V-NAND 3-bit MLC met de Samsung Phoenix controller voor verbluffende lees/schrijfsnelheden en zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "2": {
         "name": "Kingston NV2",
@@ -30,7 +32,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/M/l/MluZ0z.33c754a1de72f37ce63cd2918a581878-8cf06618_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/M/l/MluZ0z.33c754a1de72f37ce63cd2918a581878-8cf06618_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Kingston NV2 is een NVMe PCIe SSD met een capaciteit van 1 TB en biedt lees-/schrijfsnelheden tot 3.500/2.100 MB/s. De NV2 werkt met minder stroom, minder warmte en een snellere laadtijd. De effici\u00ebnte prestaties en het enkelzijdige M.2 2280 (22 x 80 mm) ontwerp maken de NV2 ideaal voor slanke notebooks en systemen met beperkte ruimte."
     },
     "3": {
         "name": "Samsung 980 Pro",
@@ -41,7 +44,8 @@
         "cache": 1024,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/c/S/cSVTPX.d7cdc1c57ff830000bbb4aa66381f2a7-54404fb4_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/c/S/cSVTPX.d7cdc1c57ff830000bbb4aa66381f2a7-54404fb4_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De 980 PRO SSD van Samsung heeft een opslagcapaciteit van 2 TB. Deze M.2 SSD heeft een leessnelheid van 7000 MB/sec en een schrijfsnelheid van 5100 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 4.0 x4, NVMe 1.3 interface.\r\nDe V-NAND SSD 980 PRO serie M.2 SSD van Samsung combineert Samsung V-NAND 3-bit MLC met de Samsung Elpis controller voor verbluffende lees/schrijfsnelheden om zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "4": {
         "name": "Samsung 990 Pro",
@@ -52,7 +56,8 @@
         "cache": 2048,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/w/1/w1lTl8.94520c8c3869612697a431c7bafbece1-f2dc313f.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/w/1/w1lTl8.94520c8c3869612697a431c7bafbece1-f2dc313f.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De 990 PRO SSD van Samsung heeft een opslagcapaciteit van 2 TB. Deze M.2 SSD heeft een leessnelheid van 7450 MB/sec en een schrijfsnelheid van 6900 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 4.0 x4, NVMe 2.0 interface.\r\nDe 990 PRO serie M.2 SSD van Samsung combineert Samsung V7 V-NAND 3-bit MLC met de Samsung controller voor verbluffende lees/schrijfsnelheden om zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "5": {
         "name": "Samsung 990 Pro",
@@ -63,7 +68,8 @@
         "cache": 4096,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/w/1/w1lTl8.94520c8c3869612697a431c7bafbece1-f2dc313f.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/w/1/w1lTl8.94520c8c3869612697a431c7bafbece1-f2dc313f.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De 990 PRO SSD van Samsung heeft een opslagcapaciteit van 2 TB. Deze M.2 SSD heeft een leessnelheid van 7450 MB/sec en een schrijfsnelheid van 6900 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 4.0 x4, NVMe 2.0 interface.\r\nDe 990 PRO serie M.2 SSD van Samsung combineert Samsung V7 V-NAND 3-bit MLC met de Samsung controller voor verbluffende lees/schrijfsnelheden om zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "6": {
         "name": "Crucial P3",
@@ -74,7 +80,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Standaard opstartsnelheden volstaan niet - niet op het werk, onderweg of tijdens het gamen. Maar de Crucial P3 serie is allesbehalve standaard. Met NVMe-prestaties die sneller zijn dan SATA2 en een opslagcapaciteit van 1 TB laat de P3 PCIe M.2 2280 SSD oudere opslagtechnologie in het stof achter. Sneller opstarten, downloaden en bestanden overzetten, en al je bestanden, foto's, video's, apps en games opslaan met ruimte over, met de kwaliteit en betrouwbaarheid die je van Crucial verwacht."
     },
     "7": {
         "name": "Seagate Barracuda Compute",
@@ -85,7 +92,8 @@
         "cache": 256,
         "form_factor": 3.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/3/J/3JyHv0.2251872_2a608cbc93dfa79a20b54c196410d18f-ac78c87a_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/3/J/3JyHv0.2251872_2a608cbc93dfa79a20b54c196410d18f-ac78c87a_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De BarraCuda van Seagate heeft een opslagcapaciteit van 5 TB, een toerental van 5400 rpm en een cache van 128 MB. De 2,5 inch SATA harddisk is voorzien van een Serial ATA/600 interface.\r\nDe compromisloze BarraCuda combineert toonaangevende opslagcapaciteit met snelheden voor snelle prestaties en korte laadtijden tijdens het gamen of het uitvoeren van zware werkbelastingen. Van computers vol met foto's en herinneringen tot gaming-pc's die meer speelruimte nodig hebben - BarraCuda groeit met je mee."
     },
     "8": {
         "name": "Crucial P3 Plus",
@@ -96,7 +104,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Maak kennis met de Crucial Crucial P3 Plus PCIe M.2 2280 SSD, met indrukwekkende lees-/schrijfsnelheden en tegelijkertijd gegevensbescherming biedt voor optimale beveiliging. De Crucial P3 Plus is ontworpen door Micron met de nieuwste Gen4 NVMe-technologie en biedt flexibele achterwaartse compatibiliteit voor de meeste Gen3-systemen. Met een royale opslag ruimte van 2 TB biedt de Crucial P3 Plus krachtige Gen4-opslag voor heel veel apps, programma's, bestanden, documenten, foto's, video's en games."
     },
     "9": {
         "name": "Western Digital Black SN850X",
@@ -107,7 +116,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/m/w/mwJ0nO.48e486ba0dccd6c33b4306efe117bd67-3d8a286e_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/m/w/mwJ0nO.48e486ba0dccd6c33b4306efe117bd67-3d8a286e_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Lange laadtijden behoren tot het verleden met de WD Black SN850X NVMe SSD 2TB met PCIe Gen4-technologie. Je kan hoge snelheden ervaren van respectievelijk 7.300/6.600 MB/s lezen en schrijven. Je kunt dus uitkijken naar een soepele, responsieve en krachtige game-ervaring. Het te downloaden WD Black Dashboard biedt uitgebreide controlemogelijkheden. Zo kan je onder andere de schijfstatus controleren en de gamingprestaties optimaliseren met de gamingmodus."
     },
     "10": {
         "name": "Crucial P3 Plus",
@@ -118,7 +128,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Maak kennis met de Crucial Crucial P3 Plus PCIe M.2 2280 SSD, met indrukwekkende lees-/schrijfsnelheden en tegelijkertijd gegevensbescherming biedt voor optimale beveiliging. De Crucial P3 Plus is ontworpen door Micron met de nieuwste Gen4 NVMe-technologie en biedt flexibele achterwaartse compatibiliteit voor de meeste Gen3-systemen. Met een royale opslag ruimte van 2 TB biedt de Crucial P3 Plus krachtige Gen4-opslag voor heel veel apps, programma's, bestanden, documenten, foto's, video's en games."
     },
     "11": {
         "name": "Western Digital Black SN770",
@@ -129,7 +140,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/9/A/9AzwfD.77c0dc787ea5abebc2c460cd9572dded-bee240f3_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/9/A/9AzwfD.77c0dc787ea5abebc2c460cd9572dded-bee240f3_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Til je game naar een hoger peil met de WD Black SN770 NVMe SSD met een capaciteit van 500 GB. Deze speciaal gebouwde gamingdrive beschikt over een PCIe Gen4-interface die bliksemsnelle prestaties levert en heel veel opslagcapaciteit biedt voor je allernieuwste games en ook nog ruimte voor toekomstige updates en downloadbare content. \r\nVerbeter de reactiesnelheid in de game en streaming met de PCIe Gen4-interface voor een prestatieboost die je kunt zien en voelen. De interface is compatibel met toonaangevende CPU- en moederbordplatforms en achterwaarts compatibel met PCIe Gen3."
     },
     "12": {
         "name": "Samsung 970 Evo Plus",
@@ -140,7 +152,8 @@
         "cache": 512,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/M/Q/MQSMlZ.576bd3f8d1bc5b66f0497416e8810026-b93fefc5_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/M/Q/MQSMlZ.576bd3f8d1bc5b66f0497416e8810026-b93fefc5_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De 970 EVO Plus van Samsung heeft een opslagcapaciteit van 2 TB. Deze M.2 SSD heeft een leessnelheid van 3500 MB/sec en een schrijfsnelheid van 3300 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 3.0 x4, NVMe 1.3 interface. \r\nDe 970 EVO Plus serie M.2 SSD van Samsung combineert Samsung V-NAND 3-bit MLC met de Samsung Phoenix controller voor verbluffende lees/schrijfsnelheden en zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "13": {
         "name": "Intel 750",
@@ -151,7 +164,8 @@
         "cache": null,
         "form_factor": "PCIe",
         "interface": "PCIe x4",
-        "image": "https://azerty.nl/media/catalog/product/w/H/wHjUIt.ad6ba162f23ac1baf29524543b930032-e3c73e09.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/w/H/wHjUIt.ad6ba162f23ac1baf29524543b930032-e3c73e09.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Intel\u00ae Arc A750 Challenger D 8GB OC van ASRock is gebaseerd op de Intel\u00ae ARC 750 Chip en beschikt over 8 GB GDDR6X geheugen dat via een 256 bit brede interface aangesproken wordt. De GPU heeft een kloksnelheid van 2200 MHz en het geheugen heeft een snelheid van 16000 MHz.\r\nDe krachtige GeForce ARC 750 GPU grafische kaart serie is gebaseerd op de Intel\u00ae Arc architectuur en biedt nieuwe niveaus van gaming realisme, snelheid en energie-effici\u00ebntie en realistische VR ervaringen. Andere kenmerken zijn XeSS, Intel\u00ae Deep Link Hyper Encode | Intel\u00ae Deep Link Stream Assist. De GPU op de ASRock Intel Arc A750 Challenger D 8GB OC beschikt over 448 Intel\u00ae Xe Matrix Extensions en Xe Vector Engines."
     },
     "14": {
         "name": "Western Digital Black SN770",
@@ -162,7 +176,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/9/A/9AzwfD.77c0dc787ea5abebc2c460cd9572dded-bee240f3_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/9/A/9AzwfD.77c0dc787ea5abebc2c460cd9572dded-bee240f3_5.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Til je game naar een hoger peil met de WD Black SN770 NVMe SSD met een capaciteit van 500 GB. Deze speciaal gebouwde gamingdrive beschikt over een PCIe Gen4-interface die bliksemsnelle prestaties levert en heel veel opslagcapaciteit biedt voor je allernieuwste games en ook nog ruimte voor toekomstige updates en downloadbare content. \r\nVerbeter de reactiesnelheid in de game en streaming met de PCIe Gen4-interface voor een prestatieboost die je kunt zien en voelen. De interface is compatibel met toonaangevende CPU- en moederbordplatforms en achterwaarts compatibel met PCIe Gen3."
     },
     "15": {
         "name": "Samsung 870 Evo",
@@ -173,7 +188,8 @@
         "cache": 1024,
         "form_factor": 2.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/d/m/dmu1ZY.b2bad65d2986b2c74f47500a8ca3acaf-bbe9eb97_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/d/m/dmu1ZY.b2bad65d2986b2c74f47500a8ca3acaf-bbe9eb97_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Samsung EVO 870 (MZ-77E1T0B/EU) SSD heeft een opslagcapaciteit van 1 TB en een 2,5\u201d bouwvorm. Deze snelle en betrouwbare SSD met Samsung V-NAND 3bit MLC en een krachtige algoritmische controller is speciaal ontworpen voor gewone pc\u2019s en notebooks.\r\n\r\nConstante snelheid, zelfs met een zware workload en bij multitasking. De 870 EVO heeft een sequenti\u00eble schrijfsnelheid tot 560 MB/s met Intelligent TurboWrite-technologie en een sequenti\u00eble leessnelheid tot 530 MB/s. De SSD heeft een cache van 1 GB Low Power DDR4 SDRAM, zodat bestanden sneller overgezet worden en bewaar en render in alle veiligheid jouw zware 4K-video\u2019s en 3D-data die gebruikt worden door de nieuwste applicaties. \r\n\r\nProfiteer van een snelle en vloeiende communicatie met jouw hostsysteem. Het verbeterde ECC-algoritme en de Samsung MKX Controller zorgen voor een grotere snelheid en de verbeterde queued trim garandeert een grotere compatibiliteit met Linux. De geavanceerde constructie van de EVO 870 EVO zorgt voor een grotere compatibiliteit met jouw computer."
     },
     "16": {
         "name": "Western Digital Black SN850X",
@@ -184,7 +200,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/m/w/mwJ0nO.48e486ba0dccd6c33b4306efe117bd67-3d8a286e_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/m/w/mwJ0nO.48e486ba0dccd6c33b4306efe117bd67-3d8a286e_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Lange laadtijden behoren tot het verleden met de WD Black SN850X NVMe SSD 2TB met PCIe Gen4-technologie. Je kan hoge snelheden ervaren van respectievelijk 7.300/6.600 MB/s lezen en schrijven. Je kunt dus uitkijken naar een soepele, responsieve en krachtige game-ervaring. Het te downloaden WD Black Dashboard biedt uitgebreide controlemogelijkheden. Zo kan je onder andere de schijfstatus controleren en de gamingprestaties optimaliseren met de gamingmodus."
     },
     "17": {
         "name": "TEAMGROUP MP33",
@@ -195,7 +212,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/placeholder/default/Placeholder_400x400-meer_contrast-2_Tekengebied_1.png"
+        "image": "https://azerty.nl/media/catalog/product/placeholder/default/Placeholder_400x400-meer_contrast-2_Tekengebied_1.png",
+        "details": ""
     },
     "18": {
         "name": "Kingston NV2",
@@ -206,7 +224,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/M/l/MluZ0z.33c754a1de72f37ce63cd2918a581878-8cf06618_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/M/l/MluZ0z.33c754a1de72f37ce63cd2918a581878-8cf06618_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Kingston NV2 is een NVMe PCIe SSD met een capaciteit van 1 TB en biedt lees-/schrijfsnelheden tot 3.500/2.100 MB/s. De NV2 werkt met minder stroom, minder warmte en een snellere laadtijd. De effici\u00ebnte prestaties en het enkelzijdige M.2 2280 (22 x 80 mm) ontwerp maken de NV2 ideaal voor slanke notebooks en systemen met beperkte ruimte."
     },
     "19": {
         "name": "Samsung 990 Pro",
@@ -217,7 +236,8 @@
         "cache": 1024,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/w/1/w1lTl8.94520c8c3869612697a431c7bafbece1-f2dc313f.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/w/1/w1lTl8.94520c8c3869612697a431c7bafbece1-f2dc313f.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De 990 PRO SSD van Samsung heeft een opslagcapaciteit van 2 TB. Deze M.2 SSD heeft een leessnelheid van 7450 MB/sec en een schrijfsnelheid van 6900 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 4.0 x4, NVMe 2.0 interface.\r\nDe 990 PRO serie M.2 SSD van Samsung combineert Samsung V7 V-NAND 3-bit MLC met de Samsung controller voor verbluffende lees/schrijfsnelheden om zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "20": {
         "name": "Seagate BarraCuda",
@@ -228,7 +248,8 @@
         "cache": 256,
         "form_factor": 3.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": ""
+        "image": "https://www.alternate.be/p/200x200/a/Seagate_BarraCuda_5_TB_harde_schijf@@aibs03.jpg",
+        "details": "De BarraCuda van Seagate heeft een opslagcapaciteit van 5 TB, een toerental van 5400 rpm en een cache van 128 MB. De 2,5 inch SATA harddisk is voorzien van een Serial ATA/600 interface.\r\nDe compromisloze BarraCuda combineert toonaangevende opslagcapaciteit met snelheden voor snelle prestaties en korte laadtijden tijdens het gamen of het uitvoeren van zware werkbelastingen. Van computers vol met foto's en herinneringen tot gaming-pc's die meer speelruimte nodig hebben - BarraCuda groeit met je mee."
     },
     "21": {
         "name": "Crucial P3",
@@ -239,7 +260,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Standaard opstartsnelheden volstaan niet - niet op het werk, onderweg of tijdens het gamen. Maar de Crucial P3 serie is allesbehalve standaard. Met NVMe-prestaties die sneller zijn dan SATA2 en een opslagcapaciteit van 1 TB laat de P3 PCIe M.2 2280 SSD oudere opslagtechnologie in het stof achter. Sneller opstarten, downloaden en bestanden overzetten, en al je bestanden, foto's, video's, apps en games opslaan met ruimte over, met de kwaliteit en betrouwbaarheid die je van Crucial verwacht."
     },
     "22": {
         "name": "Western Digital Blue SN580",
@@ -250,7 +272,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/X/Q/XQVuzT.51922582b8b544c99184a00bcd2ead6f-d4175287_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/X/Q/XQVuzT.51922582b8b544c99184a00bcd2ead6f-d4175287_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Geef je verbeeldingskracht een extra impuls met de WD Blue SN580 NVMe SSD met PCIe\u00ae Gen 4.0 voor makers en professionals. Geef je productiviteit een impuls of ontwerp moeiteloos creaties door een upgrade uit te voeren naar PCIe Gen 4.0 SSD\u2019s met leessnelheden tot 4150 MB/s. Met een opslagcapaciteit van 1 TB in een slank M.2 2280 formaat, kunnen toepassingen, gegevens en media, zoals foto\u2019s, 4K-video\u2019s en muziek op dezelfde drive worden opgeslagen. Ga zonder onderbrekingen door met cre\u00ebren als je op dreef bent of onderweg weinig stroom voor opslag hebt om optimaal gebruik te maken van de werkduur van de batterij van je laptop."
     },
     "23": {
         "name": "Western Digital Black SN850X",
@@ -261,7 +284,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/m/w/mwJ0nO.48e486ba0dccd6c33b4306efe117bd67-3d8a286e_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/m/w/mwJ0nO.48e486ba0dccd6c33b4306efe117bd67-3d8a286e_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Lange laadtijden behoren tot het verleden met de WD Black SN850X NVMe SSD 2TB met PCIe Gen4-technologie. Je kan hoge snelheden ervaren van respectievelijk 7.300/6.600 MB/s lezen en schrijven. Je kunt dus uitkijken naar een soepele, responsieve en krachtige game-ervaring. Het te downloaden WD Black Dashboard biedt uitgebreide controlemogelijkheden. Zo kan je onder andere de schijfstatus controleren en de gamingprestaties optimaliseren met de gamingmodus."
     },
     "24": {
         "name": "Sabrent Rocket 4 Plus",
@@ -272,7 +296,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/7/O/7OoIvS.3335499_9d360be31d82b5724ced44d82565b2a0-10a414a1_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/7/O/7OoIvS.3335499_9d360be31d82b5724ced44d82565b2a0-10a414a1_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": ""
     },
     "25": {
         "name": "Mushkin Source HC",
@@ -283,7 +308,8 @@
         "cache": null,
         "form_factor": 2.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/Y/a/YaXdWG.7ee904e88146077ae6265788afbf3eb7-1f765478.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/Y/a/YaXdWG.7ee904e88146077ae6265788afbf3eb7-1f765478.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": ""
     },
     "26": {
         "name": "Crucial T700",
@@ -294,7 +320,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 5.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/j/n/jnVmHP.060ec94695dd2ad91b5b880efaf9f69d-b5bf3f75.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/j/n/jnVmHP.060ec94695dd2ad91b5b880efaf9f69d-b5bf3f75.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Crucial T700 2 TB biedt indrukwekkende snelheid en hoge gegevensbescherming met sequenti\u00eble leessnelheden tot 12.400 MB/s. De T700 is ontworpen met NVMe-technologie en bevat geavanceerde functies zoals dynamische schrijfversnelling, volledige hardwarematige versleuteling en adaptieve thermische bescherming om gegevens veilig te houden en tegelijkertijd de betrouwbaarheid van het systeem te vergroten."
     },
     "27": {
         "name": "Seagate IronWolf Pro NAS",
@@ -305,7 +332,8 @@
         "cache": 512,
         "form_factor": 3.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/R/D/RDkTqk.7ea6f4f21d17d68e3e968bd7f2338835-6c5f941e.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/R/D/RDkTqk.7ea6f4f21d17d68e3e968bd7f2338835-6c5f941e.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Seagate IronWolf Pro harde schijf biedt de kracht van veelzijdigheid voor alles wat met NAS te maken heeft.\r\nIronWolf Pro is altijd aan en altijd actief, en bovendien voorzien van AgileArray-technologie voor optimale betrouwbaarheid en flexibiliteit. Multi-user-technologie en extreme werkbelastingen zorgen ervoor dat IronWolf Pro met jouw bedrijf kan meegroeien.\r\nDe IronWolf Pro van Seagate heeft een opslagcapaciteit van 16 TB, een toerental van 7200 rpm en een cache van 256 MB. De 3,5 inch SATA harddisk is voorzien van een Serial ATA/600 interface."
     },
     "28": {
         "name": "Western Digital Caviar Blue",
@@ -316,7 +344,8 @@
         "cache": 64,
         "form_factor": 3.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/p/F/pFCVwx.b5fb71f2a333d6d14aeb46700b2e749a-5579df7c.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/p/F/pFCVwx.b5fb71f2a333d6d14aeb46700b2e749a-5579df7c.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": ""
     },
     "29": {
         "name": "Samsung 970 Evo Plus",
@@ -327,7 +356,8 @@
         "cache": 1024,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/M/Q/MQSMlZ.576bd3f8d1bc5b66f0497416e8810026-b93fefc5_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/M/Q/MQSMlZ.576bd3f8d1bc5b66f0497416e8810026-b93fefc5_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De 970 EVO Plus van Samsung heeft een opslagcapaciteit van 2 TB. Deze M.2 SSD heeft een leessnelheid van 3500 MB/sec en een schrijfsnelheid van 3300 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 3.0 x4, NVMe 1.3 interface. \r\nDe 970 EVO Plus serie M.2 SSD van Samsung combineert Samsung V-NAND 3-bit MLC met de Samsung Phoenix controller voor verbluffende lees/schrijfsnelheden en zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "30": {
         "name": "TEAMGROUP MP33",
@@ -338,7 +368,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/placeholder/default/Placeholder_400x400-meer_contrast-2_Tekengebied_1.png"
+        "image": "https://azerty.nl/media/catalog/product/placeholder/default/Placeholder_400x400-meer_contrast-2_Tekengebied_1.png",
+        "details": ""
     },
     "31": {
         "name": "Corsair MP400",
@@ -349,7 +380,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/t/r/trUGpR.9953b7ff6bba219fcdeb3fa926f7dfc4-ac0f6905.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/t/r/trUGpR.9953b7ff6bba219fcdeb3fa926f7dfc4-ac0f6905.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Game in alle vertrouwen op de zwarte Corsair MM350 PRO Extended XL muismat met genoeg plaats voor je muis, toetsenbord en nog meer dankzij zijn werkgebied van 930 mm x 400 mm. Een morsbestendige en vlekbestendige coating zorgt ervoor dat vloeistoffen van het oppervlak afglijden, zodat de muismat gemakkelijk schoon te vegen is, zelfs na een ongelukje. Dankzij de 360\u00b0 anti-rafelrand blijft de muismat langer intact. Het micro-gewoven textielen oppervlak zorgt voor een sneller en vlotter gebruik van je muis. De rubberen basis houdt de muismat goed op zijn plaats, zelfs tijdens de meest intense gaming sessies."
     },
     "32": {
         "name": "Samsung 870 Evo",
@@ -360,7 +392,8 @@
         "cache": 2048,
         "form_factor": 2.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/d/m/dmu1ZY.b2bad65d2986b2c74f47500a8ca3acaf-bbe9eb97_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/d/m/dmu1ZY.b2bad65d2986b2c74f47500a8ca3acaf-bbe9eb97_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Samsung EVO 870 (MZ-77E1T0B/EU) SSD heeft een opslagcapaciteit van 1 TB en een 2,5\u201d bouwvorm. Deze snelle en betrouwbare SSD met Samsung V-NAND 3bit MLC en een krachtige algoritmische controller is speciaal ontworpen voor gewone pc\u2019s en notebooks.\r\n\r\nConstante snelheid, zelfs met een zware workload en bij multitasking. De 870 EVO heeft een sequenti\u00eble schrijfsnelheid tot 560 MB/s met Intelligent TurboWrite-technologie en een sequenti\u00eble leessnelheid tot 530 MB/s. De SSD heeft een cache van 1 GB Low Power DDR4 SDRAM, zodat bestanden sneller overgezet worden en bewaar en render in alle veiligheid jouw zware 4K-video\u2019s en 3D-data die gebruikt worden door de nieuwste applicaties. \r\n\r\nProfiteer van een snelle en vloeiende communicatie met jouw hostsysteem. Het verbeterde ECC-algoritme en de Samsung MKX Controller zorgen voor een grotere snelheid en de verbeterde queued trim garandeert een grotere compatibiliteit met Linux. De geavanceerde constructie van de EVO 870 EVO zorgt voor een grotere compatibiliteit met jouw computer."
     },
     "33": {
         "name": "TEAMGROUP MP44L",
@@ -371,7 +404,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/placeholder/default/Placeholder_400x400-meer_contrast-2_Tekengebied_1.png"
+        "image": "https://azerty.nl/media/catalog/product/placeholder/default/Placeholder_400x400-meer_contrast-2_Tekengebied_1.png",
+        "details": ""
     },
     "34": {
         "name": "Crucial P3 Plus",
@@ -382,7 +416,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Maak kennis met de Crucial Crucial P3 Plus PCIe M.2 2280 SSD, met indrukwekkende lees-/schrijfsnelheden en tegelijkertijd gegevensbescherming biedt voor optimale beveiliging. De Crucial P3 Plus is ontworpen door Micron met de nieuwste Gen4 NVMe-technologie en biedt flexibele achterwaartse compatibiliteit voor de meeste Gen3-systemen. Met een royale opslag ruimte van 2 TB biedt de Crucial P3 Plus krachtige Gen4-opslag voor heel veel apps, programma's, bestanden, documenten, foto's, video's en games."
     },
     "35": {
         "name": "Sabrent Rocket 4.0",
@@ -393,7 +428,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/7/O/7OoIvS.3335499_9d360be31d82b5724ced44d82565b2a0-10a414a1_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/7/O/7OoIvS.3335499_9d360be31d82b5724ced44d82565b2a0-10a414a1_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": ""
     },
     "36": {
         "name": "Seagate BarraCuda",
@@ -404,7 +440,8 @@
         "cache": 64,
         "form_factor": 3.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": ""
+        "image": "https://www.alternate.be/p/200x200/a/Seagate_BarraCuda_5_TB_harde_schijf@@aibs03.jpg",
+        "details": "De BarraCuda van Seagate heeft een opslagcapaciteit van 5 TB, een toerental van 5400 rpm en een cache van 128 MB. De 2,5 inch SATA harddisk is voorzien van een Serial ATA/600 interface.\r\nDe compromisloze BarraCuda combineert toonaangevende opslagcapaciteit met snelheden voor snelle prestaties en korte laadtijden tijdens het gamen of het uitvoeren van zware werkbelastingen. Van computers vol met foto's en herinneringen tot gaming-pc's die meer speelruimte nodig hebben - BarraCuda groeit met je mee."
     },
     "37": {
         "name": "Samsung 870 QVO",
@@ -415,7 +452,8 @@
         "cache": null,
         "form_factor": 2.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/I/E/IEcT0c.9510e7287598374cd858e16020d957ad-019e0459_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/I/E/IEcT0c.9510e7287598374cd858e16020d957ad-019e0459_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Samsung 870 QVO SSD heeft een opslagcapaciteit van 2 TB en een 2,5\" bouwvorm. Deze supersnelle SSD heeft een enorm opslagvermogen, levert krachtige prestaties en is extreem betrouwbaar. Dit wordt mogelijk gemaakt door de 4-bit MLC NAND-flashtechnologie.\r\n\r\nMet leessnelheden van 560 MB/s en schrijfsnelheden van 530 MB/s lijkt het alsof je een nieuwe computer hebt: sneller opstarten, afsluiten, bestanden kopi\u00ebren en werken met programma's. Intelligent TurboWrite-technologie zorgt voor maximale schrijfsnelheden en langdurige prestaties met een grotere variabele buffer."
     },
     "38": {
         "name": "Kingston NV2",
@@ -426,7 +464,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/M/l/MluZ0z.33c754a1de72f37ce63cd2918a581878-8cf06618_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/M/l/MluZ0z.33c754a1de72f37ce63cd2918a581878-8cf06618_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Kingston NV2 is een NVMe PCIe SSD met een capaciteit van 1 TB en biedt lees-/schrijfsnelheden tot 3.500/2.100 MB/s. De NV2 werkt met minder stroom, minder warmte en een snellere laadtijd. De effici\u00ebnte prestaties en het enkelzijdige M.2 2280 (22 x 80 mm) ontwerp maken de NV2 ideaal voor slanke notebooks en systemen met beperkte ruimte."
     },
     "39": {
         "name": "Crucial P5 Plus",
@@ -437,7 +476,8 @@
         "cache": 2048,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/g/G/gGmw3C.bc12fe12f28fd09cf2fcd87db481979f-ef3dbac9_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/g/G/gGmw3C.bc12fe12f28fd09cf2fcd87db481979f-ef3dbac9_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Crucial P5 Plus 500 GB biedt indrukwekkende snelheid en hoge gegevensbescherming met sequenti\u00eble leessnelheden tot 6.600 MB/s. Of het nu aan je bureau, in de studio of in een game is, de P5 Plus levert de kwaliteit en uitstekende ondersteuning die je van Crucial verwacht. De P5 Plus is ontworpen met NVMe-technologie en bevat geavanceerde functies zoals dynamische schrijfversnelling, volledige hardwarematige versleuteling en adaptieve thermische bescherming om gegevens veilig te houden en tegelijkertijd de betrouwbaarheid van het systeem te vergroten."
     },
     "40": {
         "name": "Samsung 980",
@@ -448,7 +488,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": ""
+        "image": "https://www.alternate.be/p/200x200/4/1/SAMSUNG_980_PRO__1_TB_SSD@@1670614.jpg",
+        "details": "De 980 PRO SSD van Samsung heeft een opslagcapaciteit van 1 TB. Deze M.2 SSD heeft een leessnelheid van 7000 MB/sec en een schrijfsnelheid van 5000 MB/sec. De SSD is daarnaast voorzien van een M.2 (2280) bouwvorm met een PCIe Gen 4.0 x4, NVMe 1.3 interface.\r\nDe V-NAND SSD 980 PRO serie M.2 SSD van Samsung combineert Samsung V-NAND 3-bit MLC met de Samsung Elpis controller voor verbluffende lees/schrijfsnelheden om zo een nieuwe standaard te cre\u00ebren voor high-end gaming en 4K & 3D video editing."
     },
     "41": {
         "name": "Seagate IronWolf Pro",
@@ -459,7 +500,8 @@
         "cache": 512,
         "form_factor": 3.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/R/D/RDkTqk.7ea6f4f21d17d68e3e968bd7f2338835-6c5f941e.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/R/D/RDkTqk.7ea6f4f21d17d68e3e968bd7f2338835-6c5f941e.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Seagate IronWolf Pro harde schijf biedt de kracht van veelzijdigheid voor alles wat met NAS te maken heeft.\r\nIronWolf Pro is altijd aan en altijd actief, en bovendien voorzien van AgileArray-technologie voor optimale betrouwbaarheid en flexibiliteit. Multi-user-technologie en extreme werkbelastingen zorgen ervoor dat IronWolf Pro met jouw bedrijf kan meegroeien.\r\nDe IronWolf Pro van Seagate heeft een opslagcapaciteit van 16 TB, een toerental van 7200 rpm en een cache van 256 MB. De 3,5 inch SATA harddisk is voorzien van een Serial ATA/600 interface."
     },
     "42": {
         "name": "Samsung 870 Evo",
@@ -470,7 +512,8 @@
         "cache": 4096,
         "form_factor": 2.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/d/m/dmu1ZY.b2bad65d2986b2c74f47500a8ca3acaf-bbe9eb97_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/d/m/dmu1ZY.b2bad65d2986b2c74f47500a8ca3acaf-bbe9eb97_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Samsung EVO 870 (MZ-77E1T0B/EU) SSD heeft een opslagcapaciteit van 1 TB en een 2,5\u201d bouwvorm. Deze snelle en betrouwbare SSD met Samsung V-NAND 3bit MLC en een krachtige algoritmische controller is speciaal ontworpen voor gewone pc\u2019s en notebooks.\r\n\r\nConstante snelheid, zelfs met een zware workload en bij multitasking. De 870 EVO heeft een sequenti\u00eble schrijfsnelheid tot 560 MB/s met Intelligent TurboWrite-technologie en een sequenti\u00eble leessnelheid tot 530 MB/s. De SSD heeft een cache van 1 GB Low Power DDR4 SDRAM, zodat bestanden sneller overgezet worden en bewaar en render in alle veiligheid jouw zware 4K-video\u2019s en 3D-data die gebruikt worden door de nieuwste applicaties. \r\n\r\nProfiteer van een snelle en vloeiende communicatie met jouw hostsysteem. Het verbeterde ECC-algoritme en de Samsung MKX Controller zorgen voor een grotere snelheid en de verbeterde queued trim garandeert een grotere compatibiliteit met Linux. De geavanceerde constructie van de EVO 870 EVO zorgt voor een grotere compatibiliteit met jouw computer."
     },
     "43": {
         "name": "Crucial P5 Plus",
@@ -481,7 +524,8 @@
         "cache": 1024,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/g/G/gGmw3C.bc12fe12f28fd09cf2fcd87db481979f-ef3dbac9_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/g/G/gGmw3C.bc12fe12f28fd09cf2fcd87db481979f-ef3dbac9_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Crucial P5 Plus 500 GB biedt indrukwekkende snelheid en hoge gegevensbescherming met sequenti\u00eble leessnelheden tot 6.600 MB/s. Of het nu aan je bureau, in de studio of in een game is, de P5 Plus levert de kwaliteit en uitstekende ondersteuning die je van Crucial verwacht. De P5 Plus is ontworpen met NVMe-technologie en bevat geavanceerde functies zoals dynamische schrijfversnelling, volledige hardwarematige versleuteling en adaptieve thermische bescherming om gegevens veilig te houden en tegelijkertijd de betrouwbaarheid van het systeem te vergroten."
     },
     "44": {
         "name": "TEAMGROUP MP33",
@@ -492,7 +536,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/placeholder/default/Placeholder_400x400-meer_contrast-2_Tekengebied_1.png"
+        "image": "https://azerty.nl/media/catalog/product/placeholder/default/Placeholder_400x400-meer_contrast-2_Tekengebied_1.png",
+        "details": ""
     },
     "45": {
         "name": "Crucial MX500",
@@ -503,7 +548,8 @@
         "cache": 1024,
         "form_factor": 2.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/0/E/0Ewrw5.0e25d8696962df25c08c5ffc8585bcd9-3bbe56a7_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/0/E/0Ewrw5.0e25d8696962df25c08c5ffc8585bcd9-3bbe56a7_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Elke keer dat je jouw computer aanzet, gebruik je jouw opslagstation. Het bevat al je onvervangbare bestanden en het laadt en verzamelt bijna alles wat jouw systeem doet. Steeds meer mensen bewaren hun familievideo's, vakantie foto's, muziek en belangrijke documenten op een SSD, voor bijna-onmiddellijke prestaties en duurzame betrouwbaarheid die wordt geleverd met solid-state opslag. Upgrade met de Crucial MX500 SSD, een drive die is gebouwd op kwaliteit, snelheid en veiligheid. Zelfs als je nog nooit een SSD hebt ge\u00efnstalleerd, is het niet moeilijk, de stap-voor-stap handleiding begeleidt je door het proces om de installatie voor bijna iedereen gemakkelijk te maken. \r\nDe MX500 (CT500MX500SSD1) van Crucial heeft een opslagcapaciteit van 500 GB. Deze SSD heeft een leessnelheid van 560 MB/sec en een schrijfsnelheid van 510 MB/sec. De SSD is voorzien van een Serial ATA/600 interface."
     },
     "46": {
         "name": "Seagate Barracuda Compute",
@@ -514,7 +560,8 @@
         "cache": 256,
         "form_factor": 3.5,
         "interface": "SATA 6.0 Gb/s",
-        "image": "https://azerty.nl/media/catalog/product/3/J/3JyHv0.2251872_2a608cbc93dfa79a20b54c196410d18f-ac78c87a_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/3/J/3JyHv0.2251872_2a608cbc93dfa79a20b54c196410d18f-ac78c87a_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De BarraCuda van Seagate heeft een opslagcapaciteit van 5 TB, een toerental van 5400 rpm en een cache van 128 MB. De 2,5 inch SATA harddisk is voorzien van een Serial ATA/600 interface.\r\nDe compromisloze BarraCuda combineert toonaangevende opslagcapaciteit met snelheden voor snelle prestaties en korte laadtijden tijdens het gamen of het uitvoeren van zware werkbelastingen. Van computers vol met foto's en herinneringen tot gaming-pc's die meer speelruimte nodig hebben - BarraCuda groeit met je mee."
     },
     "47": {
         "name": "Kingston KC3000",
@@ -525,7 +572,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/D/L/DLM2XK.3d76cd97daa887e7086999132e6d71a4-3f9e779a_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/D/L/DLM2XK.3d76cd97daa887e7086999132e6d71a4-3f9e779a_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Deze Kingston KC3000 PCIe 4.0 NVMe M.2 SSD biedt 1 TB opslag voor desktop pc's en laptops en levert ongekende prestaties dankzij de Gen 4x4 NVMe-controller en 3D TLC NAND. Upgrade de opslag en betrouwbaarheid van je systeem om veeleisende workloads aan te kunnen en te profiteren van betere prestaties voor softwaretoepassingen zoals 3D-rendering en het maken van 4K+-content. De formidabele lees- en schrijfsnelheden van maximaal 6.000 MB/s verbeteren de workflow in krachtige desktop pc's en laptops, waardoor de SSD ideaal is voor veeleisende gebruikers die de hoogst mogelijke snelheden nodig hebben. \r\nHet compacte M.2 2280-ontwerp past moeiteloos op moederborden en biedt meer flexibiliteit, responsiviteit en superieure laadtijden voor veeleisende gebruikers."
     },
     "48": {
         "name": "Crucial T700",
@@ -536,7 +584,8 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 5.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/j/n/jnVmHP.060ec94695dd2ad91b5b880efaf9f69d-b5bf3f75.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/j/n/jnVmHP.060ec94695dd2ad91b5b880efaf9f69d-b5bf3f75.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "De Crucial T700 2 TB biedt indrukwekkende snelheid en hoge gegevensbescherming met sequenti\u00eble leessnelheden tot 12.400 MB/s. De T700 is ontworpen met NVMe-technologie en bevat geavanceerde functies zoals dynamische schrijfversnelling, volledige hardwarematige versleuteling en adaptieve thermische bescherming om gegevens veilig te houden en tegelijkertijd de betrouwbaarheid van het systeem te vergroten."
     },
     "49": {
         "name": "Samsung 990 Pro w/Heatsink",
@@ -547,7 +596,8 @@
         "cache": 4096,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 4.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/1/6/16GYGg.6ddd612c2fcf7213e80bdaa4c5583a60-68468364.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/1/6/16GYGg.6ddd612c2fcf7213e80bdaa4c5583a60-68468364.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Het slanke koellichaam van de 990 PRO Heatsink voert warmte af en voorkomt zo prestatieverlies door oververhitting. Met 4 TB opslag en sequenti\u00eble lees-/schrijfsnelheden tot 7.450/6.900 MB/s levert het bijna de maximale prestaties van PCIe 4.0. De dunne behuizing is compatibel met PlayStation 5, desktops en laptops. De 990 PRO Heatsink verbruikt minder stroom en biedt tot 50% meer prestaties per watt dan vorige modellen. Dit energiebesparende ontwerp maakt maximale PCIe 4.0-prestaties mogelijk met optimale energie-effici\u00ebntie. Een verbetering van de random prestaties met meer dan 55% maakt snellere laadtijden mogelijk voor ultiem gaming realisme in PS5 en DirectStorage PC-games. Het futuristische ontwerp van de heatsink zorgt voor stijlvolle thermische regulering en de RGB-verlichting zorgt voor de juiste sfeer."
     },
     "50": {
         "name": "Crucial P3",
@@ -558,6 +608,7 @@
         "cache": null,
         "form_factor": "M.2-2280",
         "interface": "M.2 PCIe 3.0 X4",
-        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360"
+        "image": "https://azerty.nl/media/catalog/product/U/F/UFtIOk.d6464294e87a7cab8e86c747265dad9a-2cfe4404.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=360&width=360&canvas=360:360",
+        "details": "Standaard opstartsnelheden volstaan niet - niet op het werk, onderweg of tijdens het gamen. Maar de Crucial P3 serie is allesbehalve standaard. Met NVMe-prestaties die sneller zijn dan SATA2 en een opslagcapaciteit van 1 TB laat de P3 PCIe M.2 2280 SSD oudere opslagtechnologie in het stof achter. Sneller opstarten, downloaden en bestanden overzetten, en al je bestanden, foto's, video's, apps en games opslaan met ruimte over, met de kwaliteit en betrouwbaarheid die je van Crucial verwacht."
     }
 }
