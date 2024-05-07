@@ -7,7 +7,7 @@ namespace PcArchitect.Model
 {
     public class Case : IComponent
     {
-        private string _image = "imagenotfound.png";
+        private string _image = "";
 
         // ALS DE AFBEELDING LEEG IS WORDT ER EEN STANDAARD AFBEELDING "imagenotfound.png" GEBRUIKT
 
@@ -16,6 +16,15 @@ namespace PcArchitect.Model
         {
             get { return string.IsNullOrEmpty(_image) ? "imagenotfound.png" : _image; }
             set { _image = value; }
+        }
+
+        private string _details = "";
+
+        [JsonPropertyName("details")]
+        public string Details
+        {
+            get { return string.IsNullOrEmpty(_details) ? "No details available" : _details; }
+            set { _details = value; }
         }
 
         [JsonPropertyName("name")]

@@ -25,7 +25,7 @@ namespace PcArchitect.ViewModel
             _bufferService = bufferService;
             Component = new ObservableCollection<IComponent>();
 
-            IsDiscriptionVisible = false;
+            IsDescriptionVisible = false;
         }
 
         [RelayCommand]
@@ -48,9 +48,9 @@ namespace PcArchitect.ViewModel
         }
 
         [RelayCommand]
-        void ToggleDiscription()
+        void ToggleDescription()
         {
-            IsDiscriptionVisible = !IsDiscriptionVisible;
+            IsDescriptionVisible = !IsDescriptionVisible;
         }
     }
 }
