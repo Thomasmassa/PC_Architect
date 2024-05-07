@@ -43,7 +43,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Socket: {Socket}\nMemory Slots: {MemorySlots}\nMax Memory: {MaxMemory}"; }
+            get { return $"Socket: {Socket}\nMemory Slots: {MemorySlots}\nMemory Type: {MemoryType}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

@@ -7,7 +7,7 @@ import re
 import os
 
 os.system('cls')
-bestandspad = "motherboard.json"
+bestandspad = "cpu.json"
 print("Bestandspad: " + bestandspad)
 
 with open(bestandspad, 'r') as f:
@@ -66,7 +66,7 @@ for part in data.values():
         print(geparseerdedeelstring)
         logging.info(geparseerdedeelstring)
 
-        if part['memorytype'] == '':
+        if part['socket'] == '':
             Deelurl = f"https://www.alternate.be/listing.xhtml?q={geparseerdedeelstring}"
         else:
             continue
@@ -79,8 +79,8 @@ for part in data.values():
             print("Kon geen soup vinden")
             continue
 
-        if part['memorytype'] != '':
-            print("memorytype al in object: " + part['name'])
+        if part['socket'] != '':
+            print("socket al in object: " + part['name'])
         else:
             a_tag = soup.find('a', attrs={'class': ['card align-content-center productBox boxCounter text-font campaign-timer-container']})
             # print("a_tag: " + str(a_tag))
@@ -112,23 +112,24 @@ for part in data.values():
                                     countTr = 0
                                     for tr in tr_tag:
                                         countTr += 1
-                                        if countTr > 13 or countTr < 21:
-                                            td_tag = tr.find('td', attrs={'class': ['c4']})
-                                            if td_tag:
-                                                td_text = td_tag.text
-                                                if 'DDR' in td_text:
-                                                    print("DDR found in td text")
-                                                    print("")
-                                                    split_string = td_text.split(" ", 1)
-                                                    if len(split_string) > 1:
-                                                        string = split_string[1].replace(" ", "")
-                                                        print("string: " + string)
-                                                        part['memorytype'] = string
-                                                        break
+                                        if countTr > 0 or countTr < 6:
+                                            td4_tag = tr.find('td', attrs={'class': ['c4']})
+                                            td1_tag = tr.find('td', attrs={'class': ['c1']})
+                                            if td1_tag:
+                                                td1_tag_text = td1_tag.text
+                                                if 'Socket' in td1_tag_text:
+                                                    if td4_tag:
+                                                        td_text = td4_tag.text
+                                                        print("")
+                                                        if len(td_text) > 1:
+                                                            string = td_text
+                                                            print("string: " + string)
+                                                            part['socket'] = string
+                                                            break
+                                                        else:
+                                                            print("No whitespace found")
                                                     else:
-                                                        print("No whitespace found")
-                                            else:
-                                                print("Kon geen td_tag vinden")
+                                                        print("Kon geen td_tag vinden")
                                 else:
                                     print("Kon geen tr_tag vinden")
                             else:
@@ -142,7 +143,7 @@ for part in data.values():
             else:
                 print("Kon geen a_tag vinden")
                 logging.info("mislukt")
-
+    print("")
 
 with open(bestandspad, 'w') as f:
     json.dump(data, f, indent=4)

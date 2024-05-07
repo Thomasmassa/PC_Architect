@@ -6,7 +6,7 @@ namespace PcArchitect.Model
 {
     public class Memory : IComponent
     {
-        private string _image = "imagenotfound.png";
+        private string _image = "";
 
         [JsonPropertyName("image")]
         public string Image
@@ -25,25 +25,26 @@ namespace PcArchitect.Model
         }
 
         [JsonPropertyName("name")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [JsonPropertyName("price")]
         public double? Price { get; set; }
         [JsonPropertyName("price_per_gb")]
-        public double Price_per_gb { get; set; }
+        public double? Price_per_gb { get; set; }
         [JsonPropertyName("color")]
-        public string Color { get; set; }
+        public string? Color { get; set; }
         [JsonPropertyName("first_word_latency")]
-        public int First_word_latency { get; set; }
+        public double? First_word_latency { get; set; }
         [JsonPropertyName("cas_latency")]
-        public int Cas_latency { get; set; }
+        public int? Cas_latency { get; set; }
         [JsonPropertyName("speed_type")]
-        public string Speed_type { get; set; }//DDR4, DDR5
+        public string? Speed_type { get; set; }//DDR4, DDR5
         [JsonPropertyName("speed_value")]
-        public int Speed_value { get; set; }//3200, 3600
+        public int? Speed_value { get; set; }//3200, 3600
         [JsonPropertyName("module_count")]
-        public int Module_count { get; set; }//1, 2, 4
+        public int? Module_count { get; set; }//1, 2, 4
         [JsonPropertyName("module_size")]
-        public int Module_size { get; set; }//4, 8, 16, 32, 64
+        public int? Module_size { get; set; }//4, 8, 16, 32, 64
+
 
         public string Details
         {

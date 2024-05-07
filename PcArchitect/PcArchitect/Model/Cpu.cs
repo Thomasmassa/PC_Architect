@@ -25,28 +25,20 @@ namespace PcArchitect.Model
 
         [JsonPropertyName("name")]
         public string Name { get; set; } = "";
-
         [JsonPropertyName("price")]
         public double? Price { get; set; }
-
         [JsonPropertyName("core_count")]
         public int Core_Count { get; set; }
-
         [JsonPropertyName("core_clock")]
         public double Core_clock { get; set; }
-
         [JsonPropertyName("boost_clock")]
         public double BoostClock { get; set; }
-
         [JsonPropertyName("tdp")]
         public int Tdp { get; set; }
-
         [JsonPropertyName("graphics")]
         public string Graphics { get; set; } = "";
-
         [JsonPropertyName("smt")]
         public bool Smt { get; set; }
-
         [JsonPropertyName("socket")]
         public string Socket { get; set; } = "";
 

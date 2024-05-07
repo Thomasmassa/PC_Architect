@@ -22,7 +22,7 @@ namespace PcArchitect.Services
             {
                 var response = await _client.GetAsync($"{BaseUrl}{path}/.json");
 
-                if (!response.IsSuccessStatusCode)
+               if (!response.IsSuccessStatusCode)
                 {
                     Console.WriteLine($"Error while getting components from Firebase: {response.StatusCode}");
                     return [];
