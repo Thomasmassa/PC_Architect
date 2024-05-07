@@ -15,19 +15,19 @@ namespace PcArchitect.Model
             set { _image = value; }
         }
 
-        private string _details = "";
+        private string _description = "";
 
         [JsonPropertyName("details")]
-        public string Details
+        public string? Description
         {
-            get { return string.IsNullOrEmpty(_details) ? "No details available" : _details; }
-            set { _details = value; }
+            get { return string.IsNullOrEmpty(_description) ? "No description available" : _description; }
+            set { _description = value; }
         }
 
         [JsonPropertyName("name")]
         public string Name { get; set; }
         [JsonPropertyName("price")]
-        public double Price { get; set; }
+        public double? Price { get; set; }
         [JsonPropertyName("price_per_gb")]
         public double Price_per_gb { get; set; }
         [JsonPropertyName("color")]
@@ -45,13 +45,12 @@ namespace PcArchitect.Model
         [JsonPropertyName("module_size")]
         public int Module_size { get; set; }//4, 8, 16, 32, 64
 
-        public string Discription
+        public string Details
         {
             get { return $"DDR: {Speed_type}\nSpeed: {Speed_value}\nModule size: {Module_count}x{Module_size}Gb"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
         public bool? IsPresetFrameEnabled { get; set; } = false;
-        public bool IsDescriptionVisible { get; set; } = false;
     }
 }

@@ -27,7 +27,8 @@ namespace PcArchitect.ViewModel
             _addedcomponentRepository = addedcomponentRepository;
             Component = new ObservableCollection<IComponent>();
 
-            IsDescriptionVisible = true;
+            IsDetailsVisible = false;
+            IsDescriptionVisible = false;
         }
 
         [RelayCommand]
@@ -50,9 +51,15 @@ namespace PcArchitect.ViewModel
         }
 
         [RelayCommand]
+        void ToggleDetails()
+        {
+            IsDetailsVisible = true;
+        }
+
+        [RelayCommand]
         void ToggleDescription()
         {
-            IsDescriptionVisible = !IsDescriptionVisible;
+            IsDescriptionVisible = true;
         }
 
         [RelayCommand]

@@ -100,7 +100,7 @@
                                            HorizontalOptions="CenterAndExpand" FontSize="Subtitle" HorizontalTextAlignment="Center" Margin="0,3,0,0"/>
 
                                 <!--DISCRIPTION-->
-                                <Label Text="{Binding Discription}" FontFamily="Koulen" LineHeight="0.6" TextColor="Black" Grid.RowSpan="3" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="2" Margin="10,0,0,0" 
+                                <Label Text="{Binding Details}" FontFamily="Koulen" LineHeight="0.6" TextColor="Black" Grid.RowSpan="3" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="2" Margin="10,0,0,0" 
                                            VerticalOptions="CenterAndExpand" FontSize="Caption"  HorizontalTextAlignment="Start" />
 
                                 <Label Text="{Binding Price, StringFormat='€{0}'}" FontFamily="Koulen" TextColor="{StaticResource TextPriceColor}" FontAttributes="Bold" Grid.Row="2" Grid.RowSpan="4" Grid.ColumnSpan="2" Grid.Column="5" 

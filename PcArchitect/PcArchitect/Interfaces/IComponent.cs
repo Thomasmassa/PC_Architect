@@ -8,11 +8,11 @@ namespace PcArchitect.Interfaces
         string Name { get; }
         string Image { get; }
         double? Price { get; }
-        string? Discription { get; }
+        string? Description { get; }
+        string? Details { get; }
 
 
         bool? IsSelectedComponentFrameEnabled { get; set; }
         bool? IsPresetFrameEnabled { get; set; }
-        bool IsDescriptionVisible { get; set; }
     }
 }
