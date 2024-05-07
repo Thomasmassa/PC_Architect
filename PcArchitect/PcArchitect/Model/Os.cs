@@ -14,13 +14,13 @@ namespace PcArchitect.Model
             set { _image = value; }
         }
 
-        private string _details = "";
+        private string _description = "";
 
         [JsonPropertyName("details")]
-        public string Details
+        public string? Description
         {
-            get { return string.IsNullOrEmpty(_details) ? "No details available" : _details; }
-            set { _details = value; }
+            get { return string.IsNullOrEmpty(_description) ? "No description available" : _description; }
+            set { _description = value; }
         }
 
         [JsonPropertyName("name")]
@@ -32,13 +32,12 @@ namespace PcArchitect.Model
         [JsonPropertyName("max_memory")]
         public int MaxMemory { get; set; }
 
-        public string Discription
+        public string Details
         {
             get { return $"Mode: {Mode}\nMax Memory: {MaxMemory}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
         public bool? IsPresetFrameEnabled { get; set; } = false;
-        public bool IsDescriptionVisible { get; set; } = false;
     }
 }
