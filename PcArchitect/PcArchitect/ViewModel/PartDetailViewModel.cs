@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Collections.ObjectModel;
 using IComponent = PcArchitect.Interfaces.IComponent;
 using PcArchitect.Services;
+using PC_Architect.Model;
 
 // DIT IS DE VIEWMODEL VOOR DE DETAILPAGINA VAN EEN COMPONENT UIT DE PARTSLIST
 
@@ -16,16 +17,17 @@ namespace PcArchitect.ViewModel
     {
         public string? SelectedItem { get; set; }
         public IComponent? DisplayedItem { get; set; }
-
         private readonly BufferService _bufferService;
+        private readonly AddedComponentRepository _addedcomponentRepository;
         public ObservableCollection<IComponent> Component { get; set; }
 
-        public PartDetailViewModel(BufferService bufferService)
+        public PartDetailViewModel(BufferService bufferService, AddedComponentRepository addedcomponentRepository)
         {
             _bufferService = bufferService;
+            _addedcomponentRepository = addedcomponentRepository;
             Component = new ObservableCollection<IComponent>();
 
-            IsDescriptionVisible = false;
+            IsDescriptionVisible = true;
         }
 
         [RelayCommand]
@@ -51,6 +53,17 @@ namespace PcArchitect.ViewModel
         void ToggleDescription()
         {
             IsDescriptionVisible = !IsDescriptionVisible;
+        }
+
+        [RelayCommand]
+        async Task AddToBuild()
+        {
+            var component = Component.FirstOrDefault();
+            if (component != null)
+            {
+                await _addedcomponentRepository.AddComponentAsync(component);
+                await Shell.Current.GoToAsync(nameof(StartBuildingPage));
+            }
         }
     }
 }
