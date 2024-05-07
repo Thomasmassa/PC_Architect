@@ -34,11 +34,8 @@ namespace PC_Architect.Model
                     case Memory memory:
                         _rootF.GetRoot2().Memory.Add(memory);
                         break;
-                    case Ssd ssd:
+                    case Storage ssd:
                         _rootF.GetRoot2().Ssd.Add(ssd);
-                        break;
-                    case Hdd hdd:
-                        _rootF.GetRoot2().Hdd.Add(hdd);
                         break;
                     case Psu psu:
                         _rootF.GetRoot2().Psu.Add(psu);
@@ -52,8 +49,6 @@ namespace PC_Architect.Model
                     case Os os:
                         _rootF.GetRoot2().Os.Add(os);
                         break;
-
-
                 }
             }); return Task.CompletedTask;
         }
@@ -79,11 +74,8 @@ namespace PC_Architect.Model
                     case Memory memory:
                         _rootF.GetRoot2().Memory.Remove(memory);
                         break;
-                    case Ssd ssd:
+                    case Storage ssd:
                         _rootF.GetRoot2().Ssd.Remove(ssd);
-                        break;
-                    case Hdd hdd:
-                        _rootF.GetRoot2().Hdd.Remove(hdd);
                         break;
                     case Psu psu:
                         _rootF.GetRoot2().Psu.Remove(psu);

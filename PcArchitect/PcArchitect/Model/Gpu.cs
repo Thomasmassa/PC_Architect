@@ -42,7 +42,7 @@ namespace PcArchitect.Model
 
         public string Discription
         {
-            get { return $"{Chipset}\nMemory: {Memory}\nCore Clock Type: {CoreClock}\nBoost Clock: {BoostClock}"; }
+            get { return $"{Chipset}\nMemory: {Memory}\nCore Clock Type: {CoreClock}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

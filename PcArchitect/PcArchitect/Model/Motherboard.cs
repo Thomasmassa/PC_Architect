@@ -40,7 +40,7 @@ namespace PcArchitect.Model
 
         public string Discription
         {
-            get { return $"Socket: {Socket}\nMemory Slots: {MemorySlots}\nMax Memory: {MaxMemory}\nColor: {Color}"; }
+            get { return $"Socket: {Socket}\nMemory Slots: {MemorySlots}\nMax Memory: {MaxMemory}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

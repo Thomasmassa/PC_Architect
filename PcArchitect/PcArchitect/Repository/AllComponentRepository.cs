@@ -27,8 +27,7 @@ namespace PcArchitect.Repository
                 _rootF.GetRoot1().Motherboard.AddRange(await _comServ.GetComponentsAsync<Motherboard>("motherboard"));
                 _rootF.GetRoot1().Gpu.AddRange(await _comServ.GetComponentsAsync<Gpu>("gpu"));
                 _rootF.GetRoot1().Memory.AddRange(await _comServ.GetComponentsAsync<Memory>("memory"));
-                _rootF.GetRoot1().Ssd.AddRange(await _comServ.GetComponentsAsync<Ssd>("ssd"));
-                _rootF.GetRoot1().Hdd.AddRange(await _comServ.GetComponentsAsync<Hdd>("hdd"));
+                _rootF.GetRoot1().Ssd.AddRange(await _comServ.GetComponentsAsync<Storage>("ssd"));
                 _rootF.GetRoot1().Psu.AddRange(await _comServ.GetComponentsAsync<Psu>("psu"));
                 _rootF.GetRoot1().Case.AddRange(await _comServ.GetComponentsAsync<Case>("case"));
                 _rootF.GetRoot1().Case_Fan.AddRange(await _comServ.GetComponentsAsync<CaseFan>("casefan"));

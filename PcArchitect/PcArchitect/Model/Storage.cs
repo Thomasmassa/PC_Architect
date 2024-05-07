@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
-    public class Ssd : IComponent
+    public class Storage : IComponent
     {
         private string _image = "imagenotfound.png";
 
@@ -43,7 +43,7 @@ namespace PcArchitect.Model
 
         public string Discription
         {
-            get { return $"Capacity: {Capacity}\nType: {Type}\nForm Factor: {FormFactor}\nPrice Per GB {PricePerGb}"; }
+            get { return $"Capacity: {Capacity}\nType: {Type}\nPrice Per GB {PricePerGb}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

@@ -25,25 +25,29 @@ namespace PcArchitect.Model
         }
 
         [JsonPropertyName("name")]
-        public string Name { get; set; } = "";
+        public string Name { get; set; }
         [JsonPropertyName("price")]
-        public double? Price { get; set; }
-        [JsonPropertyName("speed")]
-        public List<int> Speed { get; set; } = [];
-        [JsonPropertyName("modules")]
-        public List<int> Modules { get; set; } = [];
+        public double Price { get; set; }
         [JsonPropertyName("price_per_gb")]
-        public double PricePerGb { get; set; }
+        public double Price_per_gb { get; set; }
         [JsonPropertyName("color")]
-        public string Color { get; set; } = "";
+        public string Color { get; set; }
         [JsonPropertyName("first_word_latency")]
-        public double FirstWordLatency { get; set; }
+        public int First_word_latency { get; set; }
         [JsonPropertyName("cas_latency")]
-        public int CasLatency { get; set; }
+        public int Cas_latency { get; set; }
+        [JsonPropertyName("speed_type")]
+        public int Speed_type { get; set; }//DDR4, DDR5
+        [JsonPropertyName("speed_value")]
+        public int Speed_value { get; set; }//3200, 3600
+        [JsonPropertyName("module_count")]
+        public int Module_count { get; set; }//1, 2, 4
+        [JsonPropertyName("module_size")]
+        public int Module_size { get; set; }//4, 8, 16, 32, 64
 
         public string Discription
         {
-            get { return $"Price Per GB: {PricePerGb}\nFirst Word Latency: {FirstWordLatency}\nCast Latency: {CasLatency}"; }
+            get { return $"DDR: {Speed_type}\nSpeed: {Speed_value}\nModule size: {Module_count}x{Module_size}Gb"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

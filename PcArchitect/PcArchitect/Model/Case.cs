@@ -48,7 +48,7 @@ namespace PcArchitect.Model
 
         public string Discription
         {
-            get { return $"Psu: {Psu}\nType: {Type}\nExternal Volume: {ExternalVolume}\nInternal 35 Bays {Internal35Bays}"; }
+            get { return $"Type: {Type}\nSide Panel: {SidePanel}\nExternal Volume: {ExternalVolume}"; }
         }
 
         // DE VOLGENDE EIGENSCHAPPEN WORDEN GEBRUIKT OM DELEN IN DE XAML TE TONEN OF TE VERBERGEN
