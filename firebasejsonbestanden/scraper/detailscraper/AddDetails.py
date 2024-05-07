@@ -1,24 +1,24 @@
 import json
 
-# while True:
-#     if input("Wil je stoppen? (y/n): ") == 'y':
-#         break
+while True:
+    if input("Wil je stoppen? (y/n): ") == 'y':
+        break
 
-# file_name = input("geef file name: ")
-# filepath = file_name + ".json"
-# print("opgegeven file: " + filepath)
+    file_name = input("geef file name: ")
+    filepath = file_name + ".json"
+    print("opgegeven file: " + filepath)
 
-#     # Open het JSON-bestand
-#     with open(filepath, 'r') as f:
-#         data = json.load(f)
+    # Open het JSON-bestand
+    with open(filepath, 'r') as f:
+        data = json.load(f)
 
-#     # Loop door elk object en voeg het veld "details" toe
-#     for key in data:
-#         data[key]['details'] = ''
+    # Loop door elk object en voeg het veld "details" toe
+    for key in data:
+        data[key]['details'] = ''
 
-#     # Schrijf de nieuwe data terug naar het bestand
-#     with open(filepath, 'w') as f:
-#         json.dump(data, f, indent=4)
+    # Schrijf de nieuwe data terug naar het bestand
+    with open(filepath, 'w') as f:
+        json.dump(data, f, indent=4)
 
 
 # with open(filepath, 'r') as f:
