@@ -14,6 +14,15 @@ namespace PcArchitect.Model
             set { _image = value; }
         }
 
+        private string _details = "";
+
+        [JsonPropertyName("details")]
+        public string Details
+        {
+            get { return string.IsNullOrEmpty(_details) ? "No details available" : _details; }
+            set { _details = value; }
+        }
+
         [JsonPropertyName("name")]
         public string Name { get; set; } = "";
 

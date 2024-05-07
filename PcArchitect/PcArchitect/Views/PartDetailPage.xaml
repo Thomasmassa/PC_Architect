@@ -71,7 +71,7 @@
                                             FontSize="30" Margin="0,10,0,0" HorizontalOptions="Center"/>
 
                                     <Button Text="Details" FontSize="20" FontFamily="Koulen" TextColor="{StaticResource LabelText}" BackgroundColor="{StaticResource Signature}" HorizontalOptions="FillAndExpand" 
-                                            Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="3" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}, Path=ToggleDiscriptionCommand}"/>
+                                            Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="3" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}, Path=ToggleDescriptionCommand}"/>
 
                                     <Label Text="{Binding Discription}" FontFamily="Koulen" LineHeight="0.6" TextColor="Black"
                                         Grid.Row="4" Grid.ColumnSpan="3" Margin="0,10,0,0" VerticalOptions="StartAndExpand"
