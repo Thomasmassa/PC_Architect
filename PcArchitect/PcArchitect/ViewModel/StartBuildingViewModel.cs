@@ -6,6 +6,7 @@ using PcArchitect.Views;
 using PC_Architect.Model;
 using System.Collections;
 using System.Diagnostics;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 // DIT IS DE VIEWMODEL VOOR DE PAGINA WAAR DE CATAGORIEEN WORDEN WEERGEGEVEN
 
@@ -14,7 +15,7 @@ namespace PcArchitect.ViewModel
     public partial class StartBuildingViewModel : BaseViewModel
     {
         public ObservableCollection<IComponent> Components { get; set; }
-
+        private double TotalPrice;
         private readonly RootFactory _rootF;
         private readonly AddedComponentRepository _addedomponentRepository;
 
@@ -30,6 +31,8 @@ namespace PcArchitect.ViewModel
 
             _addedomponentRepository = addedcomponentRepository;
             _rootF = rootF;
+
+            TotalPriceString = "€0.00";
         }
 
 
@@ -41,9 +44,11 @@ namespace PcArchitect.ViewModel
         //ADD COMPONENTS
         public Task AddComponents()
         {
-            return Task.Run(() =>
+            return Task.Run(async () =>
             {
                 var properties = typeof(Root).GetProperties();
+
+                TotalPrice = 0;
 
                 foreach (var property in properties)
                 {
@@ -58,6 +63,9 @@ namespace PcArchitect.ViewModel
                             {
                                 lastItem.IsSelectedComponentFrameEnabled = true;
                                 lastItem.IsPresetFrameEnabled = false;
+
+                                TotalPrice += lastItem.Price ?? 0;
+                                TotalPriceString = TotalPrice.ToString("C2");
                             }
 
                             Components.Add(lastItem);
@@ -99,6 +107,9 @@ namespace PcArchitect.ViewModel
             bool choice = await Shell.Current.DisplayAlert("Your sure mate", component.Name, "Delete", "Cancel");
             if (choice)
             {
+                TotalPrice -= component.Price ?? 0;
+                TotalPriceString = TotalPrice.ToString("C2");
+
                 await _addedomponentRepository.RemoveComponentAsync(component);
                 Components.Clear();
                 await AddComponents();

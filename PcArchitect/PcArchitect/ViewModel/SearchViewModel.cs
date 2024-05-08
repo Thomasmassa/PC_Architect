@@ -159,5 +159,24 @@ namespace PcArchitect.ViewModel
                 { "SelectedItem", selectedPart.Name }
             });
         }
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+        // PICKER HEEFT GEEN COMMAND FUNCTIE
+
+        //[RelayCommand]
+        //async Task OnPickIndexChanged(int index)
+        //{
+        //    if (index == -1)
+        //        return;
+        //    else if (index == 0)
+        //        OnSearch("");
+        //    else
+        //    {
+        //        var properties = typeof(Root).GetProperties();
+        //    }
+        //}
     }
 }

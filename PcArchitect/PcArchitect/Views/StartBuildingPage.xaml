@@ -15,6 +15,7 @@
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
     </ContentPage.Behaviors>
+    
     <StackLayout BackgroundColor="{StaticResource BackgroundBackgroundColor}">
         <CollectionView ItemsSource="{Binding Components}" VerticalOptions="FillAndExpand">
             <CollectionView.Header>
@@ -122,7 +123,6 @@
                             </Grid>
                         </Frame>
                         <!--Frame voor de geselecteerde component-->
-
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
@@ -130,6 +130,7 @@
 
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -140,11 +141,16 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
+            <Label Grid.Row="0" Grid.Column="1" Margin="15,0,0,0" HorizontalOptions="Start" FontAttributes="Bold" FontFamily="Koulen"
+                   FontSize="Title" TextColor="{StaticResource TextPriceColor}" Text="Total Price"/>
+            <Label Grid.Row="0" Grid.Column="3" Margin="0,0,15,0" HorizontalOptions="End" Text="{Binding TotalPriceString}" 
+                   FontAttributes="Bold" FontFamily="Koulen" FontSize="Title" TextColor="{StaticResource TextPriceColor}" />
+
             <!-- SAVE AND EXIT -->
             <Button Text="Save" 
             TextColor="{StaticResource Primary}"
             Padding="0"
-            Grid.Row="7"
+            Grid.Row="1"
             Grid.Column="1"
             Style="{StaticResource ButtonOutline}"
             Margin="8"
@@ -154,7 +160,7 @@
             TextColor="{StaticResource Primary}"
             Command="{Binding BackButtonCommand}"
             Padding="0"
-            Grid.Row="7"
+            Grid.Row="1"
             Grid.Column="3"
             Style="{StaticResource ButtonOutline}"
             Margin="8"

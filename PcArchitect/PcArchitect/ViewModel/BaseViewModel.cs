@@ -26,6 +26,9 @@ namespace PcArchitect.ViewModel
         [ObservableProperty]
         bool isDescriptionVisible;
 
+        [ObservableProperty]
+        string totalPriceString;
+
         public bool IsNotBusy => !IsBusy;
     }
 }
