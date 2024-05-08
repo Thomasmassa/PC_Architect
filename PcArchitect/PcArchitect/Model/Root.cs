@@ -25,9 +25,9 @@ namespace PcArchitect.Model
             Gpu = new List<Gpu> { new Gpu { Name = "GPU", Image = "gpu.png", IsPresetFrameEnabled = true } };
             Motherboard = new List<Motherboard> { new Motherboard { Name = "MOTHERBOARD", Image = "motherboard.png", IsPresetFrameEnabled = true } };
             Memory = new List<Memory> { new Memory { Name = "MEMORY", Image = "memory.png", IsPresetFrameEnabled = true } };
-            Ssd = new List<Storage> { new Storage { Name = "SSD", Image = "ssd.png", IsPresetFrameEnabled = true } };
+            Ssd = new List<Storage> { new Storage { Name = "STORAGE", Image = "ssd.png", IsPresetFrameEnabled = true } };
             Psu = new List<Psu> { new Psu { Name = "PSU", Image = "psu.png", IsPresetFrameEnabled = true } };
-            Case_Fan = new List<CaseFan> { new CaseFan { Name = "CASE FANS", Image = "case_fan.png", IsPresetFrameEnabled = true } };
+            Case_Fan = new List<CaseFan> { new CaseFan { Name = "CASE FAN", Image = "case_fan.png", IsPresetFrameEnabled = true } };
             Case = new List<Case> { new Case { Name = "CASE", Image = "case_tower.png", IsPresetFrameEnabled = true } };
             Os = new List<Os> { new Os { Name = "OS", Image = "os.png", IsPresetFrameEnabled = true } };
         }
