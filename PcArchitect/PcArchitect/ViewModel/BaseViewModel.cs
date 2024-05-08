@@ -29,6 +29,9 @@ namespace PcArchitect.ViewModel
         [ObservableProperty]
         string totalPriceString;
 
+        [ObservableProperty]
+        bool isAdditionalPresetFrameEnabled;
+
         public bool IsNotBusy => !IsBusy;
     }
 }

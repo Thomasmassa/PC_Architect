@@ -41,7 +41,7 @@
                         <Frame x:Name="presetFrame" IsVisible="{Binding IsPresetFrameEnabled}" 
                                     Grid.Row="0" Grid.Column="1" CornerRadius="15" HeightRequest="100" BackgroundColor="#D4D4D4" Margin="0,10,0,10">
                             <Frame.GestureRecognizers>
-                                <TapGestureRecognizer x:Name="openListButton"
+                                <TapGestureRecognizer
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=GoToPartsListCommand}"
                                         CommandParameter="{Binding .}"/>
                             </Frame.GestureRecognizers>
@@ -58,6 +58,25 @@
                         </Frame>
                         <!--Frame voor de preset-->
 
+                        <!--Frame voor de additional preset-->
+                        <Frame x:Name="additionalPresetFrame" IsVisible="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=IsAdditionalPresetFrameEnabled}" 
+                                    Grid.Row="0" Grid.Column="1" CornerRadius="15" HeightRequest="100" BackgroundColor="{StaticResource Signature}" Margin="0,10,0,10">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=GoToPartsListCommand}"
+                                        CommandParameter="{Binding .}"/>
+                            </Frame.GestureRecognizers>
+                            <Grid BackgroundColor="Transparent">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="4*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=Title}" TextColor="Black" Grid.Column="1" VerticalOptions="CenterAndExpand"
+                                            HorizontalOptions="CenterAndExpand" FontSize="30" FontFamily="Koulen"/>
+                            </Grid>
+                        </Frame>
+                        <!--Frame voor de preset-->
 
                         <!--Frame voor de geselecteerde component-->
                         <Frame IsVisible="{Binding IsSelectedComponentFrameEnabled}" 

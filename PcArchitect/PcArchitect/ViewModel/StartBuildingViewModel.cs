@@ -15,9 +15,9 @@ namespace PcArchitect.ViewModel
     public partial class StartBuildingViewModel : BaseViewModel
     {
         public ObservableCollection<IComponent> Components { get; set; }
-        private double TotalPrice;
         private readonly RootFactory _rootF;
         private readonly AddedComponentRepository _addedomponentRepository;
+        private double TotalPrice;
 
 
         //////////////////////////////////////////////
@@ -33,6 +33,8 @@ namespace PcArchitect.ViewModel
             _rootF = rootF;
 
             TotalPriceString = "€0.00";
+
+            Title = "";
         }
 
 
@@ -49,6 +51,7 @@ namespace PcArchitect.ViewModel
                 var properties = typeof(Root).GetProperties();
 
                 TotalPrice = 0;
+                IsAdditionalPresetFrameEnabled = false;
 
                 foreach (var property in properties)
                 {
@@ -66,6 +69,12 @@ namespace PcArchitect.ViewModel
 
                                 TotalPrice += lastItem.Price ?? 0;
                                 TotalPriceString = TotalPrice.ToString("C2");
+
+                                if (lastItem is Storage storage)
+                                {
+                                    IsAdditionalPresetFrameEnabled = true;
+                                    Title = "+ Add Additional Storage";
+                                }
                             }
 
                             Components.Add(lastItem);
@@ -164,6 +173,10 @@ namespace PcArchitect.ViewModel
         //////////////////////////////////////////////
 
         //////////////////////////////////////////////
+
+
+        //ADDITIONAL PRESET
+
     }
 }
 
