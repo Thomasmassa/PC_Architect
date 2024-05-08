@@ -9,8 +9,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/0/7/AMD_Ryzen_7_7800X3D__4_2_GHz__5_0_GHz_Turbo_Boost__socket_AM5_processor@@1898270_30.jpg",
-        "details": "De AMD Ryzen 7 7800X3D processor, codenaam \"Raphael\", beschikt over acht cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4200 MHz en een turbo-modus tot maximaal 5000 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 7 7800X3D die alles kan met ongelooflijke prestaties voor de meest veeleisende gamers en makers. Geniet daarnaast van de voordelen van next-gen AMD 3D V-Cache technologie voor lage latentie en nog meer game prestaties.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 7 7800X3D processor, codenaam \"Raphael\", beschikt over acht cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4200 MHz en een turbo-modus tot maximaal 5000 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 7 7800X3D die alles kan met ongelooflijke prestaties voor de meest veeleisende gamers en makers. Geniet daarnaast van de voordelen van next-gen AMD 3D V-Cache technologie voor lage latentie en nog meer game prestaties."
     },
     "1": {
         "name": "AMD Ryzen 5 7600X",
@@ -22,8 +22,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/6/0/AMD_Ryzen_5_7600X__4_7_GHz__5_3_GHz_Turbo_Boost__socket_AM5_processor@@1861506.jpg",
-        "details": "De AMD Ryzen 5 7600X processor, codenaam \"Raphael\", beschikt over zes cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4700 MHz en een turbo-modus tot maximaal 5300 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 5 7600X processor, codenaam \"Raphael\", beschikt over zes cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4700 MHz en een turbo-modus tot maximaal 5300 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler."
     },
     "2": {
         "name": "AMD Ryzen 5 5600X",
@@ -35,8 +35,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/8/AMD_Ryzen_5_5600X__3_7_GHz__4_6_GHz_Turbo_Boost__socket_AM4_processor@@1685588.jpg",
-        "details": "De AMD Ryzen 5 5600X processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 4600 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 5600X processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 4600 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord."
     },
     "3": {
         "name": "Intel Core i9-14900K",
@@ -48,8 +48,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/9/5/Intel__Core_i9_14900K__3_2_GHz__6_0_GHz_Turbo_Boost__socket_1700_processor@@100009759.jpg",
-        "details": "De Intel\u00ae Core\u2122 i9-14900K, codenaam \"Raptor Lake-S\", beschikt over 8 Performance cores en 16 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 36 MB Smart cache en werkt op een snelheid van 3,2 GHz.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i9-14900K, codenaam \"Raptor Lake-S\", beschikt over 8 Performance cores en 16 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 36 MB Smart cache en werkt op een snelheid van 3,2 GHz."
     },
     "4": {
         "name": "AMD Ryzen 5 7600",
@@ -61,8 +61,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/6/0/AMD_Ryzen_5_7600X__4_7_GHz__5_3_GHz_Turbo_Boost__socket_AM5_processor@@1861506.jpg",
-        "details": "De AMD Ryzen 5 7600 processor, codenaam \"Raphael\", beschikt over zes cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 3800 MHz en een turbo-modus tot maximaal 5100 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 5 7600 processor, codenaam \"Raphael\", beschikt over zes cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 3800 MHz en een turbo-modus tot maximaal 5100 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler."
     },
     "5": {
         "name": "Intel Core i7-13700K",
@@ -74,8 +74,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/3/Intel__Core_i7_13700K__3_4_GHz__5_4_GHz_Turbo_Boost__socket_1700_processor@@1865238.jpg",
-        "details": "De Intel\u00ae Core\u2122 i7-13700K, codenaam \"Raptor Lake\", beschikt over 8 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 30 MB Smart cache en werkt op een snelheid van 3,4 GHz. De Intel\u00ae  Core\u2122 i7-13700K beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i7-13700K, codenaam \"Raptor Lake\", beschikt over 8 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 30 MB Smart cache en werkt op een snelheid van 3,4 GHz. De Intel\u00ae  Core\u2122 i7-13700K beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "6": {
         "name": "AMD Ryzen 5 5600",
@@ -87,8 +87,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/3/6/AMD_Ryzen_5_5600__3_5_GHz__4_4_GHz_Turbo_Boost__socket_AM4_processor@@1831263.jpg",
-        "details": "De AMD Ryzen 5 5600 processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3500 MHz en een turbo-modus tot maximaal 4400 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 5600 processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3500 MHz en een turbo-modus tot maximaal 4400 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler."
     },
     "7": {
         "name": "Intel Core i5-12400F",
@@ -100,8 +100,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/7/3/Intel__Core_i5_12400F__2_5_GHz__4_4_GHz_Turbo_Boost__socket_1700_processor@@1778337.jpg",
-        "details": "De Intel\u00ae Core i5-12400F, codenaam \"Alder Lake\", beschikt over 6 verwerkingseenheden en is geschikt om op een moederbord met Socket 1700 te plaatsen. De processor beschikt over 18 MB Smart cache en werkt op een snelheid van 2,5 GHz. De Intel\u00ae Core i5-12400F beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i5-12400F, codenaam \"Alder Lake\", beschikt over 6 verwerkingseenheden en is geschikt om op een moederbord met Socket 1700 te plaatsen. De processor beschikt over 18 MB Smart cache en werkt op een snelheid van 2,5 GHz. De Intel\u00ae Core i5-12400F beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "8": {
         "name": "AMD Ryzen 7 5800X",
@@ -113,8 +113,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/5/8/AMD_Ryzen_7_5800X__3_8_GHz__4_7_GHz_Turbo_Boost__socket_AM4_processor@@1685585.jpg",
-        "details": "De AMD Ryzen 7 5800X processor, codenaam \"Vermeer\", beschikt over acht cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3800 MHz en een turbo-modus tot maximaal 4700 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 7 5800X processor, codenaam \"Vermeer\", beschikt over acht cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3800 MHz en een turbo-modus tot maximaal 4700 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord."
     },
     "9": {
         "name": "AMD Ryzen 5 5500",
@@ -126,8 +126,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/1/5/AMD_Ryzen_5_5500__3_6_GHz__4_2_GHz_Turbo_Boost__socket_AM4_processor@@1831251.jpg",
-        "details": "De AMD Ryzen 5 5500 processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3600 MHz en een turbo-modus tot maximaal 4200 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 5500 processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3600 MHz en een turbo-modus tot maximaal 4200 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler."
     },
     "10": {
         "name": "Intel Core i7-14700K",
@@ -139,8 +139,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/5/7/Intel__Core_i7_14700K__3_4_GHz__5_6_GHz_Turbo_Boost__socket_1700_processor@@100009775.jpg",
-        "details": "De Intel\u00ae Core\u2122 i7-14700K, codenaam \"Raptor Lake-S\", beschikt over 8 Performance cores en 12 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 32 MB Smart cache en werkt op een snelheid van 3,4 GHz.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i7-14700K, codenaam \"Raptor Lake-S\", beschikt over 8 Performance cores en 12 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 32 MB Smart cache en werkt op een snelheid van 3,4 GHz."
     },
     "11": {
         "name": "AMD Ryzen 5 3600",
@@ -152,8 +152,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/h/AMD_Ryzen_5_3600__3_6_GHz__4_2_GHz_Turbo_Boost___socket_AM4_processor@@hr5a33.jpg",
-        "details": "De AMD Ryzen 5 3600 processor, codenaam \"Zen 2\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3600 MHz en een turbo-modus tot maximaal 4200 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 3600 processor, codenaam \"Zen 2\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3600 MHz en een turbo-modus tot maximaal 4200 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler."
     },
     "12": {
         "name": "AMD Ryzen 7 7700X",
@@ -165,8 +165,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/2/2/AMD_Ryzen_7_7700X__4_5_GHz__5_4_GHz_Turbo_Boost__socket_AM5_processor@@1861522.jpg",
-        "details": "De AMD Ryzen 7 7700X processor, codenaam \"Raphael\", beschikt over acht cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4500 MHz en een turbo-modus tot maximaal 5400 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 7 7700X processor, codenaam \"Raphael\", beschikt over acht cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4500 MHz en een turbo-modus tot maximaal 5400 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler."
     },
     "13": {
         "name": "AMD Ryzen 9 7950X3D",
@@ -178,8 +178,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/6/AMD_Ryzen_9_7950X3D__4_2_GHz__5_7_GHz_Turbo_Boost__socket_AM5_processor@@1898268.jpg",
-        "details": "De AMD Ryzen 9 7950X3D processor, codenaam \"Raphael\", beschikt over 16 cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4200 MHz en een turbo-modus tot maximaal 5700 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 9 7950X3D die alles kan met ongelooflijke prestaties voor de meest veeleisende gamers en makers. Geniet daarnaast van de voordelen van next-gen AMD 3D V-Cache technologie voor lage latentie en nog meer game prestaties.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 9 7950X3D processor, codenaam \"Raphael\", beschikt over 16 cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4200 MHz en een turbo-modus tot maximaal 5700 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 9 7950X3D die alles kan met ongelooflijke prestaties voor de meest veeleisende gamers en makers. Geniet daarnaast van de voordelen van next-gen AMD 3D V-Cache technologie voor lage latentie en nog meer game prestaties."
     },
     "14": {
         "name": "Intel Core i5-12600K",
@@ -191,8 +191,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/0/5/Intel__Core_i5_12600K__3_7_GHz__4_9_GHz_Turbo_Boost__socket_1700_processor@@1778350.jpg",
-        "details": "De Intel\u00ae Core i5-12600K, codenaam \"Alder Lake\", beschikt over 6 Performance cores en 4 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 20 MB Smart cache en werkt op een snelheid van 3,7 GHz. De Intel\u00ae Core i5-12600K beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i5-12600K, codenaam \"Alder Lake\", beschikt over 6 Performance cores en 4 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 20 MB Smart cache en werkt op een snelheid van 3,7 GHz. De Intel\u00ae Core i5-12600K beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "15": {
         "name": "AMD Ryzen 7 5700X",
@@ -204,8 +204,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/6/AMD_Ryzen_7_5700X__3_4_GHz__4_6_GHz_Turbo_Boost__socket_AM4_processor@@1831268.jpg",
-        "details": "De AMD Ryzen 7 5700X processor, codenaam \"Vermeer\", beschikt over acht cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3400 MHz en een turbo-modus tot maximaal 4600 MHz.\r\nDeze processor wordt geleverd zonder koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 7 5700X processor, codenaam \"Vermeer\", beschikt over acht cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3400 MHz en een turbo-modus tot maximaal 4600 MHz.\r\nDeze processor wordt geleverd zonder koeler."
     },
     "16": {
         "name": "Intel Core i7-12700K",
@@ -217,8 +217,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/9/5/Intel__Core_i7_12700K__3_6_GHz__5_0_GHz_Turbo_Boost__socket_1700_processor@@1778359.jpg",
-        "details": "De Intel\u00ae Core i7-12700K, codenaam \"Alder Lake\", beschikt over 8 Performance Cores en 4 Efficiency Cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 25 MB Smart cache en werkt op een snelheid van 3,6 GHz. De Intel\u00ae Core i7-12700K beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i7-12700K, codenaam \"Alder Lake\", beschikt over 8 Performance Cores en 4 Efficiency Cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 25 MB Smart cache en werkt op een snelheid van 3,6 GHz. De Intel\u00ae Core i7-12700K beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "17": {
         "name": "AMD Ryzen 7 5800X3D",
@@ -230,8 +230,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/9/6/AMD_Ryzen_7_5800X3D__3_4_GHz__4_5_GHz_Turbo_Boost__socket_AM4_processor@@1831269.jpg",
-        "details": "De AMD Ryzen 7 5800X3D processor, codenaam \"Vermeer\", beschikt over acht cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3400 MHz en een turbo-modus tot maximaal 4500 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 7 5800X3D processor, codenaam \"Vermeer\", beschikt over acht cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3400 MHz en een turbo-modus tot maximaal 4500 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler."
     },
     "18": {
         "name": "Intel Core i5-13600K",
@@ -243,8 +243,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/5/0/Intel__Core_i5_13600K__3_5_GHz__5_1_GHz_Turbo_Boost__socket_1700_processor@@1865205.jpg",
-        "details": "De Intel\u00ae Core\u2122 i5-13600K, codenaam \"Raptor Lake\", beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 24 MB Smart cache en werkt op een snelheid van 3,5 GHz. De Intel\u00ae Core i5-13600K beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i5-13600K, codenaam \"Raptor Lake\", beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 24 MB Smart cache en werkt op een snelheid van 3,5 GHz. De Intel\u00ae Core i5-13600K beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "19": {
         "name": "AMD Ryzen 5 5600G",
@@ -256,8 +256,8 @@
         "graphics": "Radeon Vega 7",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/4/7/AMD_Ryzen_5_5600G__3_9_GHz__4_4_GHz_Turbo_Boost__socket_AM4_processor@@1758474.jpg",
-        "details": "De AMD Ryzen 5 5600G processor, codenaam \"Cezanne\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3900 MHz en een turbo-modus tot maximaal 4400 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Spire koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 5600G processor, codenaam \"Cezanne\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3900 MHz en een turbo-modus tot maximaal 4400 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Spire koeler."
     },
     "20": {
         "name": "AMD Ryzen 9 7900X",
@@ -269,8 +269,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/3/2/AMD_Ryzen_9_7900X__4_7_GHz__5_6_GHz_Turbo_Boost__socket_AM5_processor@@1861523.jpg",
-        "details": "De AMD Ryzen 9 7900X processor, codenaam \"Raphael\", beschikt over twaalf cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4700 MHz en een turbo-modus tot maximaal 5600 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 9 7900X processor, codenaam \"Raphael\", beschikt over twaalf cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4700 MHz en een turbo-modus tot maximaal 5600 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler."
     },
     "21": {
         "name": "Intel Core i5-12600KF",
@@ -282,8 +282,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/4/Intel__Core_i5_12600KF__3_7_GHz__4_9_GHz_Turbo_Boost__socket_1700_processor@@1778348.jpg",
-        "details": "De Intel\u00ae Core i5-12600KF, codenaam \"Alder Lake\", beschikt over 6 Performance cores en 4 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 20 MB Smart cache en werkt op een snelheid van 3,7 GHz. De Intel\u00ae Core i5-12600KF beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i5-12600KF, codenaam \"Alder Lake\", beschikt over 6 Performance cores en 4 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 20 MB Smart cache en werkt op een snelheid van 3,7 GHz. De Intel\u00ae Core i5-12600KF beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "22": {
         "name": "Intel Core i3-12100F",
@@ -295,8 +295,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/0/3/Intel__Core_i3_12100F__3_3_GHz__4_3_HGz_Turbo_Boost__socket_1700_processor@@1778330.jpg",
-        "details": "De Intel\u00ae Core i3-12100F, codenaam \"Alder Lake\", beschikt over 4 verwerkingseenheden en is geschikt om op een moederbord met Socket 1700 te plaatsen. De processor beschikt over 12 MB Smart cache en werkt op een snelheid van 3,3 GHz. De Intel\u00ae Core i3-12100F beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i3-12100F, codenaam \"Alder Lake\", beschikt over 4 verwerkingseenheden en is geschikt om op een moederbord met Socket 1700 te plaatsen. De processor beschikt over 12 MB Smart cache en werkt op een snelheid van 3,3 GHz. De Intel\u00ae Core i3-12100F beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "23": {
         "name": "AMD Ryzen 9 5900X",
@@ -308,8 +308,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/0/9/AMD_Ryzen_9_5900X__3_7_GHz__4_8_GHz_Turbo_Boost__socket_AM4_processor@@1685590.jpg",
-        "details": "De AMD Ryzen 9 5900X processor, codenaam \"Vermeer\", beschikt over twaalf cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 4800 MHz.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 9 5900X processor, codenaam \"Vermeer\", beschikt over twaalf cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 4800 MHz.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord."
     },
     "24": {
         "name": "AMD Threadripper 3990X",
@@ -321,8 +321,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/0/7/AMD_Ryzen_Threadripper_7960X__4_2_GHz__5_3_GHz_Turbo_Boost__socket_sTR5_processor@@100019170.jpg",
-        "details": "De AMD Ryzen Threadripper 7980X processor is een 64 core CPU en is geschikt om op een moederbord met socket sRT5 te plaatsen. De processor werkt op een kloksnelheid van 3,2 GHz met een maximale kloksnelheid van 5,1 GHz.\r\nDeze processor wordt geleverd zonder koeler.",
-        "socket": "sWRX8"
+        "socket": "sWRX8",
+        "description": "De AMD Ryzen Threadripper 7980X processor is een 64 core CPU en is geschikt om op een moederbord met socket sRT5 te plaatsen. De processor werkt op een kloksnelheid van 3,2 GHz met een maximale kloksnelheid van 5,1 GHz.\r\nDeze processor wordt geleverd zonder koeler."
     },
     "25": {
         "name": "Intel Core i7-14700KF",
@@ -334,8 +334,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/1/8/Intel__Core_i7_14700KF__3_4_GHz__5_6_GHz_Turbo_Boost__socket_1700_processor@@100009781.jpg",
-        "details": "De Intel\u00ae Core\u2122 i7-14700KF, codenaam \"Raptor Lake-S\", beschikt over 8 Performance cores en 12 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 32 MB Smart cache en werkt op een snelheid van 3,4 GHz.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i7-14700KF, codenaam \"Raptor Lake-S\", beschikt over 8 Performance cores en 12 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 32 MB Smart cache en werkt op een snelheid van 3,4 GHz."
     },
     "26": {
         "name": "Intel Core i5-13400F",
@@ -347,8 +347,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/7/3/Intel__Core_i5_13400F__2_5_GHz__4_6_GHz_Turbo_Boost__socket_1700_processor@@1865237.jpg",
-        "details": "De Intel\u00ae Core\u2122 i5-13400F, Raptor Lake genaamd, brengt een nieuwe chiplay-out met verschillende CPU-kernen voor verschillende toepassingsscenario's. De Performance Cores leveren prestaties voor rekenintensieve toepassingen, de Efficiency Cores voor energie-effici\u00ebntie bij lichte belasting. De Raptor Lake processoren ondersteunen PCIe Gen 5.0 en 4.0, DDR5 en DDR4. De processor is compatibel met moederborden die zijn gebaseerd op de Intel\u00ae 700 en 600 chipset.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i5-13400F, Raptor Lake genaamd, brengt een nieuwe chiplay-out met verschillende CPU-kernen voor verschillende toepassingsscenario's. De Performance Cores leveren prestaties voor rekenintensieve toepassingen, de Efficiency Cores voor energie-effici\u00ebntie bij lichte belasting. De Raptor Lake processoren ondersteunen PCIe Gen 5.0 en 4.0, DDR5 en DDR4. De processor is compatibel met moederborden die zijn gebaseerd op de Intel\u00ae 700 en 600 chipset."
     },
     "27": {
         "name": "AMD Ryzen 5 4500",
@@ -360,8 +360,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/1/3/AMD_Ryzen_5_4500__3_6_GHz__4_1_GHz_Turbo_Boost__socket_AM4_processor@@1831231_30.jpg",
-        "details": "De AMD Ryzen 5 4500 processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3600 MHz en een turbo-modus tot maximaal 4100 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 4500 processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3600 MHz en een turbo-modus tot maximaal 4100 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler."
     },
     "28": {
         "name": "Intel Core i9-13900K",
@@ -373,8 +373,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/7/7/Intel__Core_i9_13900K__3_0_GHz__5_8_GHz_Turbo_Boost__socket_1700_processor@@1865277.jpg",
-        "details": "De Intel\u00ae Core\u2122 i9-13900KF, codenaam \"Raptor Lake\", beschikt over 8 Performance cores en 16 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 36 MB Smart cache en werkt op een snelheid van 3,0 GHz. De Intel\u00ae Core i9-13900KF beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i9-13900KF, codenaam \"Raptor Lake\", beschikt over 8 Performance cores en 16 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 36 MB Smart cache en werkt op een snelheid van 3,0 GHz. De Intel\u00ae Core i9-13900KF beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "29": {
         "name": "Intel Core i5-14600K",
@@ -386,8 +386,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/5/8/Intel__Core_i5_14600K__3_5_GHz__5_3_GHz_Turbo_Boost__socket_1700_processor@@100009785.jpg",
-        "details": "De Intel\u00ae Core\u2122 i5-14600K, codenaam \"Raptor Lake-S\", beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 24 MB Smart cache en werkt op een snelheid van 3,5 GHz.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i5-14600K, codenaam \"Raptor Lake-S\", beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 24 MB Smart cache en werkt op een snelheid van 3,5 GHz."
     },
     "30": {
         "name": "Intel Core i9-12900K",
@@ -399,8 +399,8 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/6/Intel__Core_i9_12900K__3_2_GHz__5_1_GHz_Turbo_Boost__socket_1700_processor@@1778368.jpg",
-        "details": "De Intel\u00ae Core i9-12900K, codenaam \"Alder Lake\", beschikt over 8 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 30 MB Smart cache en werkt op een snelheid van 3,2 GHz. De Intel\u00ae Core i9-12900K beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i9-12900K, codenaam \"Alder Lake\", beschikt over 8 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 30 MB Smart cache en werkt op een snelheid van 3,2 GHz. De Intel\u00ae Core i9-12900K beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "31": {
         "name": "AMD Ryzen 9 7950X",
@@ -412,8 +412,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/4/2/AMD_Ryzen_9_7950X__4_5_GHz__5_7_GHz_Turbo_Boost__socket_AM5_processor@@1861524.jpg",
-        "details": "De AMD Ryzen 9 7950X processor, codenaam \"Raphael\", beschikt over zestien cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4500 MHz en een turbo-modus tot maximaal 5700 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 9 7950X processor, codenaam \"Raphael\", beschikt over zestien cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4500 MHz en een turbo-modus tot maximaal 5700 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler."
     },
     "32": {
         "name": "AMD Ryzen 7 5700G",
@@ -425,8 +425,8 @@
         "graphics": "Radeon Vega 8",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/5/7/AMD_Ryzen_7_5700G__3_8_GHz__4_6_GHz_Turbo_Boost__socket_AM4_processor@@1758475.jpg",
-        "details": "De AMD Ryzen 7 5700G processor, codenaam \"Cezanne\", beschikt over acht cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3800 MHz en een turbo-modus tot maximaal 4600 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Spire koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 7 5700G processor, codenaam \"Cezanne\", beschikt over acht cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3800 MHz en een turbo-modus tot maximaal 4600 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Spire koeler."
     },
     "33": {
         "name": "Intel Core i5-13600KF",
@@ -438,8 +438,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/1/0/Intel__Core_i5_13600KF__3_5_GHz__5_1_GHz_Turbo_Boost__socket_1700_processor@@1865201.jpg",
-        "details": "De Intel\u00ae Core\u2122 i5-13600KF, codenaam \"Raptor Lake\", beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 24 MB Smart cache en werkt op een snelheid van 3,5 GHz. De Intel\u00ae Core i5-13600KF beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i5-13600KF, codenaam \"Raptor Lake\", beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 24 MB Smart cache en werkt op een snelheid van 3,5 GHz. De Intel\u00ae Core i5-13600KF beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "34": {
         "name": "AMD Ryzen 7 3700X",
@@ -451,8 +451,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/8/AMD_Ryzen_7_5700__3_7_GHz__4_6_GHz_Turbo_Boost__socket_AM4_processor@@100032588.jpg",
-        "details": "De AMD Ryzen 5 5600X processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 4600 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 5600X processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 4600 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord."
     },
     "35": {
         "name": "AMD Ryzen 7 7700",
@@ -464,8 +464,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/1/7/AMD_Ryzen_7_7700__3_8_GHz__5_3_GHz_Turbo_Boost__socket_AM5_processor@@1883671.jpg",
-        "details": "De AMD Ryzen 7 7700X processor, codenaam \"Raphael\", beschikt over acht cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4500 MHz en een turbo-modus tot maximaal 5400 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 7 7700X processor, codenaam \"Raphael\", beschikt over acht cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4500 MHz en een turbo-modus tot maximaal 5400 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler."
     },
     "36": {
         "name": "Intel Core i7-12700KF",
@@ -477,8 +477,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/5/Intel__Core_i7_12700KF__3_6_GHz__5_0_GHz_Turbo_Boost__socket_1700_processor@@1778358.jpg",
-        "details": "De Intel\u00ae Core i7-12700KF, codenaam \"Alder Lake\", beschikt over 8 Performance cores en 4 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 25 MB Smart cache en werkt op een snelheid van 3,6 GHz. De Intel\u00ae Core i7-12700KF beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i7-12700KF, codenaam \"Alder Lake\", beschikt over 8 Performance cores en 4 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 25 MB Smart cache en werkt op een snelheid van 3,6 GHz. De Intel\u00ae Core i7-12700KF beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "37": {
         "name": "Intel Core i9-14900KF",
@@ -490,8 +490,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/2/7/Intel__Core_i9_14900KF__3_2_GHz__6_0_GHz_Turbo_Boost__socket_1700_processor@@100009772.jpg",
-        "details": "De Intel\u00ae Core\u2122 i9-14900KF, codenaam \"Raptor Lake-S\", beschikt over 8 Performance cores en 16 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 36 MB Smart cache en werkt op een snelheid van 3,2 GHz.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i9-14900KF, codenaam \"Raptor Lake-S\", beschikt over 8 Performance cores en 16 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 36 MB Smart cache en werkt op een snelheid van 3,2 GHz."
     },
     "38": {
         "name": "Intel Core i5-14600KF",
@@ -503,8 +503,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/7/8/Intel__Core_i5_14600KF__3_5_GHz__5_3_GHz_Turbo_Boost__socket_1700_processor@@100009787.jpg",
-        "details": "De Intel\u00ae Core\u2122 i5-14600KF, codenaam \"Raptor Lake-S\", beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 24 MB Smart cache en werkt op een snelheid van 3,5 GHz.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i5-14600KF, codenaam \"Raptor Lake-S\", beschikt over 6 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 24 MB Smart cache en werkt op een snelheid van 3,5 GHz."
     },
     "39": {
         "name": "AMD Ryzen 9 7900X3D",
@@ -516,8 +516,8 @@
         "graphics": "Radeon",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/7/6/AMD_Ryzen_9_7900X3D__4_4_GHz__5_6_GHz_Turbo_Boost__socket_AM5_processor@@1898267.jpg",
-        "details": "De AMD Ryzen 9 7900X3D processor, codenaam \"Raphael\", beschikt over twaalf cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4400 MHz en een turbo-modus tot maximaal 5600 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 9 7900X3D die alles kan met ongelooflijke prestaties voor de meest veeleisende gamers en makers. Geniet daarnaast van de voordelen van next-gen AMD 3D V-Cache technologie voor lage latentie en nog meer game prestaties.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 9 7900X3D processor, codenaam \"Raphael\", beschikt over twaalf cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4400 MHz en een turbo-modus tot maximaal 5600 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 9 7900X3D die alles kan met ongelooflijke prestaties voor de meest veeleisende gamers en makers. Geniet daarnaast van de voordelen van next-gen AMD 3D V-Cache technologie voor lage latentie en nog meer game prestaties."
     },
     "40": {
         "name": "AMD Ryzen 9 5950X",
@@ -529,8 +529,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/4/8/AMD_Ryzen_9_5950X__3_4_GHz__4_9_GHz_Turbo_Boost__socket_AM4_processor@@1685584.jpg",
-        "details": "De AMD Ryzen 9 5950X processor, codenaam \"Vermeer\", beschikt over 16 cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3400 MHz en een turbo-modus tot maximaal 4900 MHz.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 9 5950X processor, codenaam \"Vermeer\", beschikt over 16 cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3400 MHz en een turbo-modus tot maximaal 4900 MHz.\r\n\r\nDe AMD Ryzen 5000 serie is compatible met alle moederborden die een X570, B550 of A520 chipset hebben. Houd er wel rekening mee dat in sommige gevallen alsnog een bios update nodig kan zijn, dit is afhankelijk van de bios versie van het betreffende moederbord. Raadpleeg bij twijfel de website van de fabrikant van het moederbord."
     },
     "41": {
         "name": "Intel Core i7-13700KF",
@@ -542,8 +542,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/0/3/Intel__Core_i7_13700KF__3_4_GHz__5_4_GHz_Turbo_Boost__socket_1700_processor@@1865230.jpg",
-        "details": "De Intel\u00ae Core\u2122 i7-13700KF, codenaam \"Raptor Lake\", beschikt over 8 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 30 MB Smart cache en werkt op een snelheid van 3,4 GHz. De Intel\u00ae Core i7-13700KF beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i7-13700KF, codenaam \"Raptor Lake\", beschikt over 8 Performance cores en 8 Efficiency cores en is geschikt om op een moederbord met socket 1700 te plaatsen. De processor beschikt over 30 MB Smart cache en werkt op een snelheid van 3,4 GHz. De Intel\u00ae Core i7-13700KF beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "42": {
         "name": "AMD Ryzen 5 7500F",
@@ -555,8 +555,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/6/AMD_Ryzen_9_7950X3D__4_2_GHz__5_7_GHz_Turbo_Boost__socket_AM5_processor@@1898268.jpg",
-        "details": "De AMD Ryzen 9 7950X3D processor, codenaam \"Raphael\", beschikt over 16 cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4200 MHz en een turbo-modus tot maximaal 5700 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 9 7950X3D die alles kan met ongelooflijke prestaties voor de meest veeleisende gamers en makers. Geniet daarnaast van de voordelen van next-gen AMD 3D V-Cache technologie voor lage latentie en nog meer game prestaties.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 9 7950X3D processor, codenaam \"Raphael\", beschikt over 16 cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4200 MHz en een turbo-modus tot maximaal 5700 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.\r\n\r\nDe AMD Ryzen 9 7950X3D die alles kan met ongelooflijke prestaties voor de meest veeleisende gamers en makers. Geniet daarnaast van de voordelen van next-gen AMD 3D V-Cache technologie voor lage latentie en nog meer game prestaties."
     },
     "43": {
         "name": "Intel Core i5-10400F",
@@ -568,8 +568,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/7/3/Intel__Core_i5_12400F__2_5_GHz__4_4_GHz_Turbo_Boost__socket_1700_processor@@1778337.jpg",
-        "details": "De Intel\u00ae Core i5-12400F, codenaam \"Alder Lake\", beschikt over 6 verwerkingseenheden en is geschikt om op een moederbord met Socket 1700 te plaatsen. De processor beschikt over 18 MB Smart cache en werkt op een snelheid van 2,5 GHz. De Intel\u00ae Core i5-12400F beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i5-12400F, codenaam \"Alder Lake\", beschikt over 6 verwerkingseenheden en is geschikt om op een moederbord met Socket 1700 te plaatsen. De processor beschikt over 18 MB Smart cache en werkt op een snelheid van 2,5 GHz. De Intel\u00ae Core i5-12400F beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "44": {
         "name": "AMD Ryzen 7 8700G",
@@ -581,8 +581,8 @@
         "graphics": "Radeon 780M",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/5/0/AMD_Ryzen_7_8700G__4_2_GHz__5_1_GHz_Turbo_Boost__socket_AM5_processor@@100032605.jpg",
-        "details": "De AMD Ryzen 7 8700G processor, codenaam \"Phoenix\", beschikt over acht cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4200 MHz en een turbo-modus tot maximaal 5100 MHz. De processor is vervaardigd met behulp van het 4 nm FinFET-proces.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 7 8700G processor, codenaam \"Phoenix\", beschikt over acht cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 4200 MHz en een turbo-modus tot maximaal 5100 MHz. De processor is vervaardigd met behulp van het 4 nm FinFET-proces."
     },
     "45": {
         "name": "AMD Ryzen 3 4100",
@@ -594,8 +594,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/1/3/AMD_Ryzen_5_4500__3_6_GHz__4_1_GHz_Turbo_Boost__socket_AM4_processor@@1831231_30.jpg",
-        "details": "De AMD Ryzen 5 4500 processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3600 MHz en een turbo-modus tot maximaal 4100 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 4500 processor, codenaam \"Vermeer\", beschikt over zes cores en is geschikt om op een moederbord met Socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3600 MHz en een turbo-modus tot maximaal 4100 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler."
     },
     "46": {
         "name": "Intel Core i5-12400",
@@ -607,8 +607,8 @@
         "graphics": "Intel UHD Graphics 730",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/9/3/Intel__Core_i5_12400__2_5_GHz__4_4_GHz_Turbo_Boost__socket_1700_processor@@1778339.jpg",
-        "details": "De Intel\u00ae Core i5-12400, codenaam \"Alder Lake\", beschikt over 6 verwerkingseenheden en is geschikt om op een moederbord met Socket 1700 te plaatsen. De processor beschikt over 18 MB Smart cache en werkt op een snelheid van 2,5 GHz. De Intel\u00ae Core i5-12400 beschikt over een interne geheugencontroller met twee geheugen kanalen.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core i5-12400, codenaam \"Alder Lake\", beschikt over 6 verwerkingseenheden en is geschikt om op een moederbord met Socket 1700 te plaatsen. De processor beschikt over 18 MB Smart cache en werkt op een snelheid van 2,5 GHz. De Intel\u00ae Core i5-12400 beschikt over een interne geheugencontroller met twee geheugen kanalen."
     },
     "47": {
         "name": "AMD Ryzen 7 5700X3D",
@@ -620,8 +620,8 @@
         "graphics": null,
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/5/8/AMD_Ryzen_7_5700X3D__3_0_GHz__4_1_GHz_Turbo_Boost__socket_AM4_processor@@100032585.jpg",
-        "details": "De AMD Ryzen 7 5700X3D processor, codenaam \"Vermeer\", beschikt over acht cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3000 MHz en een turbo-modus tot maximaal 4100 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 7 5700X3D processor, codenaam \"Vermeer\", beschikt over acht cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3000 MHz en een turbo-modus tot maximaal 4100 MHz.\r\nDeze boxed processor wordt geleverd zonder koeler."
     },
     "48": {
         "name": "AMD Ryzen 5 8500G",
@@ -633,8 +633,8 @@
         "graphics": "Radeon 740M",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/7/0/AMD_Ryzen_5_8500G__3_5_GHz__5_0_GHz_Turbo_Boost__socket_AM5_processor@@100032607_31.jpg",
-        "details": "De AMD Ryzen 5 8500G processor, codenaam \"Phoenix\", beschikt over zes cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 3500 MHz en een turbo-modus tot maximaal 5000 MHz. De processor is vervaardigd met behulp van het 4 nm FinFET-proces.",
-        "socket": "AM5"
+        "socket": "AM5",
+        "description": "De AMD Ryzen 5 8500G processor, codenaam \"Phoenix\", beschikt over zes cores en is geschikt om op een moederbord met socket AM5 te plaatsen. De processor werkt op een kloksnelheid van 3500 MHz en een turbo-modus tot maximaal 5000 MHz. De processor is vervaardigd met behulp van het 4 nm FinFET-proces."
     },
     "49": {
         "name": "AMD Ryzen 5 4600G",
@@ -646,8 +646,8 @@
         "graphics": "Radeon Vega 7",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/8/5/AMD_Ryzen_5_4600G__3_7_GHz__4_2_GHz_Turbo_Boost__socket_AM4_processor@@1842758.jpg",
-        "details": "De AMD Ryzen 5 4600G processor, codenaam \"Renoir\", beschikt over zes cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 4200 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler.",
-        "socket": "AM4"
+        "socket": "AM4",
+        "description": "De AMD Ryzen 5 4600G processor, codenaam \"Renoir\", beschikt over zes cores en is geschikt om op een moederbord met socket AM4 te plaatsen. De processor werkt op een kloksnelheid van 3700 MHz en een turbo-modus tot maximaal 4200 MHz.\r\nDeze boxed processor wordt geleverd met een Wraith Stealth koeler."
     },
     "50": {
         "name": "Intel Core i5-13500",
@@ -659,7 +659,7 @@
         "graphics": "Intel UHD Graphics 770",
         "smt": true,
         "image": "https://www.alternate.be/p/200x200/6/5/Intel__Core_i5_13500__2_5_GHz__4_8_GHz_Turbo_Boost__socket_1700_processor@@1865256.jpg",
-        "details": "De Intel\u00ae Core\u2122 i5-13500, Raptor Lake genaamd, brengt een nieuwe chiplay-out met verschillende CPU-kernen voor verschillende toepassingsscenario's. De Performance Cores leveren prestaties voor rekenintensieve toepassingen, de Efficiency Cores voor energie-effici\u00ebntie bij lichte belasting. De Raptor Lake processoren ondersteunen PCIe Gen 5.0 en 4.0, DDR5 en DDR4. De processor is compatibel met moederborden die zijn gebaseerd op de Intel\u00ae 700 en 600 chipset.",
-        "socket": "LGA1700"
+        "socket": "LGA1700",
+        "description": "De Intel\u00ae Core\u2122 i5-13500, Raptor Lake genaamd, brengt een nieuwe chiplay-out met verschillende CPU-kernen voor verschillende toepassingsscenario's. De Performance Cores leveren prestaties voor rekenintensieve toepassingen, de Efficiency Cores voor energie-effici\u00ebntie bij lichte belasting. De Raptor Lake processoren ondersteunen PCIe Gen 5.0 en 4.0, DDR5 en DDR4. De processor is compatibel met moederborden die zijn gebaseerd op de Intel\u00ae 700 en 600 chipset."
     }
 }

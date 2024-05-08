@@ -47,8 +47,11 @@ xaml code aangepast.
 
 research doen voor het maken van een scraper met python voor alle andere componenten in de database vorige aanpak hiervan was te moeilijk.
 
-Week 11 (06/05): ..... uren:
+Week 11 (06/05): 5 uren:
 
+Trello aangemaakt voor de to do listss
+
+Scraper gemaakt voor omschrijving op te halen voor elke component. filter toegevoegd voor de  partlistPage om de compatibiliteit van de compoenten te regelen. models aangepast (propertys)
 
 
 Week 12 (13/05): ..... uren:

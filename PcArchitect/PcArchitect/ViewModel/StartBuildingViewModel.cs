@@ -6,7 +6,6 @@ using PcArchitect.Views;
 using PC_Architect.Model;
 using System.Collections;
 using System.Diagnostics;
-using CommunityToolkit.Mvvm.ComponentModel;
 
 // DIT IS DE VIEWMODEL VOOR DE PAGINA WAAR DE CATAGORIEEN WORDEN WEERGEGEVEN
 

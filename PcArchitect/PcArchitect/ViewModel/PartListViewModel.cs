@@ -78,7 +78,7 @@ namespace PcArchitect.ViewModel
                     {
                         condition2 = _rootF.GetRoot2().Motherboard[1].MemoryType.ToString(); // DDR4, DDR5
                         condition3 = _rootF.GetRoot2().Motherboard[1].MemorySlots; // 2, 4, 8
-                        condition4 = _rootF.GetRoot2().Motherboard[1].MaxMemory; // 4, 8, 16, 32, 64
+                        condition4 = _rootF.GetRoot2().Motherboard[1].MaxMemory; //64, 128, 256, 512
                     }
                     break;
             }
@@ -137,9 +137,9 @@ namespace PcArchitect.ViewModel
                                 case Memory memory: // Als het item geheugen is
                                     if (condition2 != memory.Speed_type && condition2 != null) // Vergelijk geheugen speed type met de tweede voorwaarde
                                         pass = false;
-                                    if (condition3 * condition4 > memory.Module_size && condition3 != null) // Vergelijk totale memory grootte met geheugen module grootte
+                                    if (condition3 < memory.Module_count && condition4 != null) // Vergelijk aantal memory sticks met aantal slots op moederbord
                                         pass = false;
-                                    if (condition4 > memory.Module_count && condition4 != null) // Vergelijk aantal memory sticks met aantal slots op moederbord
+                                    if (condition4 < memory.Module_count * memory.Module_size && condition3 != null) //vergelijk  totaal memory grootte met moederbord maximaal memory
                                         pass = false;
                                     break;
                             }

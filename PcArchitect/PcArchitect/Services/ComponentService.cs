@@ -42,7 +42,7 @@ namespace PcArchitect.Services
             }
             catch (Exception e)
             {
-                Console.WriteLine($"Error while getting components from Firebase: {e.Message}");
+                Console.WriteLine($"Error while getting {path} from Firebase: {e.Message}");
                 return null;
             }
         }

@@ -24,7 +24,7 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <ShellItem Route="MainPage">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    <ShellItem Route="LoadingScreen">
+        <ShellContent ContentTemplate="{DataTemplate local:LoadingScreen}" />
     </ShellItem>
 </Shell>

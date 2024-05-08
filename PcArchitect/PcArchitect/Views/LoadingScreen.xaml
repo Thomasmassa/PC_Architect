@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             x:Class="PcArchitect.Views.LoadingScreen"
+             xmlns:viewModels="clr-namespace:PcArchitect.ViewModel"
+             x:DataType="viewModels:LoadingScreenViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Shell.PresentationMode="NotAnimated"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
+    </ContentPage.Behaviors>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <!-- Lotti --> 
+        <skia:SKLottieView 
+            Grid.Column="0" Grid.RowSpan="0"
+            Source="loadingscreen"
+            RepeatCount="-1"
+            SemanticProperties.Description="Very Nice"  
+            HeightRequest="200"
+            WidthRequest="200"
+            HorizontalOptions="Center"
+            VerticalOptions="End"/>
+    </Grid>
+
+</ContentPage>

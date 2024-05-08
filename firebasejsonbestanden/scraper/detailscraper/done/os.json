@@ -5,7 +5,7 @@
         "mode": 64,
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/0/7/Microsoft_Windows_11_Home__Nederlandstalig__software@@1798470_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "1": {
         "name": "Microsoft Windows 11 Pro (64-bit)",
@@ -13,7 +13,7 @@
         "mode": 64,
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/4/7/Microsoft_Windows_11_Pro__Nederlandstalig__software@@1798474_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "2": {
         "name": "Microsoft Windows 10 Home (64-bit)",
@@ -21,7 +21,7 @@
         "mode": 64,
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/7/2/Microsoft_Office_Home___Business_2021_software@@1771927.jpg",
-        "details": "De essenti\u00eble benodigdheden waarmee je alles gedaan krijgt. Office Home & Business 2021 is bedoeld voor gezinnen en kleine bedrijven die de klassieke Office- en e-mail-apps willen. Het bestaat uit Word, Excel, PowerPoint en Outlook voor Windows 11 en Windows 10. Een eenmalige aankoop voor installatie op 1 pc of Mac om thuis of op het werk te gebruiken.\r\n\r\nIn Office 2021 vindt je ook nieuwe hulpmiddelen voor cocreatie, inkthulpprogramma's, functies, vertaal- en bewerkingshulpmiddelen, grafische weergave van bewegingen, gebruiksgemakfuncties en nog veel meer!"
+        "description": "De essenti\u00eble benodigdheden waarmee je alles gedaan krijgt. Office Home & Business 2021 is bedoeld voor gezinnen en kleine bedrijven die de klassieke Office- en e-mail-apps willen. Het bestaat uit Word, Excel, PowerPoint en Outlook voor Windows 11 en Windows 10. Een eenmalige aankoop voor installatie op 1 pc of Mac om thuis of op het werk te gebruiken.\r\n\r\nIn Office 2021 vindt je ook nieuwe hulpmiddelen voor cocreatie, inkthulpprogramma's, functies, vertaal- en bewerkingshulpmiddelen, grafische weergave van bewegingen, gebruiksgemakfuncties en nog veel meer!"
     },
     "3": {
         "name": "Microsoft Windows 11 Home (64-bit)",
@@ -29,7 +29,7 @@
         "mode": 64,
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/0/7/Microsoft_Windows_11_Home__Nederlandstalig__software@@1798470_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "4": {
         "name": "Microsoft Windows 11 Pro (64-bit)",
@@ -37,7 +37,7 @@
         "mode": 64,
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/4/7/Microsoft_Windows_11_Pro__Nederlandstalig__software@@1798474_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "5": {
         "name": "Microsoft Windows 10 Pro (64-bit)",
@@ -45,7 +45,7 @@
         "mode": 64,
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/1/1/Microsoft_Surface_Pro_10_13__tablet@@100051811.jpg",
-        "details": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
+        "description": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
     },
     "6": {
         "name": "Microsoft Windows 11 Home (64-bit)",
@@ -53,7 +53,7 @@
         "mode": 64,
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/0/7/Microsoft_Windows_11_Home__Nederlandstalig__software@@1798470_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "7": {
         "name": "Microsoft Windows 11 Pro (64-bit)",
@@ -61,7 +61,7 @@
         "mode": 64,
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/4/7/Microsoft_Windows_11_Pro__Nederlandstalig__software@@1798474_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "8": {
         "name": "Microsoft Windows 10 Pro (64-bit)",
@@ -69,7 +69,7 @@
         "mode": 64,
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/1/1/Microsoft_Surface_Pro_10_13__tablet@@100051811.jpg",
-        "details": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
+        "description": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
     },
     "9": {
         "name": "Microsoft Windows 10 Home (64-bit)",
@@ -77,7 +77,7 @@
         "mode": 64,
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/7/2/Microsoft_Office_Home___Business_2021_software@@1771927.jpg",
-        "details": "De essenti\u00eble benodigdheden waarmee je alles gedaan krijgt. Office Home & Business 2021 is bedoeld voor gezinnen en kleine bedrijven die de klassieke Office- en e-mail-apps willen. Het bestaat uit Word, Excel, PowerPoint en Outlook voor Windows 11 en Windows 10. Een eenmalige aankoop voor installatie op 1 pc of Mac om thuis of op het werk te gebruiken.\r\n\r\nIn Office 2021 vindt je ook nieuwe hulpmiddelen voor cocreatie, inkthulpprogramma's, functies, vertaal- en bewerkingshulpmiddelen, grafische weergave van bewegingen, gebruiksgemakfuncties en nog veel meer!"
+        "description": "De essenti\u00eble benodigdheden waarmee je alles gedaan krijgt. Office Home & Business 2021 is bedoeld voor gezinnen en kleine bedrijven die de klassieke Office- en e-mail-apps willen. Het bestaat uit Word, Excel, PowerPoint en Outlook voor Windows 11 en Windows 10. Een eenmalige aankoop voor installatie op 1 pc of Mac om thuis of op het werk te gebruiken.\r\n\r\nIn Office 2021 vindt je ook nieuwe hulpmiddelen voor cocreatie, inkthulpprogramma's, functies, vertaal- en bewerkingshulpmiddelen, grafische weergave van bewegingen, gebruiksgemakfuncties en nog veel meer!"
     },
     "10": {
         "name": "Microsoft Windows 10 Pro (32/64-bit)",
@@ -88,7 +88,7 @@
         ],
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/1/1/Microsoft_Surface_Pro_10_13__tablet@@100051811.jpg",
-        "details": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
+        "description": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
     },
     "11": {
         "name": "Microsoft Windows 10 Home (64-bit)",
@@ -96,7 +96,7 @@
         "mode": 64,
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/7/2/Microsoft_Office_Home___Business_2021_software@@1771927.jpg",
-        "details": "De essenti\u00eble benodigdheden waarmee je alles gedaan krijgt. Office Home & Business 2021 is bedoeld voor gezinnen en kleine bedrijven die de klassieke Office- en e-mail-apps willen. Het bestaat uit Word, Excel, PowerPoint en Outlook voor Windows 11 en Windows 10. Een eenmalige aankoop voor installatie op 1 pc of Mac om thuis of op het werk te gebruiken.\r\n\r\nIn Office 2021 vindt je ook nieuwe hulpmiddelen voor cocreatie, inkthulpprogramma's, functies, vertaal- en bewerkingshulpmiddelen, grafische weergave van bewegingen, gebruiksgemakfuncties en nog veel meer!"
+        "description": "De essenti\u00eble benodigdheden waarmee je alles gedaan krijgt. Office Home & Business 2021 is bedoeld voor gezinnen en kleine bedrijven die de klassieke Office- en e-mail-apps willen. Het bestaat uit Word, Excel, PowerPoint en Outlook voor Windows 11 en Windows 10. Een eenmalige aankoop voor installatie op 1 pc of Mac om thuis of op het werk te gebruiken.\r\n\r\nIn Office 2021 vindt je ook nieuwe hulpmiddelen voor cocreatie, inkthulpprogramma's, functies, vertaal- en bewerkingshulpmiddelen, grafische weergave van bewegingen, gebruiksgemakfuncties en nog veel meer!"
     },
     "12": {
         "name": "Microsoft Windows 7 Home Premium (32/64-bit)",
@@ -107,7 +107,7 @@
         ],
         "max_memory": 16,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "13": {
         "name": "Microsoft Windows 10 Pro (32/64-bit)",
@@ -118,7 +118,7 @@
         ],
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/1/1/Microsoft_Surface_Pro_10_13__tablet@@100051811.jpg",
-        "details": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
+        "description": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
     },
     "14": {
         "name": "Microsoft Windows 10 Home (32/64-bit)",
@@ -129,7 +129,7 @@
         ],
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/5/4/Microsoft_Surface_Laptop_Studio_2__Z1J_00023__14_4__2_in_1_laptop@@1926745_30.jpg",
-        "details": "Met meer dan twee keer zoveel rekenkracht is de Surface Laptop Studio 2 (Z1J-00023) de krachtigste Surface tot nu toe. Switch naadloos van een krachtige touchscreen-laptop naar een perfect gekanteld scherm voor entertainment of een creatief canvas om op te tekenen. Surface Laptop Studio 2 met Windows 11 is de ultieme krachtige alles-in-\u00e9\u00e9n laptop. Geniet van twee keer zoveel CPU-kracht met de Intel\u00ae Core\u2122 i7-13700H processor die is gebouwd op het Intel\u00ae Evo\u2122-platform. Multitask als een pro met een NVIDIA RTX 4050 laptop-GPU, 32 GB RAM en razendsnelle SSD's met 1 TB opslagruimte.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-13700H\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4050\n14\"\n2400 x 1600 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Home"
+        "description": "Met meer dan twee keer zoveel rekenkracht is de Surface Laptop Studio 2 (Z1J-00023) de krachtigste Surface tot nu toe. Switch naadloos van een krachtige touchscreen-laptop naar een perfect gekanteld scherm voor entertainment of een creatief canvas om op te tekenen. Surface Laptop Studio 2 met Windows 11 is de ultieme krachtige alles-in-\u00e9\u00e9n laptop. Geniet van twee keer zoveel CPU-kracht met de Intel\u00ae Core\u2122 i7-13700H processor die is gebouwd op het Intel\u00ae Evo\u2122-platform. Multitask als een pro met een NVIDIA RTX 4050 laptop-GPU, 32 GB RAM en razendsnelle SSD's met 1 TB opslagruimte.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-13700H\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4050\n14\"\n2400 x 1600 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Home"
     },
     "15": {
         "name": "Microsoft Windows 7 Professional (32/64-bit)",
@@ -140,7 +140,7 @@
         ],
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "16": {
         "name": "Microsoft Windows 10 Pro (32/64-bit)",
@@ -151,7 +151,7 @@
         ],
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/1/1/Microsoft_Surface_Pro_10_13__tablet@@100051811.jpg",
-        "details": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
+        "description": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
     },
     "17": {
         "name": "Microsoft Windows 10 Home (32/64-bit)",
@@ -162,7 +162,7 @@
         ],
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/5/4/Microsoft_Surface_Laptop_Studio_2__Z1J_00023__14_4__2_in_1_laptop@@1926745_30.jpg",
-        "details": "Met meer dan twee keer zoveel rekenkracht is de Surface Laptop Studio 2 (Z1J-00023) de krachtigste Surface tot nu toe. Switch naadloos van een krachtige touchscreen-laptop naar een perfect gekanteld scherm voor entertainment of een creatief canvas om op te tekenen. Surface Laptop Studio 2 met Windows 11 is de ultieme krachtige alles-in-\u00e9\u00e9n laptop. Geniet van twee keer zoveel CPU-kracht met de Intel\u00ae Core\u2122 i7-13700H processor die is gebouwd op het Intel\u00ae Evo\u2122-platform. Multitask als een pro met een NVIDIA RTX 4050 laptop-GPU, 32 GB RAM en razendsnelle SSD's met 1 TB opslagruimte.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-13700H\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4050\n14\"\n2400 x 1600 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Home"
+        "description": "Met meer dan twee keer zoveel rekenkracht is de Surface Laptop Studio 2 (Z1J-00023) de krachtigste Surface tot nu toe. Switch naadloos van een krachtige touchscreen-laptop naar een perfect gekanteld scherm voor entertainment of een creatief canvas om op te tekenen. Surface Laptop Studio 2 met Windows 11 is de ultieme krachtige alles-in-\u00e9\u00e9n laptop. Geniet van twee keer zoveel CPU-kracht met de Intel\u00ae Core\u2122 i7-13700H processor die is gebouwd op het Intel\u00ae Evo\u2122-platform. Multitask als een pro met een NVIDIA RTX 4050 laptop-GPU, 32 GB RAM en razendsnelle SSD's met 1 TB opslagruimte.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-13700H\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4050\n14\"\n2400 x 1600 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Home"
     },
     "18": {
         "name": "Microsoft Windows 10 Home (32/64-bit)",
@@ -173,7 +173,7 @@
         ],
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/5/4/Microsoft_Surface_Laptop_Studio_2__Z1J_00023__14_4__2_in_1_laptop@@1926745_30.jpg",
-        "details": "Met meer dan twee keer zoveel rekenkracht is de Surface Laptop Studio 2 (Z1J-00023) de krachtigste Surface tot nu toe. Switch naadloos van een krachtige touchscreen-laptop naar een perfect gekanteld scherm voor entertainment of een creatief canvas om op te tekenen. Surface Laptop Studio 2 met Windows 11 is de ultieme krachtige alles-in-\u00e9\u00e9n laptop. Geniet van twee keer zoveel CPU-kracht met de Intel\u00ae Core\u2122 i7-13700H processor die is gebouwd op het Intel\u00ae Evo\u2122-platform. Multitask als een pro met een NVIDIA RTX 4050 laptop-GPU, 32 GB RAM en razendsnelle SSD's met 1 TB opslagruimte.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-13700H\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4050\n14\"\n2400 x 1600 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Home"
+        "description": "Met meer dan twee keer zoveel rekenkracht is de Surface Laptop Studio 2 (Z1J-00023) de krachtigste Surface tot nu toe. Switch naadloos van een krachtige touchscreen-laptop naar een perfect gekanteld scherm voor entertainment of een creatief canvas om op te tekenen. Surface Laptop Studio 2 met Windows 11 is de ultieme krachtige alles-in-\u00e9\u00e9n laptop. Geniet van twee keer zoveel CPU-kracht met de Intel\u00ae Core\u2122 i7-13700H processor die is gebouwd op het Intel\u00ae Evo\u2122-platform. Multitask als een pro met een NVIDIA RTX 4050 laptop-GPU, 32 GB RAM en razendsnelle SSD's met 1 TB opslagruimte.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-13700H\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4050\n14\"\n2400 x 1600 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Home"
     },
     "19": {
         "name": "Microsoft Windows 10 Pro (32/64-bit)",
@@ -184,7 +184,7 @@
         ],
         "max_memory": 2048,
         "image": "https://www.alternate.be/p/200x200/1/1/Microsoft_Surface_Pro_10_13__tablet@@100051811.jpg",
-        "details": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
+        "description": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
     },
     "20": {
         "name": "Microsoft Windows 10 Home (32/64-bit)",
@@ -195,7 +195,7 @@
         ],
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/5/4/Microsoft_Surface_Laptop_Studio_2__Z1J_00023__14_4__2_in_1_laptop@@1926745_30.jpg",
-        "details": "Met meer dan twee keer zoveel rekenkracht is de Surface Laptop Studio 2 (Z1J-00023) de krachtigste Surface tot nu toe. Switch naadloos van een krachtige touchscreen-laptop naar een perfect gekanteld scherm voor entertainment of een creatief canvas om op te tekenen. Surface Laptop Studio 2 met Windows 11 is de ultieme krachtige alles-in-\u00e9\u00e9n laptop. Geniet van twee keer zoveel CPU-kracht met de Intel\u00ae Core\u2122 i7-13700H processor die is gebouwd op het Intel\u00ae Evo\u2122-platform. Multitask als een pro met een NVIDIA RTX 4050 laptop-GPU, 32 GB RAM en razendsnelle SSD's met 1 TB opslagruimte.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-13700H\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4050\n14\"\n2400 x 1600 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Home"
+        "description": "Met meer dan twee keer zoveel rekenkracht is de Surface Laptop Studio 2 (Z1J-00023) de krachtigste Surface tot nu toe. Switch naadloos van een krachtige touchscreen-laptop naar een perfect gekanteld scherm voor entertainment of een creatief canvas om op te tekenen. Surface Laptop Studio 2 met Windows 11 is de ultieme krachtige alles-in-\u00e9\u00e9n laptop. Geniet van twee keer zoveel CPU-kracht met de Intel\u00ae Core\u2122 i7-13700H processor die is gebouwd op het Intel\u00ae Evo\u2122-platform. Multitask als een pro met een NVIDIA RTX 4050 laptop-GPU, 32 GB RAM en razendsnelle SSD's met 1 TB opslagruimte.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-13700H\n32 GB RAM\n1 TB SSD\nNVIDIA GeForce RTX 4050\n14\"\n2400 x 1600 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Home"
     },
     "21": {
         "name": "Microsoft Windows 10 Pro (32-bit)",
@@ -203,7 +203,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "https://www.alternate.be/p/200x200/1/1/Microsoft_Surface_Pro_10_13__tablet@@100051811.jpg",
-        "details": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
+        "description": "De zilveren Microsoft Surface Pro 10 (ZDY-00004) combineert de flexibiliteit van een tablet met de prestaties van een laptop - allemaal in een ultraslank apparaat met een batterijlevensduur tot 19 uur en een behuizing van geanodiseerd aluminium. Dankzij de flexibele standaard en het optionele afneembare toetsenbord (niet inbegrepen) kan het volledig worden aangepast aan jouw behoeften. Natuurlijk wordt penbediening (apart verkrijgbaar) ook ondersteund - op het 33 cm (13\") PixelSense Flow touchscreen met een haarscherpe resolutie van 2800 x 1920 pixels en een vernieuwingsfrequentie van 120 Hz.\r\n\r\nSnelle verbindingen via Thunderbolt 4, Bluetooth 5.3 en WiFi 6E zorgen voor voldoende bandbreedte, zelfs in veeleisende scenario's. Met de twee studiomicrofoons ben je altijd luid en duidelijk verstaanbaar tijdens conferentiegesprekken of wanneer je dicteert in kantoorapps. En dankzij de Intel\u00ae Core\u2122 7 165U processor met Intel\u00ae AI Boost is de Surface Pro 10 ook goed uitgerust voor de eisen van effici\u00ebnt AI-gebruik. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 32 GB geheugen. Al je bestanden slaag je op dankzij de 1 TB SSD."
     },
     "22": {
         "name": "Microsoft Windows 10 Home (32-bit)",
@@ -211,7 +211,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "https://www.alternate.be/p/200x200/7/2/Microsoft_Office_Home___Business_2021_software@@1771927.jpg",
-        "details": "De essenti\u00eble benodigdheden waarmee je alles gedaan krijgt. Office Home & Business 2021 is bedoeld voor gezinnen en kleine bedrijven die de klassieke Office- en e-mail-apps willen. Het bestaat uit Word, Excel, PowerPoint en Outlook voor Windows 11 en Windows 10. Een eenmalige aankoop voor installatie op 1 pc of Mac om thuis of op het werk te gebruiken.\r\n\r\nIn Office 2021 vindt je ook nieuwe hulpmiddelen voor cocreatie, inkthulpprogramma's, functies, vertaal- en bewerkingshulpmiddelen, grafische weergave van bewegingen, gebruiksgemakfuncties en nog veel meer!"
+        "description": "De essenti\u00eble benodigdheden waarmee je alles gedaan krijgt. Office Home & Business 2021 is bedoeld voor gezinnen en kleine bedrijven die de klassieke Office- en e-mail-apps willen. Het bestaat uit Word, Excel, PowerPoint en Outlook voor Windows 11 en Windows 10. Een eenmalige aankoop voor installatie op 1 pc of Mac om thuis of op het werk te gebruiken.\r\n\r\nIn Office 2021 vindt je ook nieuwe hulpmiddelen voor cocreatie, inkthulpprogramma's, functies, vertaal- en bewerkingshulpmiddelen, grafische weergave van bewegingen, gebruiksgemakfuncties en nog veel meer!"
     },
     "23": {
         "name": "Microsoft Windows 8.1 Pro (64-bit)",
@@ -219,7 +219,7 @@
         "mode": 64,
         "max_memory": 512,
         "image": "https://www.alternate.be/p/200x200/6/7/Microsoft_Windows_11_Pro__Engelstalig__software@@1798476_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "24": {
         "name": "Microsoft Windows 8 Pro (32-bit)",
@@ -227,7 +227,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "https://www.alternate.be/p/200x200/7/4/Microsoft_Surface_Pro_9_Commercial_13__tablet@@1876447.jpg",
-        "details": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
+        "description": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
     },
     "25": {
         "name": "Microsoft Windows 7 Ultimate SP1 (64-bit)",
@@ -235,7 +235,7 @@
         "mode": 64,
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "26": {
         "name": "Microsoft Windows 8.1 Pro DE (64-bit)",
@@ -243,7 +243,7 @@
         "mode": 64,
         "max_memory": 512,
         "image": "https://www.alternate.be/p/200x200/6/7/Microsoft_Windows_11_Pro__Engelstalig__software@@1798476_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "27": {
         "name": "Microsoft Windows 8 (32-bit)",
@@ -251,7 +251,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "https://www.alternate.be/p/200x200/7/4/Microsoft_Surface_Pro_9_Commercial_13__tablet@@1876447.jpg",
-        "details": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
+        "description": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
     },
     "28": {
         "name": "Microsoft Windows 7 Home Premium SP1 (32-bit)",
@@ -259,7 +259,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "29": {
         "name": "Microsoft Windows 7 Professional SP1 (64-bit)",
@@ -267,7 +267,7 @@
         "mode": 64,
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "30": {
         "name": "Microsoft Windows 7 Ultimate SP1 (32-bit)",
@@ -275,7 +275,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "31": {
         "name": "Microsoft Windows 7 Home Premium SP1 (64-bit)",
@@ -283,7 +283,7 @@
         "mode": 64,
         "max_memory": 16,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "32": {
         "name": "Microsoft Windows 7 Home Premium SP1 (32-bit)",
@@ -291,7 +291,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "33": {
         "name": "Microsoft Windows 7 Pro SP1 DE (64-bit)",
@@ -299,7 +299,7 @@
         "mode": 64,
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "34": {
         "name": "Microsoft Windows 7 Ultimate (32/64-bit)",
@@ -310,7 +310,7 @@
         ],
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "35": {
         "name": "Microsoft Windows 7 Professional SP1 (32-bit)",
@@ -318,7 +318,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "36": {
         "name": "Microsoft Windows 8 (64-bit)",
@@ -326,7 +326,7 @@
         "mode": 64,
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/7/4/Microsoft_Surface_Pro_9_Commercial_13__tablet@@1876447.jpg",
-        "details": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
+        "description": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
     },
     "37": {
         "name": "Microsoft Windows 8.1 (64-bit)",
@@ -334,7 +334,7 @@
         "mode": 64,
         "max_memory": 128,
         "image": "https://www.alternate.be/p/200x200/7/4/Microsoft_Surface_Pro_9_Commercial_13__tablet@@1876447.jpg",
-        "details": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
+        "description": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
     },
     "38": {
         "name": "Microsoft Windows 7 Home Premium SP1 (64-bit)",
@@ -342,7 +342,7 @@
         "mode": 64,
         "max_memory": 16,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "39": {
         "name": "Microsoft Windows 7 Professional SP1 (64-bit)",
@@ -350,7 +350,7 @@
         "mode": 64,
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "40": {
         "name": "Microsoft Windows 7 Ultimate (64-bit)",
@@ -358,7 +358,7 @@
         "mode": 64,
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "41": {
         "name": "Microsoft Windows 7 Ultimate SP1 (32-bit)",
@@ -366,7 +366,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "42": {
         "name": "Microsoft Windows 7 Professional SP1 (32-bit)",
@@ -374,7 +374,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "43": {
         "name": "Microsoft Windows 7 Professional SP1 (32-bit)",
@@ -382,7 +382,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "44": {
         "name": "Microsoft Windows 7 Pro SP1 DE (64-bit)",
@@ -390,7 +390,7 @@
         "mode": 64,
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "45": {
         "name": "Microsoft Windows 7 Ultimate SP1 (64-bit)",
@@ -398,7 +398,7 @@
         "mode": 64,
         "max_memory": 192,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "46": {
         "name": "Microsoft Windows 8 (32-bit)",
@@ -406,7 +406,7 @@
         "mode": 32,
         "max_memory": 4,
         "image": "https://www.alternate.be/p/200x200/7/4/Microsoft_Surface_Pro_9_Commercial_13__tablet@@1876447.jpg",
-        "details": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
+        "description": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
     },
     "47": {
         "name": "Microsoft Windows 7 Home Premium SP1 (64-bit)",
@@ -414,7 +414,7 @@
         "mode": 64,
         "max_memory": 16,
         "image": "",
-        "details": ""
+        "description": ""
     },
     "48": {
         "name": "Microsoft Windows 8.1 Pro (64-bit)",
@@ -422,7 +422,7 @@
         "mode": 64,
         "max_memory": 512,
         "image": "https://www.alternate.be/p/200x200/6/7/Microsoft_Windows_11_Pro__Engelstalig__software@@1798476_30.jpg",
-        "details": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
+        "description": "Een nieuwe Windows-ervaring die je dichter bij de mensen en dingen brengt waar je van houdt.\r\nWindows 11 biedt een rustige en creatieve ruimte waar je je passies kunt nastreven door middel van een frisse ervaring. Van een verjongd Startmenu tot nieuwe manieren om verbinding te maken met je favoriete mensen, nieuws, games en inhoud: Windows 11 is de plek om op een natuurlijke manier te denken, je uit te drukken en te cre\u00ebren.\r\n\r\nKrijg eenvoudig toegang tot alle apps die je nodig hebt en multitask met gemak met tools zoals Snap-indelingen, bureaubladen en een nieuwe, intu\u00eftievere redocking-ervaring. Maak rechtstreeks vanaf je desktop contact met de mensen om wie je geeft met Microsoft Teams. Bel of chat gratis, ongeacht het apparaat waarop men zich bevindt.\r\n\r\nMet Microsoft Edge en een groot aantal widgets waaruit je kunt kiezen, kun je snel op de hoogte blijven van het nieuws, de informatie en het entertainment dat je het belangrijkst vindt. Vind eenvoudig de apps die je nodig hebt en de shows die je graag bekijkt in de nieuwe Microsoft Store."
     },
     "49": {
         "name": "Microsoft Windows 8 Pro (64-bit)",
@@ -430,7 +430,7 @@
         "mode": 64,
         "max_memory": 512,
         "image": "https://www.alternate.be/p/200x200/7/4/Microsoft_Surface_Pro_9_Commercial_13__tablet@@1876447.jpg",
-        "details": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
+        "description": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
     },
     "50": {
         "name": "Microsoft Windows 8 Pro (32-bit)",
@@ -438,6 +438,6 @@
         "mode": 32,
         "max_memory": 4,
         "image": "https://www.alternate.be/p/200x200/7/4/Microsoft_Surface_Pro_9_Commercial_13__tablet@@1876447.jpg",
-        "details": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
+        "description": "Met de veelzijdige Microsoft Surface Pro 9 tablet werk je flexibel en effici\u00ebnt. Het 13-inch PixelSense-touchscreen is een canvas dat op jouw creaties ligt te wachten. Stimuleer je productiviteit met de snelle Windows 11 Pro software en het 8 GB LPDDR5-geheugen. De Surface Pro 9 is compatibel met de Slim Pen 2 om gedetailleerde ontwerpen en tekeningen te maken. Met het Surface Pro 9 Signature Keyboard tover je de tablet om naar een compacte werkplek. Dankzij de verstelbare standaard kijk je handsfree naar content, ook ideaal om te videobellen en te multitasken. Deze tablet heeft een frontcamera in 1080p HD om je haarscherp in beeld te brengen en met de camera aan de achterkant maak je gemakkelijk foto's en video's. Al je bestanden slaag je op in het 256 GB geheugen. Werk met de Surface Pro 9 een hele dag op \u00e9\u00e9n batterij zonder op te laden. En dankzij de twee USB-C-poorten kan je eenvoudig accessoires opladen of andere hardware aansluiten."
     }
 }

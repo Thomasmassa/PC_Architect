@@ -7,10 +7,6 @@
              Shell.PresentationMode="NotAnimated"
              Shell.NavBarIsVisible="False">
 
-
-    <ContentPage.Behaviors>
-        <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
-    </ContentPage.Behaviors>
     <Grid BackgroundColor="{StaticResource BackgroundBackgroundColor}">
 
         <Image Source="Images/background.png" 
@@ -56,16 +52,6 @@
                 </Label.FormattedText>
 
             </Label>
-
-            <!-- Lotti -->
-            <!--<skia:SKLottieView  Grid.Row="2"
-                                Source="lottiAnimation.json"
-                                RepeatCount="-1"
-                                SemanticProperties.Description="Very Nice"
-                                HeightRequest="200"
-                                WidthRequest="200"
-                                HorizontalOptions="Center"
-                                VerticalOptions="End"/>-->
 
             <!-- Knop  -->
             <Button Text="Start Building"
