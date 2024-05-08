@@ -30,9 +30,10 @@ Het herschrijven van de PartDetailsPage voor de items om de items op een betere 
 BackButton voor StartBuildPage, Navigatie voor MyBuildPage, SearchPage navigatie gemaakt.
 PartDetailPage aantrekkelijker gemaakt en geprobeert om de detailsbutton functionaliteit te geven om een bepaalde label visible te maken. 
 
-Week 10 (29/04): ..... uren:
+Week 10 (29/04): 14 uren:
 
-
+App icon, searchPage layout/zoekbalk/navigation, animaties, documentatie (comments) en herzien code, connectivity en refresh,
+partDetailPage layout.
 
 Week 11 (06/05): ..... uren:
 
