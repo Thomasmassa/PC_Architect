@@ -5,8 +5,7 @@ namespace PcArchitect.Model
 {
     public class CpuCooler : IComponent
     {
-        private string _image = "imagenotfound.png";
-
+        private string _image = "";
         [JsonPropertyName("image")]
         public string Image
         {
@@ -15,7 +14,6 @@ namespace PcArchitect.Model
         }
 
         private string _description = "";
-
         [JsonPropertyName("description")]
         public string? Description
         {
@@ -23,12 +21,13 @@ namespace PcArchitect.Model
             set { _description = value; }
         }
 
+
         [JsonPropertyName("name")]
         public string Name { get; set; } = "";
         [JsonPropertyName("price")]
         public double? Price { get; set; }
         [JsonPropertyName("rpm")]
-        public object Rpm { get; set; } = "";
+        public object Rpm { get; set; } 
         [JsonPropertyName("noise_level")]
         public object NoiseLevel { get; set; } = "";
         [JsonPropertyName("color")]
@@ -38,7 +37,12 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Rpm: {Rpm}\nNoise Level: {NoiseLevel}dB\nColor: {Color}"; }
+            get
+            {
+                return $"Rpm: {Rpm}\nNoise Level: {NoiseLevel} dB\nColor: {Color}"
+                    .Replace("[", string.Empty)
+                    .Replace("]", string.Empty);
+            }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

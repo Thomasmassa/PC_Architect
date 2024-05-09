@@ -7,9 +7,6 @@ using PC_Architect.Model;
 using PcArchitect.Services;
 using PcArchitect.Model;
 using System.Collections;
-using PcArchitect.Repository;
-using System.Linq.Expressions;
-using System.Net.Sockets;
 
 // DIT IS DE VIEWMODEL VOOR DE LIJST VAN COMPONENTEN DIE WORDEN OPGEHAALD AFHANKELIJK VAN DE GESELECTEERDE CATEGORIE
 

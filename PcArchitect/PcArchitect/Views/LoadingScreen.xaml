@@ -6,30 +6,24 @@
              xmlns:viewModels="clr-namespace:PcArchitect.ViewModel"
              x:DataType="viewModels:LoadingScreenViewModel"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Shell.PresentationMode="NotAnimated"
+             Shell.PresentationMode="Animated"
              Shell.NavBarIsVisible="False">
-
-    <ContentPage.Behaviors>
-        <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
-    </ContentPage.Behaviors>
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <!-- Lotti --> 
+        <!-- Lotti -->
         <skia:SKLottieView 
-            Grid.Column="0" Grid.RowSpan="0"
-            Source="loadingscreen"
+            Grid.Column="0" Grid.Row="0"
+            Source="lottiAnimation.json"
             RepeatCount="-1"
             SemanticProperties.Description="Very Nice"  
-            HeightRequest="200"
-            WidthRequest="200"
+            WidthRequest="280"
             HorizontalOptions="Center"
-            VerticalOptions="End"/>
+            VerticalOptions="Center"/>
     </Grid>
-
 </ContentPage>

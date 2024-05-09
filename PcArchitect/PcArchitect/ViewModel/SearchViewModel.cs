@@ -105,14 +105,14 @@ namespace PcArchitect.ViewModel
 
             DisplayedItems.Clear();
 
-            OnSearch(newText);
+            await OnSearch(newText);
             return;
         }
-        private void OnSearch(string searchText)
+        private Task OnSearch(string searchText)
         {
             Title = $"Search {searchText} List";
 
-            Task.Run(() =>
+            return Task.Run(() =>
             {
                 var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
 

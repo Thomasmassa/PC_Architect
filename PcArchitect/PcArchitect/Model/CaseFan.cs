@@ -42,7 +42,12 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Size: {Size}\nRpm: {Rpm}\nAirflow: {Airflow}"; }
+            get 
+            { 
+                return $"Size: {Size}\nRpm: {Rpm}\nAirflow: {Airflow}"
+                    .Replace("[", string.Empty)
+                    .Replace("]", string.Empty); 
+            }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

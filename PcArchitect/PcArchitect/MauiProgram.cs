@@ -31,6 +31,7 @@ namespace PcArchitect
                 });
 
             builder.Services.AddSingleton<LoadingScreen>();
+            builder.Services.AddSingleton<LoadingScreenViewModel>();
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
 

@@ -7,6 +7,11 @@
              Shell.PresentationMode="NotAnimated"
              Shell.NavBarIsVisible="False">
 
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="NavigatedTo" x:TypeArguments="NavigatedToEventArgs" Command="{Binding PageNavigatedCommand}"/>
+    </ContentPage.Behaviors>
+
     <Grid BackgroundColor="{StaticResource BackgroundBackgroundColor}">
 
         <Image Source="Images/background.png" 
@@ -15,17 +20,15 @@
         <Grid Padding="0">
             <Grid.RowDefinitions>
                 <!-- bovenaan -->
-                <RowDefinition Height="4*" />
+                <RowDefinition Height="5*" />
                 <!-- midden titel -->
-                <RowDefinition Height="2*" />
-                <!-- lotti -->
                 <RowDefinition Height="4*" />
                 <!-- knop -->
                 <RowDefinition Height="2*" />
                 <RowDefinition Height="2*" />
                 <RowDefinition Height="2*" />
                 <!-- Lege ruimte -->
-                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
             </Grid.RowDefinitions>
 
             <!-- Logo  -->
@@ -56,10 +59,25 @@
             <!-- Knop  -->
             <Button Text="Start Building"
                     Command="{Binding GoToStartBuildingCommand}"
+                    Padding="0"
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     HeightRequest="70"
-                    WidthRequest="150"
+                    WidthRequest="185"
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    BackgroundColor="{StaticResource Signature}"
+                    Grid.Row="2"/>
+
+            <!-- Knop  -->
+            <Button Text="My Builds"
+                    Command="{Binding GoToMyBuildCommand}"
+                    Padding="0"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    HeightRequest="70"
+                    WidthRequest="185"
                     FontSize="Large"
                     FontAttributes="Bold"
                     CornerRadius="20"
@@ -67,30 +85,18 @@
                     Grid.Row="3"/>
 
             <!-- Knop  -->
-            <Button Text="My Builds"
-                    Command="{Binding GoToMyBuildCommand}"
+            <Button Text="Seach Parts"
+                    Command="{Binding GoToSearchCommand}"
+                    Padding="0"
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     HeightRequest="70"
-                    WidthRequest="150"
+                    WidthRequest="185"
                     FontSize="Large"
                     FontAttributes="Bold"
                     CornerRadius="20"
                     BackgroundColor="{StaticResource Signature}"
                     Grid.Row="4"/>
-
-            <!-- Knop  -->
-            <Button Text="Seach Parts"
-                    Command="{Binding GoToSearchCommand}"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    HeightRequest="70"
-                    WidthRequest="150"
-                    FontSize="Large"
-                    FontAttributes="Bold"
-                    CornerRadius="20"
-                    BackgroundColor="{StaticResource Signature}"
-                    Grid.Row="5"/>
 
             <!-- Footer -->
             <Label VerticalOptions="End"

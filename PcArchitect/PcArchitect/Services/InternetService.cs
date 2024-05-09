@@ -1,4 +1,6 @@
-﻿using PcArchitect.Repository;
+﻿using CommunityToolkit.Maui.Alerts;
+using Xamarin.Essentials;
+using PcArchitect.Repository;
 
 namespace PcArchitect.Services
 {
@@ -6,45 +8,46 @@ namespace PcArchitect.Services
     {
         IConnectivity _connectivity;
         private readonly AllComponentRepository _allComponentRepository;
-
-        private bool _isNavigatedTo = false;
+        private bool allComponentsLoaded;
 
         public InternetService(IConnectivity connectivity, AllComponentRepository allComponentRepository)
         {
             _connectivity = connectivity;
             _allComponentRepository = allComponentRepository;
+            allComponentsLoaded = false;
         }
 
-        public async Task CheckInternetConnection()
+        public async Task CheckInternetConnectionAsync()
         {
-            if (_isNavigatedTo)
-                return;
-            try
-            {  
-                while (_connectivity.NetworkAccess != NetworkAccess.Internet)
+            while (!allComponentsLoaded)
+            {
+                try
                 {
-                    bool choice = await Shell.Current.DisplayAlert("Internet issue:", $"Turn on your Internet connection! Press refresh when you have astablished internet connection!", "Refresh", "Cancel");
-                    if (choice)
+                    if (_connectivity.NetworkAccess == Microsoft.Maui.Networking.NetworkAccess.Internet)
                     {
-                        if (_connectivity.NetworkAccess == NetworkAccess.Internet)
-                            break;
-                        else
-                        {
-                            choice = await Shell.Current.DisplayAlert("Internet issue:", $"internet not astablished!", "Try again", "Cancel");
-                            if (!choice)
-                                return;
-                        }
+                        allComponentsLoaded = true;
+                        ShowToast("Connected to internet, getting Parts!");
+                        await _allComponentRepository.GetAllComponentsAsync();
                     }
                     else
-                        return;
+                    {
+                        ShowToast("No internet connection, retrying in 10 seconds");
+                    }
+                    await Task.Delay(TimeSpan.FromSeconds(10));
                 }
-                _isNavigatedTo = true;
-                await _allComponentRepository.GetAllComponentsAsync();
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
             }
-            catch (Exception ex)
+        }
+
+        private void ShowToast(string message)
+        {
+            Xamarin.Essentials.MainThread.BeginInvokeOnMainThread(async () =>
             {
-                await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
-            }
+                await Toast.Make(message).Show();
+            });
         }
     }
 }

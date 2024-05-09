@@ -43,7 +43,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Capacity: {Capacity}\nType: {Type}\nPrice Per GB {PricePerGb}"; }
+            get { return $"Capacity: {Capacity} Gb\nType: {Type}\nPrice Per GB {PricePerGb}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
