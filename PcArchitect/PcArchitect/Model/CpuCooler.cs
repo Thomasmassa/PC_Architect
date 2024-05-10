@@ -1,10 +1,14 @@
 ﻿using PcArchitect.Interfaces;
+using SQLite;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
     public class CpuCooler : IComponent
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         private string _image = "";
         [JsonPropertyName("image")]
         public string Image
@@ -39,7 +43,7 @@ namespace PcArchitect.Model
         {
             get
             {
-                return $"Rpm: {Rpm}\nNoise Level: {NoiseLevel} dB\nColor: {Color}"
+                return $"Rpm: {Rpm}\nNoise Level: {NoiseLevel} dB\nSize: {Size}\nColor: {Color}"
                     .Replace("[", string.Empty)
                     .Replace("]", string.Empty);
             }

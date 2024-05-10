@@ -1,10 +1,14 @@
 ﻿using PcArchitect.Interfaces;
+using SQLite;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
     public class Motherboard : IComponent
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         private string _image = "imagenotfound.png";
 
         [JsonPropertyName("image")]
@@ -43,7 +47,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Socket: {Socket}\nMemory Slots: {MemorySlots}\nMemory Type: {MemoryType}"; }
+            get { return $"Socket: {Socket}\nMemory Slots: {MemorySlots}\nMemory Type: {MemoryType}\nMax memory: {MaxMemory} Gb\nForm factor: {FormFactor}\nColor: {Color}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

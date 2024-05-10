@@ -1,10 +1,14 @@
 ﻿using PcArchitect.Interfaces;
+using SQLite;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
     public class Gpu : IComponent
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         private string _image = "imagenotfound.png";
 
         [JsonPropertyName("image")]
@@ -42,7 +46,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"{Chipset}\nMemory: {Memory}\nCore Clock Type: {CoreClock}"; }
+            get { return $"{Chipset}\nMemory: {Memory}\nCore Clock Type: {CoreClock}\nBoost clock: {BoostClock}\nLenght: {Length}\nColor {Color}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

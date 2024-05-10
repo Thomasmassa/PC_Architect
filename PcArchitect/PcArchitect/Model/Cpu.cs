@@ -1,12 +1,15 @@
-﻿using PcArchitect.Interfaces;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
+using PcArchitect.Interfaces;
+using SQLite;
 
 namespace PcArchitect.Model
 {
     public class Cpu : IComponent
     {
-        private string _image = "imagenotfound.png";
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
 
+        private string _image = "imagenotfound.png";
         [JsonPropertyName("image")]
         public string Image
         {
@@ -15,7 +18,6 @@ namespace PcArchitect.Model
         }
 
         private string _description = "";
-
         [JsonPropertyName("description")]
         public string? Description
         {
@@ -44,7 +46,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Socket: {Socket}\nCores: {Core_Count}\nCore Clock: {Core_clock}";  }
+            get { return $"Socket: {Socket}\nCores: {Core_Count}\nCore Clock: {Core_clock}\nBoost Clock: {BoostClock}\nIntegrated graphics: {Graphics}\nSmt: {Smt}\nTdp: {Tdp}";  }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

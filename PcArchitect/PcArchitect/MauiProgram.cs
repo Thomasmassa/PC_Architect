@@ -30,11 +30,10 @@ namespace PcArchitect
                     fonts.AddFont("Koulen.ttf", "Koulen");
                 });
 
-            builder.Services.AddSingleton<LoadingScreen>();
-            builder.Services.AddSingleton<LoadingScreenViewModel>();
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
-
+            
+            builder.Services.AddSingleton<LocalDatabase>();
             builder.Services.AddSingleton<RootFactory>();
             builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
             builder.Services.AddSingleton<IComponentService, ComponentService>();

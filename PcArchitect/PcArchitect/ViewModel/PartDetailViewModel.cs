@@ -29,6 +29,7 @@ namespace PcArchitect.ViewModel
 
             IsDetailsVisible = false;
             IsDescriptionVisible = false;
+            DescriptionButton = "Show Description";
         }
 
         [RelayCommand]
@@ -50,16 +51,25 @@ namespace PcArchitect.ViewModel
             Component.Add(component);
         }
 
-        [RelayCommand]
-        void ToggleDetails()
-        {
-            IsDetailsVisible = true;
-        }
+        //[RelayCommand]
+        //void ToggleDetails()
+        //{
+        //    IsDetailsVisible = true;
+        //}
 
         [RelayCommand]
         void ToggleDescription()
         {
-            IsDescriptionVisible = true;
+            if (IsDescriptionVisible)
+            {
+                IsDescriptionVisible = false;
+                DescriptionButton = "Show Description";
+            }
+            else
+            {
+                IsDescriptionVisible = true;
+                DescriptionButton = "Hide Description";
+            }
         }
 
         [RelayCommand]

@@ -1,10 +1,14 @@
 ﻿using PcArchitect.Interfaces;
+using SQLite;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
     public class CaseFan : IComponent
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         private string _image = "imagenotfound.png";
 
         [JsonPropertyName("image")]
@@ -44,7 +48,7 @@ namespace PcArchitect.Model
         {
             get 
             { 
-                return $"Size: {Size}\nRpm: {Rpm}\nAirflow: {Airflow}"
+                return $"Size: {Size}\nRpm: {Rpm}\nAirflow: {Airflow}\nNoise Level: {NoiseLevel}\nPwm: {Pwm}\nColor: {Color}"
                     .Replace("[", string.Empty)
                     .Replace("]", string.Empty); 
             }

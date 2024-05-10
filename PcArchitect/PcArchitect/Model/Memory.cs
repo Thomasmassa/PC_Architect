@@ -1,4 +1,5 @@
 ﻿using PcArchitect.Interfaces;
+using SQLite;
 using System;
 using System.Text.Json.Serialization;
 
@@ -6,6 +7,9 @@ namespace PcArchitect.Model
 {
     public class Memory : IComponent
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         private string _image = "";
 
         [JsonPropertyName("image")]
@@ -48,7 +52,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"DDR: {Speed_type}\nSpeed: {Speed_value}\nModule size: {Module_count}x{Module_size}Gb"; }
+            get { return $"DDR: {Speed_type}\nSpeed: {Speed_value}\nModule size: {Module_count}x{Module_size} Gb\nPrice per Gb: €{Price_per_gb}\nCash latency: {Cas_latency} ms\nFirst wors latency: {First_word_latency}\nColor: {Color}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

@@ -55,11 +55,10 @@ while True:
     # Open het JSON-bestand en laad de gegevens
     with open(filepath, 'r') as f:
         data = json.load(f)
-
+    count = 1
     for item in data:
-        string = data [item]['details']
-        data[item]['description'] = string
-        del data[item]['details']
+        data[item]['id'] = count
+        count += 1
 
     # Schrijf de gegevens terug naar het JSON-bestand
     with open(filepath, 'w') as f:

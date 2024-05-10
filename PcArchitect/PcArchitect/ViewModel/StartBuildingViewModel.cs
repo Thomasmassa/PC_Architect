@@ -6,6 +6,7 @@ using PcArchitect.Views;
 using PC_Architect.Model;
 using System.Collections;
 using System.Diagnostics;
+using PcArchitect.Repository;
 
 // DIT IS DE VIEWMODEL VOOR DE PAGINA WAAR DE CATAGORIEEN WORDEN WEERGEGEVEN
 
@@ -14,20 +15,21 @@ namespace PcArchitect.ViewModel
     public partial class StartBuildingViewModel : BaseViewModel
     {
         public ObservableCollection<IComponent> Components { get; set; }
-        private readonly RootFactory _rootF;
         private readonly AddedComponentRepository _addedomponentRepository;
+        private readonly RootFactory _rootF;
         private double TotalPrice;
-
+        private readonly LocalDatabase _database;
+        private SavedBuild SavedBuild;
 
         //////////////////////////////////////////////
 
         //////////////////////////////////////////////
 
 
-        public StartBuildingViewModel(AddedComponentRepository addedcomponentRepository, RootFactory rootF)
+        public StartBuildingViewModel(AddedComponentRepository addedcomponentRepository, RootFactory rootF, LocalDatabase database)
         {
             Components = new ObservableCollection<IComponent>();
-
+            _database = database;
             _addedomponentRepository = addedcomponentRepository;
             _rootF = rootF;
 
@@ -174,8 +176,67 @@ namespace PcArchitect.ViewModel
         //////////////////////////////////////////////
 
 
-        //ADDITIONAL PRESET
+        [RelayCommand]
+        public async Task SaveBuild()
+        {
+            var result = await Application.Current.MainPage.DisplayPromptAsync("Titel", "Voer titel in:", "OK", "Annuleren", placeholder: "Type hier...");
+            if (result != null)
+            {
+                var properties = typeof(Root).GetProperties();
+                SavedBuild = new SavedBuild();
+                SavedBuild.BuildName = result;
+                foreach (var property in properties)
+                {
+                    var itemType = property.PropertyType.GetGenericArguments()[0];
+                    string propertytype = itemType.Name.ToLower();
 
+                    var list = (IList?)property.GetValue(_rootF.GetRoot2());
+                    var Ilist = list.Cast<IComponent>().ToList();
+                    foreach (var item in Ilist)
+                    {
+                        if (item.Price != null && item != null)
+                        {
+                            switch (item)
+                            {
+                                case Cpu cpu:
+                                    SavedBuild.CpuId = cpu.Id;
+                                    break;
+                                case CpuCooler cpuCooler:
+                                    SavedBuild.CpuCoolerId = cpuCooler.Id;
+                                    break;
+                                case Gpu gpu:
+                                    SavedBuild.GpuId = gpu.Id;
+                                    break;
+                                case Motherboard motherboard:
+                                    SavedBuild.MotherboardId = motherboard.Id;
+                                    break;
+                                case Memory memory:
+                                    SavedBuild.MemoryId = memory.Id;
+                                    break;
+                                case Storage storage:
+                                    SavedBuild.StorageId = storage.Id;
+                                    break;
+                                case Psu psu:
+                                    SavedBuild.PsuId = psu.Id;
+                                    break;
+                                case Case case_:
+                                    SavedBuild.CaseId = case_.Id;
+                                    break;
+                                case CaseFan caseFan:
+                                    SavedBuild.CaseFanId = caseFan.Id;
+                                    break;
+                                case Os os:
+                                    SavedBuild.OsId = os.Id;
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                }
+                await _database.SaveItemAsync(SavedBuild);
+            }
+        }
     }
 }
 

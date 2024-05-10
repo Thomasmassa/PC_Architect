@@ -1,4 +1,5 @@
 ﻿using PcArchitect.Interfaces;
+using SQLite;
 using System.Runtime.Intrinsics.X86;
 using System.Text.Json.Serialization;
 
@@ -6,6 +7,9 @@ namespace PcArchitect.Model
 {
     public class Storage : IComponent
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         private string _image = "imagenotfound.png";
 
         [JsonPropertyName("image")]
@@ -43,7 +47,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Capacity: {Capacity} Gb\nType: {Type}\nPrice Per GB {PricePerGb}"; }
+            get { return $"Capacity: {Capacity} Gb\nType: {Type}\nPrice Per GB: €{PricePerGb}\nCache: {Cache} MB\nForm factor: {FormFactor}\nInterface: {Interface}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

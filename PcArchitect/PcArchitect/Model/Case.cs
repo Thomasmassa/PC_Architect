@@ -1,4 +1,5 @@
 ﻿using PcArchitect.Interfaces;
+using SQLite;
 using System.Text.Json.Serialization;
 
 // MODEL KLASSE CASE DIE OVERERFT VAN ICOMPONENT
@@ -7,6 +8,9 @@ namespace PcArchitect.Model
 {
     public class Case : IComponent
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         private string _image = "";
 
         // ALS DE AFBEELDING LEEG IS WORDT ER EEN STANDAARD AFBEELDING "imagenotfound.png" GEBRUIKT
@@ -48,7 +52,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Type: {Type}\nSide Panel: {SidePanel}\nExternal Volume: {ExternalVolume}"; }
+            get { return $"Type: {Type}\nSide Panel: {SidePanel}\nExternal Volume: {ExternalVolume}\nPsu: {Psu}\nInternal 35 Bays: {Internal35Bays}\nColor: {Color}"; }
         }
 
         // DE VOLGENDE EIGENSCHAPPEN WORDEN GEBRUIKT OM DELEN IN DE XAML TE TONEN OF TE VERBERGEN

@@ -1,10 +1,14 @@
 ﻿using PcArchitect.Interfaces;
+using SQLite;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
 {
     public class Psu : IComponent
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
         private string _image = "imagenotfound.png";
 
         [JsonPropertyName("image")]
@@ -40,7 +44,7 @@ namespace PcArchitect.Model
 
         public string Details
         {
-            get { return $"Wattage: {Wattage}\nEfficiency: {Efficiency}\nModular: {Modular}"; }
+            get { return $"Wattage: {Wattage}\nEfficiency: {Efficiency}\nModular: {Modular}\nType: {Type}\nColor: {Color}"; }
         }
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;

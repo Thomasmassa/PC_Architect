@@ -32,6 +32,9 @@ namespace PcArchitect.ViewModel
         [ObservableProperty]
         bool isAdditionalPresetFrameEnabled;
 
+        [ObservableProperty]
+        string descriptionButton = "";
+
         public bool IsNotBusy => !IsBusy;
     }
 }

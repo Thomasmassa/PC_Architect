@@ -34,8 +34,8 @@ namespace PC_Architect.Model
                     case Memory memory:
                         _rootF.GetRoot2().Memory.Add(memory);
                         break;
-                    case Storage ssd:
-                        _rootF.GetRoot2().Ssd.Add(ssd);
+                    case Storage storage:
+                        _rootF.GetRoot2().Storage.Add(storage);
                         break;
                     case Psu psu:
                         _rootF.GetRoot2().Psu.Add(psu);
@@ -74,8 +74,8 @@ namespace PC_Architect.Model
                     case Memory memory:
                         _rootF.GetRoot2().Memory.Remove(memory);
                         break;
-                    case Storage ssd:
-                        _rootF.GetRoot2().Ssd.Remove(ssd);
+                    case Storage storage:
+                        _rootF.GetRoot2().Storage.Remove(storage);
                         break;
                     case Psu psu:
                         _rootF.GetRoot2().Psu.Remove(psu);
