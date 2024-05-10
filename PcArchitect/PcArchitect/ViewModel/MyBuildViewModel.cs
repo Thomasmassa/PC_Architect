@@ -85,9 +85,6 @@ namespace PcArchitect.ViewModel
                     await _localDatabase.SaveItemAsync(build);
                 }
             }
-
-
-
         }
 
         [RelayCommand]

@@ -1,4 +1,5 @@
 ﻿using PcArchitect.Model;
+using System.Collections;
 
 // AFHANKELIJK VAN WELKE METHODE WORDT AANGEROEPEN, WORDT EEN COMPONENT TOEGEVOEGD OF VERWIJDERD 
 // UIT DE SPECIFIEKE TYPE LIJST IN DE ROOT KLASSE
@@ -95,12 +96,26 @@ namespace PC_Architect.Model
 
         // VERWIJDER ALLE COMPONENTEN UIT DE ROOT2 KLASSE EN STANDAARDWAARDES WORDEN INGESTELD VOOR ALLE COMPONENTEN
 
-        public void ClearComponents()
+        public Task ClearComponents()
         {
-            foreach (var property in _rootF.GetRoot2().GetType().GetProperties())
+            return Task.Run(() =>
             {
-                property.SetValue(_rootF.GetRoot2(), Activator.CreateInstance(property.PropertyType));
-            }
+                foreach (var property in _rootF.GetRoot2().GetType().GetProperties())
+                {
+                    if (property.PropertyType.IsGenericType &&
+                        property.PropertyType.GetGenericTypeDefinition() == typeof(List<>))
+                    {
+                        var list = (IList?)property.GetValue(_rootF.GetRoot2());
+                        if (list != null && list.Count > 1)
+                        {
+                            for (int i = list.Count - 1; i > 0; i--)
+                            {
+                                list.RemoveAt(i);
+                            }
+                        }
+                    }
+                }
+            });
         }
     }
 }

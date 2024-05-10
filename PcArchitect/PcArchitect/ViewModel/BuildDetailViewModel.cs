@@ -102,7 +102,8 @@ namespace PcArchitect.ViewModel
 
         [RelayCommand]
         async Task EditBuild()
-        { 
+        {
+            await _addedComponentRepository.ClearComponents();
             foreach (var component in Components)
             {
                 await _addedComponentRepository.AddComponentAsync(component);

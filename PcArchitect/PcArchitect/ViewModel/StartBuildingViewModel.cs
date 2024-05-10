@@ -38,9 +38,6 @@ namespace PcArchitect.ViewModel
             _database = database;
             _addedomponentRepository = addedcomponentRepository;
             _rootF = rootF;
-
-            TotalPriceString = "€0.00";
-
             AdditionalName = "";
         }
 
@@ -102,10 +99,20 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         private async Task PageNavigated(NavigatedToEventArgs args)
         {
-            if (BuildName == null)
+            try
+            {
+                SavedBuild = (SavedBuild)_bufferService.GetBufferedComponent(BuildName);
+            }
+            catch (Exception) { };
+
+
+            TotalPriceString = "€0.00";
+
+            if (SavedBuild.BuildName == null)
                 Title = "Start Building";
             else
-                Title = $"Edit: {BuildName}";
+                Title = $"Edit: {SavedBuild.BuildName}";
+
             Components.Clear();
             await AddComponents();
         }
@@ -117,16 +124,10 @@ namespace PcArchitect.ViewModel
         //////////////////////////////////////////////
         
 
-
         [RelayCommand]
         public async Task SaveBuild()
         {
             bool newBuild = false;
-            try
-            {
-                SavedBuild = (SavedBuild)_bufferService.GetBufferedComponent(BuildName);
-            }
-            catch (Exception) {};
 
             if (SavedBuild == null)
             {
@@ -201,6 +202,7 @@ namespace PcArchitect.ViewModel
                 await _database.UpdateItemAsync(SavedBuild);
                 
             Components.Clear();
+            await _addedomponentRepository.ClearComponents();
             await Shell.Current.GoToAsync(nameof(MyBuildPage));
         }
 
