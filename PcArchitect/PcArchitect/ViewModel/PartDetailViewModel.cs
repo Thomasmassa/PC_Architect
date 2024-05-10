@@ -1,8 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
+﻿using CommunityToolkit.Mvvm.Input;
 using PcArchitect.Views;
-using PcArchitect.Interfaces;
-using System.ComponentModel;
 using System.Collections.ObjectModel;
 using IComponent = PcArchitect.Interfaces.IComponent;
 using PcArchitect.Services;

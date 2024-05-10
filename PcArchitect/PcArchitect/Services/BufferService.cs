@@ -15,7 +15,7 @@ namespace PcArchitect.Services
     {
         private Dictionary<string, object> buffer = [];
 
-        public Dictionary<string, object> BuffComponentForDetailPage(string componentName, object component)
+        public Dictionary<string, object> BuffComponent(string componentName, object component)
         {
             if (!buffer.ContainsKey(componentName))
             {
@@ -31,6 +31,7 @@ namespace PcArchitect.Services
             {
                 component = buffer[componentName];
             }
+            buffer.Clear();
             return component;
         }
     }

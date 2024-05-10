@@ -5,11 +5,13 @@ namespace PcArchitect.Interfaces
 {
     public interface IComponent
     {
+        int Id { get; }
         string Name { get; }
         string Image { get; }
         double? Price { get; }
         string? Description { get; }
         string? Details { get; }
+
 
         bool? IsSelectedComponentFrameEnabled { get; set; }
         bool? IsPresetFrameEnabled { get; set; }

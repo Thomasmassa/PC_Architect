@@ -241,7 +241,7 @@ namespace PcArchitect.ViewModel
             if (selectedItem == null)
                 return;
 
-            _bufferService.BuffComponentForDetailPage(selectedItem.Name, selectedItem);
+            _bufferService.BuffComponent(selectedItem.Name, selectedItem);
 
             await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", false, new Dictionary<string, object>
             {

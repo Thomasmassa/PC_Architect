@@ -35,6 +35,9 @@ namespace PcArchitect.ViewModel
         [ObservableProperty]
         string descriptionButton = "";
 
+        [ObservableProperty]
+        string additionalName = "";
+
         public bool IsNotBusy => !IsBusy;
     }
 }

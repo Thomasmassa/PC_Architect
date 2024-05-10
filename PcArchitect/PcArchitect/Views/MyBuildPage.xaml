@@ -14,15 +14,43 @@
     </ContentPage.Behaviors>
 
     <StackLayout BackgroundColor="{StaticResource BackgroundBackgroundColor}">
+        <Frame BackgroundColor="{StaticResource BackgroundBackgroundColor}"
+               CornerRadius="15" 
+               BorderColor="Transparent"
+               Padding="0" 
+               Grid.Column="1" 
+               Grid.Row="1" 
+               Grid.ColumnSpan="4">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Padding="0" 
+                       Text="My Builds" 
+                       TextColor="DarkOrange" 
+                       FontFamily="Koulen" 
+                       FontSize="40" 
+                       Grid.ColumnSpan="3"
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"/>
+                
+                <Button Text="back" 
+                        FontFamily="Koulen" 
+                        FontSize="Title" 
+                        TextColor="{StaticResource PrimaryText}" 
+                        Grid.Column="3" 
+                        Margin="20,0,0,0"
+                        Padding="0" 
+                        Background="Transparent" 
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MyBuildViewModel}}, Path=BackButtonCommand}"
+                        CommandParameter="{Binding .}"/>
+            </Grid>
+        </Frame>
         <CollectionView ItemsSource="{Binding SavedBuilds}" VerticalOptions="FillAndExpand">
-            <CollectionView.Header>
-                <Label Text="My Build Page"
-                       TextColor="{StaticResource Signature}"
-                       VerticalOptions="Center" 
-                       FontSize="Large"
-                       FontFamily="Koulen"
-                       HorizontalOptions="Center" />
-            </CollectionView.Header>
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:SavedBuild">
                     <SwipeView>
@@ -40,6 +68,20 @@
                                 </SwipeItemView>
                             </SwipeItems>
                         </SwipeView.RightItems>
+                        <SwipeView.LeftItems>
+                            <SwipeItems>
+                                <SwipeItemView>
+                                    <Frame BackgroundColor="Transparent" BorderColor="Transparent">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MyBuildViewModel}}, Path=ChangeNameCommand}"
+                                                CommandParameter="{Binding .}"/>
+                                        </Frame.GestureRecognizers>
+                                        <Image Source="edit.ico" HeightRequest="50" WidthRequest="50"/>
+                                    </Frame>
+                                </SwipeItemView>
+                            </SwipeItems>
+                        </SwipeView.LeftItems>
                         <SwipeView.Content>
                             <Grid>
                                 <Grid.RowDefinitions>

@@ -7,35 +7,41 @@ using PC_Architect.Model;
 using System.Collections;
 using System.Diagnostics;
 using PcArchitect.Repository;
+using PcArchitect.Services;
 
 // DIT IS DE VIEWMODEL VOOR DE PAGINA WAAR DE CATAGORIEEN WORDEN WEERGEGEVEN
 
 namespace PcArchitect.ViewModel
 {
+    [QueryProperty(nameof(BuildName), "BuildName")]
     public partial class StartBuildingViewModel : BaseViewModel
     {
+        public string BuildName { get; set; }
+
         public ObservableCollection<IComponent> Components { get; set; }
         private readonly AddedComponentRepository _addedomponentRepository;
+        private readonly LocalDatabase _database;
+        private readonly BufferService _bufferService;
         private readonly RootFactory _rootF;
         private double TotalPrice;
-        private readonly LocalDatabase _database;
-        private SavedBuild SavedBuild;
+        SavedBuild SavedBuild;
 
         //////////////////////////////////////////////
 
         //////////////////////////////////////////////
 
 
-        public StartBuildingViewModel(AddedComponentRepository addedcomponentRepository, RootFactory rootF, LocalDatabase database)
+        public StartBuildingViewModel(AddedComponentRepository addedcomponentRepository, RootFactory rootF, LocalDatabase database, BufferService bufferService)
         {
             Components = new ObservableCollection<IComponent>();
+            _bufferService = bufferService;
             _database = database;
             _addedomponentRepository = addedcomponentRepository;
             _rootF = rootF;
 
             TotalPriceString = "€0.00";
 
-            Title = "";
+            AdditionalName = "";
         }
 
 
@@ -74,7 +80,7 @@ namespace PcArchitect.ViewModel
                                 if (lastItem is Storage storage)
                                 {
                                     IsAdditionalPresetFrameEnabled = true;
-                                    Title = "+ Add Additional Storage";
+                                    AdditionalName = "+ Add Additional Storage";
                                 }
                             }
 
@@ -96,10 +102,107 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         private async Task PageNavigated(NavigatedToEventArgs args)
         {
+            if (BuildName == null)
+                Title = "Start Building";
+            else
+                Title = $"Edit: {BuildName}";
             Components.Clear();
             await AddComponents();
         }
         //PAGENAVIGATED
+
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+        
+
+
+        [RelayCommand]
+        public async Task SaveBuild()
+        {
+            bool newBuild = false;
+            try
+            {
+                SavedBuild = (SavedBuild)_bufferService.GetBufferedComponent(BuildName);
+            }
+            catch (Exception) {};
+
+            if (SavedBuild == null)
+            {
+                SavedBuild = new SavedBuild();
+
+                string name = "";
+                var savedBuilds = _database.GetItemsAsync();
+                var buildNames = savedBuilds.Result.Select(x => x.BuildName).ToList();
+
+                while (name == "")
+                { 
+                    name = await Application.Current.MainPage.DisplayPromptAsync("Titel", "Voer titel in:", "Ok", "Cancel", placeholder: "Type hier...", 20);
+                    if (name == "Cancel")
+                        return;
+                    if(buildNames.Contains(name))
+                    {
+                        await Application.Current.MainPage.DisplayAlert("Error", "Name already exists", "OK");
+                    }
+                    else
+                        SavedBuild.BuildName = name;
+                }
+                newBuild = true;
+            }
+
+            var properties = typeof(Root).GetProperties();
+            foreach (var property in properties)
+            {
+                var list = (IList?)property.GetValue(_rootF.GetRoot2());
+                var Ilist = list.Cast<IComponent>().ToList();
+                foreach (var item in Ilist)
+                {
+                    switch (item)
+                    {
+                        case Cpu cpu:
+                            SavedBuild.CpuId = cpu.Id;
+                            break;
+                        case CpuCooler cpuCooler:
+                            SavedBuild.CpuCoolerId = cpuCooler.Id;
+                            break;
+                        case Gpu gpu:
+                            SavedBuild.GpuId = gpu.Id;
+                            break;
+                        case Motherboard motherboard:
+                            SavedBuild.MotherboardId = motherboard.Id;
+                            break;
+                        case Memory memory:
+                            SavedBuild.MemoryId = memory.Id;
+                            break;
+                        case Storage storage:
+                            SavedBuild.StorageId = storage.Id;
+                            break;
+                        case Psu psu:
+                            SavedBuild.PsuId = psu.Id;
+                            break;
+                        case Case case_:
+                            SavedBuild.CaseId = case_.Id;
+                            break;
+                        case CaseFan caseFan:
+                            SavedBuild.CaseFanId = caseFan.Id;
+                            break;
+                        case Os os:
+                            SavedBuild.OsId = os.Id;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            if (newBuild)
+                await _database.SaveItemAsync(SavedBuild);
+            else
+                await _database.UpdateItemAsync(SavedBuild);
+                
+            Components.Clear();
+            await Shell.Current.GoToAsync(nameof(MyBuildPage));
+        }
 
 
         //////////////////////////////////////////////
@@ -169,76 +272,6 @@ namespace PcArchitect.ViewModel
             }
         }
         //BACKBUTTON
-
-
-        //////////////////////////////////////////////
-
-        //////////////////////////////////////////////
-
-
-        [RelayCommand]
-        public async Task SaveBuild()
-        {
-            var result = await Application.Current.MainPage.DisplayPromptAsync("Titel", "Voer titel in:", "OK", "Annuleren", placeholder: "Type hier...");
-            if (result != null)
-            {
-                var properties = typeof(Root).GetProperties();
-                SavedBuild = new SavedBuild();
-                SavedBuild.BuildName = result;
-                foreach (var property in properties)
-                {
-                    var itemType = property.PropertyType.GetGenericArguments()[0];
-                    string propertytype = itemType.Name.ToLower();
-
-                    var list = (IList?)property.GetValue(_rootF.GetRoot2());
-                    var Ilist = list.Cast<IComponent>().ToList();
-                    foreach (var item in Ilist)
-                    {
-                        if (item.Price != null && item != null)
-                        {
-                            switch (item)
-                            {
-                                case Cpu cpu:
-                                    SavedBuild.CpuId = cpu.Id;
-                                    break;
-                                case CpuCooler cpuCooler:
-                                    SavedBuild.CpuCoolerId = cpuCooler.Id;
-                                    break;
-                                case Gpu gpu:
-                                    SavedBuild.GpuId = gpu.Id;
-                                    break;
-                                case Motherboard motherboard:
-                                    SavedBuild.MotherboardId = motherboard.Id;
-                                    break;
-                                case Memory memory:
-                                    SavedBuild.MemoryId = memory.Id;
-                                    break;
-                                case Storage storage:
-                                    SavedBuild.StorageId = storage.Id;
-                                    break;
-                                case Psu psu:
-                                    SavedBuild.PsuId = psu.Id;
-                                    break;
-                                case Case case_:
-                                    SavedBuild.CaseId = case_.Id;
-                                    break;
-                                case CaseFan caseFan:
-                                    SavedBuild.CaseFanId = caseFan.Id;
-                                    break;
-                                case Os os:
-                                    SavedBuild.OsId = os.Id;
-                                    break;
-                                default:
-                                    break;
-                            }
-                        }
-                    }
-                }
-                await _database.SaveItemAsync(SavedBuild);
-            }
-            Components.Clear();
-            await Shell.Current.GoToAsync(nameof(MyBuildPage));
-        }
     }
 }
 

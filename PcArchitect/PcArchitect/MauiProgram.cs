@@ -42,15 +42,17 @@ namespace PcArchitect
             builder.Services.AddSingleton<AddedComponentRepository>();
             builder.Services.AddSingleton<BufferService>();
 
+            builder.Services.AddSingleton<MyBuildViewModel>();
+            builder.Services.AddSingleton<MyBuildPage>();
             builder.Services.AddSingleton<StartBuildingViewModel>();
             builder.Services.AddSingleton<StartBuildingPage>();
             builder.Services.AddSingleton<PartListViewModel>();
             builder.Services.AddSingleton<PartListPage>();
-            builder.Services.AddSingleton<MyBuildPage>();
-            builder.Services.AddSingleton<MyBuildViewModel>();
             builder.Services.AddSingleton<SearchViewModel>();
             builder.Services.AddSingleton<SearchPage>();
 
+            builder.Services.AddTransient<BuildDetailViewModel>();
+            builder.Services.AddTransient<BuildDetailPage>();
             builder.Services.AddTransient<PartDetailViewModel>();
             builder.Services.AddTransient<PartDetailPage>();
 
