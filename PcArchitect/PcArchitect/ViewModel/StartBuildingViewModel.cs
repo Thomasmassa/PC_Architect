@@ -236,6 +236,8 @@ namespace PcArchitect.ViewModel
                 }
                 await _database.SaveItemAsync(SavedBuild);
             }
+            Components.Clear();
+            await Shell.Current.GoToAsync(nameof(MyBuildPage));
         }
     }
 }

@@ -6,7 +6,7 @@ namespace PcArchitect.Model
 {
     public class Motherboard : IComponent
     {
-        [PrimaryKey, AutoIncrement]
+        [JsonPropertyName("id")]
         public int Id { get; set; }
 
         private string _image = "imagenotfound.png";

@@ -6,7 +6,7 @@ namespace PcArchitect.Model
 {
     public class CpuCooler : IComponent
     {
-        [PrimaryKey, AutoIncrement]
+        [JsonPropertyName("id")]
         public int Id { get; set; }
 
         private string _image = "";

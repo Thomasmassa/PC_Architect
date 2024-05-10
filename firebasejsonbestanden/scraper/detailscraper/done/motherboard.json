@@ -9,10 +9,11 @@
         "color": "Black / Silver",
         "image": "https://business.alternate.be/p/160x160/8/7/ASUS_ROG_Strix_B650_A_Gaming_WiFi_socket_AM5_moederbord@@1870278.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS ROG STRIX B650-A Gaming WiFi moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, \u00e9\u00e9n PCIe 4.0/3.0 x16 slot, \u00e9\u00e9n PCIe 4.0/3.0 x16 slot met x4 mode ondersteuning, en twee PCIe 4.0/3.0 x1 slots. De ASUS ROG STRIX B650-A Gaming WiFi beschikt over ROG SupremeFX 7.1 Surround Sound, een 2.5 Gigabit LAN interface, Wi-Fi 6E, Bluetooth, vier SATA3 poorten, drie M.2 poorten, vier USB-A 2.0, twee USB-A 3.2 (5 Gbit/s) en twee USB-A 3.2 (10 Gbit/s) interfaces."
+        "description": "Het ASUS ROG STRIX B650-A Gaming WiFi moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, \u00e9\u00e9n PCIe 4.0/3.0 x16 slot, \u00e9\u00e9n PCIe 4.0/3.0 x16 slot met x4 mode ondersteuning, en twee PCIe 4.0/3.0 x1 slots. De ASUS ROG STRIX B650-A Gaming WiFi beschikt over ROG SupremeFX 7.1 Surround Sound, een 2.5 Gigabit LAN interface, Wi-Fi 6E, Bluetooth, vier SATA3 poorten, drie M.2 poorten, vier USB-A 2.0, twee USB-A 3.2 (5 Gbit/s) en twee USB-A 3.2 (10 Gbit/s) interfaces.",
+        "id": 1
     },
     "1": {
-        "id": 1,
+        "id": 2,
         "name": "MSI B650 GAMING PLUS WIFI",
         "price": 179.99,
         "socket": "AM5",
@@ -25,7 +26,7 @@
         "description": "Het MSI B650 GAMING PLUS WIFI moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, twee PCIe 4.0/3.0 x16 slots en \u00e9\u00e9n PCIe 4.0/3.0 x1 slot. De MSI B650 GAMING PLUS WIFI beschikt over 8-kanaals geluid, een 2.5 Gigabit LAN interface, Wi-Fi 6, Bluetooth, vier SATA3 poorten, twee M.2 poorten, vier USB-A 3.2 (5 Gbit/s), drie USB-A 3.2 (10 Gbit/s) interfaces en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
     },
     "2": {
-        "id": 2,
+        "id": 3,
         "name": "MSI B760 GAMING PLUS WIFI",
         "price": 159.99,
         "socket": "LGA1700",
@@ -38,7 +39,7 @@
         "description": "Het MSI B760 GAMING PLUS WIFI moederbord is gebaseerd op de Intel\u00ae B760 chipset en ondersteunt Intel\u00ae processoren voor socket 1700 van de 13e en 12e generatie. Hij heeft vier DDR5 DIMM-sleuven in dual-channel werking voor maximaal 192 GB RAM. Verdere uitrusting van de MSI B760 GAMING PLUS WIFI omvat een PCIe 4.0 x 16 slot, een PCIe 4.0 x4 slot en drie PCIe 3.0 x 1 slots. Daarnaast heeft de B760 GAMING PLUS WIFI 8-kanaals geluid, een 2,5 Gigabit LAN-interface, Wi-Fi6E, Bluetooth, vier SATA3-poorten, twee M.2-poorten, acht USB-A 2.0, twee USB-A 3.2 (5 Gbit/s), twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (5 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface."
     },
     "3": {
-        "id": 3,
+        "id": 4,
         "name": "MSI B550 GAMING GEN3",
         "price": 109.99,
         "socket": "AM4",
@@ -51,7 +52,7 @@
         "description": "Het MSI B550 GAMING GEN3 moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren voor de AM4-aansluiting. Het heeft vier DDR4-slots voor maximaal 128 GB geheugen. Andere kenmerken van de MSI B550 GAMING GEN3 zijn twee PCIe 3.0 x16 slots en vier PCIe 3.0 x1 slots. Verder heeft de MSI B550 GAMING GEN3 8-kanaals geluid, een Gigabit LAN interface, zes SATA3 poorten, \u00e9\u00e9n M.2 poorten, twee USB-A 2.0, twee USB-A 3.2 (5 Gbit/s) en twee USB-A 3.2 (10 Gbit/s) interfaces."
     },
     "4": {
-        "id": 4,
+        "id": 5,
         "name": "MSI PRO Z790-A MAX WIFI",
         "price": 256.99,
         "socket": "LGA1700",
@@ -64,7 +65,7 @@
         "description": "Het MSI PRO Z790-A MAX WIFI moederbord is gebaseerd op de Intel Z790 chipset en ondersteunt Intel processors met een 1700 socket. Hij heeft vier DDR5 DIMM-sleuven in dual-channel modus voor maximaal 192 GB RAM. De MSI PRO Z790-A MAX WIFI is ook uitgerust met een PCIe 5.0 x16 slot, een PCIe 4.0 x16 slot, een PCIe 3.0 x16 slot en een PCIe 3.0 x1 slot. De MSI PRO Z790-A WIFI heeft ook 8-kanaals geluid, een 2,5 Gigabit LAN-interface, zes SATA3-poorten, vier M.2-poorten, WiFi 7, Bluetooth 5.4, twee USB-A 2.0, twee USB-A 3.2 (5 Gbit/s), drie USB-A 3.2 (10 Gbit/s) interfaces en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
     },
     "5": {
-        "id": 5,
+        "id": 6,
         "name": "Gigabyte B650 GAMING X AX",
         "price": 189.99,
         "socket": "AM5",
@@ -77,7 +78,7 @@
         "description": "De GIGABYTE B650M Gaming X AX is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren voor socket AM5. Het moederbord heeft vier DDR5-sleuven voor maximaal 128 GB werkgeheugen. De GIGABYTE B650M Gaming X AX is uitgerust met \u00e9\u00e9n PCIe 4.0 x16 slot en \u00e9\u00e9n PCIe 4.0 x1 slot. Daarnaast heeft de GIGABYTE B650M Gaming X AX Realtek 7.1 audio, een 2.5 Gigabit LAN-interface, WiFi 6E, Bluetooth 5.2, vier SATA3-poorten, twee M.2-poorten, twee USB 3.2 Gen 2 (10 Gbps) interfaces (waarvan \u00e9\u00e9n Type-C), twee USB 3.2 Gen 1 (5 Gbps) interfaces en vier USB 2.0 (480 Mbps) interfaces."
     },
     "6": {
-        "id": 6,
+        "id": 7,
         "name": "Gigabyte B550M K",
         "price": 84.99,
         "socket": "AM4",
@@ -90,7 +91,7 @@
         "description": "Het GIGABYTE B550M DS3H moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4 socket. Het heeft vier DDR4-sloten voor maximaal 128 GB geheugen. Bovendien heeft de GIGABYTE B550M DS3H twee PCIe 4.0 x16 sloten en \u00e9\u00e9n PCIe 1x slot. Verder heeft de GIGABYTE B550M DS3H onboard geluid, een Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, vier USB-A 2.0 en vier USB-A 3.2 (5 Gbit/s) interfaces."
     },
     "7": {
-        "id": 7,
+        "id": 8,
         "name": "Asus ROG STRIX B550-F GAMING WIFI II",
         "price": 189.99,
         "socket": "AM4",
@@ -103,7 +104,7 @@
         "description": "Het ASUS ROG STRIX B550-F GAMING WI-FI II moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD processoren met een AM4 socket. Het heeft vier DDR4-sloten voor maximaal 128 GB geheugen. Verdere kenmerken van de ROG STRIX B550-F GAMING WI-FI II zijn twee PCIe 4.0 x16 slots en drie PCIe 4.0 x1 slots. Verder heeft de ASUS ROG STRIX B550-F GAMING WI-FI II 8-kanaals geluid, een 2,5 Gigabit LAN-interface, zes SATA3-poorten, twee M.2-poorten, Wi-Fi 6, Bluetooth 5.1, twee USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface."
     },
     "8": {
-        "id": 8,
+        "id": 9,
         "name": "Gigabyte B650 AORUS ELITE AX",
         "price": 199.99,
         "socket": "AM5",
@@ -116,7 +117,7 @@
         "description": "De GIGABYTE B650 AORUS ELITE AX V2 is gebaseerd op de AMD B650 chipset en ondersteunt AMD-processors voor de AM5-socket. Hij heeft vier DDR5-sleuven voor maximaal 192 GB RAM. De GIGABYTE B650 AORUS ELITE AX V2 is ook uitgerust met \u00e9\u00e9n PCIe 4.0 x16 slot en twee PCIe 3.0 x16 slots. De GIGABYTE B650 AORUS ELITE AX V2 heeft ook 8-kanaals geluid, een 2,5 Gigabit LAN-interface, WiFi 6E, Bluetooth, vier SATA3-poorten, drie M.2-poorten en een reeks USB-interfaces."
     },
     "9": {
-        "id": 9,
+        "id": 10,
         "name": "ASRock B660M Pro RS",
         "price": 94.99,
         "socket": "LGA1700",
@@ -129,7 +130,7 @@
         "description": "De ASRock B760M Pro RS/D4 is gebaseerd op de Intel\u00ae B760-chipset en ondersteunt Intel\u00ae-processoren voor socket 1700 van de 12e, 13e en 14e generatie. Het heeft vier DDR5 slots voor maximaal 128 GB RAM. De ASRock B760M Pro RS/D4 is ook uitgerust met twee PCIe 4.0 x16 slots en \u00e9\u00e9n PCIe 4.0 x1 slot. Daarnaast heeft de ASRock B760M Pro RS/D4 8-kanaals geluid, een 2.5 Gigabit LAN interface, vier SATA3-poorten, twee M.2-poorten, \u00e9\u00e9n M.2 WLAN-poort, twee USB-A 2.0-poorten, drie USB-A 3.2 (5 Gbit/s) poorten en \u00e9\u00e9n USB-C 3.2 (5 Gbit/s) poort."
     },
     "10": {
-        "id": 10,
+        "id": 11,
         "name": "MSI MAG B650 TOMAHAWK WIFI",
         "price": 212.71,
         "socket": "AM5",
@@ -142,7 +143,7 @@
         "description": "Het MSI MAG B650 TOMAHAWK WIFI moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren voor socket AM5. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken van de MSI MAG B650 TOMAHAWK WIFI zijn twee PCIe 4.0 x16 slots en \u00e9\u00e9n PCIe 3.0 x1 slot. Daarnaast beschikt de MSI MAG B650 TOMAHAWK WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, WLAN, Bluetooth, zes SATA3-poorten, drie M.2-poorten, twee USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) en drie USB-A 3.2 (10 Gbit/s) interfaces."
     },
     "11": {
-        "id": 11,
+        "id": 12,
         "name": "Asus PRIME B550M-A WIFI II",
         "price": 129.99,
         "socket": "AM4",
@@ -155,7 +156,7 @@
         "description": "De ASUS PRIME B550M-A WIFI II is gebaseerd op de AMD B550-chipset en ondersteunt AMD-processoren voor socket AM4. Hij heeft vier DDR4-sleuven voor maximaal 128 GB RAM. Andere kenmerken van de ASUS PRIME B550M-A WIFI II zijn een PCIe 4.0 x 16-slot, een PCIe 3.0 x 16-slot en een PCIe 3.0 x 1-slot. Daarnaast heeft de ASUS PRIME B550M-A WIFI II 8-kanaals geluid, een Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, WiFi 6, Bluetooth 5.2 en een aantal USB-interfaces."
     },
     "12": {
-        "id": 12,
+        "id": 13,
         "name": "MSI PRO B650M-A WIFI",
         "price": 149.99,
         "socket": "AM5",
@@ -168,7 +169,7 @@
         "description": "De MSI PRO B650M-A WIFI is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren voor socket AM5. Hij heeft vier DDR5-sleuven voor maximaal 128 GB RAM. De MSI PRO B650M-A WIFI is ook uitgerust met twee PCIe 4.0 x 16 slots en \u00e9\u00e9n PCIe 3.0 x 1 slot. Daarnaast beschikt de MSI PRO B650M-A WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, WiFi 6, Bluetooth 5.2, zes SATA3-poorten, twee M.2-poorten, twee USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) en drie USB-A 3.2 (10 Gbit/s) interfaces."
     },
     "13": {
-        "id": 13,
+        "id": 14,
         "name": "ASRock B650M Pro RS",
         "price": 129.99,
         "socket": "AM5",
@@ -181,7 +182,7 @@
         "description": "De ASRock B650 PRO RS is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren voor socket AM5. Het heeft vier DDR5 slots voor maximaal 192 GB RAM. De ASRock B650 PRO RS is ook uitgerust met \u00e9\u00e9n PCIe 4.0 x16 slot, \u00e9\u00e9n PCIe 3.0 x16 slot en \u00e9\u00e9n PCIe 3.0 x1 slot. Daarnaast heeft de ASRock B650 PRO RS 8-kanaals geluid, een 2.5 Gigabit LAN interface, vier SATA3-poorten, drie M.2-poorten, \u00e9\u00e9n M.2 WLAN-poort, Bluetooth, zes USB-A 2.0-poorten, twee USB-A 3.2 (5 Gbit/s) poorten, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) poort en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) poort."
     },
     "14": {
-        "id": 14,
+        "id": 15,
         "name": "ASRock B650M Pro RS WiFi",
         "price": 149.99,
         "socket": "AM5",
@@ -194,7 +195,7 @@
         "description": "De ASRock B760M Pro RS/D4 WiFi is gebaseerd op de Intel\u00ae B760-chipset en ondersteunt Intel\u00ae-processoren voor socket 1700 van de 12e, 13e en 14e generatie. Het heeft vier DDR5 slots voor maximaal 128 GB RAM. De ASRock B760M Pro RS/D4 WiFi is ook uitgerust met twee PCIe 4.0 x16 slots en \u00e9\u00e9n PCIe 4.0 x1 slot. Daarnaast heeft de ASRock B760M Pro RS/D4 WiFi 8-kanaals geluid, een 2.5 Gigabit LAN interface, vier SATA3-poorten, twee M.2-poorten, \u00e9\u00e9n M.2 WLAN-poort, Wi-Fi 6E, Blutetooth 5.3, twee USB-A 2.0-poorten, drie USB-A 3.2 (5 Gbit/s) poorten en \u00e9\u00e9n USB-C 3.2 (5 Gbit/s) poort."
     },
     "15": {
-        "id": 15,
+        "id": 16,
         "name": "MSI B450M-A PRO MAX II",
         "price": 69.98,
         "socket": "AM4",
@@ -207,7 +208,7 @@
         "description": "De MSI B450M PRO-VDH MAX is gebaseerd op de AMD B450 chipset en ondersteunt AMD-processoren met een AM4-socket. Dit moederbord heeft vier DDR4-sleuven voor maximaal 64 GB RAM. Verdere kenmerken van de B450M PRO-VDH MAX zijn een CPU-afhankelijke grafische oplossing, een PCIe 3.0 x16 slot en twee PCIe 2.0 x1 slots. De B450M PRO-VDH MAX heeft ook een Gigabit LAN interface, vier SATA3 poorten, een M.2 poort, vier USB 2.0 type A en vier USB 3.2 (5 Gbit/s) poorten. Uiteraard ontbreken ook onboard geluid niet."
     },
     "16": {
-        "id": 16,
+        "id": 17,
         "name": "Gigabyte Z790 AORUS ELITE AX",
         "price": 229.99,
         "socket": "LGA1700",
@@ -220,7 +221,7 @@
         "description": "Het GIGABYTE Z790 AORUS ELITE AX moederbord is gebaseerd op de Intel Z790 chipset en ondersteunt 12e en 13de generatie Intel processoren met een 1700 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de GIGABYTE Z790 AORUS ELITE AX zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot en \u00e9\u00e9n PCIe 3.0 x16 slot. Daarnaast beschikt de GIGABYTE Z790 AORUS ELITE AX over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, WLAN tot 6E standaard, Bluetooth, zes SATA3-poorten, vier M.2-poorten, vier USB-A 2.0-poorten, drie USB-A 3.2 (5 Gbit/s) poorten, twee USB-A 3.2 (10 Gbit/s) poorten en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) poort."
     },
     "17": {
-        "id": 17,
+        "id": 18,
         "name": "MSI MAG B550 TOMAHAWK MAX WIFI",
         "price": 159.99,
         "socket": "AM4",
@@ -233,7 +234,7 @@
         "description": "Het MSI MAG B550 TOMAHAWK moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4-aansluiting. Hij heeft vier DDR4 DIMM-slots voor maximaal 128 GB RAM. Andere kenmerken van de MSI MAG B550 TOMAHAWK zijn twee PCIe 3.0 x16 slots en twee PCIe 3.0 x1 slots. De MSI MAG B550 TOMAHAWK heeft ook 8-kanaals geluid, een 2.5 Gigabit LAN-interface, een Gigabit LAN-interface, zes SATA3-poorten, twee M.2-poorten, twee USB-A 2.0, twee USB-A 3.2 (5 Gbit/s) interfaces, een USB-A 3.2 (10 Gbit/s) en een USB-C 3.2 (10 Gbit/s) interface."
     },
     "18": {
-        "id": 18,
+        "id": 19,
         "name": "MSI PRO B550M-VC WIFI",
         "price": 117.56,
         "socket": "AM4",
@@ -246,7 +247,7 @@
         "description": "Het MSI B550M PRO-VDH WIFI moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4-socket. Hij heeft vier DDR4-slots voor maximaal 128 GB geheugen. Verdere kenmerken van de MSI B550M PRO-VDH WIFI zijn een PCIe 4.0 x16 slot en een PCIe 3.0 x1 slots. Daarnaast heeft de MSI B550M PRO-VDH WIFI 8-kanaals geluid, een 2.5 Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, WiFi 5, Bluetooth 4.2 en een aantal USB-interfaces."
     },
     "19": {
-        "id": 19,
+        "id": 20,
         "name": "MSI MAG Z790 TOMAHAWK WIFI",
         "price": 239.99,
         "socket": "LGA1700",
@@ -259,7 +260,7 @@
         "description": "Het MSI MAG Z790 TOMAHAWK WIFI moederbord is gebaseerd op de Intel Z790 chipset en ondersteunt 12e en 13de generatie Intel processoren met een 1700 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de MSI MAG Z790 TOMAHAWK WIFI zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot en \u00e9\u00e9n PCIe 3.0 x1 slot. Daarnaast beschikt de MSI MAG Z790 TOMAHAWK WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, zeven SATA3-poorten, vier M.2-poorten, WiFi 6E, Bluetooth, vier USB-A 3.2 (5 Gbit/s), vier USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
     },
     "20": {
-        "id": 20,
+        "id": 21,
         "name": "Asus ROG MAXIMUS Z790 DARK HERO",
         "price": 649.99,
         "socket": "LGA1700",
@@ -272,7 +273,7 @@
         "description": "Het ASUS ROG MAXIMUS Z790 DARK HERO moederbord is gebaseerd op de Intel\u00ae Z790 chipset en ondersteunt Intel\u00ae processoren met een socket 1700. Het heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de ASUS ROG MAXIMUS Z790 DARK HERO zijn twee PCIe 5.0 x16 slots en \u00e9\u00e9n PCIe 4.0 x4 slot. De ASUS ROG MAXIMUS Z790 DARK HERO beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, vijf M.2-poorten, Wi-Fi 7, Bluetooth 5.4, vier USB-A 3.2 (5 Gbit/s), vijf USB-A 3.2 (10 Gbit/s) interfaces en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface."
     },
     "21": {
-        "id": 21,
+        "id": 22,
         "name": "Asus ROG STRIX B650E-F GAMING WIFI",
         "price": 251.7,
         "socket": "AM5",
@@ -294,7 +295,8 @@
         "color": "Black / Silver",
         "image": "",
         "memorytype": "",
-        "description": ""
+        "description": "",
+        "id": 23
     },
     "23": {
         "name": "MSI PRO B760-P WIFI DDR4",
@@ -306,7 +308,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/9/9/MSI_PRO_B760_P_DDR4_II_socket_1700_moederbord@@100011899_30.jpg",
         "memorytype": "DDR4",
-        "description": "De MSI PRO B760-P DDR4 II moederbord is gebaseerd op de Intel B760 chipset en ondersteunt 12e en 13de generatie Intel processors met een 1700 socket. Hij heeft vier DDR4 DIMM-sleuven in dual-channel werking voor maximaal 128 GB RAM. De MSI PRO B760-P DDR4 is verder uitgerust met twee PCIe 4.0 x 16 slots en drie PCIe 3.0 x 16 slots. Daarnaast heeft de MSI PRO B760-P DDR4 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten en een aantal USB-interfaces."
+        "description": "De MSI PRO B760-P DDR4 II moederbord is gebaseerd op de Intel B760 chipset en ondersteunt 12e en 13de generatie Intel processors met een 1700 socket. Hij heeft vier DDR4 DIMM-sleuven in dual-channel werking voor maximaal 128 GB RAM. De MSI PRO B760-P DDR4 is verder uitgerust met twee PCIe 4.0 x 16 slots en drie PCIe 3.0 x 16 slots. Daarnaast heeft de MSI PRO B760-P DDR4 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten en een aantal USB-interfaces.",
+        "id": 24
     },
     "24": {
         "name": "MSI MAG X670E TOMAHAWK WIFI",
@@ -318,7 +321,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/6/8/MSI_MAG_X670E_TOMAHAWK_WIFI_socket_AM5_moederbord@@1905486_30.jpg",
         "memorytype": "DDR5",
-        "description": "Het MSI MAG X670E TOMAHAWK WIFI moederbord is gebaseerd op de AMD X670 chipset en ondersteunt AMD processoren met een AM5 socket. Hij heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de MSI MAG X670E TOMAHAWK WIFI zijn \u00e9\u00e9n PCIe 5.0 x16 slot, twee PCIe 4.0 x16 slots en \u00e9\u00e9n PCIe 3.0 x1 slot. Daarnaast beschikt de MSI MAG X670E TOMAHAWK WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, Wi-Fi 6E, Bluetooth 5.3, vier SATA3-poorten, vier M.2-poorten, vier USB-A 3.2 (5 Gbit/s), twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het MSI MAG X670E TOMAHAWK WIFI moederbord is gebaseerd op de AMD X670 chipset en ondersteunt AMD processoren met een AM5 socket. Hij heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de MSI MAG X670E TOMAHAWK WIFI zijn \u00e9\u00e9n PCIe 5.0 x16 slot, twee PCIe 4.0 x16 slots en \u00e9\u00e9n PCIe 3.0 x1 slot. Daarnaast beschikt de MSI MAG X670E TOMAHAWK WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, Wi-Fi 6E, Bluetooth 5.3, vier SATA3-poorten, vier M.2-poorten, vier USB-A 3.2 (5 Gbit/s), twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 25
     },
     "25": {
         "name": "MSI PRO Z790-P WIFI",
@@ -330,7 +334,8 @@
         "color": "Black / Silver",
         "image": "https://www.alternate.be/p/200x200/6/3/MSI_PRO_Z790_P_WIFI_socket_1700_moederbord@@1871436_30.jpg",
         "memorytype": "DDR5",
-        "description": "Het MSI PRO Z790-P WIFI moederbord is gebaseerd op de Intel Z790 chipset en ondersteunt 12e en 13de generatie Intel processoren met een 1700 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken van de MSI PRO Z790-P WIFI zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot en twee PCIe 3.0 x1 slots. Daarnaast beschikt de MSI PRO Z790-P WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, zes SATA3-poorten, vier M.2-poorten, WiFi 6E, Bluetooth, vier USB-A 2.0, twee USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het MSI PRO Z790-P WIFI moederbord is gebaseerd op de Intel Z790 chipset en ondersteunt 12e en 13de generatie Intel processoren met een 1700 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken van de MSI PRO Z790-P WIFI zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot en twee PCIe 3.0 x1 slots. Daarnaast beschikt de MSI PRO Z790-P WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, zes SATA3-poorten, vier M.2-poorten, WiFi 6E, Bluetooth, vier USB-A 2.0, twee USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 26
     },
     "26": {
         "name": "Asus TUF GAMING B550-PLUS WIFI II",
@@ -342,7 +347,8 @@
         "color": "Black / Gray",
         "image": "https://www.alternate.be/p/200x200/5/5/ASUS_TUF_GAMING_B550_PLUS_WIFI_II_socket_AM4_moederbord@@1797155.jpg",
         "memorytype": "DDR4",
-        "description": "Het ASUS TUF GAMING B550-PLUS WIFI II moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4 socket. Dit moederbord heeft vier dual-channel DDR4 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, twee PCIe 3.0 x16 slots en drie PCIe 3.0 x1 slots. De TUF GAMING B550-PLUS WIFI II beschikt over 8-kanaals geluid, een Gigabit LAN interface, WLAN tot ax standaard, Bluetooth, zes SATA3 poorten, twee M.2 poorten, \u00e9\u00e9n M.2 WLAN-poort, twee USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface."
+        "description": "Het ASUS TUF GAMING B550-PLUS WIFI II moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4 socket. Dit moederbord heeft vier dual-channel DDR4 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, twee PCIe 3.0 x16 slots en drie PCIe 3.0 x1 slots. De TUF GAMING B550-PLUS WIFI II beschikt over 8-kanaals geluid, een Gigabit LAN interface, WLAN tot ax standaard, Bluetooth, zes SATA3 poorten, twee M.2 poorten, \u00e9\u00e9n M.2 WLAN-poort, twee USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface.",
+        "id": 27
     },
     "27": {
         "name": "MSI B550-A PRO",
@@ -354,7 +360,8 @@
         "color": "Black / Silver",
         "image": "https://www.alternate.be/p/200x200/g/MSI_B550_A_PRO_socket_AM4_moederbord@@gremr604.jpg",
         "memorytype": "DDR4",
-        "description": "Het MSI B550-A PRO moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4-aansluiting. Het heeft vier DDR4-sloten voor maximaal 128 GB geheugen. Andere kenmerken van de MSI B550-A PRO zijn een PCIe-4.0-x16 slot, een PCIe-3.0-x16 slot en twee PCIe-3.0-x1 sloten. Daarnaast heeft de MSI B550-A PRO 8-kanaals geluid, een Gigabit LAN-interface, zes SATA3-poorten, twee M.2-poorten en een aantal USB-interfaces."
+        "description": "Het MSI B550-A PRO moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4-aansluiting. Het heeft vier DDR4-sloten voor maximaal 128 GB geheugen. Andere kenmerken van de MSI B550-A PRO zijn een PCIe-4.0-x16 slot, een PCIe-3.0-x16 slot en twee PCIe-3.0-x1 sloten. Daarnaast heeft de MSI B550-A PRO 8-kanaals geluid, een Gigabit LAN-interface, zes SATA3-poorten, twee M.2-poorten en een aantal USB-interfaces.",
+        "id": 28
     },
     "28": {
         "name": "Asus ROG STRIX Z790-A GAMING WIFI II",
@@ -366,7 +373,8 @@
         "color": "Black / Silver",
         "image": "https://www.alternate.be/p/200x200/7/8/ASUS_ROG_STRIX_Z790_A_GAMING_WIFI_II_socket_1700_moederbord@@100019187.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS ROG STRIX Z790-A GAMING WIFI II moederbord is gebaseerd op de Intel\u00ae Z790 chipset en ondersteunt Intel\u00ae processoren van de 12de, 13de en 14de generatie met een socket 1700. Het heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de ASUS ROG STRIX Z790-A GAMING WIFI II zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot en \u00e9\u00e9n PCIe 3.0 x1 slot. De ASUS ROG STRIX Z790-A GAMING WIFI II beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, vijf M.2-poorten, Wi-Fi 7, Bluetooth 5.4, vier USB-A 2.0, vier USB-A 3.2 (5 Gbit/s), twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het ASUS ROG STRIX Z790-A GAMING WIFI II moederbord is gebaseerd op de Intel\u00ae Z790 chipset en ondersteunt Intel\u00ae processoren van de 12de, 13de en 14de generatie met een socket 1700. Het heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de ASUS ROG STRIX Z790-A GAMING WIFI II zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot en \u00e9\u00e9n PCIe 3.0 x1 slot. De ASUS ROG STRIX Z790-A GAMING WIFI II beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, vijf M.2-poorten, Wi-Fi 7, Bluetooth 5.4, vier USB-A 2.0, vier USB-A 3.2 (5 Gbit/s), twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 29
     },
     "29": {
         "name": "MSI PRO B650M-P",
@@ -378,7 +386,8 @@
         "color": "Black / Silver",
         "image": "https://www.alternate.be/p/200x200/7/2/MSI_PRO_B650M_B_socket_AM5_moederbord@@100031627.jpg",
         "memorytype": "DDR5",
-        "description": "Het MSI PRO B650M-B moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Hij heeft twee dual-channel DDR5 DIMM-sleuven voor maximaal 128 GB RAM. De PRO B650M-B is ook uitgerust met een PCIe 4.0 x16 slot en een PCIe 3.0 x1 slot. De MSI B650M-P heeft ook 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, een M.2-poort, twee USB-A 2.0 en vier USB-A 3.2 (5 Gbit/s) interfaces."
+        "description": "Het MSI PRO B650M-B moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Hij heeft twee dual-channel DDR5 DIMM-sleuven voor maximaal 128 GB RAM. De PRO B650M-B is ook uitgerust met een PCIe 4.0 x16 slot en een PCIe 3.0 x1 slot. De MSI B650M-P heeft ook 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, een M.2-poort, twee USB-A 2.0 en vier USB-A 3.2 (5 Gbit/s) interfaces.",
+        "id": 30
     },
     "30": {
         "name": "MSI B550M PRO-VDH WIFI",
@@ -390,7 +399,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/g/MSI_B550M_PRO_VDH_WIFI_socket_AM4_moederbord@@grimr603.jpg",
         "memorytype": "DDR4",
-        "description": "Het MSI B550M PRO-VDH WIFI moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4-socket. Hij heeft vier DDR4-slots voor maximaal 128 GB geheugen. Verdere kenmerken van de MSI B550M PRO-VDH WIFI zijn een PCIe 4.0 x16 slot en een PCIe 3.0 x1 slots. Daarnaast heeft de MSI B550M PRO-VDH WIFI 8-kanaals geluid, een 2.5 Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, WiFi 5, Bluetooth 4.2 en een aantal USB-interfaces."
+        "description": "Het MSI B550M PRO-VDH WIFI moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4-socket. Hij heeft vier DDR4-slots voor maximaal 128 GB geheugen. Verdere kenmerken van de MSI B550M PRO-VDH WIFI zijn een PCIe 4.0 x16 slot en een PCIe 3.0 x1 slots. Daarnaast heeft de MSI B550M PRO-VDH WIFI 8-kanaals geluid, een 2.5 Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, WiFi 5, Bluetooth 4.2 en een aantal USB-interfaces.",
+        "id": 31
     },
     "31": {
         "name": "Gigabyte B650 AORUS ELITE AX ICE",
@@ -402,7 +412,8 @@
         "color": "Silver",
         "image": "https://www.alternate.be/p/200x200/3/4/GIGABYTE_B650_AORUS_ELITE_AX_ICE_socket_AM5_moederbord@@100025043.jpg",
         "memorytype": "DDR5",
-        "description": "Het GIGABYTE B650 AORUS ELITE AX ICE moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren voor socket AM5. Hij heeft vier DDR5-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de GIGABYTE B650 AORUS ELITE AX ICE zijn \u00e9\u00e9n PCIe 4.0 x16 slot en twee PCIe 3.0 x16 slots. De GIGABYTE B650 AORUS ELITE AX ICE beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, WiFi 6E, Bluetooth, vier SATA3-poorten, drie M.2-poorten, vier USB-A 2.0, vijf USB-A 3.2 (5 Gbit/s) interfaces, twee USB-A 3.2 (10 Gbit/s), \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het GIGABYTE B650 AORUS ELITE AX ICE moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren voor socket AM5. Hij heeft vier DDR5-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de GIGABYTE B650 AORUS ELITE AX ICE zijn \u00e9\u00e9n PCIe 4.0 x16 slot en twee PCIe 3.0 x16 slots. De GIGABYTE B650 AORUS ELITE AX ICE beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, WiFi 6E, Bluetooth, vier SATA3-poorten, drie M.2-poorten, vier USB-A 2.0, vijf USB-A 3.2 (5 Gbit/s) interfaces, twee USB-A 3.2 (10 Gbit/s), \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 32
     },
     "32": {
         "name": "Asus TUF GAMING B650-PLUS WIFI",
@@ -414,7 +425,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/9/7/ASUS_TUF_Gaming_B650_PLUS_WiFi_socket_AM5_moederbord@@1870279_1.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS TUF Gaming B650-PLUS WiFi moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, \u00e9\u00e9n PCIe 4.0/3.0 x16 slot, \u00e9\u00e9n PCIe 4.0/3.0 x16 slot (ondersteunt x4 mode), en twee PCIe 4.0/3.0 x1 slots. De ASUS TUF Gaming B650-PLUS WiFi beschikt over Realtek ALC S1200A 7.1 Surround Sound, een 2.5 Gigabit LAN interface, Wi-Fi 6, Bluetooth, vier SATA3 poorten, drie M.2 poorten, vier USB-A 2.0, twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het ASUS TUF Gaming B650-PLUS WiFi moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, \u00e9\u00e9n PCIe 4.0/3.0 x16 slot, \u00e9\u00e9n PCIe 4.0/3.0 x16 slot (ondersteunt x4 mode), en twee PCIe 4.0/3.0 x1 slots. De ASUS TUF Gaming B650-PLUS WiFi beschikt over Realtek ALC S1200A 7.1 Surround Sound, een 2.5 Gigabit LAN interface, Wi-Fi 6, Bluetooth, vier SATA3 poorten, drie M.2 poorten, vier USB-A 2.0, twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 33
     },
     "33": {
         "name": "ASRock A620M Pro RS WiFi",
@@ -426,7 +438,8 @@
         "color": "Silver / Black",
         "image": "https://www.alternate.be/p/200x200/6/2/ASRock_B760M_Pro_RS_D4_WiFi_socket_1700_moederbord@@1888726.jpg",
         "memorytype": "DDR4",
-        "description": "De ASRock B760M Pro RS/D4 WiFi is gebaseerd op de Intel\u00ae B760-chipset en ondersteunt Intel\u00ae-processoren voor socket 1700 van de 12e, 13e en 14e generatie. Het heeft vier DDR5 slots voor maximaal 128 GB RAM. De ASRock B760M Pro RS/D4 WiFi is ook uitgerust met twee PCIe 4.0 x16 slots en \u00e9\u00e9n PCIe 4.0 x1 slot. Daarnaast heeft de ASRock B760M Pro RS/D4 WiFi 8-kanaals geluid, een 2.5 Gigabit LAN interface, vier SATA3-poorten, twee M.2-poorten, \u00e9\u00e9n M.2 WLAN-poort, Wi-Fi 6E, Blutetooth 5.3, twee USB-A 2.0-poorten, drie USB-A 3.2 (5 Gbit/s) poorten en \u00e9\u00e9n USB-C 3.2 (5 Gbit/s) poort."
+        "description": "De ASRock B760M Pro RS/D4 WiFi is gebaseerd op de Intel\u00ae B760-chipset en ondersteunt Intel\u00ae-processoren voor socket 1700 van de 12e, 13e en 14e generatie. Het heeft vier DDR5 slots voor maximaal 128 GB RAM. De ASRock B760M Pro RS/D4 WiFi is ook uitgerust met twee PCIe 4.0 x16 slots en \u00e9\u00e9n PCIe 4.0 x1 slot. Daarnaast heeft de ASRock B760M Pro RS/D4 WiFi 8-kanaals geluid, een 2.5 Gigabit LAN interface, vier SATA3-poorten, twee M.2-poorten, \u00e9\u00e9n M.2 WLAN-poort, Wi-Fi 6E, Blutetooth 5.3, twee USB-A 2.0-poorten, drie USB-A 3.2 (5 Gbit/s) poorten en \u00e9\u00e9n USB-C 3.2 (5 Gbit/s) poort.",
+        "id": 34
     },
     "34": {
         "name": "Gigabyte X670E AORUS PRO X",
@@ -438,7 +451,8 @@
         "color": "White / Silver",
         "image": "https://www.alternate.be/p/200x200/2/1/GIGABYTE_X670E_AORUS_PRO_X_socket_AM5_moederbord@@100023912.jpg",
         "memorytype": "DDR5",
-        "description": "Het GIGABYTE X670E AORUS PRO X moederbord is gebaseerd op de AMD X670 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing en \u00e9\u00e9n PCIe 5.0 x16 slot en twee PCIe 3.0 x16 slots. De GIGABYTE X670E AORUS PRO X beschikt over 8-kanaals geluid, een 2.5 Gigabit LAN interface, wifi 7, Bluetooth, vier SATA3 poorten, vier M.2 poorten, vier USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) en drie USB-A 3.2 (10 Gbit/s) interfaces."
+        "description": "Het GIGABYTE X670E AORUS PRO X moederbord is gebaseerd op de AMD X670 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing en \u00e9\u00e9n PCIe 5.0 x16 slot en twee PCIe 3.0 x16 slots. De GIGABYTE X670E AORUS PRO X beschikt over 8-kanaals geluid, een 2.5 Gigabit LAN interface, wifi 7, Bluetooth, vier SATA3 poorten, vier M.2 poorten, vier USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) en drie USB-A 3.2 (10 Gbit/s) interfaces.",
+        "id": 35
     },
     "35": {
         "name": "Asus ROG STRIX B760-I GAMING WIFI",
@@ -450,7 +464,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/1/9/ASUS_ROG_STRIX_B760_I_GAMING_WIFI_socket_1700_moederbord@@1886591_30.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS ROG STRIX B760-I GAMING WIFI moederbord is gebaseerd op de Intel B760 chipset en ondersteunt 12e en 13e generatie Intel processoren met een socket 1700. Het heeft twee DDR5 DIMM-sleuven in dual-channel werking voor maximaal 64 GB RAM. Een andere kenmerk van de ASUS ROG STRIX B760-I GAMING WIFI is een PCIe 5.0 x 16-slot. Daarnaast beschikt de ASUS ROG STRIX B760-I GAMING WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, Wi-Fi 6, Bluetooth 5.3, drie USB-A 2.0, drie USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (5 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het ASUS ROG STRIX B760-I GAMING WIFI moederbord is gebaseerd op de Intel B760 chipset en ondersteunt 12e en 13e generatie Intel processoren met een socket 1700. Het heeft twee DDR5 DIMM-sleuven in dual-channel werking voor maximaal 64 GB RAM. Een andere kenmerk van de ASUS ROG STRIX B760-I GAMING WIFI is een PCIe 5.0 x 16-slot. Daarnaast beschikt de ASUS ROG STRIX B760-I GAMING WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, Wi-Fi 6, Bluetooth 5.3, drie USB-A 2.0, drie USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (5 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 36
     },
     "36": {
         "name": "Asus ROG STRIX Z790-E GAMING WIFI II",
@@ -462,7 +477,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/8/9/ASUS_ROG_STRIX_Z790_E_GAMING_WIFI_II_socket_1700_moederbord@@100020298_30.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS ROG STRIX Z790-E GAMING WIFI II moederbord is gebaseerd op de Intel\u00ae Z790 chipset en ondersteunt Intel\u00ae processoren van de 12de, 13de en 14de generatie voor socket 1700. Het heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de ASUS ROG STRIX Z790-F GAMING WIFI II zijn \u00e9\u00e9n PCIe 5.0 x16 slot en twee PCIe 4.0 x16 slots. De ASUS ROG STRIX Z790-E GAMING WIFI II beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, vijf M.2-poorten, Wi-Fi 7, Bluetooth 5.4, tien USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het ASUS ROG STRIX Z790-E GAMING WIFI II moederbord is gebaseerd op de Intel\u00ae Z790 chipset en ondersteunt Intel\u00ae processoren van de 12de, 13de en 14de generatie voor socket 1700. Het heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de ASUS ROG STRIX Z790-F GAMING WIFI II zijn \u00e9\u00e9n PCIe 5.0 x16 slot en twee PCIe 4.0 x16 slots. De ASUS ROG STRIX Z790-E GAMING WIFI II beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, vijf M.2-poorten, Wi-Fi 7, Bluetooth 5.4, tien USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 37
     },
     "37": {
         "name": "ASRock B550M Pro4",
@@ -474,7 +490,8 @@
         "color": "Silver / Black",
         "image": "https://www.alternate.be/p/200x200/g/ASRock_B550_Pro4_socket_AM4_moederbord@@grerr604.jpg",
         "memorytype": "DDR4",
-        "description": "Het ASRock B550 Pro4 moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD processoren met een AM4 socket. Hij heeft vier DDR4-sloten voor maximaal 128 GB geheugen. Andere kenmerken van de ASRock B550 Pro4 zijn een PCIe 4.0 x16 slot, een PCIe 3.0 x16 slot en twee PCIe 3.0 x1 slots. De ASRock B550 Pro4 beschikt over 8-kanaals geluid, een Gigabit LAN-interface, zes SATA3-poorten, twee M.2-poorten, een M.2 WLAN-poort, vier USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface."
+        "description": "Het ASRock B550 Pro4 moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD processoren met een AM4 socket. Hij heeft vier DDR4-sloten voor maximaal 128 GB geheugen. Andere kenmerken van de ASRock B550 Pro4 zijn een PCIe 4.0 x16 slot, een PCIe 3.0 x16 slot en twee PCIe 3.0 x1 slots. De ASRock B550 Pro4 beschikt over 8-kanaals geluid, een Gigabit LAN-interface, zes SATA3-poorten, twee M.2-poorten, een M.2 WLAN-poort, vier USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface.",
+        "id": 38
     },
     "38": {
         "name": "MSI B450M PRO-VDH MAX",
@@ -486,7 +503,8 @@
         "color": "Black / Silver",
         "image": "https://www.alternate.be/p/200x200/g/MSI_B450M_PRO_VDH_MAX_socket_AM4_moederbord@@grimry.jpg",
         "memorytype": "DDR4",
-        "description": "De MSI B450M PRO-VDH MAX is gebaseerd op de AMD B450 chipset en ondersteunt AMD-processoren met een AM4-socket. Dit moederbord heeft vier DDR4-sleuven voor maximaal 64 GB RAM. Verdere kenmerken van de B450M PRO-VDH MAX zijn een CPU-afhankelijke grafische oplossing, een PCIe 3.0 x16 slot en twee PCIe 2.0 x1 slots. De B450M PRO-VDH MAX heeft ook een Gigabit LAN interface, vier SATA3 poorten, een M.2 poort, vier USB 2.0 type A en vier USB 3.2 (5 Gbit/s) poorten. Uiteraard ontbreken ook onboard geluid niet."
+        "description": "De MSI B450M PRO-VDH MAX is gebaseerd op de AMD B450 chipset en ondersteunt AMD-processoren met een AM4-socket. Dit moederbord heeft vier DDR4-sleuven voor maximaal 64 GB RAM. Verdere kenmerken van de B450M PRO-VDH MAX zijn een CPU-afhankelijke grafische oplossing, een PCIe 3.0 x16 slot en twee PCIe 2.0 x1 slots. De B450M PRO-VDH MAX heeft ook een Gigabit LAN interface, vier SATA3 poorten, een M.2 poort, vier USB 2.0 type A en vier USB 3.2 (5 Gbit/s) poorten. Uiteraard ontbreken ook onboard geluid niet.",
+        "id": 39
     },
     "39": {
         "name": "Asus Prime B450M-A II",
@@ -498,7 +516,8 @@
         "color": null,
         "image": "https://www.alternate.be/p/200x200/9/5/ASUS_PRIME_B550M_A_WIFI_II_socket_AM4_moederbord@@1797159.jpg",
         "memorytype": "DDR4",
-        "description": "De ASUS PRIME B550M-A WIFI II is gebaseerd op de AMD B550-chipset en ondersteunt AMD-processoren voor socket AM4. Hij heeft vier DDR4-sleuven voor maximaal 128 GB RAM. Andere kenmerken van de ASUS PRIME B550M-A WIFI II zijn een PCIe 4.0 x 16-slot, een PCIe 3.0 x 16-slot en een PCIe 3.0 x 1-slot. Daarnaast heeft de ASUS PRIME B550M-A WIFI II 8-kanaals geluid, een Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, WiFi 6, Bluetooth 5.2 en een aantal USB-interfaces."
+        "description": "De ASUS PRIME B550M-A WIFI II is gebaseerd op de AMD B550-chipset en ondersteunt AMD-processoren voor socket AM4. Hij heeft vier DDR4-sleuven voor maximaal 128 GB RAM. Andere kenmerken van de ASUS PRIME B550M-A WIFI II zijn een PCIe 4.0 x 16-slot, een PCIe 3.0 x 16-slot en een PCIe 3.0 x 1-slot. Daarnaast heeft de ASUS PRIME B550M-A WIFI II 8-kanaals geluid, een Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, WiFi 6, Bluetooth 5.2 en een aantal USB-interfaces.",
+        "id": 40
     },
     "40": {
         "name": "MSI PRO H610M-G DDR4",
@@ -510,7 +529,8 @@
         "color": "Black / Silver",
         "image": "https://www.alternate.be/p/200x200/1/0/MSI_PRO_H610M_E_DDR4_socket_1700_moederbord@@100011901.jpg",
         "memorytype": "DDR4",
-        "description": "Het MSI PRO H610M-E DDR4 moederbord is gebaseerd op de Intel H610 chipset en ondersteunt Intel processoren met een socket 1700. Dit moederbord heeft twee dual-channel DDR4 DIMM-sleuven voor maximaal 64 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, \u00e9\u00e9n PCIe x16 slot en \u00e9\u00e9n PCIe x1 slot. De MSI PRO H610M-E DDR4 beschikt over 8-kanaals geluid, een Gigabit LAN interface, vier SATA3 poorten, \u00e9\u00e9n M.2 poort, vier USB-A 2.0 en twee USB-A 3.2 (5 Gbit/s) interfaces."
+        "description": "Het MSI PRO H610M-E DDR4 moederbord is gebaseerd op de Intel H610 chipset en ondersteunt Intel processoren met een socket 1700. Dit moederbord heeft twee dual-channel DDR4 DIMM-sleuven voor maximaal 64 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, \u00e9\u00e9n PCIe x16 slot en \u00e9\u00e9n PCIe x1 slot. De MSI PRO H610M-E DDR4 beschikt over 8-kanaals geluid, een Gigabit LAN interface, vier SATA3 poorten, \u00e9\u00e9n M.2 poort, vier USB-A 2.0 en twee USB-A 3.2 (5 Gbit/s) interfaces.",
+        "id": 41
     },
     "41": {
         "name": "Asus ROG STRIX B550-A GAMING",
@@ -522,7 +542,8 @@
         "color": "Black / White",
         "image": "https://www.alternate.be/p/200x200/1/5/ASUS_ROG_STRIX_B550_A_GAMING_socket_AM4_moederbord@@1680151.jpg",
         "memorytype": "DDR4",
-        "description": "Het ASUS ROG STRIX B550-A GAMING moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4 socket. Hij heeft vier DDR4-slots voor maximaal 128 GB RAM. Andere kenmerken van de ASUS ROG STRIX B550-A GAMING zijn een PCIe 4.0 x16 slot, een PCIe 3.0 x16 slot en drie PCIe 3.0 x1 slots. Daarnaast beschikt de ASUS ROG STRIX B550-A GAMING over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, zes SATA-poorten, twee M.2-poorten, twee USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface."
+        "description": "Het ASUS ROG STRIX B550-A GAMING moederbord is gebaseerd op de AMD B550 chipset en ondersteunt AMD-processoren met een AM4 socket. Hij heeft vier DDR4-slots voor maximaal 128 GB RAM. Andere kenmerken van de ASUS ROG STRIX B550-A GAMING zijn een PCIe 4.0 x16 slot, een PCIe 3.0 x16 slot en drie PCIe 3.0 x1 slots. Daarnaast beschikt de ASUS ROG STRIX B550-A GAMING over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, zes SATA-poorten, twee M.2-poorten, twee USB-A 2.0, vier USB-A 3.2 (5 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) interface.",
+        "id": 42
     },
     "42": {
         "name": "Gigabyte B650I AORUS ULTRA",
@@ -534,7 +555,8 @@
         "color": "Black / Silver",
         "image": "https://www.alternate.be/p/200x200/nopic/11/Moederbord@@nopic_11.png",
         "memorytype": "DDR5",
-        "description": "De GIGABYTE B650I AORUS Ultra is gebaseerd op de AMD B650 chipset en ondersteunt AMD-processoren voor socket AM5. Hij heeft twee DDR5-sleuven voor maximaal 64 GB RAM. Andere kenmerken van de GIGABYTE B650I AORUS Ultra zijn onder meer een PCIe 4.0 x16-slot. De GIGABYTE B650I AORUS Ultra beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, WiFi 6E, Bluetooth, vier SATA3-poorten, drie M.2-poorten en een reeks USB-interfaces."
+        "description": "De GIGABYTE B650I AORUS Ultra is gebaseerd op de AMD B650 chipset en ondersteunt AMD-processoren voor socket AM5. Hij heeft twee DDR5-sleuven voor maximaal 64 GB RAM. Andere kenmerken van de GIGABYTE B650I AORUS Ultra zijn onder meer een PCIe 4.0 x16-slot. De GIGABYTE B650I AORUS Ultra beschikt ook over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, WiFi 6E, Bluetooth, vier SATA3-poorten, drie M.2-poorten en een reeks USB-interfaces.",
+        "id": 43
     },
     "43": {
         "name": "Asus TUF GAMING Z790-PLUS WIFI",
@@ -546,7 +568,8 @@
         "color": "Black / Gray",
         "image": "https://www.alternate.be/p/200x200/9/7/ASUS_TUF_GAMING_Z790_PLUS_WIFI_socket_1700_moederbord@@1898979.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS TUF GAMING Z790-PLUS WIFI moederbord is gebaseerd op de Intel Z790 chipset en ondersteunt Intel processoren met een 1700 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de ASUS TUF GAMING Z790-PLUS WIFI zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x4 slot en \u00e9\u00e9n PCIe 3.0 x1 slot. Daarnaast beschikt de ASUS TUF GAMING Z790-PLUS WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, vier M.2-poorten, WiFi 6E, Bluetooth, vier USB-A 3.2 (5 Gbit/s), twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het ASUS TUF GAMING Z790-PLUS WIFI moederbord is gebaseerd op de Intel Z790 chipset en ondersteunt Intel processoren met een 1700 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken van de ASUS TUF GAMING Z790-PLUS WIFI zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x4 slot en \u00e9\u00e9n PCIe 3.0 x1 slot. Daarnaast beschikt de ASUS TUF GAMING Z790-PLUS WIFI over 8-kanaals geluid, een 2,5 Gigabit LAN-interface, vier SATA3-poorten, vier M.2-poorten, WiFi 6E, Bluetooth, vier USB-A 3.2 (5 Gbit/s), twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 44
     },
     "44": {
         "name": "Asus ROG STRIX B650E-I GAMING WIFI",
@@ -558,7 +581,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/5/8/ASUS_ROG_STRIX_B650E_I_GAMING_WIFI_socket_AM5_moederbord@@1870285_1.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS ROG STRIX B650E-I GAMING WIFI moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft twee dual-channel DDR5 DIMM-sleuven voor maximaal 64 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing en \u00e9\u00e9n PCIe 5.0 x16 slot. De ASUS ROG STRIX B650E-I GAMING WIFI beschikt over ROG SupremeFX 7.1 Surround Sound, een 2.5 Gigabit LAN interface, Wi-Fi 6E, Bluetooth, twee SATA3 poorten, twee M.2 poorten, twee USB-A 2.0, vier USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het ASUS ROG STRIX B650E-I GAMING WIFI moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft twee dual-channel DDR5 DIMM-sleuven voor maximaal 64 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing en \u00e9\u00e9n PCIe 5.0 x16 slot. De ASUS ROG STRIX B650E-I GAMING WIFI beschikt over ROG SupremeFX 7.1 Surround Sound, een 2.5 Gigabit LAN interface, Wi-Fi 6E, Bluetooth, twee SATA3 poorten, twee M.2 poorten, twee USB-A 2.0, vier USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C 3.2 (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 45
     },
     "45": {
         "name": "Gigabyte B450M DS3H WIFI",
@@ -570,7 +594,8 @@
         "color": "Brown / Black",
         "image": "https://www.alternate.be/p/200x200/7/1/GIGABYTE_B760M_DS3H_AX_DDR4_socket_1700_moederbord@@1887017_30.jpg",
         "memorytype": "DS3HAXDDR4",
-        "description": "Het GIGABYTE B760M DS3H AX DDR4 moederbord is gebaseerd op de Intel B760 chipset en ondersteunt 12e en 13e generatie Intel processoren met Socket 1700. Het heeft vier DDR4 DIMM-sleuven in dual-channel werking voor maximaal 128 GB RAM. Andere kenmerken van de GIGABYTE B760M DS3H AX DDR4 zijn \u00e9\u00e9n PCIe 4.0 x16-slot en vier PCIe 3.0 x16-slots. Daarnaast beschikt de GIGABYTE B760M DS3H AX DDR4 over 8-kanaals geluid, een Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, WiFi 6E, Bluetooth 5.2 en een aantal USB-poorten."
+        "description": "Het GIGABYTE B760M DS3H AX DDR4 moederbord is gebaseerd op de Intel B760 chipset en ondersteunt 12e en 13e generatie Intel processoren met Socket 1700. Het heeft vier DDR4 DIMM-sleuven in dual-channel werking voor maximaal 128 GB RAM. Andere kenmerken van de GIGABYTE B760M DS3H AX DDR4 zijn \u00e9\u00e9n PCIe 4.0 x16-slot en vier PCIe 3.0 x16-slots. Daarnaast beschikt de GIGABYTE B760M DS3H AX DDR4 over 8-kanaals geluid, een Gigabit LAN-interface, vier SATA3-poorten, twee M.2-poorten, WiFi 6E, Bluetooth 5.2 en een aantal USB-poorten.",
+        "id": 46
     },
     "46": {
         "name": "Asus TUF GAMING A520M-PLUS WIFI",
@@ -582,7 +607,8 @@
         "color": "Black / Orange",
         "image": "https://www.alternate.be/p/200x200/7/8/ASUS_TUF_Gaming_B650M_PLUS_WiFi_socket_AM5_moederbord@@1870287_1.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS TUF Gaming B650M-PLUS WiFi moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, \u00e9\u00e9n PCIe 4.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot (ondersteunt x4 mode), en \u00e9\u00e9n PCIe 4.0 x1 slot. De ASUS TUF Gaming B650M-PLUS WiFi beschikt over Realtek 7.1 Surround Sound, een 2.5 Gigabit LAN interface, een Wi-Fi 6 interface, Bluetooth, vier SATA3 poorten, twee M.2 poorten, vier USB-A 2.0, twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (5 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het ASUS TUF Gaming B650M-PLUS WiFi moederbord is gebaseerd op de AMD B650 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn een CPU-afhankelijke grafische oplossing, \u00e9\u00e9n PCIe 4.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot (ondersteunt x4 mode), en \u00e9\u00e9n PCIe 4.0 x1 slot. De ASUS TUF Gaming B650M-PLUS WiFi beschikt over Realtek 7.1 Surround Sound, een 2.5 Gigabit LAN interface, een Wi-Fi 6 interface, Bluetooth, vier SATA3 poorten, twee M.2 poorten, vier USB-A 2.0, twee USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-A 3.2 (5 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 47
     },
     "47": {
         "name": "MSI PRO B760M-P DDR4",
@@ -594,7 +620,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/1/7/MSI_PRO_B760M_P_DDR4_socket_1700_moederbord@@1888071_30.jpg",
         "memorytype": "DDR4",
-        "description": "De MSI PRO B760M-P DDR4 moederbord is gebaseerd op de Intel B760 chipset en ondersteunt 12e en 13de generatie Intel processoren met een 1700 socket. Dit moederbord heeft vier dual-channel DDR4 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken van de MSI PRO B760M-P DDR4 zijn \u00e9\u00e9n PCIe 4.0 x16 slot en twee PCIe 4.0 x1 slots. Daarnaast beschikt de PRO B760M-P DDR4 over 7.1-kanaals geluid, een Gb-LAN-interface, vier SATA3-poorten, twee M.2-poorten en verschillen de USB interfaces."
+        "description": "De MSI PRO B760M-P DDR4 moederbord is gebaseerd op de Intel B760 chipset en ondersteunt 12e en 13de generatie Intel processoren met een 1700 socket. Dit moederbord heeft vier dual-channel DDR4 DIMM-sleuven voor maximaal 128 GB RAM. Andere kenmerken van de MSI PRO B760M-P DDR4 zijn \u00e9\u00e9n PCIe 4.0 x16 slot en twee PCIe 4.0 x1 slots. Daarnaast beschikt de PRO B760M-P DDR4 over 7.1-kanaals geluid, een Gb-LAN-interface, vier SATA3-poorten, twee M.2-poorten en verschillen de USB interfaces.",
+        "id": 48
     },
     "48": {
         "name": "Gigabyte A520I AC",
@@ -606,7 +633,8 @@
         "color": "Black",
         "image": "https://www.alternate.be/p/200x200/g/GIGABYTE_A520M_S2H_socket_AM4_moederbord@@grigr631_30.jpg",
         "memorytype": "DDR4",
-        "description": "Het GIGABYTE A520M S2H moederbord is gebaseerd op de AMD A520 chipset en ondersteunt AMD-processoren met een AM4-socket. Hij heeft twee DDR4-slots voor maximaal 64 GB geheugen. Andere kenmerken van de GIGABYTE A520M S2H zijn een PCIe 3.0 x16-slot en twee PCIe 3.0 x1-slots. Daarnaast is de GIGABYTE A520M S2H voorzien van 8-kanaals geluid, een Gigabit LAN-interface, vier SATA3-poorten, een M.2-poort, twee USB-A 2.0 en vier USB-A 3.2 (5 Gbit/s) interfaces."
+        "description": "Het GIGABYTE A520M S2H moederbord is gebaseerd op de AMD A520 chipset en ondersteunt AMD-processoren met een AM4-socket. Hij heeft twee DDR4-slots voor maximaal 64 GB geheugen. Andere kenmerken van de GIGABYTE A520M S2H zijn een PCIe 3.0 x16-slot en twee PCIe 3.0 x1-slots. Daarnaast is de GIGABYTE A520M S2H voorzien van 8-kanaals geluid, een Gigabit LAN-interface, vier SATA3-poorten, een M.2-poort, twee USB-A 2.0 en vier USB-A 3.2 (5 Gbit/s) interfaces.",
+        "id": 49
     },
     "49": {
         "name": "ASRock A520M-HDV",
@@ -618,7 +646,8 @@
         "color": "Black / Silver",
         "image": "",
         "memorytype": "",
-        "description": ""
+        "description": "",
+        "id": 50
     },
     "50": {
         "name": "Asus TUF GAMING X670E-PLUS WIFI",
@@ -630,6 +659,7 @@
         "color": "Black / Orange",
         "image": "https://www.alternate.be/p/200x200/8/2/ASUS_TUF_GAMING_X670E_PLUS_WIFI_socket_AM5_moederbord@@1863128.jpg",
         "memorytype": "DDR5",
-        "description": "Het ASUS TUF GAMING X670E-PLUS WIFI moederbord is gebaseerd op de AMD X670 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot en \u00e9\u00e9n PCIe 4.0 x4 slot. De TUF GAMING X670E-PLUS WIFI beschikt over Realtek S1220A geluid, een 2.5 Gigabit LAN interface, Wi-Fi 6E, Bluetooth, vier SATA 6Gb/s poorten, vier M.2 poorten, vijf USB-A 3.2 (5 Gbit/s), drie USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface."
+        "description": "Het ASUS TUF GAMING X670E-PLUS WIFI moederbord is gebaseerd op de AMD X670 chipset en ondersteunt AMD processoren met een AM5 socket. Dit moederbord heeft vier dual-channel DDR5 DIMM-sleuven voor maximaal 192 GB RAM. Andere kenmerken zijn \u00e9\u00e9n PCIe 5.0 x16 slot, \u00e9\u00e9n PCIe 4.0 x16 slot en \u00e9\u00e9n PCIe 4.0 x4 slot. De TUF GAMING X670E-PLUS WIFI beschikt over Realtek S1220A geluid, een 2.5 Gigabit LAN interface, Wi-Fi 6E, Bluetooth, vier SATA 6Gb/s poorten, vier M.2 poorten, vijf USB-A 3.2 (5 Gbit/s), drie USB-A 3.2 (10 Gbit/s) interfaces, \u00e9\u00e9n USB-C (10 Gbit/s) en \u00e9\u00e9n USB-C 3.2 (20 Gbit/s) interface.",
+        "id": 51
     }
 }

@@ -11,7 +11,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 8,
-        "description": "De CMK16GX4M2B3200C16 geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz."
+        "description": "De CMK16GX4M2B3200C16 geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz.",
+        "id": 1
     },
     "1": {
         "name": "Corsair Vengeance 32 GB",
@@ -25,7 +26,8 @@
         "speed_value": 5600,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules."
+        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules.",
+        "id": 2
     },
     "2": {
         "name": "G.Skill Trident Z5 RGB 32 GB",
@@ -39,7 +41,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-7200J3445G16GX2-TZ5RK is een kit bestaande uit twee 16 GB DDR5-7200 geheugenmodules (PC5-57600) uit de Trident Z5 RGB serie. De totale capaciteit is 32GB. De modules ondersteunen een timing van 34-45-45-115 bij 7200 MHz en vereisen een spanning van 1,4 V. Een kenmerk van de Trident Z5 RGB-serie is de individueel instelbare RGB LED-verlichting. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund."
+        "description": "De G.Skill F5-7200J3445G16GX2-TZ5RK is een kit bestaande uit twee 16 GB DDR5-7200 geheugenmodules (PC5-57600) uit de Trident Z5 RGB serie. De totale capaciteit is 32GB. De modules ondersteunen een timing van 34-45-45-115 bij 7200 MHz en vereisen een spanning van 1,4 V. Een kenmerk van de Trident Z5 RGB-serie is de individueel instelbare RGB LED-verlichting. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund.",
+        "id": 3
     },
     "3": {
         "name": "Corsair Vengeance RGB Pro 32 GB",
@@ -53,7 +56,8 @@
         "speed_value": 3600,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR4-3600 Kit bestaat in totaal uit 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn maar 44 mm hoog en voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software. Dus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO SL serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het DDR4 geheugen levert.\r\nDeze modules zijn speciaal getuned voor een optimale samenwerking met de AMD Ryzen serie."
+        "description": "De 32 GB DDR4-3600 Kit bestaat in totaal uit 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn maar 44 mm hoog en voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software. Dus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO SL serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het DDR4 geheugen levert.\r\nDeze modules zijn speciaal getuned voor een optimale samenwerking met de AMD Ryzen serie.",
+        "id": 4
     },
     "4": {
         "name": "G.Skill Trident Z5 RGB 64 GB",
@@ -67,7 +71,8 @@
         "speed_value": 6400,
         "module_count": 2,
         "module_size": 32,
-        "description": "De G.Skill F5-6000J3040G32GX2-T is een kit bestaande uit twee 32 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Trident Z NEO RGB serie. De totale capaciteit is 32 GB. De 288-pins modules ondersteunen een latency van 30-40-40-96 bij 6000 MHz en heeft een spanning van 1,4 volt nodig. AMD EXPO wordt ondersteund."
+        "description": "De G.Skill F5-6000J3040G32GX2-T is een kit bestaande uit twee 32 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Trident Z NEO RGB serie. De totale capaciteit is 32 GB. De 288-pins modules ondersteunen een latency van 30-40-40-96 bij 6000 MHz en heeft een spanning van 1,4 volt nodig. AMD EXPO wordt ondersteund.",
+        "id": 5
     },
     "5": {
         "name": "G.Skill Flare X5 32 GB",
@@ -81,7 +86,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-6000J3038F16GX2-FX5 is een kit bestaande uit twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Flare X5 serie. De totale capaciteit bedraagt 32 GB. De modules ondersteunen 30-38-38-96 timing op 6000 MHz en vereisen 1,35 V spanning. AMP EXPO Profile wordt ondersteund."
+        "description": "De G.Skill F5-6000J3038F16GX2-FX5 is een kit bestaande uit twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Flare X5 serie. De totale capaciteit bedraagt 32 GB. De modules ondersteunen 30-38-38-96 timing op 6000 MHz en vereisen 1,35 V spanning. AMP EXPO Profile wordt ondersteund.",
+        "id": 6
     },
     "6": {
         "name": "Corsair Vengeance LPX 32 GB",
@@ -95,7 +101,8 @@
         "speed_value": 3600,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR4-3200 Kit geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz."
+        "description": "De 32 GB DDR4-3200 Kit geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz.",
+        "id": 7
     },
     "7": {
         "name": "Corsair Vengeance RGB 32 GB",
@@ -109,7 +116,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules."
+        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules.",
+        "id": 8
     },
     "8": {
         "name": "TEAMGROUP T-Force Delta RGB 32 GB",
@@ -123,7 +131,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": ""
+        "description": "",
+        "id": 9
     },
     "9": {
         "name": "Corsair Vengeance RGB Pro 16 GB",
@@ -137,7 +146,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 8,
-        "description": "De 16 GB DDR4-3600 Kit bestaat in totaal uit 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software.\r\nDus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het overklokte DDR4 geheugen levert.\r\nDeze modules zijn speciaal getuned voor een optimale samenwerking met de AMD Ryzen serie."
+        "description": "De 16 GB DDR4-3600 Kit bestaat in totaal uit 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software.\r\nDus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het overklokte DDR4 geheugen levert.\r\nDeze modules zijn speciaal getuned voor een optimale samenwerking met de AMD Ryzen serie.",
+        "id": 10
     },
     "10": {
         "name": "Corsair Vengeance 32 GB",
@@ -151,7 +161,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules."
+        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules.",
+        "id": 11
     },
     "11": {
         "name": "Corsair Vengeance RGB 32 GB",
@@ -165,7 +176,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules."
+        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules.",
+        "id": 12
     },
     "12": {
         "name": "TEAMGROUP T-Force Delta RGB 32 GB",
@@ -179,7 +191,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": ""
+        "description": "",
+        "id": 13
     },
     "13": {
         "name": "Corsair Vengeance 16 GB",
@@ -193,7 +206,8 @@
         "speed_value": 5200,
         "module_count": 2,
         "module_size": 8,
-        "description": "De CMK16GX4M2B3200C16 geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz."
+        "description": "De CMK16GX4M2B3200C16 geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz.",
+        "id": 14
     },
     "14": {
         "name": "Corsair Dominator Platinum 32 GB",
@@ -207,7 +221,8 @@
         "speed_value": 2666,
         "module_count": 4,
         "module_size": 8,
-        "description": "Het 32 GB DDR5-6000 Kit werkgeheugen van Corsair bedraagt in totaal 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR5 geheugenbus van 6000MHz.\r\n\r\nVerleg de grenzen van performance met CORSAIR DOMINATOR PLATINUM RGB DDR5-geheugen dat geoptimaliseerd is voor Intel. \r\nDDR5 levert hogere frequenties en meer capaciteit dan de vorige geheugengeneratie. Dit helpt je systeem om complexe taken sneller \r\ndan ooit uit te voeren. De DOMINATOR PLATINUM RGB DDR5 met zijn wereldwijd vermaarde ontwerp wordt door 12 extra heldere \r\nCapellix RGB-LEDs verlicht en sluit perfect aan bij de stijl en kracht van high-end systemen. Nauwkeurig met de hand gescreende \r\ngeheugenchips en een aangepaste PCB met gepatenteerde DHX-koeltechnologie staan garant voor constante hoge prestaties. Met de \r\nCORSAIR iCUE-software kun je de RGB-verlichting aanpassen en synchroniseren, krijg je realtime informatie over de prestaties en \r\nbeschik je over een onboard spanningsregeling voor eenvoudiger, meer gecontroleerd overklokken. Met Intel XMP 3.0-ondersteuning \r\nen beperkte levenslange garantie mag de DOMINATOR PLATINUM RGB DDR5 met recht een klasse apart worden genoemd."
+        "description": "Het 32 GB DDR5-6000 Kit werkgeheugen van Corsair bedraagt in totaal 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR5 geheugenbus van 6000MHz.\r\n\r\nVerleg de grenzen van performance met CORSAIR DOMINATOR PLATINUM RGB DDR5-geheugen dat geoptimaliseerd is voor Intel. \r\nDDR5 levert hogere frequenties en meer capaciteit dan de vorige geheugengeneratie. Dit helpt je systeem om complexe taken sneller \r\ndan ooit uit te voeren. De DOMINATOR PLATINUM RGB DDR5 met zijn wereldwijd vermaarde ontwerp wordt door 12 extra heldere \r\nCapellix RGB-LEDs verlicht en sluit perfect aan bij de stijl en kracht van high-end systemen. Nauwkeurig met de hand gescreende \r\ngeheugenchips en een aangepaste PCB met gepatenteerde DHX-koeltechnologie staan garant voor constante hoge prestaties. Met de \r\nCORSAIR iCUE-software kun je de RGB-verlichting aanpassen en synchroniseren, krijg je realtime informatie over de prestaties en \r\nbeschik je over een onboard spanningsregeling voor eenvoudiger, meer gecontroleerd overklokken. Met Intel XMP 3.0-ondersteuning \r\nen beperkte levenslange garantie mag de DOMINATOR PLATINUM RGB DDR5 met recht een klasse apart worden genoemd.",
+        "id": 15
     },
     "15": {
         "name": "Corsair Vengeance LPX 16 GB",
@@ -221,7 +236,8 @@
         "speed_value": 3600,
         "module_count": 2,
         "module_size": 8,
-        "description": "De CMK16GX4M2B3200C16 geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz."
+        "description": "De CMK16GX4M2B3200C16 geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz.",
+        "id": 16
     },
     "16": {
         "name": "G.Skill Ripjaws V 32 GB",
@@ -235,7 +251,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F4-3600C18D-32GVK is een kit van twee 16GB DDR4-3600 geheugenmodules (PC4-28800) uit de Ripjaws V-serie. De totale capaciteit is 32 GB. De modules zijn geprogrammeerd voor timings van 18-22-22-42 op 3600 MHz. De DDR4-modules uit de Ripjaws V-serie zijn ontwikkeld voor maximale compatibiliteit en prestaties met Intel-processoren. De Ripjaws V kan worden gebruikt met een breed scala aan CPU-koelers dankzij hun 42 mm hoogte. De huidige versie 2.0 van Intel's Memory Profile XMP wordt ondersteunt."
+        "description": "De G.Skill F4-3600C18D-32GVK is een kit van twee 16GB DDR4-3600 geheugenmodules (PC4-28800) uit de Ripjaws V-serie. De totale capaciteit is 32 GB. De modules zijn geprogrammeerd voor timings van 18-22-22-42 op 3600 MHz. De DDR4-modules uit de Ripjaws V-serie zijn ontwikkeld voor maximale compatibiliteit en prestaties met Intel-processoren. De Ripjaws V kan worden gebruikt met een breed scala aan CPU-koelers dankzij hun 42 mm hoogte. De huidige versie 2.0 van Intel's Memory Profile XMP wordt ondersteunt.",
+        "id": 17
     },
     "17": {
         "name": "Silicon Power GAMING 16 GB",
@@ -249,7 +266,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 8,
-        "description": "Maak kennis met de MSI Raider GE68 HX 14VIG-416BE gaming laptop, een krachtpatser op het gebied van gamingprestaties. Dankzij de krachtige Intel\u00ae Core\u2122 i9 processor, til je jouw gamingervaring naar een hoger niveau. Het Mystic Light met matrix lightbar-ontwerp is een gamechanger op het gebied van RGB-verlichting. Personaliseer de verlichting om de beste sfeer te cre\u00ebren tijdens het gamen. Deze laptop heeft exclusieve MSI Intelligent Technology die nieuwe AI-functies biedt. Samen met de MSI Overboost Ultra technologie levert de Raider GE68 HX 14VIG-416BE maximale gecombineerde CPU en GPU prestaties voor uitgebreide multitasking-mogelijkheden, onge\u00ebvenaarde rekenkracht en een uitzonderlijke game-ervaring. \nSpecs voor de beste performances tijdens het gamen\r\nMSI brengt in de Raider GE68 HX 14VIG-416BE krachtige hardware samen voor de beste gaming performances. De Intel\u00ae Core\u2122 i9-14900HX processor levert samen met de NVIDIA GeForce RTX 4090 notebook-GPU ultieme snelheid, waardoor je zonder problemen je favoriete game kan spelen op de allerhoogste settings. Deze hardware biedt een realistische game-ervaring en vloeiende graphics. Je game heeft er nog nooit zo goed uitgezien. Verder zit er ook 32 GB RAM geheugen en 2 TB SSD geheugen in, zodat je genoeg ruimte hebt om je games op te slaan. \nUltieme display snelheid\r\nVoel je een echte pro met de MSI Raider GE68 HX 14VIG-416BE. Deze gaming laptop biedt namelijk niet alleen de allerbeste hardware, maar ook display snelheden waar elke e-sporter van droomt. Het beeldscherm heeft een 16\" 120 Hz paneel met een resolutie van 3840x2400 pixels, waarmee je geen enkel detail meer hoeft te missen zonder input lag en ghosting. Zelfs de snelste games draaien vloeiend en zonder haperingen. Met dit scherm verlies je geen seconde.\nMeer power, betere koeling\r\nDe MSI Raider GE68 HX 14VIG-416BE heeft niet alleen krachtige hardware in zijn smalle behuizing zitten, maar ook de koeling om jou de beste game-ervaring te kunnen bieden. De Cooler Boost 5 van MSI met 2 grote ventilatoren en 6 brede heat pipes zorgt het voor optimale prestaties en lage temperaturen, zelfs tijdens intense gamesessies. De Raider GE68 HX beschikt over meer dan genoeg USB-poorten om al je gaming gear aan te kunnen sluiten. Daarnaast heeft deze gaming laptop een USB-C Thunderbolt poort en sluit je externe monitoren aan via de USB-C- en HDMI-aansluitingen. De Raider GE68 HX beschikt over alles wat een echte gamer wenst! \r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i9-14900HX\n32 GB RAM\n2 TB SSD\nNVIDIA GeForce RTX 4090\n16\"\n3840 x 2400 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Pro"
+        "description": "Maak kennis met de MSI Raider GE68 HX 14VIG-416BE gaming laptop, een krachtpatser op het gebied van gamingprestaties. Dankzij de krachtige Intel\u00ae Core\u2122 i9 processor, til je jouw gamingervaring naar een hoger niveau. Het Mystic Light met matrix lightbar-ontwerp is een gamechanger op het gebied van RGB-verlichting. Personaliseer de verlichting om de beste sfeer te cre\u00ebren tijdens het gamen. Deze laptop heeft exclusieve MSI Intelligent Technology die nieuwe AI-functies biedt. Samen met de MSI Overboost Ultra technologie levert de Raider GE68 HX 14VIG-416BE maximale gecombineerde CPU en GPU prestaties voor uitgebreide multitasking-mogelijkheden, onge\u00ebvenaarde rekenkracht en een uitzonderlijke game-ervaring. \nSpecs voor de beste performances tijdens het gamen\r\nMSI brengt in de Raider GE68 HX 14VIG-416BE krachtige hardware samen voor de beste gaming performances. De Intel\u00ae Core\u2122 i9-14900HX processor levert samen met de NVIDIA GeForce RTX 4090 notebook-GPU ultieme snelheid, waardoor je zonder problemen je favoriete game kan spelen op de allerhoogste settings. Deze hardware biedt een realistische game-ervaring en vloeiende graphics. Je game heeft er nog nooit zo goed uitgezien. Verder zit er ook 32 GB RAM geheugen en 2 TB SSD geheugen in, zodat je genoeg ruimte hebt om je games op te slaan. \nUltieme display snelheid\r\nVoel je een echte pro met de MSI Raider GE68 HX 14VIG-416BE. Deze gaming laptop biedt namelijk niet alleen de allerbeste hardware, maar ook display snelheden waar elke e-sporter van droomt. Het beeldscherm heeft een 16\" 120 Hz paneel met een resolutie van 3840x2400 pixels, waarmee je geen enkel detail meer hoeft te missen zonder input lag en ghosting. Zelfs de snelste games draaien vloeiend en zonder haperingen. Met dit scherm verlies je geen seconde.\nMeer power, betere koeling\r\nDe MSI Raider GE68 HX 14VIG-416BE heeft niet alleen krachtige hardware in zijn smalle behuizing zitten, maar ook de koeling om jou de beste game-ervaring te kunnen bieden. De Cooler Boost 5 van MSI met 2 grote ventilatoren en 6 brede heat pipes zorgt het voor optimale prestaties en lage temperaturen, zelfs tijdens intense gamesessies. De Raider GE68 HX beschikt over meer dan genoeg USB-poorten om al je gaming gear aan te kunnen sluiten. Daarnaast heeft deze gaming laptop een USB-C Thunderbolt poort en sluit je externe monitoren aan via de USB-C- en HDMI-aansluitingen. De Raider GE68 HX beschikt over alles wat een echte gamer wenst! \r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i9-14900HX\n32 GB RAM\n2 TB SSD\nNVIDIA GeForce RTX 4090\n16\"\n3840 x 2400 \u00a0\u00b7\u00a0 120 Hz\nWindows 11 Pro",
+        "id": 18
     },
     "18": {
         "name": "G.Skill Ripjaws S5 32 GB",
@@ -263,7 +281,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-6000J3040F16GX2-RS5K is een kit bestaande uit twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Ripjaws S5 serie. De totale capaciteit is 32 GB. De 288-pins ongebufferde DIMM's ondersteunen een timing van 30-40-40-96 bij 6000 MHz en vereisen een spanning van 1,35 volt. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund."
+        "description": "De G.Skill F5-6000J3040F16GX2-RS5K is een kit bestaande uit twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Ripjaws S5 serie. De totale capaciteit is 32 GB. De 288-pins ongebufferde DIMM's ondersteunen een timing van 30-40-40-96 bij 6000 MHz en vereisen een spanning van 1,35 volt. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund.",
+        "id": 19
     },
     "19": {
         "name": "Corsair Vengeance 64 GB",
@@ -277,7 +296,8 @@
         "speed_value": 5200,
         "module_count": 2,
         "module_size": 32,
-        "description": "De Corsair 64 GB DDR5-5600 Kit (CMK64GX5M2B5600C40) is een kit bestaande uit twee 32 GB DDR5-5600 geheugenmodules (PC5-44800) uit de Vengeance serie. De totale capaciteit is 64 GB. De 288-pins DIMM's ondersteunen 40-40-40-77 timing bij 5600 MHz en vereisen een spanning van 1,25 volt. Ze hebben PMIC en ondersteunen Intel XMP 3.0."
+        "description": "De Corsair 64 GB DDR5-5600 Kit (CMK64GX5M2B5600C40) is een kit bestaande uit twee 32 GB DDR5-5600 geheugenmodules (PC5-44800) uit de Vengeance serie. De totale capaciteit is 64 GB. De 288-pins DIMM's ondersteunen 40-40-40-77 timing bij 5600 MHz en vereisen een spanning van 1,25 volt. Ze hebben PMIC en ondersteunen Intel XMP 3.0.",
+        "id": 20
     },
     "20": {
         "name": "G.Skill Trident Z5 Neo RGB 32 GB",
@@ -291,7 +311,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-6000J3040G32GX2-T is een kit bestaande uit twee 32 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Trident Z NEO RGB serie. De totale capaciteit is 32 GB. De 288-pins modules ondersteunen een latency van 30-40-40-96 bij 6000 MHz en heeft een spanning van 1,4 volt nodig. AMD EXPO wordt ondersteund."
+        "description": "De G.Skill F5-6000J3040G32GX2-T is een kit bestaande uit twee 32 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Trident Z NEO RGB serie. De totale capaciteit is 32 GB. De 288-pins modules ondersteunen een latency van 30-40-40-96 bij 6000 MHz en heeft een spanning van 1,4 volt nodig. AMD EXPO wordt ondersteund.",
+        "id": 21
     },
     "21": {
         "name": "Corsair Vengeance RGB Pro SL 32 GB",
@@ -305,7 +326,8 @@
         "speed_value": 3600,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR4-3600 Kit bestaat in totaal uit 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn maar 44 mm hoog en voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software. Dus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO SL serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het DDR4 geheugen levert.\r\nDeze modules zijn speciaal getuned voor een optimale samenwerking met de AMD Ryzen serie."
+        "description": "De 32 GB DDR4-3600 Kit bestaat in totaal uit 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn maar 44 mm hoog en voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software. Dus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO SL serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het DDR4 geheugen levert.\r\nDeze modules zijn speciaal getuned voor een optimale samenwerking met de AMD Ryzen serie.",
+        "id": 22
     },
     "22": {
         "name": "Corsair Vengeance RGB 32 GB",
@@ -319,7 +341,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules."
+        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules.",
+        "id": 23
     },
     "23": {
         "name": "Corsair Vengeance LPX 32 GB",
@@ -333,7 +356,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR4-3200 Kit geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz."
+        "description": "De 32 GB DDR4-3200 Kit geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 32 GB (twee modules van 16 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz.",
+        "id": 24
     },
     "24": {
         "name": "G.Skill Flare X5 32 GB",
@@ -347,7 +371,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-6000J3038F16GX2-FX5 is een kit bestaande uit twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Flare X5 serie. De totale capaciteit bedraagt 32 GB. De modules ondersteunen 30-38-38-96 timing op 6000 MHz en vereisen 1,35 V spanning. AMP EXPO Profile wordt ondersteund."
+        "description": "De G.Skill F5-6000J3038F16GX2-FX5 is een kit bestaande uit twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Flare X5 serie. De totale capaciteit bedraagt 32 GB. De modules ondersteunen 30-38-38-96 timing op 6000 MHz en vereisen 1,35 V spanning. AMP EXPO Profile wordt ondersteund.",
+        "id": 25
     },
     "25": {
         "name": "TEAMGROUP T-Force Vulcan Z 16 GB",
@@ -361,7 +386,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 8,
-        "description": ""
+        "description": "",
+        "id": 26
     },
     "26": {
         "name": "Corsair Vengeance RGB Pro 16 GB",
@@ -375,7 +401,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 8,
-        "description": "De 16 GB DDR4-3600 Kit bestaat in totaal uit 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software.\r\nDus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het overklokte DDR4 geheugen levert.\r\nDeze modules zijn speciaal getuned voor een optimale samenwerking met de AMD Ryzen serie."
+        "description": "De 16 GB DDR4-3600 Kit bestaat in totaal uit 16 GB (twee modules van 8 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software.\r\nDus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het overklokte DDR4 geheugen levert.\r\nDeze modules zijn speciaal getuned voor een optimale samenwerking met de AMD Ryzen serie.",
+        "id": 27
     },
     "27": {
         "name": "G.Skill Trident Z5 Neo 64 GB",
@@ -389,7 +416,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 32,
-        "description": "De G.Skill F5-6000J3040G32GX2-T is een kit bestaande uit twee 32 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Trident Z NEO RGB serie. De totale capaciteit is 32 GB. De 288-pins modules ondersteunen een latency van 30-40-40-96 bij 6000 MHz en heeft een spanning van 1,4 volt nodig. AMD EXPO wordt ondersteund."
+        "description": "De G.Skill F5-6000J3040G32GX2-T is een kit bestaande uit twee 32 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Trident Z NEO RGB serie. De totale capaciteit is 32 GB. De 288-pins modules ondersteunen een latency van 30-40-40-96 bij 6000 MHz en heeft een spanning van 1,4 volt nodig. AMD EXPO wordt ondersteund.",
+        "id": 28
     },
     "28": {
         "name": "Corsair Vengeance 32 GB",
@@ -403,7 +431,8 @@
         "speed_value": 5200,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules."
+        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules.",
+        "id": 29
     },
     "29": {
         "name": "G.Skill Ripjaws V 16 GB",
@@ -417,7 +446,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 8,
-        "description": "Deze geheugenmodule heeft een capaciteit van 16 GB (\u00e9\u00e9n module van 16 GB) en is geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz."
+        "description": "Deze geheugenmodule heeft een capaciteit van 16 GB (\u00e9\u00e9n module van 16 GB) en is geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz.",
+        "id": 30
     },
     "30": {
         "name": "Silicon Power GAMING 32 GB",
@@ -431,7 +461,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 16,
-        "description": "Ga voor de kracht die je echt nodig hebt dankzij de ALTERNATE Powered by ASUS TUF i7-4070 gaming pc! Deze build is gebouwd met de hardcore gamer in gedachten en geeft je meteen een stapje voor op je tegenstanders. De speciaal uitgekozen ASUS componenten zorgen ervoor dat je alle games vlot kan spelen en geven deze build een geweldige look. Dankzij de door AI aangedreven NVIDIA DLSS 3 technologie geniet je bovendien van hogere framerates, zonder dat dit ten koste gaat van de beeldkwaliteit of responsiviteit. Uiteraard komt de pc ook voor dagelijkse taken, multimedia, streaming en content creation tegemoet aan al je eisen.\r\n\r\nDe ALTERNATE Powered by ASUS TUF i7-4070 bestaat uitsluitend uit kwalitatieve componenten en werd zorgvuldig geassembleerd door een team gamende professionals met jaren ervaring in het bouwen van pc's. De Intel\u00ae Core\u2122 i7-14700KF, gekoeld door de be quiet! Dark Rock Pro 5, is een uiterst krachtige processor die zelfs nog verder gepusht kan worden door middel van overclocken op het krachtige ASUS TUF GAMING Z790-PLUS WIFI moederbord. De ruime rekenkracht van de processor en de robuuste ASUS TUF Gaming GeForce RTX 4070 OC grafische kaart met 12 GB GDDR6x geheugen zorgen ervoor dat je met de ALTERNATE Powered by ASUS TUF i7-4070 vlot de laatste games kan spelen.\r\n\r\nDankzij het 32 GB DDR5-werkgeheugen wordt multitasken kinderspel. Verder start het Windows 11 besturingssysteem snel op dankzij de 2 TB M.2 NVMe SSD en is er voldoende ruimte om je multimedia- en installatiebestanden op te slaan. Alle onderdelen zijn ingebouwd in de geweldige be quiet! PURE BASE 500DX behuizing met ingebouwde RGB-elementen aan de voorkant en een zijpaneel van getemperd glas.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-14700KF\n32 GB RAM\n2 TB SSD\nNVIDIA GeForce RTX 4070\nWi-Fi 6E \u00a0\u00b7\u00a0 Bluetooth 5.3\nWindows 11 Home"
+        "description": "Ga voor de kracht die je echt nodig hebt dankzij de ALTERNATE Powered by ASUS TUF i7-4070 gaming pc! Deze build is gebouwd met de hardcore gamer in gedachten en geeft je meteen een stapje voor op je tegenstanders. De speciaal uitgekozen ASUS componenten zorgen ervoor dat je alle games vlot kan spelen en geven deze build een geweldige look. Dankzij de door AI aangedreven NVIDIA DLSS 3 technologie geniet je bovendien van hogere framerates, zonder dat dit ten koste gaat van de beeldkwaliteit of responsiviteit. Uiteraard komt de pc ook voor dagelijkse taken, multimedia, streaming en content creation tegemoet aan al je eisen.\r\n\r\nDe ALTERNATE Powered by ASUS TUF i7-4070 bestaat uitsluitend uit kwalitatieve componenten en werd zorgvuldig geassembleerd door een team gamende professionals met jaren ervaring in het bouwen van pc's. De Intel\u00ae Core\u2122 i7-14700KF, gekoeld door de be quiet! Dark Rock Pro 5, is een uiterst krachtige processor die zelfs nog verder gepusht kan worden door middel van overclocken op het krachtige ASUS TUF GAMING Z790-PLUS WIFI moederbord. De ruime rekenkracht van de processor en de robuuste ASUS TUF Gaming GeForce RTX 4070 OC grafische kaart met 12 GB GDDR6x geheugen zorgen ervoor dat je met de ALTERNATE Powered by ASUS TUF i7-4070 vlot de laatste games kan spelen.\r\n\r\nDankzij het 32 GB DDR5-werkgeheugen wordt multitasken kinderspel. Verder start het Windows 11 besturingssysteem snel op dankzij de 2 TB M.2 NVMe SSD en is er voldoende ruimte om je multimedia- en installatiebestanden op te slaan. Alle onderdelen zijn ingebouwd in de geweldige be quiet! PURE BASE 500DX behuizing met ingebouwde RGB-elementen aan de voorkant en een zijpaneel van getemperd glas.\r\n\r\n\nProductspecificaties:\nIntel\u00ae Core\u2122 i7-14700KF\n32 GB RAM\n2 TB SSD\nNVIDIA GeForce RTX 4070\nWi-Fi 6E \u00a0\u00b7\u00a0 Bluetooth 5.3\nWindows 11 Home",
+        "id": 31
     },
     "31": {
         "name": "Corsair Dominator Titanium 64 GB",
@@ -445,7 +476,8 @@
         "speed_value": 6600,
         "module_count": 2,
         "module_size": 32,
-        "description": "De Corsair CMP64GX5M2B6000Z30 is een kit van 2x 32 GB DDR5-6000 (PC5-48000) geheugenmodules uit de Dominator Titanium RGB serie. De totale capaciteit is 64 GB. De 288-pins module ondersteunt een latentie van 30-36-36 bij 6000 MHz en heeft een voltage van 1,3 volt nodig. AMD EXPO wordt ondersteund."
+        "description": "De Corsair CMP64GX5M2B6000Z30 is een kit van 2x 32 GB DDR5-6000 (PC5-48000) geheugenmodules uit de Dominator Titanium RGB serie. De totale capaciteit is 64 GB. De 288-pins module ondersteunt een latentie van 30-36-36 bij 6000 MHz en heeft een voltage van 1,3 volt nodig. AMD EXPO wordt ondersteund.",
+        "id": 32
     },
     "32": {
         "name": "Kingston FURY Beast 16 GB",
@@ -459,7 +491,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 8,
-        "description": "Het Kingston FURY Beast 16 GB DDR5-5600 Kit werkgeheugen bestaat uit twee module van 8 GB en verbetert de prestaties van je systeem om te gamen, video te bewerken en te renderen met hoge snelheden. De geheugenmodule biedt ondersteuning voor Intel XMP. De Kingston FURY Beast DDR5 serie blijft koel dankzij de stijlvolle, platte warmtegeleider. Dankzij een simpele, gemakkelijke plug-en-play-upgrade overklokt de Kingston FURY Beast DDR5 zichzelf automatisch tot de hoogste snelheid die door het systeem-BIOS is toegestaan."
+        "description": "Het Kingston FURY Beast 16 GB DDR5-5600 Kit werkgeheugen bestaat uit twee module van 8 GB en verbetert de prestaties van je systeem om te gamen, video te bewerken en te renderen met hoge snelheden. De geheugenmodule biedt ondersteuning voor Intel XMP. De Kingston FURY Beast DDR5 serie blijft koel dankzij de stijlvolle, platte warmtegeleider. Dankzij een simpele, gemakkelijke plug-en-play-upgrade overklokt de Kingston FURY Beast DDR5 zichzelf automatisch tot de hoogste snelheid die door het systeem-BIOS is toegestaan.",
+        "id": 33
     },
     "33": {
         "name": "Corsair Vengeance RGB 128 GB",
@@ -473,7 +506,8 @@
         "speed_value": 5600,
         "module_count": 4,
         "module_size": 32,
-        "description": "De Corsair 128 GB DDR5-5600 Quad-Kit (CMH128GX5M4B5600C40) bestaat uit vier 32 GB DDR5-5600 geheugenmodules (PC5-44800) uit de Vengeance RGB-serie. De totale capaciteit is 128 GB. De 288-pins modules ondersteunen een latentie van 40-40-40-77 bij 5600 MHz en hebben een gemiddelde spanning van 1,25 volt nodig. De Vengeance RGB-serie is voorzien van op maat gemaakte, krachtige heatsinks met instelbare ledverlichting en ondersteuning voor Intel's XMP 3.0."
+        "description": "De Corsair 128 GB DDR5-5600 Quad-Kit (CMH128GX5M4B5600C40) bestaat uit vier 32 GB DDR5-5600 geheugenmodules (PC5-44800) uit de Vengeance RGB-serie. De totale capaciteit is 128 GB. De 288-pins modules ondersteunen een latentie van 40-40-40-77 bij 5600 MHz en hebben een gemiddelde spanning van 1,25 volt nodig. De Vengeance RGB-serie is voorzien van op maat gemaakte, krachtige heatsinks met instelbare ledverlichting en ondersteuning voor Intel's XMP 3.0.",
+        "id": 34
     },
     "34": {
         "name": "G.Skill Trident Z5 RGB 32 GB",
@@ -487,7 +521,8 @@
         "speed_value": 7200,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-7200J3445G16GX2-TZ5RK is een kit bestaande uit twee 16 GB DDR5-7200 geheugenmodules (PC5-57600) uit de Trident Z5 RGB serie. De totale capaciteit is 32GB. De modules ondersteunen een timing van 34-45-45-115 bij 7200 MHz en vereisen een spanning van 1,4 V. Een kenmerk van de Trident Z5 RGB-serie is de individueel instelbare RGB LED-verlichting. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund."
+        "description": "De G.Skill F5-7200J3445G16GX2-TZ5RK is een kit bestaande uit twee 16 GB DDR5-7200 geheugenmodules (PC5-57600) uit de Trident Z5 RGB serie. De totale capaciteit is 32GB. De modules ondersteunen een timing van 34-45-45-115 bij 7200 MHz en vereisen een spanning van 1,4 V. Een kenmerk van de Trident Z5 RGB-serie is de individueel instelbare RGB LED-verlichting. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund.",
+        "id": 35
     },
     "35": {
         "name": "Corsair Vengeance RGB 32 GB",
@@ -501,7 +536,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules."
+        "description": "De 32 GB DDR5-6000 Kit (CMH32GX5M2E6000C36) uit de Corsair Vengeance RGB serie heeft een capaciteit van 32 GB (twee modules van 16 GB) en is geschikt voor systemen met een DDR5 geheugenbus van 6000 MHz op een spanning van 1.4V. Daarnaast hebben ze ondersteuning voor Intel XMP en opvallende RGB ledverlichting. De geheugenmodules zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan losse modules.",
+        "id": 36
     },
     "36": {
         "name": "TEAMGROUP T-Force Vulcan Z 32 GB",
@@ -515,7 +551,8 @@
         "speed_value": 3600,
         "module_count": 2,
         "module_size": 16,
-        "description": ""
+        "description": "",
+        "id": 37
     },
     "37": {
         "name": "Silicon Power Value Gaming 32 GB",
@@ -529,7 +566,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": ""
+        "description": "",
+        "id": 38
     },
     "38": {
         "name": "G.Skill Ripjaws V 16 GB",
@@ -543,7 +581,8 @@
         "speed_value": 3600,
         "module_count": 2,
         "module_size": 8,
-        "description": "Deze geheugenmodule heeft een capaciteit van 16 GB (\u00e9\u00e9n module van 16 GB) en is geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz."
+        "description": "Deze geheugenmodule heeft een capaciteit van 16 GB (\u00e9\u00e9n module van 16 GB) en is geschikt voor systemen met een DDR4 geheugenbus van 3200 MHz.",
+        "id": 39
     },
     "39": {
         "name": "TEAMGROUP T-Force Delta RGB 32 GB",
@@ -557,7 +596,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": ""
+        "description": "",
+        "id": 40
     },
     "40": {
         "name": "G.Skill Trident Z RGB 32 GB",
@@ -571,7 +611,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-6000J3038F16GX2-TZ5NR kit zijn 32 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Trident Z NEO RGB serie. De 288-pins modules ondersteunen een latency van 30-38-38 bij 6000 MHz en heeft een spanning van 1,1 volt nodig. AMD EXPO wordt ondersteund."
+        "description": "De G.Skill F5-6000J3038F16GX2-TZ5NR kit zijn 32 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Trident Z NEO RGB serie. De 288-pins modules ondersteunen een latency van 30-38-38 bij 6000 MHz en heeft een spanning van 1,1 volt nodig. AMD EXPO wordt ondersteund.",
+        "id": 41
     },
     "41": {
         "name": "Corsair Vengeance RGB 64 GB",
@@ -585,7 +626,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 32,
-        "description": "De 64 GB DDR4-3600 Kit bestaat in totaal uit 64 GB (twee modules van 32 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software. Dus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het overklokte DDR4 geheugen levert."
+        "description": "De 64 GB DDR4-3600 Kit bestaat in totaal uit 64 GB (twee modules van 32 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz. Deze geheugenmodules zijn voorzien van RGB ledverlichting, wat te bedienen is met Corsair iCUE software. Dus laat je pc stralen met de betoverende dynamische multi-zone RGB verlichting van Corsair`s Vengeance RGB PRO serie geheugen, terwijl jij gebruik maakt van de indrukwekkende prestaties die het overklokte DDR4 geheugen levert.",
+        "id": 42
     },
     "42": {
         "name": "Corsair Vengeance 64 GB",
@@ -599,7 +641,8 @@
         "speed_value": 6400,
         "module_count": 2,
         "module_size": 32,
-        "description": "De Corsair 64 GB DDR5-5600 Kit (CMK64GX5M2B5600C40) is een kit bestaande uit twee 32 GB DDR5-5600 geheugenmodules (PC5-44800) uit de Vengeance serie. De totale capaciteit is 64 GB. De 288-pins DIMM's ondersteunen 40-40-40-77 timing bij 5600 MHz en vereisen een spanning van 1,25 volt. Ze hebben PMIC en ondersteunen Intel XMP 3.0."
+        "description": "De Corsair 64 GB DDR5-5600 Kit (CMK64GX5M2B5600C40) is een kit bestaande uit twee 32 GB DDR5-5600 geheugenmodules (PC5-44800) uit de Vengeance serie. De totale capaciteit is 64 GB. De 288-pins DIMM's ondersteunen 40-40-40-77 timing bij 5600 MHz en vereisen een spanning van 1,25 volt. Ze hebben PMIC en ondersteunen Intel XMP 3.0.",
+        "id": 43
     },
     "43": {
         "name": "TEAMGROUP T-Force Delta RGB 32 GB",
@@ -613,7 +656,8 @@
         "speed_value": 3600,
         "module_count": 2,
         "module_size": 16,
-        "description": ""
+        "description": "",
+        "id": 44
     },
     "44": {
         "name": "G.Skill Trident Z5 RGB 32 GB",
@@ -627,7 +671,8 @@
         "speed_value": 6400,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-7200J3445G16GX2-TZ5RK is een kit bestaande uit twee 16 GB DDR5-7200 geheugenmodules (PC5-57600) uit de Trident Z5 RGB serie. De totale capaciteit is 32GB. De modules ondersteunen een timing van 34-45-45-115 bij 7200 MHz en vereisen een spanning van 1,4 V. Een kenmerk van de Trident Z5 RGB-serie is de individueel instelbare RGB LED-verlichting. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund."
+        "description": "De G.Skill F5-7200J3445G16GX2-TZ5RK is een kit bestaande uit twee 16 GB DDR5-7200 geheugenmodules (PC5-57600) uit de Trident Z5 RGB serie. De totale capaciteit is 32GB. De modules ondersteunen een timing van 34-45-45-115 bij 7200 MHz en vereisen een spanning van 1,4 V. Een kenmerk van de Trident Z5 RGB-serie is de individueel instelbare RGB LED-verlichting. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund.",
+        "id": 45
     },
     "45": {
         "name": "Corsair Vengeance LPX 64 GB",
@@ -641,7 +686,8 @@
         "speed_value": 3200,
         "module_count": 2,
         "module_size": 32,
-        "description": "De 64 GB DDR4-3600 Kit geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 64 GB (twee modules van 32 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz."
+        "description": "De 64 GB DDR4-3600 Kit geheugenmodules van Corsair zijn volledig identiek. Beide zijn voorzien van geheugenchips uit eenzelfde productie-serie, wat uiteraard een betere compatibiliteit oplevert dan twee losse modules. De capaciteit bedraagt in totaal 64 GB (twee modules van 32 GB) en ze zijn geschikt voor systemen met een DDR4 geheugenbus van 3600 MHz.",
+        "id": 46
     },
     "46": {
         "name": "Kingston FURY Beast 32 GB",
@@ -655,7 +701,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De Kingston FURY 32 GB DDR5-6000 Kit (KF560C36BBEK2-32) is een kit van twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Beast serie. De totale capaciteit is 32 GB. De 288-pins ongebufferde DIMM's ondersteunen een latentie van 36-38-38 bij 6000 MHz en hebben een spanning van 1,35 volt nodig. Intel XMP 3.0 en AMD EXPO worden ondersteund."
+        "description": "De Kingston FURY 32 GB DDR5-6000 Kit (KF560C36BBEK2-32) is een kit van twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Beast serie. De totale capaciteit is 32 GB. De 288-pins ongebufferde DIMM's ondersteunen een latentie van 36-38-38 bij 6000 MHz en hebben een spanning van 1,35 volt nodig. Intel XMP 3.0 en AMD EXPO worden ondersteund.",
+        "id": 47
     },
     "47": {
         "name": "Kingston FURY Beast 16 GB",
@@ -669,7 +716,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 8,
-        "description": "Het Kingston FURY Beast 16 GB DDR5-5600 Kit werkgeheugen bestaat uit twee module van 8 GB en verbetert de prestaties van je systeem om te gamen, video te bewerken en te renderen met hoge snelheden. De geheugenmodule biedt ondersteuning voor Intel XMP. De Kingston FURY Beast DDR5 serie blijft koel dankzij de stijlvolle, platte warmtegeleider. Dankzij een simpele, gemakkelijke plug-en-play-upgrade overklokt de Kingston FURY Beast DDR5 zichzelf automatisch tot de hoogste snelheid die door het systeem-BIOS is toegestaan."
+        "description": "Het Kingston FURY Beast 16 GB DDR5-5600 Kit werkgeheugen bestaat uit twee module van 8 GB en verbetert de prestaties van je systeem om te gamen, video te bewerken en te renderen met hoge snelheden. De geheugenmodule biedt ondersteuning voor Intel XMP. De Kingston FURY Beast DDR5 serie blijft koel dankzij de stijlvolle, platte warmtegeleider. Dankzij een simpele, gemakkelijke plug-en-play-upgrade overklokt de Kingston FURY Beast DDR5 zichzelf automatisch tot de hoogste snelheid die door het systeem-BIOS is toegestaan.",
+        "id": 48
     },
     "48": {
         "name": "TEAMGROUP T-Create Expert 32 GB",
@@ -683,7 +731,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": ""
+        "description": "",
+        "id": 49
     },
     "49": {
         "name": "G.Skill Ripjaws S5 32 GB",
@@ -697,7 +746,8 @@
         "speed_value": 6000,
         "module_count": 2,
         "module_size": 16,
-        "description": "De G.Skill F5-6000J3040F16GX2-RS5K is een kit bestaande uit twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Ripjaws S5 serie. De totale capaciteit is 32 GB. De 288-pins ongebufferde DIMM's ondersteunen een timing van 30-40-40-96 bij 6000 MHz en vereisen een spanning van 1,35 volt. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund."
+        "description": "De G.Skill F5-6000J3040F16GX2-RS5K is een kit bestaande uit twee 16 GB DDR5-6000 geheugenmodules (PC5-48000) uit de Ripjaws S5 serie. De totale capaciteit is 32 GB. De 288-pins ongebufferde DIMM's ondersteunen een timing van 30-40-40-96 bij 6000 MHz en vereisen een spanning van 1,35 volt. Versie 3.0 van Intels geheugenprofiel XMP wordt ondersteund.",
+        "id": 50
     },
     "50": {
         "name": "TEAMGROUP T-Force Delta RGB 16 GB",
@@ -711,6 +761,7 @@
         "speed_value": 3600,
         "module_count": 2,
         "module_size": 8,
-        "description": ""
+        "description": "",
+        "id": 51
     }
 }

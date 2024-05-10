@@ -7,7 +7,7 @@ namespace PcArchitect.Model
 {
     public class Memory : IComponent
     {
-        [PrimaryKey, AutoIncrement]
+        [JsonPropertyName("id")]
         public int Id { get; set; }
 
         private string _image = "";
