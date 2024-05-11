@@ -8,7 +8,8 @@ using System.Collections;
 using System.Diagnostics;
 using PcArchitect.Repository;
 using PcArchitect.Services;
-using System.Xml.Linq;
+using System;
+using System.Reflection;
 
 // DIT IS DE VIEWMODEL VOOR DE PAGINA WAAR DE CATAGORIEEN WORDEN WEERGEGEVEN
 
@@ -27,6 +28,9 @@ namespace PcArchitect.ViewModel
         private double TotalPrice;
         SavedBuild? SavedBuild;
 
+        private List<IComponent> Presets = [];
+
+
         //////////////////////////////////////////////
 
         //////////////////////////////////////////////
@@ -40,7 +44,24 @@ namespace PcArchitect.ViewModel
             _addedomponentRepository = addedcomponentRepository;
             _rootF = rootF;
             AdditionalName = "";
+
+            SetPresets();
         }
+
+        private void SetPresets()
+        {
+            Presets.Add(new Cpu { Name = "CPU", Image = "cpu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new CpuCooler { Name = "CPU COOLER", Image = "cpu_cooler.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Gpu { Name = "GPU", Image = "gpu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Motherboard { Name = "MOTHERBOARD", Image = "motherboard.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Memory { Name = "MEMORY", Image = "memory.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Storage { Name = "STORAGE", Image = "ssd.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Psu { Name = "PSU", Image = "psu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new CaseFan { Name = "CASE FAN", Image = "case_fan.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Case { Name = "CASE", Image = "case_tower.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Os { Name = "OS", Image = "os.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+        }
+
 
 
         //////////////////////////////////////////////
@@ -56,33 +77,36 @@ namespace PcArchitect.ViewModel
                 var properties = typeof(Root).GetProperties();
 
                 TotalPrice = 0;
-                IsAdditionalPresetFrameEnabled = false;
 
                 foreach (var property in properties)
                 {
                     if (property.PropertyType.IsGenericType && property.PropertyType.GetGenericTypeDefinition() == typeof(List<>))
                     {
                         var list = (IList?)property.GetValue(_rootF.GetRoot2());
-                        var lastItem = list?.Cast<IComponent>().LastOrDefault();
+                        var Items = list?.Cast<IComponent>().ToList();
 
-                        if (lastItem != null)
+                        if (Items == null || Items.Count == 0)
                         {
-                            if (lastItem.Price != null)
-                            {
-                                lastItem.IsSelectedComponentFrameEnabled = true;
-                                lastItem.IsPresetFrameEnabled = false;
-
-                                TotalPrice += lastItem.Price ?? 0;
-                                TotalPriceString = TotalPrice.ToString("C2");
-
-                                if (lastItem is Storage storage)
-                                {
-                                    IsAdditionalPresetFrameEnabled = true;
-                                    AdditionalName = "+ Add Additional Storage";
-                                }
-                            }
-                            Components.Add(lastItem);
+                            var getpreset = Presets.FirstOrDefault(x => x.GetType() == property.PropertyType.GetGenericArguments()[0]);
+                            Components.Add(getpreset);
+                            continue;
                         }
+                        
+                        foreach (var item in Items)
+                        {
+                            item.IsSelectedComponentFrameEnabled = true;
+                            item.IsPresetFrameEnabled = false;
+
+                            TotalPrice += item.Price ?? 0;
+                            TotalPriceString = TotalPrice.ToString("C2");
+                            Components.Add(item);   
+                        }   
+                        if (list is List<Memory> && list.Count > 0)
+                            Components.Add(new Memory { AdditionalName = "Memory", AdditionalDescription = "+ Add Additional Memory", IsAdditionalPresetFrameEnabled = true });
+                        if (list is List<Storage> && list.Count > 0)
+                            Components.Add(new Storage { AdditionalName = "Storage", AdditionalDescription = "+ Add Additional Storage", IsAdditionalPresetFrameEnabled = true });
+                        if (list is List<CaseFan> && list.Count > 0)
+                            Components.Add(new CaseFan { AdditionalName = "Case Fan", AdditionalDescription = "+ Add Additional Case Fan", IsAdditionalPresetFrameEnabled = true });
                     }
                 }
             });
@@ -109,7 +133,6 @@ namespace PcArchitect.ViewModel
             else
                 Title = $"Edit: {SavedBuild.BuildName}";
 
-            Components.Clear();
             await AddComponents();
         }
         //PAGENAVIGATED
@@ -140,7 +163,8 @@ namespace PcArchitect.ViewModel
                         return;
                     if(buildNames.Contains(name))
                     {
-                        await Shell.Current.DisplayAlert("Error", "Name already exists", "OK");
+                        await Shell.Current.DisplayAlert("Error", $"{name} already exists", "OK");
+                        name = "";
                     }
                     else
                         SavedBuild.BuildName = name;
@@ -160,34 +184,34 @@ namespace PcArchitect.ViewModel
                     switch (item)
                     {
                         case Cpu cpu:
-                            SavedBuild.CpuId = cpu.Id;
+                            SavedBuild.CpuId.Add(cpu.Id);
                             break;
                         case CpuCooler cpuCooler:
-                            SavedBuild.CpuCoolerId = cpuCooler.Id;
+                            SavedBuild.CpuCoolerId.Add(cpuCooler.Id);
                             break;
                         case Gpu gpu:
-                            SavedBuild.GpuId = gpu.Id;
+                            SavedBuild.GpuId.Add(gpu.Id);
                             break;
                         case Motherboard motherboard:
-                            SavedBuild.MotherboardId = motherboard.Id;
+                            SavedBuild.MotherboardId.Add(motherboard.Id);
                             break;
                         case Memory memory:
-                            SavedBuild.MemoryId = memory.Id;
+                            SavedBuild.MemoryId.Add(memory.Id);
                             break;
                         case Storage storage:
-                            SavedBuild.StorageId = storage.Id;
+                            SavedBuild.StorageId.Add(storage.Id);
                             break;
                         case Psu psu:
-                            SavedBuild.PsuId = psu.Id;
+                            SavedBuild.PsuId.Add(psu.Id);
                             break;
                         case Case case_:
-                            SavedBuild.CaseId = case_.Id;
+                            SavedBuild.CaseId.Add(case_.Id);
                             break;
                         case CaseFan caseFan:
-                            SavedBuild.CaseFanId = caseFan.Id;
+                            SavedBuild.CaseFanId.Add(caseFan.Id);
                             break;
                         case Os os:
-                            SavedBuild.OsId = os.Id;
+                            SavedBuild.OsId.Add(os.Id);
                             break;
                         default:
                             break;
@@ -200,9 +224,39 @@ namespace PcArchitect.ViewModel
                 await _database.UpdateItemAsync(SavedBuild);
                 
             Components.Clear();
+            SavedBuild = null;
             await _addedomponentRepository.ClearComponents();
             await Shell.Current.GoToAsync(nameof(MyBuildPage));
         }
+
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
+        //GOTOPARTSLIST
+        [RelayCommand]
+        public async Task GoToPartsList(IComponent component)
+        {
+            var componentName = "";
+            if (component == null)
+                return;
+
+            if (component.AdditionalName != null)
+                componentName = component.AdditionalName;
+            else
+                componentName = component.Name;
+
+            Components.Clear();
+
+            if (componentName != null)
+                await Shell.Current.GoToAsync(nameof(PartListPage), false, new Dictionary<string, object>
+                {
+                    {"ComponentName", componentName }
+                });
+        }
+        //GOTOPARTSLIST
 
 
         //////////////////////////////////////////////
@@ -224,42 +278,30 @@ namespace PcArchitect.ViewModel
                 TotalPriceString = TotalPrice.ToString("C2");
 
                 await _addedomponentRepository.RemoveComponentAsync(component);
-                Components.Clear();
-                await AddComponents();
+
+
+                int index = 0;
+                var type = component.GetType();
+
+                var getiteminList = Components.FirstOrDefault(x => x.GetType() == type);
+                index = Components.IndexOf(getiteminList);
+
+                var getpreset = Components.Where(x => x.GetType() == type).ToList();
+                if (getpreset.Count == 1)
+                {
+                    Components.Insert(index, Presets.FirstOrDefault(x => x.GetType() == type));
+                }
+                else if (getpreset.Count == 2)
+                {
+                    Components.Remove(getpreset[1]);
+                    Components.Insert(index, Presets.FirstOrDefault(x => x.GetType() == type));
+                }
+
+                Components.Remove(component);
             }
         }
         //DELETECOMPONENT
-
-
-        //////////////////////////////////////////////
-
-        //////////////////////////////////////////////
-
-
-        //GOTOPARTSLIST
-        [RelayCommand]
-        public async Task GoToPartsList(IComponent component)
-        {
-            if (component == null)
-                return;
-
-            if(SavedBuild != null)
-            {
-                bool choice = await Shell.Current.DisplayAlert("WARNING", "Wil je opslaan voor je vertrekt", "Save", "Discard");
-                if (choice)
-                    await SaveBuild();
-                else
-                    await _addedomponentRepository.ClearComponents();
-            }
-
-            Components.Clear();
-            // Navigeer naar de PartsList pagina
-            await Shell.Current.GoToAsync(nameof(PartListPage), false, new Dictionary<string, object>
-            {
-                {"ComponentName", component.Name }
-            });
-        }
-        //GOTOPARTSLIST
+        
 
 
         //////////////////////////////////////////////
@@ -271,6 +313,18 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         public async Task BackButton()
         {
+            if (SavedBuild != null)
+            {
+                bool choice = await Shell.Current.DisplayAlert("WARNING", "Wil je opslaan voor je vertrekt", "Save", "Discard");
+                if (choice)
+                    await SaveBuild();
+                else
+                    await _addedomponentRepository.ClearComponents();
+
+                SavedBuild = null;
+            }
+                Components.Clear();
+
             try
             {
                 await Shell.Current.GoToAsync(nameof(MainPage));

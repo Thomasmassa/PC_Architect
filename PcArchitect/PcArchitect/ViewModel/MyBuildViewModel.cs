@@ -5,6 +5,7 @@ using PcArchitect.Views;
 using PcArchitect.Services;
 using PcArchitect.Model;
 using PcArchitect.Repository;
+using CommunityToolkit.Maui.Core;
 
 // DEZE VIEWMODEL BEVAT DE LIJST VAN COMPONENTEN DIE DE GEBRUIKER HEEFT TOEGEVOEGD AAN ZIJN/HAAR BUILD
 
@@ -41,10 +42,9 @@ namespace PcArchitect.ViewModel
                 Console.WriteLine($"buildName is: {build.BuildName}");
                 SavedBuilds.Add(build);
             }
-
             await Toast.Make("swipe left on card to delete").Show();
             await Task.Delay(TimeSpan.FromSeconds(2));
-            await Toast.Make("swipe right on card to change name").Show();
+            await Toast.Make("swipe right on card to change the name").Show();
         }
 
         [RelayCommand]
@@ -79,6 +79,8 @@ namespace PcArchitect.ViewModel
                 {
                     await _localDatabase.DeleteItemAsync(build);
                     SavedBuilds.Remove(build);
+
+                    await Task.Delay(TimeSpan.FromSeconds(0.1));
 
                     build.BuildName = name;
                     SavedBuilds.Add(build);

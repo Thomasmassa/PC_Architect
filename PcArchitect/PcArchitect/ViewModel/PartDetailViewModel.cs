@@ -33,12 +33,6 @@ namespace PcArchitect.ViewModel
         async Task BackButton()
         {
             await Shell.Current.GoToAsync("..");
-
-            //var detailstring = "";
-            //await Shell.Current.GoToAsync(nameof(PartListPage), false, new Dictionary<string, object>
-            //{
-            //    {"ComponentName", detailstring}
-            //});
         }
 
         [RelayCommand]
@@ -50,12 +44,6 @@ namespace PcArchitect.ViewModel
             if (component != null)
                 Component.Add(component);
         }
-
-        //[RelayCommand]
-        //void ToggleDetails()
-        //{
-        //    IsDetailsVisible = true;
-        //}
 
         [RelayCommand]
         void ToggleDescription()

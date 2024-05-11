@@ -29,8 +29,8 @@ namespace PcArchitect.ViewModel
         [ObservableProperty]
         string? totalPriceString;
 
-        [ObservableProperty]
-        bool isAdditionalPresetFrameEnabled;
+        //[ObservableProperty]
+        //bool isAdditionalPresetFrameEnabled;
 
         [ObservableProperty]
         string descriptionButton = "";

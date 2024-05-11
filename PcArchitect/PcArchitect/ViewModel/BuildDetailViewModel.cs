@@ -25,15 +25,31 @@ namespace PcArchitect.ViewModel
             _rootF = rootF;
             Components = [];
 
+            TotalPriceString = "€0.00";
             AddComponents();
         }
+
         private Task AddComponents()
         {
-            Build = (SavedBuild)_bufferService.GetBufferedComponent("Showbuild");
-            Title = Build.BuildName;
-
             return Task.Run(() =>
             {
+                Build = (SavedBuild)_bufferService.GetBufferedComponent("Showbuild");
+                Title = Build.BuildName;
+                double TotalPrice = 0;
+                var componentTypeToIdMap = new Dictionary<Type, Func<SavedBuild, List<int>>>
+                {
+                    { typeof(Cpu), build => build.CpuId },
+                    { typeof(CpuCooler), build => build.CpuCoolerId },
+                    { typeof(Gpu), build => build.GpuId },
+                    { typeof(Motherboard), build => build.MotherboardId },
+                    { typeof(Memory), build => build.MemoryId },
+                    { typeof(Storage), build => build.StorageId },
+                    { typeof(Psu), build => build.PsuId },
+                    { typeof(Case), build => build.CaseId },
+                    { typeof(CaseFan), build => build.CaseFanId },
+                    { typeof(Os), build => build.OsId }
+                };
+
                 var properties = typeof(Root).GetProperties();
 
                 foreach (var property in properties)
@@ -42,58 +58,25 @@ namespace PcArchitect.ViewModel
                     var Ilist = list?.Cast<IComponent>().ToList();
 
                     if (Ilist == null) continue;
-                    foreach (var item in Ilist)
+
+
+                    if (componentTypeToIdMap.TryGetValue(property.PropertyType.GetGenericArguments()[0], out var getIds))
                     {
-                        if (item.Price == null)
-                            continue;
-                        switch (item)
+                        var ids = getIds(Build);
+                        foreach (var id in ids)
                         {
-                            case Cpu cpu:
-                                if (cpu.Id == Build.CpuId)
-                                    Components.Add(item);
-                                break;
-                            case CpuCooler cpuCooler:
-                                if (cpuCooler.Id == Build.CpuCoolerId)
-                                    Components.Add(item);
-                                break;
-                            case Gpu gpu:
-                                if (gpu.Id == Build.GpuId)
-                                    Components.Add(item);
-                                break;
-                            case Motherboard motherboard:
-                                if (motherboard.Id == Build.MotherboardId)
-                                    Components.Add(item);
-                                break;
-                            case Memory memory:
-                                if (memory.Id == Build.MemoryId)
-                                    Components.Add(item);
-                                break;
-                            case Storage storage:
-                                if (storage.Id == Build.StorageId)
-                                    Components.Add(item);
-                                break;
-                            case Psu psu:
-                                if (psu.Id == Build.PsuId)
-                                    Components.Add(item);
-                                break;
-                            case Case case_:
-                                if (case_.Id == Build.CaseId)
-                                    Components.Add(item);
-                                break;
-                            case CaseFan caseFan:
-                                if (caseFan.Id == Build.CaseFanId)
-                                    Components.Add(item);
-                                break;
-                            case Os os:
-                                if (os.Id == Build.OsId)
-                                    Components.Add(item);
-                                break;
-                            default:
-                                break;
+                            var matchingItems = Ilist.Where(x => x.Id == id).ToList();
+                            foreach (var item in matchingItems)
+                            {
+                                TotalPrice += item.Price.Value;
+                                TotalPriceString = TotalPrice.ToString("C2");
+
+                                Components.Add(item);
+                            }
                         }
                     }
                 }
-            });            
+            });
         }
 
         [RelayCommand]
@@ -119,6 +102,16 @@ namespace PcArchitect.ViewModel
                     {"BuildName", Build.BuildName}
                 });
             }
+        }
+
+        [RelayCommand]
+        async Task ToDetail(IComponent selectedItem)
+        {
+            _bufferService.BuffComponent(selectedItem.Name, selectedItem);
+            await Shell.Current.GoToAsync(nameof(PartDetailPage), false, new Dictionary<string, object>
+            {
+                {"SelectedItem", selectedItem.Name}
+            });
         }
     }
 }

@@ -1,6 +1,4 @@
 ﻿using PcArchitect.Interfaces;
-using SQLite;
-using System.Runtime.Intrinsics.X86;
 using System.Text.Json.Serialization;
 
 namespace PcArchitect.Model
@@ -52,5 +50,10 @@ namespace PcArchitect.Model
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
         public bool? IsPresetFrameEnabled { get; set; } = false;
+
+
+        public bool? IsAdditionalPresetFrameEnabled { get; set; } = false;
+        public string? AdditionalName { get; set; }
+        public string? AdditionalDescription { get; set; }
     }
 }

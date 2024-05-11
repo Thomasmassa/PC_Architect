@@ -1,7 +1,5 @@
 ﻿using PcArchitect.Model;
 using SQLite;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace PcArchitect.Repository
 {

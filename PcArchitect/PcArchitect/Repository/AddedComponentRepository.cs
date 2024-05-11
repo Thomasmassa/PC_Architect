@@ -18,6 +18,12 @@ namespace PC_Architect.Model
         {
             Task.Run(() =>
             {
+                //langzamer en minder veilig dan switch
+                //var propertie = component.GetType().Name;
+                //_rootF.GetRoot2().GetType().GetProperty(propertie)?.SetValue(_rootF.GetRoot2(), component);
+
+
+                //sneller en veiliger
                 switch (component)
                 {
                     case Cpu cpu:
@@ -101,20 +107,8 @@ namespace PC_Architect.Model
             return Task.Run(() =>
             {
                 foreach (var property in _rootF.GetRoot2().GetType().GetProperties())
-                {
-                    if (property.PropertyType.IsGenericType &&
-                        property.PropertyType.GetGenericTypeDefinition() == typeof(List<>))
-                    {
-                        var list = (IList?)property.GetValue(_rootF.GetRoot2());
-                        if (list != null && list.Count > 1)
-                        {
-                            for (int i = list.Count - 1; i > 0; i--)
-                            {
-                                list.RemoveAt(i);
-                            }
-                        }
-                    }
-                }
+                    property.SetValue(_rootF.GetRoot2(), Activator.CreateInstance(property.PropertyType));
+                    
             });
         }
     }

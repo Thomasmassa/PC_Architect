@@ -54,30 +54,39 @@ namespace PcArchitect.ViewModel
             int? condition3 = null;
             int? condition4 = null;
 
-            switch (ComponentName)
+            try
+            { 
+                switch (ComponentName)
+                {
+                    case "CPU":
+                        if (_rootF.GetRoot2().Motherboard.Count > 0)
+                            condition1 = _rootF.GetRoot2().Motherboard[0].Socket.ToString(); // AM4, AM5, LGA1700
+                        break;
+                    case "MOTHERBOARD":
+                        if(_rootF.GetRoot2() != null)
+                            break;
+                        if (_rootF.GetRoot2().Cpu.Count > 0)
+                            condition1 = _rootF.GetRoot2().Cpu[0].Socket.ToString(); // AM4, AM5, LGA1700
+                        if (_rootF.GetRoot2().Memory.Count > 0)
+                        {
+                            condition2 = _rootF.GetRoot2().Memory[0].Speed_type.ToString(); // DDR4, DDR5
+                            condition3 = _rootF.GetRoot2().Memory[0].Module_size; // 4, 8, 16, 32, 64
+                            condition4 = _rootF.GetRoot2().Memory[0].Module_count; // 2, 4, 8
+                        }
+                        break;
+                    case "MEMORY":
+                        if (_rootF.GetRoot2() != null && _rootF.GetRoot2().Motherboard.Count() > 0)
+                        {
+                            condition2 = _rootF.GetRoot2().Motherboard[0].MemoryType.ToString(); // DDR4, DDR5
+                            condition3 = _rootF.GetRoot2().Motherboard[0].MemorySlots; // 2, 4, 8
+                            condition4 = _rootF.GetRoot2().Motherboard[0].MaxMemory; //64, 128, 256, 512
+                        }
+                        break;
+                }
+            }
+            catch (Exception e)
             {
-                case "CPU":
-                    if (_rootF.GetRoot2().Motherboard.Count > 1)
-                        condition1 = _rootF.GetRoot2().Motherboard[1].Socket.ToString(); // AM4, AM5, LGA1700
-                    break;
-                case "MOTHERBOARD":
-                    if (_rootF.GetRoot2().Cpu.Count > 1)
-                        condition1 = _rootF.GetRoot2().Cpu[1].Socket.ToString(); // AM4, AM5, LGA1700
-                    if (_rootF.GetRoot2().Memory.Count > 1)
-                    {
-                        condition2 = _rootF.GetRoot2().Memory[1].Speed_type.ToString(); // DDR4, DDR5
-                        condition3 = _rootF.GetRoot2().Memory[1].Module_size; // 4, 8, 16, 32, 64
-                        condition4 = _rootF.GetRoot2().Memory[1].Module_count; // 2, 4, 8
-                    }
-                    break;
-                case "MEMORY":
-                    if (_rootF.GetRoot2().Motherboard.Count() > 1)
-                    {
-                        condition2 = _rootF.GetRoot2().Motherboard[1].MemoryType.ToString(); // DDR4, DDR5
-                        condition3 = _rootF.GetRoot2().Motherboard[1].MemorySlots; // 2, 4, 8
-                        condition4 = _rootF.GetRoot2().Motherboard[1].MaxMemory; //64, 128, 256, 512
-                    }
-                    break;
+                Console.WriteLine(e);
             }
 
             if (ComponentName != null)
@@ -105,8 +114,7 @@ namespace PcArchitect.ViewModel
             foreach (var property in properties)
             {
                 var itemType = property.PropertyType.GetGenericArguments()[0];
-                string propertytype = itemType.Name.ToLower();
-                if (propertytype == ComponentName)
+                if (itemType.Name.ToLower() == ComponentName)
                 {
                     var list = (IList?)property.GetValue(_rootF.GetRoot1());
                     var Ilist = list?.Cast<IComponent>().ToList();
@@ -115,38 +123,35 @@ namespace PcArchitect.ViewModel
                     foreach (var item in Ilist)
                     {
                         bool pass = true;
-                        if (item.Price != null && item != null)
+                        switch (item)
                         {
-                            switch (item)
-                            {
-                                case Cpu cpu: // Als het item een CPU is
-                                    if (condition1 != cpu.Socket && condition1 != null) // Vergelijk CPU socket met de eerste voorwaarde
-                                        pass = false;
-                                    break;
-                                case Motherboard motherboard: // Als het item een moederbord is
-                                    if (condition1 != motherboard.Socket && condition1 != null) // Vergelijk moederbord socket met de eerste voorwaarde
-                                        pass = false;
-                                    if (condition2 != motherboard.MemoryType && condition2 != null) // Vergelijk moederbord memory type met de tweede voorwaarde
-                                        pass = false;
-                                    if (condition3 * condition4 > motherboard.MaxMemory && condition3 != null) // Vergelijk totaal memory grootte met moederbord maximaal memory
-                                        pass = false;
-                                    if (condition4 > motherboard.MemorySlots && condition4 != null) // Vergelijk aantal memory sticks met aantal slots op moederbord
-                                        pass = false;
-                                    break;
-                                case Memory memory: // Als het item geheugen is
-                                    if (condition2 != memory.Speed_type && condition2 != null) // Vergelijk geheugen speed type met de tweede voorwaarde
-                                        pass = false;
-                                    if (condition3 < memory.Module_count && condition4 != null) // Vergelijk aantal memory sticks met aantal slots op moederbord
-                                        pass = false;
-                                    if (condition4 < memory.Module_count * memory.Module_size && condition3 != null) //vergelijk  totaal memory grootte met moederbord maximaal memory
-                                        pass = false;
-                                    break;
-                            }
-                            if (pass)
-                                Components.Add(item);
+                            case Cpu cpu: // Als het item een CPU is
+                                if (condition1 != cpu.Socket && condition1 != null) // Vergelijk CPU socket met de eerste voorwaarde
+                                    pass = false;
+                                break;
+                            case Motherboard motherboard: // Als het item een moederbord is
+                                if (condition1 != motherboard.Socket && condition1 != null) // Vergelijk moederbord socket met de eerste voorwaarde
+                                    pass = false;
+                                if (condition2 != motherboard.MemoryType && condition2 != null) // Vergelijk moederbord memory type met de tweede voorwaarde
+                                    pass = false;
+                                if (condition3 * condition4 > motherboard.MaxMemory && condition3 != null) // Vergelijk totaal memory grootte met moederbord maximaal memory
+                                    pass = false;
+                                if (condition4 > motherboard.MemorySlots && condition4 != null) // Vergelijk aantal memory sticks met aantal slots op moederbord
+                                    pass = false;
+                                break;
+                            case Memory memory: // Als het item geheugen is
+                                if (condition2 != memory.Speed_type && condition2 != null) // Vergelijk geheugen speed type met de tweede voorwaarde
+                                    pass = false;
+                                if (condition3 < memory.Module_count && condition4 != null) // Vergelijk aantal memory sticks met aantal slots op moederbord
+                                    pass = false;
+                                if (condition4 < memory.Module_count * memory.Module_size && condition3 != null) //vergelijk  totaal memory grootte met moederbord maximaal memory
+                                    pass = false;
+                                break;
                         }
-                        continue;
+                        if (pass)
+                            Components.Add(item);
                     }
+                    return;
                 }
             }
         }

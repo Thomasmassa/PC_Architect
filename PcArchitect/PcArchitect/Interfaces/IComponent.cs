@@ -15,5 +15,10 @@ namespace PcArchitect.Interfaces
 
         bool? IsSelectedComponentFrameEnabled { get; set; }
         bool? IsPresetFrameEnabled { get; set; }
+
+
+        bool? IsAdditionalPresetFrameEnabled { get; set; }
+        string? AdditionalName { get; set; }
+        string? AdditionalDescription { get; set; } 
     }
 }
