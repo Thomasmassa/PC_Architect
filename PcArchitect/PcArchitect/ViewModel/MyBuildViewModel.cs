@@ -69,7 +69,7 @@ namespace PcArchitect.ViewModel
             while (name == "")
             {
                 name = await Shell.Current.DisplayPromptAsync("Change name", "Enter new name", "Ok", "Cancel", "enter new name");
-                if (name == "Cancel")
+                if (name == "Cancel" || name == null)
                     return;
                 if (buildNames.Contains(name))
                 {

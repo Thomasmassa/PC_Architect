@@ -135,12 +135,12 @@ namespace PcArchitect.ViewModel
 
                 while (name == "")
                 { 
-                    name = await Application.Current.MainPage.DisplayPromptAsync("Titel", "Voer titel in:", "Ok", "Cancel", placeholder: "Type hier...", 20);
-                    if (name == "Cancel")
+                    name = await Shell.Current.DisplayPromptAsync("Titel", "Voer titel in:", "Ok", "Cancel", placeholder: "Type hier...", 20);
+                    if (name == "Cancel" || name == null)
                         return;
                     if(buildNames.Contains(name))
                     {
-                        await Application.Current.MainPage.DisplayAlert("Error", "Name already exists", "OK");
+                        await Shell.Current.DisplayAlert("Error", "Name already exists", "OK");
                     }
                     else
                         SavedBuild.BuildName = name;
