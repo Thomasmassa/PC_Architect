@@ -47,11 +47,26 @@ xaml code aangepast.
 
 research doen voor het maken van een scraper met python voor alle andere componenten in de database vorige aanpak hiervan was te moeilijk.
 
-Week 11 (06/05): 5 uren:
+Week 11 (06/05): 17 uren:
 
 Trello aangemaakt voor de to do listss
 
-Scraper gemaakt voor omschrijving op te halen voor elke component. filter toegevoegd voor de  partlistPage om de compatibiliteit van de compoenten te regelen. models aangepast (propertys)
+Scraper gemaakt voor omschrijving op te halen voor elke component. filter toegevoegd voor de  partlistPage om de compatibiliteit van de compoenten (Cpu <--> Moederbord <--> Ram geheugen) te regelen. 
+
+InternetService class zal iedere 10 seconden (op een andere thread) kijken als er internet is om de data op te halen uit de firebase.
+komt steeds een Toast op het scherm die dit aangeeft (maakt gebruik van Xamarin.Essentials om de toast op de maijn thead te krijgen)
+
+PartDeatilpage afgemaakt met Description buttin om de text te togglen
+
+MyBuildPage, BuildDetailPage en views aangemaakt. Database repository aangemaakt. Kan vanuit de startbuild build opslaan => navigeert naar de MyBuildPage. kan naam en build verwijderen of details bekijken van de build. op de BuildDetailPage kan je de componenten bekijken van de build. de ids van de componenenten worden opgeslagen in de database dus de compoinenenten worden opgehaald uit de AllcomponentRepo. edit knop aangemaakt voor de build te editen in de StartBuildViewmodel. verwijdere knop voor de conponeneten te kunnen verwijderen uit de addedrepo zodat bij opslaan de SavedBuild class met de nieuwe id voor de zelfde priamryykey wordt opgeslagen in de db.
+
+kan vanuit de buildDetail ook naar de partdetail voor de scpecifieke part te zien.
+
+Fine tuning gedaan aan de code bij het inladen en verwijderen van componeneten in de startbuildviewmodel. gebruik nu .Remove i.p.v. Clear en dan alles terug laden (dit kon er haperend uitzien). Knop bij het toevoegen van storage of casefans komt er nu een knop tevoorschijn om nog extra componenten van dat type toe te voegen. 
+
+Root class heeft niet meer de preset ingebouwd wordt nu vanuit de Viewmodel geregeld met de SetPresets() methode.
+
+(we maken gebruik van een SqlLite db deze kan geen complexe/geneste classen opslaan, slaan de ids op met een string en vormen deze terug om naar een list<int>)
 
 
 Week 12 (13/05): ..... uren:
