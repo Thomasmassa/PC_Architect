@@ -16,7 +16,7 @@ namespace PcArchitect.ViewModel
         private readonly AddedComponentRepository _addedComponentRepository;
         private readonly BufferService _bufferService;
         private readonly RootFactory _rootF ;
-        private SavedBuild Build;
+        private SavedBuild? Build;
 
         public BuildDetailViewModel(RootFactory rootF, BufferService bufferService, AddedComponentRepository addedComponentRepository)
         {
@@ -39,7 +39,9 @@ namespace PcArchitect.ViewModel
                 foreach (var property in properties)
                 {
                     var list = (IList?)property.GetValue(_rootF.GetRoot1());
-                    var Ilist = list.Cast<IComponent>().ToList();
+                    var Ilist = list?.Cast<IComponent>().ToList();
+
+                    if (Ilist == null) continue;
                     foreach (var item in Ilist)
                     {
                         if (item.Price == null)
@@ -109,12 +111,14 @@ namespace PcArchitect.ViewModel
                 await _addedComponentRepository.AddComponentAsync(component);
             }
 
-            _bufferService.BuffComponent(Build.BuildName, Build);
-
-            await Shell.Current.GoToAsync(nameof(StartBuildingPage), false, new Dictionary<string, object> 
+            if (Build != null)
             {
-                {"BuildName", Build.BuildName}
-            });
+                _bufferService.BuffComponent(Build.BuildName, Build);
+                await Shell.Current.GoToAsync(nameof(StartBuildingPage), false, new Dictionary<string, object>
+                {
+                    {"BuildName", Build.BuildName}
+                });
+            }
         }
     }
 }

@@ -19,7 +19,7 @@ namespace PcArchitect.Model
 
         private string _description = "";
         [JsonPropertyName("description")]
-        public string? Description
+        public string Description
         {
             get { return string.IsNullOrEmpty(_description) ? "No description available" : _description; }
             set { _description = value; }
@@ -31,7 +31,7 @@ namespace PcArchitect.Model
         [JsonPropertyName("price")]
         public double? Price { get; set; }
         [JsonPropertyName("rpm")]
-        public object Rpm { get; set; } 
+        public object? Rpm { get; set; } 
         [JsonPropertyName("noise_level")]
         public object NoiseLevel { get; set; } = "";
         [JsonPropertyName("color")]

@@ -27,7 +27,7 @@ namespace PcArchitect.ViewModel
         bool isDescriptionVisible;
 
         [ObservableProperty]
-        string totalPriceString;
+        string? totalPriceString;
 
         [ObservableProperty]
         bool isAdditionalPresetFrameEnabled;

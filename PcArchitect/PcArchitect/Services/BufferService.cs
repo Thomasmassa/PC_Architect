@@ -26,7 +26,7 @@ namespace PcArchitect.Services
 
         public object GetBufferedComponent(string componentName)
         {
-            object component = null;
+            object? component = null;
             if (buffer.ContainsKey(componentName))
             {
                 component = buffer[componentName];

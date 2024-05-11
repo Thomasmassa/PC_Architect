@@ -42,10 +42,13 @@ namespace PcArchitect.ViewModel
         }
 
         [RelayCommand]
-        async Task PageNavigated(NavigatedToEventArgs args)
+        public void PageNavigated(NavigatedToEventArgs args)
         {
-            var component = (IComponent)_bufferService.GetBufferedComponent(SelectedItem);
-            Component.Add(component);
+            IComponent? component = null;
+            if (SelectedItem != null)
+                component = (IComponent)_bufferService.GetBufferedComponent(SelectedItem);
+            if (component != null)
+                Component.Add(component);
         }
 
         //[RelayCommand]

@@ -54,7 +54,7 @@ namespace PcArchitect.ViewModel
             }
 
             AddParts();
-            OnSearch("");
+            await OnSearch("");
         }
 
         private void AddParts()
@@ -64,8 +64,9 @@ namespace PcArchitect.ViewModel
             foreach (var property in properties)
             {
                 var list = (IList?)property.GetValue(_rootF.GetRoot1());
-                var Ilist = list.Cast<IComponent>().ToList();
+                var Ilist = list?.Cast<IComponent>().ToList();
 
+                if (Ilist == null) continue;
                 foreach (var item in Ilist)
                 {
                     if (item.Price != null && item != null)

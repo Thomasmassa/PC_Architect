@@ -16,7 +16,7 @@ namespace PcArchitect.Services
         private const string BaseUrl = "https://pcarchitectparts-default-rtdb.europe-west1.firebasedatabase.app/";
 
         private readonly HttpClient _client = new();
-        public async Task<List<T>> GetComponentsAsync<T>(string path)
+        public async Task<List<T>?> GetComponentsAsync<T>(string path)
         {
             try
             {

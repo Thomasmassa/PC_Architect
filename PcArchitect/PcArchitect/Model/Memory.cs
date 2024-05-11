@@ -22,14 +22,14 @@ namespace PcArchitect.Model
         private string _description = "";
 
         [JsonPropertyName("description")]
-        public string? Description
+        public string Description
         {
             get { return string.IsNullOrEmpty(_description) ? "No description available" : _description; }
             set { _description = value; }
         }
 
         [JsonPropertyName("name")]
-        public string? Name { get; set; }
+        public string Name { get; set; } = "";
         [JsonPropertyName("price")]
         public double? Price { get; set; }
         [JsonPropertyName("price_per_gb")]
@@ -41,7 +41,7 @@ namespace PcArchitect.Model
         [JsonPropertyName("cas_latency")]
         public int? Cas_latency { get; set; }
         [JsonPropertyName("speed_type")]
-        public string? Speed_type { get; set; }//DDR4, DDR5
+        public string Speed_type { get; set; } = "";//DDR4, DDR5
         [JsonPropertyName("speed_value")]
         public int? Speed_value { get; set; }//3200, 3600
         [JsonPropertyName("module_count")]

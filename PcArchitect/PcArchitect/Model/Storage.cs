@@ -22,7 +22,7 @@ namespace PcArchitect.Model
         private string _description = "";
 
         [JsonPropertyName("description")]
-        public string? Description
+        public string Description
         {
             get { return string.IsNullOrEmpty(_description) ? "No description available" : _description; }
             set { _description = value; }

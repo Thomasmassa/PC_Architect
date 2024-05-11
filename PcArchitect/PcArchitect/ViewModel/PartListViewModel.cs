@@ -15,7 +15,7 @@ namespace PcArchitect.ViewModel
     [QueryProperty(nameof(ComponentName), "ComponentName")]
     public partial class PartListViewModel : BaseViewModel
     {
-        public string ComponentName { get; set; }
+        public string? ComponentName { get; set; }
         public ObservableCollection<IComponent> Components { get; set; } = [];
         public ObservableCollection<IComponent> DisplayedItems { get; set; } = [];
 
@@ -80,7 +80,7 @@ namespace PcArchitect.ViewModel
                     break;
             }
 
-            if (ComponentName != "")
+            if (ComponentName != null)
             {
                 Components.Clear();
                 Title = $"{ComponentName} LIST";
@@ -109,7 +109,9 @@ namespace PcArchitect.ViewModel
                 if (propertytype == ComponentName)
                 {
                     var list = (IList?)property.GetValue(_rootF.GetRoot1());
-                    var Ilist = list.Cast<IComponent>().ToList();
+                    var Ilist = list?.Cast<IComponent>().ToList();
+
+                    if (Ilist == null) continue;
                     foreach (var item in Ilist)
                     {
                         bool pass = true;

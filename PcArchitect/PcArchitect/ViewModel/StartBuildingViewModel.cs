@@ -8,6 +8,7 @@ using System.Collections;
 using System.Diagnostics;
 using PcArchitect.Repository;
 using PcArchitect.Services;
+using System.Xml.Linq;
 
 // DIT IS DE VIEWMODEL VOOR DE PAGINA WAAR DE CATAGORIEEN WORDEN WEERGEGEVEN
 
@@ -16,7 +17,7 @@ namespace PcArchitect.ViewModel
     [QueryProperty(nameof(BuildName), "BuildName")]
     public partial class StartBuildingViewModel : BaseViewModel
     {
-        public string BuildName { get; set; }
+        public string? BuildName { get; set; }
 
         public ObservableCollection<IComponent> Components { get; set; }
         private readonly AddedComponentRepository _addedomponentRepository;
@@ -24,7 +25,7 @@ namespace PcArchitect.ViewModel
         private readonly BufferService _bufferService;
         private readonly RootFactory _rootF;
         private double TotalPrice;
-        SavedBuild SavedBuild;
+        SavedBuild? SavedBuild;
 
         //////////////////////////////////////////////
 
@@ -50,7 +51,7 @@ namespace PcArchitect.ViewModel
         //ADD COMPONENTS
         public Task AddComponents()
         {
-            return Task.Run(async () =>
+            return Task.Run(() =>
             {
                 var properties = typeof(Root).GetProperties();
 
@@ -80,7 +81,6 @@ namespace PcArchitect.ViewModel
                                     AdditionalName = "+ Add Additional Storage";
                                 }
                             }
-
                             Components.Add(lastItem);
                         }
                     }
@@ -99,16 +99,12 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         private async Task PageNavigated(NavigatedToEventArgs args)
         {
-            try
-            {
+            if (BuildName != null)
                 SavedBuild = (SavedBuild)_bufferService.GetBufferedComponent(BuildName);
-            }
-            catch (Exception) { };
-
 
             TotalPriceString = "€0.00";
 
-            if (SavedBuild.BuildName == null)
+            if (SavedBuild == null)
                 Title = "Start Building";
             else
                 Title = $"Edit: {SavedBuild.BuildName}";
@@ -156,7 +152,9 @@ namespace PcArchitect.ViewModel
             foreach (var property in properties)
             {
                 var list = (IList?)property.GetValue(_rootF.GetRoot2());
-                var Ilist = list.Cast<IComponent>().ToList();
+                var Ilist = list?.Cast<IComponent>().ToList();
+
+                if (Ilist == null) continue;
                 foreach (var item in Ilist)
                 {
                     switch (item)
@@ -244,6 +242,15 @@ namespace PcArchitect.ViewModel
         {
             if (component == null)
                 return;
+
+            if(SavedBuild != null)
+            {
+                bool choice = await Shell.Current.DisplayAlert("WARNING", "Wil je opslaan voor je vertrekt", "Save", "Discard");
+                if (choice)
+                    await SaveBuild();
+                else
+                    await _addedomponentRepository.ClearComponents();
+            }
 
             Components.Clear();
             // Navigeer naar de PartsList pagina
