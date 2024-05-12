@@ -61,7 +61,7 @@
                                     <ColumnDefinition Width="4*" />
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="{Binding Image}" 
+                                <Image Source="{Binding PresetImage}" 
                                        Grid.Column="0"/>
                                 <Label Text="{Binding Name}" 
                                        TextColor="Black" 

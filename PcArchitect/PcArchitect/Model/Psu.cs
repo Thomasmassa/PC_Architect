@@ -49,8 +49,10 @@ namespace PcArchitect.Model
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
         public bool? IsPresetFrameEnabled { get; set; } = false;
+        public string? PresetImage { get; set; }
 
-        public bool? IsAdditionalPresetFrameEnabled { get; set; }
+
+        public bool? IsAdditionalPresetFrameEnabled { get; set; } = false;
         public string? AdditionalName { get; set; }
         public string? AdditionalDescription { get; set; }
     }

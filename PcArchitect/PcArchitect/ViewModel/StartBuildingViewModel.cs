@@ -50,16 +50,16 @@ namespace PcArchitect.ViewModel
 
         private void SetPresets()
         {
-            Presets.Add(new Cpu { Name = "CPU", Image = "cpu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new CpuCooler { Name = "CPU COOLER", Image = "cpu_cooler.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Gpu { Name = "GPU", Image = "gpu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Motherboard { Name = "MOTHERBOARD", Image = "motherboard.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Memory { Name = "MEMORY", Image = "memory.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Storage { Name = "STORAGE", Image = "ssd.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Psu { Name = "PSU", Image = "psu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new CaseFan { Name = "CASE FAN", Image = "case_fan.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Case { Name = "CASE", Image = "case_tower.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Os { Name = "OS", Image = "os.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Cpu { Name = "CPU", PresetImage = "cpu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new CpuCooler { Name = "CPU COOLER", PresetImage = "cpu_cooler.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Gpu { Name = "GPU", PresetImage = "gpu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Motherboard { Name = "MOTHERBOARD", PresetImage = "motherboard.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Memory { Name = "MEMORY", PresetImage = "memory.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Storage { Name = "STORAGE", PresetImage = "ssd.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Psu { Name = "PSU", PresetImage = "psu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new CaseFan { Name = "CASE FAN", PresetImage = "case_fan.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Case { Name = "CASE", PresetImage = "case_tower.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Os { Name = "OS", PresetImage = "os.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
         }
 
 
@@ -101,8 +101,6 @@ namespace PcArchitect.ViewModel
                             TotalPriceString = TotalPrice.ToString("C2");
                             Components.Add(item);   
                         }   
-                        if (list is List<Memory> && list.Count > 0)
-                            Components.Add(new Memory { AdditionalName = "Memory", AdditionalDescription = "+ Add Additional Memory", IsAdditionalPresetFrameEnabled = true });
                         if (list is List<Storage> && list.Count > 0)
                             Components.Add(new Storage { AdditionalName = "Storage", AdditionalDescription = "+ Add Additional Storage", IsAdditionalPresetFrameEnabled = true });
                         if (list is List<CaseFan> && list.Count > 0)
@@ -148,20 +146,23 @@ namespace PcArchitect.ViewModel
         {
             bool newBuild = false;
 
-            if (SavedBuild == null)
+            string buildName = SavedBuild?.BuildName ?? "";//pakt de naam van de build als die bestaat
+            SavedBuild = new SavedBuild();//maakt een nieuwe build aan
+            SavedBuild.BuildName = buildName ?? "";//zet de naam van de build in de nieuwe build als die bestaat
+
+            if (SavedBuild.BuildName == "")
             {
-                SavedBuild = new SavedBuild();
 
                 string name = "";
                 var savedBuilds = _database.GetItemsAsync();
                 var buildNames = savedBuilds.Result.Select(x => x.BuildName).ToList();
 
                 while (name == "")
-                { 
+                {
                     name = await Shell.Current.DisplayPromptAsync("Titel", "Voer titel in:", "Ok", "Cancel", placeholder: "Type hier...", 20);
                     if (name == "Cancel" || name == null)
                         return;
-                    if(buildNames.Contains(name))
+                    if (buildNames.Contains(name))
                     {
                         await Shell.Current.DisplayAlert("Error", $"{name} already exists", "OK");
                         name = "";
@@ -171,6 +172,7 @@ namespace PcArchitect.ViewModel
                 }
                 newBuild = true;
             }
+            
 
             var properties = typeof(Root).GetProperties();
             foreach (var property in properties)
@@ -289,12 +291,12 @@ namespace PcArchitect.ViewModel
                 var getpreset = Components.Where(x => x.GetType() == type).ToList();
                 if (getpreset.Count == 1)
                 {
-                    Components.Insert(index, Presets.FirstOrDefault(x => x.GetType() == type));
+                    Components.Insert(index + 1, Presets.FirstOrDefault(x => x.GetType() == type));
                 }
                 else if (getpreset.Count == 2)
                 {
+                    Components.Insert(index + 1, Presets.FirstOrDefault(x => x.GetType() == type));
                     Components.Remove(getpreset[1]);
-                    Components.Insert(index, Presets.FirstOrDefault(x => x.GetType() == type));
                 }
 
                 Components.Remove(component);
