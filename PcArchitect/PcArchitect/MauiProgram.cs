@@ -10,7 +10,7 @@ using PcArchitect.Views;
 using SkiaSharp.Views.Maui.Controls.Hosting;
 
 // STARTPUNT VAN DE APPLICATIE
-// CREATIE MAUI APP 
+// CREATIE EN CONFIGURATIE MAUI APP 
 
 namespace PcArchitect
 {
@@ -30,6 +30,7 @@ namespace PcArchitect
                     fonts.AddFont("Koulen.ttf", "Koulen");
                 });
 
+            // een singleton service wordt slechts eenmaal geïnstantieerd en gebruikt in de gehele applicatie
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
             
@@ -51,6 +52,7 @@ namespace PcArchitect
             builder.Services.AddSingleton<SearchViewModel>();
             builder.Services.AddSingleton<SearchPage>();
 
+            // een transient service wordt elke keer opnieuw geïnstantieerd wanneer deze wordt aangeroepen
             builder.Services.AddTransient<BuildDetailViewModel>();
             builder.Services.AddTransient<BuildDetailPage>();
             builder.Services.AddTransient<PartDetailViewModel>();

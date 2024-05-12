@@ -4,8 +4,14 @@ using PcArchitect.Repository;
 using PcArchitect.Services;
 using PcArchitect.Views;
 
-// IS DE VIEWMODEL VAN DE HOOFDPAGINA VAN DE APPLICATIE
-// DEZE VIEWMODEL BEVAT DE COMMANDS OM NAAR 3 VERSCHILLENDE PAGINA'S TE GAAN
+/*
+De MainViewModel klasse erft van de BaseViewModel klasse en is verantwoordelijk voor het beheren van de gegevens en logica voor de MainPage.
+
+De PageNavigated methode is een asynchrone methode die wordt aangeroepen wanneer de pagina is geladen. 
+Het roept de CheckInternetConnectionAsync methode aan van de _internetService om te controleren of er een internetverbinding is.
+
+Vanuit de MainPage kunnen gebruikers navigeren naar de StartBuildingPage, MyBuildPage en SearchPage.
+*/
 
 namespace PcArchitect.ViewModel
 {

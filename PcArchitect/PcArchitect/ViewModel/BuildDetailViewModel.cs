@@ -7,15 +7,36 @@ using PcArchitect.Model;
 using System.Collections;
 using PC_Architect.Model;
 
+/*
+De BuildDetailViewModel klasse is verantwoordelijk voor het beheren van de details van een specifieke build.
+
+De ObservableCollection<IComponent> Components is een collectie die de componenten van de huidige build bevat. 
+Wanneer items aan deze collectie worden toegevoegd of verwijderd, wordt de view automatisch bijgewerkt.
+
+De AddedComponentRepository, BufferService en RootFactory zijn services die worden geïnjecteerd via de constructor. 
+Deze services worden gebruikt om gegevens op te halen en te beheren.
+
+De SavedBuild? Build is een nullable type dat de huidige build vertegenwoordigt.
+
+In de constructor worden de services geïnitialiseerd en wordt de Components collectie ingesteld op een lege lijst. 
+Vervolgens wordt de AddComponents methode aangeroepen om de componenten van de huidige build toe te voegen aan de Components collectie.
+
+De BackButton methode is een commando dat de gebruiker terugbrengt naar de MyBuildPage.
+
+De EditBuild methode is een commando dat de huidige lijst van componenten leegmaakt, 
+de componenten van de huidige build toevoegt aan de repository en vervolgens navigeert naar de StartBuildingPage om de build te bewerken.
+
+De ToDetail methode is een commando dat het geselecteerde item in de buffer plaatst en vervolgens navigeert naar de PartDetailPage om de details van het geselecteerde item te bekijken.
+*/
+
 namespace PcArchitect.ViewModel
 {
     public partial class BuildDetailViewModel : BaseViewModel
     {
-        public ObservableCollection<IComponent> Components{ get; set; }
-        
+        public ObservableCollection<IComponent> Components { get; set; }
         private readonly AddedComponentRepository _addedComponentRepository;
         private readonly BufferService _bufferService;
-        private readonly RootFactory _rootF ;
+        private readonly RootFactory _rootF;
         private SavedBuild? Build;
 
         public BuildDetailViewModel(RootFactory rootF, BufferService bufferService, AddedComponentRepository addedComponentRepository)
@@ -58,7 +79,6 @@ namespace PcArchitect.ViewModel
                     var Ilist = list?.Cast<IComponent>().ToList();
 
                     if (Ilist == null) continue;
-
 
                     if (componentTypeToIdMap.TryGetValue(property.PropertyType.GetGenericArguments()[0], out var getIds))
                     {

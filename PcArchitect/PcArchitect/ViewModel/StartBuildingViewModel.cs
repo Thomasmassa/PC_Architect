@@ -11,7 +11,22 @@ using PcArchitect.Services;
 using System;
 using System.Reflection;
 
-// DIT IS DE VIEWMODEL VOOR DE PAGINA WAAR DE CATAGORIEEN WORDEN WEERGEGEVEN
+/*
+Deze klasse is verantwoordelijk voor het beheren van de toestand en operaties van het samenstellen van een pc.
+
+- `BuildName`: De naam van de huidige build.
+- `Components`: Een collectie van componenten die aan de build zijn toegevoegd.
+- `TotalPrice`: De totale prijs van de huidige build.
+- `Presets`: Een lijst van voorgedefinieerde componenten.
+- `AddComponents()`: Een methode die componenten toevoegt aan de build.
+- `PageNavigated()`: Een methode die wordt aangeroepen wanneer de pagina wordt geladen.
+- `SaveBuild()`: Een methode die de huidige build opslaat.
+- `GoToPartsList()`: Een methode die navigeert naar de onderdelenlijst.
+- `DeleteComponent()`: Een methode die een component uit de build verwijdert.
+- `BackButton()`: Een methode die wordt aangeroepen wanneer de terugknop wordt ingedrukt.
+
+Deze klasse maakt gebruik van verschillende services en repositories om gegevens op te halen en te manipuleren. 
+*/
 
 namespace PcArchitect.ViewModel
 {
@@ -52,16 +67,15 @@ namespace PcArchitect.ViewModel
         {
             Presets.Add(new Cpu { Name = "CPU", Image = "cpu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
             Presets.Add(new CpuCooler { Name = "CPU COOLER", Image = "cpu_cooler.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Gpu { Name = "GPU", Image = "gpu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Motherboard { Name = "MOTHERBOARD", Image = "motherboard.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Memory { Name = "MEMORY", Image = "memory.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Storage { Name = "STORAGE", Image = "ssd.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Psu { Name = "PSU", Image = "psu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new CaseFan { Name = "CASE FAN", Image = "case_fan.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Case { Name = "CASE", Image = "case_tower.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
-            Presets.Add(new Os { Name = "OS", Image = "os.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Gpu { Name = "GPU", Image = "gpu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Motherboard { Name = "MOTHERBOARD", Image = "motherboard.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Memory { Name = "MEMORY", Image = "memory.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Storage { Name = "STORAGE", Image = "ssd.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Psu { Name = "PSU", Image = "psu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new CaseFan { Name = "CASE FAN", Image = "case_fan.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Case { Name = "CASE", Image = "case_tower.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
+            Presets.Add(new Os { Name = "OS", Image = "os.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false });
         }
-
 
 
         //////////////////////////////////////////////
@@ -91,7 +105,7 @@ namespace PcArchitect.ViewModel
                             Components.Add(getpreset);
                             continue;
                         }
-                        
+
                         foreach (var item in Items)
                         {
                             item.IsSelectedComponentFrameEnabled = true;
@@ -99,8 +113,8 @@ namespace PcArchitect.ViewModel
 
                             TotalPrice += item.Price ?? 0;
                             TotalPriceString = TotalPrice.ToString("C2");
-                            Components.Add(item);   
-                        }   
+                            Components.Add(item);
+                        }
                         if (list is List<Memory> && list.Count > 0)
                             Components.Add(new Memory { AdditionalName = "Memory", AdditionalDescription = "+ Add Additional Memory", IsAdditionalPresetFrameEnabled = true });
                         if (list is List<Storage> && list.Count > 0)
@@ -141,7 +155,7 @@ namespace PcArchitect.ViewModel
         //////////////////////////////////////////////
 
         //////////////////////////////////////////////
-        
+
 
         [RelayCommand]
         public async Task SaveBuild()
@@ -157,11 +171,11 @@ namespace PcArchitect.ViewModel
                 var buildNames = savedBuilds.Result.Select(x => x.BuildName).ToList();
 
                 while (name == "")
-                { 
+                {
                     name = await Shell.Current.DisplayPromptAsync("Titel", "Voer titel in:", "Ok", "Cancel", placeholder: "Type hier...", 20);
                     if (name == "Cancel" || name == null)
                         return;
-                    if(buildNames.Contains(name))
+                    if (buildNames.Contains(name))
                     {
                         await Shell.Current.DisplayAlert("Error", $"{name} already exists", "OK");
                         name = "";
@@ -222,7 +236,7 @@ namespace PcArchitect.ViewModel
                 await _database.SaveItemAsync(SavedBuild);
             else
                 await _database.UpdateItemAsync(SavedBuild);
-                
+
             Components.Clear();
             SavedBuild = null;
             await _addedomponentRepository.ClearComponents();
@@ -279,7 +293,6 @@ namespace PcArchitect.ViewModel
 
                 await _addedomponentRepository.RemoveComponentAsync(component);
 
-
                 int index = 0;
                 var type = component.GetType();
 
@@ -301,7 +314,7 @@ namespace PcArchitect.ViewModel
             }
         }
         //DELETECOMPONENT
-        
+
 
 
         //////////////////////////////////////////////
@@ -323,7 +336,7 @@ namespace PcArchitect.ViewModel
 
                 SavedBuild = null;
             }
-                Components.Clear();
+            Components.Clear();
 
             try
             {

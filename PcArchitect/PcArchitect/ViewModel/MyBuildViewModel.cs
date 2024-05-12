@@ -5,9 +5,16 @@ using PcArchitect.Views;
 using PcArchitect.Services;
 using PcArchitect.Model;
 using PcArchitect.Repository;
-using CommunityToolkit.Maui.Core;
 
-// DEZE VIEWMODEL BEVAT DE LIJST VAN COMPONENTEN DIE DE GEBRUIKER HEEFT TOEGEVOEGD AAN ZIJN/HAAR BUILD
+/*
+De MyBuildViewModel klasse erft van de BaseViewModel klasse en is verantwoordelijk voor het beheren van de gegevens en logica voor de MyBuildPage.
+
+Het heeft twee private readonly velden: _localDatabase en _bufferService. 
+Deze zijn services die worden geïnjecteerd via de constructor en worden gebruikt om gegevens op te slaan en te manipuleren.
+
+De PageNavigated methode is een asynchrone methode die wordt aangeroepen wanneer de pagina is geladen.
+Het haalt de opgeslagen builds op uit de lokale database en voegt ze toe aan de SavedBuilds collectie.
+*/
 
 namespace PcArchitect.ViewModel
 {
@@ -28,10 +35,10 @@ namespace PcArchitect.ViewModel
         async Task PageNavigated()
         {
             SavedBuilds.Clear();
-            
+
             var savedBuilds = await _localDatabase.GetItemsAsync();
             if (savedBuilds.Count == 0)
-            { 
+            {
                 await Toast.Make("No saved builds").Show();
                 return;
             }

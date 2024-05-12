@@ -6,7 +6,31 @@ using PcArchitect.Views;
 using System.Collections;
 using System.Collections.ObjectModel;
 
-// DIT IS DE VIEWMODEL VOOR DE ZOEKLIJST VAN ALLE COMPONENTEN
+/*
+De SearchViewModel is een ViewModel die de SearchPage aanstuurt.
+
+Deze ViewModel bevat een lijst van alle componenten die in de RootFactory zijn aangemaakt.
+Deze lijst wordt gebruikt om de zoekresultaten te tonen.
+
+Wanneer de pagina wordt geopend, wordt de methode PageNavigated aangeroepen. 
+Deze methode maakt de lijsten Components en DisplayedItems leeg, 
+controleert de internetconnectiviteit en roept vervolgens de methoden AddParts en OnSearch aan.
+
+De methode AddParts voegt alle componenten uit het Root object toe aan de Components collectie.
+
+De methode OnSearch wordt gebruikt om de zoekopdracht uit te voeren. 
+Het filtert de componenten op basis van de zoekterm en voegt de gefilterde componenten toe aan de DisplayedItems collectie.
+
+De methode BackButton wordt aangeroepen wanneer de terugknop wordt ingedrukt. 
+Het navigeert de gebruiker terug naar de MainPage.
+
+De methode TextChanged wordt aangeroepen wanneer de tekst in de zoekbalk verandert. 
+Het controleert of de nieuwe tekst leeg is en toont een toast bericht als dat het geval is. 
+Het maakt dan de DisplayedItems lijst leeg en roept de OnSearch methode aan met de nieuwe tekst.
+
+De methode PartToDetail wordt aangeroepen wanneer een onderdeel wordt geselecteerd uit de zoekresultaten. 
+Het navigeert naar de DetailPage van het geselecteerde onderdeel.
+*/
 
 namespace PcArchitect.ViewModel
 {
@@ -165,19 +189,5 @@ namespace PcArchitect.ViewModel
 
         //////////////////////////////////////////////
 
-        // PICKER HEEFT GEEN COMMAND FUNCTIE
-
-        //[RelayCommand]
-        //async Task OnPickIndexChanged(int index)
-        //{
-        //    if (index == -1)
-        //        return;
-        //    else if (index == 0)
-        //        OnSearch("");
-        //    else
-        //    {
-        //        var properties = typeof(Root).GetProperties();
-        //    }
-        //}
     }
 }

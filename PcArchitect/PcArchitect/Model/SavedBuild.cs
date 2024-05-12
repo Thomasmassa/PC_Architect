@@ -1,5 +1,19 @@
 ﻿using SQLite;
-using System.ComponentModel.DataAnnotations.Schema;
+
+/*
+SQLite is een database engine die wordt gebruikt om de gegevens van de applicatie op te slaan.
+De attributen (zoals PrimaryKey) worden gebruikt om de eigenschappen van de klasse te markeren als kolommen in de database.
+
+De klasse SavedBuild bevat de eigenschappen van een opgeslagen build.
+Deze klasse wordt gebruikt om de gegevens van een build op te slaan in de database.
+De eigenschappen van de klasse zijn de naam van de build en de ID's van de onderdelen van de build.
+
+De eigenschappen van de klasse zijn gemarkeerd met de attributen PrimaryKey en Ignore
+om aan te geven dat de eigenschap de primaire sleutel is en dat de eigenschap niet moet worden opgeslagen in de database.
+De eigenschappen van de klasse hebben een getter en setter die de ID's van de onderdelen omzetten van en naar een string.
+
+SQLite ondersteunt geen lijsten als gegevenstypen, dus de ID's van de onderdelen worden opgeslagen als een string van komma-gescheiden waarden.
+*/
 
 namespace PcArchitect.Model
 {

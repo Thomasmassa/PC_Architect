@@ -8,7 +8,21 @@ using PcArchitect.Services;
 using PcArchitect.Model;
 using System.Collections;
 
-// DIT IS DE VIEWMODEL VOOR DE LIJST VAN COMPONENTEN DIE WORDEN OPGEHAALD AFHANKELIJK VAN DE GESELECTEERDE CATEGORIE
+/*
+De PartListViewModel klasse erft van de BaseViewModel klasse en is verantwoordelijk voor het beheren van de gegevens en logica voor de PartListPage.
+
+De klasse bevat de volgende methoden:
+- PageNavigated: Deze methode wordt aangeroepen wanneer de pagina wordt genavigeerd. 
+                 Het bepaalt welke onderdelen moeten worden weergegeven op basis van de naam van het onderdeel.
+- AddParts: Deze methode voegt onderdelen toe aan de lijst van onderdelen op basis van de naam van het onderdeel en de voorwaarden.
+- TextChanged: Deze methode wordt aangeroepen wanneer de tekst in de zoekbalk wordt gewijzigd. 
+               Het filtert de onderdelen op basis van de zoektekst.
+- OnSearch: Deze methode filtert de onderdelen op basis van de zoektekst.
+- BackButton: Deze methode wordt aangeroepen wanneer de terugknop wordt ingedrukt. 
+              Het navigeert terug naar de StartBuildingPage.
+- AddSelectedPartToRepository: Deze methode voegt het geselecteerde onderdeel toe aan de repository en navigeert terug naar de StartBuildingPage.
+- PartToDetail: Deze methode navigeert naar de PartDetailPage voor het geselecteerde onderdeel.
+*/
 
 namespace PcArchitect.ViewModel
 {
@@ -55,7 +69,7 @@ namespace PcArchitect.ViewModel
             int? condition4 = null;
 
             try
-            { 
+            {
                 switch (ComponentName)
                 {
                     case "CPU":
@@ -63,7 +77,7 @@ namespace PcArchitect.ViewModel
                             condition1 = _rootF.GetRoot2().Motherboard[0].Socket.ToString(); // AM4, AM5, LGA1700
                         break;
                     case "MOTHERBOARD":
-                        if(_rootF.GetRoot2() != null)
+                        if (_rootF.GetRoot2() != null)
                             break;
                         if (_rootF.GetRoot2().Cpu.Count > 0)
                             condition1 = _rootF.GetRoot2().Cpu[0].Socket.ToString(); // AM4, AM5, LGA1700

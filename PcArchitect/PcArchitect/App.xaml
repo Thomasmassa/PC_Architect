@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:PcArchitect"
              x:Class="PcArchitect.App">
     
-    <!-- HOOFD XAML BESTAND -->
+    <!-- Dit is het hoofd xaml bestand van de applicatie. Hierin worden de verschillende "StaticResources" gedefinieerd voor gebruik over de hele applicatie-->
 
     <Application.Resources>
         <ResourceDictionary>

@@ -66,16 +66,6 @@
                                 EventName="TextChanged" />
                     </SearchBar.Behaviors>
                 </SearchBar>
-
-                <Picker x:Name="filterPicker" Title="Dit is een filter systeem voor te filteren">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>CPU</x:String>
-                            <x:String>CPU COOLER</x:String>
-                            <x:String>GPU</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
             </Grid>
         </Frame>
         <CollectionView ItemsSource="{Binding DisplayedItems}" VerticalOptions="FillAndExpand">

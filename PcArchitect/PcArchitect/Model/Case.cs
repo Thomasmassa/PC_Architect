@@ -2,7 +2,16 @@
 using SQLite;
 using System.Text.Json.Serialization;
 
-// MODEL KLASSE CASE DIE OVERERFT VAN ICOMPONENT
+/*
+Case klasse implementeert de IComponent interface, wat betekent dat het alle eigenschappen van die interface bevat.
+De boolean eigenschappen worden gebruikt om de zichtbaarheid van de frames in de view te bepalen.
+Ze zijn in de modelklassen gedefinieerd omdat ze specifiek zijn voor elk component.
+
+De eigenschappen van de klasse, zoals Id, Image, etc., worden gemarkeerd met het JsonPropertyName attribuut. 
+Dit attribuut specificeert de naam van het veld wanneer een object wordt geserialiseerd naar (object -> Json string formaat) of gedeserialiseerd (Json string formaat -> object) van JSON. 
+Dit is hier vooral handig omdat de namen van de velden in de JSON-bestanden niet overeenkomen met de eigenschapsnamen in de klasse.
+Dient als een soort van mapping tussen de JSON en de klasse.
+*/
 
 namespace PcArchitect.Model
 {
@@ -12,8 +21,6 @@ namespace PcArchitect.Model
         public int Id { get; set; }
 
         private string _image = "";
-
-        // ALS DE AFBEELDING LEEG IS WORDT ER EEN STANDAARD AFBEELDING "imagenotfound.png" GEBRUIKT
 
         [JsonPropertyName("image")]
         public string Image
@@ -48,14 +55,10 @@ namespace PcArchitect.Model
         [JsonPropertyName("internal_35_bays")]
         public int Internal35Bays { get; set; }
 
-        // DE DESCRIPTION EIGENSCHAP WORDT GEBRUIKT OM DE UNIEKE INFORMATIE VAN DE CASE TE TONEN, BUITEN DE OVERGEËRFDE EIGENSCHAPPEN VAN ICOMPONENT
-
         public string Details
         {
             get { return $"Type: {Type}\nSide Panel: {SidePanel}\nExternal Volume: {ExternalVolume}\nPsu: {Psu}\nInternal 35 Bays: {Internal35Bays}\nColor: {Color}"; }
         }
-
-        // DE VOLGENDE EIGENSCHAPPEN WORDEN GEBRUIKT OM DELEN IN DE XAML TE TONEN OF TE VERBERGEN
 
         public bool? IsSelectedComponentFrameEnabled { get; set; } = false;
         public bool? IsPresetFrameEnabled { get; set; } = false;

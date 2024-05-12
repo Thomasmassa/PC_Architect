@@ -1,6 +1,13 @@
 ﻿using CommunityToolkit.Maui.Alerts;
-using Xamarin.Essentials;
 using PcArchitect.Repository;
+
+/*
+De InternetService klasse controleert de internetverbinding en haalt componenten op als er een verbinding is.
+
+CheckInternetConnectionAsync controleert continu de internetverbinding.
+Als er een verbinding is, haalt het de componenten op en stopt het met controleren. 
+Als er geen verbinding is, probeert het opnieuw na 10 seconden.
+*/
 
 namespace PcArchitect.Services
 {
