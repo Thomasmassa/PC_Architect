@@ -43,6 +43,7 @@ namespace PcArchitect.ViewModel
         private readonly RootFactory _rootF;
         IConnectivity _connectivity;
         private readonly NavigationService _navigationService;
+        public ObservableCollection<string> DisplayedItemProperties { get; set; }
 
 
         //////////////////////////////////////////////
@@ -61,6 +62,14 @@ namespace PcArchitect.ViewModel
 
             Components = [];
             DisplayedItems = [];
+
+            DisplayedItemProperties = [];
+            var properties = typeof(Root).GetProperties();
+            DisplayedItemProperties.Add("All");
+            foreach (var property in properties)
+            {
+                DisplayedItemProperties.Add(property.Name);
+            }
         }
 
 
@@ -70,7 +79,45 @@ namespace PcArchitect.ViewModel
 
 
         [RelayCommand]
-        public async Task PageNavigated(NavigatedToEventArgs args)
+        async Task ComponentFiltering()
+        {
+            await Task.Run(() =>
+            {
+                DisplayedItems.Clear();
+
+                var root = _rootF.GetRoot1();
+                var selectedProperty = root.GetType().GetProperty(SelectedFilterItem);
+
+                if (SelectedFilterItem == "All")
+                {
+                    foreach (var component in Components)
+                    {
+                        DisplayedItems.Add(component);
+                    }
+                    return;
+                }
+                if (selectedProperty != null)
+                {
+                    var selectedComponents = selectedProperty.GetValue(root) as IList;
+                    if (selectedComponents != null)
+                    {
+                        foreach (var component in selectedComponents)
+                        {
+                            DisplayedItems.Add((IComponent)component);
+                        }
+                    }
+                }
+            });
+        }
+
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
+        [RelayCommand]
+        async Task PageNavigated(NavigatedToEventArgs args)
         {
             _navigationService.CurrentPage("SearchPage");
 
@@ -139,6 +186,7 @@ namespace PcArchitect.ViewModel
             await OnSearch(newText);
             return;
         }
+
         private Task OnSearch(string searchText)
         {
             Title = $"Search {searchText} List";

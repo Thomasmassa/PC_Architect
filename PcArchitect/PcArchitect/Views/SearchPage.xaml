@@ -22,6 +22,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -61,11 +62,31 @@
                            TextColor="{StaticResource PrimaryText}">
                     <SearchBar.Behaviors>
                         <toolkit:EventToCommandBehavior
-                                Command = "{Binding TextChangedCommand}"
+                                Command="{Binding TextChangedCommand}"
                                 EventArgsConverter="{converters:TextChangedEventArgsConverter}"
                                 EventName="TextChanged" />
                     </SearchBar.Behaviors>
                 </SearchBar>
+
+                <Picker Title="Filter by component type" 
+                        ItemsSource="{Binding DisplayedItemProperties}" 
+                        SelectedItem="{Binding SelectedFilterItem}" 
+                        Grid.Column="0" 
+                        Grid.Row="2" 
+                        Grid.ColumnSpan="5" 
+                        Margin="10, 0, 10, 0" 
+                        FontFamily="Koulen" 
+                        Background="{StaticResource BackgroundBackgroundColor}" 
+                        TextColor="{StaticResource PrimaryText}" 
+                        FontSize="Subtitle" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center">
+                    <Picker.Behaviors>
+                        <toolkit:EventToCommandBehavior
+                            Command="{Binding ComponentFilteringCommand}"
+                            EventName="SelectedIndexChanged" />
+                    </Picker.Behaviors>
+                </Picker> 
             </Grid>
         </Frame>
         <CollectionView ItemsSource="{Binding DisplayedItems}" VerticalOptions="FillAndExpand">
@@ -157,7 +178,7 @@
                                        Grid.Row="2" 
                                        Grid.RowSpan="4" 
                                        Grid.ColumnSpan="2" 
-                                       Grid.Column="5" 
+                                       Grid.Column="6" 
                                        VerticalOptions="CenterAndExpand" 
                                        HorizontalTextAlignment="End" 
                                        FontSize="Medium" 
