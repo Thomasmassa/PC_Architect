@@ -172,7 +172,6 @@ namespace PcArchitect.ViewModel
                 }
                 newBuild = true;
             }
-            
 
             var properties = typeof(Root).GetProperties();
             foreach (var property in properties)
@@ -180,45 +179,11 @@ namespace PcArchitect.ViewModel
                 var list = (IList?)property.GetValue(_rootF.GetRoot2());
                 var Ilist = list?.Cast<IComponent>().ToList();
 
+                List<int> idList = new List<int>();
+
                 if (Ilist == null) continue;
-                foreach (var item in Ilist)
-                {
-                    switch (item)
-                    {
-                        case Cpu cpu:
-                            SavedBuild.CpuId.Add(cpu.Id);
-                            break;
-                        case CpuCooler cpuCooler:
-                            SavedBuild.CpuCoolerId.Add(cpuCooler.Id);
-                            break;
-                        case Gpu gpu:
-                            SavedBuild.GpuId.Add(gpu.Id);
-                            break;
-                        case Motherboard motherboard:
-                            SavedBuild.MotherboardId.Add(motherboard.Id);
-                            break;
-                        case Memory memory:
-                            SavedBuild.MemoryId.Add(memory.Id);
-                            break;
-                        case Storage storage:
-                            SavedBuild.StorageId.Add(storage.Id);
-                            break;
-                        case Psu psu:
-                            SavedBuild.PsuId.Add(psu.Id);
-                            break;
-                        case Case case_:
-                            SavedBuild.CaseId.Add(case_.Id);
-                            break;
-                        case CaseFan caseFan:
-                            SavedBuild.CaseFanId.Add(caseFan.Id);
-                            break;
-                        case Os os:
-                            SavedBuild.OsId.Add(os.Id);
-                            break;
-                        default:
-                            break;
-                    }
-                }
+                foreach (var item in Ilist) { idList.Add(item.Id); }
+                SavedBuild.GetType().GetProperty(property.PropertyType.GetGenericArguments()[0].Name).SetValue(SavedBuild, idList);
             }
             if (newBuild)
                 await _database.SaveItemAsync(SavedBuild);

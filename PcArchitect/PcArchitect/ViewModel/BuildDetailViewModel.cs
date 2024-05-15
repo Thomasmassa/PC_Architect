@@ -6,6 +6,7 @@ using PcArchitect.Services;
 using PcArchitect.Model;
 using System.Collections;
 using PC_Architect.Model;
+using System.Reflection;
 
 namespace PcArchitect.ViewModel
 {
@@ -36,44 +37,28 @@ namespace PcArchitect.ViewModel
                 Build = (SavedBuild)_bufferService.GetBufferedComponent("Showbuild");
                 Title = Build.BuildName;
                 double TotalPrice = 0;
-                var componentTypeToIdMap = new Dictionary<Type, Func<SavedBuild, List<int>>>
-                {
-                    { typeof(Cpu), build => build.CpuId },
-                    { typeof(CpuCooler), build => build.CpuCoolerId },
-                    { typeof(Gpu), build => build.GpuId },
-                    { typeof(Motherboard), build => build.MotherboardId },
-                    { typeof(Memory), build => build.MemoryId },
-                    { typeof(Storage), build => build.StorageId },
-                    { typeof(Psu), build => build.PsuId },
-                    { typeof(Case), build => build.CaseId },
-                    { typeof(CaseFan), build => build.CaseFanId },
-                    { typeof(Os), build => build.OsId }
-                };
 
-                var properties = typeof(Root).GetProperties();
+
+                var properties = typeof(SavedBuild).GetProperties();
+                var rootlist = _rootF.GetRoot1();
 
                 foreach (var property in properties)
                 {
-                    var list = (IList?)property.GetValue(_rootF.GetRoot1());
-                    var Ilist = list?.Cast<IComponent>().ToList();
+                    if (typeof(string) == property.PropertyType)
+                        continue;
 
-                    if (Ilist == null) continue;
+                    var rootPartList = (IList?)rootlist.GetType().GetProperty(property.Name)?.GetValue(rootlist);
+                    var rootIlist = rootPartList?.Cast<IComponent>().ToList();
+                    if (rootIlist == null) continue;
 
+                    var saveBuildList = (List<int>?)Build.GetType().GetProperty(property.Name)?.GetValue(Build);
+                    if (saveBuildList == null) continue;
 
-                    if (componentTypeToIdMap.TryGetValue(property.PropertyType.GetGenericArguments()[0], out var getIds))
+                    foreach (var item in saveBuildList)
                     {
-                        var ids = getIds(Build);
-                        foreach (var id in ids)
-                        {
-                            var matchingItems = Ilist.Where(x => x.Id == id).ToList();
-                            foreach (var item in matchingItems)
-                            {
-                                TotalPrice += item.Price.Value;
-                                TotalPriceString = TotalPrice.ToString("C2");
-
-                                Components.Add(item);
-                            }
-                        }
+                        var part = rootIlist.FirstOrDefault(x => x.Id == item);
+                        if (part == null) continue;
+                        Components.Add(part);
                     }
                 }
             });

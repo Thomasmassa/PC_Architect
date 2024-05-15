@@ -10,83 +10,83 @@ namespace PcArchitect.Model
 
 
         [Ignore]
-        public List<int> CpuId { get; set; } = [];
-        public string CpuIdString
+        public List<int> Cpu { get; set; } = [];
+        public string CpuString
         {
-            get => string.Join(",", CpuId);
-            set => CpuId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", Cpu);
+            set => Cpu = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> CpuCoolerId { get; set; } = [];
-        public string CpuCoolerIdString
+        public List<int> CpuCooler { get; set; } = [];
+        public string CpuCoolerString
         {
-            get => string.Join(",", CpuCoolerId);
-            set => CpuCoolerId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", CpuCooler);
+            set => CpuCooler = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> MotherboardId { get; set; } = [];
-        public string MotherboardIdString
+        public List<int> Motherboard { get; set; } = [];
+        public string MotherboardString
         {
-            get => string.Join(",", MotherboardId);
-            set => MotherboardId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", Motherboard);
+            set => Motherboard = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> MemoryId { get; set; } = [];
-        public string MemoryIdString
+        public List<int> Memory { get; set; } = [];
+        public string MemoryString
         {
-            get => string.Join(",", MemoryId);
-            set => MemoryId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", Memory);
+            set => Memory = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> GpuId { get; set; } = [];
+        public List<int> Gpu { get; set; } = [];
         public string GpuIdString
         {
-            get => string.Join(",", GpuId);
-            set => GpuId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", Gpu);
+            set => Gpu = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> StorageId { get; set; } = [];
-        public string StorageIdString
+        public List<int> Storage { get; set; } = [];
+        public string StorageString
         {
-            get => string.Join(",", StorageId);
-            set => StorageId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", Storage);
+            set => Storage = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> PsuId { get; set; } = [];
+        public List<int> Psu { get; set; } = [];
         public string PsuIdString
         {
-            get => string.Join(",", PsuId);
-            set => PsuId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", Psu);
+            set => Psu = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> CaseId { get; set; } = [];
-        public string CaseIdString
+        public List<int> Case { get; set; } = [];
+        public string CaseString
         {
-            get => string.Join(",", CaseId);
-            set => CaseId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", Case);
+            set => Case = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> CaseFanId { get; set; } = [];
-        public string CaseFanIdString
+        public List<int> CaseFan { get; set; } = [];
+        public string CaseFanString
         {
-            get => string.Join(",", CaseFanId);
-            set => CaseFanId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", CaseFan);
+            set => CaseFan = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
 
         [Ignore]
-        public List<int> OsId { get; set; } = [];
-        public string OsIdString
+        public List<int> Os { get; set; } = [];
+        public string OsString
         {
-            get => string.Join(",", OsId);
-            set => OsId = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
+            get => string.Join(",", Os);
+            set => Os = string.IsNullOrEmpty(value) ? new List<int> { 0 } : value.Split(',').Select(int.Parse).ToList();
         }
     }
 }

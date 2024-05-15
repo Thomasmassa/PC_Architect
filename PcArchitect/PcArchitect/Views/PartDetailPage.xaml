@@ -136,6 +136,7 @@
                                            HorizontalTextAlignment="Start"/>
                                     
                                     <Button Grid.Row="5" 
+                                            IsVisible="True"
                                             BackgroundColor="{StaticResource AddButton}" 
                                             HorizontalOptions="FillAndExpand" 
                                             BorderColor="Transparent" 

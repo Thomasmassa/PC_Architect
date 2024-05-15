@@ -14,8 +14,5 @@ namespace PcArchitect.Model
         public List<Case> Case { get; set; } = [];
         public List<CaseFan> Case_Fan { get; set; } = []; 
         public List<Os> Os { get; set; } = [];
-
-        // DEZE CONSTRUCTOR WORDT GEBRUIKT OM DE 0'DE POSITIE VAN DE LIJSTEN TE VULLEN MET EEN STANDAARD WAARDE
-        // DEZE STANDAARD WAARDEN WORDEN GETOOND IN DE XAML STARTBUILDINGPAGE ALS DE GEBRUIKER NOG NIETS HEEFT GESELECTEERD
     }
 }
