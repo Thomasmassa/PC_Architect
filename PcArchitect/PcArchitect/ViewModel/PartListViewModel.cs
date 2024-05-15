@@ -68,39 +68,30 @@ namespace PcArchitect.ViewModel
             int? condition3 = null;
             int? condition4 = null;
 
-            try
+            switch (ComponentName)
             {
-                switch (ComponentName)
-                {
-                    case "CPU":
-                        if (_rootF.GetRoot2().Motherboard.Count > 0)
-                            condition1 = _rootF.GetRoot2().Motherboard[0].Socket.ToString(); // AM4, AM5, LGA1700
-                        break;
-                    case "MOTHERBOARD":
-                        if (_rootF.GetRoot2() != null)
-                            break;
-                        if (_rootF.GetRoot2().Cpu.Count > 0)
-                            condition1 = _rootF.GetRoot2().Cpu[0].Socket.ToString(); // AM4, AM5, LGA1700
-                        if (_rootF.GetRoot2().Memory.Count > 0)
-                        {
-                            condition2 = _rootF.GetRoot2().Memory[0].Speed_type.ToString(); // DDR4, DDR5
-                            condition3 = _rootF.GetRoot2().Memory[0].Module_size; // 4, 8, 16, 32, 64
-                            condition4 = _rootF.GetRoot2().Memory[0].Module_count; // 2, 4, 8
-                        }
-                        break;
-                    case "MEMORY":
-                        if (_rootF.GetRoot2() != null && _rootF.GetRoot2().Motherboard.Count() > 0)
-                        {
-                            condition2 = _rootF.GetRoot2().Motherboard[0].MemoryType.ToString(); // DDR4, DDR5
-                            condition3 = _rootF.GetRoot2().Motherboard[0].MemorySlots; // 2, 4, 8
-                            condition4 = _rootF.GetRoot2().Motherboard[0].MaxMemory; //64, 128, 256, 512
-                        }
-                        break;
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
+                case "CPU":
+                    if (_rootF.GetRoot2().Motherboard.Count > 0)
+                        condition1 = _rootF.GetRoot2().Motherboard[0].Socket.ToString(); // AM4, AM5, LGA1700
+                    break;
+                case "MOTHERBOARD":
+                    if (_rootF.GetRoot2().Cpu.Count > 0)
+                        condition1 = _rootF.GetRoot2().Cpu[0].Socket.ToString(); // AM4, AM5, LGA1700
+                    if (_rootF.GetRoot2().Memory.Count > 0)
+                    {
+                        condition2 = _rootF.GetRoot2().Memory[0].Speed_type.ToString(); // DDR4, DDR5
+                        condition3 = _rootF.GetRoot2().Memory[0].Module_size; // 4, 8, 16, 32, 64
+                        condition4 = _rootF.GetRoot2().Memory[0].Module_count; // 2, 4, 8
+                    }
+                    break;
+                case "MEMORY":
+                    if (_rootF.GetRoot2().Motherboard.Count() > 0)
+                    {
+                        condition2 = _rootF.GetRoot2().Motherboard[0].MemoryType.ToString(); // DDR4, DDR5
+                        condition3 = _rootF.GetRoot2().Motherboard[0].MemorySlots; // 2, 4, 8
+                        condition4 = _rootF.GetRoot2().Motherboard[0].MaxMemory; //64, 128, 256, 512
+                    }
+                    break;
             }
 
             if (ComponentName != null)
