@@ -73,17 +73,37 @@
                         SelectedItem="{Binding SelectedFilterItem}" 
                         Grid.Column="0" 
                         Grid.Row="2" 
-                        Grid.ColumnSpan="5" 
-                        Margin="10, 0, 10, 0" 
+                        Grid.ColumnSpan="3" 
+                        Margin="25, 0, 0, 0" 
                         FontFamily="Koulen" 
                         Background="{StaticResource BackgroundBackgroundColor}" 
                         TextColor="{StaticResource PrimaryText}" 
                         FontSize="Subtitle" 
-                        HorizontalOptions="Center" 
+                        HorizontalOptions="Start" 
                         VerticalOptions="Center">
                     <Picker.Behaviors>
                         <toolkit:EventToCommandBehavior
                             Command="{Binding ComponentFilteringCommand}"
+                            EventName="SelectedIndexChanged" />
+                    </Picker.Behaviors>
+                </Picker> 
+
+                <Picker Title="Filter by min/max price" 
+                        ItemsSource="{Binding PriceSortOptions}" 
+                        SelectedItem="{Binding SelectedPriceSortOption}" 
+                        Grid.Column="3" 
+                        Grid.Row="2" 
+                        Grid.ColumnSpan="2" 
+                        Margin="0, 0, 25, 0" 
+                        FontFamily="Koulen" 
+                        Background="{StaticResource BackgroundBackgroundColor}" 
+                        TextColor="{StaticResource PrimaryText}" 
+                        FontSize="Subtitle" 
+                        HorizontalOptions="End" 
+                        VerticalOptions="Center">
+                    <Picker.Behaviors>
+                        <toolkit:EventToCommandBehavior
+                            Command="{Binding PriceFilteringCommand}"
                             EventName="SelectedIndexChanged" />
                     </Picker.Behaviors>
                 </Picker> 

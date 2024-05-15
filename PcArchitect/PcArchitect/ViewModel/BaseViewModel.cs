@@ -47,6 +47,9 @@ namespace PcArchitect.ViewModel
         string selectedFilterItem = "";
 
         [ObservableProperty]
+        string selectedPriceSortOption = "";
+
+        [ObservableProperty]
         string descriptionButton = "";
 
         [ObservableProperty]

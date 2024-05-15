@@ -44,6 +44,7 @@ namespace PcArchitect.ViewModel
         IConnectivity _connectivity;
         private readonly NavigationService _navigationService;
         public ObservableCollection<string> DisplayedItemProperties { get; set; }
+        public ObservableCollection<string> PriceSortOptions { get; set; }
 
 
         //////////////////////////////////////////////
@@ -70,6 +71,12 @@ namespace PcArchitect.ViewModel
             {
                 DisplayedItemProperties.Add(property.Name);
             }
+
+            PriceSortOptions = new ObservableCollection<string>
+            {
+                "Low to High",
+                "High to Low"
+            };
         }
 
 
@@ -83,19 +90,34 @@ namespace PcArchitect.ViewModel
         {
             await Task.Run(() =>
             {
-                DisplayedItems.Clear();
+                filterCombinedOptions();
+            });
+        }
 
-                var root = _rootF.GetRoot1();
-                var selectedProperty = root.GetType().GetProperty(SelectedFilterItem);
+        [RelayCommand]
+        async Task PriceFiltering()
+        {
+            await Task.Run(() =>
+            {
+                filterCombinedOptions();
+            });
+        }
 
-                if (SelectedFilterItem == "All")
+        private void filterCombinedOptions()
+        {
+            var filteredComponents = new List<IComponent>();
+            var root = _rootF.GetRoot1();
+
+            if (SelectedFilterItem == "All")
+            {
+                foreach (var component in Components)
                 {
-                    foreach (var component in Components)
-                    {
-                        DisplayedItems.Add(component);
-                    }
-                    return;
+                    filteredComponents.Add(component);
                 }
+            }
+            else
+            {
+                var selectedProperty = root.GetType().GetProperty(SelectedFilterItem);
                 if (selectedProperty != null)
                 {
                     var selectedComponents = selectedProperty.GetValue(root) as IList;
@@ -103,11 +125,26 @@ namespace PcArchitect.ViewModel
                     {
                         foreach (var component in selectedComponents)
                         {
-                            DisplayedItems.Add((IComponent)component);
+                            filteredComponents.Add((IComponent)component);
                         }
                     }
                 }
-            });
+            }
+
+            if (SelectedPriceSortOption == "Low to High")
+            {
+                filteredComponents = filteredComponents.OrderBy(c => c.Price).ToList();
+            }
+            else if (SelectedPriceSortOption == "High to Low")
+            {
+                filteredComponents = filteredComponents.OrderByDescending(c => c.Price).ToList();
+            }
+
+            DisplayedItems.Clear();
+            foreach (var component in filteredComponents)
+            {
+                DisplayedItems.Add(component);
+            }
         }
 
 
@@ -120,6 +157,8 @@ namespace PcArchitect.ViewModel
         async Task PageNavigated(NavigatedToEventArgs args)
         {
             _navigationService.CurrentPage("SearchPage");
+
+            SelectedFilterItem = "All";
 
             DisplayedItems.Clear();
             Components.Clear();
