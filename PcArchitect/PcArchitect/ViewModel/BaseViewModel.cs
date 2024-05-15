@@ -44,6 +44,9 @@ namespace PcArchitect.ViewModel
         bool searchListDescriptionButtonEnabled;
 
         [ObservableProperty]
+        string selectedFilterItem = "";
+
+        [ObservableProperty]
         string descriptionButton = "";
 
         [ObservableProperty]
