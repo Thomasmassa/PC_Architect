@@ -16,17 +16,19 @@
     </ContentPage.Behaviors>
     
     <StackLayout BackgroundColor="{StaticResource BackgroundBackgroundColor}">
+        <Frame BorderColor="Transparent"
+               BackgroundColor="Transparent"
+               Padding="0">
+            <Label Text="{Binding Title}" 
+                   TextColor="{StaticResource Signature}"
+                   FontSize="40" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   FontFamily="Koulen"
+                   Margin="0,10,0,-10"/>
+       </Frame>                     
         <CollectionView ItemsSource="{Binding Components}" VerticalOptions="FillAndExpand">
-            <CollectionView.Header>
-                <Label Text="{Binding Title}" 
-                       TextColor="{StaticResource Signature}"
-                       FontSize="40" 
-                       FontAttributes="Bold" 
-                       HorizontalOptions="Center" 
-                       VerticalOptions="Center"
-                       Margin="0,20,0,10" 
-                       FontFamily="Koulen"/>
-            </CollectionView.Header>
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="Interfaces:IComponent">
                     <Grid>
@@ -219,7 +221,7 @@
 
                                     <Label Text="{Binding AdditionalDescription}" 
                                            TextColor="Black" 
-                                           Padding="-15"
+                                           Padding="-10"
                                            VerticalOptions="Center"
                                            HorizontalOptions="Center" 
                                            FontSize="30" FontFamily="Koulen"/>
@@ -232,59 +234,59 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Grid>
+        <Grid Padding="10" BackgroundColor="Transparent">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="9*" />
+                <ColumnDefinition Width="4*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" 
-                   Grid.Column="1" 
-                   Margin="15,0,0,0" 
-                   HorizontalOptions="Start" 
-                   FontAttributes="Bold" 
-                   FontFamily="Koulen"
-                   FontSize="Title" 
-                   TextColor="{StaticResource TextPriceColor}" 
-                   Text="Total Price"/>
-            <Label Grid.Row="0" 
-                   Grid.Column="3" 
-                   Margin="0,0,15,0" 
-                   HorizontalOptions="End" 
-                   Text="{Binding TotalPriceString}" 
-                   FontAttributes="Bold" 
-                   FontFamily="Koulen" 
-                   FontSize="Title" 
-                   TextColor="{StaticResource TextPriceColor}" />
+            <Frame Grid.Row="0" 
+                   Padding="0"
+                   Grid.Column="0"
+                   Margin="9,0,0,0"
+                   WidthRequest="50"
+                   VerticalOptions="Center"
+                   BorderColor="Transparent"
+                   Background="{StaticResource BackgroundBackgroundColor}">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=SaveBuildCommand}"
+                        CommandParameter="{Binding .}"/>
+                </Frame.GestureRecognizers>
+                <Image Source="save_data.png"
+                       HeightRequest="50"/>
+            </Frame>
 
-            <!-- SAVE AND EXIT -->
-            <Button Text="Save" 
-                TextColor="{StaticResource Primary}"
-                Command="{Binding SaveBuildCommand}"
-                Padding="0"
-                Grid.Row="1"
-                Grid.Column="1"
-                Style="{StaticResource ButtonOutline}"
-                Margin="8"
-                FontFamily="Koulen"
-                FontSize="20"/>
-            <Button Text="Back"
-                TextColor="{StaticResource Primary}"
-                Command="{Binding BackButtonCommand}"
-                Padding="0"
-                Grid.Row="1"
-                Grid.Column="3"
-                Style="{StaticResource ButtonOutline}"
-                Margin="8"
-                FontFamily="Koulen"
-                FontSize="20"/>
+            <Label Grid.Column="1" 
+                   FontSize="Medium" 
+                   FontFamily="Koulen" 
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center" 
+                   Background="Transparent"
+                   TextColor="{StaticResource TextPriceColor}"
+                   Text="{Binding TotalPriceString, StringFormat='Total Price: {0}'}" />
+
+            <Frame Grid.Row="0" 
+                   Padding="0"
+                   Margin="0,0,17,0"
+                   Grid.Column="2"
+                   WidthRequest="50"
+                   VerticalOptions="Center"
+                   BorderColor="Transparent"
+                   Background="{StaticResource BackgroundBackgroundColor}">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=BackButtonCommand}"
+                        CommandParameter="{Binding .}"/>
+                </Frame.GestureRecognizers>
+                <Image Source="backarrow.png"
+                       HeightRequest="50"/>
+            </Frame>
         </Grid>
     </StackLayout>
 </ContentPage>

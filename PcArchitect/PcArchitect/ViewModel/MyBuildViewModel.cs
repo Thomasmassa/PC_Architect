@@ -50,7 +50,6 @@ namespace PcArchitect.ViewModel
                 SavedBuilds.Add(build);
             }
             await Toast.Make("swipe left on card to delete").Show();
-            await Task.Delay(TimeSpan.FromSeconds(2));
             await Toast.Make("swipe right on card to change the name").Show();
         }
 

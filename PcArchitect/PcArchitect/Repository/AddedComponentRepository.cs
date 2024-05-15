@@ -39,12 +39,6 @@ namespace PC_Architect.Model
         {
             Task.Run(() =>
             {
-                //langzamer en minder veilig dan switch
-                //var propertie = component.GetType().Name;
-                //_rootF.GetRoot2().GetType().GetProperty(propertie)?.SetValue(_rootF.GetRoot2(), component);
-
-
-                //sneller en veiliger
                 switch (component)
                 {
                     case Cpu cpu:

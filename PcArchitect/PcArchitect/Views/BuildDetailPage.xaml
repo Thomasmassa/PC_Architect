@@ -124,61 +124,57 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Grid>
+        <Grid Padding="10" BackgroundColor="Transparent">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="9*" />
+                <ColumnDefinition Width="4*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" 
-                   Grid.Column="1" 
-                   Margin="15,0,0,0" 
-                   HorizontalOptions="Start" 
-                   FontAttributes="Bold" 
-                   FontFamily="Koulen"
-                   FontSize="Title" 
-                   TextColor="{StaticResource TextPriceColor}" 
-                   Text="Total Price"/>
-            <Label Grid.Row="0" 
-                   Grid.Column="3" 
-                   Margin="0,0,15,0" 
-                   HorizontalOptions="End" 
-                   Text="{Binding TotalPriceString}" 
-                   FontAttributes="Bold" 
-                   FontFamily="Koulen" 
-                   FontSize="Title" 
-                   TextColor="{StaticResource TextPriceColor}" />
+            <Frame Padding="0"
+                   Grid.Column="0"
+                   Margin="9,0,0,0"
+                   WidthRequest="50"
+                   VerticalOptions="Center"
+                   BorderColor="Transparent"
+                   Background="{StaticResource BackgroundBackgroundColor}">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:BuildDetailViewModel}}, Path=EditBuildCommand}"
+                         CommandParameter="{Binding .}"/>
+                </Frame.GestureRecognizers>
+                <Image Source="e_dit.png"
+                       HeightRequest="50"/>
+            </Frame>
 
-            <!-- SAVE AND EXIT -->
-            <Button Text="Edit" 
-                    TextColor="{StaticResource Primary}"
-                    Command="{Binding EditBuildCommand}"
-                    Padding="0"
-                    Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    Grid.Row="1"
-                    Style="{StaticResource ButtonOutline}"
-                    Margin="8"
-                    FontFamily="Koulen"
-                    FontSize="20"/>
-            <Button Text="Back"
-                    TextColor="{StaticResource Primary}"
-                    Command="{Binding BackButtonCommand}"
-                    Padding="0"
-                    Grid.Row="1"
-                    Grid.Column="3"
-                    Grid.ColumnSpan="2"
-                    Style="{StaticResource ButtonOutline}"
-                    Margin="8"
-                    FontFamily="Koulen"
-                    FontSize="20"/>
+            <Label Grid.Column="1" 
+                   FontSize="Medium" 
+                   FontFamily="Koulen" 
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center" 
+                   Background="Transparent"
+                   TextColor="{StaticResource TextPriceColor}"
+                   Text="{Binding TotalPriceString, StringFormat='Total Price: {0}'}" />
+
+            <Frame Padding="0"
+                   Margin="0,0,17,0"
+                   Grid.Column="2"
+                   WidthRequest="50"
+                   VerticalOptions="Center"
+                   BorderColor="Transparent"
+                   Background="{StaticResource BackgroundBackgroundColor}">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:BuildDetailViewModel}}, Path=BackButtonCommand}"
+                         CommandParameter="{Binding .}"/>
+                </Frame.GestureRecognizers>
+                <Image Source="backarrow.png"
+                       HeightRequest="50"/>
+            </Frame>
         </Grid>
     </StackLayout>
 </ContentPage>
