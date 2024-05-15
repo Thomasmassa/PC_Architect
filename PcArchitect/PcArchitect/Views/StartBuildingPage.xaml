@@ -234,22 +234,24 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Grid Padding="10">
+        <Grid Padding="10" BackgroundColor="Transparent">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
             <Frame Grid.Row="0" 
                    Padding="0"
                    Grid.Column="0"
+                   Margin="9,0,0,0"
                    WidthRequest="50"
-                   BackgroundColor="Transparent">
+                   VerticalOptions="Center"
+                   BorderColor="Transparent"
+                   Background="{StaticResource BackgroundBackgroundColor}">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer
                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=SaveBuildCommand}"
@@ -260,35 +262,23 @@
             </Frame>
 
             <Label Grid.Column="1" 
-                   Padding="0"
-                   Margin="10,0,0,0"
-                   FontSize="Large" 
-                   Text="Total Price:"
-                   WidthRequest="150"
-                   Background="White"
-                   FontFamily="Koulen"
-                   FontAttributes="Bold" 
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Start" 
-                   TextColor="{StaticResource TextPriceColor}"/>
-
-            <Label Grid.Column="2" 
-                   Margin="0,0,10,0"
-                   FontSize="Large" 
+                   FontSize="Medium" 
                    FontFamily="Koulen" 
                    FontAttributes="Bold" 
-                   HorizontalOptions="End" 
                    VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="End" 
-                   Text="{Binding TotalPriceString}" 
-                   TextColor="{StaticResource TextPriceColor}"/>
+                   HorizontalTextAlignment="Center" 
+                   Background="Transparent"
+                   TextColor="{StaticResource TextPriceColor}"
+                   Text="{Binding TotalPriceString, StringFormat='Total Price: {0}'}" />
 
             <Frame Grid.Row="0" 
                    Padding="0"
-                   Grid.Column="3"
+                   Margin="0,0,17,0"
+                   Grid.Column="2"
                    WidthRequest="50"
+                   VerticalOptions="Center"
                    BorderColor="Transparent"
-                   Background="Transparent">
+                   Background="{StaticResource BackgroundBackgroundColor}">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer
                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=BackButtonCommand}"

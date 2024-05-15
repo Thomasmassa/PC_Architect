@@ -14,42 +14,17 @@
     </ContentPage.Behaviors>
 
     <StackLayout BackgroundColor="{StaticResource BackgroundBackgroundColor}">
-        <Frame BackgroundColor="{StaticResource BackgroundBackgroundColor}"
-               CornerRadius="15" 
-               BorderColor="Transparent"
+        <Frame BorderColor="Transparent"
+               BackgroundColor="Transparent"
                Padding="0">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <Label Padding="0" 
-                       Text="My Builds" 
-                       TextColor="DarkOrange" 
-                       FontFamily="Koulen" 
-                       FontSize="40" 
-                       Grid.ColumnSpan="3"
-                       FontAttributes="Bold" 
-                       HorizontalOptions="Center" 
-                       VerticalOptions="Center"/>
-
-                <Frame Grid.Column="0"
-                       Padding="0"
-                       HeightRequest="40"
-                       WidthRequest="40"
-                       BackgroundColor="Transparent">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer
-                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MyBuildViewModel}}, Path=BackButtonCommand}"
-                            CommandParameter="{Binding .}"/>
-                    </Frame.GestureRecognizers>
-                    <Image Source="backarrow.png"
-                           Grid.Column="3"
-                           HeightRequest="30"/>
-                </Frame>
-            </Grid>
+            <Label Text="My Builds" 
+                   TextColor="{StaticResource Signature}"
+                   FontSize="40" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   FontFamily="Koulen"
+                   Margin="0,10,0,-10"/>
         </Frame>
         <CollectionView ItemsSource="{Binding SavedBuilds}" VerticalOptions="FillAndExpand">
             <CollectionView.ItemTemplate>
@@ -128,5 +103,27 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        <Grid Padding="10" BackgroundColor="Transparent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Frame Padding="0"
+                   Margin="0,0,17,0"
+                   Grid.Column="2"
+                   WidthRequest="50"
+                   VerticalOptions="Center"
+                   BorderColor="Transparent"
+                   Background="{StaticResource BackgroundBackgroundColor}">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MyBuildViewModel}}, Path=BackButtonCommand}"
+                        CommandParameter="{Binding .}"/>
+                </Frame.GestureRecognizers>
+                <Image Source="backarrow.png"
+                       HeightRequest="50"/>
+            </Frame>
+        </Grid>
     </StackLayout>
 </ContentPage>
