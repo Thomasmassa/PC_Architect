@@ -1,4 +1,4 @@
-﻿// ROOT BEVAT LIJSTEN VAN VERSCHILLENDE TYPE EIGENSCHAPPEN 
+﻿// Root bevat lijsten van alle componenten die in de applicatie worden gebruikt.
 
 namespace PcArchitect.Model
 {
@@ -9,10 +9,10 @@ namespace PcArchitect.Model
         public List<Motherboard> Motherboard { get; set; } = [];
         public List<Memory> Memory { get; set; } = [];
         public List<Gpu> Gpu { get; set; } = [];
-        public List<Storage> Storage { get; set; } = []; 
+        public List<Storage> Storage { get; set; } = [];
         public List<Psu> Psu { get; set; } = [];
         public List<Case> Case { get; set; } = [];
-        public List<CaseFan> Case_Fan { get; set; } = []; 
+        public List<CaseFan> Case_Fan { get; set; } = [];
         public List<Os> Os { get; set; } = [];
     }
 }

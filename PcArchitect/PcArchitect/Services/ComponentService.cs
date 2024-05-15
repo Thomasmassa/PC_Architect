@@ -1,13 +1,14 @@
 ﻿using Newtonsoft.Json;
 using PcArchitect.Interfaces;
-using PcArchitect.Model;
 
-// DEZE KLASSE WORDT GEBRUIKT OM COMPONENTEN UIT DE DATABASE OP TE HALEN
+/*
+Deze klasse wordt gebruikt om componenten uit de database op te halen.
 
-// METHODE WORDT AANGEROEPEN MET EEN SPECIFIEKE PATH DAT HET TYPE COMPOENENTEN AANGEEFT DIE OPGEHAALD MOETEN WORDEN
-// HTTP GET REQUEST WORDT GEDAAN NAAR DE DATABASE
-// RESPONSE WORDT GEDESERIALISEERD NAAR EEN LIJST VAN COMPONENTEN
-// DE LIJST WORDT GERETURND
+De methode GetComponentsAsync wordt aangeroepen met een specifieke path dat het type componenten aangeeft die opgehaald moeten worden.
+
+Er wordt een HTTP GET request gedaan naar de database en de response wordt gedeserialiseerd naar een lijst van componenten.
+Deze lijst wordt gereturnd.
+*/
 
 namespace PcArchitect.Services
 {

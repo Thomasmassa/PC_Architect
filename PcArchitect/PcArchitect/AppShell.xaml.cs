@@ -1,8 +1,6 @@
 ﻿using PcArchitect.Repository;
 using PcArchitect.Views;
 
-// ROUTES WORDEN GEREGISTREERD VOOR DE NAVIGATIE VAN DE PAGINA'S IN DE CONSTRUCTOR VAN DE SHELL
-
 namespace PcArchitect
 {
     public partial class AppShell : Shell
@@ -10,6 +8,7 @@ namespace PcArchitect
         public AppShell()
         {
             InitializeComponent();
+            // wanneer er naar de MainPage wordt genavigeerd, wordt de MainPage geladen
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
             Routing.RegisterRoute(nameof(StartBuildingPage), typeof(StartBuildingPage));
             Routing.RegisterRoute(nameof(PartListPage), typeof(PartListPage));

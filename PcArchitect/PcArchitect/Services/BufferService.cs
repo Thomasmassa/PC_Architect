@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+De BufferService klasse dient als opslagplaats voor componenten die met behulp van een Dictionary worden opgeslagen.
 
-// DIENT ALS OPSLAGPLAATS VOOR COMPONENTEN DIE MBV DICTIONARY WORDEN OPGESLAGEN
-// DE SLEUTEL IS DE NAAM VAN HET COMPONENT
-// DE WAARDE IS HET COMPONENT ZELF
-// DEZE KLASSE WORDT GEBRUIKT OM COMPONENTEN OP TE SLAAN VOOR OP DE DETAILPAGINA TE GEBRUIKEN
+De sleutel is de naam van het component en de waarde is het component zelf. 
+Deze klasse wordt gebruikt om componenten op te slaan voor gebruik op de detailpagina.
+
+De BuffComponent methode voegt een nieuw component toe aan de buffer als het nog niet bestaat.
+
+De GetBufferedComponent methode haalt een component op uit de buffer op basis van de naam, 
+en maakt vervolgens de buffer leeg.
+*/
 
 namespace PcArchitect.Services
 {

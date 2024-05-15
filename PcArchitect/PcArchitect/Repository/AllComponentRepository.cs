@@ -1,9 +1,14 @@
 ﻿using PcArchitect.Interfaces;
 using PcArchitect.Model;
 
-// WANNEER EEN INSTANTIE VAN DE KLASSE WORDT AANGEMAAKT, WORDEN ALLE COMPONENTEN UIT DE DATABASE ASYNCHROON OPGEHAALD
-// EN TOEGEVOEGD AAN DE SPECIFIEKE LIJSTEN IN DE ROOT KLASSE
-// DEZE KLASSE WORDT GEBRUIKT OM ALLE COMPONENTEN UIT DE DATABASE OP TE HALEN
+/*
+De AllComponentRepository klasse is verantwoordelijk voor het ophalen en toevoegen van alle componenten aan de Root klasse.
+
+De IComponentService wordt gebruikt om de componenten op te halen en de RootFactory wordt gebruikt om de Root klasse te verkrijgen.
+
+De GetAllComponentsAsync methode wordt aangeroepen om alle componenten op te halen.
+Omdat de actie asynchrone methoden bevat (GetComponentsAsync), wordt async gebruikt om aan te geven dat de actie asynchroon is.
+*/
 
 namespace PcArchitect.Repository
 {

@@ -1,7 +1,12 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 
-// BASIS VIEWMODEL DIE ERFT VAN OBSERVABLEOBJECT EN DE PROPERTIES ISBUSY, TITLE EN ITEM BEVAT MET BEHULP VAN OBSERVABLEPROPERTY
-// DEZE KLASSE WORDT GEBRUIKT ALS BASIS VOOR ALLE VIEWMODELS
+/*
+De BaseViewModel klasse is een abstracte klasse die dient als basis voor andere viewmodels. 
+Het erft van de ObservableObject klasse, wat betekent dat het INotifyPropertyChanged implementeert en dus databinding ondersteunt.
+
+Er zijn verschillende eigenschappen gedefinieerd met de [ObservableProperty] attribuut, 
+wat betekent dat ze automatisch PropertyChanged events genereren wanneer ze veranderen.
+*/
 
 namespace PcArchitect.ViewModel
 {

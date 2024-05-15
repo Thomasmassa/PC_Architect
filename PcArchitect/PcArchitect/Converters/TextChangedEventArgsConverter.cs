@@ -1,8 +1,18 @@
 ﻿using System.Globalization;
 
-// ELKE KEER DAT DE TEKST IN DE SEARCHBAR VERANDERT, WORDT DE TEXTCHANGED EVENT GETRIGGERD
-// DE TOOLKIT:EVENTTOCOMMANDBEHAVIOR VANGT DEZE EVENT OP EN GEBRUIKT DEZE CONVERTER OM DE NIEUWE TEKST TE KRIJGEN
-// DEZE NIEUWE TEKST WORDT DOORGEGEVEN AAN DE SEARCHCOMMAND IN DE VIEWMODEL
+/*
+Deze klasse definieert een converter die wordt gebruikt om de TextChangedEventArgs van een SearchBar naar een string te converteren. 
+
+Wanneer de tekst in de SearchBar verandert, wordt de TextChanged event getriggerd. 
+Deze event geeft een TextChangedEventArgs object door, dat de oude en nieuwe tekstwaarden bevat.
+
+De EventToCommandBehavior van de Toolkit vangt deze event op en gebruikt deze converter om de nieuwe tekst te krijgen. 
+De Convert methode van deze converter wordt aangeroepen met de TextChangedEventArgs als de value parameter. 
+Deze methode retourneert de NewTextValue van de TextChangedEventArgs, dat is de nieuwe tekstwaarde.
+
+Deze nieuwe tekstwaarde wordt vervolgens doorgegeven aan de TextChangedCommand in de ViewModel. 
+Dit betekent dat elke keer dat de tekst in de SearchBar verandert, de TextChangedCommand in de ViewModel wordt getriggerd met de nieuwe tekst als parameter.
+*/
 
 namespace PcArchitect.Converters
 {

@@ -1,8 +1,29 @@
 ﻿using PcArchitect.Model;
-using System.Collections;
 
-// AFHANKELIJK VAN WELKE METHODE WORDT AANGEROEPEN, WORDT EEN COMPONENT TOEGEVOEGD OF VERWIJDERD 
-// UIT DE SPECIFIEKE TYPE LIJST IN DE ROOT KLASSE
+/*
+Deze klasse wordt gebruikt om componenten toe te voegen, te verwijderen en te verwijderen uit de Root klasse.
+
+Het readonly sleutelwoord wordt gebruikt om ervoor te zorgen dat de waarde van de _rootF variabele alleen kan worden ingesteld in de constructor of bij de declaratie.
+Dit zorgt ervoor dat de waarde van de variabele niet per ongeluk kan worden gewijzigd.
+
+De RootFactory klasse wordt geïnjecteerd via de constructor (een techniek genaamd "Constructor Injection"). 
+Deze klasse biedt toegang tot de Root klasse en zijn methoden.
+
+De AddComponentAsync<T>(T component) methode voegt een component van een bepaald type toe aan de bijbehorende lijst in de Root klasse. 
+Het gebruikt een switch statement om het type van het component te bepalen en voegt het vervolgens toe aan de juiste lijst.
+
+De RemoveComponentAsync<T>(T component) methode werkt op een vergelijkbare manier, 
+maar in plaats van een component toe te voegen, verwijdert het een component uit de bijbehorende lijst in de Root klasse.
+
+De ClearComponents() methode maakt alle lijsten in de Root klasse leeg. 
+Het doet dit door over alle eigenschappen van de Root klasse te itereren en voor elke eigenschap een nieuwe instantie van het eigenschapstype te maken. 
+Dit effectief maakt de lijst leeg.
+
+In `AddComponentAsync`, wordt de taak gecreëerd met `Task.Run` en vervolgens onmiddellijk `Task.CompletedTask` geretourneerd. 
+Dit betekent dat de methode niet wacht tot de taak is voltooid voordat deze terugkeert.
+In `RemoveComponentAsync`, wordt `await` gebruikt met `Task.Run`, wat betekent dat de methode zal wachten tot de taak die door `Task.Run` wordt gemaakt, 
+is voltooid voordat het verder gaat.
+*/
 
 namespace PC_Architect.Model
 {
@@ -100,15 +121,13 @@ namespace PC_Architect.Model
             });
         }
 
-        // VERWIJDER ALLE COMPONENTEN UIT DE ROOT2 KLASSE EN STANDAARDWAARDES WORDEN INGESTELD VOOR ALLE COMPONENTEN
-
         public Task ClearComponents()
         {
             return Task.Run(() =>
             {
                 foreach (var property in _rootF.GetRoot2().GetType().GetProperties())
                     property.SetValue(_rootF.GetRoot2(), Activator.CreateInstance(property.PropertyType));
-                    
+
             });
         }
     }
