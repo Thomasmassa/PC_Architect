@@ -36,6 +36,7 @@ namespace PcArchitect.ViewModel
         private readonly RootFactory _rootF;
         private readonly BufferService _bufferService;
         private readonly AddedComponentRepository _addedcomponentRepository;
+        private readonly NavigationService _navigationService;
 
 
         //////////////////////////////////////////////
@@ -43,11 +44,12 @@ namespace PcArchitect.ViewModel
         //////////////////////////////////////////////
 
 
-        public PartListViewModel(AddedComponentRepository addedcomponentRepository, BufferService bufferService, RootFactory rootF)
+        public PartListViewModel(AddedComponentRepository addedcomponentRepository, BufferService bufferService, RootFactory rootF, NavigationService navigationService)
         {
             _addedcomponentRepository = addedcomponentRepository;
             _bufferService = bufferService;
             _rootF = rootF;
+            _navigationService = navigationService;
 
             DisplayedItems = [];
             Components = [];
@@ -63,6 +65,8 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task PageNavigated(NavigatedToEventArgs args)
         {
+            _navigationService.CurrentPage("PartListPage");
+
             string? condition1 = null;
             string? condition2 = null;
             int? condition3 = null;

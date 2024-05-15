@@ -58,6 +58,8 @@ namespace PcArchitect
             builder.Services.AddTransient<PartDetailViewModel>();
             builder.Services.AddTransient<PartDetailPage>();
 
+            builder.Services.AddSingleton<NavigationService>();
+
 #if DEBUG
             builder.Logging.AddDebug();
 #endif

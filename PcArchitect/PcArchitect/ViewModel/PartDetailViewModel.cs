@@ -34,17 +34,25 @@ namespace PcArchitect.ViewModel
         private readonly BufferService _bufferService;
         private readonly AddedComponentRepository _addedcomponentRepository;
         public ObservableCollection<IComponent> Component { get; set; }
+        private readonly NavigationService _navigationService;
 
-        public PartDetailViewModel(BufferService bufferService, AddedComponentRepository addedcomponentRepository)
+        public PartDetailViewModel(BufferService bufferService, AddedComponentRepository addedcomponentRepository, NavigationService navigationService)
         {
             _bufferService = bufferService;
             _addedcomponentRepository = addedcomponentRepository;
             Component = new ObservableCollection<IComponent>();
+            _navigationService = navigationService;
 
             IsDetailsVisible = false;
             IsDescriptionVisible = false;
             DescriptionButton = "Show Description";
         }
+
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
 
         [RelayCommand]
         async Task BackButton()
@@ -52,15 +60,42 @@ namespace PcArchitect.ViewModel
             await Shell.Current.GoToAsync("..");
         }
 
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
         [RelayCommand]
         public void PageNavigated(NavigatedToEventArgs args)
         {
+            _navigationService.CurrentPage("PartDetailPage");
+
             IComponent? component = null;
             if (SelectedItem != null)
                 component = (IComponent)_bufferService.GetBufferedComponent(SelectedItem);
             if (component != null)
                 Component.Add(component);
+
+            if (_navigationService.PreviousPage() == "SearchPage")
+            {
+                IsAddBtnEnabled = false;
+                PartListDescriptionButtonEnabled = false;
+                SearchListDescriptionButtonEnabled = true;
+            }
+            else if (_navigationService.PreviousPage() == "PartListPage")
+            {
+                IsAddBtnEnabled = true;
+                PartListDescriptionButtonEnabled = true;
+                SearchListDescriptionButtonEnabled = false;
+            }
         }
+
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
 
         [RelayCommand]
         void ToggleDescription()
@@ -76,6 +111,12 @@ namespace PcArchitect.ViewModel
                 DescriptionButton = "Hide Description";
             }
         }
+
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
 
         [RelayCommand]
         async Task AddToBuild()

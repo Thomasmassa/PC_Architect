@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using PcArchitect.Interfaces;
 using PcArchitect.Model;
+using PcArchitect.Services;
 using PcArchitect.Views;
 using System.Collections;
 using System.Collections.ObjectModel;
@@ -38,9 +39,10 @@ namespace PcArchitect.ViewModel
     {
         public ObservableCollection<IComponent> Components { get; set; }
         public ObservableCollection<IComponent> DisplayedItems { get; set; }
-
+        private readonly BufferService _bufferService;
         private readonly RootFactory _rootF;
         IConnectivity _connectivity;
+        private readonly NavigationService _navigationService;
 
 
         //////////////////////////////////////////////
@@ -48,12 +50,14 @@ namespace PcArchitect.ViewModel
         //////////////////////////////////////////////
 
 
-        public SearchViewModel(RootFactory rootF, IConnectivity connectivity)
+        public SearchViewModel(RootFactory rootF, IConnectivity connectivity, BufferService bufferService, NavigationService navigationService)
         {
             Title = "Search List";
 
             _rootF = rootF;
             _connectivity = connectivity;
+            _bufferService = bufferService;
+            _navigationService = navigationService;
 
             Components = [];
             DisplayedItems = [];
@@ -68,6 +72,8 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         public async Task PageNavigated(NavigatedToEventArgs args)
         {
+            _navigationService.CurrentPage("SearchPage");
+
             DisplayedItems.Clear();
             Components.Clear();
 
@@ -178,6 +184,8 @@ namespace PcArchitect.ViewModel
         async Task PartToDetail(IComponent selectedPart)
         {
             if (selectedPart == null) return;
+
+            _bufferService.BuffComponent(selectedPart.Name, selectedPart);
 
             await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", false, new Dictionary<string, object>
             {

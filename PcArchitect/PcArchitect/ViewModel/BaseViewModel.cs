@@ -38,6 +38,12 @@ namespace PcArchitect.ViewModel
         bool isAddBtnEnabled;
 
         [ObservableProperty]
+        bool partListDescriptionButtonEnabled;
+
+        [ObservableProperty]
+        bool searchListDescriptionButtonEnabled;
+
+        [ObservableProperty]
         string descriptionButton = "";
 
         [ObservableProperty]

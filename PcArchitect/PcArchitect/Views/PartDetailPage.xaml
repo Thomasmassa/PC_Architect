@@ -125,7 +125,7 @@
                                            HorizontalTextAlignment="Start"/>
                                     
                                     <Button Grid.Row="5" 
-                                            IsVisible="True"
+                                            IsVisible="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}, Path=IsAddBtnEnabled}"
                                             BackgroundColor="{StaticResource AddButton}" 
                                             HorizontalOptions="FillAndExpand" 
                                             BorderColor="Transparent" 
@@ -139,7 +139,8 @@
                                             Padding="0" 
                                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}, Path=AddToBuildCommand}"/>
                                     
-                                    <Button Text="{Binding DescriptionButton, Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}}" 
+                                    <Button IsVisible="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}, Path=PartListDescriptionButtonEnabled}"
+                                            Text="{Binding DescriptionButton, Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}}" 
                                             Command="{Binding ToggleDescriptionCommand, Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}}"
                                             BackgroundColor="{StaticResource Signature}" 
                                             TextColor="{StaticResource LabelText}" 
@@ -147,6 +148,17 @@
                                             HorizontalOptions="FillAndExpand" 
                                             Margin="0,0,10,0"
                                             Grid.Row="5" 
+                                            Padding="0"/>
+
+                                    <Button IsVisible="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}, Path=SearchListDescriptionButtonEnabled}"
+                                            Text="{Binding DescriptionButton, Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}}" 
+                                            Command="{Binding ToggleDescriptionCommand, Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}}"
+                                            BackgroundColor="{StaticResource Signature}" 
+                                            TextColor="{StaticResource LabelText}" 
+                                            FontSize="20" FontFamily="Koulen" 
+                                            HorizontalOptions="FillAndExpand" 
+                                            Grid.Row="5" 
+                                            Grid.ColumnSpan="2"
                                             Padding="0"/>
                                     
                                     <Label IsVisible="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}, Path=IsDescriptionVisible}" 
