@@ -17,10 +17,7 @@
         <Frame BackgroundColor="{StaticResource BackgroundBackgroundColor}"
                CornerRadius="15" 
                BorderColor="Transparent"
-               Padding="0" 
-               Grid.Column="1" 
-               Grid.Row="1" 
-               Grid.ColumnSpan="4">
+               Padding="0">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -37,17 +34,21 @@
                        FontAttributes="Bold" 
                        HorizontalOptions="Center" 
                        VerticalOptions="Center"/>
-                
-                <Button Text="back" 
-                        FontFamily="Koulen" 
-                        FontSize="Title" 
-                        TextColor="{StaticResource PrimaryText}" 
-                        Grid.Column="3" 
-                        Margin="20,0,0,0"
-                        Padding="0" 
-                        Background="Transparent" 
-                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MyBuildViewModel}}, Path=BackButtonCommand}"
-                        CommandParameter="{Binding .}"/>
+
+                <Frame Grid.Column="0"
+                       Padding="0"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       BackgroundColor="Transparent">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MyBuildViewModel}}, Path=BackButtonCommand}"
+                            CommandParameter="{Binding .}"/>
+                    </Frame.GestureRecognizers>
+                    <Image Source="backarrow.png"
+                           Grid.Column="3"
+                           HeightRequest="30"/>
+                </Frame>
             </Grid>
         </Frame>
         <CollectionView ItemsSource="{Binding SavedBuilds}" VerticalOptions="FillAndExpand">

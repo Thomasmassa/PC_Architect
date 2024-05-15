@@ -47,17 +47,21 @@
                        VerticalOptions="Center"
                        Margin="0,30,0,0"/>
 
-                <Button Text="back" 
-                        FontFamily="Koulen" 
-                        FontSize="Title" 
-                        TextColor="{StaticResource PrimaryText}" 
-                        Grid.Column="4" 
-                        Grid.Row="1" 
-                        Margin="0,0,20,0"  
-                        Padding="0" 
-                        Background="Transparent" 
-                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartListViewModel}}, Path=BackButtonCommand}"
-                        CommandParameter="{Binding .}"/>
+                <Frame Grid.Column="4" 
+                       Grid.Row="1" 
+                       Padding="0"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       BackgroundColor="Transparent">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartListViewModel}}, Path=BackButtonCommand}"
+                            CommandParameter="{Binding .}"/>
+                    </Frame.GestureRecognizers>
+
+                    <Image Source="backarrow.png"  
+                           Background="Transparent"/>
+                </Frame>
 
                 <SearchBar x:Name="searchBar" 
                            Placeholder="Search" 

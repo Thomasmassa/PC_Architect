@@ -16,17 +16,19 @@
     </ContentPage.Behaviors>
     
     <StackLayout BackgroundColor="{StaticResource BackgroundBackgroundColor}">
+        <Frame BorderColor="Transparent"
+               BackgroundColor="Transparent"
+               Padding="0">
+            <Label Text="{Binding Title}" 
+                   TextColor="{StaticResource Signature}"
+                   FontSize="40" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   FontFamily="Koulen"
+                   Margin="0,10,0,-10"/>
+       </Frame>                     
         <CollectionView ItemsSource="{Binding Components}" VerticalOptions="FillAndExpand">
-            <CollectionView.Header>
-                <Label Text="{Binding Title}" 
-                       TextColor="{StaticResource Signature}"
-                       FontSize="40" 
-                       FontAttributes="Bold" 
-                       HorizontalOptions="Center" 
-                       VerticalOptions="Center"
-                       Margin="0,20,0,10" 
-                       FontFamily="Koulen"/>
-            </CollectionView.Header>
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="Interfaces:IComponent">
                     <Grid>
@@ -219,7 +221,7 @@
 
                                     <Label Text="{Binding AdditionalDescription}" 
                                            TextColor="Black" 
-                                           Padding="-15"
+                                           Padding="-10"
                                            VerticalOptions="Center"
                                            HorizontalOptions="Center" 
                                            FontSize="30" FontFamily="Koulen"/>
@@ -232,59 +234,69 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Grid>
+        <Grid Padding="10">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="9*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" 
-                   Grid.Column="1" 
-                   Margin="15,0,0,0" 
-                   HorizontalOptions="Start" 
-                   FontAttributes="Bold" 
-                   FontFamily="Koulen"
-                   FontSize="Title" 
-                   TextColor="{StaticResource TextPriceColor}" 
-                   Text="Total Price"/>
-            <Label Grid.Row="0" 
-                   Grid.Column="3" 
-                   Margin="0,0,15,0" 
-                   HorizontalOptions="End" 
-                   Text="{Binding TotalPriceString}" 
-                   FontAttributes="Bold" 
-                   FontFamily="Koulen" 
-                   FontSize="Title" 
-                   TextColor="{StaticResource TextPriceColor}" />
+            <Frame Grid.Row="0" 
+                   Padding="0"
+                   Grid.Column="0"
+                   WidthRequest="50"
+                   BackgroundColor="Transparent">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=SaveBuildCommand}"
+                        CommandParameter="{Binding .}"/>
+                </Frame.GestureRecognizers>
+                <Image Source="save_data.png"
+                       HeightRequest="50"/>
+            </Frame>
 
-            <!-- SAVE AND EXIT -->
-            <Button Text="Save" 
-                TextColor="{StaticResource Primary}"
-                Command="{Binding SaveBuildCommand}"
-                Padding="0"
-                Grid.Row="1"
-                Grid.Column="1"
-                Style="{StaticResource ButtonOutline}"
-                Margin="8"
-                FontFamily="Koulen"
-                FontSize="20"/>
-            <Button Text="Back"
-                TextColor="{StaticResource Primary}"
-                Command="{Binding BackButtonCommand}"
-                Padding="0"
-                Grid.Row="1"
-                Grid.Column="3"
-                Style="{StaticResource ButtonOutline}"
-                Margin="8"
-                FontFamily="Koulen"
-                FontSize="20"/>
+            <Label Grid.Column="1" 
+                   Padding="0"
+                   Margin="10,0,0,0"
+                   FontSize="Large" 
+                   Text="Total Price:"
+                   WidthRequest="150"
+                   Background="White"
+                   FontFamily="Koulen"
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Start" 
+                   TextColor="{StaticResource TextPriceColor}"/>
+
+            <Label Grid.Column="2" 
+                   Margin="0,0,10,0"
+                   FontSize="Large" 
+                   FontFamily="Koulen" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="End" 
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="End" 
+                   Text="{Binding TotalPriceString}" 
+                   TextColor="{StaticResource TextPriceColor}"/>
+
+            <Frame Grid.Row="0" 
+                   Padding="0"
+                   Grid.Column="3"
+                   WidthRequest="50"
+                   BorderColor="Transparent"
+                   Background="Transparent">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:StartBuildingViewModel}}, Path=BackButtonCommand}"
+                        CommandParameter="{Binding .}"/>
+                </Frame.GestureRecognizers>
+                <Image Source="backarrow.png"
+                       HeightRequest="50"/>
+            </Frame>
         </Grid>
     </StackLayout>
 </ContentPage>
