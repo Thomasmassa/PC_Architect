@@ -40,7 +40,11 @@ Week 11 (06/05): 8 uren:
 Extreme programming met Thomas + 2 buttons toegevoegd aan de detailsPage
 EXTRA: 4u voor de code te beschrijven in comments
 
-Week 12 (13/05): ..... uren:
+Week 12 (13/05): 5u uren:
+
+Add Button niet tonen wanneer er via de searchPage wordt genavigeerd
+Filter systeem op componenten in de searPage
+Filter systeem op prijs en in samenwerking met properties
 
 
 
