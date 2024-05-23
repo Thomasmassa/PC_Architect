@@ -7,6 +7,7 @@ using PC_Architect.Model;
 using PcArchitect.Services;
 using PcArchitect.Model;
 using System.Collections;
+using System.ComponentModel;
 
 /*
 De PartListViewModel klasse erft van de BaseViewModel klasse en is verantwoordelijk voor het beheren van de gegevens en logica voor de PartListPage.
@@ -32,11 +33,13 @@ namespace PcArchitect.ViewModel
         public string? ComponentName { get; set; }
         public ObservableCollection<IComponent> Components { get; set; } = [];
         public ObservableCollection<IComponent> DisplayedItems { get; set; } = [];
+        public ObservableCollection<string> PriceSortOptions { get; set; } = [];
 
         private readonly RootFactory _rootF;
         private readonly BufferService _bufferService;
         private readonly AddedComponentRepository _addedcomponentRepository;
         private readonly NavigationService _navigationService;
+        private bool _isUpdatingCollection = false; // for reseting seachbar and price sort options
 
 
         //////////////////////////////////////////////
@@ -53,6 +56,12 @@ namespace PcArchitect.ViewModel
 
             DisplayedItems = [];
             Components = [];
+
+            PriceSortOptions = new ObservableCollection<string>
+            {
+                "Low to High",
+                "High to Low"
+            };
         }
 
 
@@ -66,6 +75,11 @@ namespace PcArchitect.ViewModel
         async Task PageNavigated(NavigatedToEventArgs args)
         {
             _navigationService.CurrentPage("PartListPage");
+
+            _isUpdatingCollection = true; // for reseting seachbar and price sort options
+            SelectedPriceSortOption = null!; // reset
+            SearchBarText = string.Empty; // reset
+            _isUpdatingCollection = false; // for reseting seachbar and price sort options
 
             string? condition1 = null;
             string? condition2 = null;
@@ -176,6 +190,8 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task TextChanged(string newText)
         {
+            if (_isUpdatingCollection) return; // for reseting seachbar and price sort options
+
             if (string.IsNullOrEmpty(newText))
             {
                 await Toast.Make("Searchbar is empty!").Show();
@@ -190,6 +206,15 @@ namespace PcArchitect.ViewModel
                 DisplayedItems.Clear();
                 var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
 
+                if (SelectedPriceSortOption == "Low to High")
+                {
+                    results = results.OrderBy(c => c.Price).ToList();
+                }
+                else if (SelectedPriceSortOption == "High to Low")
+                {
+                    results = results.OrderByDescending(c => c.Price).ToList();
+                }
+
                 if (results.Count != 0)
                 {
                     foreach (var result in results)
@@ -200,6 +225,45 @@ namespace PcArchitect.ViewModel
             });
         }
         //SEARCHMETHOD
+
+
+        //////////////////////////////////////////////
+
+        //////////////////////////////////////////////
+
+
+        [RelayCommand]
+        async Task PriceFiltering()
+        {
+            await Task.Run(() =>
+            {
+                FilterByPrice();
+            });
+        }
+
+        private void FilterByPrice()
+        {
+            List<IComponent> sortedComponents = new();
+
+            if (SelectedPriceSortOption == "Low to High")
+            {
+                sortedComponents = Components.OrderBy(c => c.Price).ToList();
+            }
+            else if (SelectedPriceSortOption == "High to Low")
+            {
+                sortedComponents = Components.OrderByDescending(c => c.Price).ToList();
+            }
+            else
+            {
+                return;
+            }
+
+            DisplayedItems.Clear();
+            foreach (var component in sortedComponents)
+            {
+                DisplayedItems.Add(component);
+            }
+        }
 
 
         //////////////////////////////////////////////

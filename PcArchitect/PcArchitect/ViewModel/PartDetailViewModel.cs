@@ -89,6 +89,12 @@ namespace PcArchitect.ViewModel
                 PartListDescriptionButtonEnabled = true;
                 SearchListDescriptionButtonEnabled = false;
             }
+            else if (_navigationService.PreviousPage() == "BuildDetailPage")
+            {
+                IsAddBtnEnabled = false;
+                PartListDescriptionButtonEnabled = false;
+                SearchListDescriptionButtonEnabled = true;
+            }
         }
 
 

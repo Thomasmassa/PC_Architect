@@ -38,17 +38,25 @@ namespace PcArchitect.ViewModel
         private readonly AddedComponentRepository _addedComponentRepository;
         private readonly BufferService _bufferService;
         private readonly RootFactory _rootF;
+        private readonly NavigationService _navigationService;
         private SavedBuild? Build;
 
-        public BuildDetailViewModel(RootFactory rootF, BufferService bufferService, AddedComponentRepository addedComponentRepository)
+        public BuildDetailViewModel(RootFactory rootF, BufferService bufferService, AddedComponentRepository addedComponentRepository, NavigationService navigationService)
         {
             _addedComponentRepository = addedComponentRepository;
             _bufferService = bufferService;
             _rootF = rootF;
+            _navigationService = navigationService;
             Components = [];
 
             TotalPriceString = "€0.00";
             AddComponents();
+        }
+
+        [RelayCommand]
+        async Task PageNavigated(NavigatedToEventArgs args)
+        {
+            _navigationService.CurrentPage("BuildDetailPage"); // await niet nodig indien geen zware taak
         }
 
         private Task AddComponents()
@@ -57,7 +65,7 @@ namespace PcArchitect.ViewModel
             {
                 Build = (SavedBuild)_bufferService.GetBufferedComponent("Showbuild");
                 Title = Build.BuildName;
-                double TotalPrice = 0;
+                double? TotalPrice = 0;
 
 
                 var properties = typeof(SavedBuild).GetProperties();
@@ -80,8 +88,10 @@ namespace PcArchitect.ViewModel
                         var part = rootIlist.FirstOrDefault(x => x.Id == item);
                         if (part == null) continue;
                         Components.Add(part);
+                        TotalPrice += part.Price;
                     }
                 }
+                TotalPriceString = string.Format("€{0:N2}", TotalPrice);
             });
         }
 

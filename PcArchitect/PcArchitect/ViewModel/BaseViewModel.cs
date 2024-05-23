@@ -50,6 +50,9 @@ namespace PcArchitect.ViewModel
         string selectedPriceSortOption = "";
 
         [ObservableProperty]
+        string searchBarText = "";
+
+        [ObservableProperty]
         string descriptionButton = "";
 
         [ObservableProperty]

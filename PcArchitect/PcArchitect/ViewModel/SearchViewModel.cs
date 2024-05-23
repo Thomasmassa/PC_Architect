@@ -37,12 +37,15 @@ namespace PcArchitect.ViewModel
 {
     public partial class SearchViewModel : BaseViewModel
     {
-        public ObservableCollection<IComponent> Components { get; set; }
-        public ObservableCollection<IComponent> DisplayedItems { get; set; }
         private readonly BufferService _bufferService;
         private readonly RootFactory _rootF;
         IConnectivity _connectivity;
         private readonly NavigationService _navigationService;
+        private bool _isUpdatingCollection = false;
+        private List<IComponent> _filteredComponents = new();
+
+        public ObservableCollection<IComponent> Components { get; set; }
+        public ObservableCollection<IComponent> DisplayedItems { get; set; }
         public ObservableCollection<string> DisplayedItemProperties { get; set; }
         public ObservableCollection<string> PriceSortOptions { get; set; }
 
@@ -61,10 +64,10 @@ namespace PcArchitect.ViewModel
             _bufferService = bufferService;
             _navigationService = navigationService;
 
-            Components = [];
-            DisplayedItems = [];
+            Components = new ObservableCollection<IComponent>();
+            DisplayedItems = new ObservableCollection<IComponent>();
 
-            DisplayedItemProperties = [];
+            DisplayedItemProperties = new ObservableCollection<string>();
             var properties = typeof(Root).GetProperties();
             DisplayedItemProperties.Add("All");
             foreach (var property in properties)
@@ -90,58 +93,75 @@ namespace PcArchitect.ViewModel
         {
             await Task.Run(() =>
             {
-                filterCombinedOptions();
+                FilterByComponent();
             });
         }
 
-        [RelayCommand]
-        async Task PriceFiltering()
+        private void FilterByComponent()
         {
-            await Task.Run(() =>
-            {
-                filterCombinedOptions();
-            });
-        }
+            _filteredComponents.Clear();
 
-        private void filterCombinedOptions()
-        {
-            var filteredComponents = new List<IComponent>();
             var root = _rootF.GetRoot1();
 
+            if (SelectedFilterItem == null)
+            {
+                SelectedFilterItem = "All";
+            }
+            
             if (SelectedFilterItem == "All")
             {
-                foreach (var component in Components)
-                {
-                    filteredComponents.Add(component);
-                }
+                _filteredComponents = new List<IComponent>(Components);
             }
             else
             {
-                var selectedProperty = root.GetType().GetProperty(SelectedFilterItem);
-                if (selectedProperty != null)
+                if (!string.IsNullOrEmpty(SelectedFilterItem) && SelectedFilterItem != "All")
                 {
-                    var selectedComponents = selectedProperty.GetValue(root) as IList;
-                    if (selectedComponents != null)
+                    var selectedProperty = root.GetType().GetProperty(SelectedFilterItem);
+                    if (selectedProperty != null)
                     {
-                        foreach (var component in selectedComponents)
+                        var selectedComponents = selectedProperty.GetValue(root) as IList;
+                        if (selectedComponents != null)
                         {
-                            filteredComponents.Add((IComponent)component);
+                            foreach (var component in selectedComponents)
+                            {
+                                _filteredComponents.Add((IComponent)component);
+                            }
                         }
                     }
                 }
             }
 
+            FilterByPrice();
+
+            UpdateDisplayedItems();
+        }
+
+        private void FilterByPrice()
+        {
+            List<IComponent> sortedComponents;
+
             if (SelectedPriceSortOption == "Low to High")
             {
-                filteredComponents = filteredComponents.OrderBy(c => c.Price).ToList();
+                sortedComponents = _filteredComponents.OrderBy(c => c.Price).ToList();
             }
             else if (SelectedPriceSortOption == "High to Low")
             {
-                filteredComponents = filteredComponents.OrderByDescending(c => c.Price).ToList();
+                sortedComponents = _filteredComponents.OrderByDescending(c => c.Price).ToList();
+            }
+            else
+            {
+                return;
             }
 
+            _filteredComponents = sortedComponents;
+
+            UpdateDisplayedItems();
+        }
+
+        private void UpdateDisplayedItems()
+        {
             DisplayedItems.Clear();
-            foreach (var component in filteredComponents)
+            foreach (var component in _filteredComponents)
             {
                 DisplayedItems.Add(component);
             }
@@ -158,7 +178,11 @@ namespace PcArchitect.ViewModel
         {
             _navigationService.CurrentPage("SearchPage");
 
-            SelectedFilterItem = "All";
+            _isUpdatingCollection = true; // for reseting seachbar and price sort options
+            SelectedPriceSortOption = null!; // reset
+            SelectedFilterItem = null!; // reset
+            SearchBarText = string.Empty; // reset
+            _isUpdatingCollection = false; // for reseting seachbar and price sort options
 
             DisplayedItems.Clear();
             Components.Clear();
@@ -185,11 +209,10 @@ namespace PcArchitect.ViewModel
                 if (Ilist == null) continue;
                 foreach (var item in Ilist)
                 {
-                    if (item.Price != null && item != null)
+                    if (item != null && item.Price != null)
                     {
                         Components.Add(item);
                     }
-                    continue;
                 }
             }
         }
@@ -215,12 +238,12 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task TextChanged(string newText)
         {
+            if (_isUpdatingCollection) return;
+
             if (string.IsNullOrEmpty(newText))
             {
                 await Toast.Make("Searchbar is empty!").Show();
             }
-
-            DisplayedItems.Clear();
 
             await OnSearch(newText);
             return;
@@ -228,11 +251,11 @@ namespace PcArchitect.ViewModel
 
         private Task OnSearch(string searchText)
         {
-            Title = $"Search {searchText} List";
+            //Title = $"Search {searchText} List";
 
             return Task.Run(() =>
             {
-                var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+                var results = Components.Where(p => p.Name != null && p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
 
                 if (searchText == "")
                 {
@@ -243,6 +266,31 @@ namespace PcArchitect.ViewModel
                         Shell.Current.DisplayAlert("No results found", "No results found for this search", "OK");
                         return;
                     }
+                }
+
+                // Component filter the search results
+                if (!string.IsNullOrEmpty(SelectedFilterItem) && SelectedFilterItem != "All")
+                {
+                    var root = _rootF.GetRoot1();
+                    var selectedProperty = root.GetType().GetProperty(SelectedFilterItem);
+                    if (selectedProperty != null)
+                    {
+                        var selectedComponents = selectedProperty.GetValue(root) as IList;
+                        if (selectedComponents != null)
+                        {
+                            results = results.Where(r => selectedComponents.Contains(r)).ToList();
+                        }
+                    }
+                }
+
+                // Price filter the search results
+                if (SelectedPriceSortOption == "Low to High")
+                {
+                    results = results.OrderBy(c => c.Price).ToList();
+                }
+                else if (SelectedPriceSortOption == "High to Low")
+                {
+                    results = results.OrderByDescending(c => c.Price).ToList();
                 }
 
                 if (results.Count != 0)
@@ -270,14 +318,15 @@ namespace PcArchitect.ViewModel
         [RelayCommand]
         async Task PartToDetail(IComponent selectedPart)
         {
-            if (selectedPart == null) return;
-
-            _bufferService.BuffComponent(selectedPart.Name, selectedPart);
-
-            await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", false, new Dictionary<string, object>
+            if (selectedPart != null)
             {
-                { "SelectedItem", selectedPart.Name }
-            });
+                _bufferService.BuffComponent(selectedPart.Name, selectedPart);
+
+                await Shell.Current.GoToAsync($"{nameof(PartDetailPage)}", false, new Dictionary<string, object>
+                {
+                    { "SelectedItem", selectedPart.Name }
+                });
+            }
         }
 
         //////////////////////////////////////////////
