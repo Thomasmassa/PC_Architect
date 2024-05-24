@@ -79,7 +79,7 @@
                     </SearchBar.Behaviors>
                 </SearchBar>
 
-                <Picker Title="Filter by component type"
+                <Picker Title="Filter by component"
                         ItemsSource="{Binding DisplayedItemProperties}"
                         SelectedItem="{Binding SelectedFilterItem}"
                         Grid.Column="0"
@@ -99,7 +99,7 @@
                     </Picker.Behaviors>
                 </Picker>
 
-                <Picker Title="Filter by min/max price"
+                <Picker Title="Filter by price"
                         ItemsSource="{Binding PriceSortOptions}"
                         SelectedItem="{Binding SelectedPriceSortOption}"
                         Grid.Column="3"

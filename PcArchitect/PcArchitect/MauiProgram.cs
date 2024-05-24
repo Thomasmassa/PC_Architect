@@ -33,7 +33,7 @@ namespace PcArchitect
             // een singleton service wordt slechts eenmaal geïnstantieerd en gebruikt in de gehele applicatie
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
-            
+            builder.Services.AddSingleton<NavigationService>();
             builder.Services.AddSingleton<LocalDatabase>();
             builder.Services.AddSingleton<RootFactory>();
             builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
@@ -57,8 +57,6 @@ namespace PcArchitect
             builder.Services.AddTransient<BuildDetailPage>();
             builder.Services.AddTransient<PartDetailViewModel>();
             builder.Services.AddTransient<PartDetailPage>();
-
-            builder.Services.AddSingleton<NavigationService>();
 
 #if DEBUG
             builder.Logging.AddDebug();

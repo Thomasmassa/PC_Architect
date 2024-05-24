@@ -84,7 +84,7 @@
                     </SearchBar.Behaviors>
                 </SearchBar>
 
-                <Picker Title="Filter by min/max price"
+                <Picker Title="Filter by price"
                         ItemsSource="{Binding PriceSortOptions}"
                         SelectedItem="{Binding SelectedPriceSortOption}"
                         Grid.Column="0"
@@ -95,7 +95,7 @@
                         Background="{StaticResource BackgroundBackgroundColor}"
                         TextColor="{StaticResource PrimaryText}"
                         FontSize="Subtitle"
-                        HorizontalOptions="Center"
+                        HorizontalOptions="Start"
                         VerticalOptions="Center">
                     <Picker.Behaviors>
                         <toolkit:EventToCommandBehavior

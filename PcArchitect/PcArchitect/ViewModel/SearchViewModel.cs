@@ -6,6 +6,7 @@ using PcArchitect.Services;
 using PcArchitect.Views;
 using System.Collections;
 using System.Collections.ObjectModel;
+using static SQLite.SQLite3;
 
 /*
 De SearchViewModel is een ViewModel die de SearchPage aanstuurt.
@@ -44,7 +45,7 @@ namespace PcArchitect.ViewModel
         private bool _isUpdatingCollection = false;
         private List<IComponent> _filteredComponents = new();
 
-        public ObservableCollection<IComponent> Components { get; set; }
+        private ObservableCollection<IComponent> Component { get; set; }
         public ObservableCollection<IComponent> DisplayedItems { get; set; }
         public ObservableCollection<string> DisplayedItemProperties { get; set; }
         public ObservableCollection<string> PriceSortOptions { get; set; }
@@ -64,7 +65,7 @@ namespace PcArchitect.ViewModel
             _bufferService = bufferService;
             _navigationService = navigationService;
 
-            Components = new ObservableCollection<IComponent>();
+            Component = new ObservableCollection<IComponent>();
             DisplayedItems = new ObservableCollection<IComponent>();
 
             DisplayedItemProperties = new ObservableCollection<string>();
@@ -89,15 +90,7 @@ namespace PcArchitect.ViewModel
 
 
         [RelayCommand]
-        async Task ComponentFiltering()
-        {
-            await Task.Run(() =>
-            {
-                FilterByComponent();
-            });
-        }
-
-        private void FilterByComponent()
+        public void ComponentFiltering()
         {
             _filteredComponents.Clear();
 
@@ -110,7 +103,7 @@ namespace PcArchitect.ViewModel
             
             if (SelectedFilterItem == "All")
             {
-                _filteredComponents = new List<IComponent>(Components);
+                _filteredComponents = Component.ToList();
             }
             else
             {
@@ -154,8 +147,6 @@ namespace PcArchitect.ViewModel
             }
 
             _filteredComponents = sortedComponents;
-
-            UpdateDisplayedItems();
         }
 
         private void UpdateDisplayedItems()
@@ -185,7 +176,6 @@ namespace PcArchitect.ViewModel
             _isUpdatingCollection = false; // for reseting seachbar and price sort options
 
             DisplayedItems.Clear();
-            Components.Clear();
 
             if (_connectivity.NetworkAccess != NetworkAccess.Internet)
             {
@@ -211,7 +201,7 @@ namespace PcArchitect.ViewModel
                 {
                     if (item != null && item.Price != null)
                     {
-                        Components.Add(item);
+                        Component.Add(item);
                     }
                 }
             }
@@ -255,11 +245,17 @@ namespace PcArchitect.ViewModel
 
             return Task.Run(() =>
             {
-                var results = Components.Where(p => p.Name != null && p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+                var results = Component.Where(p => p.Name != null && p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
+
+                if (results.Count == 0)
+                {
+                    DisplayedItems.Clear();
+                    return;
+                }
 
                 if (searchText == "")
                 {
-                    results = Components.ToList();
+                    results = Component.ToList();
 
                     if (results.Count == 0)
                     {
@@ -271,11 +267,10 @@ namespace PcArchitect.ViewModel
                 // Component filter the search results
                 if (!string.IsNullOrEmpty(SelectedFilterItem) && SelectedFilterItem != "All")
                 {
-                    var root = _rootF.GetRoot1();
-                    var selectedProperty = root.GetType().GetProperty(SelectedFilterItem);
+                    var selectedProperty = _rootF.GetRoot1().GetType().GetProperty(SelectedFilterItem);
                     if (selectedProperty != null)
                     {
-                        var selectedComponents = selectedProperty.GetValue(root) as IList;
+                        var selectedComponents = selectedProperty.GetValue(_rootF.GetRoot1()) as IList;
                         if (selectedComponents != null)
                         {
                             results = results.Where(r => selectedComponents.Contains(r)).ToList();

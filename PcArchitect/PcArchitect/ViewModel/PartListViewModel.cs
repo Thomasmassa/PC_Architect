@@ -204,6 +204,7 @@ namespace PcArchitect.ViewModel
             return Task.Run(() =>
             {
                 DisplayedItems.Clear();
+
                 var results = Components.Where(p => p.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
 
                 if (SelectedPriceSortOption == "Low to High")
