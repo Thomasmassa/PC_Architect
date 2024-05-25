@@ -90,7 +90,7 @@
                         Grid.Column="0"
                         Grid.Row="2"
                         Grid.ColumnSpan="5"
-                        Margin="0, 0, 25, 0"
+                        Margin="25, 0, 0, 0"
                         FontFamily="Koulen"
                         Background="{StaticResource BackgroundBackgroundColor}"
                         TextColor="{StaticResource PrimaryText}"
