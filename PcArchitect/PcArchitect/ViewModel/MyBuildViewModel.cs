@@ -49,8 +49,9 @@ namespace PcArchitect.ViewModel
                 Console.WriteLine($"buildName is: {build.BuildName}");
                 SavedBuilds.Add(build);
             }
-            await Toast.Make("swipe left on card to delete").Show();
-            await Toast.Make("swipe right on card to change the name").Show();
+            await Toast.Make("swipe left on card to delete", CommunityToolkit.Maui.Core.ToastDuration.Long).Show();
+            await Task.Delay(3500);
+            await Toast.Make("swipe right on card to change the name", CommunityToolkit.Maui.Core.ToastDuration.Long).Show();
         }
 
         [RelayCommand]
