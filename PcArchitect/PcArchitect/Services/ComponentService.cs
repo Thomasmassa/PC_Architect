@@ -2,12 +2,17 @@
 using PcArchitect.Interfaces;
 
 /*
-Deze klasse wordt gebruikt om componenten uit de database op te halen.
 
-De methode GetComponentsAsync wordt aangeroepen met een specifieke path dat het type componenten aangeeft die opgehaald moeten worden.
+De ComponentService klasse wordt gebruikt om componenten uit de database op te halen.
 
-Er wordt een HTTP GET request gedaan naar de database en de response wordt gedeserialiseerd naar een lijst van componenten.
-Deze lijst wordt gereturnd.
+De GetComponentsAsync methode wordt aangeroepen met een specifieke path dat het type componenten aangeeft die opgehaald moeten worden.
+
+Er wordt een HTTP GET request gedaan naar de database en de response wordt gedeserialiseerd naar een lijst van componenten. 
+Als de response geen successtatuscode heeft, retourneert de methode een lege lijst. 
+Als er een uitzondering optreedt tijdens het proces, wordt er een bericht geschreven naar de console en retourneert de methode null.
+
+Deze lijst van componenten wordt gereturnd.
+
 */
 
 namespace PcArchitect.Services

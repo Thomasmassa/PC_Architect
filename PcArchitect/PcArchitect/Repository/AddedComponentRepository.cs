@@ -1,7 +1,8 @@
 ﻿using PcArchitect.Model;
 
 /*
-Deze klasse wordt gebruikt om componenten toe te voegen, te verwijderen en te verwijderen uit de Root klasse.
+
+Deze klasse wordt gebruikt om componenten toe te voegen en te verwijderen uit de Root klasse.
 
 Het readonly sleutelwoord wordt gebruikt om ervoor te zorgen dat de waarde van de _rootF variabele alleen kan worden ingesteld in de constructor of bij de declaratie.
 Dit zorgt ervoor dat de waarde van de variabele niet per ongeluk kan worden gewijzigd.
@@ -19,10 +20,11 @@ De ClearComponents() methode maakt alle lijsten in de Root klasse leeg.
 Het doet dit door over alle eigenschappen van de Root klasse te itereren en voor elke eigenschap een nieuwe instantie van het eigenschapstype te maken. 
 Dit effectief maakt de lijst leeg.
 
-In `AddComponentAsync`, wordt de taak gecreëerd met `Task.Run` en vervolgens onmiddellijk `Task.CompletedTask` geretourneerd. 
+In AddComponentAsync, wordt de taak gecreëerd met Task.Run en vervolgens onmiddellijk Task.CompletedTask geretourneerd. 
 Dit betekent dat de methode niet wacht tot de taak is voltooid voordat deze terugkeert.
-In `RemoveComponentAsync`, wordt `await` gebruikt met `Task.Run`, wat betekent dat de methode zal wachten tot de taak die door `Task.Run` wordt gemaakt, 
+In RemoveComponentAsync, wordt await gebruikt met Task.Run, wat betekent dat de methode zal wachten tot de taak die door Task.Run wordt gemaakt, 
 is voltooid voordat het verder gaat.
+
 */
 
 namespace PC_Architect.Model

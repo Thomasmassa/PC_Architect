@@ -12,20 +12,39 @@ using System;
 using System.Reflection;
 
 /*
-Deze klasse is verantwoordelijk voor het beheren van de toestand en operaties van het samenstellen van een pc.
 
-- `BuildName`: De naam van de huidige build.
-- `Components`: Een collectie van componenten die aan de build zijn toegevoegd.
-- `TotalPrice`: De totale prijs van de huidige build.
-- `Presets`: Een lijst van voorgedefinieerde componenten.
-- `AddComponents()`: Een methode die componenten toevoegt aan de build.
-- `PageNavigated()`: Een methode die wordt aangeroepen wanneer de pagina wordt geladen.
-- `SaveBuild()`: Een methode die de huidige build opslaat.
-- `GoToPartsList()`: Een methode die navigeert naar de onderdelenlijst.
-- `DeleteComponent()`: Een methode die een component uit de build verwijdert.
-- `BackButton()`: Een methode die wordt aangeroepen wanneer de terugknop wordt ingedrukt.
+Deze klasse is verantwoordelijk voor het beheren van de toestand en operaties van een PC bouwproces.
 
-Deze klasse maakt gebruik van verschillende services en repositories om gegevens op te halen en te manipuleren. 
+Hier is een kort overzicht van de belangrijke elementen:
+- BuildName: De naam van de huidige build.
+- Components: Een collectie van componenten die aan de build zijn toegevoegd.
+- TotalPrice: De totale prijs van de huidige build.
+- Presets: Een lijst van voorgedefinieerde componenten.
+- AddComponents(): Een methode die componenten toevoegt aan de build.
+- PageNavigated(): Een methode die wordt aangeroepen wanneer de pagina wordt geladen.
+- SaveBuild(): Een methode die de huidige build opslaat.
+- GoToPartsList(): Een methode die navigeert naar de onderdelenlijst.
+- DeleteComponent(): Een methode die een component uit de build verwijdert.
+- BackButton(): Een methode die wordt aangeroepen wanneer de terugknop wordt ingedrukt.
+
+De ViewModel definieert ook een lijst van preset componenten in de SetPresets methode. 
+Deze presets worden gebruikt als standaard componenten wanneer er geen componenten zijn geselecteerd.
+
+De AddComponents methode haalt componenten op uit het Root object en voegt ze toe aan de Components collectie. 
+Als er geen componenten zijn geselecteerd, voegt het het overeenkomstige preset component toe.
+
+De PageNavigated methode wordt aangeroepen wanneer de pagina wordt geladen. 
+Het haalt de opgeslagen build op uit de buffer service en roept de AddComponents methode aan.
+
+De SaveBuild methode slaat de huidige build op in de lokale database. Als de build nieuw is, vraagt het de gebruiker om een naam.
+
+De GoToPartsList methode navigeert naar de onderdelenlijst pagina voor het geselecteerde component.
+
+De DeleteComponent methode verwijdert een geselecteerd component uit de build en werkt de totale prijs bij.
+
+De BackButton methode wordt aangeroepen wanneer de terugknop wordt ingedrukt. 
+Het vraagt de gebruiker om de huidige build op te slaan voordat het terug navigeert naar de hoofdpagina.
+
 */
 
 namespace PcArchitect.ViewModel
@@ -67,14 +86,14 @@ namespace PcArchitect.ViewModel
         {
             Presets.Add(new Cpu { Name = "CPU", PresetImage = "cpu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
             Presets.Add(new CpuCooler { Name = "CPU COOLER", PresetImage = "cpu_cooler.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
-            Presets.Add(new Gpu { Name = "GPU", PresetImage = "gpu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
-            Presets.Add(new Motherboard { Name = "MOTHERBOARD", PresetImage = "motherboard.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
-            Presets.Add(new Memory { Name = "MEMORY", PresetImage = "memory.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
-            Presets.Add(new Storage { Name = "STORAGE", PresetImage = "ssd.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
-            Presets.Add(new Psu { Name = "PSU", PresetImage = "psu.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
-            Presets.Add(new CaseFan { Name = "CASE FAN", PresetImage = "case_fan.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
-            Presets.Add(new Case { Name = "CASE", PresetImage = "case_tower.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
-            Presets.Add(new Os { Name = "OS", PresetImage = "os.png", Id = 0, IsPresetFrameEnabled = true , IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Gpu { Name = "GPU", PresetImage = "gpu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Motherboard { Name = "MOTHERBOARD", PresetImage = "motherboard.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Memory { Name = "MEMORY", PresetImage = "memory.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Storage { Name = "STORAGE", PresetImage = "ssd.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Psu { Name = "PSU", PresetImage = "psu.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new CaseFan { Name = "CASE FAN", PresetImage = "case_fan.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Case { Name = "CASE", PresetImage = "case_tower.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
+            Presets.Add(new Os { Name = "OS", PresetImage = "os.png", Id = 0, IsPresetFrameEnabled = true, IsAdditionalPresetFrameEnabled = false, IsSelectedComponentFrameEnabled = false });
         }
 
 
@@ -113,8 +132,8 @@ namespace PcArchitect.ViewModel
 
                             TotalPrice += item.Price ?? 0;
                             TotalPriceString = TotalPrice.ToString("C2");
-                            Components.Add(item);   
-                        }   
+                            Components.Add(item);
+                        }
                         if (list is List<Storage> && list.Count > 0)
                             Components.Add(new Storage { AdditionalName = "Storage", AdditionalDescription = "+ Add Additional Storage", IsAdditionalPresetFrameEnabled = true });
                         if (list is List<CaseFan> && list.Count > 0)

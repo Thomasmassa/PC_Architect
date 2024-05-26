@@ -6,21 +6,21 @@ using PcArchitect.Services;
 using PcArchitect.Model;
 using System.Collections;
 using PC_Architect.Model;
-using System.Reflection;
 
 /*
+
 De BuildDetailViewModel klasse is verantwoordelijk voor het beheren van de details van een specifieke build.
 
 De ObservableCollection<IComponent> Components is een collectie die de componenten van de huidige build bevat. 
-Wanneer items aan deze collectie worden toegevoegd of verwijderd, wordt de view automatisch bijgewerkt.
+Wanneer items aan deze collectie worden toegevoegd of verwijderd, wordt de view automatisch bijgewerkt dankzij de aard van de ObservableCollection.
 
 De AddedComponentRepository, BufferService en RootFactory zijn services die worden geïnjecteerd via de constructor. 
 Deze services worden gebruikt om gegevens op te halen en te beheren.
 
-De SavedBuild? Build is een nullable type dat de huidige build vertegenwoordigt.
+De SavedBuild? Build is een nullable type dat de huidige build vertegenwoordigt. Als de Build null is, wordt er geen actie ondernomen.
 
 In de constructor worden de services geïnitialiseerd en wordt de Components collectie ingesteld op een lege lijst. 
-Vervolgens wordt de AddComponents methode aangeroepen om de componenten van de huidige build toe te voegen aan de Components collectie.
+Vervolgens wordt de AddComponents methode aangeroepen om de componenten van de huidige build toe te voegen aan de Components collectie en de totale prijs te berekenen.
 
 De BackButton methode is een commando dat de gebruiker terugbrengt naar de MyBuildPage.
 
@@ -28,6 +28,7 @@ De EditBuild methode is een commando dat de huidige lijst van componenten leegma
 de componenten van de huidige build toevoegt aan de repository en vervolgens navigeert naar de StartBuildingPage om de build te bewerken.
 
 De ToDetail methode is een commando dat het geselecteerde item in de buffer plaatst en vervolgens navigeert naar de PartDetailPage om de details van het geselecteerde item te bekijken.
+
 */
 
 namespace PcArchitect.ViewModel

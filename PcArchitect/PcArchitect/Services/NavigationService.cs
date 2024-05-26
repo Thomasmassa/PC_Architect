@@ -1,8 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+
+De NavigationService klasse wordt gebruikt om de huidige en vorige pagina bij te houden.
+
+Deze service gaat nodig zijn om specifieke delen van de UI te tonen aan de gebruiker, afhankelijk van de huidige en vorige pagina.
+
+*/
 
 namespace PcArchitect.Services
 {

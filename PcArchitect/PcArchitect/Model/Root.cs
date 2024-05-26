@@ -1,4 +1,8 @@
-﻿// Root bevat lijsten van alle componenten die in de applicatie worden gebruikt.
+﻿/*
+
+De Root klasse bevat lijsten van alle componenten die in de applicatie worden gebruikt.
+
+*/
 
 namespace PcArchitect.Model
 {

@@ -2,17 +2,19 @@
 using SQLite;
 
 /*
+
 De LocalDatabase klasse beheert de lokale SQLite-database.
 
-De constructor initialiseert de SQLiteAsyncConnection en maakt een tabel voor het SavedBuild model.
+De constructor initialiseert de SQLiteAsyncConnection, bepaalt het pad naar de database, en maakt een tabel voor het SavedBuild model als deze nog niet bestaat.
 De database wordt opgeslagen in de lokale applicatiedata van de gebruiker.
 
-GetItemsAsync haalt alle SavedBuild items op uit de database.
-SaveItemAsync voegt een nieuw SavedBuild item toe aan de database.
-DeleteItemAsync verwijdert een SavedBuild item uit de database.
-UpdateItemAsync werkt een bestaand SavedBuild item bij in de database.
+GetItemsAsync haalt asynchroon alle SavedBuild items op uit de database.
+SaveItemAsync voegt asynchroon een nieuw SavedBuild item toe aan de database en retourneert het aantal beïnvloede rijen.
+DeleteItemAsync verwijdert asynchroon een SavedBuild item uit de database en retourneert het aantal beïnvloede rijen.
+UpdateItemAsync werkt asynchroon een bestaand SavedBuild item bij in de database en retourneert het aantal beïnvloede rijen.
 
-Elke methode is asynchroon en retourneert een Task of Task<int>, waarbij de int het aantal beïnvloede rijen aangeeft.
+Het gebruik van asynchrone methoden zorgt voor een betere responsiviteit van de applicatie, omdat de UI thread niet wordt geblokkeerd tijdens database operaties.
+
 */
 
 namespace PcArchitect.Repository

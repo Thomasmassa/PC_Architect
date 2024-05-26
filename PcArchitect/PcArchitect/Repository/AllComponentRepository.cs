@@ -2,12 +2,14 @@
 using PcArchitect.Model;
 
 /*
+
 De AllComponentRepository klasse is verantwoordelijk voor het ophalen en toevoegen van alle componenten aan de Root klasse.
 
-De IComponentService wordt gebruikt om de componenten op te halen en de RootFactory wordt gebruikt om de Root klasse te verkrijgen.
+De IComponentService wordt gebruikt om de componenten (lijst per lijst) op te halen en de RootFactory wordt gebruikt om de Root klasse te verkrijgen.
 
-De GetAllComponentsAsync methode wordt aangeroepen om alle componenten op te halen.
-Omdat de actie asynchrone methoden bevat (GetComponentsAsync), wordt async gebruikt om aan te geven dat de actie asynchroon is.
+De GetAllComponentsAsync methode wordt gebruikt om asynchroon alle componenten op te halen en toe te voegen aan de respectievelijke lijsten in de Root klasse. 
+Deze methode maakt gebruik van Task.Run om de asynchrone oproepen naar GetComponentsAsync te beheren, wat betekent dat deze methode niet zal wachten op de voltooiing van deze oproepen voordat ze verder gaat.
+
 */
 
 namespace PcArchitect.Repository

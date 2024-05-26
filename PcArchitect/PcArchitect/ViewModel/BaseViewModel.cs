@@ -1,11 +1,16 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 
 /*
+
 De BaseViewModel klasse is een abstracte klasse die dient als basis voor andere viewmodels. 
 Het erft van de ObservableObject klasse, wat betekent dat het INotifyPropertyChanged implementeert en dus databinding ondersteunt.
 
-Er zijn verschillende eigenschappen gedefinieerd met de [ObservableProperty] attribuut, 
-wat betekent dat ze automatisch PropertyChanged events genereren wanneer ze veranderen.
+Er zijn verschillende eigenschappen gedefinieerd met het [ObservableProperty] attribuut, 
+wat betekent dat ze automatisch PropertyChanged events genereren wanneer ze veranderen. 
+Deze eigenschappen zijn onder andere: Title, Item, IsRefreshing, IsDetailsVisible, IsDescriptionVisible, TotalPriceString, 
+                                      IsAddBtnEnabled, PartListDescriptionButtonEnabled, SearchListDescriptionButtonEnabled, 
+                                      SelectedFilterItem, SelectedPriceSortOption, SearchBarText, DescriptionButton, AdditionalName.
+
 */
 
 namespace PcArchitect.ViewModel

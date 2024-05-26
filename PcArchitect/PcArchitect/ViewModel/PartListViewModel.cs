@@ -7,22 +7,26 @@ using PC_Architect.Model;
 using PcArchitect.Services;
 using PcArchitect.Model;
 using System.Collections;
-using System.ComponentModel;
 
 /*
+
 De PartListViewModel klasse erft van de BaseViewModel klasse en is verantwoordelijk voor het beheren van de gegevens en logica voor de PartListPage.
 
-De klasse bevat de volgende methoden:
-- PageNavigated: Deze methode wordt aangeroepen wanneer de pagina wordt genavigeerd. 
-                 Het bepaalt welke onderdelen moeten worden weergegeven op basis van de naam van het onderdeel.
-- AddParts: Deze methode voegt onderdelen toe aan de lijst van onderdelen op basis van de naam van het onderdeel en de voorwaarden.
-- TextChanged: Deze methode wordt aangeroepen wanneer de tekst in de zoekbalk wordt gewijzigd. 
-               Het filtert de onderdelen op basis van de zoektekst.
-- OnSearch: Deze methode filtert de onderdelen op basis van de zoektekst.
-- BackButton: Deze methode wordt aangeroepen wanneer de terugknop wordt ingedrukt. 
-              Het navigeert terug naar de StartBuildingPage.
-- AddSelectedPartToRepository: Deze methode voegt het geselecteerde onderdeel toe aan de repository en navigeert terug naar de StartBuildingPage.
-- PartToDetail: Deze methode navigeert naar de PartDetailPage voor het geselecteerde onderdeel.
+De klasse bevat de volgende eigenschappen:
+- ComponentName: De naam van het component.
+- Components, DisplayedItems, PriceSortOptions: Collecties die de componenten, de getoonde items en de prijssorteeropties bevatten.
+
+En de volgende methoden:
+- PartListViewModel(): De constructor initialiseert de afhankelijkheden en stelt de initiële waarden van de eigenschappen in.
+- PageNavigated(): Deze methode wordt aangeroepen wanneer er naar een nieuwe pagina wordt genavigeerd. 
+                   Het reset de zoekbalk en prijssorteeropties en voegt de relevante onderdelen toe aan de Components collectie op basis van de ComponentName.
+- AddParts(): Deze methode voegt onderdelen toe aan de Components collectie op basis van de gegeven voorwaarden.
+- TextChanged(), OnSearch(): Deze methoden worden aangeroepen wanneer de tekst in de zoekbalk wordt gewijzigd. 
+                             Ze filteren de onderdelen op basis van de zoektekst.
+- BackButton(): Deze methode wordt aangeroepen wanneer de terugknop wordt ingedrukt. Het navigeert terug naar de StartBuildingPage.
+- AddSelectedPartToRepository(): Deze methode voegt het geselecteerde onderdeel toe aan de repository en navigeert terug naar de StartBuildingPage.
+- PartToDetail(): Deze methode navigeert naar de PartDetailPage voor het geselecteerde onderdeel.
+
 */
 
 namespace PcArchitect.ViewModel

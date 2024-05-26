@@ -7,13 +7,22 @@ using PcArchitect.Model;
 using PcArchitect.Repository;
 
 /*
+
 De MyBuildViewModel klasse erft van de BaseViewModel klasse en is verantwoordelijk voor het beheren van de gegevens en logica voor de MyBuildPage.
 
 Het heeft twee private readonly velden: _localDatabase en _bufferService. 
 Deze zijn services die worden geïnjecteerd via de constructor en worden gebruikt om gegevens op te slaan en te manipuleren.
 
+De SavedBuilds is een collectie van opgeslagen builds.
+
 De PageNavigated methode is een asynchrone methode die wordt aangeroepen wanneer de pagina is geladen.
 Het haalt de opgeslagen builds op uit de lokale database en voegt ze toe aan de SavedBuilds collectie.
+
+De DeleteComponent methode wordt gebruikt om een build te verwijderen.
+De ChangeName methode wordt gebruikt om de naam van een build te wijzigen.
+De GoToBuildDetailsPage methode wordt gebruikt om te navigeren naar de BuildDetailPage.
+De BackButton methode wordt gebruikt om terug te gaan naar de MainPage.
+
 */
 
 namespace PcArchitect.ViewModel

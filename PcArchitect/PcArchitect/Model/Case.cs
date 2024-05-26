@@ -3,14 +3,19 @@ using SQLite;
 using System.Text.Json.Serialization;
 
 /*
-Case klasse implementeert de IComponent interface, wat betekent dat het alle eigenschappen van die interface bevat.
-De boolean eigenschappen worden gebruikt om de zichtbaarheid van de frames in de view te bepalen.
-Ze zijn in de modelklassen gedefinieerd omdat ze specifiek zijn voor elk component.
 
-De eigenschappen van de klasse, zoals Id, Image, etc., worden gemarkeerd met het JsonPropertyName attribuut. 
-Dit attribuut specificeert de naam van het veld wanneer een object wordt geserialiseerd naar (object -> Json string formaat) of gedeserialiseerd (Json string formaat -> object) van JSON. 
-Dit is hier vooral handig omdat de namen van de velden in de JSON-bestanden niet overeenkomen met de eigenschapsnamen in de klasse.
-Dient als een soort van mapping tussen de JSON en de klasse.
+De Case klasse is een implementatie van de IComponent interface en erft daardoor al haar eigenschappen. 
+Deze klasse bevat ook specifieke boolean eigenschappen die de zichtbaarheid van bepaalde frames in de view bepalen. 
+Deze eigenschappen zijn gedefinieerd op modelniveau omdat ze uniek zijn voor elk component.
+
+Elke eigenschap in deze klasse, zoals Id, Image, enz., is gemarkeerd met het JsonPropertyName attribuut. 
+Dit attribuut wordt gebruikt om de naam van het veld te specificeren wanneer een object wordt geserialiseerd naar of gedeserialiseerd van JSON. 
+Dit is bijzonder nuttig in deze context, omdat de veldnamen in de JSON-bestanden niet noodzakelijkerwijs overeenkomen met de namen van de eigenschappen in de klasse. 
+Het fungeert als een soort mapping tussen de JSON-gegevens en de klasse-eigenschappen.
+
+Bovendien bevat de klasse enkele eigenschappen die standaardwaarden hebben. 
+Deze standaardwaarden worden gebruikt wanneer de overeenkomstige velden niet zijn ingevuld in de JSON-bestanden.
+
 */
 
 namespace PcArchitect.Model

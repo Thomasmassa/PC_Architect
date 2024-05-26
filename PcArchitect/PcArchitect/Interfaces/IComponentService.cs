@@ -1,8 +1,13 @@
 ﻿/*
-Interface waarin de generieke methode GetComponentsAsync wordt gedefinieerd die asynchroon een lijst van componenten ophaalt.
 
-Een generieke methode is een methode die kan werken met elk type object.
-T is een generieke parameter die de type van de componenten aangeeft wanneer de methode wordt aangeroepen.
+De IComponentService interface definieert de methode GetComponentsAsync die asynchroon een lijst van componenten ophaalt.
+De methode is generiek en kan worden gebruikt om componenten van elk type op te halen.
+
+De interface bevat één methode:
+- GetComponentsAsync: asynchroon ophalen van een lijst van componenten
+
+De methode GetComponentsAsync is een generieke methode die een lijst van componenten ophaalt van het type T.
+
 */
 
 namespace PcArchitect.Interfaces

@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 
 /*
+
 Deze klasse definieert een converter die wordt gebruikt om de TextChangedEventArgs van een SearchBar naar een string te converteren. 
 
 Wanneer de tekst in de SearchBar verandert, wordt de TextChanged event getriggerd. 
@@ -12,6 +13,7 @@ Deze methode retourneert de NewTextValue van de TextChangedEventArgs, dat is de 
 
 Deze nieuwe tekstwaarde wordt vervolgens doorgegeven aan de TextChangedCommand in de ViewModel. 
 Dit betekent dat elke keer dat de tekst in de SearchBar verandert, de TextChangedCommand in de ViewModel wordt getriggerd met de nieuwe tekst als parameter.
+
 */
 
 namespace PcArchitect.Converters

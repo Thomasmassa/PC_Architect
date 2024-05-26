@@ -9,8 +9,23 @@ using PcArchitect.ViewModel;
 using PcArchitect.Views;
 using SkiaSharp.Views.Maui.Controls.Hosting;
 
-// STARTPUNT VAN DE APPLICATIE
-// CREATIE EN CONFIGURATIE MAUI APP 
+/*
+
+Deze code is het startpunt van de Maui-applicatie, gelegen in de `MauiProgram` klasse. 
+De `CreateMauiApp` methode creëert en configureert de Maui-applicatie.
+
+Het gebruikt de `MauiApp.CreateBuilder()` methode om een nieuwe MauiApp Builder te maken. 
+Deze builder wordt vervolgens geconfigureerd met verschillende methoden zoals `UseMauiApp<App>()`, `UseSkiaSharp()`, `UseMauiCommunityToolkit()` en `ConfigureFonts()`.
+
+Daarnaast worden er verschillende services en repositories geregistreerd als singleton-services met de `AddSingleton()` methode. 
+Deze services en repositories worden slechts eenmaal geïnstantieerd en worden in de hele applicatie gebruikt. 
+Voorbeelden hiervan zijn MainPage, MainViewModel, NavigationService, LocalDatabase, RootFactory, enz.
+
+Er worden ook enkele services geregistreerd als transient-services met de `AddTransient()` methode. 
+Deze services worden elke keer opnieuw geïnstantieerd wanneer ze worden aangeroepen. 
+Voorbeelden hiervan zijn BuildDetailViewModel, BuildDetailPage, PartDetailViewModel, PartDetailPage, enz.
+
+*/
 
 namespace PcArchitect
 {
@@ -30,7 +45,6 @@ namespace PcArchitect
                     fonts.AddFont("Koulen.ttf", "Koulen");
                 });
 
-            // een singleton service wordt slechts eenmaal geïnstantieerd en gebruikt in de gehele applicatie
             builder.Services.AddSingleton<MainPage>();
             builder.Services.AddSingleton<MainViewModel>();
             builder.Services.AddSingleton<NavigationService>();
@@ -52,7 +66,6 @@ namespace PcArchitect
             builder.Services.AddSingleton<SearchViewModel>();
             builder.Services.AddSingleton<SearchPage>();
 
-            // een transient service wordt elke keer opnieuw geïnstantieerd wanneer deze wordt aangeroepen
             builder.Services.AddTransient<BuildDetailViewModel>();
             builder.Services.AddTransient<BuildDetailPage>();
             builder.Services.AddTransient<PartDetailViewModel>();

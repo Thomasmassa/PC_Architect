@@ -2,11 +2,15 @@
 using PcArchitect.Repository;
 
 /*
+
 De InternetService klasse controleert de internetverbinding en haalt componenten op als er een verbinding is.
 
-CheckInternetConnectionAsync controleert continu de internetverbinding.
-Als er een verbinding is, haalt het de componenten op en stopt het met controleren. 
-Als er geen verbinding is, probeert het opnieuw na 10 seconden.
+De CheckInternetConnectionAsync methode controleert continu de internetverbinding. 
+Als er een verbinding is, haalt de methode de componenten op, toont een toastbericht dat aangeeft dat de componenten worden opgehaald, en stopt met controleren. 
+Als er geen verbinding is, toont de methode een toastbericht dat aangeeft dat er geen internetverbinding is en probeert opnieuw na 10 seconden.
+
+De ShowToast methode toont een toastbericht met het gegeven bericht.
+
 */
 
 namespace PcArchitect.Services

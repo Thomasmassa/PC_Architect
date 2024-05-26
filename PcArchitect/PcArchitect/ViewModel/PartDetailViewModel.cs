@@ -6,22 +6,24 @@ using PcArchitect.Services;
 using PC_Architect.Model;
 
 /*
+
 De PartDetailViewModel klasse erft van de BaseViewModel klasse en is verantwoordelijk voor het beheren van de gegevens en logica voor de PartDetailPage.
 
-Het heeft twee private readonly velden: _bufferService en _addedcomponentRepository. 
+Het heeft drie private readonly velden: _bufferService, _addedcomponentRepository en _navigationService. 
 Deze zijn services die worden geïnjecteerd via de constructor en worden gebruikt om gegevens op te slaan en te manipuleren.
 
 De constructor initialiseert deze services met de waarden die worden doorgegeven als parameters en initialiseert ook de Component collectie. 
-Het stelt ook de IsDetailsVisible, IsDescriptionVisible en DescriptionButton properties in op hun beginwaarden.
 
 De BackButton methode is een asynchrone methode die navigeert naar de vorige pagina.
 
 De PageNavigated methode wordt aangeroepen wanneer de pagina is geladen. 
-Het haalt het geselecteerde component op uit de buffer service en voegt het toe aan de Component collectie.
+Het haalt het geselecteerde component op uit de buffer service en voegt het toe aan de Component collectie. 
+Het stelt ook de IsAddBtnEnabled, PartListDescriptionButtonEnabled en SearchListDescriptionButtonEnabled properties in op basis van de vorige pagina.
 
 De ToggleDescription methode verandert de zichtbaarheid van de beschrijving en de tekst van de DescriptionButton.
 
 De AddToBuild methode is een asynchrone methode die het eerste component in de Component collectie toevoegt aan de _addedcomponentRepository en navigeert naar de StartBuildingPage.
+
 */
 
 namespace PcArchitect.ViewModel

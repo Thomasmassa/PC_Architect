@@ -6,9 +6,9 @@ using PcArchitect.Services;
 using PcArchitect.Views;
 using System.Collections;
 using System.Collections.ObjectModel;
-using static SQLite.SQLite3;
 
 /*
+
 De SearchViewModel is een ViewModel die de SearchPage aanstuurt.
 
 Deze ViewModel bevat een lijst van alle componenten die in de RootFactory zijn aangemaakt.
@@ -32,6 +32,7 @@ Het maakt dan de DisplayedItems lijst leeg en roept de OnSearch methode aan met 
 
 De methode PartToDetail wordt aangeroepen wanneer een onderdeel wordt geselecteerd uit de zoekresultaten. 
 Het navigeert naar de DetailPage van het geselecteerde onderdeel.
+
 */
 
 namespace PcArchitect.ViewModel
@@ -100,7 +101,7 @@ namespace PcArchitect.ViewModel
             {
                 SelectedFilterItem = "All";
             }
-            
+
             if (SelectedFilterItem == "All")
             {
                 _filteredComponents = Component.ToList();
@@ -323,10 +324,5 @@ namespace PcArchitect.ViewModel
                 });
             }
         }
-
-        //////////////////////////////////////////////
-
-        //////////////////////////////////////////////
-
     }
 }
