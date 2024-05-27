@@ -11,17 +11,17 @@ using SkiaSharp.Views.Maui.Controls.Hosting;
 
 /*
 
-Deze code is het startpunt van de Maui-applicatie, gelegen in de `MauiProgram` klasse. 
-De `CreateMauiApp` methode creëert en configureert de Maui-applicatie.
+Deze code is het startpunt van de Maui-applicatie, gelegen in de MauiProgram klasse. 
+De CreateMauiApp methode creëert en configureert de Maui-applicatie.
 
-Het gebruikt de `MauiApp.CreateBuilder()` methode om een nieuwe MauiApp Builder te maken. 
-Deze builder wordt vervolgens geconfigureerd met verschillende methoden zoals `UseMauiApp<App>()`, `UseSkiaSharp()`, `UseMauiCommunityToolkit()` en `ConfigureFonts()`.
+Het gebruikt de MauiApp.CreateBuilder methode om een nieuwe MauiApp Builder te maken. 
+Deze builder wordt vervolgens geconfigureerd met verschillende methoden zoals UseMauiApp<App>, UseSkiaSharp, UseMauiCommunityToolkit en ConfigureFonts.
 
-Daarnaast worden er verschillende services en repositories geregistreerd als singleton-services met de `AddSingleton()` methode. 
+Daarnaast worden er verschillende services en repositories geregistreerd als singleton-services met de AddSingleton methode. 
 Deze services en repositories worden slechts eenmaal geïnstantieerd en worden in de hele applicatie gebruikt. 
 Voorbeelden hiervan zijn MainPage, MainViewModel, NavigationService, LocalDatabase, RootFactory, enz.
 
-Er worden ook enkele services geregistreerd als transient-services met de `AddTransient()` methode. 
+Er worden ook enkele services geregistreerd als transient-services met de AddTransient methode. 
 Deze services worden elke keer opnieuw geïnstantieerd wanneer ze worden aangeroepen. 
 Voorbeelden hiervan zijn BuildDetailViewModel, BuildDetailPage, PartDetailViewModel, PartDetailPage, enz.
 
