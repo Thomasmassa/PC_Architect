@@ -18,17 +18,10 @@ namespace PcArchitect.ViewModel
     public partial class BaseViewModel : ObservableObject
     {
         [ObservableProperty]
-        [NotifyPropertyChangedFor(nameof(IsNotBusy))]
-        bool isBusy;
-
-        [ObservableProperty]
         string title = "";
 
         [ObservableProperty]
         string item = "";
-
-        [ObservableProperty]
-        bool isRefreshing;
 
         [ObservableProperty]
         bool isDetailsVisible;
@@ -62,7 +55,5 @@ namespace PcArchitect.ViewModel
 
         [ObservableProperty]
         string additionalName = "";
-
-        public bool IsNotBusy => !IsBusy;
     }
 }

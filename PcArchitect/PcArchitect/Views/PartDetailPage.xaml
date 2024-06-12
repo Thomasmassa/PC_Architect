@@ -35,17 +35,20 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Button Text="back" 
-                        FontFamily="Koulen" 
-                        FontSize="Title" 
-                        TextColor="{StaticResource PrimaryText}" 
-                        Grid.Column="4"
-                        Padding="0" 
-                        Command="{Binding BackButtonCommand}" 
-                        Background="Transparent" 
-                        BorderColor="Transparent"
-                        HorizontalOptions="Start" 
-                        VerticalOptions="Center"/>
+                <Frame Padding="0"
+                       Grid.Column="4"
+                       WidthRequest="50"
+                       VerticalOptions="Center"
+                       BorderColor="Transparent"
+                       Background="{StaticResource BackgroundBackgroundColor}">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartDetailViewModel}}, Path=BackButtonCommand}"
+                            CommandParameter="{Binding .}"/>
+                    </Frame.GestureRecognizers>
+                    <Image Source="backarrow.png"
+                           HeightRequest="50"/>
+                </Frame>
 
                 <Label Text="Part Info" 
                        FontFamily="Koulen" 

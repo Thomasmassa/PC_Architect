@@ -55,7 +55,8 @@
                        Padding="0"
                        HeightRequest="40"
                        WidthRequest="40"
-                       BackgroundColor="Transparent">
+                       BorderColor="Transparent"
+                       Background="{StaticResource BackgroundBackgroundColor}">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer
                             Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:PartListViewModel}}, Path=BackButtonCommand}"
