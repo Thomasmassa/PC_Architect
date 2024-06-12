@@ -50,16 +50,23 @@
                        VerticalOptions="Center"
                        Margin="0,30,0,0"/>
 
-                <Button Text="back"
-                        FontFamily="Koulen"
-                        FontSize="Title"
-                        TextColor="{StaticResource PrimaryText}"
-                        Grid.Column="4"
-                        Grid.Row="1"
-                        Margin="0,0,20,0"
-                        Padding="0"
-                        Background="Transparent"
-                        Command="{Binding BackButtonCommand}"/>
+                <Frame Padding="0"
+                       Margin="0,0,20,0"
+                       Grid.Row="1"
+                       Grid.Column="4"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       VerticalOptions="Center"
+                       BorderColor="Transparent"
+                       Background="{StaticResource BackgroundBackgroundColor}">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:SearchViewModel}}, Path=BackButtonCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </Frame.GestureRecognizers>
+                    <Image Source="backarrow.png"
+                           Background="Transparent"/>
+                </Frame>
 
                 <SearchBar x:Name="searchBar"
                         Placeholder="Search"
