@@ -94,12 +94,10 @@ namespace PcArchitect.ViewModel
                 else
                 {
                     await _localDatabase.DeleteItemAsync(build);
-                    SavedBuilds.Remove(build);
-
-                    await Task.Delay(TimeSpan.FromSeconds(0.1));
-
+                    int index = SavedBuilds.IndexOf(build);
+                    SavedBuilds.RemoveAt(index);
                     build.BuildName = name;
-                    SavedBuilds.Add(build);
+                    SavedBuilds.Insert(index, build);
                     await _localDatabase.SaveItemAsync(build);
                 }
             }

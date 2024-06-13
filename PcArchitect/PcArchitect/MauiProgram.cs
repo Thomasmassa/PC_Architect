@@ -7,8 +7,6 @@ using PcArchitect.Repository;
 using PcArchitect.Services;
 using PcArchitect.ViewModel;
 using PcArchitect.Views;
-using SkiaSharp.Views.Maui.Controls.Hosting;
-
 /*
 
 Deze code is het startpunt van de Maui-applicatie, gelegen in de MauiProgram klasse. 

@@ -35,19 +35,22 @@ namespace PcArchitect.Repository
             return _database.Table<SavedBuild>().ToListAsync();
         }
 
-        public Task<int> SaveItemAsync(SavedBuild savedBuild)
+        public Task SaveItemAsync(SavedBuild savedBuild)
         {
-            return _database.InsertAsync(savedBuild);
+            _database.InsertAsync(savedBuild);
+            return Task.CompletedTask;
         }
 
-        public Task<int> DeleteItemAsync(SavedBuild savedBuild)
+        public Task DeleteItemAsync(SavedBuild savedBuild)
         {
-            return _database.DeleteAsync(savedBuild);
+            _database.DeleteAsync(savedBuild);
+            return Task.CompletedTask;
         }
 
-        public Task<int> UpdateItemAsync(SavedBuild savedBuild)
+        public Task UpdateItemAsync(SavedBuild savedBuild)
         {
-            return _database.UpdateAsync(savedBuild);
+            _database.UpdateAsync(savedBuild);
+            return Task.CompletedTask;
         }
     }
 }
