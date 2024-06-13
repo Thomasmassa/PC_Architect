@@ -53,7 +53,6 @@
                         <Span Text="The PC Of Your Dreams" TextColor="white"/>
                     </FormattedString>
                 </Label.FormattedText>
-
             </Label>
 
             <!-- Knop  -->
