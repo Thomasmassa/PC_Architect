@@ -7,7 +7,6 @@ using PcArchitect.Repository;
 using PcArchitect.Services;
 using PcArchitect.ViewModel;
 using PcArchitect.Views;
-using SkiaSharp.Views.Maui.Controls.Hosting;
 
 /*
 

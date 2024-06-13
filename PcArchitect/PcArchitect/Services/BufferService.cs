@@ -1,15 +1,15 @@
 ﻿/*
 
-De BufferService klasse dient als opslagplaats voor componenten die met behulp van een Dictionary worden opgeslagen.
+De BufferService klasse dient als opslagplaats voor builds die met behulp van een Dictionary worden opgeslagen.
 
-De sleutel is de naam van het component en de waarde is het component zelf. 
-Deze klasse wordt gebruikt om componenten op te slaan voor gebruik op de detailpagina.
+De sleutel is de naam van de build en de waarde is de opgeslagen build zelf. 
+Deze klasse wordt gebruikt om builds op te slaan voor gebruik op de MyBuild pagina, maar ook om op te vragen op de StartBuilding pagina.
 
-De BuffComponent methode voegt een nieuw component toe aan de buffer als het nog niet bestaat. 
-Als het component al bestaat in de buffer, doet de methode niets en retourneert gewoon de huidige buffer.
+De BuffComponent methode voegt een nieuw build toe aan de buffer als het nog niet bestaat. 
+Als de build al bestaat in de buffer, doet de methode niets en retourneert gewoon de huidige buffer.
 
-De GetBufferedComponent methode haalt een component op uit de buffer op basis van de naam, 
-en maakt vervolgens de buffer leeg. Als het component niet bestaat in de buffer, retourneert de methode null.
+De GetBufferedComponent methode haalt een build op uit de buffer op basis van de build naam, 
+en maakt vervolgens de buffer leeg. Als de build niet bestaat in de buffer, retourneert de methode null.
 
 */
 
